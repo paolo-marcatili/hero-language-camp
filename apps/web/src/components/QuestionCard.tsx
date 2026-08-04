@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import type { AnswerOption, TrainingQuestion } from "@hero-lang/learning-engine";
-import { playLearningAudio, unlockAudio } from "../audio";
+import { isLearningAudioPlaying, playLearningAudio, unlockAudio } from "../audio";
 import { t } from "../i18n";
 import { QuestionTimer } from "./QuestionTimer";
 import { FitText } from "./FitText";
@@ -67,9 +67,12 @@ export function QuestionCard({
   const expectedAnswerLength = question.expected_answer_length ?? question.options.length;
   const tapOrderReady = selectedChips.length === expectedAnswerLength;
   const waitingForNarration = Boolean(question.requires_audio_before_answer) && !audioStarted;
-  // Narration is guidance, never a gate. A child may answer as soon as the
-  // question appears, even while audio is playing or if playback fails.
-  const answerDisabled = disabled;
+  // Avoid cancelling narration by submitting while learning audio is active.
+  // A genuine playback failure still releases these controls when its promise settles.
+  const answerDisabled = disabled
+    || instructionAudioPlaying
+    || audioPlaying
+    || secondaryAudioPlaying;
 
   useEffect(() => {
     instructionPlaybackSerial.current += 1;
@@ -93,9 +96,13 @@ export function QuestionCard({
     if (audioHasStarted) setAudioStarted(true);
   }, [audioHasStarted]);
 
+  function answerSubmissionBlocked(): boolean {
+    return answerDisabled || isLearningAudioPlaying();
+  }
+
   function handleChipTap(option: AnswerOption) {
     if (
-      answerDisabled
+      answerSubmissionBlocked()
       || !isTapOrder
       || selectedChips.length >= expectedAnswerLength
       || selectedChips.some((chip) => chip.id === option.id)
@@ -104,13 +111,21 @@ export function QuestionCard({
   }
 
   function removeSelectedChip(optionId: string) {
-    if (answerDisabled) return;
+    if (answerSubmissionBlocked()) return;
     setSelectedChips((previous) => previous.filter((chip) => chip.id !== optionId));
   }
 
   function submitTapOrder() {
-    if (answerDisabled || !tapOrderReady) return;
+    if (answerSubmissionBlocked() || !tapOrderReady) return;
     onAnswer(selectedChips.map((chip) => chip.label).join(" "));
+  }
+  function submitAnswer(selectedOptionId: string) {
+    if (answerSubmissionBlocked()) return;
+    onAnswer(selectedOptionId);
+  }
+  function continueAfterFeedback(): void {
+    if (isLearningAudioPlaying()) return;
+    onContinue?.();
   }
 
 
@@ -332,7 +347,7 @@ export function QuestionCard({
                 type="button"
                 className={answerClass}
                 disabled={answerDisabled}
-                onClick={() => onAnswer(option.id)}
+                onClick={() => submitAnswer(option.id)}
               >
                 <FitText text={option.label} lang={/^[\u0530-\u058F]/.test(option.label) ? "hy" : undefined} maxRem={1.02} minRem={0.62} />
               </button>
@@ -379,7 +394,7 @@ export function QuestionCard({
           ) : null}
           {feedback.statCapReached ? <span>{t(language, "statCapReached")}</span> : null}
           {!feedback.correct && onContinue ? (
-            <button type="button" className="primary-button feedback-continue-button" onClick={onContinue}>
+            <button type="button" className="primary-button feedback-continue-button" onClick={continueAfterFeedback}>
               {t(language, "continueButton")}
             </button>
           ) : null}

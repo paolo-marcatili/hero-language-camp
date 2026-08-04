@@ -31,6 +31,14 @@ export function isAudioEnabled(): boolean {
   return enabled;
 }
 
+export function isLearningAudioPlaying(): boolean {
+  return Boolean(
+    currentLearningAudioFinish
+    || currentSpeechFinish
+    || (currentLearningAudio && !currentLearningAudio.paused && !currentLearningAudio.ended)
+  );
+}
+
 export function getLearningAudioMode(): "human_only" | "human_and_automatic" {
   return learningAudioMode;
 }
