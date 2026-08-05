@@ -61,6 +61,8 @@ export interface LearnerState {
   streak: number;
   max_energy: number;
   hero_stats: HeroStats;
+  /** Item bonuses that could not fit under the current level cap. */
+  pending_item_stat_bonuses?: HeroStats;
   mastery_by_item: Record<string, ItemMastery>;
   mastery_by_letter: Record<string, LetterMastery>;
   mastery_by_grammar: Record<string, GrammarMastery>;
@@ -120,6 +122,8 @@ export interface TrainingQuestion {
   letter?: LetterItem;
   grammar?: GrammarItem;
   prompt: string;
+  /** Approved public image shown instead of answer-revealing emoji text. */
+  prompt_image?: string;
   prompt_hint: string;
   options: AnswerOption[];
   correct_option_id: string;
@@ -198,7 +202,7 @@ export interface ShopItem {
 export const HERO_STAT_KEYS: HeroStatKey[] = ["strength", "defense", "precision", "stamina"];
 
 const REVIEW_INTERVALS_MS = [5 * 60_000, 20 * 60_000, 24 * 60 * 60_000, 3 * 24 * 60 * 60_000, 7 * 24 * 60 * 60_000, 14 * 24 * 60 * 60_000];
-export const CURRENT_CURRICULUM_VERSION = 2;
+export const CURRENT_CURRICULUM_VERSION = 3;
 const LEVEL_ZERO_MIGRATION_VERSION = 1;
 export const TRAINING_STONE_CAP = 3;
 const TRAINING_FOCUSES: readonly TrainingFocus[] = ["vocabulary", "comprehension", "grammar", "pronunciation"];
@@ -216,6 +220,7 @@ export function createInitialLearnerState(pack: LanguagePack, heroName = "Ani"):
     streak: 0,
     max_energy: getMaxEnergy(0, baseStats),
     hero_stats: baseStats,
+    pending_item_stat_bonuses: zeroDeferredItemBonuses(),
     mastery_by_item: Object.fromEntries(pack.items.map((item) => [item.id, createItemMastery(item.id)])),
     mastery_by_letter: Object.fromEntries((pack.letters ?? []).map((letter) => [letter.id, createLetterMastery(letter.id)])),
     mastery_by_grammar: Object.fromEntries((pack.grammar_items ?? []).map((grammar) => [grammar.id, createGrammarMastery(grammar.id)])),
@@ -255,6 +260,9 @@ export function normalizeLearnerState(pack: LanguagePack, maybeState: unknown, h
     pack
   );
 
+  const normalizedDeferredItemBonuses = normalizeDeferredItemBonuses(maybeState.pending_item_stat_bonuses);
+  const deferredAtCurrentCap = applyDeferredItemBonuses(heroStats, normalizedDeferredItemBonuses, level, pack);
+
   const completed = mergeTrainingCounts(maybeState.completed_training_sessions);
   const completedLabyrinthSessions = Math.max(0, Math.floor(numberOr(maybeState.completed_labyrinth_sessions, 0)));
   return {
@@ -265,8 +273,9 @@ export function normalizeLearnerState(pack: LanguagePack, maybeState: unknown, h
     xp: Math.max(0, Math.floor(numberOr(maybeState.xp, 0))),
     coins: Math.max(0, Math.floor(numberOr(maybeState.coins, 0))),
     streak: Math.max(0, Math.floor(numberOr(maybeState.streak, 0))),
-    hero_stats: heroStats,
-    max_energy: getMaxEnergy(level, heroStats),
+    hero_stats: deferredAtCurrentCap.heroStats,
+    pending_item_stat_bonuses: deferredAtCurrentCap.pending,
+    max_energy: getMaxEnergy(level, deferredAtCurrentCap.heroStats),
     mastery_by_item: mergeItemMastery(fresh.mastery_by_item, maybeState.mastery_by_item),
     mastery_by_letter: mergeLetterMastery(fresh.mastery_by_letter, maybeState.mastery_by_letter),
     mastery_by_grammar: mergeGrammarMastery(fresh.mastery_by_grammar, maybeState.mastery_by_grammar),
@@ -285,7 +294,7 @@ export function normalizeLearnerState(pack: LanguagePack, maybeState: unknown, h
 }
 
 export function getNextQuestion(pack: LanguagePack, state: LearnerState, baseLanguage = "it", focus: TrainingFocus = "vocabulary", selection: QuestionSelectionOptions = {}): TrainingQuestion {
-  if (focus === "vocabulary" && getLetterCandidatesForSelection(pack.letters ?? [], selection).length > 0 && shouldUseLetterQuestion(state, selection)) {
+  if (focus === "vocabulary" && getLetterCandidatesForSelection(pack.letters ?? [], selection).length > 0 && shouldUseLetterQuestion(state, selection, getLetterCandidatesForSelection(pack.letters ?? [], selection))) {
     return getLetterQuestion(pack, state, baseLanguage, selection);
   }
 
@@ -510,42 +519,92 @@ export function markLabyrinthCompleted(
   };
 }
 
+// LEARNING_APP_RELEASE_AB_2026_08: deferred item bonuses
+function zeroDeferredItemBonuses(): HeroStats {
+  return { strength: 0, defense: 0, precision: 0, stamina: 0 };
+}
+
+function normalizeDeferredItemBonuses(value: unknown): HeroStats {
+  const source = isObject(value) ? value : {};
+  return {
+    strength: Math.max(0, Math.floor(numberOr(source.strength, 0))),
+    defense: Math.max(0, Math.floor(numberOr(source.defense, 0))),
+    precision: Math.max(0, Math.floor(numberOr(source.precision, 0))),
+    stamina: Math.max(0, Math.floor(numberOr(source.stamina, 0)))
+  };
+}
+
+function mergeDeferredItemBonuses(current: HeroStats | undefined, added: Partial<HeroStats>): HeroStats {
+  const normalized = normalizeDeferredItemBonuses(current);
+  return {
+    strength: normalized.strength + Math.max(0, Math.floor(added.strength ?? 0)),
+    defense: normalized.defense + Math.max(0, Math.floor(added.defense ?? 0)),
+    precision: normalized.precision + Math.max(0, Math.floor(added.precision ?? 0)),
+    stamina: normalized.stamina + Math.max(0, Math.floor(added.stamina ?? 0))
+  };
+}
+
+function applyDeferredItemBonuses(
+  current: HeroStats,
+  pending: HeroStats | undefined,
+  level: number,
+  pack?: LanguagePack
+): { heroStats: HeroStats; pending: HeroStats } {
+  const cap = getLevelStatCap(level, pack);
+  const normalized = normalizeDeferredItemBonuses(pending);
+  const heroStats = { ...current };
+  const remaining = zeroDeferredItemBonuses();
+
+  for (const key of HERO_STAT_KEYS) {
+    const available = Math.max(0, cap - heroStats[key]);
+    const applied = Math.min(available, normalized[key]);
+    heroStats[key] += applied;
+    remaining[key] = normalized[key] - applied;
+  }
+
+  return { heroStats, pending: remaining };
+}
+
 export function markEnemyDefeated(state: LearnerState, enemyId: string, bonusCoins: number, pack?: LanguagePack): LearnerState {
   const alreadyDefeated = state.defeated_enemies.includes(enemyId);
   const maxLevel = pack?.levels?.reduce((maximum, level) => Math.max(maximum, level.number), state.level + 1) ?? state.level + 1;
   const nextLevel = alreadyDefeated ? state.level : Math.min(maxLevel, state.level + 1);
-  const heroStats = clampStatsToLevel(state.hero_stats, nextLevel, pack);
+  const cappedStats = clampStatsToLevel(state.hero_stats, nextLevel, pack);
+  const deferred = applyDeferredItemBonuses(cappedStats, state.pending_item_stat_bonuses, nextLevel, pack);
 
   return {
     ...state,
     level: nextLevel,
     xp: state.xp + (alreadyDefeated ? 10 : 45),
     coins: state.coins + bonusCoins,
-    max_energy: getMaxEnergy(nextLevel, heroStats),
-    hero_stats: heroStats,
+    max_energy: getMaxEnergy(nextLevel, deferred.heroStats),
+    hero_stats: deferred.heroStats,
+    pending_item_stat_bonuses: deferred.pending,
     defeated_enemies: alreadyDefeated ? state.defeated_enemies : [...state.defeated_enemies, enemyId],
     path_seed: alreadyDefeated ? state.path_seed : state.path_seed + 137,
     path_distance: state.path_distance + 40
   };
 }
 
-export function buyShopItem(state: LearnerState, item: ShopItem): { ok: boolean; state: LearnerState; reason?: "owned" | "coins" } {
+export function buyShopItem(state: LearnerState, item: ShopItem, pack?: LanguagePack): { ok: boolean; state: LearnerState; reason?: "owned" | "coins" } {
   if (state.inventory.includes(item.id)) return { ok: false, state, reason: "owned" };
   if (state.coins < item.price) return { ok: false, state, reason: "coins" };
 
-  const heroStats = addStatGains(state.hero_stats, item.stat_bonus ?? {}, state.level);
+  const queuedBonuses = mergeDeferredItemBonuses(state.pending_item_stat_bonuses, item.stat_bonus ?? {});
+  const deferred = applyDeferredItemBonuses(state.hero_stats, queuedBonuses, state.level, pack);
+
   return {
     ok: true,
     state: {
       ...state,
       coins: state.coins - item.price,
       inventory: [...state.inventory, item.id],
-      hero_stats: heroStats,
-      max_energy: getMaxEnergy(state.level, heroStats)
+      hero_stats: deferred.heroStats,
+      pending_item_stat_bonuses: deferred.pending,
+      max_energy: getMaxEnergy(state.level, deferred.heroStats)
     }
   };
 }
-
 export function getAverageMastery(state: LearnerState): number {
   const itemValues = Object.values(state.mastery_by_item).map((item) => item.mastery);
   const letterValues = Object.values(state.mastery_by_letter).map((letter) => letter.mastery);
@@ -622,7 +681,6 @@ function getItemQuestion(pack: LanguagePack, state: LearnerState, baseLanguage: 
   const variant = getItemQuestionVariant(item, focus);
   const options = buildItemOptions(pack, item, distractors, baseLanguage, variant);
   const correctLabel = getCorrectItemOptionLabel(item, baseLanguage, variant);
-
   return {
     id: `${activityType}:${variant}:${item.id}:${Date.now()}:${Math.random().toString(16).slice(2)}`,
     kind: "item",
@@ -632,11 +690,13 @@ function getItemQuestion(pack: LanguagePack, state: LearnerState, baseLanguage: 
     variant,
     item,
     prompt: getItemPrompt(item, baseLanguage, focus, variant),
+    prompt_image: variant === "visual_to_target" ? getApprovedItemImage(item) : undefined,
     prompt_hint: getItemPromptHint(item, baseLanguage, focus, variant),
     options,
     correct_option_id: item.id,
     correct_answer_label: correctLabel,
     answer_explanation: buildItemExplanation(item, baseLanguage),
+    allow_target_audio_before_answer: ["target_to_base", "target_to_visual", "audio_to_base"].includes(variant),
     target_audio_text: item.target,
     target_audio_lang: pack.language.bcp47,
     audio: item.audio
@@ -670,6 +730,7 @@ function getLetterQuestion(pack: LanguagePack, state: LearnerState, baseLanguage
     correct_option_id: letter.id,
     correct_answer_label: getLetterAnswerLabel(letter, baseLanguage),
     answer_explanation: buildLetterExplanation(letter, baseLanguage),
+    allow_target_audio_before_answer: false,
     target_audio_text: letter.spoken_name ?? letter.character,
     target_audio_lang: pack.language.bcp47,
     audio: letter.audio,
@@ -707,6 +768,7 @@ function getGrammarQuestion(pack: LanguagePack, state: LearnerState, baseLanguag
       correct_option_id: missingWord,
       correct_answer_label: grammar.target_sentence,
       answer_explanation: buildGrammarExplanation(pack, grammar, baseLanguage),
+      allow_target_audio_before_answer: false,
       target_audio_text: grammar.target_sentence,
       target_audio_lang: pack.language.bcp47,
       audio: grammar.audio
@@ -735,6 +797,7 @@ function getGrammarQuestion(pack: LanguagePack, state: LearnerState, baseLanguag
       correct_answer_label: grammar.target_sentence,
       expected_answer_length: words.length,
       answer_explanation: buildGrammarExplanation(pack, grammar, baseLanguage),
+      allow_target_audio_before_answer: false,
       target_audio_text: grammar.target_sentence,
       target_audio_lang: pack.language.bcp47,
       audio: grammar.audio
@@ -765,6 +828,7 @@ function getGrammarQuestion(pack: LanguagePack, state: LearnerState, baseLanguag
       correct_option_id: grammar.id,
       correct_answer_label: getGrammarTranslation(grammar, baseLanguage),
       answer_explanation: buildGrammarExplanation(pack, grammar, baseLanguage),
+      allow_target_audio_before_answer: true,
       target_audio_text: grammar.target_sentence,
       target_audio_lang: pack.language.bcp47,
       audio: grammar.audio
@@ -796,28 +860,34 @@ function getGrammarQuestion(pack: LanguagePack, state: LearnerState, baseLanguag
     correct_option_id: grammar.target_sentence,
     correct_answer_label: grammar.target_sentence,
     answer_explanation: buildGrammarExplanation(pack, grammar, baseLanguage),
+    allow_target_audio_before_answer: false,
     target_audio_text: grammar.target_sentence,
     target_audio_lang: pack.language.bcp47,
     audio: grammar.audio
   };
 }
-
-function shouldUseLetterQuestion(state: LearnerState, selection: QuestionSelectionOptions): boolean {
+function shouldUseLetterQuestion(state: LearnerState, selection: QuestionSelectionOptions, letters: LetterItem[]): boolean {
   if (selection.includeLetters === false) return false;
   if (selection.includeLetters === true) return true;
   const stage = selection.stage ?? 0;
+  const hasUnseenCurrentStageLetter = letters.some(
+    (letter) => getContentStage(letter) === stage && (state.mastery_by_letter[letter.id]?.seen_count ?? 0) === 0
+  );
+  if (hasUnseenCurrentStageLetter) return true;
   const letterSeen = Object.values(state.mastery_by_letter).reduce((sum, entry) => sum + entry.seen_count, 0);
   if (stage === 0 && letterSeen < 18) return true;
   return Math.random() < (stage <= 2 ? 0.22 : 0.12);
 }
 
+function getApprovedItemImage(item: LearningItem): string | undefined {
+  return item.image_review_status === "approved" && item.image?.trim() ? item.image : undefined;
+}
 function getItemQuestionVariant(item: LearningItem, focus: TrainingFocus): QuestionVariant {
   if (focus === "comprehension") return "audio_to_base";
   if (focus === "pronunciation") return item.syllables?.length ? "syllable_match" : "transliteration_match";
   if (focus === "grammar") return "target_to_base";
-  if (item.emoji && getContentStage(item) <= 1) {
-    return Math.random() < 0.5 ? "target_to_visual" : "visual_to_target";
-  }
+  if (getApprovedItemImage(item) && Math.random() < 0.55) return "visual_to_target";
+  // Emoji metadata remains available in the dictionary, but never carries an answer in a quiz.
   return Math.random() < 0.35 ? "base_to_target" : "target_to_base";
 }
 
@@ -832,9 +902,9 @@ function buildItemOptions(pack: LanguagePack, item: LearningItem, distractors: L
 
 function getItemPrompt(item: LearningItem, baseLanguage: string, focus: TrainingFocus, variant: QuestionVariant): string {
   if (variant === "audio_to_base") return "🔊";
-  if (variant === "visual_to_target") return item.emoji || getItemTranslation(item, baseLanguage);
-  if (variant === "base_to_target") return item.emoji || getItemTranslation(item, baseLanguage);
+  if (variant === "visual_to_target" || variant === "base_to_target") return getItemTranslation(item, baseLanguage);
   if (variant === "transliteration_match" || variant === "syllable_match") return item.target;
+  void focus;
   return item.target;
 }
 
@@ -851,10 +921,10 @@ function getItemPromptHint(item: LearningItem, baseLanguage: string, focus: Trai
 
 function getCorrectItemOptionLabel(item: LearningItem, baseLanguage: string, variant: QuestionVariant, pack?: LanguagePack): string {
   if (variant === "base_to_target" || variant === "visual_to_target") return item.target;
-  if (variant === "target_to_visual") return item.emoji || getItemTranslation(item, baseLanguage);
+  if (variant === "target_to_visual") return getItemTranslation(item, baseLanguage);
   if (variant === "transliteration_match") return item.transliteration || item.ipa || item.target;
   if (variant === "syllable_match") return item.syllables?.join(" · ") || item.transliteration || item.target;
-  if (variant === "audio_to_base") return item.emoji || getItemTranslation(item, baseLanguage);
+  if (variant === "audio_to_base") return getItemTranslation(item, baseLanguage);
   void pack;
   return getItemTranslation(item, baseLanguage);
 }
@@ -903,6 +973,16 @@ function chooseWeakestItem(pack: LanguagePack, state: LearnerState, selection: Q
 }
 
 function chooseWeakestLetter(letters: LetterItem[], state: LearnerState, selection: QuestionSelectionOptions): LetterItem {
+  const stage = selection.stage;
+  const introduced = stage === undefined ? letters : letters.filter((letter) => getContentStage(letter) <= stage);
+  const currentUnseen = stage === undefined
+    ? []
+    : introduced.filter((letter) => getContentStage(letter) === stage && (state.mastery_by_letter[letter.id]?.seen_count ?? 0) === 0);
+  if (currentUnseen.length > 0) return currentUnseen[Math.floor(Math.random() * currentUnseen.length)] ?? currentUnseen[0];
+
+  const introducedUnseen = introduced.filter((letter) => (state.mastery_by_letter[letter.id]?.seen_count ?? 0) === 0);
+  if (introducedUnseen.length > 0) return introducedUnseen[Math.floor(Math.random() * introducedUnseen.length)] ?? introducedUnseen[0];
+
   const source = chooseStagePool(letters, selection);
   const sorted = [...source].sort((a, b) => compareMemoryScore(state.mastery_by_letter[a.id], state.mastery_by_letter[b.id]));
   const pool = sorted.slice(0, Math.min(8, sorted.length));

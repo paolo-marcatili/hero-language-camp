@@ -21,7 +21,7 @@ labyrinths:
       trap_heart_loss: 2
       cache_coins_min: 2
       cache_coins_max: 6
-      reveal_radius: 2
+      reveal_radius: 3
     hearts: 5
     semantic_tags:
       - 'tier:core'

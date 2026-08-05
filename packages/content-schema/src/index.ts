@@ -91,6 +91,8 @@ export interface LearningItem {
   phonemes?: string[];
   /** Child-facing visual; emoji and public asset URLs are both supported. */
   image?: string;
+  /** Only approved images may be used as answer-bearing quiz prompts. */
+  image_review_status?: ReviewStatus;
   decodability?: "regular" | "high_frequency" | "extension";
   transliterations?: string[];
   meanings?: string[];
@@ -118,6 +120,9 @@ export interface LetterItem {
   uppercase?: string;
   lowercase?: string;
   example_word?: string;
+  /** Draft comparison with sounds familiar to the base-language learner. */
+  sound_approximation?: LocalizedText;
+  sound_approximation_review_status?: ReviewStatus;
   source?: string;
   source_location?: string;
   review_status: ReviewStatus;
@@ -261,11 +266,19 @@ export interface StoryLessonExample {
   note?: LocalizedText;
 }
 
+export interface StoryDialogueLine {
+  speaker?: LocalizedText;
+  target: string;
+  transliteration?: string;
+  translation: LocalizedText;
+}
 export interface StoryLesson {
   title: LocalizedText;
   objectives?: LocalizedText[];
   explanation: LocalizedText;
   examples?: StoryLessonExample[];
+  dialogue?: StoryDialogueLine[];
+  study_notes?: LocalizedText[];
   common_mistakes?: LocalizedText[];
 }
 
@@ -274,8 +287,10 @@ export interface StoryChapter {
   title: LocalizedText;
   summary?: LocalizedText;
   fiction?: LocalizedText;
+  story_beats?: LocalizedText[];
   lesson?: StoryLesson;
   mission?: LocalizedText;
+  cliffhanger?: LocalizedText;
   /** Legacy free-form chapter text. */
   body?: LocalizedText;
   minimum_level?: number;
@@ -803,6 +818,7 @@ export function validateLanguagePack(pack: unknown): ValidationResult {
       else for (const tag of item.tags) if (controlledTags.size > 0 && !isControlledOrDynamicTag(String(tag), controlledTags)) warnings.push(`items[${index}] uses tag not in controlled_tags: ${String(tag)}`);
       if (!Array.isArray(item.audio)) errors.push(`items[${index}].audio must be an array, even if empty.`);
       else validateAudioReferences(item.audio, `items[${index}].audio`, errors, warnings);
+      if (typeof item.image === "string" && item.image && item.image_review_status !== "approved") warnings.push(`items[${index}].image_review_status must be approved before the image is used in a quiz.`);
       if (isObject(item.translations)) {
         for (const code of baseLanguageCodes) if (typeof item.translations[code] !== "string" || item.translations[code] === "") warnings.push(`items[${index}] is missing translation for base language: ${code}`);
       }

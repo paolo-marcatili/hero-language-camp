@@ -21,8 +21,8 @@ labyrinths:
       trap_heart_loss: 1
       cache_coins_min: 3
       cache_coins_max: 7
-      reveal_radius: 2
-    hearts: 3
+      reveal_radius: 3
+    hearts: 2
     semantic_tags:
       - "encounter:starter"
     rewards:
@@ -56,8 +56,8 @@ labyrinths:
       trap_heart_loss: 1
       cache_coins_min: 3
       cache_coins_max: 7
-      reveal_radius: 2
-    hearts: 4
+      reveal_radius: 3
+    hearts: 3
     semantic_tags:
       - "encounter:reading"
     rewards:
@@ -91,8 +91,8 @@ labyrinths:
       trap_heart_loss: 1
       cache_coins_min: 3
       cache_coins_max: 7
-      reveal_radius: 2
-    hearts: 4
+      reveal_radius: 3
+    hearts: 3
     semantic_tags:
       - "encounter:reading"
       - "encounter:math"

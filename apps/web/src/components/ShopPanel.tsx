@@ -1,9 +1,12 @@
+import type { LanguagePack } from "@hero-lang/content-schema";
 import { buyShopItem, type HeroStatKey, type LearnerState } from "@hero-lang/learning-engine";
 import { getNextShopUnlockLevel, getVisibleShopItems, meetsRequirements, missingRequirements } from "../gameConfig";
 import { playSound, unlockAudio } from "../audio";
 import { t } from "../i18n";
 
 interface ShopPanelProps {
+  // LEARNING_APP_RELEASE_AB_2026_08: pack-aware shop cap
+  pack: LanguagePack;
   state: LearnerState;
   language: string;
   onStateChange: (state: LearnerState) => void;
@@ -14,16 +17,17 @@ interface ShopPanelProps {
 
 const STAT_ORDER: HeroStatKey[] = ["strength", "defense", "precision", "stamina"];
 
-export function ShopPanel({ state, language, onStateChange, debugBypass = false, onClose, embedded = false }: ShopPanelProps) {
+export function ShopPanel({ pack, state, language, onStateChange, debugBypass = false, onClose, embedded = false }: ShopPanelProps) {
   const visibleItems = getVisibleShopItems(state.level, debugBypass);
   const nextUnlockLevel = getNextShopUnlockLevel(state.level);
 
   return (
     <section className={`${embedded ? "embedded-panel" : "bottom-sheet"} shop-sheet`} role="dialog" aria-label={t(language, "shop")}>
       {embedded ? null : <div className="sheet-handle" />}
-      <div className="panel-heading compact">
+      <div className="panel-heading compact panel-sticky-heading">
         <span>{t(language, "shop")}</span>
         <strong>🪙 {state.coins}</strong>
+      <button type="button" className="panel-close-button" onClick={onClose} aria-label={t(language, "close")} title={t(language, "close")}>✕</button>
       </div>
       <p className="sheet-intro">{t(language, "shopIntro")}</p>
       <div className="shop-grid">
@@ -50,7 +54,7 @@ export function ShopPanel({ state, language, onStateChange, debugBypass = false,
                 disabled={!canBuy}
                 onClick={() => {
                   void unlockAudio();
-                  const result = debugBypass && state.coins < item.price ? buyShopItem({ ...state, coins: item.price }, item) : buyShopItem(state, item);
+                  const result = debugBypass && state.coins < item.price ? buyShopItem({ ...state, coins: item.price }, item, pack) : buyShopItem(state, item, pack);
                   if (result.ok) {
                     playSound("shop");
                     onStateChange(debugBypass && state.coins < item.price ? { ...result.state, coins: state.coins } : result.state);

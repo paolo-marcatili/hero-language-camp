@@ -17,6 +17,9 @@ chapters:
     fiction:
       it: 'Al limitare del campo, una piccola scintilla si posa sul palmo dell’eroe. La scintilla non parla ancora: disegna lettere nell’aria. Ogni lettera accesa fa comparire una parola capace di aprire il primo sentiero.'
       en: 'Al limitare del campo, una piccola scintilla si posa sul palmo dell’eroe. La scintilla non parla ancora: disegna lettere nell’aria. Ogni lettera accesa fa comparire una parola capace di aprire il primo sentiero.'
+    story_beats:
+      - it: "Quando l'eroe ripete Բարև, la scintilla si divide in otto segni luminosi. Non sono ancora tutte le lettere: sono la prima squadra da riconoscere senza fretta."
+        en: "When the hero repeats Բարև, the spark splits into eight glowing signs. They are not the whole alphabet yet: they are the first small team to recognise without rushing."
     lesson:
       title:
         it: Lettere e messaggi di una parola
@@ -45,12 +48,37 @@ chapters:
           translation:
             it: Sì. / No.
             en: Sì. / No.
+      dialogue:
+        - speaker:
+            it: "Scintilla"
+            en: "Spark"
+          target: "Բարև։"
+          transliteration: "barev"
+          translation:
+            it: "Ciao!"
+            en: "Hello!"
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Բարև։"
+          transliteration: "barev"
+          translation:
+            it: "Ciao!"
+            en: "Hello!"
+      study_notes:
+        - it: "Distingui il nome della lettera dal suo suono: il pulsante del nome è disponibile, mentre il suono isolato richiede una registrazione verificata."
+          en: "Distinguish a letter's name from its sound: the name button is available, while the isolated sound requires a verified recording."
+        - it: "Usa l'Atlante dell'alfabeto per vedere tutte le lettere; quelle dei capitoli futuri restano consultabili ma sono marcate chiaramente."
+          en: "Use the Alphabet Atlas to see every letter; future-chapter letters remain browsable but are clearly marked."
       common_mistakes:
         - it: 'Non cercare di leggere ogni lettera come se fosse latina: ascolta prima il modello armeno.'
           en: 'Non cercare di leggere ogni lettera come se fosse latina: ascolta prima il modello armeno.'
     mission:
       it: Accendi le prime rune pronunciando saluti e riconoscendo le lettere del capitolo.
       en: Accendi le prime rune pronunciando saluti e riconoscendo le lettere del capitolo.
+    cliffhanger:
+      it: "Oltre la prima porta, qualcuno ha cancellato tutti i nomi dal ponte."
+      en: "Beyond the first gate, someone has erased every name from the bridge."
   - id: chapter_stage_1
     minimum_level: 1
     title:
@@ -62,6 +90,9 @@ chapters:
     fiction:
       it: Il primo ponte è sorvegliato da un guardiano che ha dimenticato tutti i nomi. Lascia passare soltanto chi sa dire chi è e sa chiedere con gentilezza il nome di un’altra persona.
       en: Il primo ponte è sorvegliato da un guardiano che ha dimenticato tutti i nomi. Lascia passare soltanto chi sa dire chi è e sa chiedere con gentilezza il nome di un’altra persona.
+    story_beats:
+      - it: "Il guardiano ascolta ogni sillaba e ricompone il proprio nome su una lastra di pietra. Una seconda voce, però, risponde dall'altra parte del ponte."
+        en: "The guardian listens to every syllable and rebuilds his name on a stone tablet. But a second voice answers from the far side of the bridge."
     lesson:
       title:
         it: Presentarsi con il verbo essere
@@ -98,12 +129,37 @@ chapters:
           note:
             it: La traduzione letterale è «Il mio nome è Ani».
             en: La traduzione letterale è «Il mio nome è Ani».
+      dialogue:
+        - speaker:
+            it: "Guardiano"
+            en: "Guardian"
+          target: "Ի՞նչ է քո անունը։"
+          transliteration: "inch e qo anuny"
+          translation:
+            it: "Come ti chiami?"
+            en: "What is your name?"
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Ես Անի եմ։"
+          transliteration: "yes Ani em"
+          translation:
+            it: "Sono Ani."
+            en: "I am Ani."
+      study_notes:
+        - it: "Nelle frasi di presentazione, osserva la posizione finale di եմ o է prima di cercare una traduzione parola per parola."
+          en: "In introduction sentences, notice the final position of եմ or է before attempting a word-for-word translation."
+        - it: "Ripeti il dialogo cambiando solo il nome: la struttura resta stabile e diventa più facile da ricordare."
+          en: "Repeat the dialogue while changing only the name: the structure stays stable and becomes easier to remember."
       common_mistakes:
         - it: 'Non tradurre sempre parola per parola: in italiano «Mi chiamo Ani» è più naturale di «Il mio nome è Ani».'
           en: 'Non tradurre sempre parola per parola: in italiano «Mi chiamo Ani» è più naturale di «Il mio nome è Ani».'
     mission:
       it: Di’ il tuo nome al guardiano e scopri come si chiama.
       en: Di’ il tuo nome al guardiano e scopri come si chiama.
+    cliffhanger:
+      it: "Il nome ritrovato apre una casa piena di fotografie senza etichette."
+      en: "The recovered name opens a house filled with photographs whose labels are missing."
   - id: chapter_stage_2
     minimum_level: 2
     title:
@@ -115,6 +171,9 @@ chapters:
     fiction:
       it: In una casa illuminata dalla luna, le fotografie hanno perso le etichette. L’eroe deve riconoscere i membri della famiglia e restituire a ogni ritratto il nome giusto.
       en: In una casa illuminata dalla luna, le fotografie hanno perso le etichette. L’eroe deve riconoscere i membri della famiglia e restituire a ogni ritratto il nome giusto.
+    story_beats:
+      - it: "Ogni ritratto illuminato restituisce un ricordo al custode. L'ultima fotografia mostra una tavola apparecchiata, ma tutti i piatti sono vuoti."
+        en: "Each illuminated portrait restores a memory to the caretaker. The last photograph shows a laid table, but every plate is empty."
     lesson:
       title:
         it: Questo è… e mio/mia
@@ -145,12 +204,37 @@ chapters:
           translation:
             it: La nostra casa è grande.
             en: La nostra casa è grande.
+      dialogue:
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Սա իմ մայրն է։"
+          transliteration: "sa im mayrn e"
+          translation:
+            it: "Questa è mia madre."
+            en: "This is my mother."
+        - speaker:
+            it: "Custode"
+            en: "Caretaker"
+          target: "Սա իմ հայրն է։"
+          transliteration: "sa im hayrn e"
+          translation:
+            it: "Questo è mio padre."
+            en: "This is my father."
+      study_notes:
+        - it: "Սա introduce una persona o una cosa vicina. Իմ esprime il possesso senza cambiare per genere come mio/mia in italiano."
+          en: "Սա introduces a nearby person or object. Իմ expresses possession without changing for gender as Italian mio/mia does."
+        - it: "Confronta la frase armena con l'italiano naturale: il significato resta lo stesso anche quando l'ordine non coincide."
+          en: "Compare the Armenian sentence with natural Italian: the meaning remains the same even when word order differs."
       common_mistakes:
         - it: In italiano scegli «questo» o «questa» in base al nome; non usare una forma doppia come «questo/questa».
           en: In italiano scegli «questo» o «questa» in base al nome; non usare una forma doppia come «questo/questa».
     mission:
       it: Rimetti in ordine le fotografie e presenta la famiglia al custode della casa.
       en: Rimetti in ordine le fotografie e presenta la famiglia al custode della casa.
+    cliffhanger:
+      it: "Dalla fotografia del banchetto arriva un rumore di bicchieri: il refettorio incantato si è svegliato."
+      en: "A clink of glasses comes from the banquet photograph: the enchanted dining hall has awakened."
   - id: chapter_stage_3
     minimum_level: 3
     title:
@@ -162,6 +246,9 @@ chapters:
     fiction:
       it: Nel refettorio incantato il cibo appare soltanto quando qualcuno formula una richiesta chiara. Piatti e bicchieri restano vuoti finché l’eroe non impara a dire ciò che desidera.
       en: Nel refettorio incantato il cibo appare soltanto quando qualcuno formula una richiesta chiara. Piatti e bicchieri restano vuoti finché l’eroe non impara a dire ciò che desidera.
+    story_beats:
+      - it: "La prima richiesta corretta riempie un bicchiere; la seconda accende le candele. Sotto il piatto principale compare una chiave a forma di libro."
+        en: "The first correct request fills a glass; the second lights the candles. Beneath the main plate appears a key shaped like a book."
     lesson:
       title:
         it: Dire ciò che vuoi e ciò di cui hai bisogno
@@ -192,12 +279,37 @@ chapters:
           translation:
             it: Per favore.
             en: Per favore.
+      dialogue:
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Ես ջուր եմ ուզում։"
+          transliteration: "yes jur em uzum"
+          translation:
+            it: "Voglio dell'acqua."
+            en: "I want some water."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Խնդրում եմ։"
+          transliteration: "khndrum em"
+          translation:
+            it: "Per favore."
+            en: "Please."
+      study_notes:
+        - it: "Memorizza ուզում եմ come un blocco utile: prima scegli ciò che desideri, poi completa la richiesta."
+          en: "Learn ուզում եմ as a useful chunk: first choose what you want, then complete the request."
+        - it: "In italiano aggiungi l'articolo o la preposizione articolata necessaria; l'armeno non sempre mostra le stesse parole."
+          en: "In Italian, add the article or partitive form needed; Armenian does not always show the same words."
       common_mistakes:
         - it: 'In italiano non dire «Voglio torta»: usa «Voglio una torta» oppure «Voglio della torta», secondo il significato.'
           en: 'In italiano non dire «Voglio torta»: usa «Voglio una torta» oppure «Voglio della torta», secondo il significato.'
     mission:
       it: Fai comparire il banchetto chiedendo correttamente ciò che serve agli ospiti.
       en: Fai comparire il banchetto chiedendo correttamente ciò che serve agli ospiti.
+    cliffhanger:
+      it: "La chiave-libro indica una scuola che cambia posizione ogni mattina."
+      en: "The book-shaped key points to a school that changes position every morning."
   - id: chapter_stage_4
     minimum_level: 4
     title:
@@ -209,6 +321,9 @@ chapters:
     fiction:
       it: 'La scuola del campo cambia posto ogni mattina. Per raggiungerla, l’eroe deve raccontare che cosa fa: va, legge, scrive, ascolta e chiede di ripetere quando qualcosa non è chiaro.'
       en: 'La scuola del campo cambia posto ogni mattina. Per raggiungerla, l’eroe deve raccontare che cosa fa: va, legge, scrive, ascolta e chiede di ripetere quando qualcosa non è chiaro.'
+    story_beats:
+      - it: "Quando l'eroe ammette di non capire, la scuola smette di correre. Chiedere di ripetere rivela una porta nascosta dietro la lavagna."
+        en: "When the hero admits not understanding, the school stops running. Asking for repetition reveals a hidden door behind the board."
     lesson:
       title:
         it: Azioni al presente
@@ -239,12 +354,37 @@ chapters:
           translation:
             it: Non capisco.
             en: Non capisco.
+      dialogue:
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Չեմ հասկանում։"
+          transliteration: "chem haskanum"
+          translation:
+            it: "Non capisco."
+            en: "I do not understand."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Կրկնիր, խնդրում եմ։"
+          transliteration: "krknir, khndrum em"
+          translation:
+            it: "Ripeti, per favore."
+            en: "Repeat, please."
+      study_notes:
+        - it: "Le frasi per chiedere aiuto sono strumenti di studio: usale anche quando ascolti una registrazione o parli con una persona."
+          en: "Phrases for asking for help are study tools: use them when listening to a recording or speaking with someone."
+        - it: "Riconosci la parte negativa in չեմ prima di analizzare il resto del verbo."
+          en: "Recognise the negative element in չեմ before analysing the rest of the verb."
       common_mistakes:
         - it: 'Non aggiungere sempre «sto» in italiano: spesso il presente semplice è la scelta più naturale.'
           en: 'Non aggiungere sempre «sto» in italiano: spesso il presente semplice è la scelta più naturale.'
     mission:
       it: Segui la scuola in movimento e completa le istruzioni della maestra.
       en: Segui la scuola in movimento e completa le istruzioni della maestra.
+    cliffhanger:
+      it: "Dietro la lavagna non c'è un corridoio, ma una mappa coperta di nebbia."
+      en: "Behind the board there is no corridor, but a map covered in mist."
   - id: chapter_stage_5
     minimum_level: 5
     title:
@@ -256,6 +396,9 @@ chapters:
     fiction:
       it: Una nebbia fitta ha cancellato i nomi dalla mappa. Le strade ricompaiono soltanto quando l’eroe sa chiedere dove si trova un posto e comprendere una risposta.
       en: Una nebbia fitta ha cancellato i nomi dalla mappa. Le strade ricompaiono soltanto quando l’eroe sa chiedere dove si trova un posto e comprendere una risposta.
+    story_beats:
+      - it: "Ogni risposta corretta asciuga una parte della mappa. Tra il parco e la scuola appare un sentiero che sale verso un orologio fatto di nuvole."
+        en: "Each correct answer clears part of the map. Between the park and the school, a path appears leading up to a clock made of clouds."
     lesson:
       title:
         it: Dove? Qui e là
@@ -286,12 +429,37 @@ chapters:
           translation:
             it: Il mio amico è qui.
             en: Il mio amico è qui.
+      dialogue:
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Որտե՞ղ է դպրոցը։"
+          transliteration: "vortegh e dprotsy"
+          translation:
+            it: "Dov'è la scuola?"
+            en: "Where is the school?"
+        - speaker:
+            it: "Guida"
+            en: "Guide"
+          target: "Այգին այնտեղ է։"
+          transliteration: "aygin ayntegh e"
+          translation:
+            it: "Il parco è là."
+            en: "The park is over there."
+      study_notes:
+        - it: "Cerca prima la parola interrogativa Որտե՞ղ: segnala subito che la frase chiede una posizione."
+          en: "Look for the question word Որտե՞ղ first: it immediately signals a location question."
+        - it: "Allenati a distinguere այստեղ e այնտեղ insieme a un gesto reale verso un luogo vicino o lontano."
+          en: "Practise distinguishing այստեղ and այնտեղ together with a real gesture toward a nearby or distant place."
       common_mistakes:
         - it: Scrivi «Dov’è» con l’apostrofo, non «Dove è».
           en: Scrivi «Dov’è» con l’apostrofo, non «Dove è».
     mission:
       it: Ricostruisci la mappa chiedendo la posizione dei luoghi nascosti.
       en: Ricostruisci la mappa chiedendo la posizione dei luoghi nascosti.
+    cliffhanger:
+      it: "La nebbia si ritira, ma le nuvole sopra il campo iniziano a contare alla rovescia."
+      en: "The mist retreats, but the clouds above the camp begin counting down."
   - id: chapter_stage_6
     minimum_level: 6
     title:
@@ -303,6 +471,9 @@ chapters:
     fiction:
       it: 'Sopra il campo gira un orologio fatto di nuvole. Le sue lancette non indicano ore: mostrano numeri, età, giorni e cambiamenti del tempo.'
       en: 'Sopra il campo gira un orologio fatto di nuvole. Le sue lancette non indicano ore: mostrano numeri, età, giorni e cambiamenti del tempo.'
+    story_beats:
+      - it: "Ogni numero pronunciato rimette al proprio posto un ingranaggio. Quando l'eroe dice che giorno è, l'orologio mostra l'ingresso di un teatro buio."
+        en: "Each spoken number returns a gear to its place. When the hero says what day it is, the clock reveals the entrance to a dark theatre."
     lesson:
       title:
         it: Numeri, età e parole del tempo
@@ -333,12 +504,37 @@ chapters:
           translation:
             it: Oggi il tempo è bello.
             en: Oggi il tempo è bello.
+      dialogue:
+        - speaker:
+            it: "Orologio"
+            en: "Clock"
+          target: "Քանի՞ տարեկան ես։"
+          transliteration: "kani tarekan es"
+          translation:
+            it: "Quanti anni hai?"
+            en: "How old are you?"
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Ես ութ տարեկան եմ։"
+          transliteration: "yes ut tarekan em"
+          translation:
+            it: "Ho otto anni."
+            en: "I am eight years old."
+      study_notes:
+        - it: "Per l'età, l'armeno e l'italiano usano costruzioni diverse: impara l'intera risposta come un modello."
+          en: "Armenian and Italian use different age constructions: learn the whole answer as a pattern."
+        - it: "Metti oggi o domani all'inizio della frase quando vuoi rendere subito chiaro il momento."
+          en: "Put today or tomorrow at the beginning when you want the time reference to be immediately clear."
       common_mistakes:
         - it: In italiano si dice «Ho otto anni», non «Sono otto anni».
           en: In italiano si dice «Ho otto anni», non «Sono otto anni».
     mission:
       it: Rimetti in moto l’orologio rispondendo alle domande su numeri, giorni e tempo.
       en: Rimetti in moto l’orologio rispondendo alle domande su numeri, giorni e tempo.
+    cliffhanger:
+      it: "Nel teatro, molte ombre provano a parlare insieme ma non riescono ancora a formare un coro."
+      en: "In the theatre, many shadows try to speak together but cannot yet form a chorus."
   - id: chapter_stage_7
     minimum_level: 7
     title:
@@ -350,6 +546,9 @@ chapters:
     fiction:
       it: Nel teatro delle ombre nessuno può cantare da solo. Il coro si sveglia quando l’eroe sa parlare di più persone e sa dire anche ciò che non accade.
       en: Nel teatro delle ombre nessuno può cantare da solo. Il coro si sveglia quando l’eroe sa parlare di più persone e sa dire anche ciò che non accade.
+    story_beats:
+      - it: "Il coro cresce quando le voci passano da io a noi e da una persona a molte. Una nota stonata rivela il sentiero finale, nascosto dietro il sipario."
+        en: "The chorus grows as voices move from I to we and from one person to many. One discordant note reveals the final path hidden behind the curtain."
     lesson:
       title:
         it: Noi, loro e la negazione
@@ -380,12 +579,37 @@ chapters:
           translation:
             it: Non andiamo.
             en: Non andiamo.
+      dialogue:
+        - speaker:
+            it: "Coro"
+            en: "Chorus"
+          target: "Մենք ընկերներ ենք։"
+          transliteration: "menk ynkerner enk"
+          translation:
+            it: "Siamo amici."
+            en: "We are friends."
+        - speaker:
+            it: "Coro"
+            en: "Chorus"
+          target: "Մենք չենք գնում։"
+          transliteration: "menk chenk gnum"
+          translation:
+            it: "Non andiamo."
+            en: "We are not going."
+      study_notes:
+        - it: "Confronta ենք ed են: entrambe sono plurali, ma si riferiscono a persone grammaticali diverse."
+          en: "Compare ենք and են: both are plural, but they refer to different grammatical persons."
+        - it: "In italiano puoi spesso omettere noi o loro; conserva il pronome quando vuoi creare contrasto o enfasi."
+          en: "In Italian you can often omit noi or loro; keep the pronoun when you want contrast or emphasis."
       common_mistakes:
         - it: 'Non tradurre automaticamente ogni pronome armeno: in italiano spesso il verbo basta.'
           en: 'Non tradurre automaticamente ogni pronome armeno: in italiano spesso il verbo basta.'
     mission:
       it: Fai cantare il coro componendo frasi al plurale e frasi negative.
       en: Fai cantare il coro componendo frasi al plurale e frasi negative.
+    cliffhanger:
+      it: "Dietro il sipario, le scintille diventano voci vere e pongono all'eroe una domanda dopo l'altra."
+      en: "Behind the curtain, the sparks become real voices and ask the hero one question after another."
   - id: chapter_stage_8
     minimum_level: 8
     title:
@@ -397,6 +621,9 @@ chapters:
     fiction:
       it: Le scintille raccolte lungo il viaggio diventano voci. Per raggiungere la cima, l’eroe deve ascoltare un piccolo dialogo e rispondere usando tutto ciò che ha imparato.
       en: Le scintille raccolte lungo il viaggio diventano voci. Per raggiungere la cima, l’eroe deve ascoltare un piccolo dialogo e rispondere usando tutto ciò che ha imparato.
+    story_beats:
+      - it: "Le voci non chiedono una frase perfetta, ma uno scambio chiaro. Ogni risposta riaccende una parte del sentiero e richiama personaggi incontrati nei capitoli precedenti."
+        en: "The voices do not demand a perfect sentence, only a clear exchange. Each answer relights part of the path and calls back characters from earlier chapters."
     lesson:
       title:
         it: Costruire un piccolo dialogo
@@ -427,9 +654,34 @@ chapters:
           translation:
             it: Dov’è la scuola?
             en: Dov’è la scuola?
+      dialogue:
+        - speaker:
+            it: "Ani"
+            en: "Ani"
+          target: "Բարև, ես Անի եմ։ Իսկ դու՞։"
+          transliteration: "barev, yes Ani em. isk du"
+          translation:
+            it: "Ciao, sono Ani. E tu?"
+            en: "Hello, I am Ani. And you?"
+        - speaker:
+            it: "Compagno"
+            en: "Companion"
+          target: "Այսօր մենք դպրոց ենք գնում։"
+          transliteration: "aysor menk dprots enk gnum"
+          translation:
+            it: "Oggi andiamo a scuola."
+            en: "Today we are going to school."
+      study_notes:
+        - it: "Costruisci il dialogo con blocchi brevi: saluto, presentazione, domanda, risposta e una sola informazione aggiuntiva."
+          en: "Build the dialogue from short blocks: greeting, introduction, question, answer, and one additional piece of information."
+        - it: "Riascolta la risposta corretta dopo ogni esercizio e prova a ripeterla senza guardare la traslitterazione."
+          en: "Listen to the correct answer after each exercise and try to repeat it without looking at the transliteration."
       common_mistakes:
         - it: In un dialogo italiano naturale evita di ripetere sempre «io», «noi» e «loro» quando il verbo è già chiaro.
           en: In un dialogo italiano naturale evita di ripetere sempre «io», «noi» e «loro» quando il verbo è già chiaro.
     mission:
       it: Completa il dialogo finale e apri il sentiero delle voci.
       en: Completa il dialogo finale e apri il sentiero delle voci.
+    cliffhanger:
+      it: "Il sentiero si apre, ma l'ultima scintilla rimane nel libro: attende nuove storie, nuovi dialoghi e una voce umana che li racconti."
+      en: "The path opens, but the final spark remains in the book, waiting for new stories, new dialogues, and a human voice to tell them."

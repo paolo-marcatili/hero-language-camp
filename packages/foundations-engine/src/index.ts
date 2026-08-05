@@ -164,6 +164,7 @@ function getLetterQuestion(
       translation: `Det store ${uppercase} og det lille ${lowercase} er det samme bogstav.`
     },
     ...narratedQuestion(pack, "instruction_letter_case", instruction),
+    allow_target_audio_before_answer: false,
     target_audio_text: letterName,
     target_audio_lang: "da-DK",
     audio: letter.audio?.length ? letter.audio : browserSpeech(letterName, `name-${letter.id}`)
@@ -256,6 +257,7 @@ function getReadingQuestion(
       translation: getLocalizedText(item.translations, language, item.translation)
     },
     ...narratedQuestion(pack, "instruction_picture_word", "Se på billedet. Hvilket ord passer?"),
+    allow_target_audio_before_answer: false,
     target_audio_text: item.target,
     target_audio_lang: "da-DK",
     audio: item.audio?.length ? item.audio : browserSpeech(item.target, `word-${item.id}`)
@@ -374,6 +376,7 @@ function readingProblemQuestion(pack: LanguagePack, problem: FoundationsReadingP
   };
 }
 
+// LEARNING_APP_RELEASE_AB_2026_08: answer-safe Danish audio
 function readingProblemToGrammar(problem: FoundationsReadingProblem, language: string): GrammarItem {
   return {
     id: problem.id,

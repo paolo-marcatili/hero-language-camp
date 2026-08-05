@@ -88,26 +88,41 @@ export async function unlockAudio(): Promise<boolean> {
 
 export function installAudioUnlock(): () => void {
   if (typeof window === "undefined") return () => undefined;
-
   const handler = () => {
     void unlockAudio();
+  };
+  const visibilityHandler = () => {
+    if (document.visibilityState === "visible") void unlockAudio();
   };
 
   window.addEventListener("pointerdown", handler, { passive: true });
   window.addEventListener("keydown", handler);
+  document.addEventListener("visibilitychange", visibilityHandler);
   return () => {
     window.removeEventListener("pointerdown", handler);
     window.removeEventListener("keydown", handler);
+    document.removeEventListener("visibilitychange", visibilityHandler);
   };
 }
 
+// LEARNING_APP_RELEASE_AB_2026_08: reliable short SFX
 export function playSound(name: SoundName): void {
+  if (!enabled) return;
+  void playSoundWhenReady(name);
+}
+
+async function playSoundWhenReady(name: SoundName): Promise<void> {
   if (!enabled) return;
   const context = getAudioContext();
   if (!context) return;
-  if (context.state === "suspended") {
-    void context.resume();
+  if (context.state !== "running") {
+    try {
+      await context.resume();
+    } catch {
+      return;
+    }
   }
+  if (context.state !== "running") return;
 
   const patterns: Record<SoundName, Array<[number, number, OscillatorType?]>> = {
     correct: [[660, 0.06], [880, 0.08], [1100, 0.09]],
@@ -121,7 +136,7 @@ export function playSound(name: SoundName): void {
     shop: [[780, 0.06], [990, 0.08]],
     super: [[260, 0.05, "sawtooth"], [520, 0.06, "sawtooth"], [1040, 0.1, "square"]],
     fart: [[90, 0.18, "sawtooth"], [72, 0.16, "triangle"]],
-    step: [[180, 0.025, "square"]],
+    step: [[170, 0.045, "square"], [230, 0.035, "triangle"]],
     parry: [[520, 0.04, "triangle"], [360, 0.04, "triangle"], [720, 0.07]],
     magic: [[440, 0.04], [660, 0.04], [990, 0.12], [1320, 0.08]],
     throw: [[300, 0.035, "sawtooth"], [760, 0.055], [980, 0.035]],

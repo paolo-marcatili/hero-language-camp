@@ -4,6 +4,7 @@ import { isLearningAudioPlaying, playLearningAudio, unlockAudio } from "../audio
 import { t } from "../i18n";
 import { QuestionTimer } from "./QuestionTimer";
 import { FitText } from "./FitText";
+import { publicUrl } from "../publicUrl";
 
 interface QuestionCardProps {
   question: TrainingQuestion;
@@ -66,6 +67,8 @@ export function QuestionCard({
   const secondaryPlaybackSerial = useRef(0);
   const expectedAnswerLength = question.expected_answer_length ?? question.options.length;
   const tapOrderReady = selectedChips.length === expectedAnswerLength;
+  // LEARNING_APP_RELEASE_AB_2026_08: adaptive answers
+  const hasLongAnswers = question.options.some((option) => Array.from(option.label).length > 13);
   const waitingForNarration = Boolean(question.requires_audio_before_answer) && !audioStarted;
   // Avoid cancelling narration by submitting while learning audio is active.
   // A genuine playback failure still releases these controls when its promise settles.
@@ -148,7 +151,7 @@ export function QuestionCard({
           question.instruction_audio_lang ?? question.target_audio_lang ?? "da-DK"
         );
       }
-      if (question.auto_play_target_audio || (isReplay && question.replay_target_audio)) {
+      if (question.auto_play_target_audio || (isReplay && question.replay_target_audio && question.allow_target_audio_before_answer !== false)) {
         targetPlayed = await playLearningAudio(
           question.audio,
           question.target_audio_text,
@@ -263,7 +266,11 @@ export function QuestionCard({
       {narrationFailed ? <p className="audio-required-hint audio-retry-hint">{t(language, "narrationRetryHint")}</p> : null}
 
       <div className={question.kind === "letter" ? "prompt letter-prompt" : "prompt"} lang={targetLanguage}>
-        <FitText text={question.prompt} lang={targetLanguage} maxRem={question.kind === "letter" ? 5.6 : 3.2} minRem={question.kind === "letter" ? 2.1 : 1.05} />
+        {question.prompt_image ? (
+          <img className="question-prompt-image" src={publicUrl(question.prompt_image)} alt={question.prompt} />
+        ) : (
+          <FitText text={question.prompt} lang={targetLanguage} maxRem={question.kind === "letter" ? 5.6 : 3.2} minRem={question.kind === "letter" ? 2.1 : 1.05} />
+        )}
       </div>
       <p className="prompt-hint">{getPromptHint(question, language)}</p>
 
@@ -290,7 +297,7 @@ export function QuestionCard({
           <div className="tap-order-count">
             {t(language, "wordsSelected", { selected: selectedChips.length, total: expectedAnswerLength })}
           </div>
-          <div className="answer-grid word-chip-grid">
+          <div className={`answer-grid word-chip-grid${hasLongAnswers ? " long-answer-grid" : ""}`}>
             {question.options.map((option) => {
               const used = selectedChips.some((chip) => chip.id === option.id);
               return (
@@ -336,7 +343,7 @@ export function QuestionCard({
           ) : null}
         </div>
       ) : (
-        <div className="answer-grid">
+        <div className={`answer-grid${hasLongAnswers ? " long-answer-grid" : ""}`}>
           {question.options.map((option) => {
             const isCorrect = feedback?.correctOptionId === option.id;
             const isSelectedWrong = Boolean(feedback && !feedback.correct && feedback.selectedOptionId === option.id);

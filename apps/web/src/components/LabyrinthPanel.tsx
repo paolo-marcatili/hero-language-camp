@@ -355,7 +355,7 @@ function LabyrinthMap({
               width={geometry.eventSize}
               height={geometry.eventSize}
               preserveAspectRatio="xMidYMid meet"
-              className={isResolved ? "maze-event resolved" : "maze-event"}
+              className={`maze-event event-${cell.kind}${isResolved ? " resolved" : ""}`}
               filter="url(#labyrinth-token-shadow)"
             />
           ) : null}
@@ -610,7 +610,14 @@ function LabyrinthMiniMap({ session }: { session: LabyrinthSession }) {
             return [<line key={`${cell.id}:${direction}`} x1={start.x} y1={start.y} x2={end.x} y2={end.y} className="minimap-route" />];
           });
         })}
-        {(() => {
+        {/* LEARNING_APP_RELEASE_AB_2026_08: minimap landmarks */}
+      {session.cells
+        .filter((cell) => revealed.has(cell.id) && !cell.resolved && ["monster", "rune", "treasure", "reveal", "healing"].includes(cell.kind))
+        .map((cell) => {
+          const center = point(cell);
+          return <circle key={`event:${cell.id}`} cx={center.x} cy={center.y} r={cell.kind === "treasure" ? 4.2 : 3.2} className={`minimap-event minimap-event-${cell.kind}`} />;
+        })}
+      {(() => {
           const current = findCell(session, session.positionCellId);
           if (!current) return null;
           const center = point(current);
