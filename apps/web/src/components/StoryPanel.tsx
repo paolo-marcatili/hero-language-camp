@@ -3,6 +3,7 @@ import type { LanguagePack, StoryChapter, StoryMilestone } from "@hero-lang/cont
 import { getLocalizedText } from "@hero-lang/content-schema";
 import { getLevelConfig, type HeroStatKey, type LearnerState } from "@hero-lang/learning-engine";
 import { t } from "../i18n";
+import { AlphabetAtlas } from "./AlphabetAtlas";
 
 interface StoryPanelProps {
   pack: LanguagePack;
@@ -67,6 +68,9 @@ export function StoryPanel({ pack, state, language, alternateLanguage, alternate
               : getLocalizedText(currentChapter.mission, language, currentLevel?.title ?? "")}
           </div>
         </div>
+        {pack.pack_id === "hy-eastern-it" && pack.letters?.length ? (
+          <AlphabetAtlas pack={pack} state={state} language={language === "it" ? "it" : "en"} />
+        ) : null}
         <button
           type="button"
           className="chapter-open-button"
@@ -120,7 +124,7 @@ export function StoryPanel({ pack, state, language, alternateLanguage, alternate
                       <strong>{getLocalizedText(chapter.title, readerLanguage, chapter.id)}</strong>
                       <em aria-hidden="true">{expanded ? "−" : "+"}</em>
                     </button>
-                    {expanded ? <ChapterContent chapter={chapter} language={readerLanguage} appLanguage={language} targetLanguage={pack.language.bcp47} /> : null}
+                    {expanded ? <ChapterContent chapter={chapter} language={readerLanguage} appLanguage={language} targetLanguage={pack.language.bcp47} pack={pack} /> : null}
                   </article>
                 );
               })}
@@ -132,14 +136,21 @@ export function StoryPanel({ pack, state, language, alternateLanguage, alternate
   );
 }
 
-function ChapterContent({ chapter, language, appLanguage, targetLanguage }: { chapter: StoryChapter; language: string; appLanguage: string; targetLanguage: string }) {
+function getLetterStageForChapter(letter: { tags?: string[] }): number {
+  const tag = letter.tags?.find((value) => /^stage:\d+$/.test(value));
+  return tag ? Number(tag.split(":")[1]) : 0;
+}
+
+function ChapterContent({ chapter, language, appLanguage, targetLanguage, pack }: { chapter: StoryChapter; language: string; appLanguage: string; targetLanguage: string; pack: LanguagePack }) {
   const lesson = chapter.lesson;
+  const chapterLetters = (pack.letters ?? []).filter((letter) => getLetterStageForChapter(letter) === (chapter.minimum_level ?? 0));
   return (
     <div className="story-chapter-content">
       {chapter.fiction ? (
         <section className="story-fiction-section">
           <div className="story-section-kicker">✦ {readerLabel(language, appLanguage, "chapterStory")}</div>
           {paragraphs(getLocalizedText(chapter.fiction, language, "")).map((paragraph, index) => <p key={`fiction:${index}`}>{paragraph}</p>)}
+          {chapter.story_beats?.map((beat, index) => <p key={`story-beat:${index}`}>{getLocalizedText(beat, language, "")}</p>)}
         </section>
       ) : null}
       {lesson ? (
@@ -152,6 +163,40 @@ function ChapterContent({ chapter, language, appLanguage, targetLanguage }: { ch
             </ul>
           ) : null}
           {paragraphs(getLocalizedText(lesson.explanation, language, "")).map((paragraph, index) => <p key={`lesson:${index}`}>{paragraph}</p>)}
+          {lesson.dialogue?.length ? (
+            <div className="story-dialogue-list">
+              <div className="story-section-kicker">💬 {readerLabel(language, appLanguage, "dialogue")}</div>
+              {lesson.dialogue.map((line, index) => (
+                <div className="story-dialogue-line" key={`${line.target}:${index}`}>
+                  <span>{getLocalizedText(line.speaker, language, readerLabel(language, appLanguage, "speaker"))}</span>
+                  <div>
+                    <strong lang={targetLanguage}>{line.target}</strong>
+                    {line.transliteration ? <em>{line.transliteration}</em> : null}
+                    <p>{getLocalizedText(line.translation, language, "")}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : null}
+          {lesson.study_notes?.length ? (
+            <div className="story-study-notes">
+              <strong>{readerLabel(language, appLanguage, "studyNotes")}</strong>
+              <ul>{lesson.study_notes.map((note, index) => <li key={`study-note:${index}`}>{getLocalizedText(note, language, "")}</li>)}</ul>
+            </div>
+          ) : null}
+          {chapterLetters.length ? (
+            <div className="story-chapter-letters">
+              <strong>{readerLabel(language, appLanguage, "chapterLetters")}</strong>
+              <div className="story-letter-strip">
+                {chapterLetters.map((letter) => (
+                  <span className="story-letter-chip" key={letter.id} lang={targetLanguage} title={getLocalizedText(letter.names, language, letter.character)}>
+                    <strong>{letter.uppercase || letter.character}</strong>
+                    <small>{letter.lowercase || letter.character}</small>
+                  </span>
+                ))}
+              </div>
+            </div>
+          ) : null}
           {lesson.examples?.length ? (
             <div className="story-example-list">
               {lesson.examples.map((example) => (
@@ -180,6 +225,12 @@ function ChapterContent({ chapter, language, appLanguage, targetLanguage }: { ch
           <p>{getLocalizedText(chapter.mission, language, "")}</p>
         </section>
       ) : null}
+      {chapter.cliffhanger ? (
+        <section className="story-cliffhanger-card">
+          <div className="story-section-kicker">✧ {readerLabel(language, appLanguage, "nextClue")}</div>
+          <p>{getLocalizedText(chapter.cliffhanger, language, "")}</p>
+        </section>
+      ) : null}
     </div>
   );
 }
@@ -193,7 +244,12 @@ const READER_LABELS: Record<string, Record<string, string>> = {
     chapterStory: "Storia",
     chapterLesson: "Lezione",
     chapterMission: "Missione",
-    watchOut: "Attenzione"
+    watchOut: "Attenzione",
+    dialogue: "Dialogo",
+    speaker: "Voce",
+    studyNotes: "Per studiare meglio",
+    chapterLetters: "Lettere introdotte in questo capitolo",
+    nextClue: "La prossima traccia"
   },
   en: {
     chapterReaderTitle: "Chapter book",
@@ -203,12 +259,16 @@ const READER_LABELS: Record<string, Record<string, string>> = {
     chapterStory: "Story",
     chapterLesson: "Lesson",
     chapterMission: "Mission",
-    watchOut: "Watch out"
+    watchOut: "Watch out",
+    dialogue: "Dialogue",
+    speaker: "Speaker",
+    studyNotes: "Study notes",
+    chapterLetters: "Letters introduced in this chapter",
+    nextClue: "The next clue"
   }
 };
 
 function readerLabel(displayLanguage: string, appLanguage: string, key: string): string {
-  if (displayLanguage === appLanguage) return t(appLanguage, key);
   return READER_LABELS[displayLanguage]?.[key] ?? t(appLanguage, key);
 }
 

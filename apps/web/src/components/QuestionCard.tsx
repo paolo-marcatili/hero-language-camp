@@ -4,6 +4,7 @@ import { isLearningAudioPlaying, playLearningAudio, unlockAudio } from "../audio
 import { t } from "../i18n";
 import { QuestionTimer } from "./QuestionTimer";
 import { FitText } from "./FitText";
+import { publicUrl } from "../publicUrl";
 
 interface QuestionCardProps {
   question: TrainingQuestion;
@@ -265,7 +266,11 @@ export function QuestionCard({
       {narrationFailed ? <p className="audio-required-hint audio-retry-hint">{t(language, "narrationRetryHint")}</p> : null}
 
       <div className={question.kind === "letter" ? "prompt letter-prompt" : "prompt"} lang={targetLanguage}>
-        <FitText text={question.prompt} lang={targetLanguage} maxRem={question.kind === "letter" ? 5.6 : 3.2} minRem={question.kind === "letter" ? 2.1 : 1.05} />
+        {question.prompt_image ? (
+          <img className="question-prompt-image" src={publicUrl(question.prompt_image)} alt={question.prompt} />
+        ) : (
+          <FitText text={question.prompt} lang={targetLanguage} maxRem={question.kind === "letter" ? 5.6 : 3.2} minRem={question.kind === "letter" ? 2.1 : 1.05} />
+        )}
       </div>
       <p className="prompt-hint">{getPromptHint(question, language)}</p>
 

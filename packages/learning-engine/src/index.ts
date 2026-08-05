@@ -122,6 +122,8 @@ export interface TrainingQuestion {
   letter?: LetterItem;
   grammar?: GrammarItem;
   prompt: string;
+  /** Approved public image shown instead of answer-revealing emoji text. */
+  prompt_image?: string;
   prompt_hint: string;
   options: AnswerOption[];
   correct_option_id: string;
@@ -292,7 +294,7 @@ export function normalizeLearnerState(pack: LanguagePack, maybeState: unknown, h
 }
 
 export function getNextQuestion(pack: LanguagePack, state: LearnerState, baseLanguage = "it", focus: TrainingFocus = "vocabulary", selection: QuestionSelectionOptions = {}): TrainingQuestion {
-  if (focus === "vocabulary" && getLetterCandidatesForSelection(pack.letters ?? [], selection).length > 0 && shouldUseLetterQuestion(state, selection)) {
+  if (focus === "vocabulary" && getLetterCandidatesForSelection(pack.letters ?? [], selection).length > 0 && shouldUseLetterQuestion(state, selection, getLetterCandidatesForSelection(pack.letters ?? [], selection))) {
     return getLetterQuestion(pack, state, baseLanguage, selection);
   }
 
@@ -679,7 +681,6 @@ function getItemQuestion(pack: LanguagePack, state: LearnerState, baseLanguage: 
   const variant = getItemQuestionVariant(item, focus);
   const options = buildItemOptions(pack, item, distractors, baseLanguage, variant);
   const correctLabel = getCorrectItemOptionLabel(item, baseLanguage, variant);
-
   return {
     id: `${activityType}:${variant}:${item.id}:${Date.now()}:${Math.random().toString(16).slice(2)}`,
     kind: "item",
@@ -689,6 +690,7 @@ function getItemQuestion(pack: LanguagePack, state: LearnerState, baseLanguage: 
     variant,
     item,
     prompt: getItemPrompt(item, baseLanguage, focus, variant),
+    prompt_image: variant === "visual_to_target" ? getApprovedItemImage(item) : undefined,
     prompt_hint: getItemPromptHint(item, baseLanguage, focus, variant),
     options,
     correct_option_id: item.id,
@@ -864,20 +866,28 @@ function getGrammarQuestion(pack: LanguagePack, state: LearnerState, baseLanguag
     audio: grammar.audio
   };
 }
-function shouldUseLetterQuestion(state: LearnerState, selection: QuestionSelectionOptions): boolean {
+function shouldUseLetterQuestion(state: LearnerState, selection: QuestionSelectionOptions, letters: LetterItem[]): boolean {
   if (selection.includeLetters === false) return false;
   if (selection.includeLetters === true) return true;
   const stage = selection.stage ?? 0;
+  const hasUnseenCurrentStageLetter = letters.some(
+    (letter) => getContentStage(letter) === stage && (state.mastery_by_letter[letter.id]?.seen_count ?? 0) === 0
+  );
+  if (hasUnseenCurrentStageLetter) return true;
   const letterSeen = Object.values(state.mastery_by_letter).reduce((sum, entry) => sum + entry.seen_count, 0);
   if (stage === 0 && letterSeen < 18) return true;
   return Math.random() < (stage <= 2 ? 0.22 : 0.12);
 }
 
+function getApprovedItemImage(item: LearningItem): string | undefined {
+  return item.image_review_status === "approved" && item.image?.trim() ? item.image : undefined;
+}
 function getItemQuestionVariant(item: LearningItem, focus: TrainingFocus): QuestionVariant {
   if (focus === "comprehension") return "audio_to_base";
   if (focus === "pronunciation") return item.syllables?.length ? "syllable_match" : "transliteration_match";
   if (focus === "grammar") return "target_to_base";
-  // Ambiguous emoji prompts are disabled until curated pictures are available.
+  if (getApprovedItemImage(item) && Math.random() < 0.55) return "visual_to_target";
+  // Emoji metadata remains available in the dictionary, but never carries an answer in a quiz.
   return Math.random() < 0.35 ? "base_to_target" : "target_to_base";
 }
 
@@ -963,9 +973,17 @@ function chooseWeakestItem(pack: LanguagePack, state: LearnerState, selection: Q
 }
 
 function chooseWeakestLetter(letters: LetterItem[], state: LearnerState, selection: QuestionSelectionOptions): LetterItem {
+  const stage = selection.stage;
+  const introduced = stage === undefined ? letters : letters.filter((letter) => getContentStage(letter) <= stage);
+  const currentUnseen = stage === undefined
+    ? []
+    : introduced.filter((letter) => getContentStage(letter) === stage && (state.mastery_by_letter[letter.id]?.seen_count ?? 0) === 0);
+  if (currentUnseen.length > 0) return currentUnseen[Math.floor(Math.random() * currentUnseen.length)] ?? currentUnseen[0];
+
+  const introducedUnseen = introduced.filter((letter) => (state.mastery_by_letter[letter.id]?.seen_count ?? 0) === 0);
+  if (introducedUnseen.length > 0) return introducedUnseen[Math.floor(Math.random() * introducedUnseen.length)] ?? introducedUnseen[0];
+
   const source = chooseStagePool(letters, selection);
-  const unseen = source.filter((entry) => (state.mastery_by_letter[entry.id]?.seen_count ?? 0) === 0);
-  if (unseen.length > 0) return unseen[Math.floor(Math.random() * unseen.length)] ?? unseen[0];
   const sorted = [...source].sort((a, b) => compareMemoryScore(state.mastery_by_letter[a.id], state.mastery_by_letter[b.id]));
   const pool = sorted.slice(0, Math.min(8, sorted.length));
   return pool[Math.floor(Math.random() * pool.length)] ?? source[0] ?? letters[0];
