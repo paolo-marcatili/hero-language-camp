@@ -716,7 +716,8 @@ export default function App() {
         ...completedState,
         coins: completedState.coins + Math.max(0, completed.session.runCoins)
       };
-      const bonus = applyLabyrinthBonus(stateWithCaches, activeLabyrinthConfig);
+      // LEARNING_APP_RELEASE_AB_2026_08: pack-aware item bonuses
+      const bonus = applyLabyrinthBonus(stateWithCaches, activeLabyrinthConfig, pack);
       if (activeProfile) saveLearnerState(pack, activeProfile.id, bonus.state);
       setLearnerState(bonus.state);
       persistLabyrinthSession(null);
@@ -1070,6 +1071,7 @@ export default function App() {
         />
       ) : shopOpen ? (
         <ShopPanel
+          pack={pack}
           state={learnerState}
           language={baseLanguage}
           onStateChange={setLearnerState}
@@ -1644,7 +1646,8 @@ function getLabyrinthQuestionWithFallback(
 
 function applyLabyrinthBonus(
   initialState: LearnerState,
-  config: PackLabyrinthConfig
+  config: PackLabyrinthConfig,
+  pack: LanguagePack
 ): { state: LearnerState; coins: number; itemNameKey?: string } {
   const bonus = config.rewards.bonus;
   const noneWeight = Math.max(0, bonus.none_weight);
@@ -1672,7 +1675,8 @@ function applyLabyrinthBonus(
 
   const purchase = buyShopItem(
     { ...initialState, coins: initialState.coins + item.price },
-    item
+    item,
+    pack
   );
   if (!purchase.ok) return coinReward();
 

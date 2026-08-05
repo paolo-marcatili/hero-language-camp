@@ -252,9 +252,10 @@ export function AdminPanel({ pack, language, onMergeContribution, onExportPack, 
   return (
     <section className="admin-panel" role="dialog" aria-label={t(language, "admin")}>
       <div className="sheet-handle" />
-      <div className="panel-heading compact">
+      <div className="panel-heading compact panel-sticky-heading">
         <span>{t(language, "admin")}</span>
         <strong>{t(language, "adminTitle")}</strong>
+      <button type="button" className="panel-close-button" onClick={onClose} aria-label={t(language, "close")} title={t(language, "close")}>✕</button>
       </div>
       <p className="sheet-intro">{t(language, "adminIntro")}</p>
 

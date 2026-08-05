@@ -91,9 +91,10 @@ export function SettingsPanel({
   return (
     <section className="settings-panel" role="dialog" aria-label={t(language, "settings")}>
       <div className="sheet-handle" />
-      <div className="panel-heading compact">
+      <div className="panel-heading compact panel-sticky-heading">
         <span>{t(language, "settings")}</span>
         <strong>{t(language, "settingsTitle")}</strong>
+      <button type="button" className="panel-close-button" onClick={onClose} aria-label={t(language, "close")} title={t(language, "close")}>✕</button>
       </div>
 
       <div className="settings-section">
