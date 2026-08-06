@@ -34,6 +34,7 @@ import { InstallAppButton } from "./components/InstallAppButton";
 import { SettingsPanel } from "./components/SettingsPanel";
 import { ShopPanel } from "./components/ShopPanel";
 import { StoryPanel } from "./components/StoryPanel";
+import { StudyBook } from "./components/StudyBook";
 import { ParentProgressPanel } from "./components/ParentProgressPanel";
 import { DeviceViewport } from "./components/layout/DeviceViewport";
 import { SessionLayout } from "./components/game/SessionLayout";
@@ -1085,6 +1086,7 @@ export default function App() {
         <>
           <HeroStatsPanel state={learnerState} language={baseLanguage} statCap={getLevelStatCap(learnerState.level, pack)} />
           <StoryPanel pack={pack} state={learnerState} language={baseLanguage} />
+          <StudyBook pack={pack} state={learnerState} language={baseLanguage} />
         </>
       )}
     />
@@ -1109,11 +1111,11 @@ export default function App() {
               <InstallAppButton language={baseLanguage} />
               <button
                 type="button"
-                className="parent-progress-launcher"
+                className="icon-button parent-progress-button"
                 onClick={() => { setProgressOpen((open) => !open); setSettingsOpen(false); setProfileSwitcherOpen(false); setAdminOpen(false); setShopOpen(false); setTrainingMenuOpen(false); }}
                 aria-label={t(baseLanguage, "parentProgress")}
               >
-                <span aria-hidden="true">📊</span><span>{t(baseLanguage, "parentProgress")}</span>
+                📈
               </button>
               <button type="button" className="profile-pill" onClick={() => { setProfileSwitcherOpen((open) => !open); setSettingsOpen(false); setProgressOpen(false); setAdminOpen(false); setShopOpen(false); setTrainingMenuOpen(false); }}>{activeProfile.name}</button>
               <button type="button" className="icon-button" onClick={toggleAudio} aria-label={audioOn ? t(baseLanguage, "soundOn") : t(baseLanguage, "soundOff")}>

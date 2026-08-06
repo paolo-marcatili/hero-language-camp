@@ -3,7 +3,6 @@ import type { LanguagePack, StoryChapter, StoryMilestone } from "@hero-lang/cont
 import { getLocalizedText } from "@hero-lang/content-schema";
 import { getLevelConfig, type HeroStatKey, type LearnerState } from "@hero-lang/learning-engine";
 import { t } from "../i18n";
-import { StudyBook } from "./StudyBook";
 
 interface StoryPanelProps {
   pack: LanguagePack;
@@ -68,10 +67,7 @@ export function StoryPanel({ pack, state, language, alternateLanguage, alternate
               : getLocalizedText(currentChapter.mission, language, currentLevel?.title ?? "")}
           </div>
         </div>
-        {pack.pack_id === "hy-eastern-it" && pack.letters?.length ? (
-          <StudyBook pack={pack} state={state} language={language} />
-        ) : null}
-        <button
+<button
           type="button"
           className="chapter-open-button"
           onClick={() => setReaderOpen(true)}

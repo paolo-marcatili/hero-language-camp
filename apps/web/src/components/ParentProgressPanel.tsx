@@ -27,37 +27,46 @@ type CategoryMetric = {
   wrong: number;
 };
 
+type SessionTotals = {
+  vocabulary: number;
+  comprehension: number;
+  pronunciation: number;
+  grammar: number;
+};
+
 export function ParentProgressPanel({ pack, state, language, onClose }: Props) {
   const copy = progressCopy(language);
   const categories = buildCategories(pack, state, language, copy);
   const allEntries = categories.flatMap((category) => category.entries.map((entry) => ({ ...entry, categoryId: category.id })));
   const totalCorrect = categories.reduce((sum, category) => sum + category.correct, 0);
   const totalWrong = categories.reduce((sum, category) => sum + category.wrong, 0);
-  const accuracy = totalCorrect + totalWrong > 0 ? Math.round((totalCorrect / (totalCorrect + totalWrong)) * 100) : 0;
-  const overallMastery = Math.round(average(categories.map((category) => category.mastery)) * 100);
-  const introduced = categories.reduce((sum, category) => sum + category.total, 0);
+  const totalItems = categories.reduce((sum, category) => sum + category.total, 0);
   const attempted = categories.reduce((sum, category) => sum + category.attempted, 0);
   const masteredCount = categories.reduce((sum, category) => sum + category.mastered, 0);
+  const accuracy = totalCorrect + totalWrong > 0 ? Math.round((totalCorrect / (totalCorrect + totalWrong)) * 100) : 0;
+  const coverage = totalItems > 0 ? Math.round((attempted / totalItems) * 100) : 0;
+  const attemptedCategories = categories.filter((category) => category.attempted > 0);
+  const overallMastery = Math.round(average(attemptedCategories.map((category) => category.mastery)) * 100);
   const reviewDue = allEntries.filter((entry) => isReviewDue(entry.memory)).length;
   const commonMistakes = allEntries
     .filter((entry) => (entry.memory?.wrong_count ?? 0) > 0)
     .sort((left, right) => (right.memory?.wrong_count ?? 0) - (left.memory?.wrong_count ?? 0) || (left.memory?.mastery ?? 0) - (right.memory?.mastery ?? 0))
     .slice(0, 8);
-  const ranked = categories.filter((category) => category.attempted > 0).sort((left, right) => right.mastery - left.mastery);
+  const ranked = [...attemptedCategories].sort((left, right) => right.mastery - left.mastery);
   const strength = ranked[0];
   const support = ranked[ranked.length - 1];
-  const levelSessions = state.completed_training_sessions_by_level?.[String(state.level)] ?? {};
+  const sessions = allTimeSessions(state);
   const activityRows = pack.subject === "foundations"
     ? [
-        { icon: "🔤", label: copy.letters, value: levelSessions.vocabulary ?? 0 },
-        { icon: "📖", label: copy.reading, value: levelSessions.comprehension ?? 0 },
-        { icon: "🧮", label: copy.math, value: (levelSessions.grammar ?? 0) + (levelSessions.pronunciation ?? 0) }
+        { icon: "🔤", label: copy.decoding, value: sessions.vocabulary },
+        { icon: "📖", label: copy.reading, value: sessions.comprehension },
+        { icon: "🧮", label: copy.math, value: sessions.grammar + sessions.pronunciation }
       ]
     : [
-        { icon: "🧩", label: copy.vocabulary, value: levelSessions.vocabulary ?? 0 },
-        { icon: "👂", label: copy.comprehension, value: levelSessions.comprehension ?? 0 },
-        { icon: "🗣️", label: copy.pronunciation, value: levelSessions.pronunciation ?? 0 },
-        { icon: "📘", label: copy.grammar, value: levelSessions.grammar ?? 0 }
+        { icon: "🧩", label: copy.vocabulary, value: sessions.vocabulary },
+        { icon: "👂", label: copy.listening, value: sessions.comprehension },
+        { icon: "🗣️", label: copy.speakingPractice, value: sessions.pronunciation },
+        { icon: "📘", label: copy.grammar, value: sessions.grammar }
       ];
 
   return (
@@ -68,11 +77,12 @@ export function ParentProgressPanel({ pack, state, language, onClose }: Props) {
       </header>
       <p className="parent-progress-intro">{copy.intro}</p>
       <div className="parent-kpi-grid">
-        <Kpi label={copy.mastery} value={`${overallMastery}%`} detail={`${masteredCount}/${introduced} ${copy.mastered}`} />
+        <Kpi label={copy.courseCoverage} value={`${coverage}%`} detail={`${attempted}/${totalItems} ${copy.courseItemsPractised}`} />
+        <Kpi label={copy.mastery} value={`${overallMastery}%`} detail={`${masteredCount}/${attempted || 0} ${copy.masteredAmongPractised}`} />
         <Kpi label={copy.accuracy} value={`${accuracy}%`} detail={`${totalCorrect + totalWrong} ${copy.answers}`} />
-        <Kpi label={copy.introduced} value={String(introduced)} detail={`${attempted} ${copy.attempted}`} />
         <Kpi label={copy.reviewDue} value={String(reviewDue)} detail={copy.reviewDetail} />
       </div>
+      <p className="parent-metric-note">{copy.metricNote}</p>
       <div className="parent-dashboard-two-column">
         <section className="parent-progress-section parent-radar-card">
           <div className="parent-section-heading"><h3>{copy.strengthProfile}</h3><span>{copy.masteryScale}</span></div>
@@ -98,7 +108,7 @@ export function ParentProgressPanel({ pack, state, language, onClose }: Props) {
         </section>
       </div>
       <section className="parent-progress-section">
-        <div className="parent-section-heading"><h3>{copy.currentChapterActivity}</h3><span>{copy.sessions}</span></div>
+        <div className="parent-section-heading"><h3>{copy.practiceBalance}</h3><span>{copy.allLevels}</span></div>
         <div className="parent-session-bars">
           {activityRows.map((row) => <SessionBar key={row.label} icon={row.icon} label={row.label} value={row.value} />)}
         </div>
@@ -132,7 +142,7 @@ function Kpi({ label, value, detail }: { label: string; value: string; detail: s
 }
 
 function SessionBar({ icon, label, value }: { icon: string; label: string; value: number }) {
-  const width = Math.min(100, value * 20);
+  const width = value > 0 ? Math.max(8, Math.min(100, value * 12)) : 0;
   return <div className="parent-session-bar"><span>{icon} {label}</span><div><i style={{ width: `${width}%` }} /></div><strong>{value}</strong></div>;
 }
 
@@ -158,34 +168,29 @@ function RadarChart({ categories, label }: { categories: CategoryMetric[]; label
 
 function buildCategories(pack: LanguagePack, state: LearnerState, language: string, copy: ReturnType<typeof progressCopy>): CategoryMetric[] {
   const letters = (pack.letters ?? [])
-    .filter((entry) => stageOf(entry.tags ?? []) <= state.level)
     .map((entry) => ({ id: entry.id, label: `${entry.uppercase ?? entry.character} ${entry.lowercase ?? entry.character}`, memory: state.mastery_by_letter[entry.id] }));
   const words = pack.items
-    .filter((entry) => stageOf(entry.tags) <= state.level)
     .map((entry) => ({ id: entry.id, label: entry.target, memory: state.mastery_by_item[entry.id] }));
 
   if (pack.subject === "foundations") {
     const reading = (pack.reading_problems ?? [])
-      .filter((entry) => stageOf(entry.tags) <= state.level)
       .map((entry) => ({ id: entry.id, label: entry.text, memory: state.mastery_by_grammar[entry.id] }));
     const math = (pack.math_problems ?? [])
-      .filter((entry) => stageOf(entry.tags) <= state.level)
       .map((entry) => ({ id: entry.id, label: getLocalizedText(entry.prompt, language, entry.id), memory: state.mastery_by_grammar[entry.id] }));
     return [
-      category("letters", "🔤", copy.letters, letters),
+      category("decoding", "🔡", copy.decoding, letters),
       category("words", "📖", copy.words, words),
-      category("reading", "📝", copy.reading, reading),
+      category("reading", "📝", copy.readingComprehension, reading),
       category("math", "🧮", copy.math, math)
     ];
   }
 
   const grammar = (pack.grammar_items ?? [])
-    .filter((entry) => stageOf(entry.tags) <= state.level)
     .map((entry) => ({ id: entry.id, label: entry.target_sentence, memory: state.mastery_by_grammar[entry.id] }));
   return [
-    category("alphabet", "🔤", copy.alphabet, letters),
+    category("script-sounds", "🔡", copy.scriptAndSounds, letters),
     category("vocabulary", "🧩", copy.vocabulary, words),
-    category("grammar", "📘", copy.grammar, grammar)
+    category("grammar-sentences", "📘", copy.grammarAndSentences, grammar)
   ];
 }
 
@@ -198,7 +203,7 @@ function category(id: string, icon: string, label: string, entries: MemoryEntry[
     entries,
     total: entries.length,
     attempted: attemptedEntries.length,
-    mastered: entries.filter((entry) => mastered(entry.memory)).length,
+    mastered: attemptedEntries.filter((entry) => mastered(entry.memory)).length,
     mastery: average(attemptedEntries.map((entry) => entry.memory?.mastery ?? 0)),
     correct: entries.reduce((sum, entry) => sum + (entry.memory?.correct_count ?? 0), 0),
     wrong: entries.reduce((sum, entry) => sum + (entry.memory?.wrong_count ?? 0), 0)
@@ -219,16 +224,26 @@ function average(values: number[]): number {
   return values.length ? values.reduce((sum, value) => sum + value, 0) / values.length : 0;
 }
 
-function stageOf(tags: string[]): number {
-  const tag = tags.find((value) => value.startsWith("stage:"));
-  return tag ? Number(tag.slice(6)) || 0 : 0;
+function allTimeSessions(state: LearnerState): SessionTotals {
+  const totals: SessionTotals = { vocabulary: 0, comprehension: 0, pronunciation: 0, grammar: 0 };
+  for (const sessions of Object.values(state.completed_training_sessions_by_level ?? {})) {
+    totals.vocabulary += sessions.vocabulary ?? 0;
+    totals.comprehension += sessions.comprehension ?? 0;
+    totals.pronunciation += sessions.pronunciation ?? 0;
+    totals.grammar += sessions.grammar ?? 0;
+  }
+  totals.vocabulary = Math.max(totals.vocabulary, state.completed_training_sessions.vocabulary ?? 0);
+  totals.comprehension = Math.max(totals.comprehension, state.completed_training_sessions.comprehension ?? 0);
+  totals.pronunciation = Math.max(totals.pronunciation, state.completed_training_sessions.pronunciation ?? 0);
+  totals.grammar = Math.max(totals.grammar, state.completed_training_sessions.grammar ?? 0);
+  return totals;
 }
 
 function progressCopy(language: string) {
   if (language.startsWith("it")) return {
-    title: "Progressi del bambino", parentArea: "Area genitori", close: "Chiudi", intro: "Una panoramica leggibile dei progressi, dei punti di forza e di ciò che conviene ripassare insieme.", mastery: "Padronanza", accuracy: "Precisione", introduced: "Contenuti introdotti", reviewDue: "Da ripassare", mastered: "padroneggiati", answers: "risposte", attempted: "esercitati", reviewDetail: "elementi che richiedono attenzione", strengthProfile: "Punti di forza e debolezza", masteryScale: "Padronanza per area", learningAreas: "Aree di apprendimento", coverageAndMastery: "Copertura e padronanza", currentChapterActivity: "Attività nel capitolo attuale", sessions: "sessioni", commonMistakes: "Errori più frequenti", errors: "errori", noMistakes: "Non ci sono ancora errori ricorrenti.", howToHelp: "Come sostenere l'apprendimento", strength: "Punto di forza", focusNext: "Prossimo obiettivo", practiceSuggestion: "brevi esercizi frequenti e un ripasso ad alta voce possono aiutare.", notEnoughData: "Servono ancora alcune sessioni per individuare un andamento.", dataNote: "Le statistiche restano sul dispositivo e descrivono solo le attività svolte nell'app.", letters: "Lettere", words: "Parole", reading: "Lettura", math: "Matematica", alphabet: "Alfabeto", vocabulary: "Vocabolario", grammar: "Grammatica", comprehension: "Comprensione", pronunciation: "Pronuncia" };
+    title: "Progressi del bambino", parentArea: "Area genitori", close: "Chiudi", intro: "Una panoramica dell'intero percorso: ciò che è stato esercitato, i punti di forza, gli errori ricorrenti e cosa ripassare insieme.", mastery: "Padronanza", accuracy: "Precisione", courseCoverage: "Copertura del corso", reviewDue: "Da ripassare", masteredAmongPractised: "padroneggiati tra gli elementi esercitati", courseItemsPractised: "elementi del corso esercitati", answers: "risposte", attempted: "esercitati", reviewDetail: "elementi che richiedono attenzione", metricNote: "La copertura considera l'intero corso. La padronanza considera soltanto gli elementi già esercitati, così i contenuti futuri non abbassano artificialmente il risultato.", strengthProfile: "Profilo delle competenze", masteryScale: "Padronanza per area", learningAreas: "Aree di apprendimento", coverageAndMastery: "Copertura e padronanza", practiceBalance: "Equilibrio della pratica", allLevels: "tutti i livelli", commonMistakes: "Errori più frequenti", errors: "errori", noMistakes: "Non ci sono ancora errori ricorrenti.", howToHelp: "Come sostenere l'apprendimento", strength: "Punto di forza", focusNext: "Prossimo obiettivo", practiceSuggestion: "brevi esercizi frequenti e un ripasso ad alta voce possono aiutare.", notEnoughData: "Servono ancora alcune sessioni per individuare un andamento.", dataNote: "Le statistiche restano sul dispositivo e descrivono solo le attività svolte nell'app.", decoding: "Lettere e decodifica", words: "Parole", reading: "Lettura", readingComprehension: "Comprensione del testo", math: "Matematica", scriptAndSounds: "Scrittura e suoni", vocabulary: "Vocabolario", grammar: "Grammatica", grammarAndSentences: "Grammatica e frasi", listening: "Ascolto", speakingPractice: "Pratica dei suoni" };
   if (language.startsWith("da")) return {
-    title: "Barnets fremskridt", parentArea: "Forældreområde", close: "Luk", intro: "Et tydeligt overblik over fremskridt, styrker og det, I med fordel kan øve sammen.", mastery: "Mestring", accuracy: "Præcision", introduced: "Introduceret", reviewDue: "Klar til repetition", mastered: "mestret", answers: "svar", attempted: "øvet", reviewDetail: "emner der kræver opmærksomhed", strengthProfile: "Styrker og udfordringer", masteryScale: "Mestring efter område", learningAreas: "Læringsområder", coverageAndMastery: "Dækning og mestring", currentChapterActivity: "Aktivitet i dette kapitel", sessions: "sessioner", commonMistakes: "Hyppige fejl", errors: "fejl", noMistakes: "Der er endnu ingen tydelige gentagne fejl.", howToHelp: "Sådan kan I hjælpe", strength: "Styrke", focusNext: "Næste fokus", practiceSuggestion: "korte, hyppige øvelser og højtlæsning kan hjælpe.", notEnoughData: "Der skal lidt flere sessioner til for at se et mønster.", dataNote: "Statistikken bliver på enheden og beskriver kun aktiviteter i appen.", letters: "Bogstaver", words: "Ord", reading: "Læsning", math: "Matematik", alphabet: "Alfabet", vocabulary: "Ordforråd", grammar: "Grammatik", comprehension: "Forståelse", pronunciation: "Udtale" };
+    title: "Barnets fremskridt", parentArea: "Forældreområde", close: "Luk", intro: "Et overblik over hele forløbet: hvad der er øvet, styrker, tilbagevendende fejl og hvad I med fordel kan øve sammen.", mastery: "Mestring", accuracy: "Præcision", courseCoverage: "Kursusdækning", reviewDue: "Klar til repetition", masteredAmongPractised: "mestret blandt øvede emner", courseItemsPractised: "kursusemner øvet", answers: "svar", attempted: "øvet", reviewDetail: "emner der kræver opmærksomhed", metricNote: "Dækning bruger hele kurset. Mestring bruger kun emner, der allerede er øvet, så fremtidigt indhold ikke sænker resultatet kunstigt.", strengthProfile: "Kompetenceprofil", masteryScale: "Mestring efter område", learningAreas: "Læringsområder", coverageAndMastery: "Dækning og mestring", practiceBalance: "Balance i træningen", allLevels: "alle niveauer", commonMistakes: "Hyppige fejl", errors: "fejl", noMistakes: "Der er endnu ingen tydelige gentagne fejl.", howToHelp: "Sådan kan I hjælpe", strength: "Styrke", focusNext: "Næste fokus", practiceSuggestion: "korte, hyppige øvelser og højtlæsning kan hjælpe.", notEnoughData: "Der skal lidt flere sessioner til for at se et mønster.", dataNote: "Statistikken bliver på enheden og beskriver kun aktiviteter i appen.", decoding: "Bogstaver og afkodning", words: "Ord", reading: "Læsning", readingComprehension: "Læseforståelse", math: "Matematik", scriptAndSounds: "Skrift og lyd", vocabulary: "Ordforråd", grammar: "Grammatik", grammarAndSentences: "Grammatik og sætninger", listening: "Lytning", speakingPractice: "Lydtræning" };
   return {
-    title: "Child progress", parentArea: "Parent area", close: "Close", intro: "A clear overview of progress, strengths, and the areas worth practising together.", mastery: "Mastery", accuracy: "Accuracy", introduced: "Introduced", reviewDue: "Due for review", mastered: "mastered", answers: "answers", attempted: "practised", reviewDetail: "items needing attention", strengthProfile: "Strengths and weaknesses", masteryScale: "Mastery by area", learningAreas: "Learning areas", coverageAndMastery: "Coverage and mastery", currentChapterActivity: "Current chapter activity", sessions: "sessions", commonMistakes: "Common mistakes", errors: "errors", noMistakes: "No repeated mistake pattern is visible yet.", howToHelp: "How to support learning", strength: "Strength", focusNext: "Focus next", practiceSuggestion: "short, frequent practice and reading aloud can help.", notEnoughData: "A few more sessions are needed to identify a pattern.", dataNote: "These statistics remain on this device and describe only work completed in the app.", letters: "Letters", words: "Words", reading: "Reading", math: "Mathematics", alphabet: "Alphabet", vocabulary: "Vocabulary", grammar: "Grammar", comprehension: "Comprehension", pronunciation: "Pronunciation" };
+    title: "Child progress", parentArea: "Parent area", close: "Close", intro: "A whole-course overview of what has been practised, strengths, recurring mistakes, and what is worth reviewing together.", mastery: "Mastery", accuracy: "Accuracy", courseCoverage: "Course coverage", reviewDue: "Due for review", masteredAmongPractised: "mastered among practised items", courseItemsPractised: "course items practised", answers: "answers", attempted: "practised", reviewDetail: "items needing attention", metricNote: "Coverage uses the whole course. Mastery uses only items already practised, so future content does not artificially lower the score.", strengthProfile: "Skill profile", masteryScale: "Mastery by area", learningAreas: "Learning areas", coverageAndMastery: "Coverage and mastery", practiceBalance: "Practice balance", allLevels: "all levels", commonMistakes: "Common mistakes", errors: "errors", noMistakes: "No repeated mistake pattern is visible yet.", howToHelp: "How to support learning", strength: "Strength", focusNext: "Focus next", practiceSuggestion: "short, frequent practice and reading aloud can help.", notEnoughData: "A few more sessions are needed to identify a pattern.", dataNote: "These statistics remain on this device and describe only work completed in the app.", decoding: "Letters and decoding", words: "Words", reading: "Reading", readingComprehension: "Reading comprehension", math: "Mathematics", scriptAndSounds: "Script and sounds", vocabulary: "Vocabulary", grammar: "Grammar", grammarAndSentences: "Grammar and sentences", listening: "Listening", speakingPractice: "Sound practice" };
 }
