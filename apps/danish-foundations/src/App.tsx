@@ -100,7 +100,7 @@ import sentencesJsonl from "../../../content-packs/da-foundations/dictionary/sen
 import mathProblemsJsonl from "../../../content-packs/da-foundations/curriculum/math-problems.jsonl?raw";
 import readingProblemsJsonl from "../../../content-packs/da-foundations/curriculum/reading-problems.jsonl?raw";
 import instructionsJsonl from "../../../content-packs/da-foundations/curriculum/instructions.jsonl?raw";
-import { ParentProgressPanel } from "./components/ParentProgressPanel";
+import { ParentProgressPanel } from "../../web/src/components/ParentProgressPanel";
 import { useOfflineState } from "../../web/src/offline";
 import "../../web/src/App.css";
 
@@ -1119,8 +1119,13 @@ export default function App() {
             <div className="top-controls">
               <OfflineStatus state={offlineState} language={baseLanguage} />
               <InstallAppButton language={baseLanguage} />
-              <button type="button" className="icon-button" onClick={() => { setProgressOpen((open) => !open); setSettingsOpen(false); setProfileSwitcherOpen(false); setAdminOpen(false); setShopOpen(false); setTrainingMenuOpen(false); }} aria-label={t(baseLanguage, "parentProgress")}>
-                📊
+              <button
+                type="button"
+                className="parent-progress-launcher"
+                onClick={() => { setProgressOpen((open) => !open); setSettingsOpen(false); setProfileSwitcherOpen(false); setAdminOpen(false); setShopOpen(false); setTrainingMenuOpen(false); }}
+                aria-label={t(baseLanguage, "parentProgress")}
+              >
+                <span aria-hidden="true">📊</span><span>{t(baseLanguage, "parentProgress")}</span>
               </button>
               <button type="button" className="profile-pill" onClick={() => { setProfileSwitcherOpen((open) => !open); setSettingsOpen(false); setProgressOpen(false); setAdminOpen(false); setShopOpen(false); setTrainingMenuOpen(false); }}>{activeProfile.name}</button>
               <button type="button" className="icon-button" onClick={toggleAudio} aria-label={audioOn ? t(baseLanguage, "soundOn") : t(baseLanguage, "soundOff")}>

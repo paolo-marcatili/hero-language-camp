@@ -3,7 +3,7 @@ import type { LanguagePack, StoryChapter, StoryMilestone } from "@hero-lang/cont
 import { getLocalizedText } from "@hero-lang/content-schema";
 import { getLevelConfig, type HeroStatKey, type LearnerState } from "@hero-lang/learning-engine";
 import { t } from "../i18n";
-import { AlphabetAtlas } from "./AlphabetAtlas";
+import { StudyBook } from "./StudyBook";
 
 interface StoryPanelProps {
   pack: LanguagePack;
@@ -69,7 +69,7 @@ export function StoryPanel({ pack, state, language, alternateLanguage, alternate
           </div>
         </div>
         {pack.pack_id === "hy-eastern-it" && pack.letters?.length ? (
-          <AlphabetAtlas pack={pack} state={state} language={language === "it" ? "it" : "en"} />
+          <StudyBook pack={pack} state={state} language={language} />
         ) : null}
         <button
           type="button"

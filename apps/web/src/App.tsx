@@ -34,6 +34,7 @@ import { InstallAppButton } from "./components/InstallAppButton";
 import { SettingsPanel } from "./components/SettingsPanel";
 import { ShopPanel } from "./components/ShopPanel";
 import { StoryPanel } from "./components/StoryPanel";
+import { ParentProgressPanel } from "./components/ParentProgressPanel";
 import { DeviceViewport } from "./components/layout/DeviceViewport";
 import { SessionLayout } from "./components/game/SessionLayout";
 import { HomeDashboard } from "./components/game/HomeDashboard";
@@ -188,6 +189,7 @@ export default function App() {
   const [shopOpen, setShopOpen] = useState(false);
   const [adminOpen, setAdminOpen] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
+  const [progressOpen, setProgressOpen] = useState(false);
   const [profileSwitcherOpen, setProfileSwitcherOpen] = useState(false);
   const [pendingEncounter, setPendingEncounter] = useState<PendingEncounter | null>(null);
   const [audioOn, setAudioOn] = useState(() => isAudioEnabled());
@@ -214,7 +216,7 @@ export default function App() {
   const labyrinthActive = labyrinthOpen && Boolean(labyrinthSession && activeLabyrinthConfig);
   const sessionActive = Boolean(trainingSession || fightSession || labyrinthActive);
   const pathBusy = sessionActive || Boolean(pendingEncounter);
-  const overlaysBusy = pathBusy || adminOpen || settingsOpen || profileSwitcherOpen || Boolean(fightGate) || Boolean(labyrinthResult);
+  const overlaysBusy = pathBusy || adminOpen || settingsOpen || progressOpen || profileSwitcherOpen || Boolean(fightGate) || Boolean(labyrinthResult);
   const currentQuestion = trainingSession?.question ?? fightSession?.question ?? (labyrinthActive ? labyrinthSession?.currentQuestion : null) ?? null;
   const baseLanguage = getDefaultBaseLanguage(pack);
   const trainingOptions = useMemo(() => getTrainingOptions(pack), [pack]);
@@ -1105,11 +1107,19 @@ export default function App() {
             <div className="top-controls">
               <OfflineStatus state={offlineState} language={baseLanguage} />
               <InstallAppButton language={baseLanguage} />
-              <button type="button" className="profile-pill" onClick={() => { setProfileSwitcherOpen((open) => !open); setSettingsOpen(false); setAdminOpen(false); setShopOpen(false); setTrainingMenuOpen(false); }}>{activeProfile.name}</button>
+              <button
+                type="button"
+                className="parent-progress-launcher"
+                onClick={() => { setProgressOpen((open) => !open); setSettingsOpen(false); setProfileSwitcherOpen(false); setAdminOpen(false); setShopOpen(false); setTrainingMenuOpen(false); }}
+                aria-label={t(baseLanguage, "parentProgress")}
+              >
+                <span aria-hidden="true">📊</span><span>{t(baseLanguage, "parentProgress")}</span>
+              </button>
+              <button type="button" className="profile-pill" onClick={() => { setProfileSwitcherOpen((open) => !open); setSettingsOpen(false); setProgressOpen(false); setAdminOpen(false); setShopOpen(false); setTrainingMenuOpen(false); }}>{activeProfile.name}</button>
               <button type="button" className="icon-button" onClick={toggleAudio} aria-label={audioOn ? t(baseLanguage, "soundOn") : t(baseLanguage, "soundOff")}>
                 {audioOn ? "🔊" : "🔇"}
               </button>
-              <button type="button" className="icon-button" onClick={() => { setSettingsOpen((open) => !open); setProfileSwitcherOpen(false); setAdminOpen(false); setShopOpen(false); setTrainingMenuOpen(false); }} aria-label={t(baseLanguage, "settings")}>
+              <button type="button" className="icon-button" onClick={() => { setSettingsOpen((open) => !open); setProgressOpen(false); setProfileSwitcherOpen(false); setAdminOpen(false); setShopOpen(false); setTrainingMenuOpen(false); }} aria-label={t(baseLanguage, "settings")}>
                 ⚙️
               </button>
             </div>
@@ -1140,7 +1150,7 @@ export default function App() {
 
           {notice && !pathBusy ? <NoticePanel language={baseLanguage} notice={notice} onClose={() => setNotice(null)} /> : null}
 
-          {profileSwitcherOpen && !pathBusy && !adminOpen && !settingsOpen ? (
+          {profileSwitcherOpen && !pathBusy && !adminOpen && !settingsOpen && !progressOpen ? (
             <ProfileSwitcher language={baseLanguage} profiles={profiles} activeProfileId={activeProfileId} onChoose={setActiveProfileId} onClose={() => setProfileSwitcherOpen(false)} />
           ) : null}
 
@@ -1154,6 +1164,9 @@ export default function App() {
             />
           ) : null}
 
+          {progressOpen && !pathBusy && !adminOpen && !settingsOpen ? (
+            <ParentProgressPanel pack={pack} state={learnerState} language={baseLanguage} onClose={() => setProgressOpen(false)} />
+          ) : null}
           {settingsOpen && !pathBusy && !adminOpen ? (
             <SettingsPanel
               pack={pack}
