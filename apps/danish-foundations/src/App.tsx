@@ -1119,12 +1119,18 @@ export default function App() {
             <div className="top-controls">
               <OfflineStatus state={offlineState} language={baseLanguage} />
               <InstallAppButton language={baseLanguage} />
-              <button type="button" className="icon-button" onClick={() => { setProgressOpen((open) => !open); setSettingsOpen(false); setProfileSwitcherOpen(false); setAdminOpen(false); setShopOpen(false); setTrainingMenuOpen(false); }} aria-label={t(baseLanguage, "parentProgress")}>
-                📊
-              </button>
               <button type="button" className="profile-pill" onClick={() => { setProfileSwitcherOpen((open) => !open); setSettingsOpen(false); setProgressOpen(false); setAdminOpen(false); setShopOpen(false); setTrainingMenuOpen(false); }}>{activeProfile.name}</button>
               <button type="button" className="icon-button" onClick={toggleAudio} aria-label={audioOn ? t(baseLanguage, "soundOn") : t(baseLanguage, "soundOff")}>
                 {audioOn ? "🔊" : "🔇"}
+              </button>
+              <button
+                type="button"
+                className="icon-button parent-progress-button"
+                onClick={() => { setProgressOpen((open) => !open); setSettingsOpen(false); setProfileSwitcherOpen(false); setAdminOpen(false); setShopOpen(false); setTrainingMenuOpen(false); }}
+                aria-label={t(baseLanguage, "parentProgress")}
+                title={t(baseLanguage, "parentProgress")}
+              >
+                📈
               </button>
               <button type="button" className="icon-button" onClick={() => { setSettingsOpen((open) => !open); setProgressOpen(false); setProfileSwitcherOpen(false); setAdminOpen(false); setShopOpen(false); setTrainingMenuOpen(false); }} aria-label={t(baseLanguage, "settings")}>
                 ⚙️
