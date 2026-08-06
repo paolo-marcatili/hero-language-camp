@@ -1,0 +1,108 @@
+.app-shell-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding:
+    max(1rem, env(safe-area-inset-top))
+    max(1rem, env(safe-area-inset-right))
+    max(1rem, env(safe-area-inset-bottom))
+    max(1rem, env(safe-area-inset-left));
+  background: rgb(8 14 28 / 72%);
+  overscroll-behavior: contain;
+}
+
+.app-shell-modal__dialog {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  width: min(58rem, 100%);
+  max-height: calc(100dvh - 2rem);
+  overflow: hidden;
+  border-radius: 1rem;
+  background: var(--panel-background, #fff);
+  color: var(--panel-foreground, #172033);
+  box-shadow: 0 1.25rem 4rem rgb(0 0 0 / 35%);
+  outline: none;
+}
+
+.app-shell-modal__header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 3.5rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgb(23 32 51 / 12%);
+  background: inherit;
+}
+
+.app-shell-modal__title {
+  min-width: 0;
+  margin: 0;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+}
+
+.app-shell-modal__close {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: rgb(23 32 51 / 9%);
+  color: inherit;
+  font: inherit;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.app-shell-modal__content {
+  min-height: 0;
+  overflow: auto;
+  padding: 1rem;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.app-shell-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.app-shell-top-bar__leading,
+.app-shell-top-bar__trailing,
+.app-shell-top-bar__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.app-shell-top-bar__actions {
+  margin-inline-start: auto;
+}
+
+.app-shell-top-bar__action {
+  display: grid;
+  place-items: center;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  padding: 0.45rem;
+  border: 0;
+  border-radius: 999px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.app-shell-top-bar__action:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
