@@ -106,6 +106,10 @@ export function PhaserWorld(props: PhaserWorldProps) {
       backgroundColor: "#83dbff",
       pixelArt: false,
       roundPixels: true,
+      fps: {
+        // World motion is delta-based; keep real frame time after tab/focus changes.
+        smoothStep: false
+      },
       physics: { default: "arcade" },
       scale: {
         mode: Phaser.Scale.FIT,

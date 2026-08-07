@@ -34,7 +34,6 @@ import { InstallAppButton } from "../../web/src/components/InstallAppButton";
 import { SettingsPanel } from "../../web/src/components/SettingsPanel";
 import { ShopPanel } from "../../web/src/components/ShopPanel";
 import { StoryPanel } from "../../web/src/components/StoryPanel";
-import { StudyBook } from "../../web/src/components/StudyBook";
 import { DeviceViewport } from "../../web/src/components/layout/DeviceViewport";
 import { SessionLayout } from "../../web/src/components/game/SessionLayout";
 import { HomeDashboard } from "../../web/src/components/game/HomeDashboard";
@@ -1120,7 +1119,6 @@ export default function App() {
         <>
           <HeroStatsPanel state={learnerState} language={baseLanguage} statCap={getLevelStatCap(learnerState.level, pack)} />
           <StoryPanel pack={pack} state={learnerState} language={baseLanguage} alternateLanguage="it" alternateLanguageLabel="Italiano" />
-          <StudyBook pack={pack} state={learnerState} language={baseLanguage} />
         </>
       )}
     />

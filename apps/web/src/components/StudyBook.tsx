@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { createPortal } from "react-dom";
 import { getLocalizedText, type LanguagePack, type LetterItem, type StoryChapter } from "@hero-lang/content-schema";
 import type { LearnerState } from "@hero-lang/learning-engine";
 import { playLearningAudio, unlockAudio } from "../audio";
@@ -193,7 +194,7 @@ export function StudyBook({ pack, state, language }: StudyBookProps) {
         <span aria-hidden="true">📚</span>
         <span>{copy.open}</span>
       </button>
-      {open ? (
+      {open && typeof document !== "undefined" ? createPortal(
         <div className="story-reader-overlay study-book-overlay" role="dialog" aria-modal="true" aria-label={copy.title}>
           <div className="story-reader-window study-book-window">
             <header className="study-book-header">
@@ -328,7 +329,8 @@ export function StudyBook({ pack, state, language }: StudyBookProps) {
               </div>
             </main>
           </div>
-        </div>
+        </div>,
+        document.body
       ) : null}
     </>
   );

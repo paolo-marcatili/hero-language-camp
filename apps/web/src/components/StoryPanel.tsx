@@ -68,9 +68,7 @@ export function StoryPanel({ pack, state, language, alternateLanguage, alternate
               : getLocalizedText(currentChapter.mission, language, currentLevel?.title ?? "")}
           </div>
         </div>
-        {pack.pack_id === "hy-eastern-it" && pack.letters?.length ? (
-          <StudyBook pack={pack} state={state} language={language} />
-        ) : null}
+        <StudyBook pack={pack} state={state} language={language} />
         <button
           type="button"
           className="chapter-open-button"

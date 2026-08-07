@@ -253,18 +253,18 @@ def awareness_problem(identifier: str, domain: str, stage: int, prompt: str, ans
 
 
 SHAPES = [
-    (0, "Hvilken figur er rund?", "⚪", ["⚪", "🔺", "🟦"], "🔷"),
-    (0, "Hvilken figur har tre sider?", "🔺", ["🔺", "⚪", "🟦"], "🔷"),
-    (1, "Hvilken figur har fire lige lange sider?", "🟦", ["🟦", "🔺", "⚪"], "🔷"),
-    (1, "Find cirklen.", "⚪", ["⚪", "🔺", "🟦"], "🔷"),
-    (2, "Find trekanten.", "🔺", ["🔺", "🟦", "⚪"], "🔷"),
-    (2, "Find firkanten.", "🟦", ["🟦", "⚪", "🔺"], "🔷"),
-    (3, "Hvilken figur har ingen hjørner?", "⚪", ["⚪", "🔺", "🟦"], "🔷"),
-    (3, "Hvilken figur har tre hjørner?", "🔺", ["🔺", "⚪", "🟦"], "🔷"),
+    (0, "Hvilken figur er rund?", "⚪", ["⚪", "🔺", "🟦"], "?"),
+    (0, "Hvilken figur har tre sider?", "🔺", ["🔺", "⚪", "🟦"], "3"),
+    (1, "Hvilken figur har fire lige lange sider?", "🟦", ["🟦", "🔺", "⚪"], "4"),
+    (1, "Find cirklen.", "⚪", ["⚪", "🔺", "🟦"], "?"),
+    (2, "Find trekanten.", "🔺", ["🔺", "🟦", "⚪"], "?"),
+    (2, "Find firkanten.", "🟦", ["🟦", "⚪", "🔺"], "?"),
+    (3, "Hvilken figur har ingen hjørner?", "⚪", ["⚪", "🔺", "🟦"], "0"),
+    (3, "Hvilken figur har tre hjørner?", "🔺", ["🔺", "⚪", "🟦"], "3"),
     (4, "Hvilken figur ligner en dør?", "▭", ["▭", "⚪", "🔺"], "🚪"),
     (4, "Hvilken figur ligner et hjul?", "⚪", ["⚪", "▭", "🔺"], "🛞"),
-    (5, "Hvilken figur har fire hjørner og er længere end den er høj?", "▭", ["▭", "🟦", "⚪"], "📐"),
-    (5, "Hvilken figur har fire lige lange sider?", "🟦", ["🟦", "▭", "🔺"], "📐"),
+    (5, "Hvilken figur har fire hjørner og er længere end den er høj?", "▭", ["▭", "🟦", "⚪"], "4"),
+    (5, "Hvilken figur har fire lige lange sider?", "🟦", ["🟦", "▭", "🔺"], "4"),
 ]
 
 PATTERNS = [
