@@ -34,6 +34,7 @@ import { InstallAppButton } from "./components/InstallAppButton";
 import { SettingsPanel } from "./components/SettingsPanel";
 import { ShopPanel } from "./components/ShopPanel";
 import { StoryPanel } from "./components/StoryPanel";
+import { StudyBook } from "./components/StudyBook";
 import { ParentProgressPanel } from "./components/ParentProgressPanel";
 import { DeviceViewport } from "./components/layout/DeviceViewport";
 import { SessionLayout } from "./components/game/SessionLayout";
@@ -65,6 +66,7 @@ import {
   loadChildProfiles,
   loadActiveProfileId,
   clearLabyrinthSession,
+  getLearnerStateStorageKey,
   loadLabyrinthSession,
   loadLearnerState,
   resetLearnerState,
@@ -180,11 +182,14 @@ export default function App() {
   const [pack, setPack] = useState<LanguagePack>(() => loadLocalPack(starterPack));
   const validation = useMemo(() => validateLanguagePack(pack), [pack]);
   const [profiles, setProfilesState] = useState<ChildProfile[]>(() => loadChildProfiles());
-  const [activeProfileId, setActiveProfileIdState] = useState(() => loadActiveProfileId(loadChildProfiles()));
+  const [activeProfileId, setActiveProfileIdState] = useState(() => loadActiveProfileId(profiles));
   const activeProfile = profiles.find((profile) => profile.id === activeProfileId) ?? profiles[0];
   const [settings, setSettingsState] = useState<AppSettings>(() => loadAppSettings(pack));
   const offlineState = useOfflineState();
   const [learnerState, setLearnerState] = useState<LearnerState>(() => loadLearnerState(pack, activeProfile ?? profiles[0]));
+  const learnerStateStorageKey = activeProfile ? getLearnerStateStorageKey(pack, activeProfile.id) : "";
+  const learnerStateScope = activeProfile ? `${learnerStateStorageKey}:${pack.version}` : "";
+  const learnerStateOwnerRef = useRef(learnerStateScope);
   const [trainingMenuOpen, setTrainingMenuOpen] = useState(false);
   const [shopOpen, setShopOpen] = useState(false);
   const [adminOpen, setAdminOpen] = useState(false);
@@ -226,19 +231,21 @@ export default function App() {
   const maxMistakesForTraining = getMaxMistakesForTrainingCompletion(pack);
   const currentEnemy = getEnemyForLevel(pack, learnerState.level);
   const currentLevelConfig = getLevelConfig(pack, learnerState.level);
-  const encounter: WorldEncounter | null = pendingEncounter
-    ? pendingEncounter.type === "fight"
-      ? { type: "fight", enemy: pendingEncounter.enemy }
-      : pendingEncounter.type === "training"
-        ? { type: "training", focus: pendingEncounter.focus }
-        : { type: "labyrinth" }
-    : fightSession
-      ? { type: "fight", enemy: fightSession.enemy }
-      : trainingSession
-        ? { type: "training", focus: trainingSession.focus }
-        : labyrinthActive
-          ? { type: "labyrinth" }
-          : null;
+  const encounter = useMemo<WorldEncounter | null>(() => (
+    pendingEncounter
+      ? pendingEncounter.type === "fight"
+        ? { type: "fight", enemy: pendingEncounter.enemy }
+        : pendingEncounter.type === "training"
+          ? { type: "training", focus: pendingEncounter.focus }
+          : { type: "labyrinth" }
+      : fightSession
+        ? { type: "fight", enemy: fightSession.enemy }
+        : trainingSession
+          ? { type: "training", focus: trainingSession.focus }
+          : labyrinthActive
+            ? { type: "labyrinth" }
+            : null
+  ), [pendingEncounter, fightSession?.enemy, trainingSession?.focus, labyrinthActive]);
   const encounterMode = pendingEncounter ? "approaching" : sessionActive ? "active" : null;
 
   useEffect(() => installAudioUnlock(), []);
@@ -257,10 +264,9 @@ export default function App() {
   }, [pack]);
 
   useEffect(() => {
-    if (!activeProfile) return;
+    if (!activeProfile || learnerStateOwnerRef.current !== learnerStateScope) return;
     saveLearnerState(pack, activeProfile.id, learnerState);
-  }, [pack, activeProfile?.id, learnerState]);
-
+  }, [pack, activeProfile?.id, learnerStateScope, learnerState]);
   useEffect(() => {
     if (!labyrinthConfig || labyrinthSession?.configId === labyrinthConfig.id) return;
     setLearnerState((previous) => ensureLabyrinthDoorRequirement(previous, labyrinthConfig.id));
@@ -280,12 +286,9 @@ export default function App() {
 
   useEffect(() => {
     if (!activeProfile) return;
-    setLearnerState((previous) => normalizeLearnerState(pack, previous, activeProfile.name));
-  }, [pack.pack_id, pack.version]);
-
-  useEffect(() => {
-    if (!activeProfile) return;
     const savedLearner = loadLearnerState(pack, activeProfile);
+    learnerStateOwnerRef.current = learnerStateScope;
+    setLearnerState(savedLearner);
     const stored = loadLabyrinthSession(pack, activeProfile.id);
     const config = getStoredLabyrinthConfig(pack, stored, savedLearner.level);
     const restored = config && stored
@@ -295,8 +298,27 @@ export default function App() {
     setLabyrinthSession(restored);
     setLabyrinthOpen(false);
     setLabyrinthResult(null);
-  }, [activeProfileId, pack.pack_id, pack.version]);
-
+  }, [learnerStateScope]);
+  useEffect(() => {
+    if (!activeProfile || !learnerStateStorageKey) return;
+    const synchronizeVisibleIdleState = () => {
+      if (document.visibilityState !== "visible" || pathBusy) return;
+      const savedLearner = loadLearnerState(pack, activeProfile);
+      learnerStateOwnerRef.current = learnerStateScope;
+      setLearnerState((current) => JSON.stringify(current) === JSON.stringify(savedLearner) ? current : savedLearner);
+    };
+    const onStorage = (event: StorageEvent) => {
+      if (event.key === learnerStateStorageKey) synchronizeVisibleIdleState();
+    };
+    window.addEventListener("storage", onStorage);
+    window.addEventListener("focus", synchronizeVisibleIdleState);
+    document.addEventListener("visibilitychange", synchronizeVisibleIdleState);
+    return () => {
+      window.removeEventListener("storage", onStorage);
+      window.removeEventListener("focus", synchronizeVisibleIdleState);
+      document.removeEventListener("visibilitychange", synchronizeVisibleIdleState);
+    };
+  }, [pack, activeProfile, learnerStateScope, learnerStateStorageKey, pathBusy]);
   useEffect(() => {
     resetLearningAudioState();
     if (!currentQuestion || !audioOn) return;
@@ -350,6 +372,7 @@ export default function App() {
     saveActiveProfileId(profileId);
     if (profile) {
       const nextLearner = loadLearnerState(pack, profile);
+      learnerStateOwnerRef.current = `${getLearnerStateStorageKey(pack, profile.id)}:${pack.version}`;
       setLearnerState(nextLearner);
       const stored = loadLabyrinthSession(pack, profile.id);
       const config = getStoredLabyrinthConfig(pack, stored, nextLearner.level);
@@ -1085,6 +1108,7 @@ export default function App() {
         <>
           <HeroStatsPanel state={learnerState} language={baseLanguage} statCap={getLevelStatCap(learnerState.level, pack)} />
           <StoryPanel pack={pack} state={learnerState} language={baseLanguage} />
+          <StudyBook pack={pack} state={learnerState} language={baseLanguage} />
         </>
       )}
     />
@@ -1107,17 +1131,18 @@ export default function App() {
             <div className="top-controls">
               <OfflineStatus state={offlineState} language={baseLanguage} />
               <InstallAppButton language={baseLanguage} />
-              <button
-                type="button"
-                className="parent-progress-launcher"
-                onClick={() => { setProgressOpen((open) => !open); setSettingsOpen(false); setProfileSwitcherOpen(false); setAdminOpen(false); setShopOpen(false); setTrainingMenuOpen(false); }}
-                aria-label={t(baseLanguage, "parentProgress")}
-              >
-                <span aria-hidden="true">📊</span><span>{t(baseLanguage, "parentProgress")}</span>
-              </button>
               <button type="button" className="profile-pill" onClick={() => { setProfileSwitcherOpen((open) => !open); setSettingsOpen(false); setProgressOpen(false); setAdminOpen(false); setShopOpen(false); setTrainingMenuOpen(false); }}>{activeProfile.name}</button>
               <button type="button" className="icon-button" onClick={toggleAudio} aria-label={audioOn ? t(baseLanguage, "soundOn") : t(baseLanguage, "soundOff")}>
                 {audioOn ? "🔊" : "🔇"}
+              </button>
+              <button
+                type="button"
+                className="icon-button"
+                onClick={() => { setProgressOpen((open) => !open); setSettingsOpen(false); setProfileSwitcherOpen(false); setAdminOpen(false); setShopOpen(false); setTrainingMenuOpen(false); }}
+                aria-label={t(baseLanguage, "parentProgress")}
+                title={t(baseLanguage, "parentProgress")}
+              >
+                📊
               </button>
               <button type="button" className="icon-button" onClick={() => { setSettingsOpen((open) => !open); setProgressOpen(false); setProfileSwitcherOpen(false); setAdminOpen(false); setShopOpen(false); setTrainingMenuOpen(false); }} aria-label={t(baseLanguage, "settings")}>
                 ⚙️

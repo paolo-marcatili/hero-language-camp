@@ -172,10 +172,14 @@ export function saveAppSettings(settings: AppSettings): void {
   }
 }
 
+export function getLearnerStateStorageKey(pack: LanguagePack, profileId: string): string {
+  return `${STATE_KEY_PREFIX}:${pack.pack_id}:${profileId}`;
+}
+
 export function loadLearnerState(pack: LanguagePack, profile: ChildProfile): LearnerState {
   if (typeof window === "undefined") return createInitialLearnerState(pack, profile.name);
 
-  const scopedKey = `${STATE_KEY_PREFIX}:${pack.pack_id}:${profile.id}`;
+  const scopedKey = getLearnerStateStorageKey(pack, profile.id);
   const raw = window.localStorage.getItem(scopedKey)
     ?? LEGACY_STATE_KEYS.map((prefix) => window.localStorage.getItem(`${prefix}:${pack.pack_id}`)).find(Boolean)
     ?? null;
@@ -191,14 +195,19 @@ export function loadLearnerState(pack: LanguagePack, profile: ChildProfile): Lea
 
 export function saveLearnerState(pack: LanguagePack, profileId: string, state: LearnerState): void {
   if (typeof window === "undefined") return;
-  window.localStorage.setItem(`${STATE_KEY_PREFIX}:${pack.pack_id}:${profileId}`, JSON.stringify(state));
+  const key = getLearnerStateStorageKey(pack, profileId);
+  const serialized = JSON.stringify(state);
+  try {
+    if (window.localStorage.getItem(key) !== serialized) {
+      window.localStorage.setItem(key, serialized);
+    }
+  } catch {
+    // Keep the active session usable if storage is unavailable or full.
+  }
 }
-
 export function resetLearnerState(pack: LanguagePack, profile: ChildProfile): LearnerState {
   const fresh = createInitialLearnerState(pack, profile.name);
-  if (typeof window !== "undefined") {
-    window.localStorage.setItem(`${STATE_KEY_PREFIX}:${pack.pack_id}:${profile.id}`, JSON.stringify(fresh));
-  }
+  saveLearnerState(pack, profile.id, fresh);
   return fresh;
 }
 

@@ -66,14 +66,43 @@ const FOCUS_STAT: Record<TrainingFocus, HeroStatKey> = {
 };
 
 const NUMBER_WORDS = ["nul", "en", "to", "tre", "fire", "fem", "seks", "syv", "otte", "ni", "ti", "elleve", "tolv", "tretten", "fjorten", "femten", "seksten", "sytten", "atten", "nitten", "tyve"] as const;
-
+interface ReadingCurriculum {
+  items: LearningItem[];
+  readingProblems: FoundationsReadingProblem[];
+  readingProblemChance: number;
+}
+function getReadingCurriculum(pack: LanguagePack, selection: QuestionSelectionOptions): ReadingCurriculum {
+  const items = filterItems(pack.items, selection);
+  const readingProblems = filterReadingProblems(pack.reading_problems ?? [], selection);
+  const stage = selection.stage;
+  if (stage === undefined || stage >= 3) {
+    return {
+      items,
+      readingProblems,
+      readingProblemChance: stage !== undefined && stage >= 10 ? 0.72 : stage !== undefined && stage >= 5 ? 0.58 : 0
+    };
+  }
+  const initialSoundProblems = readingProblems.filter((problem) => problem.domain === "initial_sound");
+  if (stage === 0) {
+    return { items: [], readingProblems: initialSoundProblems, readingProblemChance: 1 };
+  }
+  const twoLetterItems = items.filter((item) => (item.graphemes?.length || [...item.target].length) <= 2);
+  return {
+    items: twoLetterItems,
+    readingProblems: initialSoundProblems,
+    readingProblemChance: stage === 1 ? 0.7 : 0.45
+  };
+}
 export function hasEligibleQuestion(
   pack: LanguagePack,
   focus: TrainingFocus,
   selection: QuestionSelectionOptions = {}
 ): boolean {
   if (focus === "vocabulary") return filterLetters(pack.letters ?? [], selection).length >= 2;
-  if (focus === "comprehension") return filterItems(pack.items, selection).length >= 1 || filterReadingProblems(pack.reading_problems ?? [], selection).length >= 1;
+  if (focus === "comprehension") {
+    const curriculum = getReadingCurriculum(pack, selection);
+    return curriculum.items.length >= 1 || curriculum.readingProblems.length >= 1;
+  }
   const domains = focus === "grammar"
     ? new Set(["counting", "number_match", "number_order", "comparison", "shape", "pattern", "sorting", "measurement"])
     : new Set(["addition", "subtraction", "number_bond", "story_problem"]);
@@ -177,11 +206,8 @@ function getReadingQuestion(
   language: string,
   selection: QuestionSelectionOptions
 ): TrainingQuestion {
-  const items = filterItems(pack.items, selection);
-  const readingProblems = filterReadingProblems(pack.reading_problems ?? [], selection);
+  const { items, readingProblems, readingProblemChance } = getReadingCurriculum(pack, selection);
   const stage = selection.stage ?? 0;
-  const readingProblemChance = stage >= 10 ? 0.72 : stage >= 5 ? 0.58 : 0;
-
   if (readingProblems.length > 0 && (items.length === 0 || Math.random() < readingProblemChance)) {
     const problem = chooseCurriculumValue(
       readingProblems,

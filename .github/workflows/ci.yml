@@ -16,11 +16,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22.12.0
+          cache: npm
       - name: Install dependencies
-        run: npm install
-      - name: Validate content and typecheck
-        run: npm run check
-      - name: Build web app
-        run: npm run build
+        run: npm ci
+      - name: Verify both applications
+        run: npm run verify:local
       - name: Audit runtime dependencies
         run: npm audit --omit=dev --audit-level=moderate

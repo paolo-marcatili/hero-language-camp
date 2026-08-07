@@ -61,7 +61,8 @@
     "content:expand:danish:e": "python3 tools/expand-danish-phase-e.py",
     "content:sync-danish": "node tools/sync-content-pack.mjs content-packs/da-foundations apps/danish-foundations/public/content-packs/da-foundations",
     "content:audio:danish:integrate": "node tools/integrate-danish-audio.mjs",
-    "build:site": "node tools/build-unified-site.mjs"
+    "build:site": "node tools/build-unified-site.mjs",
+    "verify:local": "npm run check && npm run check:danish && npm run build:site"
   },
   "engines": {
     "node": ">=20.19.0",

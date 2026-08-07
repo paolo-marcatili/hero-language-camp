@@ -57,7 +57,7 @@ labyrinths:
       cache_coins_min: 3
       cache_coins_max: 7
       reveal_radius: 3
-    hearts: 3
+    hearts: 2
     semantic_tags:
       - "encounter:reading"
     rewards:
@@ -92,7 +92,7 @@ labyrinths:
       cache_coins_min: 3
       cache_coins_max: 7
       reveal_radius: 3
-    hearts: 3
+    hearts: 2
     semantic_tags:
       - "encounter:reading"
       - "encounter:math"

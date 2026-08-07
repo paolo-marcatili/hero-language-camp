@@ -1,7 +1,7 @@
 questions_per_training: 8
 timer_seconds: 15
 training_completion:
-  max_mistakes: 3
+  max_mistakes: 2
 training_options:
   - focus: vocabulary
     stat: strength

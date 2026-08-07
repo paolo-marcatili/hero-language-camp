@@ -13,13 +13,14 @@ const COPY = {
   it: {
     open: "Studio",
     kicker: "Riferimento",
-    title: "Quaderno di studio armeno",
-    subtitle: "Lettere, suoni, grammatica, esempi e difficoltà dei capitoli già incontrati.",
+    title: "Quaderno di studio",
+    subtitle: "Un breve riepilogo di lettere, suoni, concetti ed esempi già incontrati.",
     close: "Chiudi il quaderno di studio",
     current: "Capitolo attuale",
     previous: "Capitolo studiato",
-    concepts: "argomenti disponibili",
+    concepts: "argomenti visti finora",
     letters: "lettere introdotte",
+    digest: "Riepilogo rapido",
     objectives: "Obiettivi",
     explanation: "Concetto",
     studyNotes: "Per studiare meglio",
@@ -28,25 +29,26 @@ const COPY = {
     chapterLetters: "Lettere di questo capitolo",
     letterName: "Nome",
     sound: "Suono",
-    approximation: "Confronto indicativo con l'italiano",
+    approximation: "Confronto fonetico indicativo",
     mastered: "Consolidata",
     practising: "In esercizio",
     unseen: "Non ancora esercitata",
     playName: "Ascolta il nome",
     playSound: "Ascolta il suono",
     soundMissing: "Suono isolato non ancora disponibile",
-    reviewNote: "Le somiglianze con l'italiano sono indicazioni pratiche e richiedono revisione madrelingua."
+    reviewNote: "Le indicazioni fonetiche sono approssimazioni pratiche; le registrazioni restano il riferimento principale."
   },
   en: {
     open: "Study",
     kicker: "Reference",
-    title: "Armenian study book",
-    subtitle: "Letters, sounds, grammar, examples, and difficulties from chapters already encountered.",
+    title: "Study book",
+    subtitle: "A brief digest of letters, sounds, concepts, and examples encountered so far.",
     close: "Close the study book",
     current: "Current chapter",
     previous: "Studied chapter",
-    concepts: "available topics",
+    concepts: "topics seen so far",
     letters: "introduced letters",
+    digest: "Quick digest",
     objectives: "Objectives",
     explanation: "Concept",
     studyNotes: "Study notes",
@@ -55,14 +57,42 @@ const COPY = {
     chapterLetters: "Letters in this chapter",
     letterName: "Name",
     sound: "Sound",
-    approximation: "Indicative Italian sound comparison",
+    approximation: "Indicative sound comparison",
     mastered: "Mastered",
     practising: "Practising",
     unseen: "Not practised yet",
     playName: "Play name",
     playSound: "Play sound",
     soundMissing: "Isolated sound not available yet",
-    reviewNote: "Italian comparisons are practical approximations and still require native-speaker review."
+    reviewNote: "Sound comparisons are practical approximations; recordings remain the primary pronunciation guide."
+  },
+  da: {
+    open: "Studiebog",
+    kicker: "Opslag",
+    title: "Studiebog",
+    subtitle: "Et kort overblik over bogstaver, lyde, begreber og eksempler, du allerede har mødt.",
+    close: "Luk studiebogen",
+    current: "Nuværende kapitel",
+    previous: "Tidligere kapitel",
+    concepts: "emner set indtil nu",
+    letters: "introducerede bogstaver",
+    digest: "Kort opsummering",
+    objectives: "Mål",
+    explanation: "Begreb",
+    studyNotes: "Husk",
+    examples: "Eksempler",
+    watchOut: "Vær opmærksom",
+    chapterLetters: "Bogstaver i dette kapitel",
+    letterName: "Navn",
+    sound: "Lyd",
+    approximation: "Lydhjælp",
+    mastered: "Sikker",
+    practising: "Øver",
+    unseen: "Ikke øvet endnu",
+    playName: "Afspil navn",
+    playSound: "Afspil lyd",
+    soundMissing: "Den isolerede lyd er ikke tilgængelig endnu",
+    reviewNote: "Brug optagelserne som den vigtigste hjælp til udtalen."
   }
 } as const;
 
@@ -87,14 +117,13 @@ function letterProgress(letter: LetterItem, state: LearnerState): "mastered" | "
 }
 
 export function StudyBook({ pack, state, language }: StudyBookProps) {
-  const displayLanguage = language.startsWith("it") ? "it" : "en";
+  const displayLanguage = language.startsWith("da") ? "da" : language.startsWith("it") ? "it" : "en";
   const copy = COPY[displayLanguage];
   const [open, setOpen] = useState(false);
   const [expandedTopicId, setExpandedTopicId] = useState<string | undefined>();
   const [playingId, setPlayingId] = useState<string | null>(null);
-
   const availableChapters = useMemo(
-    () => (pack.story?.chapters ?? [])
+    () => [...(pack.story?.chapters ?? [])]
       .filter((chapter) => chapterLevel(chapter) <= state.level)
       .sort((left, right) => chapterLevel(right) - chapterLevel(left)),
     [pack.story?.chapters, state.level]
@@ -106,7 +135,17 @@ export function StudyBook({ pack, state, language }: StudyBookProps) {
     () => (pack.letters ?? []).filter((letter) => letterStage(letter) <= state.level),
     [pack.letters, state.level]
   );
-
+  const conceptDigest = useMemo(
+    () => availableChapters
+      .map((chapter) => getLocalizedText(
+        chapter.lesson?.title,
+        displayLanguage,
+        getLocalizedText(chapter.summary, displayLanguage, "")
+      ).trim())
+      .filter((value, index, values) => Boolean(value) && values.indexOf(value) === index)
+      .slice(0, 6),
+    [availableChapters, displayLanguage]
+  );
   useEffect(() => {
     if (currentChapter?.id) setExpandedTopicId(currentChapter.id);
   }, [currentChapter?.id]);
@@ -147,8 +186,7 @@ export function StudyBook({ pack, state, language }: StudyBookProps) {
     }
   }
 
-  if (pack.pack_id !== "hy-eastern-it" || availableChapters.length === 0) return null;
-
+  if (availableChapters.length === 0) return null;
   return (
     <>
       <button type="button" className="study-book-open-button" onClick={() => setOpen(true)}>
@@ -156,23 +194,30 @@ export function StudyBook({ pack, state, language }: StudyBookProps) {
         <span>{copy.open}</span>
       </button>
       {open ? (
-        <div className="study-book-overlay" role="dialog" aria-modal="true" aria-label={copy.title}>
-          <header className="study-book-header">
-            <div>
-              <p className="study-book-kicker">{copy.kicker}</p>
-              <h2>{copy.title}</h2>
-              <p>{copy.subtitle}</p>
-            </div>
-            <button type="button" className="study-book-close" onClick={() => setOpen(false)} aria-label={copy.close}>
-              <span aria-hidden="true">×</span>
-            </button>
-          </header>
-          <main className="study-book-scroll">
-            <section className="study-book-summary" aria-label={copy.title}>
-              <div><strong>{availableChapters.length}</strong><span>{copy.concepts}</span></div>
-              <div><strong>{introducedLetters.length}</strong><span>{copy.letters}</span></div>
-            </section>
-            <div className="study-topic-list">
+        <div className="story-reader-overlay study-book-overlay" role="dialog" aria-modal="true" aria-label={copy.title}>
+          <div className="story-reader-window study-book-window">
+            <header className="study-book-header">
+              <div>
+                <p className="study-book-kicker">{copy.kicker}</p>
+                <h2>{copy.title}</h2>
+                <p>{copy.subtitle}</p>
+              </div>
+              <button type="button" className="study-book-close" onClick={() => setOpen(false)} aria-label={copy.close}>
+                <span aria-hidden="true">×</span>
+              </button>
+            </header>
+            <main className="study-book-scroll">
+              <section className="study-book-summary" aria-label={copy.title}>
+                <div><strong>{availableChapters.length}</strong><span>{copy.concepts}</span></div>
+                <div><strong>{introducedLetters.length}</strong><span>{copy.letters}</span></div>
+              </section>
+              {conceptDigest.length ? (
+                <section className="study-book-digest" aria-label={copy.digest}>
+                  <h3>{copy.digest}</h3>
+                  <ul>{conceptDigest.map((concept) => <li key={concept}>{concept}</li>)}</ul>
+                </section>
+              ) : null}
+              <div className="study-topic-list">
               {availableChapters.map((chapter) => {
                 const expanded = expandedTopicId === chapter.id;
                 const isCurrent = chapter.id === currentChapter?.id;
@@ -279,9 +324,10 @@ export function StudyBook({ pack, state, language }: StudyBookProps) {
                     ) : null}
                   </article>
                 );
-              })}
-            </div>
-          </main>
+                })}
+              </div>
+            </main>
+          </div>
         </div>
       ) : null}
     </>
