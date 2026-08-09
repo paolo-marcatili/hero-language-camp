@@ -1118,7 +1118,7 @@ export default function App() {
       ) : (
         <>
           <HeroStatsPanel state={learnerState} language={baseLanguage} statCap={getLevelStatCap(learnerState.level, pack)} />
-          <StoryPanel pack={pack} state={learnerState} language={baseLanguage} alternateLanguage="it" alternateLanguageLabel="Italiano" />
+          <StoryPanel key={`${pack.pack_id}:${pack.version}:${learnerState.level}`} pack={pack} state={learnerState} language={baseLanguage} alternateLanguage="it" alternateLanguageLabel="Italiano" />
         </>
       )}
     />

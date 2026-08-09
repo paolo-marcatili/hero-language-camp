@@ -4,6 +4,7 @@ import { getLocalizedText } from "@hero-lang/content-schema";
 import { getLevelConfig, type HeroStatKey, type LearnerState } from "@hero-lang/learning-engine";
 import { t } from "../i18n";
 import { StudyBook } from "./StudyBook";
+import { getStoryChapterProgress, getStoryChapterUnlockLevel } from "../gameConfig";
 
 interface StoryPanelProps {
   pack: LanguagePack;
@@ -18,18 +19,14 @@ export function StoryPanel({ pack, state, language, alternateLanguage, alternate
   const [readerOpen, setReaderOpen] = useState(false);
   const [readerLanguage, setReaderLanguage] = useState(language);
   const story = pack.story;
-  const availableChapters = useMemo(
-    () => (story?.chapters ?? []).filter((chapter) => chapter.minimum_level === undefined || state.level >= chapter.minimum_level),
-    [story?.chapters, state.level]
-  );
+  const chapterProgress = useMemo(() => getStoryChapterProgress(pack, state.level), [pack, state.level]);
+  const availableChapters = chapterProgress.unlockedChapters;
   const currentLevel = getLevelConfig(pack, state.level);
-  const currentChapter = availableChapters.find((chapter) => chapter.id === currentLevel?.chapter_id)
-    ?? availableChapters[availableChapters.length - 1];
+  const currentChapter = chapterProgress.currentChapter;
   const [expandedChapterId, setExpandedChapterId] = useState<string | undefined>(currentChapter?.id);
-
   useEffect(() => {
-    if (currentChapter?.id) setExpandedChapterId(currentChapter.id);
-  }, [currentChapter?.id]);
+    setExpandedChapterId(currentChapter?.id);
+  }, [state.level, currentChapter?.id]);
 
   useEffect(() => {
     if (readerOpen) setReaderLanguage(language);
@@ -141,7 +138,7 @@ function getLetterStageForChapter(letter: { tags?: string[] }): number {
 
 function ChapterContent({ chapter, language, appLanguage, targetLanguage, pack }: { chapter: StoryChapter; language: string; appLanguage: string; targetLanguage: string; pack: LanguagePack }) {
   const lesson = chapter.lesson;
-  const chapterLetters = (pack.letters ?? []).filter((letter) => getLetterStageForChapter(letter) === (chapter.minimum_level ?? 0));
+  const chapterLetters = (pack.letters ?? []).filter((letter) => getLetterStageForChapter(letter) === getStoryChapterUnlockLevel(pack, chapter));
   return (
     <div className="story-chapter-content">
       {chapter.fiction ? (

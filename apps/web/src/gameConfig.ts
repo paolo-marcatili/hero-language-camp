@@ -1,4 +1,4 @@
-import type { LanguagePack, PackEnemy, PackLevel, PackTrainingOption } from "@hero-lang/content-schema";
+import type { LanguagePack, PackEnemy, PackLevel, PackTrainingOption, StoryChapter } from "@hero-lang/content-schema";
 import type { CombatBreakdown, HeroStatKey, HeroStats, ShopItem, TrainingFocus } from "@hero-lang/learning-engine";
 import { estimateHeroDamage, getLevelConfig, getLevelStatCap, getLevelTrainingSessions } from "@hero-lang/learning-engine";
 
@@ -90,6 +90,47 @@ export interface FightGateResult {
   ok: boolean;
   level: PackLevel | undefined;
   requirements: FightGateRequirement[];
+}
+
+export interface StoryChapterProgress {
+  unlockedChapters: StoryChapter[];
+  currentChapter?: StoryChapter;
+}
+
+/**
+ * A chapter explicitly linked from levels.yaml unlocks at that level. The
+ * chapter's minimum_level remains the fallback for optional/unmapped chapters.
+ */
+export function getStoryChapterUnlockLevel(pack: LanguagePack, chapter: StoryChapter): number {
+  const mappedLevel = (pack.levels ?? []).find((level) => level.chapter_id === chapter.id);
+  return mappedLevel?.number ?? chapter.minimum_level ?? 0;
+}
+
+/** Keep Story and Study Book on one level-to-chapter progression rule. */
+export function getStoryChapterProgress(pack: LanguagePack, learnerLevel: number): StoryChapterProgress {
+  const chapters = pack.story?.chapters ?? [];
+  if (chapters.length === 0) return { unlockedChapters: [] };
+
+  const level = Math.max(0, Math.floor(learnerLevel));
+  const sourceOrder = new Map(chapters.map((chapter, index) => [chapter.id, index]));
+  const unlockedChapters = chapters
+    .filter((chapter) => getStoryChapterUnlockLevel(pack, chapter) <= level)
+    .slice()
+    .sort((left, right) => {
+      const unlockDifference = getStoryChapterUnlockLevel(pack, left) - getStoryChapterUnlockLevel(pack, right);
+      if (unlockDifference !== 0) return unlockDifference;
+      return (sourceOrder.get(left.id) ?? 0) - (sourceOrder.get(right.id) ?? 0);
+    });
+
+  const currentLevel = getLevelConfig(pack, level);
+  const mappedCurrentChapter = currentLevel?.chapter_id
+    ? chapters.find((chapter) => chapter.id === currentLevel.chapter_id)
+    : undefined;
+  const currentChapter = mappedCurrentChapter && getStoryChapterUnlockLevel(pack, mappedCurrentChapter) <= level
+    ? mappedCurrentChapter
+    : unlockedChapters[unlockedChapters.length - 1];
+
+  return { unlockedChapters, currentChapter };
 }
 
 export const DEFAULT_QUESTIONS_PER_TRAINING = 10;

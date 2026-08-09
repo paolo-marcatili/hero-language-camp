@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import { createPortal } from "react-dom";
-import { getLocalizedText, type LanguagePack, type LetterItem, type StoryChapter } from "@hero-lang/content-schema";
+import { getLocalizedText, type LanguagePack, type LetterItem } from "@hero-lang/content-schema";
 import type { LearnerState } from "@hero-lang/learning-engine";
 import { playLearningAudio, unlockAudio } from "../audio";
+import { getStoryChapterProgress, getStoryChapterUnlockLevel } from "../gameConfig";
 
 type StudyBookProps = {
   pack: LanguagePack;
@@ -102,9 +103,6 @@ function letterStage(letter: LetterItem): number {
   return tag ? Number(tag.slice(6)) : 0;
 }
 
-function chapterLevel(chapter: StoryChapter): number {
-  return chapter.minimum_level ?? 0;
-}
 
 function paragraphs(value: string): string[] {
   return value.split(/\n{2,}/).map((part) => part.trim()).filter(Boolean);
@@ -123,15 +121,9 @@ export function StudyBook({ pack, state, language }: StudyBookProps) {
   const [open, setOpen] = useState(false);
   const [expandedTopicId, setExpandedTopicId] = useState<string | undefined>();
   const [playingId, setPlayingId] = useState<string | null>(null);
-  const availableChapters = useMemo(
-    () => [...(pack.story?.chapters ?? [])]
-      .filter((chapter) => chapterLevel(chapter) <= state.level)
-      .sort((left, right) => chapterLevel(right) - chapterLevel(left)),
-    [pack.story?.chapters, state.level]
-  );
-  const currentLevel = pack.levels?.find((level) => level.number === state.level);
-  const currentChapter = availableChapters.find((chapter) => chapter.id === currentLevel?.chapter_id)
-    ?? availableChapters[0];
+  const chapterProgress = useMemo(() => getStoryChapterProgress(pack, state.level), [pack, state.level]);
+  const availableChapters = useMemo(() => [...chapterProgress.unlockedChapters].reverse(), [chapterProgress.unlockedChapters]);
+  const currentChapter = chapterProgress.currentChapter;
   const introducedLetters = useMemo(
     () => (pack.letters ?? []).filter((letter) => letterStage(letter) <= state.level),
     [pack.letters, state.level]
@@ -148,8 +140,8 @@ export function StudyBook({ pack, state, language }: StudyBookProps) {
     [availableChapters, displayLanguage]
   );
   useEffect(() => {
-    if (currentChapter?.id) setExpandedTopicId(currentChapter.id);
-  }, [currentChapter?.id]);
+    setExpandedTopicId(currentChapter?.id);
+  }, [state.level, currentChapter?.id]);
 
   useEffect(() => {
     if (!open) return undefined;
@@ -223,7 +215,7 @@ export function StudyBook({ pack, state, language }: StudyBookProps) {
                 const expanded = expandedTopicId === chapter.id;
                 const isCurrent = chapter.id === currentChapter?.id;
                 const lesson = chapter.lesson;
-                const letters = (pack.letters ?? []).filter((letter) => letterStage(letter) === chapterLevel(chapter));
+                const letters = (pack.letters ?? []).filter((letter) => letterStage(letter) === getStoryChapterUnlockLevel(pack, chapter));
                 return (
                   <article className={`study-topic-card${expanded ? " expanded" : ""}${isCurrent ? " current" : ""}`} key={chapter.id}>
                     <button
