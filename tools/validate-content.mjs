@@ -144,6 +144,38 @@ function validateLanguagePack(value) {
     if (!Array.isArray(instruction.tags)) errors.push(`${path}.tags must be an array.`);
   }
 
+  // Levels reference Story chapters, so a silently truncated YAML array is an error.
+  const storyChapterIds = new Set();
+  const storyChapters = isObject(value.story) && Array.isArray(value.story.chapters)
+    ? value.story.chapters
+    : [];
+  if (value.story !== undefined && !isObject(value.story)) {
+    errors.push("story must be an object.");
+  } else if (isObject(value.story) && !Array.isArray(value.story.chapters)) {
+    errors.push("story.chapters must be an array.");
+  }
+  for (const [index, chapter] of storyChapters.entries()) {
+    const path = `story.chapters[${index}]`;
+    if (!isObject(chapter)) {
+      errors.push(`${path} must be an object.`);
+      continue;
+    }
+    requireString(chapter, `${path}.id`, errors, "id");
+    if (typeof chapter.id === "string") {
+      if (storyChapterIds.has(chapter.id)) errors.push(`Duplicate story chapter id: ${chapter.id}`);
+      storyChapterIds.add(chapter.id);
+    }
+    if (!isObject(chapter.title)) errors.push(`${path}.title must be localized text.`);
+    if (chapter.lesson !== undefined && !isObject(chapter.lesson)) errors.push(`${path}.lesson must be an object.`);
+    if (isObject(chapter.lesson) && chapter.lesson.dialogue !== undefined && !Array.isArray(chapter.lesson.dialogue)) errors.push(`${path}.lesson.dialogue must be an array.`);
+  }
+  for (const [index, level] of (Array.isArray(value.levels) ? value.levels : []).entries()) {
+    if (!isObject(level) || typeof level.chapter_id !== "string") continue;
+    if (!storyChapterIds.has(level.chapter_id)) {
+      errors.push(`levels[${index}].chapter_id references unknown story chapter: ${level.chapter_id}`);
+    }
+  }
+
   for (const [index, level] of (value.levels ?? []).entries()) {
     if (!isObject(level)) { errors.push(`levels[${index}] must be an object.`); continue; }
     if (typeof level.number !== "number") errors.push(`levels[${index}].number must be a number.`);

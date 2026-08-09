@@ -85,6 +85,13 @@ function parseBlock(lines, start, indent) {
   return parseObject(lines, start, indent);
 }
 
+// Parse nested content at the indentation actually used by its first line.
+function parseNestedBlock(lines, start, parentIndent) {
+  const next = lines[start];
+  if (!next || next.indent <= parentIndent) return [{}, start];
+  return parseBlock(lines, start, next.indent);
+}
+
 function parseArray(lines, start, indent) {
   const result = [];
   let index = start;
@@ -93,33 +100,41 @@ function parseArray(lines, start, indent) {
     if (line.indent !== indent || !line.text.trimStart().startsWith("- ")) break;
     const rest = line.text.trimStart().slice(2).trim();
     if (!rest) {
-      const [child, next] = parseBlock(lines, index + 1, indent + 2);
-      result.push(child); index = next; continue;
+      const [child, next] = parseNestedBlock(lines, index + 1, indent);
+      result.push(child);
+      index = next;
+      continue;
     }
     const kv = splitKeyValue(rest);
     if (kv) {
       const item = {};
       const [key, valueText] = kv;
       if (valueText === "") {
-        const [child, next] = parseBlock(lines, index + 1, indent + 2);
-        item[key] = child; index = next;
+        const [child, next] = parseNestedBlock(lines, index + 1, indent + 2);
+        item[key] = child;
+        index = next;
       } else {
-        item[key] = scalar(valueText); index += 1;
+        item[key] = scalar(valueText);
+        index += 1;
       }
       while (index < lines.length && lines[index].indent === indent + 2 && !lines[index].text.trimStart().startsWith("- ")) {
         const childKv = splitKeyValue(lines[index].text.trim());
         if (!childKv) break;
         const [childKey, childValueText] = childKv;
         if (childValueText === "") {
-          const [childValue, next] = parseBlock(lines, index + 1, indent + 4);
-          item[childKey] = childValue; index = next;
+          const [childValue, next] = parseNestedBlock(lines, index + 1, indent + 2);
+          item[childKey] = childValue;
+          index = next;
         } else {
-          item[childKey] = scalar(childValueText); index += 1;
+          item[childKey] = scalar(childValueText);
+          index += 1;
         }
       }
-      result.push(item); continue;
+      result.push(item);
+      continue;
     }
-    result.push(scalar(rest)); index += 1;
+    result.push(scalar(rest));
+    index += 1;
   }
   return [result, index];
 }
@@ -134,10 +149,12 @@ function parseObject(lines, start, indent) {
     if (!kv) break;
     const [key, valueText] = kv;
     if (valueText === "") {
-      const [child, next] = parseBlock(lines, index + 1, indent + 2);
-      result[key] = child; index = next;
+      const [child, next] = parseNestedBlock(lines, index + 1, indent);
+      result[key] = child;
+      index = next;
     } else {
-      result[key] = scalar(valueText); index += 1;
+      result[key] = scalar(valueText);
+      index += 1;
     }
   }
   return [result, index];

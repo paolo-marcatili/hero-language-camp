@@ -6,14 +6,14 @@ export const WORLD = {
   width: 960,
   height: 540,
   groundTopY: 318,
-  walkY: 427,
+  walkY: 457,
   heroX: 245,
   encounterX: 690,
   heroScale: 1.34,
   monsterScale: 1.35,
   stationScale: 1.35,
   companionScale: 0.48,
-  companionOffsetX: -92,
+  companionOffsetX: -122,
   companionOffsetY: -10,
   speedMult: 1
 } as const;
@@ -492,7 +492,7 @@ export const WORLD_OBJECT_LAYERS = [
     id: "behindHeroLarge",
     anchorLayerId: "layer-06-path-ground",
     depth: DEPTH.largeObjectsBehindHero,
-    groundY: WORLD.walkY - 38,
+    groundY: WORLD.walkY - 58,
     count: 2,
     kinds: [
       "largePine",
@@ -520,7 +520,7 @@ export const WORLD_OBJECT_LAYERS = [
     id: "pathBack",
     anchorLayerId: "layer-06-path-ground",
     depth: DEPTH.pathBackObjects,
-    groundY: WORLD.walkY - 25,
+    groundY: WORLD.walkY - 45,
     count: 2,
     kinds: [
       "log",
@@ -548,7 +548,7 @@ export const WORLD_OBJECT_LAYERS = [
     id: "foreground",
     anchorLayerId: "layer-06-path-ground",
     depth: DEPTH.foregroundObjects,
-    groundY: WORLD.walkY + 35,
+    groundY: WORLD.walkY + 75,
     count: 2,
     kinds: [
       "frontGrass",

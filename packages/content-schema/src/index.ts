@@ -617,6 +617,17 @@ function parseYamlBlock(lines: Array<{ indent: number; text: string }>, start: n
   return parseYamlObject(lines, start, indent);
 }
 
+/** Parse nested YAML at the indentation actually used by its first line. */
+function parseNestedYamlBlock(
+  lines: Array<{ indent: number; text: string }>,
+  start: number,
+  parentIndent: number
+): [unknown, number] {
+  const next = lines[start];
+  if (!next || next.indent <= parentIndent) return [{}, start];
+  return parseYamlBlock(lines, start, next.indent);
+}
+
 function parseYamlArray(lines: Array<{ indent: number; text: string }>, start: number, indent: number): [unknown[], number] {
   const result: unknown[] = [];
   let index = start;
@@ -625,7 +636,7 @@ function parseYamlArray(lines: Array<{ indent: number; text: string }>, start: n
     if (line.indent < indent || line.indent !== indent || !line.text.trimStart().startsWith("- ")) break;
     const rest = line.text.trimStart().slice(2).trim();
     if (!rest) {
-      const [child, next] = parseYamlBlock(lines, index + 1, indent + 2);
+      const [child, next] = parseNestedYamlBlock(lines, index + 1, indent);
       result.push(child);
       index = next;
       continue;
@@ -635,7 +646,7 @@ function parseYamlArray(lines: Array<{ indent: number; text: string }>, start: n
       const [key, valueText] = keyValue;
       const item: Record<string, unknown> = {};
       if (valueText === "") {
-        const [child, next] = parseYamlBlock(lines, index + 1, indent + 2);
+        const [child, next] = parseNestedYamlBlock(lines, index + 1, indent + 2);
         item[key] = child;
         index = next;
       } else {
@@ -647,7 +658,7 @@ function parseYamlArray(lines: Array<{ indent: number; text: string }>, start: n
         if (!pair) break;
         const [childKey, childValueText] = pair;
         if (childValueText === "") {
-          const [childValue, next] = parseYamlBlock(lines, index + 1, indent + 4);
+          const [childValue, next] = parseNestedYamlBlock(lines, index + 1, indent + 2);
           item[childKey] = childValue;
           index = next;
         } else {
@@ -674,7 +685,7 @@ function parseYamlObject(lines: Array<{ indent: number; text: string }>, start: 
     if (!pair) break;
     const [key, valueText] = pair;
     if (valueText === "") {
-      const [child, next] = parseYamlBlock(lines, index + 1, indent + 2);
+      const [child, next] = parseNestedYamlBlock(lines, index + 1, indent);
       result[key] = child;
       index = next;
     } else {
@@ -949,34 +960,33 @@ export function validateLanguagePack(pack: unknown): ValidationResult {
 
   const story = isObject(pack.story) ? pack.story : undefined;
   const storyChapters = story && Array.isArray(story.chapters) ? story.chapters : [];
-  if (storyChapters.length > 0) {
-    const chapterIds = new Set<string>();
-    for (const [index, chapter] of storyChapters.entries()) {
-      const path = `story.chapters[${index}]`;
-      if (!isObject(chapter)) { errors.push(`${path} must be an object.`); continue; }
-      requireString(chapter, "id", errors, path);
-      if (typeof chapter.id === "string") {
-        if (chapterIds.has(chapter.id)) errors.push(`${path}.id must be unique: ${chapter.id}.`);
-        chapterIds.add(chapter.id);
-      }
-      if (!isObject(chapter.title)) errors.push(`${path}.title must be localized text.`);
-      if (chapter.minimum_level !== undefined && (!Number.isInteger(chapter.minimum_level) || Number(chapter.minimum_level) < 0)) errors.push(`${path}.minimum_level must be a non-negative integer.`);
-      if (chapter.lesson !== undefined) {
-        if (!isObject(chapter.lesson)) errors.push(`${path}.lesson must be an object.`);
-        else {
-          if (!isObject(chapter.lesson.title)) errors.push(`${path}.lesson.title must be localized text.`);
-          if (!isObject(chapter.lesson.explanation)) errors.push(`${path}.lesson.explanation must be localized text.`);
-          if (chapter.lesson.examples !== undefined && !Array.isArray(chapter.lesson.examples)) errors.push(`${path}.lesson.examples must be an array.`);
-        }
-      }
+  if (story && !Array.isArray(story.chapters)) errors.push("story.chapters must be an array.");
+  const chapterIds = new Set<string>();
+  for (const [index, chapter] of storyChapters.entries()) {
+    const path = `story.chapters[${index}]`;
+    if (!isObject(chapter)) { errors.push(`${path} must be an object.`); continue; }
+    requireString(chapter, "id", errors, path);
+    if (typeof chapter.id === "string") {
+      if (chapterIds.has(chapter.id)) errors.push(`${path}.id must be unique: ${chapter.id}.`);
+      chapterIds.add(chapter.id);
     }
-    const levels = Array.isArray(pack.levels) ? pack.levels : [];
-    for (const [index, level] of levels.entries()) {
-      if (!isObject(level)) continue;
-      if (typeof level.chapter_id === "string" && !chapterIds.has(level.chapter_id)) errors.push(`levels[${index}].chapter_id references unknown chapter: ${level.chapter_id}.`);
+    if (!isObject(chapter.title)) errors.push(`${path}.title must be localized text.`);
+    if (chapter.minimum_level !== undefined && (!Number.isInteger(chapter.minimum_level) || Number(chapter.minimum_level) < 0)) errors.push(`${path}.minimum_level must be a non-negative integer.`);
+    if (chapter.lesson !== undefined) {
+      if (!isObject(chapter.lesson)) errors.push(`${path}.lesson must be an object.`);
+      else {
+        if (!isObject(chapter.lesson.title)) errors.push(`${path}.lesson.title must be localized text.`);
+        if (!isObject(chapter.lesson.explanation)) errors.push(`${path}.lesson.explanation must be localized text.`);
+        if (chapter.lesson.examples !== undefined && !Array.isArray(chapter.lesson.examples)) errors.push(`${path}.lesson.examples must be an array.`);
+        if (chapter.lesson.dialogue !== undefined && !Array.isArray(chapter.lesson.dialogue)) errors.push(`${path}.lesson.dialogue must be an array.`);
+      }
     }
   }
-
+  const storyLevels = Array.isArray(pack.levels) ? pack.levels : [];
+  for (const [index, level] of storyLevels.entries()) {
+    if (!isObject(level)) continue;
+    if (typeof level.chapter_id === "string" && !chapterIds.has(level.chapter_id)) errors.push(`levels[${index}].chapter_id references unknown chapter: ${level.chapter_id}.`);
+  }
   if (Array.isArray(pack.levels)) {
     for (const [index, level] of pack.levels.entries()) {
       if (!isObject(level)) { errors.push(`levels[${index}] must be an object.`); continue; }
