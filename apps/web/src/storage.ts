@@ -106,7 +106,7 @@ export function createChildProfile(name: string, index: number): ChildProfile {
 export function loadAppSettings(pack: LanguagePack): AppSettings {
   const fallback: AppSettings = {
     graphicsPack: "forest",
-    audioMode: "human_only",
+    audioMode: "human_and_automatic",
     debug: false,
     debugBypass: false,
     speedBonusEnabled: true,
@@ -136,7 +136,7 @@ export function loadAppSettings(pack: LanguagePack): AppSettings {
 
   return {
     graphicsPack: persisted.graphicsPack === "candy" || persisted.graphicsPack === "night" ? persisted.graphicsPack : "forest",
-    audioMode: persisted.audioMode === "human_and_automatic" ? "human_and_automatic" : "human_only",
+    audioMode: persisted.audioMode === "human_only" ? "human_only" : "human_and_automatic",
     debug: Boolean(persisted.debug),
     debugBypass: Boolean(persisted.debugBypass),
     speedBonusEnabled: persisted.speedBonusEnabled !== false,

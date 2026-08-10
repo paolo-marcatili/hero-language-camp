@@ -832,43 +832,84 @@ export default function App() {
     }, 1100);
   }
 
-  function handleFightAnswer(selectedOptionId: string) {
-    resolveFightAnswer(selectedOptionId);
+  function handleFightAnswer(selectedOptionId: string, timerRemainingSeconds?: number) {
+    resolveFightAnswer(selectedOptionId, timerRemainingSeconds);
   }
 
-  function resolveFightAnswer(selectedOptionId: string) {
+  function resolveFightAnswer(selectedOptionId: string, timerRemainingSeconds?: number) {
     if (!fightSession || fightSession.locked) return;
 
     const timingStart = fightSession.question.activity_type === "listen_and_choose"
       ? (fightSession.audioStartedAt ?? Date.now())
       : fightSession.questionStartedAt;
-    const elapsedSeconds = Math.max(0, (Date.now() - timingStart) / 1000);
-    const speedMultiplier = getSpeedBonusMultiplier(elapsedSeconds, fightSession.timerSeconds, settings.speedBonusEnabled);
-    const speedBonusPercent = Math.max(0, Math.round((speedMultiplier - 1) * 100));
+    const wallElapsedSeconds = Math.max(0, (Date.now() - timingStart) / 1000);
+    // Use the same paused countdown displayed by QuestionTimer. The wall clock
+    // remains only as a compatibility fallback when the speed timer is disabled.
+    const visibleTimerActive = settings.speedBonusEnabled
+      && fightSession.timerSeconds > 0
+      && typeof timerRemainingSeconds === "number";
+    const remainingSeconds = visibleTimerActive
+      ? Math.max(0, Math.min(fightSession.timerSeconds, timerRemainingSeconds ?? fightSession.timerSeconds))
+      : fightSession.timerSeconds;
+    const elapsedSeconds = visibleTimerActive
+      ? Math.max(0, fightSession.timerSeconds - remainingSeconds)
+      : wallElapsedSeconds;
+    const timedOut = visibleTimerActive && remainingSeconds <= 0;
+    const speedMultiplier = timedOut
+      ? 1
+      : getSpeedBonusMultiplier(elapsedSeconds, fightSession.timerSeconds, settings.speedBonusEnabled);
+    const speedBonusPercent = timedOut ? 0 : Math.max(0, Math.round((speedMultiplier - 1) * 100));
     const result = answerQuestion(fightSession.question, selectedOptionId, learnerState, {
       mode: "fight",
-      timedOut: false,
+      timedOut,
       enemyRequirements: fightSession.enemy.requiredStats,
       enemyLevel: fightSession.enemy.level,
       statCap: settings.debugBypass ? Number.POSITIVE_INFINITY : getLevelStatCap(learnerState.level, pack)
     });
-    const damageDetails = result.correct
-      ? getFightDamageDetails(fightSession.question.stat, learnerState.hero_stats, fightSession.enemy, getLevelStatCap(learnerState.level, pack), speedMultiplier)
+    const hitLands = result.correct && !timedOut;
+    const damageDetails = hitLands
+      ? getFightDamageDetails(
+          fightSession.question.stat,
+          learnerState.hero_stats,
+          fightSession.enemy,
+          getLevelStatCap(learnerState.level, pack),
+          speedMultiplier
+        )
       : null;
-    const mistakeDetails = result.correct ? null : getFightMistakeDetails(pack, learnerState, fightSession.enemy, false);
-    const calculatedDamage = damageDetails?.damage ?? 0;
+    // A wrong answer causes normal incoming damage even after expiry. A correct
+    // but late answer remains pedagogically correct and causes no damage either way.
+    const mistakeDetails = result.correct
+      ? null
+      : getFightMistakeDetails(pack, learnerState, fightSession.enemy, false);
+    const calculatedDamage = hitLands ? (damageDetails?.damage ?? 0) : 0;
     const calculatedEnergyLoss = mistakeDetails?.damage ?? 0;
     const rawEnemyEnergy = fightSession.enemyEnergy - calculatedDamage;
     const nextHeroEnergy = Math.max(0, fightSession.heroEnergy - calculatedEnergyLoss);
     const nextIndex = fightSession.index + 1;
-    const nextEnemyEnergy = result.correct && nextIndex < MIN_FIGHT_QUESTIONS ? Math.max(1, rawEnemyEnergy) : Math.max(0, rawEnemyEnergy);
+    const nextEnemyEnergy = hitLands && nextIndex < MIN_FIGHT_QUESTIONS ? Math.max(1, rawEnemyEnergy) : Math.max(0, rawEnemyEnergy);
+    if (settings.debug) {
+      console.debug("[fight timing v9]", {
+        questionId: fightSession.question.id,
+        elapsedSeconds: Number(elapsedSeconds.toFixed(2)),
+        remainingSeconds: Number(remainingSeconds.toFixed(2)),
+        timerSeconds: fightSession.timerSeconds,
+        speedMultiplier: Number(speedMultiplier.toFixed(3)),
+        speedBonusPercent,
+        timedOut,
+        correct: result.correct,
+        hitLands,
+        calculatedDamage,
+        enemyBefore: fightSession.enemyEnergy,
+        enemyAfter: nextEnemyEnergy
+      });
+    }
     const nextCorrectCount = fightSession.correctCount + (result.correct ? 1 : 0);
     const nextMistakeCount = fightSession.mistakeCount + (result.correct ? 0 : 1);
 
     setLearnerState(result.updated_state);
     playAnswerAudio(result, true);
     const answerPlayback = playSubmittedAnswerAudio(fightSession.question);
-    triggerAction(result.correct ? getCorrectFightAction(fightSession.question.skill) : randomFailAction(true));
+    triggerAction(hitLands ? getCorrectFightAction(fightSession.question.skill) : result.correct ? "stumble" : randomFailAction(true));
 
     setFightSession({
       ...fightSession,
@@ -878,8 +919,17 @@ export default function App() {
       correctCount: nextCorrectCount,
       mistakeCount: nextMistakeCount,
       feedback: {
-        ...toFeedback(result, selectedOptionId, fightSession.question.correct_option_id, calculatedDamage, calculatedEnergyLoss, (damageDetails ?? mistakeDetails)?.absorbed ?? 0, (damageDetails ?? mistakeDetails)?.label_key),
-        speedBonusPercent: result.correct ? speedBonusPercent : 0
+        ...toFeedback(
+          result,
+          selectedOptionId,
+          result.correct ? selectedOptionId : fightSession.question.correct_option_id,
+          calculatedDamage,
+          calculatedEnergyLoss,
+          (damageDetails ?? mistakeDetails)?.absorbed ?? 0,
+          timedOut ? "timedOutHit" : (damageDetails ?? mistakeDetails)?.label_key
+        ),
+        timedOut,
+        speedBonusPercent: hitLands ? speedBonusPercent : 0
       }
     });
 

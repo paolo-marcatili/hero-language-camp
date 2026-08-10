@@ -26,7 +26,7 @@ interface QuestionCardProps {
     absorbedDamage?: number;
     combatLabelKey?: string;
   } | null;
-  onAnswer: (selectedOptionId: string) => void;
+  onAnswer: (selectedOptionId: string, timerRemainingSeconds?: number) => void;
   onContinue?: () => void;
   onAudioStarted?: () => void;
   onAudioReplayCompleted?: (durationMs: number) => void;
@@ -65,6 +65,8 @@ export function QuestionCard({
   const instructionPlaybackSerial = useRef(0);
   const audioPlaybackSerial = useRef(0);
   const secondaryPlaybackSerial = useRef(0);
+  // COMBAT_TIMER_SOURCE_OF_TRUTH_V9: submit the visible meter's exact remaining time.
+  const timerRemainingRef = useRef(timerSeconds);
   const expectedAnswerLength = question.expected_answer_length ?? question.options.length;
   const tapOrderReady = selectedChips.length === expectedAnswerLength;
   // LEARNING_APP_RELEASE_AB_2026_08: adaptive answers
@@ -87,6 +89,7 @@ export function QuestionCard({
     setSecondaryAudioPlaying(false);
     setNarrationFailed(false);
     setAudioStarted(!question.requires_audio_before_answer || audioHasStarted);
+    timerRemainingRef.current = timerSeconds;
 
     if (!question.auto_narrate) return;
     const handle = window.setTimeout(() => {
@@ -120,11 +123,11 @@ export function QuestionCard({
 
   function submitTapOrder() {
     if (answerSubmissionBlocked() || !tapOrderReady) return;
-    onAnswer(selectedChips.map((chip) => chip.label).join(" "));
+    onAnswer(selectedChips.map((chip) => chip.label).join(" "), mode === "fight" && showTimer ? timerRemainingRef.current : undefined);
   }
   function submitAnswer(selectedOptionId: string) {
     if (answerSubmissionBlocked()) return;
-    onAnswer(selectedOptionId);
+    onAnswer(selectedOptionId, mode === "fight" && showTimer ? timerRemainingRef.current : undefined);
   }
   function continueAfterFeedback(): void {
     if (isLearningAudioPlaying()) return;
@@ -223,6 +226,7 @@ export function QuestionCard({
           active={!disabled && audioStarted && !instructionAudioPlaying && !audioPlaying}
           resetKey={`${question.id}:${audioStarted ? "started" : "waiting"}`}
           label={audioStarted ? t(language, "speedBonus") : t(language, "listenToStartBonus")}
+          onRemainingChange={(remainingSeconds) => { timerRemainingRef.current = remainingSeconds; }}
         />
       ) : null}
 

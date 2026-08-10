@@ -442,10 +442,12 @@ function readAudioPreference(): boolean {
 }
 
 function readLearningAudioMode(): "human_only" | "human_and_automatic" {
-  if (typeof window === "undefined") return "human_only";
-  return readNamespacedPreference(LEARNING_AUDIO_MODE_KEY, LEGACY_LEARNING_AUDIO_MODE_KEY) === "human_and_automatic"
-    ? "human_and_automatic"
-    : "human_only";
+  // Prefer real recordings, then automatic/neural/system voices. An explicit
+  // human-only choice remains persistent and is never overwritten.
+  const fallback = "human_and_automatic";
+  if (typeof window === "undefined") return fallback;
+  const stored = readNamespacedPreference(LEARNING_AUDIO_MODE_KEY, LEGACY_LEARNING_AUDIO_MODE_KEY);
+  return stored === "human_only" ? "human_only" : fallback;
 }
 
 function readNamespacedPreference(key: string, legacyKey: string): string | null {
