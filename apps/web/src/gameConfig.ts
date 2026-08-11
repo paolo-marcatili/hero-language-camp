@@ -198,7 +198,12 @@ export function getFightParTimeSeconds(question: { variant: string; activity_typ
 export function getSpeedBonusMultiplier(elapsedSeconds: number, parSeconds: number, enabled = true): number {
   if (!enabled || parSeconds <= 0) return 1;
   const remainingRatio = Math.max(0, Math.min(1, 1 - elapsedSeconds / parSeconds));
-  return 1 + remainingRatio * 0.35;
+  if (remainingRatio <= 0) return 0;
+
+  // Nonlinear timing curve: fast answers are rewarded, while answers close
+  // to the deadline become meaningfully weaker instead of merely losing a
+  // small bonus. Examples: 100% -> 1.50x, 50% -> ~1.06x, 25% -> ~0.79x.
+  return 0.35 + 1.15 * Math.pow(remainingRatio, 0.7);
 }
 
 export function getEnemyForLevel(pack: LanguagePack, level: number): EnemyConfig {
@@ -295,8 +300,11 @@ export function getFightDamageForQuestion(questionStat: HeroStatKey, stats: Hero
 }
 
 export function getFightDamageDetails(questionStat: HeroStatKey, stats: HeroStats, enemy: EnemyConfig, statCap: number, speedMultiplier = 1) {
-  const weaknessBoost = (enemy.skillWeaknesses.includes(questionStat) ? 1.12 : 1) * Math.max(1, speedMultiplier);
-  return estimateHeroDamage(stats, enemy.requiredStats, statCap, weaknessBoost);
+  const weaknessMultiplier = enemy.skillWeaknesses.includes(questionStat) ? 1.12 : 1;
+  // Do not floor the timing multiplier at 1. Slow-but-valid answers are meant
+  // to deal less than baseline damage; v9 separately makes expired hits zero.
+  const timingMultiplier = Math.max(0, speedMultiplier);
+  return estimateHeroDamage(stats, enemy.requiredStats, statCap, weaknessMultiplier * timingMultiplier);
 }
 
 export function getFightHeroEnergy(_pack: LanguagePack, state: { level: number; hero_stats: HeroStats }, _enemy: EnemyConfig): number {
