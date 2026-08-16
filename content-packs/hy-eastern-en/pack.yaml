@@ -1,0 +1,41 @@
+pack_id: "hy-eastern-en"
+version: "0.1.0"
+subject: "language"
+title: "Eastern Armenian for English-speaking children"
+description: "A gradual Eastern Armenian course for children who use English for explanations, stories and menus."
+language:
+  name_english: "Armenian"
+  name_native: "Հայերեն"
+  bcp47: "hy-AM"
+  variety: "Eastern Armenian"
+  script: "Armn"
+  direction: "ltr"
+  orthography: "reformed"
+base_language:
+  code: "en"
+  name_english: "English"
+  name_native: "English"
+  is_default: true
+target_language: "hy-AM"
+age_band: "6-10"
+capabilities:
+  human_audio: false
+  tts: "optional"
+  asr: "none"
+  pronunciation_scoring: "none"
+  ipa: "partial"
+  transliteration: true
+  morphology: "none"
+review_status: "needs_native_speaker_review"
+license: "CC-BY-4.0"
+files:
+  interface: "interface.yaml"
+  tags: "tags.yaml"
+  tasks: "tasks.yaml"
+  levels: "levels.yaml"
+  enemies: "enemies.yaml"
+  story: "story.yaml"
+  labyrinths: "labyrinths.yaml"
+  words: "dictionary/words.jsonl"
+  letters: "dictionary/letters.jsonl"
+  sentences: "dictionary/sentences.jsonl"

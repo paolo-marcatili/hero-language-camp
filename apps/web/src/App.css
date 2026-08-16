@@ -7501,3 +7501,14 @@ button.offline-pill { cursor: pointer; }
   .study-book-open-button,
   .chapter-open-button { min-height: 58px; }
 }
+
+
+/* v12 pack chooser */
+.pack-chooser-shell { min-height: 100vh; display: grid; place-items: center; padding: 24px; background: var(--page-bg, #eef7ff); }
+.pack-chooser-card { width: min(680px, 100%); padding: clamp(24px, 5vw, 48px); border-radius: 28px; background: rgba(255,255,255,.96); box-shadow: 0 22px 60px rgba(37,65,96,.18); text-align: center; }
+.pack-chooser-card h1 { margin: 6px 0 12px; }
+.pack-chooser-card > p { line-height: 1.55; }
+.pack-chooser-actions { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-top: 24px; }
+.pack-chooser-actions button { display: grid; gap: 6px; min-height: 116px; padding: 18px; border: 0; border-radius: 20px; cursor: pointer; box-shadow: inset 0 -4px 0 rgba(0,0,0,.08), 0 10px 24px rgba(37,65,96,.12); }
+.pack-chooser-actions strong { font-size: 1.2rem; }
+.pack-chooser-actions span { opacity: .78; line-height: 1.35; }

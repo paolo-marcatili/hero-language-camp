@@ -1,0 +1,53 @@
+questions_per_training: 10
+timer_seconds: 12
+training_completion:
+  max_mistakes: 3
+training_options:
+  - focus: vocabulary
+    stat: strength
+    title_key: vocabularyTitle
+    short_key: vocabularyShort
+    body_key: vocabularyBody
+    encounter: training_dummy
+    encounter_label_key: vocabularyChallenge
+    icon: 🥊
+    stone_id: word-stone
+    stone_label_key: wordStone
+    stone_color: red
+    stone_icon: 🔺
+  - focus: comprehension
+    stat: defense
+    title_key: comprehensionTitle
+    short_key: comprehensionShort
+    body_key: comprehensionBody
+    encounter: shield_drill
+    encounter_label_key: shieldChallenge
+    icon: 🛡️
+    stone_id: echo-stone
+    stone_label_key: echoStone
+    stone_color: blue
+    stone_icon: 🔷
+  - focus: grammar
+    stat: precision
+    title_key: grammarTitle
+    short_key: grammarShort
+    body_key: grammarBody
+    encounter: rune_gate
+    encounter_label_key: runeChallenge
+    icon: 🎯
+    stone_id: rune-stone
+    stone_label_key: runeStone
+    stone_color: gold
+    stone_icon: 🟨
+  - focus: pronunciation
+    stat: stamina
+    title_key: pronunciationTitle
+    short_key: pronunciationShort
+    body_key: pronunciationBody
+    encounter: echo_crystal
+    encounter_label_key: echoChallenge
+    icon: 💎
+    stone_id: crystal-stone
+    stone_label_key: crystalStone
+    stone_color: green
+    stone_icon: 💚

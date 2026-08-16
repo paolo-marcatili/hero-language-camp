@@ -1,0 +1,9 @@
+language: "en"
+text:
+  packName: "Eastern Armenian · English"
+  adminItalian: "English"
+  adminTranslationDistractors: "English alternatives (one per line)"
+  adminTranslationDistractorsHint: "Add similar but clearly incorrect alternatives by changing the subject, action, place or meaning."
+  fightHint: "Answer quickly for a stronger hit. A correct answer after time runs out causes no damage; a wrong answer still lets the monster strike."
+  packWarning: "Learning content: Armenian wording and pronunciation should continue to be reviewed by native speakers."
+  addTagInCode: "Add tags in content-packs/hy-eastern-en/tags.yaml"

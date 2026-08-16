@@ -12,6 +12,7 @@ interface SettingsPanelProps {
   activeProfileId: string;
   settings: AppSettings;
   onSettingsChange: (settings: AppSettings) => void;
+  onPackChange?: (packId: "hy-eastern-it" | "hy-eastern-en") => void;
   onProfilesChange: (profiles: ChildProfile[]) => void;
   onActiveProfileChange: (profileId: string) => void;
   onResetProgress: () => void;
@@ -47,7 +48,8 @@ const VIEWPORT_PRESETS: Array<{ id: ViewportPreset; labelKey: string }> = [
 
 
 const COURSE_OPTIONS = [
-  { id: "hy-eastern-it", label: "Հայերեն · Eastern Armenian", href: import.meta.env.VITE_ARMENIAN_APP_URL },
+  { id: "hy-eastern-it", label: "Հայերեն · Italian", href: null },
+  { id: "hy-eastern-en", label: "Հայերեն · English", href: null },
   { id: "da-foundations", label: "Dansk · Danish Foundations", href: import.meta.env.VITE_DANISH_APP_URL }
 ] as const;
 
@@ -58,6 +60,7 @@ export function SettingsPanel({
   activeProfileId,
   settings,
   onSettingsChange,
+  onPackChange,
   onProfilesChange,
   onActiveProfileChange,
   onResetProgress,
@@ -69,8 +72,20 @@ export function SettingsPanel({
 
   function switchCourse(packId: string): void {
     const selected = COURSE_OPTIONS.find((option) => option.id === packId);
-    if (!selected || !selected.href || selected.id === pack.pack_id) return;
-    window.location.assign(String(selected.href));
+    if (!selected || selected.id === pack.pack_id) return;
+    if (selected.id === "hy-eastern-it" || selected.id === "hy-eastern-en") {
+      if (onPackChange) {
+        onPackChange(selected.id);
+        return;
+      }
+      const armenianAppUrl = import.meta.env.VITE_ARMENIAN_APP_URL;
+      if (armenianAppUrl) {
+        const separator = String(armenianAppUrl).includes("?") ? "&" : "?";
+        window.location.assign(`${String(armenianAppUrl)}${separator}pack=${selected.id}`);
+      }
+      return;
+    }
+    if (selected.href) window.location.assign(String(selected.href));
   }
 
   function updateProfile(nextProfile: ChildProfile) {

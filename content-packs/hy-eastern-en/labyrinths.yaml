@@ -1,0 +1,36 @@
+labyrinths:
+  - id: enchanted_forest_ruins
+    enabled: true
+    minimum_level: 0
+    map:
+      width: 7
+      height: 7
+      theme: enchanted_forest_ruins
+      reveal_mode: current_and_adjacent
+    questions:
+      minimum: 35
+      target: 38
+      maximum: 40
+      minimum_per_focus: 7
+      monster_encounters: 3
+    events:
+      trap_encounters: 3
+      cache_cells: 2
+      healing_cells: 1
+      reveal_cells: 1
+      trap_heart_loss: 2
+      cache_coins_min: 2
+      cache_coins_max: 6
+      reveal_radius: 3
+    hearts: 5
+    semantic_tags:
+      - 'tier:core'
+    rewards:
+      attribute_points_each: 1
+      session_credit: 1
+      bonus:
+        none_weight: 50
+        coins_weight: 40
+        item_weight: 10
+        coins_min: 5
+        coins_max: 15

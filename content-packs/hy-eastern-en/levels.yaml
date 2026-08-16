@@ -1,0 +1,199 @@
+levels:
+  - number: 0
+    title: "Level 0 · First sparks"
+    stat_cap: 5
+    content_tags:
+      - stage: 0
+      - tier: "core"
+    theme:
+      en: "First sparks"
+    learning_goal:
+      en: "Letters, greetings and essential words"
+    unlock_requires:
+      completed_training_sessions: 5
+      answered_fight_questions: 10
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 10
+      at_min_questions: 24
+      max_questions: 30
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_0"
+  - number: 1
+    title: "Level 1 · Who am I?"
+    stat_cap: 10
+    content_tags:
+      - stage: 1
+      - tier: "core"
+    theme:
+      en: "Who am I?"
+    learning_goal:
+      en: "Introduce yourself and ask someone’s name"
+    unlock_requires:
+      completed_training_sessions: 5
+      answered_fight_questions: 10
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 10
+      at_min_questions: 24
+      max_questions: 30
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_1"
+  - number: 2
+    title: "Level 2 · My family"
+    stat_cap: 15
+    content_tags:
+      - stage: 2
+      - tier: "core"
+    theme:
+      en: "My family"
+    learning_goal:
+      en: "Family, possession and simple descriptions"
+    unlock_requires:
+      completed_training_sessions: 5
+      answered_fight_questions: 10
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 10
+      at_min_questions: 24
+      max_questions: 30
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_2"
+  - number: 3
+    title: "Level 3 · Hungry and thirsty"
+    stat_cap: 20
+    content_tags:
+      - stage: 3
+      - tier: "core"
+    theme:
+      en: "Hungry and thirsty"
+    learning_goal:
+      en: "Needs, food and polite requests"
+    unlock_requires:
+      completed_training_sessions: 5
+      answered_fight_questions: 10
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 10
+      at_min_questions: 24
+      max_questions: 30
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_3"
+  - number: 4
+    title: "Level 4 · My day"
+    stat_cap: 25
+    content_tags:
+      - stage: 4
+      - tier: "core"
+    theme:
+      en: "My day"
+    learning_goal:
+      en: "Everyday actions and useful classroom phrases"
+    unlock_requires:
+      completed_training_sessions: 5
+      answered_fight_questions: 10
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 10
+      at_min_questions: 24
+      max_questions: 30
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_4"
+  - number: 5
+    title: "Level 5 · Where are we?"
+    stat_cap: 30
+    content_tags:
+      - stage: 5
+      - tier: "core"
+    theme:
+      en: "Where are we?"
+    learning_goal:
+      en: "Places, here/there and location questions"
+    unlock_requires:
+      completed_training_sessions: 5
+      answered_fight_questions: 10
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 10
+      at_min_questions: 24
+      max_questions: 30
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_5"
+  - number: 6
+    title: "Level 6 · Numbers and time"
+    stat_cap: 35
+    content_tags:
+      - stage: 6
+      - tier: "core"
+    theme:
+      en: "Numbers and time"
+    learning_goal:
+      en: "Age, numbers, today, tomorrow and weather"
+    unlock_requires:
+      completed_training_sessions: 5
+      answered_fight_questions: 10
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 10
+      at_min_questions: 24
+      max_questions: 30
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_6"
+  - number: 7
+    title: "Level 7 · Us and them"
+    stat_cap: 40
+    content_tags:
+      - stage: 7
+      - tier: "core"
+    theme:
+      en: "Us and them"
+    learning_goal:
+      en: "Plural forms and negation"
+    unlock_requires:
+      completed_training_sessions: 5
+      answered_fight_questions: 10
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 10
+      at_min_questions: 24
+      max_questions: 30
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_7"
+  - number: 8
+    title: "Level 8 · Small adventures"
+    stat_cap: 45
+    content_tags:
+      - stage: 8
+      - tier: "core"
+    theme:
+      en: "Small adventures"
+    learning_goal:
+      en: "Short dialogues and integrated comprehension"
+    unlock_requires:
+      completed_training_sessions: 5
+      answered_fight_questions: 10
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 10
+      at_min_questions: 24
+      max_questions: 30
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_8"

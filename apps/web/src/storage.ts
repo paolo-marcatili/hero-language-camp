@@ -140,7 +140,7 @@ export function loadAppSettings(pack: LanguagePack): AppSettings {
     debug: Boolean(persisted.debug),
     debugBypass: Boolean(persisted.debugBypass),
     speedBonusEnabled: persisted.speedBonusEnabled !== false,
-    targetPackId: typeof persisted.targetPackId === "string" ? persisted.targetPackId : pack.pack_id,
+    targetPackId: pack.pack_id,
     viewportPreset: isViewportPreset(viewport.viewportPreset) ? viewport.viewportPreset : "auto",
     showDeviceFrame: Boolean(viewport.showDeviceFrame)
   };

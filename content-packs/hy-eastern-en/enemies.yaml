@@ -1,0 +1,128 @@
+enemies:
+  - id: mist_goblin
+    level: 0
+    name_key: mistGoblin
+    max_energy: 50
+    reward_coins: 35
+    preferred_focus: vocabulary
+    sprite: goblin
+    semantic_tags:
+      - tier:core
+    skill_weaknesses:
+      - strength
+    sprite_row: 0
+    scale: 1.0
+  - id: echo_bat
+    level: 1
+    name_key: echoBat
+    max_energy: 100
+    reward_coins: 45
+    preferred_focus: comprehension
+    sprite: bat
+    semantic_tags:
+      - tier:core
+    skill_weaknesses:
+      - defense
+    sprite_row: 1
+    scale: 1.0
+  - id: puzzle_troll
+    level: 2
+    name_key: puzzleTroll
+    max_energy: 150
+    reward_coins: 60
+    preferred_focus: grammar
+    sprite: troll
+    semantic_tags:
+      - tier:core
+    skill_weaknesses:
+      - precision
+    sprite_row: 2
+    scale: 1.0
+  - id: mumble_blob
+    level: 3
+    name_key: mumbleBlob
+    max_energy: 200
+    reward_coins: 78
+    preferred_focus: pronunciation
+    sprite: blob
+    semantic_tags:
+      - tier:core
+    skill_weaknesses:
+      - stamina
+    sprite_row: 5
+    scale: 1.0
+  - id: moon_wizard
+    level: 4
+    name_key: moonWizard
+    max_energy: 250
+    reward_coins: 95
+    preferred_focus: vocabulary
+    sprite: wizard
+    semantic_tags:
+      - tier:core
+    skill_weaknesses:
+      - strength
+      - precision
+    sprite_row: 4
+    scale: 1.0
+  - id: tiny_dragon
+    level: 5
+    name_key: tinyDragon
+    max_energy: 300
+    reward_coins: 125
+    preferred_focus: vocabulary
+    sprite: dragon
+    semantic_tags:
+      - tier:core
+    skill_weaknesses:
+      - strength
+      - defense
+    sprite_row: 3
+    scale: 1.0
+  - id: cave_ogre
+    level: 6
+    name_key: caveOgre
+    max_energy: 350
+    reward_coins: 150
+    preferred_focus: grammar
+    sprite: troll
+    semantic_tags:
+      - tier:core
+    skill_weaknesses:
+      - precision
+    sprite_row: 2
+    scale: 1.08
+    visual_variant: moss
+    tint: '#87b86a'
+  - id: rainbow_imp
+    level: 7
+    name_key: rainbowImp
+    max_energy: 400
+    reward_coins: 180
+    preferred_focus: comprehension
+    sprite: goblin
+    semantic_tags:
+      - tier:core
+    skill_weaknesses:
+      - defense
+      - stamina
+    sprite_row: 0
+    scale: 1.05
+    visual_variant: rainbow
+    tint: '#d77cff'
+  - id: star_dragon
+    level: 8
+    name_key: starDragon
+    max_energy: 450
+    reward_coins: 220
+    preferred_focus: grammar
+    sprite: dragon
+    semantic_tags:
+      - tier:core
+    skill_weaknesses:
+      - precision
+      - stamina
+    sprite_row: 3
+    scale: 1.16
+    visual_variant: star
+    tint: '#9b8cff'

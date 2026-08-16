@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { AudioReference, LanguagePack, PackLabyrinthConfig, PackLevel } from "@hero-lang/content-schema";
-import { buildLanguagePackFromSources, getDefaultBaseLanguage, getLocalizedText, validateLanguagePack } from "@hero-lang/content-schema";
+import { getDefaultBaseLanguage, getLocalizedText, validateLanguagePack } from "@hero-lang/content-schema";
 import {
   answerQuestion,
   buyShopItem,
@@ -32,6 +32,7 @@ import { QuestionCard } from "./components/QuestionCard";
 import { OfflineStatus } from "./components/OfflineStatus";
 import { InstallAppButton } from "./components/InstallAppButton";
 import { SettingsPanel } from "./components/SettingsPanel";
+import { PackChooser } from "./components/PackChooser";
 import { ShopPanel } from "./components/ShopPanel";
 import { StoryPanel } from "./components/StoryPanel";
 import { ParentProgressPanel } from "./components/ParentProgressPanel";
@@ -60,6 +61,7 @@ import {
   type HeroActionName
 } from "./gameConfig";
 import { setActivePackCopy, t } from "./i18n";
+import { resolveInitialArmenianPack, selectArmenianPack } from "./armenianPacks";
 import {
   loadAppSettings,
   loadChildProfiles,
@@ -77,12 +79,6 @@ import {
   type AppSettings,
   type ChildProfile
 } from "./storage";
-import packYaml from "../../../content-packs/hy-eastern-it/pack.yaml?raw";
-import interfaceYaml from "../../../content-packs/hy-eastern-it/interface.yaml?raw";
-import tagsYaml from "../../../content-packs/hy-eastern-it/tags.yaml?raw";
-import tasksYaml from "../../../content-packs/hy-eastern-it/tasks.yaml?raw";
-import levelsYaml from "../../../content-packs/hy-eastern-it/levels.yaml?raw";
-import enemiesYaml from "../../../content-packs/hy-eastern-it/enemies.yaml?raw";
 import {
   appendLabyrinthLog,
   completeCurrentLabyrinthEncounter,
@@ -94,27 +90,10 @@ import {
   sanitizeLabyrinthSession,
   type LabyrinthSession
 } from "./labyrinth";
-import storyYaml from "../../../content-packs/hy-eastern-it/story.yaml?raw";
-import labyrinthsYaml from "../../../content-packs/hy-eastern-it/labyrinths.yaml?raw";
-import wordsJsonl from "../../../content-packs/hy-eastern-it/dictionary/words.jsonl?raw";
-import lettersJsonl from "../../../content-packs/hy-eastern-it/dictionary/letters.jsonl?raw";
-import sentencesJsonl from "../../../content-packs/hy-eastern-it/dictionary/sentences.jsonl?raw";
 import { useOfflineState } from "./offline";
 import "./App.css";
 
-const starterPack = buildLanguagePackFromSources({
-  packYaml,
-  interfaceYaml,
-  tagsYaml,
-  tasksYaml,
-  levelsYaml,
-  enemiesYaml,
-  storyYaml,
-  labyrinthsYaml,
-  wordsJsonl,
-  lettersJsonl,
-  sentencesJsonl
-});
+const { pack: starterPack, requiresChoice: requiresPackChoice } = resolveInitialArmenianPack();
 
 interface FeedbackState {
   correct: boolean;
@@ -1022,6 +1001,7 @@ export default function App() {
     setLabyrinthResult(null);
   }
 
+  if (requiresPackChoice) return <PackChooser onSelect={selectArmenianPack} />;
   if (!activeProfile) return null;
 
   const phaserWorld = (
@@ -1248,6 +1228,7 @@ export default function App() {
               activeProfileId={activeProfileId}
               settings={settings}
               onSettingsChange={setSettings}
+          onPackChange={selectArmenianPack}
               onProfilesChange={setProfiles}
               onActiveProfileChange={setActiveProfileId}
               onResetProgress={handleReset}

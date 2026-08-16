@@ -677,7 +677,7 @@ export function sigmoidMultiplier(attackerPrecision: number, defenderDefense: nu
 function getItemQuestion(pack: LanguagePack, state: LearnerState, baseLanguage: string, focus: TrainingFocus, selection: QuestionSelectionOptions): TrainingQuestion {
   const activityType = focusToActivityType(focus);
   const item = chooseWeakestItem(pack, state, selection);
-  const distractors = chooseItemDistractors(pack, item, 3);
+  const distractors = chooseItemDistractors(pack, item, 3, baseLanguage);
   const variant = getItemQuestionVariant(item, focus);
   const options = buildItemOptions(pack, item, distractors, baseLanguage, variant);
   const correctLabel = getCorrectItemOptionLabel(item, baseLanguage, variant);
@@ -1268,8 +1268,12 @@ function chooseHardSentenceDistractor(grammar: GrammarItem): string {
   return sameStart ?? shuffle(grammar.distractors)[0] ?? reversed;
 }
 
-function chooseItemDistractors(pack: LanguagePack, item: LearningItem, count: number): LearningItem[] {
-  const candidates = pack.items.filter((candidate) => candidate.id !== item.id);
+function chooseItemDistractors(pack: LanguagePack, item: LearningItem, count: number, baseLanguage: string): LearningItem[] {
+  const correctLabel = normalizeComparison(getItemTranslation(item, baseLanguage));
+  const candidates = pack.items.filter((candidate) =>
+    candidate.id !== item.id
+    && normalizeComparison(getItemTranslation(candidate, baseLanguage)) !== correctLabel
+  );
   const byId = new Map(candidates.map((candidate) => [candidate.id, candidate]));
   const explicitHard = shuffle((item.hard_distractor_ids ?? []).map((id) => byId.get(id)).filter(isDefined));
   const sameTag = shuffle(candidates.filter((candidate) => candidate.tags.some((tag) => item.tags.includes(tag))));

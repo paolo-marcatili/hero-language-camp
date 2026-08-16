@@ -63,7 +63,11 @@
     "content:sync-danish": "node tools/sync-content-pack.mjs content-packs/da-foundations apps/danish-foundations/public/content-packs/da-foundations",
     "content:audio:danish:integrate": "node tools/integrate-danish-audio.mjs",
     "build:site": "node tools/build-unified-site.mjs",
-    "verify:local": "npm run check && npm run check:danish && npm run build:site"
+    "verify:local": "npm run check && npm run check:english && npm run check:danish && npm run build:site",
+    "content:sync-english": "node tools/sync-armenian-english-pack.mjs",
+    "content:check-english-sync": "node tools/sync-armenian-english-pack.mjs --check",
+    "content:audit-english": "node tools/audit-armenian-english-pack.mjs",
+    "check:english": "npm run content:check-english-sync && npm run content:audit-english && npm --workspace @hero-lang/web run typecheck"
   },
   "engines": {
     "node": ">=20.19.0",

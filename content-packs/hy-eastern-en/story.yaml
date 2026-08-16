@@ -1,0 +1,381 @@
+title:
+  en: "The Spark Path"
+opening:
+  en: "Each chapter mixes a short adventure with a clear Armenian lesson. Reopen earlier chapters whenever you want to review."
+milestones: []
+chapters:
+  - id: "chapter_stage_0"
+    minimum_level: 0
+    title:
+      en: "Chapter 0 · The first sparks"
+    summary:
+      en: "Meet the first letters and use a few essential one-word messages."
+    fiction:
+      en: "A tiny spark lands in the hero’s hand and draws Armenian letters in the air. Each recognised sign lights a stone on the first path."
+    story_beats:
+      - en: "Beyond the gate, someone has erased every name from a stone bridge."
+    lesson:
+      title:
+        en: "Letters and one-word messages"
+      objectives:
+        - en: "Recognise the first group of Armenian letters."
+        - en: "Use hello, yes, no and thank you."
+      explanation:
+        en: "Armenian uses its own alphabet. At first, connect each shape with its Armenian name and sound instead of trying to learn the whole alphabet at once. A single Armenian word can also be a complete message."
+      examples:
+        - target: "Բարև։"
+          transliteration: "barev"
+          translation:
+            en: "Hello!"
+        - target: "Շնորհակալություն։"
+          transliteration: "shnorhakalutyun"
+          translation:
+            en: "Thank you."
+        - target: "Այո։ / Ոչ։"
+          transliteration: "ayo / voch"
+          translation:
+            en: "Yes. / No."
+      dialogue: []
+      study_notes:
+        - en: "Keep the name of a letter separate from the sound it represents."
+        - en: "Use the alphabet atlas to revisit letters already introduced."
+      common_mistakes:
+        - en: "Do not assume an Armenian letter sounds like a Latin letter just because its shape looks familiar."
+    mission:
+      en: "Light the first runes with greetings and letter recognition."
+    cliffhanger:
+      en: "Beyond the gate, someone has erased every name from a stone bridge."
+  - id: "chapter_stage_1"
+    minimum_level: 1
+    title:
+      en: "Chapter 1 · The guardian of names"
+    summary:
+      en: "Introduce yourself, ask a name and notice simple forms of “to be”."
+    fiction:
+      en: "A guardian has forgotten every name. The bridge opens only for travellers who can say who they are and ask another person’s name."
+    story_beats:
+      - en: "The recovered name opens a house full of photographs with missing labels."
+    lesson:
+      title:
+        en: "Introducing yourself"
+      objectives:
+        - en: "Say your name."
+        - en: "Ask another person’s name."
+        - en: "Notice եմ, ես and է in short sentences."
+      explanation:
+        en: "In short Armenian identity sentences, a form of “to be” often comes near the end. English usually prefers “I am Ani” or “My name is Ani” rather than copying Armenian word order."
+      examples:
+        - target: "Ես Անի եմ։"
+          transliteration: "yes Ani em"
+          translation:
+            en: "I am Ani."
+        - target: "Ի՞նչ է քո անունը։"
+          transliteration: "inch e qo anuny"
+          translation:
+            en: "What is your name?"
+        - target: "Իմ անունը Անի է։"
+          transliteration: "im anuny Ani e"
+          translation:
+            en: "My name is Ani."
+          note:
+            en: "A closer word-for-word rendering is “My name is Ani.”"
+      dialogue: []
+      study_notes:
+        - en: "Learn the Armenian sentence as a chunk before translating word by word."
+        - en: "Change only the name when practising the pattern."
+      common_mistakes:
+        - en: "Do not treat every Armenian word-order variation as a different English meaning."
+    mission:
+      en: "Tell the guardian your name and learn theirs."
+    cliffhanger:
+      en: "The recovered name opens a house full of photographs with missing labels."
+  - id: "chapter_stage_2"
+    minimum_level: 2
+    title:
+      en: "Chapter 2 · The house of photographs"
+    summary:
+      en: "Talk about family, point to people and things, and express possession."
+    fiction:
+      en: "Moonlit photographs have lost their labels. The hero restores each memory by identifying the people in it."
+    story_beats:
+      - en: "The last photograph shows a banquet table with every plate mysteriously empty."
+    lesson:
+      title:
+        en: "This is… and possession"
+      objectives:
+        - en: "Introduce a nearby person or object."
+        - en: "Use իմ for “my”."
+        - en: "Make a simple description."
+      explanation:
+        en: "Սա introduces a nearby person or thing. Իմ means “my” and does not change for grammatical gender the way words do in some European languages."
+      examples:
+        - target: "Սա իմ մայրն է։"
+          transliteration: "sa im mayrn e"
+          translation:
+            en: "This is my mother."
+        - target: "Սա իմ հայրն է։"
+          transliteration: "sa im hayrn e"
+          translation:
+            en: "This is my father."
+        - target: "Մեր տունը մեծ է։"
+          transliteration: "mer tuny mets e"
+          translation:
+            en: "Our house is big."
+      dialogue: []
+      study_notes:
+        - en: "English needs a natural article where appropriate; Armenian structure does not map word for word."
+        - en: "Notice that իմ stays the same with different nouns."
+      common_mistakes:
+        - en: "Do not add a gender distinction to Armenian իմ."
+    mission:
+      en: "Relabel the photographs and introduce the family."
+    cliffhanger:
+      en: "The last photograph shows a banquet table with every plate mysteriously empty."
+  - id: "chapter_stage_3"
+    minimum_level: 3
+    title:
+      en: "Chapter 3 · The silent banquet"
+    summary:
+      en: "Say that you are hungry or thirsty and make polite requests."
+    fiction:
+      en: "Food appears in an enchanted dining hall only when somebody makes a clear request."
+    story_beats:
+      - en: "A book-shaped key points toward a school that moves every morning."
+    lesson:
+      title:
+        en: "Needs and polite requests"
+      objectives:
+        - en: "Say that you are hungry or thirsty."
+        - en: "Use ուզում եմ to say what you want."
+        - en: "Add a polite request."
+      explanation:
+        en: "Ուզում եմ is a useful “I want” chunk. Armenian and English use articles differently, so choose natural English such as “some water” or “some bread” rather than translating mechanically."
+      examples:
+        - target: "Ես ջուր եմ ուզում։"
+          transliteration: "yes jur em uzum"
+          translation:
+            en: "I want some water."
+        - target: "Ես սոված եմ։"
+          transliteration: "yes sovats em"
+          translation:
+            en: "I am hungry."
+        - target: "Խնդրում եմ։"
+          transliteration: "khndrum em"
+          translation:
+            en: "Please."
+      dialogue: []
+      study_notes:
+        - en: "Practise ուզում եմ as one reusable block."
+        - en: "Translate the meaning naturally instead of matching every Armenian word with one English word."
+      common_mistakes:
+        - en: "A grammatically possible alternative word order must never be used as the only “wrong” answer."
+    mission:
+      en: "Make the banquet appear by asking clearly and politely."
+    cliffhanger:
+      en: "A book-shaped key points toward a school that moves every morning."
+  - id: "chapter_stage_4"
+    minimum_level: 4
+    title:
+      en: "Chapter 4 · The moving school"
+    summary:
+      en: "Use everyday actions and ask for help during a lesson."
+    fiction:
+      en: "The school changes position every morning. It slows down when the hero describes what they are doing and asks for repetition when something is unclear."
+    story_beats:
+      - en: "Behind the board appears a map whose landmarks keep drifting."
+    lesson:
+      title:
+        en: "Actions and classroom language"
+      objectives:
+        - en: "Talk about reading and other current actions."
+        - en: "Say when you do not understand."
+        - en: "Ask somebody to repeat."
+      explanation:
+        en: "Armenian present-tense forms can correspond to English simple or continuous forms depending on context. In these lessons we choose the natural English interpretation for the situation."
+      examples:
+        - target: "Ես գիրք եմ կարդում։"
+          transliteration: "yes girk em kardum"
+          translation:
+            en: "I am reading a book."
+        - target: "Չեմ հասկանում։"
+          transliteration: "chem haskanum"
+          translation:
+            en: "I don’t understand."
+        - target: "Կրկնիր, խնդրում եմ։"
+          transliteration: "krknir, khndrum em"
+          translation:
+            en: "Please repeat that."
+      dialogue: []
+      study_notes:
+        - en: "Use classroom phrases as complete chunks."
+        - en: "Listen for the negative form in Չեմ հասկանում։"
+      common_mistakes:
+        - en: "Do not force one English tense mechanically onto every Armenian present-tense sentence."
+    mission:
+      en: "Stop the moving school by describing actions and asking for help."
+    cliffhanger:
+      en: "Behind the board appears a map whose landmarks keep drifting."
+  - id: "chapter_stage_5"
+    minimum_level: 5
+    title:
+      en: "Chapter 5 · The map in the mist"
+    summary:
+      en: "Ask where something is and distinguish here from there."
+    fiction:
+      en: "A map appears only in patches. Asking the right location question reveals the next landmark."
+    story_beats:
+      - en: "At the end of the map, clouds form the hands of a giant clock."
+    lesson:
+      title:
+        en: "Places and location questions"
+      objectives:
+        - en: "Ask where a place is."
+        - en: "Understand nearby, here and there."
+        - en: "Use a short destination question."
+      explanation:
+        en: "English usually needs an article in “Where is the school?” even though Armenian packages the idea differently. Learn the whole Armenian question pattern."
+      examples:
+        - target: "Որտե՞ղ է դպրոցը։"
+          transliteration: "vortegh e dprotsy"
+          translation:
+            en: "Where is the school?"
+        - target: "Այգին այնտեղ է։"
+          transliteration: "aygin ayntegh e"
+          translation:
+            en: "The park is over there."
+        - target: "Ո՞ւր ես գնում։"
+          transliteration: "ur es gnum"
+          translation:
+            en: "Where are you going?"
+      dialogue: []
+      study_notes:
+        - en: "Keep “where is…?” and “where are you going?” as separate question patterns."
+        - en: "Use landmarks from the game to practise."
+      common_mistakes:
+        - en: "Do not accept two answer choices that express the same location meaning with only harmless English word-order changes."
+    mission:
+      en: "Reveal the route through the mist."
+    cliffhanger:
+      en: "At the end of the map, clouds form the hands of a giant clock."
+  - id: "chapter_stage_6"
+    minimum_level: 6
+    title:
+      en: "Chapter 6 · The cloud clock"
+    summary:
+      en: "Use numbers, age, today, tomorrow and simple weather language."
+    fiction:
+      en: "A clock made of clouds will not move until the hero counts correctly and places events in time."
+    story_beats:
+      - en: "The clock chimes summon several shadowy voices speaking together."
+    lesson:
+      title:
+        en: "Numbers and time"
+      objectives:
+        - en: "Say how old you are."
+        - en: "Count small groups."
+        - en: "Talk about today, tomorrow and weather."
+      explanation:
+        en: "Armenian expresses age differently from English. Translate Քանի՞ տարեկան ես։ naturally as “How old are you?” and Ես ութ տարեկան եմ։ as “I am eight years old.”"
+      examples:
+        - target: "Քանի՞ տարեկան ես։"
+          transliteration: "kani tarekan es"
+          translation:
+            en: "How old are you?"
+        - target: "Ես ութ տարեկան եմ։"
+          transliteration: "yes ut tarekan em"
+          translation:
+            en: "I am eight years old."
+        - target: "այսօր անձրև է գալիս"
+          transliteration: "aysor andzrev e galis"
+          translation:
+            en: "It is raining today."
+      dialogue: []
+      study_notes:
+        - en: "Treat age expressions as meaning-based phrases, not literal word substitutions."
+        - en: "Notice the time word first: այսօր is today and վաղը is tomorrow."
+      common_mistakes:
+        - en: "Do not use the Italian-style age construction in English; English uses “I am … years old.”"
+    mission:
+      en: "Set the cloud clock moving again."
+    cliffhanger:
+      en: "The clock chimes summon several shadowy voices speaking together."
+  - id: "chapter_stage_7"
+    minimum_level: 7
+    title:
+      en: "Chapter 7 · The chorus of shadows"
+    summary:
+      en: "Use we/they forms and simple negation."
+    fiction:
+      en: "Several shadows speak at once. The hero has to hear whether they mean “we”, “they”, or a negative action."
+    story_beats:
+      - en: "When the shadows clear, all the earlier paths join into one final road."
+    lesson:
+      title:
+        en: "We, they and negation"
+      objectives:
+        - en: "Recognise we and they."
+        - en: "Use plural forms of “to be”."
+        - en: "Understand a simple negative action."
+      explanation:
+        en: "English pronouns are normally stated explicitly, so Նրանք տանն են։ should be presented as “They are at home,” not the ambiguous Italian-style “are at home.”"
+      examples:
+        - target: "Մենք ընկերներ ենք։"
+          transliteration: "menk ynkerner enk"
+          translation:
+            en: "We are friends."
+        - target: "Նրանք տանն են։"
+          transliteration: "nrank tann en"
+          translation:
+            en: "They are at home."
+        - target: "Մենք չենք գնում։"
+          transliteration: "menk chenk gnum"
+          translation:
+            en: "We are not going."
+      dialogue: []
+      study_notes:
+        - en: "Listen for the plural verb ending as well as the pronoun."
+        - en: "Contrast Մենք and Նրանք aloud."
+      common_mistakes:
+        - en: "Never offer an English translation that hides a subject distinction the Armenian sentence explicitly makes."
+    mission:
+      en: "Separate the voices and identify who is speaking."
+    cliffhanger:
+      en: "When the shadows clear, all the earlier paths join into one final road."
+  - id: "chapter_stage_8"
+    minimum_level: 8
+    title:
+      en: "Chapter 8 · The path of voices"
+    summary:
+      en: "Combine familiar phrases into short dialogues."
+    fiction:
+      en: "The final path echoes with greetings, introductions, places and school language from every previous chapter."
+    story_beats:
+      - en: "The road remains open for the next chapter of the course."
+    lesson:
+      title:
+        en: "Putting the pieces together"
+      objectives:
+        - en: "Follow a short dialogue."
+        - en: "Combine known sentence patterns."
+        - en: "Use context rather than translating one word at a time."
+      explanation:
+        en: "At this stage, focus on meaning across a whole exchange. English and Armenian do not need to share the same word order for the translation to be correct."
+      examples:
+        - target: "Բարև, ես Անի եմ։ Իսկ դու՞։"
+          transliteration: "barev, yes Ani em. isk du?"
+          translation:
+            en: "Hello, I’m Ani. And you?"
+        - target: "Այսօր մենք դպրոց ենք գնում։"
+          transliteration: "aysor menk dprots enk gnum"
+          translation:
+            en: "Today we are going to school."
+      dialogue: []
+      study_notes:
+        - en: "Revisit earlier chapters when a pattern feels uncertain."
+        - en: "Use the story dialogue to practise several known chunks together."
+      common_mistakes:
+        - en: "Do not mark a natural equivalent translation wrong merely because its English word order differs."
+    mission:
+      en: "Follow the combined path using everything learned so far."
+    cliffhanger:
+      en: "The road remains open for the next chapter of the course."
