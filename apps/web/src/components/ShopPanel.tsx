@@ -48,21 +48,23 @@ export function ShopPanel({ pack, state, language, onStateChange, debugBypass = 
                   </small>
                 ) : null}
               </div>
-              <button
-                type="button"
-                className="small-button"
-                disabled={!canBuy}
-                onClick={() => {
-                  void unlockAudio();
-                  const result = debugBypass && state.coins < item.price ? buyShopItem({ ...state, coins: item.price }, item, pack) : buyShopItem(state, item, pack);
-                  if (result.ok) {
-                    playSound("shop");
-                    onStateChange(debugBypass && state.coins < item.price ? { ...result.state, coins: state.coins } : result.state);
-                  }
-                }}
-              >
-                {owned ? t(language, "owned") : !statsOk ? t(language, "trainMore") : canBuy ? `${t(language, "buy")} ${item.price}` : t(language, "needCoins")}
-              </button>
+              <div className="shop-item-actions">
+                <button
+                  type="button"
+                  className="small-button"
+                  disabled={!canBuy}
+                  onClick={() => {
+                    void unlockAudio();
+                    const result = debugBypass && state.coins < item.price ? buyShopItem({ ...state, coins: item.price }, item, pack) : buyShopItem(state, item, pack);
+                    if (result.ok) {
+                      playSound("shop");
+                      onStateChange(debugBypass && state.coins < item.price ? { ...result.state, coins: state.coins } : result.state);
+                    }
+                  }}
+                >
+                  {owned ? t(language, "owned") : !statsOk ? t(language, "trainMore") : canBuy ? `${t(language, "buy")} ${item.price}` : t(language, "needCoins")}
+                </button>
+              </div>
             </article>
           );
         })}

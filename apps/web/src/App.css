@@ -7512,3 +7512,38 @@ button.offline-pill { cursor: pointer; }
 .pack-chooser-actions button { display: grid; gap: 6px; min-height: 116px; padding: 18px; border: 0; border-radius: 20px; cursor: pointer; box-shadow: inset 0 -4px 0 rgba(0,0,0,.08), 0 10px 24px rgba(37,65,96,.12); }
 .pack-chooser-actions strong { font-size: 1.2rem; }
 .pack-chooser-actions span { opacity: .78; line-height: 1.35; }
+
+
+/* v15 shop action footer */
+.shop-item {
+  align-content: start;
+}
+
+.shop-item-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 0;
+  margin-top: 2px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(31, 49, 81, 0.1);
+}
+
+.shop-item .shop-item-actions .small-button {
+  position: static !important;
+  inset: auto !important;
+  z-index: auto !important;
+  width: auto;
+  max-width: 100%;
+  min-width: min(180px, 100%);
+  margin: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 540px) {
+  .shop-item .shop-item-actions .small-button {
+    width: 100%;
+  }
+}
