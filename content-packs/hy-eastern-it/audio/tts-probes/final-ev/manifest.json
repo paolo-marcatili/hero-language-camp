@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-08-16T17:17:22.210Z",
+  "voice": "hy-AM-AnahitNeural",
+  "rate": "-8%",
+  "note": "Pronunciation probe only. Probe spellings are never written back to learner content or audio metadata.",
+  "samples": [
+    {
+      "id": "barev-original",
+      "word": "barev",
+      "variant": "original և",
+      "text": "բարև",
+      "file": "barev-original.mp3"
+    },
+    {
+      "id": "barev-separate-ew",
+      "word": "barev",
+      "variant": "separate եւ",
+      "text": "բարեւ",
+      "file": "barev-separate-ew.mp3"
+    },
+    {
+      "id": "barev-explicit-ev",
+      "word": "barev",
+      "variant": "explicit եվ",
+      "text": "բարեվ",
+      "file": "barev-explicit-ev.mp3"
+    },
+    {
+      "id": "arev-original",
+      "word": "arev",
+      "variant": "original և",
+      "text": "արև",
+      "file": "arev-original.mp3"
+    },
+    {
+      "id": "arev-separate-ew",
+      "word": "arev",
+      "variant": "separate եւ",
+      "text": "արեւ",
+      "file": "arev-separate-ew.mp3"
+    },
+    {
+      "id": "arev-explicit-ev",
+      "word": "arev",
+      "variant": "explicit եվ",
+      "text": "արեվ",
+      "file": "arev-explicit-ev.mp3"
+    }
+  ]
+}
