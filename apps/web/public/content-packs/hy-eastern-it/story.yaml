@@ -685,3 +685,606 @@ chapters:
     cliffhanger:
       it: "Il sentiero si apre, ma l'ultima scintilla rimane nel libro: attende nuove storie, nuovi dialoghi e una voce umana che li racconti."
       en: "The path opens, but the final spark remains in the book, waiting for new stories, new dialogues, and a human voice to tell them."
+
+# BEGIN GENERATED CURRICULUM V2: story-chapters
+  - id: "chapter_stage_9"
+    minimum_level: 9
+    title:
+      it: "Capitolo 9 · La frontiera delle lingue"
+      en: "Chapter 9 · The language border"
+    summary:
+      it: "Parla di paesi, lingue e provenienza senza tradurre parola per parola."
+      en: "Talk about countries, languages, and origin without translating word for word."
+    fiction:
+      it: "Il sentiero delle voci arriva a una frontiera segnata da bandiere luminose. Il custode non chiede documenti: apre il passaggio quando ogni viaggiatore sa dire da dove viene e quale lingua sta imparando."
+      en: "The path of voices reaches a border marked by glowing flags. The keeper asks for no documents: the gate opens when each traveller can say where they are from and which language they are learning."
+    story_beats:
+      - it: "Le bandiere cambiano colore quando l'eroe confonde il paese con la lingua. Per stabilizzarle deve ascoltare la domanda completa e scegliere una risposta che abbia davvero lo stesso significato."
+        en: "The flags change colour whenever the hero confuses a country with a language. To steady them, the hero must listen to the whole question and choose an answer with the same meaning."
+    lesson:
+      title:
+        it: "Provenienza e lingue"
+        en: "Origin and languages"
+      objectives:
+        - it: "Chiedere da dove viene una persona."
+          en: "Ask where someone is from."
+        - it: "Dire da quale paese vieni."
+          en: "Say which country you are from."
+        - it: "Parlare delle lingue che studi o parli."
+          en: "Talk about languages you study or speak."
+      explanation:
+        it: "Per dire «vengo da…», l'armeno usa spesso una forma del nome del paese con -ից. Impara frasi complete come Ես Իտալիայից եմ invece di assemblare ogni parola separatamente. Nelle domande, la particella interrogativa si sente anche nell'intonazione."
+        en: "To say “I am from…”, Armenian often uses a country form ending in -ից. Learn complete patterns such as Ես Իտալիայից եմ rather than assembling each word separately. Questions are also marked by intonation."
+      examples:
+        - target: "Որտեղի՞ց ես։"
+          transliteration: "vorteghits es"
+          translation:
+            it: "Di dove sei?"
+            en: "Where are you from?"
+        - target: "Ես Իտալիայից եմ։"
+          transliteration: "yes Italiayits em"
+          translation:
+            it: "Vengo dall'Italia."
+            en: "I am from Italy."
+        - target: "Ես հայերեն եմ սովորում։"
+          transliteration: "yes hayeren em sovorum"
+          translation:
+            it: "Studio armeno."
+            en: "I am learning Armenian."
+      dialogue:
+        - speaker:
+            it: "Custode"
+            en: "Keeper"
+          target: "Որտեղի՞ց ես։"
+          transliteration: "vorteghits es"
+          translation:
+            it: "Di dove sei?"
+            en: "Where are you from?"
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Ես Իտալիայից եմ։ Ես հայերեն եմ սովորում։"
+          transliteration: "yes Italiayits em. yes hayeren em sovorum"
+          translation:
+            it: "Vengo dall'Italia. Studio armeno."
+            en: "I am from Italy. I am learning Armenian."
+      study_notes:
+        - it: "Distingui il paese, la lingua e la persona: Հայաստան, հայերեն e հայ non sono intercambiabili."
+          en: "Keep country, language, and person distinct: Հայաստան, հայերեն, and հայ are not interchangeable."
+        - it: "Ripeti la domanda e la risposta come una coppia, poi cambia soltanto il paese."
+          en: "Practise the question and answer as a pair, then change only the country."
+      common_mistakes:
+        - it: "Non usare come risposta sbagliata una frase armena che cambia soltanto un ordine di parole ancora naturale."
+          en: "Do not use a naturally reordered Armenian sentence as the only wrong answer."
+    mission:
+      it: "Ricomponi la mappa delle lingue presentando tre viaggiatori."
+      en: "Rebuild the language map by introducing three travellers."
+    cliffhanger:
+      it: "Oltre la frontiera appare una città le cui strade si spostano ogni volta che qualcuno dà un'indicazione poco chiara."
+      en: "Beyond the border lies a city whose streets move whenever someone gives an unclear direction."
+  - id: "chapter_stage_10"
+    minimum_level: 10
+    title:
+      it: "Capitolo 10 · La città che cambia strada"
+      en: "Chapter 10 · The city that changes its streets"
+    summary:
+      it: "Chiedi dove si trova un luogo e segui indicazioni brevi."
+      en: "Ask where a place is and follow short directions."
+    fiction:
+      it: "Nella città mobile, ponti e piazze cambiano posizione al suono di ogni risposta. L'eroe deve chiedere con precisione e seguire un'indicazione alla volta per raggiungere la torre centrale."
+      en: "In the moving city, bridges and squares change position with every answer. The hero must ask precisely and follow one direction at a time to reach the central tower."
+    story_beats:
+      - it: "Una mappa magica mostra solo tre simboli: il luogo cercato, un punto di riferimento e la direzione successiva."
+        en: "A magic map shows only three symbols: the destination, a landmark, and the next direction."
+    lesson:
+      title:
+        it: "Luoghi e indicazioni"
+        en: "Places and directions"
+      objectives:
+        - it: "Chiedere dove si trova un luogo."
+          en: "Ask where a place is."
+        - it: "Capire vicino e lontano."
+          en: "Understand near and far."
+        - it: "Seguire destra, sinistra e dritto."
+          en: "Follow right, left, and straight ahead."
+      explanation:
+        it: "Le domande di luogo e le istruzioni sono schemi diversi: Կայարանը որտե՞ղ է chiede una posizione, mentre Գնա ուղիղ dà un comando. Imparali come blocchi funzionali e usa un solo riferimento per volta."
+        en: "Location questions and directions use different patterns: Կայարանը որտե՞ղ է asks for a location, while Գնա ուղիղ gives a command. Learn them as functional chunks and use one landmark at a time."
+      examples:
+        - target: "Կայարանը որտե՞ղ է։"
+          transliteration: "kayarany vortegh e"
+          translation:
+            it: "Dov'è la stazione?"
+            en: "Where is the station?"
+        - target: "Գնա ուղիղ։"
+          transliteration: "gna ughigh"
+          translation:
+            it: "Vai dritto."
+            en: "Go straight."
+        - target: "Կամուրջը փողոցի մոտ է։"
+          transliteration: "kamurjy poghotsi mot e"
+          translation:
+            it: "Il ponte è vicino alla strada."
+            en: "The bridge is near the street."
+      dialogue:
+        - speaker:
+            it: "Viaggiatore"
+            en: "Traveller"
+          target: "Կայարանը որտե՞ղ է։"
+          transliteration: "kayarany vortegh e"
+          translation:
+            it: "Dov'è la stazione?"
+            en: "Where is the station?"
+        - speaker:
+            it: "Cartografa"
+            en: "Mapmaker"
+          target: "Գնա ուղիղ, հետո՝ աջ։"
+          transliteration: "gna ughigh, heto aj"
+          translation:
+            it: "Vai dritto, poi a destra."
+            en: "Go straight, then turn right."
+      study_notes:
+        - it: "Disegna una piccola mappa e ripeti una sola indicazione per ogni tratto."
+          en: "Draw a small map and say one direction for each section."
+        - it: "Contrasta մոտ e հեռու usando gli stessi due luoghi."
+          en: "Contrast մոտ and հեռու using the same two places."
+      common_mistakes:
+        - it: "Non confondere una domanda «dove?» con un comando «vai…» solo perché condividono parole di luogo."
+          en: "Do not confuse a “where?” question with a “go…” command just because both use place words."
+    mission:
+      it: "Porta la mappa alla torre seguendo quattro indicazioni corrette."
+      en: "Carry the map to the tower by following four correct directions."
+    cliffhanger:
+      it: "La torre non ha scale: le sue porte si aprono soltanto all'ora giusta."
+      en: "The tower has no stairs: its doors open only at the right time."
+  - id: "chapter_stage_11"
+    minimum_level: 11
+    title:
+      it: "Capitolo 11 · La torre delle ore"
+      en: "Chapter 11 · The tower of hours"
+    summary:
+      it: "Parla di giorni, orari e routine quotidiane."
+      en: "Talk about days, times, and daily routines."
+    fiction:
+      it: "Ogni piano della torre appartiene a un momento diverso della giornata. Per salire, l'eroe deve collegare il giorno, l'ora e un'azione senza confondere durata e orario."
+      en: "Each floor of the tower belongs to a different time of day. To climb, the hero must connect the day, the time, and an action without confusing duration with clock time."
+    story_beats:
+      - it: "Le lancette rallentano quando una frase contiene un'informazione inutile. La risposta più chiara è quasi sempre breve."
+        en: "The hands slow down when a sentence contains unnecessary information. The clearest answer is usually short."
+    lesson:
+      title:
+        it: "Giorni, ora e routine"
+        en: "Days, clock time, and routines"
+      objectives:
+        - it: "Dire che giorno è."
+          en: "Say what day it is."
+        - it: "Dire un'ora intera."
+          en: "Tell a whole-hour time."
+        - it: "Descrivere un'azione abituale del mattino o della sera."
+          en: "Describe a habitual morning or evening action."
+      explanation:
+        it: "Ժամը երեքն է significa «Sono le tre», mentre երեք ժամ significa «tre ore». L'ordine e le forme grammaticali distinguono l'orario dalla durata. Collega poi l'ora a una routine con parole come առավոտ e երեկո."
+        en: "Ժամը երեքն է means “It is three o'clock,” while երեք ժամ means “three hours.” Word order and grammatical forms distinguish clock time from duration. Then connect a time to a routine using words such as առավոտ and երեկո."
+      examples:
+        - target: "Այսօր երկուշաբթի է։"
+          transliteration: "aysor yerkushabti e"
+          translation:
+            it: "Oggi è lunedì."
+            en: "Today is Monday."
+        - target: "Ժամը երեքն է։"
+          transliteration: "zhamy yerekn e"
+          translation:
+            it: "Sono le tre."
+            en: "It is three o'clock."
+        - target: "Ես առավոտյան շուտ եմ արթնանում։"
+          transliteration: "yes aravotyan shut em artnanum"
+          translation:
+            it: "Mi sveglio presto la mattina."
+            en: "I wake up early in the morning."
+      dialogue:
+        - speaker:
+            it: "Orologiaia"
+            en: "Clockmaker"
+          target: "Դասը ժամը իննին է։"
+          transliteration: "dasy zhamy innin e"
+          translation:
+            it: "La lezione è alle nove."
+            en: "The lesson is at nine."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Ես առավոտյան շուտ եմ արթնանում։"
+          transliteration: "yes aravotyan shut em artnanum"
+          translation:
+            it: "Mi sveglio presto la mattina."
+            en: "I wake up early in the morning."
+      study_notes:
+        - it: "Usa un orologio vero o disegnato mentre ripeti le frasi."
+          en: "Use a real or drawn clock while practising the sentences."
+        - it: "Contrasta oggi, domani e ieri con la stessa attività."
+          en: "Contrast today, tomorrow, and yesterday with the same activity."
+      common_mistakes:
+        - it: "Non scegliere «tre ore» quando la domanda chiede che ora è."
+          en: "Do not choose “three hours” when the question asks for the time."
+    mission:
+      it: "Metti in ordine il giorno della torre e raggiungi l'ultima porta."
+      en: "Put the tower's day in order and reach the final door."
+    cliffhanger:
+      it: "Dietro la porta c'è un'aula dove i libri rispondono solo a istruzioni pronunciate con chiarezza."
+      en: "Behind the door is a classroom where books respond only to clearly spoken instructions."
+  - id: "chapter_stage_12"
+    minimum_level: 12
+    title:
+      it: "Capitolo 12 · L'aula d'inchiostro"
+      en: "Chapter 12 · The ink classroom"
+    summary:
+      it: "Capisci istruzioni comuni e usa il lessico della classe."
+      en: "Understand common instructions and use classroom vocabulary."
+    fiction:
+      it: "Nell'aula d'inchiostro, quaderni e matite si muovono da soli. L'eroe deve distinguere l'oggetto dall'azione e seguire l'istruzione esatta per evitare che le parole si cancellino."
+      en: "In the ink classroom, notebooks and pencils move by themselves. The hero must distinguish the object from the action and follow the exact instruction before the words disappear."
+    story_beats:
+      - it: "Ogni comando corretto lascia una riga leggibile sulla lavagna; un comando diverso produce un risultato diverso, non un semplice errore di ordine."
+        en: "Each correct command leaves a readable line on the board; a different command produces a different result, not merely a different word order."
+    lesson:
+      title:
+        it: "Istruzioni di classe"
+        en: "Classroom instructions"
+      objectives:
+        - it: "Riconoscere gli oggetti principali della classe."
+          en: "Recognise key classroom objects."
+        - it: "Capire comandi brevi come apri, scrivi e ascolta."
+          en: "Understand short commands such as open, write, and listen."
+        - it: "Dire di avere una domanda."
+          en: "Say that you have a question."
+      explanation:
+        it: "Nelle istruzioni, la forma verbale indica direttamente che cosa fare. Impara insieme verbo e oggetto: Բացիր գիրքը, Գրիր անունդ, Լսիր ուսուցչին. Cambiare il verbo o l'oggetto cambia davvero il significato."
+        en: "In instructions, the verb form directly tells you what to do. Learn verb and object together: Բացիր գիրքը, Գրիր անունդ, Լսիր ուսուցչին. Changing the verb or the object genuinely changes the meaning."
+      examples:
+        - target: "Բացիր գիրքը։"
+          transliteration: "batsir girky"
+          translation:
+            it: "Apri il libro."
+            en: "Open the book."
+        - target: "Գրիր անունդ։"
+          transliteration: "grir anund"
+          translation:
+            it: "Scrivi il tuo nome."
+            en: "Write your name."
+        - target: "Ես հարց ունեմ։"
+          transliteration: "yes harts unem"
+          translation:
+            it: "Ho una domanda."
+            en: "I have a question."
+      dialogue:
+        - speaker:
+            it: "Insegnante"
+            en: "Teacher"
+          target: "Լսիր ուսուցչին։"
+          transliteration: "lsir usutsichin"
+          translation:
+            it: "Ascolta l'insegnante."
+            en: "Listen to the teacher."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Ես հարց ունեմ։"
+          transliteration: "yes harts unem"
+          translation:
+            it: "Ho una domanda."
+            en: "I have a question."
+      study_notes:
+        - it: "Esegui davvero il comando con un libro, un quaderno e una matita."
+          en: "Act out each command with a book, notebook, and pencil."
+        - it: "Cambia un solo elemento alla volta: prima il verbo, poi l'oggetto."
+          en: "Change one element at a time: first the verb, then the object."
+      common_mistakes:
+        - it: "Non trattare «apri il libro» e «leggi il libro» come equivalenti: descrivono azioni diverse."
+          en: "Do not treat “open the book” and “read the book” as equivalent: they describe different actions."
+    mission:
+      it: "Completa la lezione d'inchiostro seguendo cinque istruzioni diverse."
+      en: "Complete the ink lesson by following five different instructions."
+    cliffhanger:
+      it: "Una pagina colorata vola fuori dall'aula e conduce a un mercato dove ogni oggetto cambia tinta."
+      en: "A coloured page flies out of the classroom and leads to a market where every object changes shade."
+  - id: "chapter_stage_13"
+    minimum_level: 13
+    title:
+      it: "Capitolo 13 · Il mercato dei colori"
+      en: "Chapter 13 · The market of colours"
+    summary:
+      it: "Descrivi vestiti e colori e parla di semplici preferenze."
+      en: "Describe clothes and colours and talk about simple preferences."
+    fiction:
+      it: "Nel mercato dei colori, gli oggetti cambiano aspetto ogni volta che vengono descritti in modo impreciso. Per comprare la stoffa giusta, l'eroe deve nominare sia l'oggetto sia il colore."
+      en: "At the market of colours, objects change whenever they are described imprecisely. To buy the right fabric, the hero must name both the item and its colour."
+    story_beats:
+      - it: "Il mercante mostra coppie molto simili: cambia soltanto il colore, il capo o la persona. Ogni alternativa ha quindi un significato diverso e verificabile."
+        en: "The merchant shows very similar pairs: only the colour, garment, or person changes. Every alternative therefore has a distinct, checkable meaning."
+    lesson:
+      title:
+        it: "Descrizioni con colori e vestiti"
+        en: "Descriptions with colours and clothes"
+      objectives:
+        - it: "Nominare colori frequenti."
+          en: "Name common colours."
+        - it: "Descrivere un capo di abbigliamento."
+          en: "Describe an item of clothing."
+        - it: "Chiedere quale colore piace."
+          en: "Ask which colour someone likes."
+      explanation:
+        it: "In armeno l'aggettivo di colore precede normalmente il nome nel modello studiato: կարմիր շապիկ. Nelle frasi al plurale, presta attenzione anche alla forma finale del verbo essere. Traduci in un inglese o italiano naturale senza inventare differenze di genere che l'armeno non esprime nello stesso modo."
+        en: "In the pattern studied here, an Armenian colour adjective normally comes before the noun: կարմիր շապիկ. In plural sentences, also notice the final form of “to be.” Translate naturally without inventing gender distinctions that Armenian does not express in the same way."
+      examples:
+        - target: "Սա կարմիր շապիկ է։"
+          transliteration: "sa karmir shapik e"
+          translation:
+            it: "Questa è una maglietta rossa."
+            en: "This is a red shirt."
+        - target: "Անիի կոշիկները սև են։"
+          transliteration: "Anii koshiknery sev en"
+          translation:
+            it: "Le scarpe di Ani sono nere."
+            en: "Ani's shoes are black."
+        - target: "Ի՞նչ գույն ես սիրում։"
+          transliteration: "inch guyn es sirum"
+          translation:
+            it: "Quale colore ti piace?"
+            en: "What colour do you like?"
+      dialogue:
+        - speaker:
+            it: "Mercante"
+            en: "Merchant"
+          target: "Ի՞նչ գույն ես սիրում։"
+          transliteration: "inch guyn es sirum"
+          translation:
+            it: "Quale colore ti piace?"
+            en: "What colour do you like?"
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Ես կապույտ գույն եմ սիրում։"
+          transliteration: "yes kapuyt guyn em sirum"
+          translation:
+            it: "Mi piace il blu."
+            en: "I like blue."
+      study_notes:
+        - it: "Abbina ogni colore a due oggetti diversi per evitare di memorizzare una sola coppia."
+          en: "Match each colour with two different objects so you do not memorise only one pair."
+        - it: "Contrasta singolare e plurale con շապիկ e կոշիկներ."
+          en: "Contrast singular and plural using շապիկ and կոշիկներ."
+      common_mistakes:
+        - it: "Non accettare due opzioni che descrivono lo stesso oggetto con un ordine di parole ancora naturale."
+          en: "Do not offer two options that describe the same object with merely another natural word order."
+    mission:
+      it: "Trova quattro oggetti del colore richiesto e completa il mantello del mercante."
+      en: "Find four objects in the requested colours and complete the merchant's cloak."
+    cliffhanger:
+      it: "Lo specchio del mercato riflette un volto stanco e apre un passaggio verso la sala del benessere."
+      en: "The market mirror reflects a tired face and opens a passage to the hall of well-being."
+  - id: "chapter_stage_14"
+    minimum_level: 14
+    title:
+      it: "Capitolo 14 · Lo specchio del benessere"
+      en: "Chapter 14 · The mirror of well-being"
+    summary:
+      it: "Parla del corpo, delle emozioni e di semplici problemi di salute."
+      en: "Talk about the body, feelings, and simple health problems."
+    fiction:
+      it: "Lo specchio magico non mostra l'aspetto, ma come si sente chi lo guarda. L'eroe deve distinguere una parte del corpo, un'emozione e una negazione per aiutare i personaggi della sala."
+      en: "The magic mirror shows not appearance but how the viewer feels. The hero must distinguish a body part, an emotion, and a negative form to help the people in the hall."
+    story_beats:
+      - it: "Ogni personaggio pronuncia una frase breve. Cambiare la persona, la parte del corpo o la negazione produce una situazione diversa."
+        en: "Each character says one short sentence. Changing the person, body part, or negation creates a different situation."
+    lesson:
+      title:
+        it: "Come ti senti?"
+        en: "How do you feel?"
+      objectives:
+        - it: "Indicare una parte del corpo che fa male."
+          en: "Say which body part hurts."
+        - it: "Dire di essere stanco, felice o triste."
+          en: "Say that you are tired, happy, or sad."
+        - it: "Dire che non ti senti bene."
+          en: "Say that you do not feel well."
+      explanation:
+        it: "Espressioni come Գլուխս ցավում է vanno imparate come frasi complete. La terminazione su գլուխ indica «la mia testa», mentre չեմ rende negativa la prima persona in Ես լավ չեմ զգում. Concentrati sul significato comunicativo prima di analizzare ogni morfema."
+        en: "Expressions such as Գլուխս ցավում է are best learned as complete phrases. The ending on գլուխ marks “my head,” while չեմ forms the first-person negative in Ես լավ չեմ զգում. Focus on the communicative meaning before analysing every morpheme."
+      examples:
+        - target: "Գլուխս ցավում է։"
+          transliteration: "glukhs tsavum e"
+          translation:
+            it: "Mi fa male la testa."
+            en: "My head hurts."
+        - target: "Ես հոգնած եմ։"
+          transliteration: "yes hognats em"
+          translation:
+            it: "Sono stanco o stanca."
+            en: "I am tired."
+        - target: "Ես լավ չեմ զգում։"
+          transliteration: "yes lav chem zgum"
+          translation:
+            it: "Non mi sento bene."
+            en: "I do not feel well."
+      dialogue:
+        - speaker:
+            it: "Guaritrice"
+            en: "Healer"
+          target: "Ինչպե՞ս ես քեզ զգում։"
+          transliteration: "inchpes es kez zgum"
+          translation:
+            it: "Come ti senti?"
+            en: "How do you feel?"
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Ես հոգնած եմ, բայց գլուխս չի ցավում։"
+          transliteration: "yes hognats em, bayts glukhs chi tsavum"
+          translation:
+            it: "Sono stanco, ma non mi fa male la testa."
+            en: "I am tired, but my head does not hurt."
+      study_notes:
+        - it: "Mima l'emozione o indica la parte del corpo mentre pronunci la frase."
+          en: "Act out the feeling or point to the body part while saying the sentence."
+        - it: "Contrasta una frase positiva e la sua vera negazione."
+          en: "Contrast a positive sentence with its genuine negative form."
+      common_mistakes:
+        - it: "Non confondere «io sono stanco» con «lui o lei è stanco»: la persona grammaticale cambia."
+          en: "Do not confuse “I am tired” with “he or she is tired”: the grammatical person changes."
+    mission:
+      it: "Aiuta quattro personaggi a descrivere correttamente come si sentono."
+      en: "Help four characters describe how they feel accurately."
+    cliffhanger:
+      it: "Dietro lo specchio appare una casa piena di porte, ma una sola chiave è nel posto giusto."
+      en: "Behind the mirror appears a house full of doors, but only one key is in the right place."
+  - id: "chapter_stage_15"
+    minimum_level: 15
+    title:
+      it: "Capitolo 15 · La casa delle chiavi"
+      en: "Chapter 15 · The house of keys"
+    summary:
+      it: "Descrivi stanze e posizioni con su, sotto e dentro."
+      en: "Describe rooms and positions using on, under, and in."
+    fiction:
+      it: "La casa delle chiavi cambia disposizione ogni volta che una posizione viene descritta male. Per uscire, l'eroe deve dire con precisione quale oggetto si trova su, sotto o dentro un altro."
+      en: "The house of keys rearranges itself whenever a position is described incorrectly. To escape, the hero must say precisely which object is on, under, or inside another."
+    story_beats:
+      - it: "Ogni stanza contiene gli stessi pochi oggetti in posizioni diverse, così il significato dipende davvero dalla parola di luogo."
+        en: "Each room contains the same few objects in different positions, so the meaning truly depends on the location word."
+    lesson:
+      title:
+        it: "Stanze e posizione degli oggetti"
+        en: "Rooms and object location"
+      objectives:
+        - it: "Nominare alcune stanze della casa."
+          en: "Name several rooms in a home."
+        - it: "Dire che cosa è aperto o chiuso."
+          en: "Say what is open or closed."
+        - it: "Usare վրա, տակ e մեջ in frasi semplici."
+          en: "Use վրա, տակ, and մեջ in simple sentences."
+      explanation:
+        it: "Nelle frasi di posizione, il punto di riferimento assume spesso una forma come սեղանի «del tavolo». Impara inizialmente l'intera struttura Բանալին սեղանի վրա է e sostituisci un solo elemento alla volta."
+        en: "In location sentences, the landmark often takes a form such as սեղանի, “of the table.” At first, learn the whole structure Բանալին սեղանի վրա է and replace only one element at a time."
+      examples:
+        - target: "Սա իմ սենյակն է։"
+          transliteration: "sa im senyakn e"
+          translation:
+            it: "Questa è la mia stanza."
+            en: "This is my room."
+        - target: "Բանալին սեղանի վրա է։"
+          transliteration: "banalin seghani vra e"
+          translation:
+            it: "La chiave è sul tavolo."
+            en: "The key is on the table."
+        - target: "Պայուսակը աթոռի տակ է։"
+          transliteration: "payusaky atori tak e"
+          translation:
+            it: "La borsa è sotto la sedia."
+            en: "The bag is under the chair."
+      dialogue:
+        - speaker:
+            it: "Casa"
+            en: "House"
+          target: "Բանալին որտե՞ղ է։"
+          transliteration: "banalin vortegh e"
+          translation:
+            it: "Dov'è la chiave?"
+            en: "Where is the key?"
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Բանալին սեղանի վրա է։"
+          transliteration: "banalin seghani vra e"
+          translation:
+            it: "La chiave è sul tavolo."
+            en: "The key is on the table."
+      study_notes:
+        - it: "Sposta davvero una chiave, un libro e una borsa e descrivi ogni nuova posizione."
+          en: "Move a real key, book, and bag and describe each new position."
+        - it: "Mantieni lo stesso oggetto e cambia soltanto վրա, տակ o մեջ."
+          en: "Keep the same object and change only վրա, տակ, or մեջ."
+      common_mistakes:
+        - it: "Non considerare equivalenti «sul tavolo» e «sotto il tavolo»: la relazione spaziale è il centro della frase."
+          en: "Do not treat “on the table” and “under the table” as equivalent: the spatial relationship is the point of the sentence."
+    mission:
+      it: "Trova la chiave descrivendo correttamente cinque posizioni."
+      en: "Find the key by describing five locations correctly."
+    cliffhanger:
+      it: "La porta finale conduce a una piazza piena di domande: ogni voce vuole sapere chi, che cosa, dove, quando o perché."
+      en: "The final door leads to a square full of questions: every voice wants to know who, what, where, when, or why."
+  - id: "chapter_stage_16"
+    minimum_level: 16
+    title:
+      it: "Capitolo 16 · La piazza delle domande"
+      en: "Chapter 16 · The square of questions"
+    summary:
+      it: "Fai domande utili, usa la negazione e collega brevi scambi."
+      en: "Ask useful questions, use negation, and connect short exchanges."
+    fiction:
+      it: "Nella piazza, le domande volano come lanterne. L'eroe deve capire quale informazione manca e rispondere con una frase breve ma completa, poi riconoscere quando un'azione è negata."
+      en: "In the square, questions float like lanterns. The hero must identify the missing information and answer with a short but complete sentence, then recognise when an action is negated."
+    story_beats:
+      - it: "Le lanterne si raggruppano per funzione: che cosa, dove, quando, perché e chi. Una domanda corretta apre soltanto la risposta dello stesso tipo."
+        en: "The lanterns group by function: what, where, when, why, and who. A correct question opens only an answer of the matching type."
+    lesson:
+      title:
+        it: "Domande, negazione e scambi"
+        en: "Questions, negation, and exchanges"
+      objectives:
+        - it: "Distinguere domande su cosa, luogo, tempo e persona."
+          en: "Distinguish questions about things, place, time, and people."
+        - it: "Riconoscere una frase negativa al plurale."
+          en: "Recognise a plural negative sentence."
+        - it: "Collegare domanda e risposta in un breve scambio."
+          en: "Connect a question and answer in a short exchange."
+      explanation:
+        it: "Le parole interrogative non sono intercambiabili: Ի՞նչ chiede «che cosa», Որտե՞ղ «dove», Ե՞րբ «quando» e Ո՞վ «chi». Nelle forme plurali, confronta նրանք … են con նրանք … չեն per sentire la negazione."
+        en: "Question words are not interchangeable: Ի՞նչ asks “what,” Որտե՞ղ “where,” Ե՞րբ “when,” and Ո՞վ “who.” In plural forms, compare նրանք … են with նրանք … չեն to hear the negation."
+      examples:
+        - target: "Ի՞նչ ես կարդում։"
+          transliteration: "inch es kardum"
+          translation:
+            it: "Che cosa stai leggendo?"
+            en: "What are you reading?"
+        - target: "Ե՞րբ ես տուն գնում։"
+          transliteration: "yerb es tun gnum"
+          translation:
+            it: "Quando vai a casa?"
+            en: "When are you going home?"
+        - target: "Նրանք հիմա չեն խաղում։"
+          transliteration: "nrank hima chen khaghum"
+          translation:
+            it: "Adesso non stanno giocando."
+            en: "They are not playing now."
+      dialogue:
+        - speaker:
+            it: "Voce"
+            en: "Voice"
+          target: "Ի՞նչ ես կարդում։"
+          transliteration: "inch es kardum"
+          translation:
+            it: "Che cosa stai leggendo?"
+            en: "What are you reading?"
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Ես հայերեն գիրք եմ կարդում։"
+          transliteration: "yes hayeren girk em kardum"
+          translation:
+            it: "Sto leggendo un libro in armeno."
+            en: "I am reading an Armenian book."
+      study_notes:
+        - it: "Abbina ogni parola interrogativa al tipo di risposta che richiede."
+          en: "Match each question word to the kind of answer it requires."
+        - it: "Trasforma una frase plurale positiva nella sua vera forma negativa."
+          en: "Turn a positive plural sentence into its genuine negative form."
+      common_mistakes:
+        - it: "Non accettare una risposta che è grammaticalmente possibile ma risponde a una domanda diversa."
+          en: "Do not accept an answer that is grammatical but answers a different question."
+    mission:
+      it: "Accendi tutte le lanterne costruendo quattro coppie domanda-risposta."
+      en: "Light every lantern by building four question-and-answer pairs."
+    cliffhanger:
+      it: "La piazza apre una nuova strada verso racconti più lunghi, esperienze passate e progetti futuri: il prossimo tratto del corso può essere aggiunto senza cambiare il motore del gioco."
+      en: "The square opens a new road towards longer stories, past experiences, and future plans: the next course section can be added without changing the game engine."
+# END GENERATED CURRICULUM V2: story-chapters

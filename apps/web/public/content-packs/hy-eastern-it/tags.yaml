@@ -188,3 +188,33 @@ controlled_tags:
   - id: 'topic:weather'
     label: weather
     description: 'Tag controllato del curriculum: topic:weather'
+
+  # BEGIN GENERATED CURRICULUM V2: controlled-tags
+  - id: "stage:9"
+    label: "9"
+    description: "Tag controllato del curriculum: stage:9"
+  - id: "stage:10"
+    label: "10"
+    description: "Tag controllato del curriculum: stage:10"
+  - id: "stage:11"
+    label: "11"
+    description: "Tag controllato del curriculum: stage:11"
+  - id: "stage:12"
+    label: "12"
+    description: "Tag controllato del curriculum: stage:12"
+  - id: "stage:13"
+    label: "13"
+    description: "Tag controllato del curriculum: stage:13"
+  - id: "stage:14"
+    label: "14"
+    description: "Tag controllato del curriculum: stage:14"
+  - id: "stage:15"
+    label: "15"
+    description: "Tag controllato del curriculum: stage:15"
+  - id: "stage:16"
+    label: "16"
+    description: "Tag controllato del curriculum: stage:16"
+  - id: "curriculum:v2"
+    label: "curriculum v2"
+    description: "Contenuto curato per il curriculum v2"
+  # END GENERATED CURRICULUM V2: controlled-tags

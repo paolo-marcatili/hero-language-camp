@@ -37,6 +37,11 @@ function validateLanguagePack(value) {
   if (!value.base_language?.code) errors.push("modular pack must define base_language.code.");
   if (!Array.isArray(value.controlled_tags) || value.controlled_tags.length === 0) warnings.push("controlled_tags is empty; semantic grouping will be weak.");
   const tagSet = new Set((value.controlled_tags ?? []).map((tag) => tag.id));
+  const authoredStageNumbers = new Set(
+    (Array.isArray(value.levels) ? value.levels : [])
+      .filter((level) => isObject(level) && Number.isInteger(level.number) && level.number >= 0)
+      .map((level) => level.number)
+  );
   if (!Array.isArray(value.training_options) || value.training_options.length === 0) errors.push("training_options must be provided by tasks.yaml.");
   if (!Array.isArray(value.levels) || value.levels.length === 0) errors.push("levels must be provided by levels.yaml.");
   if (!Array.isArray(value.enemies) || value.enemies.length === 0) errors.push("enemies must be provided by enemies.yaml.");
@@ -53,7 +58,7 @@ function validateLanguagePack(value) {
     if (!Array.isArray(item.tags)) errors.push(`items[${index}].tags must be an array.`);
     else {
       for (const tag of item.tags) if (tagSet.size && !tagSet.has(tag)) warnings.push(`items[${index}] uses uncontrolled tag: ${tag}`);
-      validateCurriculumTags(item, `items[${index}]`, errors);
+      validateCurriculumTags(item, `items[${index}]`, errors, authoredStageNumbers);
       if (item.tags.includes("tier:core") && item.translation_review_status?.it !== "reviewed") errors.push(`items[${index}] core Italian translation must be reviewed.`);
     }
     if (!Array.isArray(item.audio)) errors.push(`items[${index}].audio must be an array.`);
@@ -70,7 +75,7 @@ function validateLanguagePack(value) {
     const duplicateVisible = [...letterIds].filter((id) => id !== letter.id).length;
     void duplicateVisible;
     if (!label) errors.push(`letters[${index}] must have a visible label.`);
-    if (Array.isArray(letter.tags)) validateCurriculumTags(letter, `letters[${index}]`, errors);
+    if (Array.isArray(letter.tags)) validateCurriculumTags(letter, `letters[${index}]`, errors, authoredStageNumbers);
     else errors.push(`letters[${index}].tags must be an array.`);
     if (letter.review_status !== "approved") warnings.push(`letters[${index}] is not approved yet: ${letter.id}`);
   }
@@ -91,7 +96,7 @@ function validateLanguagePack(value) {
     if (!Array.isArray(grammar.tags)) errors.push(`grammar_items[${index}].tags must be an array.`);
     else {
       for (const tag of grammar.tags) if (tagSet.size && !tagSet.has(tag)) warnings.push(`grammar_items[${index}] uses uncontrolled tag: ${tag}`);
-      validateCurriculumTags(grammar, `grammar_items[${index}]`, errors);
+      validateCurriculumTags(grammar, `grammar_items[${index}]`, errors, authoredStageNumbers);
       if (grammar.tags.includes("tier:core")) {
         if (grammar.translation_review_status?.it !== "reviewed") errors.push(`grammar_items[${index}] core Italian translation must be reviewed.`);
         const italianDistractors = grammar.translation_distractors?.it;
@@ -129,7 +134,7 @@ function validateLanguagePack(value) {
     if (!["sentence_picture", "sentence_order", "missing_word", "missing_letter", "mini_story", "initial_sound", "final_sound", "rhyme", "syllable_count"].includes(problem.domain)) errors.push(`${path}.domain is unsupported.`);
     if (!isObject(problem.prompt)) errors.push(`${path}.prompt must be localized text.`);
     if (!Array.isArray(problem.tags)) errors.push(`${path}.tags must be an array.`);
-    else { for (const tag of problem.tags) if (tagSet.size && !tagSet.has(tag)) warnings.push(`${path} uses uncontrolled tag: ${tag}`); validateCurriculumTags(problem, path, errors); }
+    else { for (const tag of problem.tags) if (tagSet.size && !tagSet.has(tag)) warnings.push(`${path} uses uncontrolled tag: ${tag}`); validateCurriculumTags(problem, path, errors, authoredStageNumbers); }
     if (problem.options !== undefined && (!Array.isArray(problem.options) || problem.options.some((entry) => typeof entry !== "string" || !entry.trim()))) errors.push(`${path}.options must contain non-empty strings.`);
   }
 
@@ -271,13 +276,21 @@ function validateLanguagePack(value) {
   return { ok: errors.length === 0, errors, warnings };
 }
 
-function validateCurriculumTags(entry, path, errors) {
+function validateCurriculumTags(entry, path, errors, authoredStageNumbers) {
   const tags = entry.tags ?? [];
   const tiers = tags.filter((tag) => tag === "tier:core" || tag === "tier:extension");
   if (tiers.length !== 1) errors.push(`${path} must have exactly one tier:core or tier:extension tag.`);
-  if (tiers[0] === "tier:core") {
-    const stages = tags.filter((tag) => /^stage:(?:[0-9]|1[0-3])$/.test(tag));
-    if (stages.length !== 1) errors.push(`${path} core content must have exactly one stage:0 through stage:13 tag.`);
+  if (tiers[0] !== "tier:core") return;
+
+  const stageTags = tags.filter((tag) => typeof tag === "string" && tag.startsWith("stage:"));
+  if (stageTags.length !== 1 || !/^stage:(?:0|[1-9]\d*)$/.test(stageTags[0])) {
+    errors.push(`${path} core content must have exactly one non-negative stage:N tag.`);
+    return;
+  }
+
+  const stage = Number(stageTags[0].slice("stage:".length));
+  if (authoredStageNumbers.size > 0 && !authoredStageNumbers.has(stage)) {
+    errors.push(`${path} core content references unauthored stage:${stage}.`);
   }
 }
 
