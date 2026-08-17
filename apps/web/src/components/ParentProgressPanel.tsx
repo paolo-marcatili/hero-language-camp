@@ -157,19 +157,19 @@ function RadarChart({ categories, label }: { categories: CategoryMetric[]; label
 }
 
 function buildCategories(pack: LanguagePack, state: LearnerState, language: string, copy: ReturnType<typeof progressCopy>): CategoryMetric[] {
+  const requireCoreTier = pack.subject === "language";
   const letters = (pack.letters ?? [])
-    .filter((entry) => stageOf(entry.tags ?? []) <= state.level)
+    .filter((entry) => isCurriculumIntroduced(entry.tags ?? [], state.level, requireCoreTier))
     .map((entry) => ({ id: entry.id, label: `${entry.uppercase ?? entry.character} ${entry.lowercase ?? entry.character}`, memory: state.mastery_by_letter[entry.id] }));
   const words = pack.items
-    .filter((entry) => stageOf(entry.tags) <= state.level)
+    .filter((entry) => isCurriculumIntroduced(entry.tags, state.level, requireCoreTier))
     .map((entry) => ({ id: entry.id, label: entry.target, memory: state.mastery_by_item[entry.id] }));
-
   if (pack.subject === "foundations") {
     const reading = (pack.reading_problems ?? [])
-      .filter((entry) => stageOf(entry.tags) <= state.level)
+      .filter((entry) => isCurriculumIntroduced(entry.tags, state.level, false))
       .map((entry) => ({ id: entry.id, label: entry.text, memory: state.mastery_by_grammar[entry.id] }));
     const math = (pack.math_problems ?? [])
-      .filter((entry) => stageOf(entry.tags) <= state.level)
+      .filter((entry) => isCurriculumIntroduced(entry.tags, state.level, false))
       .map((entry) => ({ id: entry.id, label: getLocalizedText(entry.prompt, language, entry.id), memory: state.mastery_by_grammar[entry.id] }));
     return [
       category("letters", "🔤", copy.letters, letters),
@@ -178,9 +178,8 @@ function buildCategories(pack: LanguagePack, state: LearnerState, language: stri
       category("math", "🧮", copy.math, math)
     ];
   }
-
   const grammar = (pack.grammar_items ?? [])
-    .filter((entry) => stageOf(entry.tags) <= state.level)
+    .filter((entry) => isCurriculumIntroduced(entry.tags, state.level))
     .map((entry) => ({ id: entry.id, label: entry.target_sentence, memory: state.mastery_by_grammar[entry.id] }));
   return [
     category("alphabet", "🔤", copy.alphabet, letters),
@@ -219,9 +218,20 @@ function average(values: number[]): number {
   return values.length ? values.reduce((sum, value) => sum + value, 0) / values.length : 0;
 }
 
-function stageOf(tags: string[]): number {
-  const tag = tags.find((value) => value.startsWith("stage:"));
-  return tag ? Number(tag.slice(6)) || 0 : 0;
+function stageOf(tags: string[]): number | undefined {
+  const tag = tags.find((value) => /^stage:\d+$/.test(value));
+  if (!tag) return undefined;
+  const stage = Number(tag.slice(6));
+  return Number.isInteger(stage) && stage >= 0 ? stage : undefined;
+}
+
+/** Only explicitly staged curriculum content belongs in the introduced/mastered denominator. */
+function isCurriculumIntroduced(tags: string[], level: number, requireCoreTier = true): boolean {
+  const stage = stageOf(tags);
+  if (stage === undefined || stage > level) return false;
+  if (tags.includes("tier:extension")) return false;
+  if (!requireCoreTier) return true;
+  return tags.includes("tier:core");
 }
 
 function progressCopy(language: string) {

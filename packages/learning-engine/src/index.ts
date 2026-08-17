@@ -567,8 +567,8 @@ function applyDeferredItemBonuses(
 
 export function markEnemyDefeated(state: LearnerState, enemyId: string, bonusCoins: number, pack?: LanguagePack): LearnerState {
   const alreadyDefeated = state.defeated_enemies.includes(enemyId);
-  const maxLevel = pack?.levels?.reduce((maximum, level) => Math.max(maximum, level.number), state.level + 1) ?? state.level + 1;
-  const nextLevel = alreadyDefeated ? state.level : Math.min(maxLevel, state.level + 1);
+  // Hero levels are deliberately open-ended. Authored curriculum may stop temporarily, but gameplay continues.
+  const nextLevel = alreadyDefeated ? state.level : state.level + 1;
   const cappedStats = clampStatsToLevel(state.hero_stats, nextLevel, pack);
   const deferred = applyDeferredItemBonuses(cappedStats, state.pending_item_stat_bonuses, nextLevel, pack);
 
@@ -618,12 +618,42 @@ export function getStatValue(stats: HeroStats, statName: HeroStatKey): number {
   return stats[statName];
 }
 
+export function getExactLevelConfig(pack: LanguagePack | undefined, level: number): PackLevel | undefined {
+  const normalizedLevel = Math.max(0, Math.floor(level));
+  return pack?.levels?.find((entry) => entry.number === normalizedLevel);
+}
+
+/** Latest authored level at or below the hero level, used for review/fallback rules only. */
 export function getLevelConfig(pack: LanguagePack | undefined, level: number): PackLevel | undefined {
-  return pack?.levels?.find((entry) => entry.number === level) ?? pack?.levels?.slice().sort((a, b) => b.number - a.number).find((entry) => entry.number <= level);
+  const normalizedLevel = Math.max(0, Math.floor(level));
+  return getExactLevelConfig(pack, normalizedLevel)
+    ?? pack?.levels?.slice().sort((a, b) => b.number - a.number).find((entry) => entry.number <= normalizedLevel);
 }
 
 export function getLevelStatCap(level: number, pack?: LanguagePack): number {
-  return getLevelConfig(pack, level)?.stat_cap ?? Math.max(1, level) * 5;
+  const normalizedLevel = Math.max(0, Math.floor(level));
+  const exact = getExactLevelConfig(pack, normalizedLevel);
+  if (exact) return Math.max(1, Math.round(exact.stat_cap));
+
+  const progression = pack?.progression;
+  if (
+    typeof progression?.stat_cap_start === "number"
+    && typeof progression.stat_cap_per_level === "number"
+  ) {
+    return Math.max(1, Math.round(progression.stat_cap_start + normalizedLevel * progression.stat_cap_per_level));
+  }
+
+  const authored = (pack?.levels ?? []).slice().sort((a, b) => a.number - b.number);
+  if (authored.length >= 2) {
+    const last = authored[authored.length - 1];
+    const previous = authored[authored.length - 2];
+    const levelDelta = Math.max(1, last.number - previous.number);
+    const perLevel = (last.stat_cap - previous.stat_cap) / levelDelta;
+    if (Number.isFinite(perLevel) && perLevel > 0) return Math.max(1, Math.round(last.stat_cap + (normalizedLevel - last.number) * perLevel));
+  }
+
+  // Legacy/default progression: level 0 has cap 5, then +5 per level.
+  return Math.max(1, (normalizedLevel + 1) * 5);
 }
 
 export function getMaxComplexityForLevel(level: number, pack?: LanguagePack): number {
@@ -656,6 +686,33 @@ export function estimateHeroDamage(stats: HeroStats, enemyStats: Partial<HeroSta
   const damage = Math.max(1, Math.min(maxDamage, Math.round(raw)));
   const absorbed = Math.max(0, Math.round(maxDamage - damage));
   return { damage, multiplier, max_damage: maxDamage, absorbed, label_key: hitLabel(multiplier) };
+}
+
+/**
+ * Apply temporary combat modifiers after the accuracy/defense hit has been
+ * calculated. This preserves visible timing differences instead of clipping
+ * every fast hit back to Strength inside estimateHeroDamage().
+ */
+export function applyHeroDamageModifiers(
+  base: CombatBreakdown,
+  modifier: number,
+  temporaryCapMultiplier = 1.5
+): CombatBreakdown {
+  const safeModifier = Number.isFinite(modifier) ? Math.max(0, modifier) : 1;
+  const baseCap = Math.max(1, base.max_damage);
+  const temporaryCap = Math.max(baseCap, Math.round(baseCap * Math.max(1, temporaryCapMultiplier)));
+  if (safeModifier <= 0) {
+    return { damage: 0, multiplier: 0, max_damage: temporaryCap, absorbed: base.absorbed, label_key: "blockedHit" };
+  }
+  const damage = Math.max(1, Math.min(temporaryCap, Math.round(base.damage * safeModifier)));
+  const combinedMultiplier = Math.max(0, base.multiplier * safeModifier);
+  return {
+    damage,
+    multiplier: combinedMultiplier,
+    max_damage: temporaryCap,
+    absorbed: Math.max(0, Math.round(base.absorbed * safeModifier)),
+    label_key: hitLabel(combinedMultiplier)
+  };
 }
 
 export function estimateMonsterDamage(heroStats: HeroStats, enemyStats: Partial<HeroStats> | undefined, statCap: number, timedOut = false): CombatBreakdown {

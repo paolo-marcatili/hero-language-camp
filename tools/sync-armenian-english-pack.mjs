@@ -309,7 +309,7 @@ if (!CHECK && existsSync(TARGET)) rmSync(TARGET, { recursive: true, force: true 
 put('pack.yaml', toYaml(pack));
 put('interface.yaml', toYaml(ui));
 put('tags.yaml', toYaml(tags));
-put('levels.yaml', toYaml({ levels }));
+put('levels.yaml', toYaml(sourceLevels.progression ? { progression: sourceLevels.progression, levels } : { levels }));
 put('story.yaml', toYaml(story));
 put('dictionary/words.jsonl', jsonl(words));
 put('dictionary/letters.jsonl', jsonl(letters));

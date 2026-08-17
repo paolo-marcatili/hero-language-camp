@@ -1,3 +1,8 @@
+progression:
+  stat_cap_start: 5
+  stat_cap_per_level: 5
+  unauthored_level_mode: review
+
 levels:
   - number: 0
     title: Livello 0 · Prime scintille

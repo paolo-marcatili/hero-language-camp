@@ -1,6 +1,6 @@
 import type { LanguagePack, PackEnemy, PackLevel, PackTrainingOption, StoryChapter } from "@hero-lang/content-schema";
 import type { CombatBreakdown, HeroStatKey, HeroStats, ShopItem, TrainingFocus } from "@hero-lang/learning-engine";
-import { estimateHeroDamage, getLevelConfig, getLevelStatCap, getLevelTrainingSessions } from "@hero-lang/learning-engine";
+import { applyHeroDamageModifiers, estimateHeroDamage, getLevelConfig, getLevelStatCap, getLevelTrainingSessions } from "@hero-lang/learning-engine";
 
 export type AppMode = "home" | "training" | "fight";
 
@@ -207,25 +207,37 @@ export function getSpeedBonusMultiplier(elapsedSeconds: number, parSeconds: numb
 }
 
 export function getEnemyForLevel(pack: LanguagePack, level: number): EnemyConfig {
+  const normalizedLevel = Math.max(0, Math.floor(level));
   const enemies = [...(pack.enemies ?? [])].sort((a, b) => a.level - b.level);
-  const exact = enemies.find((enemy) => enemy.level === level);
+  const exact = enemies.find((enemy) => enemy.level === normalizedLevel);
   if (exact) return toEnemyConfig(pack, exact);
 
-  const reusable = [...enemies].reverse().find((enemy) => enemy.level < level) ?? enemies[enemies.length - 1];
+  const fallbackRules = pack.enemy_fallback;
+  const configuredFallback = fallbackRules
+    ? enemies.find((enemy) => enemy.id === fallbackRules.enemy_id)
+    : undefined;
+  const latestPrevious = [...enemies].reverse().find((enemy) => enemy.level < normalizedLevel);
+  const reusable = configuredFallback && configuredFallback.level <= normalizedLevel
+    ? configuredFallback
+    : latestPrevious ?? enemies[enemies.length - 1];
+
   if (reusable) {
-    const extraLevels = Math.max(0, level - reusable.level);
-    const growth = 1 + extraLevels * 0.18;
+    const extraLevels = Math.max(0, normalizedLevel - reusable.level);
+    const energyGrowth = fallbackRules?.energy_growth_per_level ?? 0.18;
+    const rewardGrowth = fallbackRules?.reward_growth_per_level ?? 0.12;
+    const scaleGrowth = fallbackRules?.scale_growth_per_level ?? 0.025;
+    const maxScale = fallbackRules?.max_scale ?? 1.45;
     return toEnemyConfig(pack, {
       ...reusable,
-      id: extraLevels > 0 ? `${reusable.id}_level_${level}` : reusable.id,
-      level,
-      max_energy: Math.round(reusable.max_energy * growth),
-      reward_coins: Math.round(reusable.reward_coins * (1 + extraLevels * 0.12)),
-      visual_variant: reusable.visual_variant ?? (extraLevels > 0 ? `ascended-${level}` : undefined),
-      scale: Math.min(1.45, (reusable.scale ?? 1) * (1 + Math.min(0.2, extraLevels * 0.025)))
+      id: extraLevels > 0 ? `${reusable.id}_level_${normalizedLevel}` : reusable.id,
+      level: normalizedLevel,
+      max_energy: Math.round(reusable.max_energy * (1 + extraLevels * energyGrowth)),
+      reward_coins: Math.round(reusable.reward_coins * (1 + extraLevels * rewardGrowth)),
+      visual_variant: reusable.visual_variant ?? (extraLevels > 0 ? `ascended-${normalizedLevel}` : undefined),
+      scale: Math.min(maxScale, (reusable.scale ?? 1) * (1 + Math.min(0.2, extraLevels * scaleGrowth)))
     });
   }
-  return { id: "mist_goblin", level, nameKey: "mistGoblin", maxEnergy: 50 + level * 50, rewardCoins: 35 + level * 15, preferredFocus: "vocabulary", sprite: "goblin", spriteRow: 0, scale: 1, requiredStats: {}, tags: ["basic"], skillWeaknesses: ["strength"] };
+  return { id: "mist_goblin", level: normalizedLevel, nameKey: "mistGoblin", maxEnergy: 50 + normalizedLevel * 50, rewardCoins: 35 + normalizedLevel * 15, preferredFocus: "vocabulary", sprite: "goblin", spriteRow: 0, scale: 1, requiredStats: {}, tags: ["basic"], skillWeaknesses: ["strength"] };
 }
 
 export function getVisibleShopItems(level: number, debugBypass = false): ShopUiItem[] {
@@ -295,16 +307,16 @@ export function getEffectiveEnemyEnergy(pack: LanguagePack, levelNumber: number,
 }
 
 export function getFightDamageForQuestion(questionStat: HeroStatKey, stats: HeroStats, enemy: EnemyConfig, statCap: number): number {
-  const weaknessBoost = enemy.skillWeaknesses.includes(questionStat) ? 1.12 : 1;
-  return estimateHeroDamage(stats, enemy.requiredStats, statCap, weaknessBoost).damage;
+  const weaknessMultiplier = enemy.skillWeaknesses.includes(questionStat) ? 1.12 : 1;
+  const base = estimateHeroDamage(stats, enemy.requiredStats, statCap, 1);
+  return applyHeroDamageModifiers(base, weaknessMultiplier, 1.5).damage;
 }
 
 export function getFightDamageDetails(questionStat: HeroStatKey, stats: HeroStats, enemy: EnemyConfig, statCap: number, speedMultiplier = 1) {
   const weaknessMultiplier = enemy.skillWeaknesses.includes(questionStat) ? 1.12 : 1;
-  // Do not floor the timing multiplier at 1. Slow-but-valid answers are meant
-  // to deal less than baseline damage; v9 separately makes expired hits zero.
   const timingMultiplier = Math.max(0, speedMultiplier);
-  return estimateHeroDamage(stats, enemy.requiredStats, statCap, weaknessMultiplier * timingMultiplier);
+  const base = estimateHeroDamage(stats, enemy.requiredStats, statCap, 1);
+  return applyHeroDamageModifiers(base, weaknessMultiplier * timingMultiplier, 1.5);
 }
 
 export function getFightHeroEnergy(_pack: LanguagePack, state: { level: number; hero_stats: HeroStats }, _enemy: EnemyConfig): number {

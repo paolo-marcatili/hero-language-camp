@@ -355,7 +355,29 @@ export interface PackFightRules {
   sigmoid_k?: number;
 }
 
+export type PackCefrBand = "pre_a1" | "a1" | "a2";
+
+/** Pack-owned rules for gameplay levels that extend beyond authored lessons. */
+export interface PackProgressionConfig {
+  stat_cap_start: number;
+  stat_cap_per_level: number;
+  unauthored_level_mode?: "review";
+}
+
+/** Explicit procedural monster used when no enemy is authored for a level. */
+export interface PackEnemyFallbackConfig {
+  enemy_id: string;
+  energy_growth_per_level: number;
+  reward_growth_per_level: number;
+  scale_growth_per_level?: number;
+  max_scale?: number;
+}
+
 export interface PackLevel {
+  /** CEFR-informed curriculum band; completion is not a formal CEFR certification. */
+  cefr?: PackCefrBand;
+  /** An authored review level may deliberately introduce no new core content. */
+  review_only?: boolean;
   number: number;
   title: string;
   stat_cap: number;
@@ -494,7 +516,9 @@ export interface LanguagePack {
   controlled_tags?: ControlledTag[];
   task_config?: PackTaskConfig;
   training_options?: PackTrainingOption[];
+  progression?: PackProgressionConfig;
   levels?: PackLevel[];
+  enemy_fallback?: PackEnemyFallbackConfig;
   enemies?: PackEnemy[];
   labyrinths?: PackLabyrinthConfig[];
   files?: PackFileMap;
@@ -569,7 +593,9 @@ export function buildLanguagePackFromSources(sources: ModularPackSources): Langu
     controlled_tags: Array.isArray(tagsDoc.controlled_tags) ? tagsDoc.controlled_tags as ControlledTag[] : [],
     task_config: normalizeTaskConfig(tasksDoc),
     training_options: Array.isArray(tasksDoc.training_options) ? tasksDoc.training_options as PackTrainingOption[] : [],
+    progression: isObject(levelsDoc.progression) ? levelsDoc.progression as unknown as PackProgressionConfig : undefined,
     levels: Array.isArray(levelsDoc.levels) ? levelsDoc.levels as PackLevel[] : [],
+    enemy_fallback: isObject(enemiesDoc.fallback) ? enemiesDoc.fallback as unknown as PackEnemyFallbackConfig : undefined,
     enemies: Array.isArray(enemiesDoc.enemies) ? enemiesDoc.enemies as PackEnemy[] : [],
     labyrinths: Array.isArray(labyrinthsDoc.labyrinths) ? labyrinthsDoc.labyrinths as PackLabyrinthConfig[] : [],
     files: isObject(meta.files) ? meta.files as PackFileMap : undefined,
@@ -987,11 +1013,74 @@ export function validateLanguagePack(pack: unknown): ValidationResult {
     if (!isObject(level)) continue;
     if (typeof level.chapter_id === "string" && !chapterIds.has(level.chapter_id)) errors.push(`levels[${index}].chapter_id references unknown chapter: ${level.chapter_id}.`);
   }
+  // curriculum-v2 pack contract: authored teaching and procedural gameplay are explicit.
+  const authoredLevelNumbers = new Set<number>();
+  if (Array.isArray(pack.levels)) {
+    for (const level of pack.levels) {
+      if (isObject(level) && Number.isInteger(level.number) && Number(level.number) >= 0) authoredLevelNumbers.add(Number(level.number));
+    }
+  }
+  const progressionConfig = pack.progression;
+  if (progressionConfig !== undefined) {
+    if (!isObject(progressionConfig)) errors.push("progression must be an object.");
+    else {
+      if (typeof progressionConfig.stat_cap_start !== "number" || progressionConfig.stat_cap_start <= 0) errors.push("progression.stat_cap_start must be a positive number.");
+      if (typeof progressionConfig.stat_cap_per_level !== "number" || progressionConfig.stat_cap_per_level <= 0) errors.push("progression.stat_cap_per_level must be a positive number.");
+      if (progressionConfig.unauthored_level_mode !== undefined && progressionConfig.unauthored_level_mode !== "review") errors.push("progression.unauthored_level_mode must be review when provided.");
+    }
+  }
+  const enemyFallbackConfig = pack.enemy_fallback;
+  if (enemyFallbackConfig !== undefined) {
+    if (!isObject(enemyFallbackConfig)) errors.push("enemy_fallback must be an object.");
+    else {
+      requireString(enemyFallbackConfig, "enemy_id", errors, "enemy_fallback");
+      for (const key of ["energy_growth_per_level", "reward_growth_per_level"] as const) {
+        if (typeof enemyFallbackConfig[key] !== "number" || Number(enemyFallbackConfig[key]) < 0) errors.push(`enemy_fallback.${key} must be a non-negative number.`);
+      }
+      if (enemyFallbackConfig.scale_growth_per_level !== undefined && (typeof enemyFallbackConfig.scale_growth_per_level !== "number" || enemyFallbackConfig.scale_growth_per_level < 0)) errors.push("enemy_fallback.scale_growth_per_level must be a non-negative number.");
+      if (enemyFallbackConfig.max_scale !== undefined && (typeof enemyFallbackConfig.max_scale !== "number" || enemyFallbackConfig.max_scale <= 0)) errors.push("enemy_fallback.max_scale must be a positive number.");
+      const fallbackEnemyId = typeof enemyFallbackConfig.enemy_id === "string" ? enemyFallbackConfig.enemy_id : undefined;
+      if (fallbackEnemyId && (!Array.isArray(pack.enemies) || !pack.enemies.some((enemy) => isObject(enemy) && enemy.id === fallbackEnemyId))) errors.push(`enemy_fallback.enemy_id references unknown enemy: ${fallbackEnemyId}.`);
+    }
+  }
+  if (pack.subject === "language" && authoredLevelNumbers.size > 0) {
+    const coreCountByStage = new Map<number, number>();
+    const curriculumCollections: Array<[string, unknown]> = [
+      ["items", pack.items],
+      ["letters", pack.letters],
+      ["grammar_items", pack.grammar_items]
+    ];
+    for (const [collectionName, collection] of curriculumCollections) {
+      if (!Array.isArray(collection)) continue;
+      for (const [index, row] of collection.entries()) {
+        if (!isObject(row)) continue;
+        const tags = Array.isArray(row.tags) ? row.tags.map(String) : [];
+        if (!tags.includes("tier:core")) continue;
+        const stageTag = tags.find((tag) => /^stage:\d+$/.test(tag));
+        if (!stageTag) {
+          errors.push(`${collectionName}[${index}] is tier:core but has no explicit stage:N tag.`);
+          continue;
+        }
+        const stage = Number(stageTag.slice(6));
+        if (!authoredLevelNumbers.has(stage)) errors.push(`${collectionName}[${index}] references unauthored curriculum stage ${stage}.`);
+        coreCountByStage.set(stage, (coreCountByStage.get(stage) ?? 0) + 1);
+      }
+    }
+    if (Array.isArray(pack.levels)) {
+      for (const [index, level] of pack.levels.entries()) {
+        if (!isObject(level) || typeof level.number !== "number") continue;
+        if (level.review_only !== true && (coreCountByStage.get(level.number) ?? 0) === 0) errors.push(`levels[${index}] introduces no tier:core content; set review_only: true or add staged content.`);
+      }
+    }
+  }
+
   if (Array.isArray(pack.levels)) {
     for (const [index, level] of pack.levels.entries()) {
       if (!isObject(level)) { errors.push(`levels[${index}] must be an object.`); continue; }
       if (typeof level.number !== "number") errors.push(`levels[${index}].number must be a number.`);
       if (typeof level.stat_cap !== "number") errors.push(`levels[${index}].stat_cap must be a number.`);
+      if (level.cefr !== undefined && !["pre_a1", "a1", "a2"].includes(String(level.cefr))) errors.push(`levels[${index}].cefr must be pre_a1, a1 or a2.`);
+      if (level.review_only !== undefined && typeof level.review_only !== "boolean") errors.push(`levels[${index}].review_only must be boolean.`);
       if (!isObject(level.unlock_requires)) errors.push(`levels[${index}].unlock_requires must be an object.`);
       if (!isObject(level.fight)) errors.push(`levels[${index}].fight must be an object.`);
     }
