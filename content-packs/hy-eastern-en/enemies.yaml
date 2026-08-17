@@ -133,3 +133,142 @@ enemies:
     scale: 1.16
     visual_variant: star
     tint: '#9b8cff'
+
+# BEGIN GENERATED CURRICULUM V2: enemies
+  - id: "map_goblin"
+    level: 9
+    name_key: "mapGoblin"
+    max_energy: 500
+    reward_coins: 250
+    preferred_focus: "vocabulary"
+    sprite: "goblin"
+    semantic_tags:
+      - "tier:core"
+      - "stage:9"
+    skill_weaknesses:
+      - "strength"
+      - "precision"
+    sprite_row: 0
+    scale: 1.06
+    visual_variant: "map"
+    tint: "#59b47a"
+  - id: "bridge_troll"
+    level: 10
+    name_key: "bridgeTroll"
+    max_energy: 550
+    reward_coins: 280
+    preferred_focus: "comprehension"
+    sprite: "troll"
+    semantic_tags:
+      - "tier:core"
+      - "stage:10"
+    skill_weaknesses:
+      - "defense"
+      - "precision"
+    sprite_row: 2
+    scale: 1.1
+    visual_variant: "bridge"
+    tint: "#c49a6c"
+  - id: "clock_bat"
+    level: 11
+    name_key: "clockBat"
+    max_energy: 600
+    reward_coins: 310
+    preferred_focus: "comprehension"
+    sprite: "bat"
+    semantic_tags:
+      - "tier:core"
+      - "stage:11"
+    skill_weaknesses:
+      - "precision"
+      - "stamina"
+    sprite_row: 1
+    scale: 1.08
+    visual_variant: "clock"
+    tint: "#76a7ff"
+  - id: "ink_blob"
+    level: 12
+    name_key: "inkBlob"
+    max_energy: 650
+    reward_coins: 340
+    preferred_focus: "grammar"
+    sprite: "blob"
+    semantic_tags:
+      - "tier:core"
+      - "stage:12"
+    skill_weaknesses:
+      - "strength"
+      - "precision"
+    sprite_row: 5
+    scale: 1.1
+    visual_variant: "ink"
+    tint: "#4d5fbd"
+  - id: "prism_wizard"
+    level: 13
+    name_key: "prismWizard"
+    max_energy: 700
+    reward_coins: 375
+    preferred_focus: "vocabulary"
+    sprite: "wizard"
+    semantic_tags:
+      - "tier:core"
+      - "stage:13"
+    skill_weaknesses:
+      - "defense"
+      - "stamina"
+    sprite_row: 4
+    scale: 1.12
+    visual_variant: "prism"
+    tint: "#ff7fd1"
+  - id: "mirror_ogre"
+    level: 14
+    name_key: "mirrorOgre"
+    max_energy: 750
+    reward_coins: 410
+    preferred_focus: "comprehension"
+    sprite: "troll"
+    semantic_tags:
+      - "tier:core"
+      - "stage:14"
+    skill_weaknesses:
+      - "precision"
+      - "stamina"
+    sprite_row: 2
+    scale: 1.16
+    visual_variant: "mirror"
+    tint: "#99d9ea"
+  - id: "key_dragon"
+    level: 15
+    name_key: "keyDragon"
+    max_energy: 800
+    reward_coins: 445
+    preferred_focus: "vocabulary"
+    sprite: "dragon"
+    semantic_tags:
+      - "tier:core"
+      - "stage:15"
+    skill_weaknesses:
+      - "strength"
+      - "defense"
+    sprite_row: 3
+    scale: 1.2
+    visual_variant: "key"
+    tint: "#f2c14e"
+  - id: "question_imp"
+    level: 16
+    name_key: "questionImp"
+    max_energy: 850
+    reward_coins: 480
+    preferred_focus: "grammar"
+    sprite: "goblin"
+    semantic_tags:
+      - "tier:core"
+      - "stage:16"
+    skill_weaknesses:
+      - "precision"
+      - "stamina"
+    sprite_row: 0
+    scale: 1.14
+    visual_variant: "question"
+    tint: "#9c7cff"
+# END GENERATED CURRICULUM V2: enemies

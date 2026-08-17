@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync, readdirSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseYaml } from './pack-utils.mjs';
@@ -80,6 +80,12 @@ const sourceTags = parseYaml(readFileSync(join(SOURCE, 'tags.yaml'), 'utf8'));
 const sourceWords = parseJsonl(join(SOURCE, 'dictionary', 'words.jsonl'));
 const sourceLetters = parseJsonl(join(SOURCE, 'dictionary', 'letters.jsonl'));
 const sourceSentences = parseJsonl(join(SOURCE, 'dictionary', 'sentences.jsonl'));
+const sourceStory = parseYaml(readFileSync(join(SOURCE, 'story.yaml'), 'utf8'));
+const curriculumDir = join(SOURCE, 'curriculum');
+const curriculumModules = existsSync(curriculumDir)
+  ? readdirSync(curriculumDir).filter((name) => /^levels-\d+-\d+\.json$/.test(name)).sort().map((name) => JSON.parse(readFileSync(join(curriculumDir, name), 'utf8')))
+  : [];
+const curriculumEnemyNames = Object.assign({}, ...curriculumModules.map((module) => module.enemy_names?.en ?? {}));
 
 const levelCopy = [
   ['First sparks', 'Letters, greetings and essential words'],
@@ -93,7 +99,9 @@ const levelCopy = [
   ['Small adventures', 'Short dialogues and integrated comprehension']
 ];
 const levels = (sourceLevels.levels ?? []).map((level) => {
-  const [theme, goal] = levelCopy[level.number] ?? [`Level ${level.number}`, 'Review and extend previous material'];
+  const curated = levelCopy[level.number];
+  const theme = curated?.[0] ?? level.theme?.en ?? level.theme?.it ?? `Level ${level.number}`;
+  const goal = curated?.[1] ?? level.learning_goal?.en ?? level.learning_goal?.it ?? 'Review and extend previous material';
   return { ...level, title: `Level ${level.number} · ${theme}`, theme: { en: theme }, learning_goal: { en: goal } };
 });
 
@@ -114,7 +122,8 @@ const ui = {
     adminTranslationDistractorsHint: 'Add similar but clearly incorrect alternatives by changing the subject, action, place or meaning.',
     fightHint: 'Answer quickly for a stronger hit. A correct answer after time runs out causes no damage; a wrong answer still lets the monster strike.',
     packWarning: 'Learning content: Armenian wording and pronunciation should continue to be reviewed by native speakers.',
-    addTagInCode: 'Add tags in content-packs/hy-eastern-en/tags.yaml'
+    addTagInCode: 'Add tags in content-packs/hy-eastern-en/tags.yaml',
+    ...curriculumEnemyNames
   }
 };
 const tags = { controlled_tags: (sourceTags.controlled_tags ?? []).map((tag) => ({ ...tag, description: `Controlled curriculum tag: ${tag.id}` })) };
@@ -142,6 +151,8 @@ for (const source of sourceWords) {
   if (!ITALIAN_SOURCE_IDS.has(source.source)) trustedConceptByTarget.set(source.target, source.concept);
 }
 function englishWordLabel(source) {
+  const translated = source.translations?.en;
+  if (typeof translated === 'string' && translated.trim()) return translated.trim();
   const explicit = ENGLISH_WORD_OVERRIDES.get(source.id);
   if (explicit) return explicit;
   if (!ITALIAN_SOURCE_IDS.has(source.source)) return source.concept;
@@ -231,8 +242,8 @@ const EN = new Map(Object.entries({
   hy_sentence_short_dialogue: 'Hello, I’m Ani. And you?',
   hy_sentence_integrated_day: 'Today we are going to school.'
 }));
-const selected = sourceSentences.filter((row) => EN.has(row.id));
-if (selected.length !== EN.size) {
+const selected = sourceSentences.filter((row) => EN.has(row.id) || (row.tags ?? []).includes('curriculum:v2'));
+if (selected.filter((row) => EN.has(row.id)).length !== EN.size) {
   const have = new Set(selected.map((row) => row.id));
   throw new Error(`Missing curated sentence IDs: ${[...EN.keys()].filter((id) => !have.has(id)).join(', ')}`);
 }
@@ -247,21 +258,33 @@ for (const row of selected) {
   byStage.get(stage).push(row);
 }
 const sentences = selected.map((source) => {
-  const translation = EN.get(source.id);
-  const sameStage = byStage.get(stageOf(source)) ?? [];
-  const semanticWrong = [...sameStage, ...selected].filter((row) => row.id !== source.id && normalize(EN.get(row.id)) !== normalize(translation));
-  const armenianDistractor = semanticWrong[0]?.target_sentence;
-  const translationDistractors = [];
-  for (const row of semanticWrong) {
-    const value = EN.get(row.id);
-    if (!translationDistractors.some((candidate) => normalize(candidate) === normalize(value))) translationDistractors.push(value);
-    if (translationDistractors.length === 3) break;
+  const isCurriculumV2 = (source.tags ?? []).includes('curriculum:v2');
+  const translation = isCurriculumV2 ? source.translations?.en : EN.get(source.id);
+  if (typeof translation !== 'string' || !translation.trim()) throw new Error(`Missing English translation for ${source.id}`);
+
+  let armenianDistractors;
+  let translationDistractors;
+  if (isCurriculumV2) {
+    armenianDistractors = [...new Set((source.distractors ?? []).map(String).filter((value) => normalize(value) !== normalize(source.target_sentence)))];
+    translationDistractors = [...new Set((source.translation_distractors?.en ?? []).map(String).filter((value) => normalize(value) !== normalize(translation)))];
+  } else {
+    const sameStage = byStage.get(stageOf(source)) ?? [];
+    const semanticWrong = [...sameStage, ...selected].filter((row) => row.id !== source.id && normalize(EN.get(row.id)) !== normalize(translation));
+    const armenianDistractor = semanticWrong[0]?.target_sentence;
+    armenianDistractors = armenianDistractor ? [armenianDistractor] : [];
+    translationDistractors = [];
+    for (const row of semanticWrong) {
+      const value = EN.get(row.id);
+      if (value && !translationDistractors.some((candidate) => normalize(candidate) === normalize(value))) translationDistractors.push(value);
+      if (translationDistractors.length === 3) break;
+    }
   }
-  if (!armenianDistractor || translationDistractors.length !== 3) throw new Error(`Not enough unambiguous distractors for ${source.id}`);
+  if (armenianDistractors.length < 1 || translationDistractors.length < 3) throw new Error(`Not enough unambiguous distractors for ${source.id}`);
   return {
     id: source.id,
     target_sentence: source.target_sentence,
-    distractors: [armenianDistractor],
+    transliteration: source.transliteration,
+    distractors: armenianDistractors,
     tags: source.tags,
     audio: source.audio,
     review_status: source.review_status,
@@ -270,7 +293,7 @@ const sentences = selected.map((source) => {
     prompt: { en: `Choose the Armenian sentence: ${translation}` },
     translation,
     base_language: 'en',
-    translation_distractors: { en: translationDistractors },
+    translation_distractors: { en: translationDistractors.slice(0, 3) },
     translations: { en: translation },
     translation_review_status: { en: 'reviewed' }
   };
@@ -304,6 +327,21 @@ const story = {
     chapter('chapter_stage_8',8,'The path of voices','Combine familiar phrases into short dialogues.','The final path echoes with greetings, introductions, places and school language from every previous chapter.','Putting the pieces together',['Follow a short dialogue.','Combine known sentence patterns.','Use context rather than translating one word at a time.'],'At this stage, focus on meaning across a whole exchange. English and Armenian do not need to share the same word order for the translation to be correct.',[['Բարև, ես Անի եմ։ Իսկ դու՞։','barev, yes Ani em. isk du?','Hello, I’m Ani. And you?'],['Այսօր մենք դպրոց ենք գնում։','aysor menk dprots enk gnum','Today we are going to school.']],['Revisit earlier chapters when a pattern feels uncertain.','Use the story dialogue to practise several known chunks together.'],'Do not mark a natural equivalent translation wrong merely because its English word order differs.','Follow the combined path using everything learned so far.','The road remains open for the next chapter of the course.')
   ]
 };
+
+function englishOnly(value) {
+  if (Array.isArray(value)) return value.map(englishOnly);
+  if (!value || typeof value !== 'object') return value;
+  const keys = Object.keys(value);
+  if (keys.length && keys.every((key) => key === 'it' || key === 'en')) {
+    const english = value.en ?? value.it;
+    return { en: english };
+  }
+  return Object.fromEntries(keys.map((key) => [key, englishOnly(value[key])]));
+}
+const extensionChapters = (sourceStory.chapters ?? [])
+  .filter((chapter) => Number(chapter.minimum_level) >= 9)
+  .map(englishOnly);
+story.chapters.push(...extensionChapters);
 
 if (!CHECK && existsSync(TARGET)) rmSync(TARGET, { recursive: true, force: true });
 put('pack.yaml', toYaml(pack));

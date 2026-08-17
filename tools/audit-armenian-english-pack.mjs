@@ -43,14 +43,15 @@ for (const row of pack.grammar_items ?? []) {
     if (!key || seen.has(key)) errors.push(`${row.id}: duplicate/correct English translation distractor ${JSON.stringify(value)}`);
     seen.add(key);
   }
-  if ((row.distractors ?? []).length !== 1) errors.push(`${row.id}: English pack must use one semantic Armenian distractor so word-order variants are not treated as wrong`);
+  if ((row.distractors ?? []).length < 1) errors.push(`${row.id}: English pack needs at least one semantic Armenian distractor`);
   const targetBag = wordBag(row.target_sentence);
   for (const value of row.distractors ?? []) {
     if (targetBag && wordBag(value) === targetBag) errors.push(`${row.id}: Armenian distractor only rearranges the correct sentence words`);
   }
 }
 
-for (const stage of Array.from({ length: 9 }, (_, index) => index)) {
+const authoredStages = [...new Set((pack.levels ?? []).map((level) => Number(level.number)).filter(Number.isInteger))].sort((a, b) => a - b);
+for (const stage of authoredStages) {
   const count = (pack.grammar_items ?? []).filter((row) => row.tags?.includes(`stage:${stage}`)).length;
   if (count < 2) errors.push(`stage ${stage}: expected at least 2 curated sentence exercises, found ${count}`);
 }

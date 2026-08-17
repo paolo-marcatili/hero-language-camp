@@ -441,3 +441,14 @@ text:
   installIosStep4: Attiva “Apri come app web”, quindi tocca “Aggiungi”.
   installGenericBody: Installa l’app per aprirla a schermo intero e usarla più facilmente offline.
   installAlreadyInstalled: App già installata
+
+  # BEGIN GENERATED CURRICULUM V2: interface-enemy-names
+  mapGoblin: "Folletto della Mappa"
+  bridgeTroll: "Troll del Ponte"
+  clockBat: "Pipistrello dell'Orologio"
+  inkBlob: "Blob d'Inchiostro"
+  prismWizard: "Mago del Prisma"
+  mirrorOgre: "Orco dello Specchio"
+  keyDragon: "Drago delle Chiavi"
+  questionImp: "Imp delle Domande"
+  # END GENERATED CURRICULUM V2: interface-enemy-names

@@ -16,7 +16,7 @@
     "typecheck": "npm --workspaces --if-present run typecheck",
     "test:yaml-parser": "node tools/test-yaml-parser.mjs",
     "validate:content": "npm run test:yaml-parser && node tools/validate-content.mjs content-packs/hy-eastern-it",
-    "check": "npm run validate:content && npm run content:audit-curriculum-v2 && npm run content:lint-italian && npm run typecheck",
+    "check": "npm run validate:content && npm run content:audit-curriculum-v2 && npm run content:lint-italian && npm run typecheck && npm run content:check-curriculum-sync && npm run content:audit-curriculum-09-16",
     "content:restructure": "python tools/restructure-hy-curriculum.py",
     "content:auto-audio": "node tools/generate-automated-audio.mjs content-packs/hy-eastern-it",
     "content:audio:ev-probe": "node tools/generate-automated-audio.mjs content-packs/hy-eastern-it --ev-probe",
@@ -67,11 +67,14 @@
     "content:audio:danish:integrate": "node tools/integrate-danish-audio.mjs",
     "build:site": "node tools/build-unified-site.mjs",
     "verify:local": "npm run check && npm run check:english && npm run check:danish && npm run build:site",
-    "content:sync-english": "node tools/sync-armenian-english-pack.mjs",
-    "content:check-english-sync": "node tools/sync-armenian-english-pack.mjs --check",
+    "content:sync-english": "npm run content:sync-curriculum && node tools/sync-armenian-english-pack.mjs",
+    "content:check-english-sync": "npm run content:check-curriculum-sync && node tools/sync-armenian-english-pack.mjs --check",
     "content:audit-english": "node tools/audit-armenian-english-pack.mjs",
     "check:english": "npm run content:check-english-sync && npm run content:audit-english && npm --workspace @hero-lang/web run typecheck",
-    "content:audit-curriculum-v2": "node tools/audit-curriculum-v2.mjs"
+    "content:audit-curriculum-v2": "node tools/audit-curriculum-v2.mjs",
+    "content:sync-curriculum": "node tools/sync-armenian-curriculum.mjs",
+    "content:check-curriculum-sync": "node tools/sync-armenian-curriculum.mjs --check",
+    "content:audit-curriculum-09-16": "node tools/audit-armenian-curriculum-09-16.mjs"
   },
   "engines": {
     "node": ">=20.19.0",

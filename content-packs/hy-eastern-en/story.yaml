@@ -379,3 +379,435 @@ chapters:
       en: "Follow the combined path using everything learned so far."
     cliffhanger:
       en: "The road remains open for the next chapter of the course."
+  - id: "chapter_stage_9"
+    minimum_level: 9
+    title:
+      en: "Chapter 9 · The language border"
+    summary:
+      en: "Talk about countries, languages, and origin without translating word for word."
+    fiction:
+      en: "The path of voices reaches a border marked by glowing flags. The keeper asks for no documents: the gate opens when each traveller can say where they are from and which language they are learning."
+    story_beats:
+      - en: "The flags change colour whenever the hero confuses a country with a language. To steady them, the hero must listen to the whole question and choose an answer with the same meaning."
+    lesson:
+      title:
+        en: "Origin and languages"
+      objectives:
+        - en: "Ask where someone is from."
+        - en: "Say which country you are from."
+        - en: "Talk about languages you study or speak."
+      explanation:
+        en: "To say “I am from…”, Armenian often uses a country form ending in -ից. Learn complete patterns such as Ես Իտալիայից եմ rather than assembling each word separately. Questions are also marked by intonation."
+      examples:
+        - target: "Որտեղի՞ց ես։"
+          transliteration: "vorteghits es"
+          translation:
+            en: "Where are you from?"
+        - target: "Ես Իտալիայից եմ։"
+          transliteration: "yes Italiayits em"
+          translation:
+            en: "I am from Italy."
+        - target: "Ես հայերեն եմ սովորում։"
+          transliteration: "yes hayeren em sovorum"
+          translation:
+            en: "I am learning Armenian."
+      dialogue:
+        - speaker:
+            en: "Keeper"
+          target: "Որտեղի՞ց ես։"
+          transliteration: "vorteghits es"
+          translation:
+            en: "Where are you from?"
+        - speaker:
+            en: "Hero"
+          target: "Ես Իտալիայից եմ։ Ես հայերեն եմ սովորում։"
+          transliteration: "yes Italiayits em. yes hayeren em sovorum"
+          translation:
+            en: "I am from Italy. I am learning Armenian."
+      study_notes:
+        - en: "Keep country, language, and person distinct: Հայաստան, հայերեն, and հայ are not interchangeable."
+        - en: "Practise the question and answer as a pair, then change only the country."
+      common_mistakes:
+        - en: "Do not use a naturally reordered Armenian sentence as the only wrong answer."
+    mission:
+      en: "Rebuild the language map by introducing three travellers."
+    cliffhanger:
+      en: "Beyond the border lies a city whose streets move whenever someone gives an unclear direction."
+  - id: "chapter_stage_10"
+    minimum_level: 10
+    title:
+      en: "Chapter 10 · The city that changes its streets"
+    summary:
+      en: "Ask where a place is and follow short directions."
+    fiction:
+      en: "In the moving city, bridges and squares change position with every answer. The hero must ask precisely and follow one direction at a time to reach the central tower."
+    story_beats:
+      - en: "A magic map shows only three symbols: the destination, a landmark, and the next direction."
+    lesson:
+      title:
+        en: "Places and directions"
+      objectives:
+        - en: "Ask where a place is."
+        - en: "Understand near and far."
+        - en: "Follow right, left, and straight ahead."
+      explanation:
+        en: "Location questions and directions use different patterns: Կայարանը որտե՞ղ է asks for a location, while Գնա ուղիղ gives a command. Learn them as functional chunks and use one landmark at a time."
+      examples:
+        - target: "Կայարանը որտե՞ղ է։"
+          transliteration: "kayarany vortegh e"
+          translation:
+            en: "Where is the station?"
+        - target: "Գնա ուղիղ։"
+          transliteration: "gna ughigh"
+          translation:
+            en: "Go straight."
+        - target: "Կամուրջը փողոցի մոտ է։"
+          transliteration: "kamurjy poghotsi mot e"
+          translation:
+            en: "The bridge is near the street."
+      dialogue:
+        - speaker:
+            en: "Traveller"
+          target: "Կայարանը որտե՞ղ է։"
+          transliteration: "kayarany vortegh e"
+          translation:
+            en: "Where is the station?"
+        - speaker:
+            en: "Mapmaker"
+          target: "Գնա ուղիղ, հետո՝ աջ։"
+          transliteration: "gna ughigh, heto aj"
+          translation:
+            en: "Go straight, then turn right."
+      study_notes:
+        - en: "Draw a small map and say one direction for each section."
+        - en: "Contrast մոտ and հեռու using the same two places."
+      common_mistakes:
+        - en: "Do not confuse a “where?” question with a “go…” command just because both use place words."
+    mission:
+      en: "Carry the map to the tower by following four correct directions."
+    cliffhanger:
+      en: "The tower has no stairs: its doors open only at the right time."
+  - id: "chapter_stage_11"
+    minimum_level: 11
+    title:
+      en: "Chapter 11 · The tower of hours"
+    summary:
+      en: "Talk about days, times, and daily routines."
+    fiction:
+      en: "Each floor of the tower belongs to a different time of day. To climb, the hero must connect the day, the time, and an action without confusing duration with clock time."
+    story_beats:
+      - en: "The hands slow down when a sentence contains unnecessary information. The clearest answer is usually short."
+    lesson:
+      title:
+        en: "Days, clock time, and routines"
+      objectives:
+        - en: "Say what day it is."
+        - en: "Tell a whole-hour time."
+        - en: "Describe a habitual morning or evening action."
+      explanation:
+        en: "Ժամը երեքն է means “It is three o'clock,” while երեք ժամ means “three hours.” Word order and grammatical forms distinguish clock time from duration. Then connect a time to a routine using words such as առավոտ and երեկո."
+      examples:
+        - target: "Այսօր երկուշաբթի է։"
+          transliteration: "aysor yerkushabti e"
+          translation:
+            en: "Today is Monday."
+        - target: "Ժամը երեքն է։"
+          transliteration: "zhamy yerekn e"
+          translation:
+            en: "It is three o'clock."
+        - target: "Ես առավոտյան շուտ եմ արթնանում։"
+          transliteration: "yes aravotyan shut em artnanum"
+          translation:
+            en: "I wake up early in the morning."
+      dialogue:
+        - speaker:
+            en: "Clockmaker"
+          target: "Դասը ժամը իննին է։"
+          transliteration: "dasy zhamy innin e"
+          translation:
+            en: "The lesson is at nine."
+        - speaker:
+            en: "Hero"
+          target: "Ես առավոտյան շուտ եմ արթնանում։"
+          transliteration: "yes aravotyan shut em artnanum"
+          translation:
+            en: "I wake up early in the morning."
+      study_notes:
+        - en: "Use a real or drawn clock while practising the sentences."
+        - en: "Contrast today, tomorrow, and yesterday with the same activity."
+      common_mistakes:
+        - en: "Do not choose “three hours” when the question asks for the time."
+    mission:
+      en: "Put the tower's day in order and reach the final door."
+    cliffhanger:
+      en: "Behind the door is a classroom where books respond only to clearly spoken instructions."
+  - id: "chapter_stage_12"
+    minimum_level: 12
+    title:
+      en: "Chapter 12 · The ink classroom"
+    summary:
+      en: "Understand common instructions and use classroom vocabulary."
+    fiction:
+      en: "In the ink classroom, notebooks and pencils move by themselves. The hero must distinguish the object from the action and follow the exact instruction before the words disappear."
+    story_beats:
+      - en: "Each correct command leaves a readable line on the board; a different command produces a different result, not merely a different word order."
+    lesson:
+      title:
+        en: "Classroom instructions"
+      objectives:
+        - en: "Recognise key classroom objects."
+        - en: "Understand short commands such as open, write, and listen."
+        - en: "Say that you have a question."
+      explanation:
+        en: "In instructions, the verb form directly tells you what to do. Learn verb and object together: Բացիր գիրքը, Գրիր անունդ, Լսիր ուսուցչին. Changing the verb or the object genuinely changes the meaning."
+      examples:
+        - target: "Բացիր գիրքը։"
+          transliteration: "batsir girky"
+          translation:
+            en: "Open the book."
+        - target: "Գրիր անունդ։"
+          transliteration: "grir anund"
+          translation:
+            en: "Write your name."
+        - target: "Ես հարց ունեմ։"
+          transliteration: "yes harts unem"
+          translation:
+            en: "I have a question."
+      dialogue:
+        - speaker:
+            en: "Teacher"
+          target: "Լսիր ուսուցչին։"
+          transliteration: "lsir usutsichin"
+          translation:
+            en: "Listen to the teacher."
+        - speaker:
+            en: "Hero"
+          target: "Ես հարց ունեմ։"
+          transliteration: "yes harts unem"
+          translation:
+            en: "I have a question."
+      study_notes:
+        - en: "Act out each command with a book, notebook, and pencil."
+        - en: "Change one element at a time: first the verb, then the object."
+      common_mistakes:
+        - en: "Do not treat “open the book” and “read the book” as equivalent: they describe different actions."
+    mission:
+      en: "Complete the ink lesson by following five different instructions."
+    cliffhanger:
+      en: "A coloured page flies out of the classroom and leads to a market where every object changes shade."
+  - id: "chapter_stage_13"
+    minimum_level: 13
+    title:
+      en: "Chapter 13 · The market of colours"
+    summary:
+      en: "Describe clothes and colours and talk about simple preferences."
+    fiction:
+      en: "At the market of colours, objects change whenever they are described imprecisely. To buy the right fabric, the hero must name both the item and its colour."
+    story_beats:
+      - en: "The merchant shows very similar pairs: only the colour, garment, or person changes. Every alternative therefore has a distinct, checkable meaning."
+    lesson:
+      title:
+        en: "Descriptions with colours and clothes"
+      objectives:
+        - en: "Name common colours."
+        - en: "Describe an item of clothing."
+        - en: "Ask which colour someone likes."
+      explanation:
+        en: "In the pattern studied here, an Armenian colour adjective normally comes before the noun: կարմիր շապիկ. In plural sentences, also notice the final form of “to be.” Translate naturally without inventing gender distinctions that Armenian does not express in the same way."
+      examples:
+        - target: "Սա կարմիր շապիկ է։"
+          transliteration: "sa karmir shapik e"
+          translation:
+            en: "This is a red shirt."
+        - target: "Անիի կոշիկները սև են։"
+          transliteration: "Anii koshiknery sev en"
+          translation:
+            en: "Ani's shoes are black."
+        - target: "Ի՞նչ գույն ես սիրում։"
+          transliteration: "inch guyn es sirum"
+          translation:
+            en: "What colour do you like?"
+      dialogue:
+        - speaker:
+            en: "Merchant"
+          target: "Ի՞նչ գույն ես սիրում։"
+          transliteration: "inch guyn es sirum"
+          translation:
+            en: "What colour do you like?"
+        - speaker:
+            en: "Hero"
+          target: "Ես կապույտ գույն եմ սիրում։"
+          transliteration: "yes kapuyt guyn em sirum"
+          translation:
+            en: "I like blue."
+      study_notes:
+        - en: "Match each colour with two different objects so you do not memorise only one pair."
+        - en: "Contrast singular and plural using շապիկ and կոշիկներ."
+      common_mistakes:
+        - en: "Do not offer two options that describe the same object with merely another natural word order."
+    mission:
+      en: "Find four objects in the requested colours and complete the merchant's cloak."
+    cliffhanger:
+      en: "The market mirror reflects a tired face and opens a passage to the hall of well-being."
+  - id: "chapter_stage_14"
+    minimum_level: 14
+    title:
+      en: "Chapter 14 · The mirror of well-being"
+    summary:
+      en: "Talk about the body, feelings, and simple health problems."
+    fiction:
+      en: "The magic mirror shows not appearance but how the viewer feels. The hero must distinguish a body part, an emotion, and a negative form to help the people in the hall."
+    story_beats:
+      - en: "Each character says one short sentence. Changing the person, body part, or negation creates a different situation."
+    lesson:
+      title:
+        en: "How do you feel?"
+      objectives:
+        - en: "Say which body part hurts."
+        - en: "Say that you are tired, happy, or sad."
+        - en: "Say that you do not feel well."
+      explanation:
+        en: "Expressions such as Գլուխս ցավում է are best learned as complete phrases. The ending on գլուխ marks “my head,” while չեմ forms the first-person negative in Ես լավ չեմ զգում. Focus on the communicative meaning before analysing every morpheme."
+      examples:
+        - target: "Գլուխս ցավում է։"
+          transliteration: "glukhs tsavum e"
+          translation:
+            en: "My head hurts."
+        - target: "Ես հոգնած եմ։"
+          transliteration: "yes hognats em"
+          translation:
+            en: "I am tired."
+        - target: "Ես լավ չեմ զգում։"
+          transliteration: "yes lav chem zgum"
+          translation:
+            en: "I do not feel well."
+      dialogue:
+        - speaker:
+            en: "Healer"
+          target: "Ինչպե՞ս ես քեզ զգում։"
+          transliteration: "inchpes es kez zgum"
+          translation:
+            en: "How do you feel?"
+        - speaker:
+            en: "Hero"
+          target: "Ես հոգնած եմ, բայց գլուխս չի ցավում։"
+          transliteration: "yes hognats em, bayts glukhs chi tsavum"
+          translation:
+            en: "I am tired, but my head does not hurt."
+      study_notes:
+        - en: "Act out the feeling or point to the body part while saying the sentence."
+        - en: "Contrast a positive sentence with its genuine negative form."
+      common_mistakes:
+        - en: "Do not confuse “I am tired” with “he or she is tired”: the grammatical person changes."
+    mission:
+      en: "Help four characters describe how they feel accurately."
+    cliffhanger:
+      en: "Behind the mirror appears a house full of doors, but only one key is in the right place."
+  - id: "chapter_stage_15"
+    minimum_level: 15
+    title:
+      en: "Chapter 15 · The house of keys"
+    summary:
+      en: "Describe rooms and positions using on, under, and in."
+    fiction:
+      en: "The house of keys rearranges itself whenever a position is described incorrectly. To escape, the hero must say precisely which object is on, under, or inside another."
+    story_beats:
+      - en: "Each room contains the same few objects in different positions, so the meaning truly depends on the location word."
+    lesson:
+      title:
+        en: "Rooms and object location"
+      objectives:
+        - en: "Name several rooms in a home."
+        - en: "Say what is open or closed."
+        - en: "Use վրա, տակ, and մեջ in simple sentences."
+      explanation:
+        en: "In location sentences, the landmark often takes a form such as սեղանի, “of the table.” At first, learn the whole structure Բանալին սեղանի վրա է and replace only one element at a time."
+      examples:
+        - target: "Սա իմ սենյակն է։"
+          transliteration: "sa im senyakn e"
+          translation:
+            en: "This is my room."
+        - target: "Բանալին սեղանի վրա է։"
+          transliteration: "banalin seghani vra e"
+          translation:
+            en: "The key is on the table."
+        - target: "Պայուսակը աթոռի տակ է։"
+          transliteration: "payusaky atori tak e"
+          translation:
+            en: "The bag is under the chair."
+      dialogue:
+        - speaker:
+            en: "House"
+          target: "Բանալին որտե՞ղ է։"
+          transliteration: "banalin vortegh e"
+          translation:
+            en: "Where is the key?"
+        - speaker:
+            en: "Hero"
+          target: "Բանալին սեղանի վրա է։"
+          transliteration: "banalin seghani vra e"
+          translation:
+            en: "The key is on the table."
+      study_notes:
+        - en: "Move a real key, book, and bag and describe each new position."
+        - en: "Keep the same object and change only վրա, տակ, or մեջ."
+      common_mistakes:
+        - en: "Do not treat “on the table” and “under the table” as equivalent: the spatial relationship is the point of the sentence."
+    mission:
+      en: "Find the key by describing five locations correctly."
+    cliffhanger:
+      en: "The final door leads to a square full of questions: every voice wants to know who, what, where, when, or why."
+  - id: "chapter_stage_16"
+    minimum_level: 16
+    title:
+      en: "Chapter 16 · The square of questions"
+    summary:
+      en: "Ask useful questions, use negation, and connect short exchanges."
+    fiction:
+      en: "In the square, questions float like lanterns. The hero must identify the missing information and answer with a short but complete sentence, then recognise when an action is negated."
+    story_beats:
+      - en: "The lanterns group by function: what, where, when, why, and who. A correct question opens only an answer of the matching type."
+    lesson:
+      title:
+        en: "Questions, negation, and exchanges"
+      objectives:
+        - en: "Distinguish questions about things, place, time, and people."
+        - en: "Recognise a plural negative sentence."
+        - en: "Connect a question and answer in a short exchange."
+      explanation:
+        en: "Question words are not interchangeable: Ի՞նչ asks “what,” Որտե՞ղ “where,” Ե՞րբ “when,” and Ո՞վ “who.” In plural forms, compare նրանք … են with նրանք … չեն to hear the negation."
+      examples:
+        - target: "Ի՞նչ ես կարդում։"
+          transliteration: "inch es kardum"
+          translation:
+            en: "What are you reading?"
+        - target: "Ե՞րբ ես տուն գնում։"
+          transliteration: "yerb es tun gnum"
+          translation:
+            en: "When are you going home?"
+        - target: "Նրանք հիմա չեն խաղում։"
+          transliteration: "nrank hima chen khaghum"
+          translation:
+            en: "They are not playing now."
+      dialogue:
+        - speaker:
+            en: "Voice"
+          target: "Ի՞նչ ես կարդում։"
+          transliteration: "inch es kardum"
+          translation:
+            en: "What are you reading?"
+        - speaker:
+            en: "Hero"
+          target: "Ես հայերեն գիրք եմ կարդում։"
+          transliteration: "yes hayeren girk em kardum"
+          translation:
+            en: "I am reading an Armenian book."
+      study_notes:
+        - en: "Match each question word to the kind of answer it requires."
+        - en: "Turn a positive plural sentence into its genuine negative form."
+      common_mistakes:
+        - en: "Do not accept an answer that is grammatical but answers a different question."
+    mission:
+      en: "Light every lantern by building four question-and-answer pairs."
+    cliffhanger:
+      en: "The square opens a new road towards longer stories, past experiences, and future plans: the next course section can be added without changing the game engine."

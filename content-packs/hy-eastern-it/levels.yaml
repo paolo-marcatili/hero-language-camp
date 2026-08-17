@@ -220,3 +220,214 @@ levels:
       timer_seconds: 12
       sigmoid_k: 2.2
     chapter_id: chapter_stage_8
+
+# BEGIN GENERATED CURRICULUM V2: levels
+  - number: 9
+    title: "Livello 9 · Paesi e lingue"
+    stat_cap: 50
+    content_tags:
+      - "stage:9"
+      - "tier:core"
+    theme:
+      it: "Paesi e lingue"
+      en: "Countries and languages"
+    learning_goal:
+      it: "Dire da dove vieni, dove vivi e quali lingue parli o studi."
+      en: "Say where you are from, where you live, and which languages you speak or study."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 6
+      answered_fight_questions: 12
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 12
+      at_min_questions: 26
+      max_questions: 32
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_9"
+  - number: 10
+    title: "Livello 10 · In città"
+    stat_cap: 55
+    content_tags:
+      - "stage:10"
+      - "tier:core"
+    theme:
+      it: "In città"
+      en: "Around town"
+    learning_goal:
+      it: "Chiedere dove si trova un luogo e seguire indicazioni semplici."
+      en: "Ask where a place is and follow simple directions."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 6
+      answered_fight_questions: 12
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 12
+      at_min_questions: 26
+      max_questions: 32
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_10"
+  - number: 11
+    title: "Livello 11 · Giorni e orari"
+    stat_cap: 60
+    content_tags:
+      - "stage:11"
+      - "tier:core"
+    theme:
+      it: "Giorni e orari"
+      en: "Days and times"
+    learning_goal:
+      it: "Parlare dei giorni, dire l'ora e descrivere una routine breve."
+      en: "Talk about days, tell the time, and describe a short routine."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 6
+      answered_fight_questions: 12
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 12
+      at_min_questions: 28
+      max_questions: 34
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_11"
+  - number: 12
+    title: "Livello 12 · A scuola"
+    stat_cap: 65
+    content_tags:
+      - "stage:12"
+      - "tier:core"
+    theme:
+      it: "A scuola"
+      en: "At school"
+    learning_goal:
+      it: "Capire istruzioni frequenti e parlare degli oggetti della classe."
+      en: "Understand common instructions and talk about classroom objects."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 6
+      answered_fight_questions: 12
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 12
+      at_min_questions: 28
+      max_questions: 34
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_12"
+  - number: 13
+    title: "Livello 13 · Colori e vestiti"
+    stat_cap: 70
+    content_tags:
+      - "stage:13"
+      - "tier:core"
+    theme:
+      it: "Colori e vestiti"
+      en: "Colours and clothes"
+    learning_goal:
+      it: "Descrivere colori, vestiti e semplici preferenze."
+      en: "Describe colours, clothes, and simple preferences."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 7
+      answered_fight_questions: 14
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 14
+      at_min_questions: 30
+      max_questions: 36
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_13"
+  - number: 14
+    title: "Livello 14 · Corpo e benessere"
+    stat_cap: 75
+    content_tags:
+      - "stage:14"
+      - "tier:core"
+    theme:
+      it: "Corpo e benessere"
+      en: "Body and well-being"
+    learning_goal:
+      it: "Dire come ti senti e indicare semplici problemi fisici."
+      en: "Say how you feel and describe simple physical problems."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 7
+      answered_fight_questions: 14
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 14
+      at_min_questions: 30
+      max_questions: 36
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_14"
+  - number: 15
+    title: "Livello 15 · La casa e gli oggetti"
+    stat_cap: 80
+    content_tags:
+      - "stage:15"
+      - "tier:core"
+    theme:
+      it: "La casa e gli oggetti"
+      en: "Home and objects"
+    learning_goal:
+      it: "Descrivere stanze e dire dove si trova un oggetto."
+      en: "Describe rooms and say where an object is."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 7
+      answered_fight_questions: 14
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 14
+      at_min_questions: 32
+      max_questions: 38
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_15"
+  - number: 16
+    title: "Livello 16 · Domande e azioni"
+    stat_cap: 85
+    content_tags:
+      - "stage:16"
+      - "tier:core"
+    theme:
+      it: "Domande e azioni"
+      en: "Questions and actions"
+    learning_goal:
+      it: "Formare domande utili, negare un'azione e collegare frasi brevi."
+      en: "Form useful questions, negate an action, and connect short sentences."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 7
+      answered_fight_questions: 14
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 14
+      at_min_questions: 32
+      max_questions: 38
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_16"
+# END GENERATED CURRICULUM V2: levels

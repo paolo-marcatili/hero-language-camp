@@ -201,3 +201,195 @@ levels:
       timer_seconds: 12
       sigmoid_k: 2.2
     chapter_id: "chapter_stage_8"
+  - number: 9
+    title: "Level 9 · Countries and languages"
+    stat_cap: 50
+    content_tags:
+      - "stage:9"
+      - "tier:core"
+    theme:
+      en: "Countries and languages"
+    learning_goal:
+      en: "Say where you are from, where you live, and which languages you speak or study."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 6
+      answered_fight_questions: 12
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 12
+      at_min_questions: 26
+      max_questions: 32
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_9"
+  - number: 10
+    title: "Level 10 · Around town"
+    stat_cap: 55
+    content_tags:
+      - "stage:10"
+      - "tier:core"
+    theme:
+      en: "Around town"
+    learning_goal:
+      en: "Ask where a place is and follow simple directions."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 6
+      answered_fight_questions: 12
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 12
+      at_min_questions: 26
+      max_questions: 32
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_10"
+  - number: 11
+    title: "Level 11 · Days and times"
+    stat_cap: 60
+    content_tags:
+      - "stage:11"
+      - "tier:core"
+    theme:
+      en: "Days and times"
+    learning_goal:
+      en: "Talk about days, tell the time, and describe a short routine."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 6
+      answered_fight_questions: 12
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 12
+      at_min_questions: 28
+      max_questions: 34
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_11"
+  - number: 12
+    title: "Level 12 · At school"
+    stat_cap: 65
+    content_tags:
+      - "stage:12"
+      - "tier:core"
+    theme:
+      en: "At school"
+    learning_goal:
+      en: "Understand common instructions and talk about classroom objects."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 6
+      answered_fight_questions: 12
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 12
+      at_min_questions: 28
+      max_questions: 34
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_12"
+  - number: 13
+    title: "Level 13 · Colours and clothes"
+    stat_cap: 70
+    content_tags:
+      - "stage:13"
+      - "tier:core"
+    theme:
+      en: "Colours and clothes"
+    learning_goal:
+      en: "Describe colours, clothes, and simple preferences."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 7
+      answered_fight_questions: 14
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 14
+      at_min_questions: 30
+      max_questions: 36
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_13"
+  - number: 14
+    title: "Level 14 · Body and well-being"
+    stat_cap: 75
+    content_tags:
+      - "stage:14"
+      - "tier:core"
+    theme:
+      en: "Body and well-being"
+    learning_goal:
+      en: "Say how you feel and describe simple physical problems."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 7
+      answered_fight_questions: 14
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 14
+      at_min_questions: 30
+      max_questions: 36
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_14"
+  - number: 15
+    title: "Level 15 · Home and objects"
+    stat_cap: 80
+    content_tags:
+      - "stage:15"
+      - "tier:core"
+    theme:
+      en: "Home and objects"
+    learning_goal:
+      en: "Describe rooms and say where an object is."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 7
+      answered_fight_questions: 14
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 14
+      at_min_questions: 32
+      max_questions: 38
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_15"
+  - number: 16
+    title: "Level 16 · Questions and actions"
+    stat_cap: 85
+    content_tags:
+      - "stage:16"
+      - "tier:core"
+    theme:
+      en: "Questions and actions"
+    learning_goal:
+      en: "Form useful questions, negate an action, and connect short sentences."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 7
+      answered_fight_questions: 14
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 14
+      at_min_questions: 32
+      max_questions: 38
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_16"
