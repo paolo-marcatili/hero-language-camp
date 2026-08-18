@@ -155,11 +155,33 @@ function updateInterface(path, names) {
   }
   writeExpected(path, withGeneratedBlock(text, "interface-enemy-names", toYaml(names, 2), "  "), newline);
 }
-function updateTags(path, levels) {
-  const additions = [
-    ...levels.map((number) => ({ id: `stage:${number}`, label: String(number), description: `Tag controllato del curriculum: stage:${number}` })),
-    { id: "curriculum:v2", label: "curriculum v2", description: "Contenuto curato per il curriculum v2" },
-  ];
+function updateTags(path, modules) {
+  const ids = new Set(["curriculum:v2"]);
+  for (const module of modules) {
+    for (const level of module.levels ?? []) {
+      ids.add(`stage:${level.number}`);
+      for (const tag of level.content_tags ?? []) ids.add(String(tag));
+    }
+    for (const row of [...(module.words ?? []), ...(module.sentences ?? [])]) {
+      for (const tag of row.tags ?? []) ids.add(String(tag));
+    }
+    for (const enemy of module.enemies ?? []) {
+      for (const tag of enemy.semantic_tags ?? []) ids.add(String(tag));
+    }
+  }
+  const additions = [...ids].sort((left, right) => left.localeCompare(right)).map((id) => {
+    const suffix = id.includes(":") ? id.slice(id.indexOf(":") + 1) : id;
+    const label = id.startsWith("stage:")
+      ? suffix
+      : suffix.replace(/[-_]+/g, " ");
+    return {
+      id,
+      label,
+      description: id === "curriculum:v2"
+        ? "Contenuto curato per il curriculum v2"
+        : `Tag controllato del curriculum: ${id}`,
+    };
+  });
   const { text, newline } = readText(path);
   const base = stripGeneratedBlock(text, "controlled-tags", "  ");
   const doc = parseYaml(base);
@@ -225,6 +247,7 @@ function mergeWord(existing, definition, moduleId) {
     ...(existing ?? {}),
     ...definition,
     id: existing?.id ?? definition.id,
+    audio: Array.isArray(existing?.audio) ? existing.audio : Array.isArray(definition.audio) ? definition.audio : [],
     tags: mergeTags(existing?.tags, definition.tags),
     translation: definition.translations.it,
     base_language: "it",
@@ -312,7 +335,7 @@ updateYamlList(join(PACK, "levels.yaml"), "levels", "levels", levels);
 updateYamlList(join(PACK, "story.yaml"), "chapters", "story-chapters", chapters);
 updateYamlList(join(PACK, "enemies.yaml"), "enemies", "enemies", enemies);
 updateInterface(join(PACK, "interface.yaml"), enemyNamesIt);
-updateTags(join(PACK, "tags.yaml"), levels.map((level) => level.number));
+updateTags(join(PACK, "tags.yaml"), modules);
 upsertJsonl(join(PACK, "dictionary", "words.jsonl"), modules, "words", "target", mergeWord);
 upsertJsonl(join(PACK, "dictionary", "sentences.jsonl"), modules, "sentences", "target_sentence", mergeSentence);
 

@@ -430,4 +430,212 @@ levels:
       timer_seconds: 12
       sigmoid_k: 2.2
     chapter_id: "chapter_stage_16"
+  - number: 17
+    title: "Livello 17 · Comprare e scegliere"
+    stat_cap: 90
+    content_tags:
+      - "stage:17"
+      - "tier:core"
+    theme:
+      it: "Comprare e scegliere"
+      en: "Shopping and choosing"
+    learning_goal:
+      it: "Chiedere il prezzo, indicare una quantità e fare una semplice richiesta in un negozio."
+      en: "Ask the price, state a quantity, and make a simple request in a shop."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_17"
+  - number: 18
+    title: "Livello 18 · Al bar e al ristorante"
+    stat_cap: 95
+    content_tags:
+      - "stage:18"
+      - "tier:core"
+    theme:
+      it: "Al bar e al ristorante"
+      en: "At a café and restaurant"
+    learning_goal:
+      it: "Ordinare cibo e bevande, specificare una preferenza e chiedere il conto."
+      en: "Order food and drinks, state a preference, and ask for the bill."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_18"
+  - number: 19
+    title: "Livello 19 · Meteo e stagioni"
+    stat_cap: 100
+    content_tags:
+      - "stage:19"
+      - "tier:core"
+    theme:
+      it: "Meteo e stagioni"
+      en: "Weather and seasons"
+    learning_goal:
+      it: "Descrivere il tempo di oggi e collegare condizioni comuni alle stagioni."
+      en: "Describe today’s weather and connect common conditions with the seasons."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 36
+      max_questions: 42
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_19"
+  - number: 20
+    title: "Livello 20 · Viaggi e trasporti"
+    stat_cap: 105
+    content_tags:
+      - "stage:20"
+      - "tier:core"
+    theme:
+      it: "Viaggi e trasporti"
+      en: "Travel and transport"
+    learning_goal:
+      it: "Comprare un biglietto, capire una partenza e chiedere quando si arriva."
+      en: "Buy a ticket, understand a departure, and ask when something arrives."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 36
+      max_questions: 42
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_20"
+  - number: 21
+    title: "Livello 21 · Raccontare il passato"
+    stat_cap: 110
+    content_tags:
+      - "stage:21"
+      - "tier:core"
+    theme:
+      it: "Raccontare il passato"
+      en: "Talking about the past"
+    learning_goal:
+      it: "Raccontare con frasi brevi che cosa è successo ieri o nel fine settimana."
+      en: "Use short sentences to say what happened yesterday or at the weekend."
+    cefr: "a2"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 9
+      answered_fight_questions: 18
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 18
+      at_min_questions: 38
+      max_questions: 44
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_21"
+  - number: 22
+    title: "Livello 22 · Progetti e futuro"
+    stat_cap: 115
+    content_tags:
+      - "stage:22"
+      - "tier:core"
+    theme:
+      it: "Progetti e futuro"
+      en: "Plans and the future"
+    learning_goal:
+      it: "Parlare di programmi, appuntamenti e azioni che avverranno più tardi."
+      en: "Talk about plans, appointments, and actions that will happen later."
+    cefr: "a2"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 9
+      answered_fight_questions: 18
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 18
+      at_min_questions: 38
+      max_questions: 44
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_22"
+  - number: 23
+    title: "Livello 23 · Confronti e descrizioni"
+    stat_cap: 120
+    content_tags:
+      - "stage:23"
+      - "tier:core"
+    theme:
+      it: "Confronti e descrizioni"
+      en: "Comparisons and descriptions"
+    learning_goal:
+      it: "Confrontare persone, oggetti e mezzi usando differenze semplici e chiare."
+      en: "Compare people, objects, and transport using simple, clear differences."
+    cefr: "a2"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 9
+      answered_fight_questions: 18
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 18
+      at_min_questions: 40
+      max_questions: 46
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_23"
+  - number: 24
+    title: "Livello 24 · Messaggi e piccoli problemi"
+    stat_cap: 125
+    content_tags:
+      - "stage:24"
+      - "tier:core"
+    theme:
+      it: "Messaggi e piccoli problemi"
+      en: "Messages and everyday problems"
+    learning_goal:
+      it: "Chiedere aiuto, spiegare un piccolo problema e lasciare un messaggio utile."
+      en: "Ask for help, explain a small problem, and leave a useful message."
+    cefr: "a2"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 9
+      answered_fight_questions: 18
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 18
+      at_min_questions: 40
+      max_questions: 46
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_24"
 # END GENERATED CURRICULUM V2: levels

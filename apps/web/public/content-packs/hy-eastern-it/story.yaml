@@ -1287,4 +1287,604 @@ chapters:
     cliffhanger:
       it: "La piazza apre una nuova strada verso racconti più lunghi, esperienze passate e progetti futuri: il prossimo tratto del corso può essere aggiunto senza cambiare il motore del gioco."
       en: "The square opens a new road towards longer stories, past experiences, and future plans: the next course section can be added without changing the game engine."
+  - id: "chapter_stage_17"
+    minimum_level: 17
+    title:
+      it: "Capitolo 17 · Il mercato delle bilance"
+      en: "Chapter 17 · The market of scales"
+    summary:
+      it: "Chiedi prezzi e quantità, poi scegli senza confondere numero, peso e costo."
+      en: "Ask about prices and quantities, then choose without confusing number, weight, and cost."
+    fiction:
+      it: "La strada dalla piazza delle domande conduce a un mercato dove le bilance parlano e i cartellini cambiano cifra. Il passaggio si apre soltanto quando l’eroe formula una richiesta completa e controlla ciò che sta comprando."
+      en: "The road from the square of questions leads to a market where scales speak and price tags change their numbers. The passage opens only when the hero makes a complete request and checks what is being bought."
+    story_beats:
+      - it: "Una moneta imita ogni prezzo pronunciato male. Per smascherarla, l’eroe deve distinguere quanto costa un oggetto da quanta merce desidera."
+        en: "A coin copies every price that is said incorrectly. To expose it, the hero must distinguish how much an item costs from how much of it is wanted."
+    lesson:
+      title:
+        it: "Prezzi, quantità e richieste"
+        en: "Prices, quantities, and requests"
+      objectives:
+        - it: "Chiedere quanto costa qualcosa."
+          en: "Ask how much something costs."
+        - it: "Indicare una quantità o un peso."
+          en: "State a quantity or weight."
+        - it: "Chiedere di provare o comprare un oggetto."
+          en: "Ask to try or buy an item."
+      explanation:
+        it: "In una richiesta di acquisto conviene imparare blocchi completi: Որքա՞ն արժե սա, մեկ կիլոգրամ… եմ ուզում e Կարո՞ղ եմ…։ Il numero precede la quantità, mentre դրամ esprime il prezzo."
+        en: "For shopping, learn complete chunks: Որքա՞ն արժե սա, մեկ կիլոգրամ… եմ ուզում, and Կարո՞ղ եմ…։ The number comes before the quantity, while դրամ expresses the price."
+      examples:
+        - target: "Որքա՞ն արժե սա։"
+          transliteration: "vork'an arzhe sa"
+          translation:
+            it: "Quanto costa questo?"
+            en: "How much is this?"
+        - target: "Սա երկու հազար դրամ արժե։"
+          transliteration: "sa yerku hazar dram arzhe"
+          translation:
+            it: "Questo costa duemila dram."
+            en: "This costs two thousand drams."
+        - target: "Ես մեկ կիլոգրամ խնձոր եմ ուզում։"
+          transliteration: "yes mek kilogram khndzor em uzum"
+          translation:
+            it: "Vorrei un chilogrammo di mele."
+            en: "I would like one kilogram of apples."
+      dialogue:
+        - speaker:
+            it: "Venditore"
+            en: "Shop assistant"
+          target: "Ի՞նչ եք ուզում։"
+          transliteration: "inch ek uzum"
+          translation:
+            it: "Che cosa desidera?"
+            en: "What would you like?"
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Ես մեկ կիլոգրամ խնձոր եմ ուզում։ Որքա՞ն արժե։"
+          transliteration: "yes mek kilogram khndzor em uzum. vork'an arzhe"
+          translation:
+            it: "Vorrei un chilogrammo di mele. Quanto costa?"
+            en: "I would like one kilogram of apples. How much is it?"
+      study_notes:
+        - it: "Ripeti insieme quantità e nome: մեկ կիլոգրամ խնձոր."
+          en: "Practise the quantity and noun together: մեկ կիլոգրամ խնձոր."
+        - it: "Confronta գին, դրամ e կիլոգրամ: prezzo, valuta e peso hanno ruoli diversi."
+          en: "Keep գին, դրամ, and կիլոգրամ separate: price, currency, and weight have different roles."
+      common_mistakes:
+        - it: "Non usare «quanto» e «quanti» come se fossero la stessa domanda."
+          en: "Do not treat “how much” and “how many” as the same question."
+    mission:
+      it: "Compra tre oggetti con quantità diverse e scopri quale moneta sta falsificando i cartellini."
+      en: "Buy three items in different quantities and discover which coin is falsifying the price tags."
+    cliffhanger:
+      it: "Dietro il mercato si accende una cucina in cui ogni ordine viene ripetuto da un’eco capricciosa."
+      en: "Behind the market, a kitchen lights up where every order is repeated by a mischievous echo."
+  - id: "chapter_stage_18"
+    minimum_level: 18
+    title:
+      it: "Capitolo 18 · La cucina degli echi"
+      en: "Chapter 18 · The kitchen of echoes"
+    summary:
+      it: "Ordina cibo e bevande con richieste brevi ma complete, comprese preferenze come “senza zucchero”."
+      en: "Order food and drinks with short but complete requests, including preferences such as “without sugar”."
+    fiction:
+      it: "Nella cucina degli echi, ogni parola superflua si moltiplica e ogni parola mancante svuota il piatto. L’eroe deve ordinare con precisione, poi riconoscere il momento giusto per chiedere il conto."
+      en: "In the kitchen of echoes, every unnecessary word multiplies and every missing word empties the plate. The hero must order precisely, then recognise the right moment to ask for the bill."
+    story_beats:
+      - it: "Il Mago del Menù cambia le portate quando confonde «con» e «senza». Una richiesta chiara mantiene il piatto corretto sul tavolo."
+        en: "The Menu Wizard changes the dishes whenever “with” and “without” are confused. A clear request keeps the correct plate on the table."
+    lesson:
+      title:
+        it: "Ordinare e specificare preferenze"
+        en: "Ordering and stating preferences"
+      objectives:
+        - it: "Chiedere il menù e il conto."
+          en: "Ask for the menu and the bill."
+        - it: "Ordinare una pietanza o una bevanda."
+          en: "Order a dish or drink."
+        - it: "Dire che cosa vuoi senza un ingrediente."
+          en: "Say that you want something without an ingredient."
+      explanation:
+        it: "Le richieste al bar possono essere molto brevi: Ճաշացանկը, խնդրում եմ e Հաշիվը, խնդրում եմ. Per specificare un’assenza, usa առանց seguito dal nome nella forma richiesta dalla frase, come առանց շաքարի."
+        en: "Café requests can be very short: Ճաշացանկը, խնդրում եմ and Հաշիվը, խնդրում եմ. To exclude something, use առանց followed by the noun form required by the phrase, as in առանց շաքարի."
+      examples:
+        - target: "Ճաշացանկը, խնդրում եմ։"
+          transliteration: "chashatsanky khndrum em"
+          translation:
+            it: "Il menù, per favore."
+            en: "The menu, please."
+        - target: "Մի բաժակ թեյ առանց շաքարի, խնդրում եմ։"
+          transliteration: "mi bazhak tey arants shakari khndrum em"
+          translation:
+            it: "Una tazza di tè senza zucchero, per favore."
+            en: "A cup of tea without sugar, please."
+        - target: "Հաշիվը, խնդրում եմ։"
+          transliteration: "hashivy khndrum em"
+          translation:
+            it: "Il conto, per favore."
+            en: "The bill, please."
+      dialogue:
+        - speaker:
+            it: "Cameriere"
+            en: "Server"
+          target: "Ի՞նչ եք պատվիրում։"
+          transliteration: "inch ek patvirum"
+          translation:
+            it: "Che cosa ordina?"
+            en: "What would you like to order?"
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Ես ապուր և աղցան եմ ուզում։ Մի բաժակ ջուր էլ, խնդրում եմ։"
+          transliteration: "yes apur yev aghtsan em uzum. mi bazhak jur el khndrum em"
+          translation:
+            it: "Vorrei una zuppa e un’insalata. Anche un bicchiere d’acqua, per favore."
+            en: "I would like soup and a salad. A glass of water as well, please."
+      study_notes:
+        - it: "Impara insieme il contenitore e la bevanda: մի բաժակ թեյ."
+          en: "Learn the container and drink together: մի բաժակ թեյ."
+        - it: "Usa խնդրում եմ per rendere cortese una richiesta breve."
+          en: "Use խնդրում եմ to make a short request polite."
+      common_mistakes:
+        - it: "Non confondere հաշիվ “conto” con հարց “domanda”."
+          en: "Do not confuse հաշիվ “bill/account” with հարց “question”."
+    mission:
+      it: "Prepara un ordine completo per due viaggiatori e chiedi il conto senza far cambiare le portate."
+      en: "Prepare a complete order for two travellers and ask for the bill without making the dishes change."
+    cliffhanger:
+      it: "Il vapore della cucina sale verso una torre che mostra quattro stagioni nello stesso momento."
+      en: "Steam from the kitchen rises towards a tower showing four seasons at the same time."
+  - id: "chapter_stage_19"
+    minimum_level: 19
+    title:
+      it: "Capitolo 19 · La torre delle stagioni"
+      en: "Chapter 19 · The tower of seasons"
+    summary:
+      it: "Descrivi condizioni semplici e collega sole, pioggia, neve e temperatura alla stagione corretta."
+      en: "Describe simple conditions and connect sun, rain, snow, and temperature with the correct season."
+    fiction:
+      it: "La torre delle stagioni gira troppo velocemente: su un lato nevica, su un altro splende il sole e in cima soffia un vento che sposta le parole. L’eroe deve osservare il cielo e scegliere una frase che descriva davvero ciò che vede."
+      en: "The tower of seasons turns too quickly: it snows on one side, the sun shines on another, and a wind at the top moves the words around. The hero must observe the sky and choose a sentence that truly describes it."
+    story_beats:
+      - it: "Il Pipistrello della Tempesta nasconde la stagione dietro una condizione momentanea. L’eroe impara a distinguere “oggi fa freddo” da “in inverno nevica”."
+        en: "The Storm Bat hides the season behind a temporary condition. The hero learns to distinguish “it is cold today” from “it snows in winter”."
+    lesson:
+      title:
+        it: "Meteo di oggi e stagioni"
+        en: "Today’s weather and the seasons"
+      objectives:
+        - it: "Descrivere caldo e freddo."
+          en: "Describe warm and cold weather."
+        - it: "Riconoscere pioggia, neve, vento e sole."
+          en: "Recognise rain, snow, wind, and sun."
+        - it: "Dire che cosa succede normalmente in una stagione."
+          en: "Say what normally happens in a season."
+      explanation:
+        it: "Molte frasi sul tempo non hanno un soggetto personale: Անձրև է գալիս e Ձյուն է գալիս. Per parlare di una stagione, il nome può assumere una forma come ձմռանը o ամռանը, equivalente a “in inverno” e “in estate”."
+        en: "Many weather sentences have no personal subject: Անձրև է գալիս and Ձյուն է գալիս. To talk about a season, the noun can take a form such as ձմռանը or ամռանը, meaning “in winter” and “in summer”."
+      examples:
+        - target: "Այսօր ցուրտ է։"
+          transliteration: "aysor tsurt e"
+          translation:
+            it: "Oggi fa freddo."
+            en: "It is cold today."
+        - target: "Անձրև է գալիս։"
+          transliteration: "andzrev e galis"
+          translation:
+            it: "Piove."
+            en: "It is raining."
+        - target: "Ձմռանը ձյուն է գալիս։"
+          transliteration: "dzmrrany dzyun e galis"
+          translation:
+            it: "In inverno nevica."
+            en: "It snows in winter."
+      dialogue:
+        - speaker:
+            it: "Guardiano"
+            en: "Keeper"
+          target: "Այսօր եղանակն ինչպե՞ս է։"
+          transliteration: "aysor yeghanakn inchpes e"
+          translation:
+            it: "Com’è il tempo oggi?"
+            en: "What is the weather like today?"
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Այսօր ցուրտ է և քամի կա։"
+          transliteration: "aysor tsurt e yev kami ka"
+          translation:
+            it: "Oggi fa freddo e c’è vento."
+            en: "It is cold and windy today."
+      study_notes:
+        - it: "Ascolta la differenza tra արև e անձրև: una sillaba cambia il significato."
+          en: "Listen to the difference between արև and անձրև: one syllable changes the meaning."
+        - it: "Collega ogni stagione a più di una frase, non a una sola parola."
+          en: "Connect each season with more than one sentence, not just one word."
+      common_mistakes:
+        - it: "Non tradurre sempre “fa” con un verbo separato: Այսօր ցուրտ է è una frase completa."
+          en: "Do not always translate “it is” with a separate weather verb: Այսօր ցուրտ է is complete."
+    mission:
+      it: "Rallenta la torre descrivendo il tempo di ogni lato e scegliendo la stagione corrispondente."
+      en: "Slow the tower by describing the weather on each side and choosing the matching season."
+    cliffhanger:
+      it: "Quando la torre si ferma, appare una stazione i cui binari cambiano destinazione ogni minuto."
+      en: "When the tower stops, a station appears whose tracks change destination every minute."
+  - id: "chapter_stage_20"
+    minimum_level: 20
+    title:
+      it: "Capitolo 20 · La stazione dei binari mobili"
+      en: "Chapter 20 · The station of moving tracks"
+    summary:
+      it: "Usa biglietti, orari, partenze e arrivi per completare un breve viaggio."
+      en: "Use tickets, times, departures, and arrivals to complete a short journey."
+    fiction:
+      it: "Alla stazione dei binari mobili, i cartelli indicano una città diversa ogni volta che una domanda resta incompleta. L’eroe deve acquistare il biglietto corretto, ascoltare l’orario e capire se un mezzo parte o arriva."
+      en: "At the station of moving tracks, the signs show a different city whenever a question is incomplete. The hero must buy the correct ticket, listen to the time, and understand whether transport is leaving or arriving."
+    story_beats:
+      - it: "Il Troll dei Biglietti colleziona risposte senza destinazione. Una frase con città, orario o mezzo preciso rimette il binario al suo posto."
+        en: "The Ticket Troll collects answers with no destination. A sentence with a precise city, time, or means of transport puts the track back in place."
+    lesson:
+      title:
+        it: "Biglietti, partenze e arrivi"
+        en: "Tickets, departures, and arrivals"
+      objectives:
+        - it: "Chiedere un biglietto per una destinazione."
+          en: "Ask for a ticket to a destination."
+        - it: "Dire a che ora si parte."
+          en: "Say what time you leave."
+        - it: "Chiedere quando arriva un treno o autobus."
+          en: "Ask when a train or bus arrives."
+      explanation:
+        it: "Con i trasporti, impara le coppie մեկնել “partire” e հասնել “arrivare”. Nelle richieste brevi, Մեկ տոմս Երևան, խնդրում եմ è sufficiente; nelle domande, ե՞րբ cerca un momento preciso."
+        en: "For transport, learn the pair մեկնել “depart” and հասնել “arrive”. In a short request, Մեկ տոմս Երևան, խնդրում եմ is enough; in questions, ե՞րբ asks for a precise time."
+      examples:
+        - target: "Մեկ տոմս Երևան, խնդրում եմ։"
+          transliteration: "mek toms Yerevan khndrum em"
+          translation:
+            it: "Un biglietto per Erevan, per favore."
+            en: "One ticket to Yerevan, please."
+        - target: "Մենք ժամը վեցին ենք մեկնում։"
+          transliteration: "menk zhamy vetsin enk meknum"
+          translation:
+            it: "Partiamo alle sei."
+            en: "We leave at six."
+        - target: "Գնացքը ե՞րբ է հասնում։"
+          transliteration: "gnatsky yerb e hasnum"
+          translation:
+            it: "Quando arriva il treno?"
+            en: "When does the train arrive?"
+      dialogue:
+        - speaker:
+            it: "Bigliettaio"
+            en: "Ticket clerk"
+          target: "Ո՞ւր եք գնում։"
+          transliteration: "ur ek gnum"
+          translation:
+            it: "Dove va?"
+            en: "Where are you going?"
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Երևան։ Մեկ տոմս, խնդրում եմ։ Գնացքը ե՞րբ է մեկնում։"
+          transliteration: "Yerevan. mek toms khndrum em. gnatsky yerb e meknum"
+          translation:
+            it: "A Erevan. Un biglietto, per favore. Quando parte il treno?"
+            en: "To Yerevan. One ticket, please. When does the train leave?"
+      study_notes:
+        - it: "Ripeti insieme il mezzo e il verbo: գնացքը մեկնում է, գնացքը հասնում է."
+          en: "Practise the transport and verb together: գնացքը մեկնում է, գնացքը հասնում է."
+        - it: "Controlla se la domanda cerca dove, quando o quanto."
+          en: "Check whether the question asks where, when, or how much."
+      common_mistakes:
+        - it: "Non confondere մեկնել con գնալ: entrambi possono indicare movimento, ma մեկնել evidenzia la partenza."
+          en: "Do not confuse մեկնել with գնալ: both can express movement, but մեկնել emphasises departure."
+    mission:
+      it: "Porta tre viaggiatori alla destinazione corretta usando biglietti e orari diversi."
+      en: "Take three travellers to the correct destination using different tickets and times."
+    cliffhanger:
+      it: "Il treno entra in una galleria dove le pareti mostrano soltanto scene già accadute."
+      en: "The train enters a gallery whose walls show only events that have already happened."
+  - id: "chapter_stage_21"
+    minimum_level: 21
+    title:
+      it: "Capitolo 21 · La galleria di ieri"
+      en: "Chapter 21 · The gallery of yesterday"
+    summary:
+      it: "Racconta azioni concluse usando forme frequenti del passato in frasi brevi."
+      en: "Talk about completed actions using frequent past forms in short sentences."
+    fiction:
+      it: "Nella galleria di ieri, ogni quadro mostra un’azione terminata ma perde il verbo appena qualcuno la racconta al presente. L’eroe deve riconoscere che cosa è già successo e completare il ricordo con la forma giusta."
+      en: "In the gallery of yesterday, every picture shows a completed action but loses its verb whenever someone tells it in the present. The hero must recognise what has already happened and complete the memory with the right form."
+    story_beats:
+      - it: "Il Blob dei Ricordi mescola ieri, oggi e domani. Per separare le immagini, l’eroe cerca segnali temporali e ascolta la fine del verbo."
+        en: "The Memory Blob mixes yesterday, today, and tomorrow. To separate the images, the hero looks for time signals and listens to the end of the verb."
+    lesson:
+      title:
+        it: "Azioni concluse nel passato"
+        en: "Completed actions in the past"
+      objectives:
+        - it: "Dire dove sei andato ieri."
+          en: "Say where you went yesterday."
+        - it: "Raccontare una visita o un’attività del fine settimana."
+          en: "Talk about a visit or weekend activity."
+        - it: "Distinguere una forma passata da presente e futuro."
+          en: "Distinguish a past form from present and future forms."
+      explanation:
+        it: "Questo livello presenta alcune forme molto frequenti del passato semplice: գնացի, դիտեցի, պատրաստեց e այցելեցինք. Imparale dentro frasi complete e collegale a segnali come երեկ e շաբաթ օրը."
+        en: "This level introduces several frequent simple-past forms: գնացի, դիտեցի, պատրաստեց, and այցելեցինք. Learn them in complete sentences and connect them with signals such as երեկ and շաբաթ օրը."
+      examples:
+        - target: "Երեկ ես դպրոց գնացի։"
+          transliteration: "yerek yes dprots gnatsi"
+          translation:
+            it: "Ieri sono andato / andata a scuola."
+            en: "I went to school yesterday."
+        - target: "Ես երեկ ֆիլմ դիտեցի։"
+          transliteration: "yes yerek film ditetsi"
+          translation:
+            it: "Ieri ho guardato un film."
+            en: "I watched a film yesterday."
+        - target: "Նա ճաշ պատրաստեց։"
+          transliteration: "na chash patrastets"
+          translation:
+            it: "Ha preparato il pranzo."
+            en: "He or she prepared the meal."
+      dialogue:
+        - speaker:
+            it: "Custode"
+            en: "Keeper"
+          target: "Ի՞նչ արեցիր երեկ։"
+          transliteration: "inch aretsir yerek"
+          translation:
+            it: "Che cosa hai fatto ieri?"
+            en: "What did you do yesterday?"
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Ես տատիկին այցելեցի և ֆիլմ դիտեցի։"
+          transliteration: "yes tatikin aytseletsi yev film ditetsi"
+          translation:
+            it: "Ho visitato la nonna e ho guardato un film."
+            en: "I visited Grandma and watched a film."
+      study_notes:
+        - it: "Cerca prima l’indicatore di tempo, poi la forma del verbo."
+          en: "Look for the time marker first, then the verb form."
+        - it: "Pratica una stessa azione in tre tempi: գնում եմ, գնացի, գնալու եմ."
+          en: "Practise one action in three times: գնում եմ, գնացի, գնալու եմ."
+      common_mistakes:
+        - it: "Non considerare una frase al presente una traduzione valida soltanto perché descrive la stessa azione."
+          en: "Do not accept a present-tense sentence merely because it describes the same action."
+    mission:
+      it: "Ricostruisci quattro ricordi ordinandoli per giorno e scegliendo il verbo passato corretto."
+      en: "Reconstruct four memories by ordering them by day and choosing the correct past verb."
+    cliffhanger:
+      it: "L’ultima immagine diventa una porta che mostra appuntamenti e viaggi ancora da realizzare."
+      en: "The final picture becomes a door showing appointments and journeys that have not happened yet."
+  - id: "chapter_stage_22"
+    minimum_level: 22
+    title:
+      it: "Capitolo 22 · Il ponte di domani"
+      en: "Chapter 22 · The bridge of tomorrow"
+    summary:
+      it: "Parla di programmi futuri usando orari, persone e destinazioni concrete."
+      en: "Talk about future plans using concrete times, people, and destinations."
+    fiction:
+      it: "Il ponte di domani costruisce una tavola soltanto quando un progetto è espresso con chiarezza. Idee vaghe cadono nella nebbia; programmi con tempo, luogo e azione diventano un percorso stabile."
+      en: "The bridge of tomorrow builds a plank only when a plan is expressed clearly. Vague ideas fall into the mist; plans with a time, place, and action become a stable path."
+    story_beats:
+      - it: "Il Drago di Domani soffia via l’ausiliare delle frasi future. L’eroe deve mantenere insieme la forma in -լու e il verbo essere corretto."
+        en: "The Tomorrow Dragon blows the auxiliary out of future sentences. The hero must keep the -լու form together with the correct form of “to be”."
+    lesson:
+      title:
+        it: "Programmi, appuntamenti e intenzioni"
+        en: "Plans, appointments, and intentions"
+      objectives:
+        - it: "Dire dove andrai domani."
+          en: "Say where you are going tomorrow."
+        - it: "Fissare un incontro a un’ora precisa."
+          en: "Arrange a meeting at a precise time."
+        - it: "Dire che chiamerai o viaggerai più tardi."
+          en: "Say that you will call or travel later."
+      explanation:
+        it: "Una forma comune per esprimere un programma usa il verbo in -լու più եմ, ես, է, ենք, եք o են: գնալու եմ, հանդիպելու ենք. Nella frase negativa, la negazione si lega all’ausiliare: չեմ գնալու."
+        en: "A common way to express a plan uses the verb in -լու plus եմ, ես, է, ենք, եք, or են: գնալու եմ, հանդիպելու ենք. In a negative sentence, negation attaches to the auxiliary: չեմ գնալու."
+      examples:
+        - target: "Վաղը ես գրադարան եմ գնալու։"
+          transliteration: "vaghy yes gradaran em gnalu"
+          translation:
+            it: "Domani andrò in biblioteca."
+            en: "I am going to the library tomorrow."
+        - target: "Մենք ժամը հինգին ենք հանդիպելու։"
+          transliteration: "menk zhamy hingin enk handipelu"
+          translation:
+            it: "Ci incontreremo alle cinque."
+            en: "We are meeting at five."
+        - target: "Ես քեզ երեկոյան զանգահարելու եմ։"
+          transliteration: "yes kez yerekoyan zangaharelu em"
+          translation:
+            it: "Ti telefonerò questa sera."
+            en: "I will call you this evening."
+      dialogue:
+        - speaker:
+            it: "Viaggiatrice"
+            en: "Traveller"
+          target: "Վաղը ի՞նչ ես անելու։"
+          transliteration: "vaghy inch es anelu"
+          translation:
+            it: "Che cosa farai domani?"
+            en: "What are you going to do tomorrow?"
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Առավոտյան գրադարան եմ գնալու, իսկ երեկոյան քեզ զանգահարելու եմ։"
+          transliteration: "aravotyan gradaran em gnalu isk yerekoyan kez zangaharelu em"
+          translation:
+            it: "La mattina andrò in biblioteca e la sera ti telefonerò."
+            en: "I am going to the library in the morning, and I will call you in the evening."
+      study_notes:
+        - it: "Associa sempre il progetto a un indicatore come վաղը, երեկոյան o ամռանը."
+          en: "Connect the plan with a marker such as վաղը, երեկոյան, or ամռանը."
+        - it: "Controlla che l’ausiliare concordi con la persona."
+          en: "Check that the auxiliary agrees with the person."
+      common_mistakes:
+        - it: "Non lasciare sola la forma in -լու: գնալու senza ausiliare non completa questa costruzione."
+          en: "Do not leave the -լու form on its own: գնալու without an auxiliary does not complete this construction."
+    mission:
+      it: "Completa il ponte descrivendo quattro programmi futuri con persone e orari diversi."
+      en: "Complete the bridge by describing four future plans with different people and times."
+    cliffhanger:
+      it: "Dall’altra parte, una sala di specchi ingrandisce ogni differenza tra persone e oggetti."
+      en: "On the other side, a hall of mirrors magnifies every difference between people and objects."
+  - id: "chapter_stage_23"
+    minimum_level: 23
+    title:
+      it: "Capitolo 23 · La sala dei confronti"
+      en: "Chapter 23 · The hall of comparisons"
+    summary:
+      it: "Confronta due elementi senza perdere il termine di paragone o la qualità osservata."
+      en: "Compare two things without losing either the comparison point or the quality being observed."
+    fiction:
+      it: "Nella sala dei confronti, gli specchi rendono una borsa enorme, un treno lentissimo e un libro apparentemente facile. L’eroe deve ignorare l’illusione e formulare un confronto che nomini entrambi gli elementi."
+      en: "In the hall of comparisons, the mirrors make a bag enormous, a train extremely slow, and a book seem easy. The hero must ignore the illusion and form a comparison that names both things."
+    story_beats:
+      - it: "L’Orco della Bilancia ruba il suffisso -ից e la parola քան. Senza un termine di paragone, ogni descrizione resta incompleta."
+        en: "The Scale Ogre steals the suffix -ից and the word քան. Without a comparison point, every description remains incomplete."
+    lesson:
+      title:
+        it: "Confrontare persone e oggetti"
+        en: "Comparing people and objects"
+      objectives:
+        - it: "Dire che una persona è più alta di un’altra."
+          en: "Say that one person is taller than another."
+        - it: "Confrontare velocità, peso o difficoltà."
+          en: "Compare speed, weight, or difficulty."
+        - it: "Usare ավելի … քան in una frase completa."
+          en: "Use ավելի … քան in a complete sentence."
+      explanation:
+        it: "L’armeno può confrontare usando il secondo elemento con -ից, come Նարեկից բարձր, oppure con ավելի … քան. Non trattare le due strutture come parole isolate: impara l’intero confronto."
+        en: "Armenian can compare by putting -ից on the second item, as in Նարեկից բարձր, or by using ավելի … քան. Do not treat the structures as isolated words; learn the whole comparison."
+      examples:
+        - target: "Արամը Նարեկից բարձր է։"
+          transliteration: "Aramy Narekits bardzr e"
+          translation:
+            it: "Aram è più alto di Narek."
+            en: "Aram is taller than Narek."
+        - target: "Գնացքն ավտոբուսից արագ է։"
+          transliteration: "gnatskn avtobusits arag e"
+          translation:
+            it: "Il treno è più veloce dell'autobus."
+            en: "The train is faster than the bus."
+        - target: "Այս գիրքն ավելի հետաքրքիր է, քան այն գիրքը։"
+          transliteration: "ays girkn aveli hetakirkir e kan ayn girky"
+          translation:
+            it: "Questo libro è più interessante di quello."
+            en: "This book is more interesting than that book."
+      dialogue:
+        - speaker:
+            it: "Orco"
+            en: "Ogre"
+          target: "Ո՞ր պայուսակն է թեթև։"
+          transliteration: "vor payusakn e tetev"
+          translation:
+            it: "Quale borsa è leggera?"
+            en: "Which bag is light?"
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Կապույտ պայուսակը կարմիրից թեթև է։"
+          transliteration: "kapuyt payusaky karmirits tetev e"
+          translation:
+            it: "La borsa blu è più leggera di quella rossa."
+            en: "The blue bag is lighter than the red one."
+      study_notes:
+        - it: "Evidenzia i due elementi e la qualità prima di scegliere la risposta."
+          en: "Identify the two items and the quality before choosing an answer."
+        - it: "Confronta una sola proprietà alla volta."
+          en: "Compare one property at a time."
+      common_mistakes:
+        - it: "“Più” non basta da solo: la frase deve dire più che cosa e rispetto a che cosa."
+          en: "“More” is not enough by itself: the sentence must say more what, and compared with what."
+    mission:
+      it: "Disattiva gli specchi completando confronti su altezza, velocità, peso e interesse."
+      en: "Disable the mirrors by completing comparisons about height, speed, weight, and interest."
+    cliffhanger:
+      it: "Dietro l’ultimo specchio lampeggia un faro che riceve messaggi incompleti da tutta la valle."
+      en: "Behind the final mirror, a beacon flashes as it receives incomplete messages from across the valley."
+  - id: "chapter_stage_24"
+    minimum_level: 24
+    title:
+      it: "Capitolo 24 · Il faro dei messaggi"
+      en: "Chapter 24 · The beacon of messages"
+    summary:
+      it: "Chiedi aiuto, comunica un ritardo e trasmetti un indirizzo o un piccolo problema."
+      en: "Ask for help, report a delay, and communicate an address or small problem."
+    fiction:
+      it: "Il faro dei messaggi riceve richieste senza indirizzo, ritardi senza durata e problemi senza oggetto. L’eroe deve trasformare ogni frammento in una frase utile che un’altra persona possa davvero seguire."
+      en: "The beacon of messages receives requests with no address, delays with no duration, and problems with no object. The hero must turn each fragment into a useful sentence that another person can actually follow."
+    story_beats:
+      - it: "L’Imp del Segnale cancella la parte più importante di ogni messaggio. Per sconfiggerlo, l’eroe deve capire se manca una persona, un oggetto, un luogo o un tempo."
+        en: "The Signal Imp deletes the most important part of every message. To defeat it, the hero must work out whether a person, object, place, or time is missing."
+    lesson:
+      title:
+        it: "Aiuto, messaggi e piccoli imprevisti"
+        en: "Help, messages, and small problems"
+      objectives:
+        - it: "Chiedere aiuto in modo diretto e cortese."
+          en: "Ask for help directly and politely."
+        - it: "Dire che non trovi o hai perso qualcosa."
+          en: "Say that you cannot find or have lost something."
+        - it: "Comunicare un indirizzo o un ritardo."
+          en: "Communicate an address or a delay."
+      explanation:
+        it: "Un messaggio utile contiene l’informazione necessaria all’altra persona: Ուղարկիր ինձ հասցեն, Ես տասը րոպե ուշանում եմ. Con կարող ես puoi trasformare una richiesta in una domanda cortese."
+        en: "A useful message contains the information the other person needs: Ուղարկիր ինձ հասցեն, Ես տասը րոպե ուշանում եմ. With կարող ես, you can turn a request into a polite question."
+      examples:
+        - target: "Կարո՞ղ ես ինձ օգնել։"
+          transliteration: "karogh es indz ognel"
+          translation:
+            it: "Puoi aiutarmi?"
+            en: "Can you help me?"
+        - target: "Ուղարկիր ինձ հասցեն, խնդրում եմ։"
+          transliteration: "ugharkir indz hastsen khndrum em"
+          translation:
+            it: "Mandami l'indirizzo, per favore."
+            en: "Send me the address, please."
+        - target: "Ես տասը րոպե ուշանում եմ։"
+          transliteration: "yes tas rope ushanum em"
+          translation:
+            it: "Sono in ritardo di dieci minuti."
+            en: "I am ten minutes late."
+      dialogue:
+        - speaker:
+            it: "Amica"
+            en: "Friend"
+          target: "Որտե՞ղ ես։"
+          transliteration: "vortegh es"
+          translation:
+            it: "Dove sei?"
+            en: "Where are you?"
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Ես տասը րոպե ուշանում եմ։ Ուղարկիր ինձ հասցեն, խնդրում եմ։"
+          transliteration: "yes tas rope ushanum em. ugharkir indz hastsen khndrum em"
+          translation:
+            it: "Sono in ritardo di dieci minuti. Mandami l'indirizzo, per favore."
+            en: "I am ten minutes late. Send me the address, please."
+      study_notes:
+        - it: "Prima di inviare una frase, chiediti se chi legge sa che cosa deve fare."
+          en: "Before sending a sentence, ask whether the reader knows what to do."
+        - it: "Distingui գտնել “trovare” da կորցնել “perdere”."
+          en: "Keep գտնել “find” separate from կորցնել “lose”."
+      common_mistakes:
+        - it: "Non usare un messaggio vago come «sono in ritardo» quando l’esercizio chiede anche di quanto."
+          en: "Do not use a vague message such as “I am late” when the exercise also asks by how much."
+    mission:
+      it: "Ripara il faro completando quattro messaggi: una richiesta di aiuto, un oggetto perso, un indirizzo e un ritardo."
+      en: "Repair the beacon by completing four messages: a request for help, a lost item, an address, and a delay."
+    cliffhanger:
+      it: "Il faro illumina una strada verso racconti più lunghi, annunci, esperienze e conversazioni a più turni: il prossimo modulo può estendere il corso senza cambiare il motore."
+      en: "The beacon lights a road towards longer stories, notices, experiences, and multi-turn conversations: the next module can extend the course without changing the engine."
 # END GENERATED CURRICULUM V2: story-chapters

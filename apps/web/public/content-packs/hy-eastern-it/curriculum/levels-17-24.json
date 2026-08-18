@@ -1,0 +1,4522 @@
+{
+  "schema_version": 1,
+  "module_id": "levels-17-24",
+  "description": "Strong A1 and early A2 Armenian curriculum: practical transactions, time frames, comparisons, and everyday communication.",
+  "levels": [
+    {
+      "number": 17,
+      "title": "Livello 17 · Comprare e scegliere",
+      "stat_cap": 90,
+      "content_tags": [
+        "stage:17",
+        "tier:core"
+      ],
+      "theme": {
+        "it": "Comprare e scegliere",
+        "en": "Shopping and choosing"
+      },
+      "learning_goal": {
+        "it": "Chiedere il prezzo, indicare una quantità e fare una semplice richiesta in un negozio.",
+        "en": "Ask the price, state a quantity, and make a simple request in a shop."
+      },
+      "cefr": "a1",
+      "review_only": false,
+      "unlock_requires": {
+        "completed_training_sessions": 8,
+        "answered_fight_questions": 16,
+        "min_coins": 0,
+        "min_stats": {}
+      },
+      "fight": {
+        "min_questions": 16,
+        "at_min_questions": 34,
+        "max_questions": 40,
+        "timer_seconds": 12,
+        "sigmoid_k": 2.2
+      },
+      "chapter_id": "chapter_stage_17"
+    },
+    {
+      "number": 18,
+      "title": "Livello 18 · Al bar e al ristorante",
+      "stat_cap": 95,
+      "content_tags": [
+        "stage:18",
+        "tier:core"
+      ],
+      "theme": {
+        "it": "Al bar e al ristorante",
+        "en": "At a café and restaurant"
+      },
+      "learning_goal": {
+        "it": "Ordinare cibo e bevande, specificare una preferenza e chiedere il conto.",
+        "en": "Order food and drinks, state a preference, and ask for the bill."
+      },
+      "cefr": "a1",
+      "review_only": false,
+      "unlock_requires": {
+        "completed_training_sessions": 8,
+        "answered_fight_questions": 16,
+        "min_coins": 0,
+        "min_stats": {}
+      },
+      "fight": {
+        "min_questions": 16,
+        "at_min_questions": 34,
+        "max_questions": 40,
+        "timer_seconds": 12,
+        "sigmoid_k": 2.2
+      },
+      "chapter_id": "chapter_stage_18"
+    },
+    {
+      "number": 19,
+      "title": "Livello 19 · Meteo e stagioni",
+      "stat_cap": 100,
+      "content_tags": [
+        "stage:19",
+        "tier:core"
+      ],
+      "theme": {
+        "it": "Meteo e stagioni",
+        "en": "Weather and seasons"
+      },
+      "learning_goal": {
+        "it": "Descrivere il tempo di oggi e collegare condizioni comuni alle stagioni.",
+        "en": "Describe today’s weather and connect common conditions with the seasons."
+      },
+      "cefr": "a1",
+      "review_only": false,
+      "unlock_requires": {
+        "completed_training_sessions": 8,
+        "answered_fight_questions": 16,
+        "min_coins": 0,
+        "min_stats": {}
+      },
+      "fight": {
+        "min_questions": 16,
+        "at_min_questions": 36,
+        "max_questions": 42,
+        "timer_seconds": 12,
+        "sigmoid_k": 2.2
+      },
+      "chapter_id": "chapter_stage_19"
+    },
+    {
+      "number": 20,
+      "title": "Livello 20 · Viaggi e trasporti",
+      "stat_cap": 105,
+      "content_tags": [
+        "stage:20",
+        "tier:core"
+      ],
+      "theme": {
+        "it": "Viaggi e trasporti",
+        "en": "Travel and transport"
+      },
+      "learning_goal": {
+        "it": "Comprare un biglietto, capire una partenza e chiedere quando si arriva.",
+        "en": "Buy a ticket, understand a departure, and ask when something arrives."
+      },
+      "cefr": "a1",
+      "review_only": false,
+      "unlock_requires": {
+        "completed_training_sessions": 8,
+        "answered_fight_questions": 16,
+        "min_coins": 0,
+        "min_stats": {}
+      },
+      "fight": {
+        "min_questions": 16,
+        "at_min_questions": 36,
+        "max_questions": 42,
+        "timer_seconds": 12,
+        "sigmoid_k": 2.2
+      },
+      "chapter_id": "chapter_stage_20"
+    },
+    {
+      "number": 21,
+      "title": "Livello 21 · Raccontare il passato",
+      "stat_cap": 110,
+      "content_tags": [
+        "stage:21",
+        "tier:core"
+      ],
+      "theme": {
+        "it": "Raccontare il passato",
+        "en": "Talking about the past"
+      },
+      "learning_goal": {
+        "it": "Raccontare con frasi brevi che cosa è successo ieri o nel fine settimana.",
+        "en": "Use short sentences to say what happened yesterday or at the weekend."
+      },
+      "cefr": "a2",
+      "review_only": false,
+      "unlock_requires": {
+        "completed_training_sessions": 9,
+        "answered_fight_questions": 18,
+        "min_coins": 0,
+        "min_stats": {}
+      },
+      "fight": {
+        "min_questions": 18,
+        "at_min_questions": 38,
+        "max_questions": 44,
+        "timer_seconds": 12,
+        "sigmoid_k": 2.2
+      },
+      "chapter_id": "chapter_stage_21"
+    },
+    {
+      "number": 22,
+      "title": "Livello 22 · Progetti e futuro",
+      "stat_cap": 115,
+      "content_tags": [
+        "stage:22",
+        "tier:core"
+      ],
+      "theme": {
+        "it": "Progetti e futuro",
+        "en": "Plans and the future"
+      },
+      "learning_goal": {
+        "it": "Parlare di programmi, appuntamenti e azioni che avverranno più tardi.",
+        "en": "Talk about plans, appointments, and actions that will happen later."
+      },
+      "cefr": "a2",
+      "review_only": false,
+      "unlock_requires": {
+        "completed_training_sessions": 9,
+        "answered_fight_questions": 18,
+        "min_coins": 0,
+        "min_stats": {}
+      },
+      "fight": {
+        "min_questions": 18,
+        "at_min_questions": 38,
+        "max_questions": 44,
+        "timer_seconds": 12,
+        "sigmoid_k": 2.2
+      },
+      "chapter_id": "chapter_stage_22"
+    },
+    {
+      "number": 23,
+      "title": "Livello 23 · Confronti e descrizioni",
+      "stat_cap": 120,
+      "content_tags": [
+        "stage:23",
+        "tier:core"
+      ],
+      "theme": {
+        "it": "Confronti e descrizioni",
+        "en": "Comparisons and descriptions"
+      },
+      "learning_goal": {
+        "it": "Confrontare persone, oggetti e mezzi usando differenze semplici e chiare.",
+        "en": "Compare people, objects, and transport using simple, clear differences."
+      },
+      "cefr": "a2",
+      "review_only": false,
+      "unlock_requires": {
+        "completed_training_sessions": 9,
+        "answered_fight_questions": 18,
+        "min_coins": 0,
+        "min_stats": {}
+      },
+      "fight": {
+        "min_questions": 18,
+        "at_min_questions": 40,
+        "max_questions": 46,
+        "timer_seconds": 12,
+        "sigmoid_k": 2.2
+      },
+      "chapter_id": "chapter_stage_23"
+    },
+    {
+      "number": 24,
+      "title": "Livello 24 · Messaggi e piccoli problemi",
+      "stat_cap": 125,
+      "content_tags": [
+        "stage:24",
+        "tier:core"
+      ],
+      "theme": {
+        "it": "Messaggi e piccoli problemi",
+        "en": "Messages and everyday problems"
+      },
+      "learning_goal": {
+        "it": "Chiedere aiuto, spiegare un piccolo problema e lasciare un messaggio utile.",
+        "en": "Ask for help, explain a small problem, and leave a useful message."
+      },
+      "cefr": "a2",
+      "review_only": false,
+      "unlock_requires": {
+        "completed_training_sessions": 9,
+        "answered_fight_questions": 18,
+        "min_coins": 0,
+        "min_stats": {}
+      },
+      "fight": {
+        "min_questions": 18,
+        "at_min_questions": 40,
+        "max_questions": 46,
+        "timer_seconds": 12,
+        "sigmoid_k": 2.2
+      },
+      "chapter_id": "chapter_stage_24"
+    }
+  ],
+  "words": [
+    {
+      "id": "hy_cv2_l17_price",
+      "concept": "price",
+      "target": "գին",
+      "transliteration": "gin",
+      "translations": {
+        "it": "prezzo",
+        "en": "price"
+      },
+      "tags": [
+        "stage:17",
+        "tier:core",
+        "curriculum:v2",
+        "topic:shopping"
+      ],
+      "emoji": "🏷️"
+    },
+    {
+      "id": "hy_cv2_l17_cost",
+      "concept": "cost",
+      "target": "արժենալ",
+      "transliteration": "arzhenal",
+      "translations": {
+        "it": "costare",
+        "en": "cost"
+      },
+      "tags": [
+        "stage:17",
+        "tier:core",
+        "curriculum:v2",
+        "topic:shopping"
+      ]
+    },
+    {
+      "id": "hy_cv2_l17_dram",
+      "concept": "dram",
+      "target": "դրամ",
+      "transliteration": "dram",
+      "translations": {
+        "it": "dram",
+        "en": "dram"
+      },
+      "tags": [
+        "stage:17",
+        "tier:core",
+        "curriculum:v2",
+        "topic:shopping"
+      ],
+      "emoji": "🪙"
+    },
+    {
+      "id": "hy_cv2_l17_cheap",
+      "concept": "cheap",
+      "target": "էժան",
+      "transliteration": "ezhan",
+      "translations": {
+        "it": "economico / economica",
+        "en": "cheap"
+      },
+      "tags": [
+        "stage:17",
+        "tier:core",
+        "curriculum:v2",
+        "topic:shopping"
+      ]
+    },
+    {
+      "id": "hy_cv2_l17_expensive",
+      "concept": "expensive",
+      "target": "թանկ",
+      "transliteration": "tank",
+      "translations": {
+        "it": "costoso / costosa",
+        "en": "expensive"
+      },
+      "tags": [
+        "stage:17",
+        "tier:core",
+        "curriculum:v2",
+        "topic:shopping"
+      ]
+    },
+    {
+      "id": "hy_cv2_l17_size",
+      "concept": "size",
+      "target": "չափս",
+      "transliteration": "chaps",
+      "translations": {
+        "it": "taglia / misura",
+        "en": "size"
+      },
+      "tags": [
+        "stage:17",
+        "tier:core",
+        "curriculum:v2",
+        "topic:shopping"
+      ],
+      "emoji": "📏"
+    },
+    {
+      "id": "hy_cv2_l17_kilogram",
+      "concept": "kilogram",
+      "target": "կիլոգրամ",
+      "transliteration": "kilogram",
+      "translations": {
+        "it": "chilogrammo",
+        "en": "kilogram"
+      },
+      "tags": [
+        "stage:17",
+        "tier:core",
+        "curriculum:v2",
+        "topic:shopping"
+      ]
+    },
+    {
+      "id": "hy_cv2_l17_gram",
+      "concept": "gram",
+      "target": "գրամ",
+      "transliteration": "gram",
+      "translations": {
+        "it": "grammo",
+        "en": "gram"
+      },
+      "tags": [
+        "stage:17",
+        "tier:core",
+        "curriculum:v2",
+        "topic:shopping"
+      ]
+    },
+    {
+      "id": "hy_cv2_l17_pay",
+      "concept": "pay",
+      "target": "վճարել",
+      "transliteration": "vcharel",
+      "translations": {
+        "it": "pagare",
+        "en": "pay"
+      },
+      "tags": [
+        "stage:17",
+        "tier:core",
+        "curriculum:v2",
+        "topic:shopping"
+      ]
+    },
+    {
+      "id": "hy_cv2_l17_take",
+      "concept": "take",
+      "target": "վերցնել",
+      "transliteration": "vertsnel",
+      "translations": {
+        "it": "prendere",
+        "en": "take"
+      },
+      "tags": [
+        "stage:17",
+        "tier:core",
+        "curriculum:v2",
+        "topic:shopping"
+      ]
+    },
+    {
+      "id": "hy_cv2_l17_try",
+      "concept": "try",
+      "target": "փորձել",
+      "transliteration": "pordzel",
+      "translations": {
+        "it": "provare",
+        "en": "try / try on"
+      },
+      "tags": [
+        "stage:17",
+        "tier:core",
+        "curriculum:v2",
+        "topic:shopping"
+      ]
+    },
+    {
+      "id": "hy_cv2_l17_shop_assistant",
+      "concept": "shop assistant",
+      "target": "վաճառող",
+      "transliteration": "vacharogh",
+      "translations": {
+        "it": "commesso / commessa",
+        "en": "shop assistant"
+      },
+      "tags": [
+        "stage:17",
+        "tier:core",
+        "curriculum:v2",
+        "topic:shopping"
+      ],
+      "emoji": "🧑‍💼"
+    },
+    {
+      "id": "hy_cv2_l17_money",
+      "concept": "money",
+      "target": "փող",
+      "transliteration": "pogh",
+      "translations": {
+        "it": "denaro",
+        "en": "money"
+      },
+      "tags": [
+        "stage:17",
+        "tier:core",
+        "curriculum:v2",
+        "topic:shopping"
+      ],
+      "emoji": "💰"
+    },
+    {
+      "id": "hy_cv2_l17_discount",
+      "concept": "discount",
+      "target": "զեղչ",
+      "transliteration": "zeghch",
+      "translations": {
+        "it": "sconto",
+        "en": "discount"
+      },
+      "tags": [
+        "stage:17",
+        "tier:core",
+        "curriculum:v2",
+        "topic:shopping"
+      ],
+      "emoji": "🔖"
+    },
+    {
+      "id": "hy_cv2_l18_menu",
+      "concept": "menu",
+      "target": "ճաշացանկ",
+      "transliteration": "chashatsank",
+      "translations": {
+        "it": "menù",
+        "en": "menu"
+      },
+      "tags": [
+        "stage:18",
+        "tier:core",
+        "curriculum:v2",
+        "topic:food-drink"
+      ],
+      "emoji": "📋"
+    },
+    {
+      "id": "hy_cv2_l18_soup",
+      "concept": "soup",
+      "target": "ապուր",
+      "transliteration": "apur",
+      "translations": {
+        "it": "zuppa",
+        "en": "soup"
+      },
+      "tags": [
+        "stage:18",
+        "tier:core",
+        "curriculum:v2",
+        "topic:food-drink"
+      ],
+      "emoji": "🍲"
+    },
+    {
+      "id": "hy_cv2_l18_salad",
+      "concept": "salad",
+      "target": "աղցան",
+      "transliteration": "aghtsan",
+      "translations": {
+        "it": "insalata",
+        "en": "salad"
+      },
+      "tags": [
+        "stage:18",
+        "tier:core",
+        "curriculum:v2",
+        "topic:food-drink"
+      ],
+      "emoji": "🥗"
+    },
+    {
+      "id": "hy_cv2_l18_coffee",
+      "concept": "coffee",
+      "target": "սուրճ",
+      "transliteration": "surj",
+      "translations": {
+        "it": "caffè",
+        "en": "coffee"
+      },
+      "tags": [
+        "stage:18",
+        "tier:core",
+        "curriculum:v2",
+        "topic:food-drink"
+      ],
+      "emoji": "☕"
+    },
+    {
+      "id": "hy_cv2_l18_tea",
+      "concept": "tea",
+      "target": "թեյ",
+      "transliteration": "tey",
+      "translations": {
+        "it": "tè",
+        "en": "tea"
+      },
+      "tags": [
+        "stage:18",
+        "tier:core",
+        "curriculum:v2",
+        "topic:food-drink"
+      ],
+      "emoji": "🫖"
+    },
+    {
+      "id": "hy_cv2_l18_sugar",
+      "concept": "sugar",
+      "target": "շաքար",
+      "transliteration": "shakar",
+      "translations": {
+        "it": "zucchero",
+        "en": "sugar"
+      },
+      "tags": [
+        "stage:18",
+        "tier:core",
+        "curriculum:v2",
+        "topic:food-drink"
+      ]
+    },
+    {
+      "id": "hy_cv2_l18_salt",
+      "concept": "salt",
+      "target": "աղ",
+      "transliteration": "agh",
+      "translations": {
+        "it": "sale",
+        "en": "salt"
+      },
+      "tags": [
+        "stage:18",
+        "tier:core",
+        "curriculum:v2",
+        "topic:food-drink"
+      ]
+    },
+    {
+      "id": "hy_cv2_l18_bill",
+      "concept": "bill",
+      "target": "հաշիվ",
+      "transliteration": "hashiv",
+      "translations": {
+        "it": "conto",
+        "en": "bill"
+      },
+      "tags": [
+        "stage:18",
+        "tier:core",
+        "curriculum:v2",
+        "topic:food-drink"
+      ],
+      "emoji": "🧾"
+    },
+    {
+      "id": "hy_cv2_l18_order",
+      "concept": "order",
+      "target": "պատվիրել",
+      "transliteration": "patvirel",
+      "translations": {
+        "it": "ordinare",
+        "en": "order"
+      },
+      "tags": [
+        "stage:18",
+        "tier:core",
+        "curriculum:v2",
+        "topic:food-drink"
+      ]
+    },
+    {
+      "id": "hy_cv2_l18_tasty",
+      "concept": "tasty",
+      "target": "համեղ",
+      "transliteration": "hamegh",
+      "translations": {
+        "it": "gustoso / gustosa",
+        "en": "tasty"
+      },
+      "tags": [
+        "stage:18",
+        "tier:core",
+        "curriculum:v2",
+        "topic:food-drink"
+      ],
+      "emoji": "😋"
+    },
+    {
+      "id": "hy_cv2_l18_cup",
+      "concept": "cup",
+      "target": "բաժակ",
+      "transliteration": "bazhak",
+      "translations": {
+        "it": "tazza / bicchiere",
+        "en": "cup / glass"
+      },
+      "tags": [
+        "stage:18",
+        "tier:core",
+        "curriculum:v2",
+        "topic:food-drink"
+      ],
+      "emoji": "🥛"
+    },
+    {
+      "id": "hy_cv2_l18_spoon",
+      "concept": "spoon",
+      "target": "գդալ",
+      "transliteration": "gdal",
+      "translations": {
+        "it": "cucchiaio",
+        "en": "spoon"
+      },
+      "tags": [
+        "stage:18",
+        "tier:core",
+        "curriculum:v2",
+        "topic:food-drink"
+      ],
+      "emoji": "🥄"
+    },
+    {
+      "id": "hy_cv2_l18_fork",
+      "concept": "fork",
+      "target": "պատառաքաղ",
+      "transliteration": "patarakagh",
+      "translations": {
+        "it": "forchetta",
+        "en": "fork"
+      },
+      "tags": [
+        "stage:18",
+        "tier:core",
+        "curriculum:v2",
+        "topic:food-drink"
+      ],
+      "emoji": "🍴"
+    },
+    {
+      "id": "hy_cv2_l18_knife",
+      "concept": "knife",
+      "target": "դանակ",
+      "transliteration": "danak",
+      "translations": {
+        "it": "coltello",
+        "en": "knife"
+      },
+      "tags": [
+        "stage:18",
+        "tier:core",
+        "curriculum:v2",
+        "topic:food-drink"
+      ],
+      "emoji": "🔪"
+    },
+    {
+      "id": "hy_cv2_l18_without",
+      "concept": "without",
+      "target": "առանց",
+      "transliteration": "arants",
+      "translations": {
+        "it": "senza",
+        "en": "without"
+      },
+      "tags": [
+        "stage:18",
+        "tier:core",
+        "curriculum:v2",
+        "topic:food-drink"
+      ]
+    },
+    {
+      "id": "hy_cv2_l19_weather",
+      "concept": "weather",
+      "target": "եղանակ",
+      "transliteration": "yeghanak",
+      "translations": {
+        "it": "tempo atmosferico",
+        "en": "weather"
+      },
+      "tags": [
+        "stage:19",
+        "tier:core",
+        "curriculum:v2",
+        "topic:weather"
+      ],
+      "emoji": "🌤️"
+    },
+    {
+      "id": "hy_cv2_l19_sun",
+      "concept": "sun",
+      "target": "արև",
+      "transliteration": "arev",
+      "translations": {
+        "it": "sole",
+        "en": "sun"
+      },
+      "tags": [
+        "stage:19",
+        "tier:core",
+        "curriculum:v2",
+        "topic:weather"
+      ],
+      "emoji": "☀️"
+    },
+    {
+      "id": "hy_cv2_l19_rain",
+      "concept": "rain",
+      "target": "անձրև",
+      "transliteration": "andzrev",
+      "translations": {
+        "it": "pioggia",
+        "en": "rain"
+      },
+      "tags": [
+        "stage:19",
+        "tier:core",
+        "curriculum:v2",
+        "topic:weather"
+      ],
+      "emoji": "🌧️"
+    },
+    {
+      "id": "hy_cv2_l19_snow",
+      "concept": "snow",
+      "target": "ձյուն",
+      "transliteration": "dzyun",
+      "translations": {
+        "it": "neve",
+        "en": "snow"
+      },
+      "tags": [
+        "stage:19",
+        "tier:core",
+        "curriculum:v2",
+        "topic:weather"
+      ],
+      "emoji": "❄️"
+    },
+    {
+      "id": "hy_cv2_l19_wind",
+      "concept": "wind",
+      "target": "քամի",
+      "transliteration": "kami",
+      "translations": {
+        "it": "vento",
+        "en": "wind"
+      },
+      "tags": [
+        "stage:19",
+        "tier:core",
+        "curriculum:v2",
+        "topic:weather"
+      ],
+      "emoji": "🌬️"
+    },
+    {
+      "id": "hy_cv2_l19_cloud",
+      "concept": "cloud",
+      "target": "ամպ",
+      "transliteration": "amp",
+      "translations": {
+        "it": "nuvola",
+        "en": "cloud"
+      },
+      "tags": [
+        "stage:19",
+        "tier:core",
+        "curriculum:v2",
+        "topic:weather"
+      ],
+      "emoji": "☁️"
+    },
+    {
+      "id": "hy_cv2_l19_warm",
+      "concept": "warm",
+      "target": "տաք",
+      "transliteration": "tak",
+      "translations": {
+        "it": "caldo",
+        "en": "warm / hot"
+      },
+      "tags": [
+        "stage:19",
+        "tier:core",
+        "curriculum:v2",
+        "topic:weather"
+      ]
+    },
+    {
+      "id": "hy_cv2_l19_cold",
+      "concept": "cold",
+      "target": "ցուրտ",
+      "transliteration": "tsurt",
+      "translations": {
+        "it": "freddo",
+        "en": "cold"
+      },
+      "tags": [
+        "stage:19",
+        "tier:core",
+        "curriculum:v2",
+        "topic:weather"
+      ]
+    },
+    {
+      "id": "hy_cv2_l19_spring",
+      "concept": "spring",
+      "target": "գարուն",
+      "transliteration": "garun",
+      "translations": {
+        "it": "primavera",
+        "en": "spring"
+      },
+      "tags": [
+        "stage:19",
+        "tier:core",
+        "curriculum:v2",
+        "topic:weather"
+      ],
+      "emoji": "🌱"
+    },
+    {
+      "id": "hy_cv2_l19_summer",
+      "concept": "summer",
+      "target": "ամառ",
+      "transliteration": "amar",
+      "translations": {
+        "it": "estate",
+        "en": "summer"
+      },
+      "tags": [
+        "stage:19",
+        "tier:core",
+        "curriculum:v2",
+        "topic:weather"
+      ],
+      "emoji": "🏖️"
+    },
+    {
+      "id": "hy_cv2_l19_autumn",
+      "concept": "autumn",
+      "target": "աշուն",
+      "transliteration": "ashun",
+      "translations": {
+        "it": "autunno",
+        "en": "autumn"
+      },
+      "tags": [
+        "stage:19",
+        "tier:core",
+        "curriculum:v2",
+        "topic:weather"
+      ],
+      "emoji": "🍂"
+    },
+    {
+      "id": "hy_cv2_l19_winter",
+      "concept": "winter",
+      "target": "ձմեռ",
+      "transliteration": "dzmer",
+      "translations": {
+        "it": "inverno",
+        "en": "winter"
+      },
+      "tags": [
+        "stage:19",
+        "tier:core",
+        "curriculum:v2",
+        "topic:weather"
+      ],
+      "emoji": "⛄"
+    },
+    {
+      "id": "hy_cv2_l19_degree",
+      "concept": "degree",
+      "target": "աստիճան",
+      "transliteration": "astichan",
+      "translations": {
+        "it": "grado",
+        "en": "degree"
+      },
+      "tags": [
+        "stage:19",
+        "tier:core",
+        "curriculum:v2",
+        "topic:weather"
+      ]
+    },
+    {
+      "id": "hy_cv2_l19_umbrella",
+      "concept": "umbrella",
+      "target": "հովանոց",
+      "transliteration": "hovanots",
+      "translations": {
+        "it": "ombrello",
+        "en": "umbrella"
+      },
+      "tags": [
+        "stage:19",
+        "tier:core",
+        "curriculum:v2",
+        "topic:weather"
+      ],
+      "emoji": "☂️"
+    },
+    {
+      "id": "hy_cv2_l20_bus",
+      "concept": "bus",
+      "target": "ավտոբուս",
+      "transliteration": "avtobus",
+      "translations": {
+        "it": "autobus",
+        "en": "bus"
+      },
+      "tags": [
+        "stage:20",
+        "tier:core",
+        "curriculum:v2",
+        "topic:transport"
+      ],
+      "emoji": "🚌"
+    },
+    {
+      "id": "hy_cv2_l20_train",
+      "concept": "train",
+      "target": "գնացք",
+      "transliteration": "gnatsk",
+      "translations": {
+        "it": "treno",
+        "en": "train"
+      },
+      "tags": [
+        "stage:20",
+        "tier:core",
+        "curriculum:v2",
+        "topic:transport"
+      ],
+      "emoji": "🚆"
+    },
+    {
+      "id": "hy_cv2_l20_ticket",
+      "concept": "ticket",
+      "target": "տոմս",
+      "transliteration": "toms",
+      "translations": {
+        "it": "biglietto",
+        "en": "ticket"
+      },
+      "tags": [
+        "stage:20",
+        "tier:core",
+        "curriculum:v2",
+        "topic:transport"
+      ],
+      "emoji": "🎫"
+    },
+    {
+      "id": "hy_cv2_l20_stop",
+      "concept": "stop",
+      "target": "կանգառ",
+      "transliteration": "kangar",
+      "translations": {
+        "it": "fermata",
+        "en": "stop"
+      },
+      "tags": [
+        "stage:20",
+        "tier:core",
+        "curriculum:v2",
+        "topic:transport"
+      ],
+      "emoji": "🚏"
+    },
+    {
+      "id": "hy_cv2_l20_airport",
+      "concept": "airport",
+      "target": "օդանավակայան",
+      "transliteration": "odanavakayan",
+      "translations": {
+        "it": "aeroporto",
+        "en": "airport"
+      },
+      "tags": [
+        "stage:20",
+        "tier:core",
+        "curriculum:v2",
+        "topic:transport"
+      ],
+      "emoji": "✈️"
+    },
+    {
+      "id": "hy_cv2_l20_journey",
+      "concept": "journey",
+      "target": "ճանապարհ",
+      "transliteration": "chanaparh",
+      "translations": {
+        "it": "viaggio / strada",
+        "en": "journey / road"
+      },
+      "tags": [
+        "stage:20",
+        "tier:core",
+        "curriculum:v2",
+        "topic:transport"
+      ],
+      "emoji": "🛣️"
+    },
+    {
+      "id": "hy_cv2_l20_depart",
+      "concept": "depart",
+      "target": "մեկնել",
+      "transliteration": "meknel",
+      "translations": {
+        "it": "partire",
+        "en": "depart / leave"
+      },
+      "tags": [
+        "stage:20",
+        "tier:core",
+        "curriculum:v2",
+        "topic:transport"
+      ]
+    },
+    {
+      "id": "hy_cv2_l20_arrive",
+      "concept": "arrive",
+      "target": "հասնել",
+      "transliteration": "hasnel",
+      "translations": {
+        "it": "arrivare",
+        "en": "arrive"
+      },
+      "tags": [
+        "stage:20",
+        "tier:core",
+        "curriculum:v2",
+        "topic:transport"
+      ]
+    },
+    {
+      "id": "hy_cv2_l20_board",
+      "concept": "board",
+      "target": "նստել",
+      "transliteration": "nstel",
+      "translations": {
+        "it": "salire / sedersi",
+        "en": "board / sit"
+      },
+      "tags": [
+        "stage:20",
+        "tier:core",
+        "curriculum:v2",
+        "topic:transport"
+      ]
+    },
+    {
+      "id": "hy_cv2_l20_get_off",
+      "concept": "get off",
+      "target": "իջնել",
+      "transliteration": "ijnel",
+      "translations": {
+        "it": "scendere",
+        "en": "get off"
+      },
+      "tags": [
+        "stage:20",
+        "tier:core",
+        "curriculum:v2",
+        "topic:transport"
+      ]
+    },
+    {
+      "id": "hy_cv2_l20_passenger",
+      "concept": "passenger",
+      "target": "ուղևոր",
+      "transliteration": "ughevor",
+      "translations": {
+        "it": "passeggero / passeggera",
+        "en": "passenger"
+      },
+      "tags": [
+        "stage:20",
+        "tier:core",
+        "curriculum:v2",
+        "topic:transport"
+      ],
+      "emoji": "🧳"
+    },
+    {
+      "id": "hy_cv2_l20_suitcase",
+      "concept": "suitcase",
+      "target": "ճամպրուկ",
+      "transliteration": "champruk",
+      "translations": {
+        "it": "valigia",
+        "en": "suitcase"
+      },
+      "tags": [
+        "stage:20",
+        "tier:core",
+        "curriculum:v2",
+        "topic:transport"
+      ],
+      "emoji": "🧳"
+    },
+    {
+      "id": "hy_cv2_l20_next",
+      "concept": "next",
+      "target": "հաջորդ",
+      "transliteration": "hajord",
+      "translations": {
+        "it": "prossimo / prossima",
+        "en": "next"
+      },
+      "tags": [
+        "stage:20",
+        "tier:core",
+        "curriculum:v2",
+        "topic:transport"
+      ]
+    },
+    {
+      "id": "hy_cv2_l20_route",
+      "concept": "route",
+      "target": "երթուղի",
+      "transliteration": "ertughi",
+      "translations": {
+        "it": "percorso / linea",
+        "en": "route"
+      },
+      "tags": [
+        "stage:20",
+        "tier:core",
+        "curriculum:v2",
+        "topic:transport"
+      ],
+      "emoji": "🗺️"
+    },
+    {
+      "id": "hy_cv2_l21_past",
+      "concept": "past",
+      "target": "անցյալ",
+      "transliteration": "antsyal",
+      "translations": {
+        "it": "passato / scorso",
+        "en": "past / last"
+      },
+      "tags": [
+        "stage:21",
+        "tier:core",
+        "curriculum:v2",
+        "topic:past-events"
+      ]
+    },
+    {
+      "id": "hy_cv2_l21_weekend",
+      "concept": "weekend",
+      "target": "շաբաթավերջ",
+      "transliteration": "shabataverj",
+      "translations": {
+        "it": "fine settimana",
+        "en": "weekend"
+      },
+      "tags": [
+        "stage:21",
+        "tier:core",
+        "curriculum:v2",
+        "topic:past-events"
+      ]
+    },
+    {
+      "id": "hy_cv2_l21_visit",
+      "concept": "visit",
+      "target": "այցելել",
+      "transliteration": "aytselel",
+      "translations": {
+        "it": "visitare",
+        "en": "visit"
+      },
+      "tags": [
+        "stage:21",
+        "tier:core",
+        "curriculum:v2",
+        "topic:past-events"
+      ]
+    },
+    {
+      "id": "hy_cv2_l21_watch",
+      "concept": "watch",
+      "target": "դիտել",
+      "transliteration": "ditel",
+      "translations": {
+        "it": "guardare",
+        "en": "watch"
+      },
+      "tags": [
+        "stage:21",
+        "tier:core",
+        "curriculum:v2",
+        "topic:past-events"
+      ]
+    },
+    {
+      "id": "hy_cv2_l21_prepare",
+      "concept": "prepare",
+      "target": "պատրաստել",
+      "transliteration": "patrastel",
+      "translations": {
+        "it": "preparare",
+        "en": "prepare"
+      },
+      "tags": [
+        "stage:21",
+        "tier:core",
+        "curriculum:v2",
+        "topic:past-events"
+      ]
+    },
+    {
+      "id": "hy_cv2_l21_happen",
+      "concept": "happen",
+      "target": "պատահել",
+      "transliteration": "patahel",
+      "translations": {
+        "it": "succedere",
+        "en": "happen"
+      },
+      "tags": [
+        "stage:21",
+        "tier:core",
+        "curriculum:v2",
+        "topic:past-events"
+      ]
+    },
+    {
+      "id": "hy_cv2_l21_remember",
+      "concept": "remember",
+      "target": "հիշել",
+      "transliteration": "hishel",
+      "translations": {
+        "it": "ricordare",
+        "en": "remember"
+      },
+      "tags": [
+        "stage:21",
+        "tier:core",
+        "curriculum:v2",
+        "topic:past-events"
+      ]
+    },
+    {
+      "id": "hy_cv2_l21_forget",
+      "concept": "forget",
+      "target": "մոռանալ",
+      "transliteration": "moranal",
+      "translations": {
+        "it": "dimenticare",
+        "en": "forget"
+      },
+      "tags": [
+        "stage:21",
+        "tier:core",
+        "curriculum:v2",
+        "topic:past-events"
+      ]
+    },
+    {
+      "id": "hy_cv2_l21_return",
+      "concept": "return",
+      "target": "վերադառնալ",
+      "transliteration": "veradarnal",
+      "translations": {
+        "it": "tornare",
+        "en": "return"
+      },
+      "tags": [
+        "stage:21",
+        "tier:core",
+        "curriculum:v2",
+        "topic:past-events"
+      ]
+    },
+    {
+      "id": "hy_cv2_l21_stroll",
+      "concept": "stroll",
+      "target": "զբոսնել",
+      "transliteration": "zbosnel",
+      "translations": {
+        "it": "passeggiare",
+        "en": "take a walk"
+      },
+      "tags": [
+        "stage:21",
+        "tier:core",
+        "curriculum:v2",
+        "topic:past-events"
+      ]
+    },
+    {
+      "id": "hy_cv2_l21_meet",
+      "concept": "meet",
+      "target": "հանդիպել",
+      "transliteration": "handipel",
+      "translations": {
+        "it": "incontrare",
+        "en": "meet"
+      },
+      "tags": [
+        "stage:21",
+        "tier:core",
+        "curriculum:v2",
+        "topic:past-events"
+      ]
+    },
+    {
+      "id": "hy_cv2_l21_celebration",
+      "concept": "celebration",
+      "target": "տոն",
+      "transliteration": "ton",
+      "translations": {
+        "it": "festa / ricorrenza",
+        "en": "celebration"
+      },
+      "tags": [
+        "stage:21",
+        "tier:core",
+        "curriculum:v2",
+        "topic:past-events"
+      ],
+      "emoji": "🎉"
+    },
+    {
+      "id": "hy_cv2_l21_film",
+      "concept": "film",
+      "target": "ֆիլմ",
+      "transliteration": "film",
+      "translations": {
+        "it": "film",
+        "en": "film"
+      },
+      "tags": [
+        "stage:21",
+        "tier:core",
+        "curriculum:v2",
+        "topic:past-events"
+      ],
+      "emoji": "🎬"
+    },
+    {
+      "id": "hy_cv2_l21_guest",
+      "concept": "guest",
+      "target": "հյուր",
+      "transliteration": "hyur",
+      "translations": {
+        "it": "ospite",
+        "en": "guest"
+      },
+      "tags": [
+        "stage:21",
+        "tier:core",
+        "curriculum:v2",
+        "topic:past-events"
+      ],
+      "emoji": "👋"
+    },
+    {
+      "id": "hy_cv2_l22_plan",
+      "concept": "plan",
+      "target": "պլան",
+      "transliteration": "plan",
+      "translations": {
+        "it": "programma / piano",
+        "en": "plan"
+      },
+      "tags": [
+        "stage:22",
+        "tier:core",
+        "curriculum:v2",
+        "topic:plans"
+      ],
+      "emoji": "🗓️"
+    },
+    {
+      "id": "hy_cv2_l22_goal",
+      "concept": "goal",
+      "target": "նպատակ",
+      "transliteration": "npatak",
+      "translations": {
+        "it": "obiettivo",
+        "en": "goal"
+      },
+      "tags": [
+        "stage:22",
+        "tier:core",
+        "curriculum:v2",
+        "topic:plans"
+      ],
+      "emoji": "🎯"
+    },
+    {
+      "id": "hy_cv2_l22_get_ready",
+      "concept": "get ready",
+      "target": "պատրաստվել",
+      "transliteration": "patrastvel",
+      "translations": {
+        "it": "prepararsi",
+        "en": "get ready"
+      },
+      "tags": [
+        "stage:22",
+        "tier:core",
+        "curriculum:v2",
+        "topic:plans"
+      ]
+    },
+    {
+      "id": "hy_cv2_l22_call",
+      "concept": "call",
+      "target": "զանգահարել",
+      "transliteration": "zangaharel",
+      "translations": {
+        "it": "telefonare",
+        "en": "call"
+      },
+      "tags": [
+        "stage:22",
+        "tier:core",
+        "curriculum:v2",
+        "topic:plans"
+      ],
+      "emoji": "📞"
+    },
+    {
+      "id": "hy_cv2_l22_send",
+      "concept": "send",
+      "target": "ուղարկել",
+      "transliteration": "ugharkel",
+      "translations": {
+        "it": "inviare",
+        "en": "send"
+      },
+      "tags": [
+        "stage:22",
+        "tier:core",
+        "curriculum:v2",
+        "topic:plans"
+      ],
+      "emoji": "📨"
+    },
+    {
+      "id": "hy_cv2_l22_travel",
+      "concept": "travel",
+      "target": "ճանապարհորդել",
+      "transliteration": "chanaparhordel",
+      "translations": {
+        "it": "viaggiare",
+        "en": "travel"
+      },
+      "tags": [
+        "stage:22",
+        "tier:core",
+        "curriculum:v2",
+        "topic:plans"
+      ],
+      "emoji": "🌍"
+    },
+    {
+      "id": "hy_cv2_l22_stay",
+      "concept": "stay",
+      "target": "մնալ",
+      "transliteration": "mnal",
+      "translations": {
+        "it": "restare",
+        "en": "stay"
+      },
+      "tags": [
+        "stage:22",
+        "tier:core",
+        "curriculum:v2",
+        "topic:plans"
+      ]
+    },
+    {
+      "id": "hy_cv2_l22_decide",
+      "concept": "decide",
+      "target": "որոշել",
+      "transliteration": "voroshel",
+      "translations": {
+        "it": "decidere",
+        "en": "decide"
+      },
+      "tags": [
+        "stage:22",
+        "tier:core",
+        "curriculum:v2",
+        "topic:plans"
+      ]
+    },
+    {
+      "id": "hy_cv2_l22_be_able",
+      "concept": "be able",
+      "target": "կարողանալ",
+      "transliteration": "karoghanal",
+      "translations": {
+        "it": "potere / essere capace",
+        "en": "be able"
+      },
+      "tags": [
+        "stage:22",
+        "tier:core",
+        "curriculum:v2",
+        "topic:plans"
+      ]
+    },
+    {
+      "id": "hy_cv2_l22_holiday",
+      "concept": "holiday",
+      "target": "արձակուրդ",
+      "transliteration": "ardzakurd",
+      "translations": {
+        "it": "vacanza",
+        "en": "holiday / vacation"
+      },
+      "tags": [
+        "stage:22",
+        "tier:core",
+        "curriculum:v2",
+        "topic:plans"
+      ],
+      "emoji": "🏝️"
+    },
+    {
+      "id": "hy_cv2_l22_soon",
+      "concept": "soon",
+      "target": "շուտով",
+      "transliteration": "shutov",
+      "translations": {
+        "it": "presto / tra poco",
+        "en": "soon"
+      },
+      "tags": [
+        "stage:22",
+        "tier:core",
+        "curriculum:v2",
+        "topic:plans"
+      ]
+    },
+    {
+      "id": "hy_cv2_l22_intend",
+      "concept": "intend",
+      "target": "մտադիր",
+      "transliteration": "mtadir",
+      "translations": {
+        "it": "intenzionato / intenzionata",
+        "en": "planning / intending"
+      },
+      "tags": [
+        "stage:22",
+        "tier:core",
+        "curriculum:v2",
+        "topic:plans"
+      ]
+    },
+    {
+      "id": "hy_cv2_l22_future",
+      "concept": "future",
+      "target": "ապագա",
+      "transliteration": "apaga",
+      "translations": {
+        "it": "futuro",
+        "en": "future"
+      },
+      "tags": [
+        "stage:22",
+        "tier:core",
+        "curriculum:v2",
+        "topic:plans"
+      ]
+    },
+    {
+      "id": "hy_cv2_l22_appointment",
+      "concept": "appointment",
+      "target": "ժամադրություն",
+      "transliteration": "zhamadrutyun",
+      "translations": {
+        "it": "appuntamento",
+        "en": "appointment"
+      },
+      "tags": [
+        "stage:22",
+        "tier:core",
+        "curriculum:v2",
+        "topic:plans"
+      ],
+      "emoji": "📅"
+    },
+    {
+      "id": "hy_cv2_l23_more",
+      "concept": "more",
+      "target": "ավելի",
+      "transliteration": "aveli",
+      "translations": {
+        "it": "più",
+        "en": "more"
+      },
+      "tags": [
+        "stage:23",
+        "tier:core",
+        "curriculum:v2",
+        "topic:descriptions"
+      ]
+    },
+    {
+      "id": "hy_cv2_l23_than",
+      "concept": "than",
+      "target": "քան",
+      "transliteration": "kan",
+      "translations": {
+        "it": "di / rispetto a",
+        "en": "than"
+      },
+      "tags": [
+        "stage:23",
+        "tier:core",
+        "curriculum:v2",
+        "topic:descriptions"
+      ]
+    },
+    {
+      "id": "hy_cv2_l23_most",
+      "concept": "most",
+      "target": "ամենաշատ",
+      "transliteration": "amenashat",
+      "translations": {
+        "it": "il più / la più",
+        "en": "the most"
+      },
+      "tags": [
+        "stage:23",
+        "tier:core",
+        "curriculum:v2",
+        "topic:descriptions"
+      ]
+    },
+    {
+      "id": "hy_cv2_l23_tall",
+      "concept": "tall",
+      "target": "բարձր",
+      "transliteration": "bardzr",
+      "translations": {
+        "it": "alto / alta",
+        "en": "tall / high"
+      },
+      "tags": [
+        "stage:23",
+        "tier:core",
+        "curriculum:v2",
+        "topic:descriptions"
+      ]
+    },
+    {
+      "id": "hy_cv2_l23_low",
+      "concept": "low",
+      "target": "ցածր",
+      "transliteration": "tsatsr",
+      "translations": {
+        "it": "basso / bassa",
+        "en": "low / short"
+      },
+      "tags": [
+        "stage:23",
+        "tier:core",
+        "curriculum:v2",
+        "topic:descriptions"
+      ]
+    },
+    {
+      "id": "hy_cv2_l23_fast",
+      "concept": "fast",
+      "target": "արագ",
+      "transliteration": "arag",
+      "translations": {
+        "it": "veloce",
+        "en": "fast"
+      },
+      "tags": [
+        "stage:23",
+        "tier:core",
+        "curriculum:v2",
+        "topic:descriptions"
+      ]
+    },
+    {
+      "id": "hy_cv2_l23_slow",
+      "concept": "slow",
+      "target": "դանդաղ",
+      "transliteration": "dandag",
+      "translations": {
+        "it": "lento / lenta",
+        "en": "slow"
+      },
+      "tags": [
+        "stage:23",
+        "tier:core",
+        "curriculum:v2",
+        "topic:descriptions"
+      ]
+    },
+    {
+      "id": "hy_cv2_l23_heavy",
+      "concept": "heavy",
+      "target": "ծանր",
+      "transliteration": "tsanr",
+      "translations": {
+        "it": "pesante",
+        "en": "heavy"
+      },
+      "tags": [
+        "stage:23",
+        "tier:core",
+        "curriculum:v2",
+        "topic:descriptions"
+      ]
+    },
+    {
+      "id": "hy_cv2_l23_light_weight",
+      "concept": "light",
+      "target": "թեթև",
+      "transliteration": "tetev",
+      "translations": {
+        "it": "leggero / leggera",
+        "en": "light (not heavy)"
+      },
+      "tags": [
+        "stage:23",
+        "tier:core",
+        "curriculum:v2",
+        "topic:descriptions"
+      ]
+    },
+    {
+      "id": "hy_cv2_l23_old",
+      "concept": "old",
+      "target": "հին",
+      "transliteration": "hin",
+      "translations": {
+        "it": "vecchio / vecchia",
+        "en": "old"
+      },
+      "tags": [
+        "stage:23",
+        "tier:core",
+        "curriculum:v2",
+        "topic:descriptions"
+      ]
+    },
+    {
+      "id": "hy_cv2_l23_new",
+      "concept": "new",
+      "target": "նոր",
+      "transliteration": "nor",
+      "translations": {
+        "it": "nuovo / nuova",
+        "en": "new"
+      },
+      "tags": [
+        "stage:23",
+        "tier:core",
+        "curriculum:v2",
+        "topic:descriptions"
+      ]
+    },
+    {
+      "id": "hy_cv2_l23_interesting",
+      "concept": "interesting",
+      "target": "հետաքրքիր",
+      "transliteration": "hetakirkir",
+      "translations": {
+        "it": "interessante",
+        "en": "interesting"
+      },
+      "tags": [
+        "stage:23",
+        "tier:core",
+        "curriculum:v2",
+        "topic:descriptions"
+      ]
+    },
+    {
+      "id": "hy_cv2_l23_comfortable",
+      "concept": "comfortable",
+      "target": "հարմար",
+      "transliteration": "harmar",
+      "translations": {
+        "it": "comodo / comoda",
+        "en": "comfortable / convenient"
+      },
+      "tags": [
+        "stage:23",
+        "tier:core",
+        "curriculum:v2",
+        "topic:descriptions"
+      ]
+    },
+    {
+      "id": "hy_cv2_l23_difficult",
+      "concept": "difficult",
+      "target": "դժվար",
+      "transliteration": "dzhvar",
+      "translations": {
+        "it": "difficile",
+        "en": "difficult"
+      },
+      "tags": [
+        "stage:23",
+        "tier:core",
+        "curriculum:v2",
+        "topic:descriptions"
+      ]
+    },
+    {
+      "id": "hy_cv2_l23_easy",
+      "concept": "easy",
+      "target": "հեշտ",
+      "transliteration": "hesht",
+      "translations": {
+        "it": "facile",
+        "en": "easy"
+      },
+      "tags": [
+        "stage:23",
+        "tier:core",
+        "curriculum:v2",
+        "topic:descriptions"
+      ]
+    },
+    {
+      "id": "hy_cv2_l24_message",
+      "concept": "message",
+      "target": "հաղորդագրություն",
+      "transliteration": "haghordagrutyun",
+      "translations": {
+        "it": "messaggio",
+        "en": "message"
+      },
+      "tags": [
+        "stage:24",
+        "tier:core",
+        "curriculum:v2",
+        "topic:communication"
+      ],
+      "emoji": "💬"
+    },
+    {
+      "id": "hy_cv2_l24_address",
+      "concept": "address",
+      "target": "հասցե",
+      "transliteration": "hastse",
+      "translations": {
+        "it": "indirizzo",
+        "en": "address"
+      },
+      "tags": [
+        "stage:24",
+        "tier:core",
+        "curriculum:v2",
+        "topic:communication"
+      ],
+      "emoji": "📍"
+    },
+    {
+      "id": "hy_cv2_l24_help",
+      "concept": "help",
+      "target": "օգնություն",
+      "transliteration": "ognutyun",
+      "translations": {
+        "it": "aiuto",
+        "en": "help"
+      },
+      "tags": [
+        "stage:24",
+        "tier:core",
+        "curriculum:v2",
+        "topic:communication"
+      ],
+      "emoji": "🆘"
+    },
+    {
+      "id": "hy_cv2_l24_problem",
+      "concept": "problem",
+      "target": "խնդիր",
+      "transliteration": "khndir",
+      "translations": {
+        "it": "problema",
+        "en": "problem"
+      },
+      "tags": [
+        "stage:24",
+        "tier:core",
+        "curriculum:v2",
+        "topic:communication"
+      ]
+    },
+    {
+      "id": "hy_cv2_l24_lose",
+      "concept": "lose",
+      "target": "կորցնել",
+      "transliteration": "kortsnel",
+      "translations": {
+        "it": "perdere",
+        "en": "lose"
+      },
+      "tags": [
+        "stage:24",
+        "tier:core",
+        "curriculum:v2",
+        "topic:communication"
+      ]
+    },
+    {
+      "id": "hy_cv2_l24_find",
+      "concept": "find",
+      "target": "գտնել",
+      "transliteration": "gtnel",
+      "translations": {
+        "it": "trovare",
+        "en": "find"
+      },
+      "tags": [
+        "stage:24",
+        "tier:core",
+        "curriculum:v2",
+        "topic:communication"
+      ]
+    },
+    {
+      "id": "hy_cv2_l24_explain",
+      "concept": "explain",
+      "target": "բացատրել",
+      "transliteration": "batsatrel",
+      "translations": {
+        "it": "spiegare",
+        "en": "explain"
+      },
+      "tags": [
+        "stage:24",
+        "tier:core",
+        "curriculum:v2",
+        "topic:communication"
+      ]
+    },
+    {
+      "id": "hy_cv2_l24_change",
+      "concept": "change",
+      "target": "փոխել",
+      "transliteration": "pokhel",
+      "translations": {
+        "it": "cambiare",
+        "en": "change"
+      },
+      "tags": [
+        "stage:24",
+        "tier:core",
+        "curriculum:v2",
+        "topic:communication"
+      ]
+    },
+    {
+      "id": "hy_cv2_l24_hurry",
+      "concept": "hurry",
+      "target": "շտապել",
+      "transliteration": "shtapel",
+      "translations": {
+        "it": "affrettarsi",
+        "en": "hurry"
+      },
+      "tags": [
+        "stage:24",
+        "tier:core",
+        "curriculum:v2",
+        "topic:communication"
+      ]
+    },
+    {
+      "id": "hy_cv2_l24_information",
+      "concept": "information",
+      "target": "տեղեկություն",
+      "transliteration": "teghekutyun",
+      "translations": {
+        "it": "informazione",
+        "en": "information"
+      },
+      "tags": [
+        "stage:24",
+        "tier:core",
+        "curriculum:v2",
+        "topic:communication"
+      ]
+    },
+    {
+      "id": "hy_cv2_l24_phone",
+      "concept": "phone",
+      "target": "հեռախոս",
+      "transliteration": "herakhos",
+      "translations": {
+        "it": "telefono",
+        "en": "phone"
+      },
+      "tags": [
+        "stage:24",
+        "tier:core",
+        "curriculum:v2",
+        "topic:communication"
+      ],
+      "emoji": "📱"
+    },
+    {
+      "id": "hy_cv2_l24_number",
+      "concept": "number",
+      "target": "համար",
+      "transliteration": "hamar",
+      "translations": {
+        "it": "numero",
+        "en": "number"
+      },
+      "tags": [
+        "stage:24",
+        "tier:core",
+        "curriculum:v2",
+        "topic:communication"
+      ],
+      "emoji": "#️⃣"
+    },
+    {
+      "id": "hy_cv2_l24_minute",
+      "concept": "minute",
+      "target": "րոպե",
+      "transliteration": "rope",
+      "translations": {
+        "it": "minuto",
+        "en": "minute"
+      },
+      "tags": [
+        "stage:24",
+        "tier:core",
+        "curriculum:v2",
+        "topic:communication"
+      ],
+      "emoji": "⏱️"
+    },
+    {
+      "id": "hy_cv2_l24_contact",
+      "concept": "contact",
+      "target": "կապվել",
+      "transliteration": "kapvel",
+      "translations": {
+        "it": "mettersi in contatto",
+        "en": "contact"
+      },
+      "tags": [
+        "stage:24",
+        "tier:core",
+        "curriculum:v2",
+        "topic:communication"
+      ]
+    },
+    {
+      "id": "hy_cv2_l24_delay",
+      "concept": "delay",
+      "target": "ուշացում",
+      "transliteration": "ushatsum",
+      "translations": {
+        "it": "ritardo",
+        "en": "delay"
+      },
+      "tags": [
+        "stage:24",
+        "tier:core",
+        "curriculum:v2",
+        "topic:communication"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "hy_cv2_l17_how_much_is_this",
+      "target_sentence": "Որքա՞ն արժե սա։",
+      "transliteration": "vork'an arzhe sa",
+      "translations": {
+        "it": "Quanto costa questo?",
+        "en": "How much is this?"
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Quanto costa questo?",
+        "en": "Choose the Armenian sentence that means: How much is this?"
+      },
+      "distractors": [
+        "Որտե՞ղ է խանութը։",
+        "Ի՞նչ գույն է սա։",
+        "Ո՞ւմ պայուսակն է սա։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Dov'è il negozio?",
+          "Di che colore è questo?",
+          "Di chi è questa borsa?"
+        ],
+        "en": [
+          "Where is the shop?",
+          "What colour is this?",
+          "Whose bag is this?"
+        ]
+      },
+      "tags": [
+        "stage:17",
+        "tier:core",
+        "curriculum:v2",
+        "topic:shopping",
+        "function:buying"
+      ]
+    },
+    {
+      "id": "hy_cv2_l17_two_thousand_dram",
+      "target_sentence": "Սա երկու հազար դրամ արժե։",
+      "transliteration": "sa yerku hazar dram arzhe",
+      "translations": {
+        "it": "Questo costa duemila dram.",
+        "en": "This costs two thousand drams."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Questo costa duemila dram.",
+        "en": "Choose the Armenian sentence that means: This costs two thousand drams."
+      },
+      "distractors": [
+        "Ես երկու տոմս ունեմ։",
+        "Ժամը երկուսն է։",
+        "Երկու կիլոգրամ խնձոր եմ ուզում։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Ho due biglietti.",
+          "Sono le due.",
+          "Vorrei due chilogrammi di mele."
+        ],
+        "en": [
+          "I have two tickets.",
+          "It is two o'clock.",
+          "I would like two kilograms of apples."
+        ]
+      },
+      "tags": [
+        "stage:17",
+        "tier:core",
+        "curriculum:v2",
+        "topic:shopping",
+        "function:buying"
+      ]
+    },
+    {
+      "id": "hy_cv2_l17_one_kilo_apples",
+      "target_sentence": "Ես մեկ կիլոգրամ խնձոր եմ ուզում։",
+      "transliteration": "yes mek kilogram khndzor em uzum",
+      "translations": {
+        "it": "Vorrei un chilogrammo di mele.",
+        "en": "I would like one kilogram of apples."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Vorrei un chilogrammo di mele.",
+        "en": "Choose the Armenian sentence that means: I would like one kilogram of apples."
+      },
+      "distractors": [
+        "Ես մեկ բաժակ թեյ եմ ուզում։",
+        "Ես խնձոր չեմ սիրում։",
+        "Խնձորները սեղանի վրա են։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Vorrei una tazza di tè.",
+          "Non mi piacciono le mele.",
+          "Le mele sono sul tavolo."
+        ],
+        "en": [
+          "I would like a cup of tea.",
+          "I do not like apples.",
+          "The apples are on the table."
+        ]
+      },
+      "tags": [
+        "stage:17",
+        "tier:core",
+        "curriculum:v2",
+        "topic:shopping",
+        "function:buying"
+      ]
+    },
+    {
+      "id": "hy_cv2_l17_may_i_try_this",
+      "target_sentence": "Կարո՞ղ եմ սա փորձել։",
+      "transliteration": "karogh em sa pordzel",
+      "translations": {
+        "it": "Posso provare questo?",
+        "en": "May I try this?"
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Posso provare questo?",
+        "en": "Choose the Armenian sentence that means: May I try this?"
+      },
+      "distractors": [
+        "Կարո՞ղ եմ քարտով վճարել։",
+        "Սա իմ չափսը չէ։",
+        "Սա շատ թանկ է։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Posso pagare con la carta?",
+          "Questa non è la mia taglia.",
+          "Questo è molto costoso."
+        ],
+        "en": [
+          "Can I pay by card?",
+          "This is not my size.",
+          "This is very expensive."
+        ]
+      },
+      "tags": [
+        "stage:17",
+        "tier:core",
+        "curriculum:v2",
+        "topic:shopping",
+        "function:buying"
+      ]
+    },
+    {
+      "id": "hy_cv2_l18_menu_please",
+      "target_sentence": "Ճաշացանկը, խնդրում եմ։",
+      "transliteration": "chashatsanky khndrum em",
+      "translations": {
+        "it": "Il menù, per favore.",
+        "en": "The menu, please."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Il menù, per favore.",
+        "en": "Choose the Armenian sentence that means: The menu, please."
+      },
+      "distractors": [
+        "Հաշիվը, խնդրում եմ։",
+        "Մի բաժակ ջուր, խնդրում եմ։",
+        "Սեղանը պատուհանի մոտ է։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Il conto, per favore.",
+          "Un bicchiere d'acqua, per favore.",
+          "Il tavolo è vicino alla finestra."
+        ],
+        "en": [
+          "The bill, please.",
+          "A glass of water, please.",
+          "The table is near the window."
+        ]
+      },
+      "tags": [
+        "stage:18",
+        "tier:core",
+        "curriculum:v2",
+        "topic:food-drink",
+        "function:ordering"
+      ]
+    },
+    {
+      "id": "hy_cv2_l18_soup_and_salad",
+      "target_sentence": "Ես ապուր և աղցան եմ ուզում։",
+      "transliteration": "yes apur yev aghtsan em uzum",
+      "translations": {
+        "it": "Vorrei una zuppa e un’insalata.",
+        "en": "I would like soup and a salad."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Vorrei una zuppa e un’insalata.",
+        "en": "Choose the Armenian sentence that means: I would like soup and a salad."
+      },
+      "distractors": [
+        "Ես սուրճ չեմ խմում։",
+        "Ապուրը շատ տաք է։",
+        "Աղցանը սեղանի վրա է։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Non bevo caffè.",
+          "La zuppa è molto calda.",
+          "L'insalata è sul tavolo."
+        ],
+        "en": [
+          "I do not drink coffee.",
+          "The soup is very hot.",
+          "The salad is on the table."
+        ]
+      },
+      "tags": [
+        "stage:18",
+        "tier:core",
+        "curriculum:v2",
+        "topic:food-drink",
+        "function:ordering"
+      ]
+    },
+    {
+      "id": "hy_cv2_l18_tea_without_sugar",
+      "target_sentence": "Մի բաժակ թեյ առանց շաքարի, խնդրում եմ։",
+      "transliteration": "mi bazhak tey arants shakari khndrum em",
+      "translations": {
+        "it": "Una tazza di tè senza zucchero, per favore.",
+        "en": "A cup of tea without sugar, please."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Una tazza di tè senza zucchero, per favore.",
+        "en": "Choose the Armenian sentence that means: A cup of tea without sugar, please."
+      },
+      "distractors": [
+        "Մի բաժակ սուրճ կաթով, խնդրում եմ։",
+        "Շաքարը սեղանի վրա է։",
+        "Ես թեյ չեմ սիրում։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Una tazza di caffè con latte, per favore.",
+          "Lo zucchero è sul tavolo.",
+          "Non mi piace il tè."
+        ],
+        "en": [
+          "A cup of coffee with milk, please.",
+          "The sugar is on the table.",
+          "I do not like tea."
+        ]
+      },
+      "tags": [
+        "stage:18",
+        "tier:core",
+        "curriculum:v2",
+        "topic:food-drink",
+        "function:ordering"
+      ]
+    },
+    {
+      "id": "hy_cv2_l18_bill_please",
+      "target_sentence": "Հաշիվը, խնդրում եմ։",
+      "transliteration": "hashivy khndrum em",
+      "translations": {
+        "it": "Il conto, per favore.",
+        "en": "The bill, please."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Il conto, per favore.",
+        "en": "Choose the Armenian sentence that means: The bill, please."
+      },
+      "distractors": [
+        "Ճաշացանկը, խնդրում եմ։",
+        "Սա շատ համեղ է։",
+        "Ես դեռ չեմ պատվիրել։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Il menù, per favore.",
+          "Questo è molto buono.",
+          "Non ho ancora ordinato."
+        ],
+        "en": [
+          "The menu, please.",
+          "This is very tasty.",
+          "I have not ordered yet."
+        ]
+      },
+      "tags": [
+        "stage:18",
+        "tier:core",
+        "curriculum:v2",
+        "topic:food-drink",
+        "function:ordering"
+      ]
+    },
+    {
+      "id": "hy_cv2_l19_cold_today",
+      "target_sentence": "Այսօր ցուրտ է։",
+      "transliteration": "aysor tsurt e",
+      "translations": {
+        "it": "Oggi fa freddo.",
+        "en": "It is cold today."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Oggi fa freddo.",
+        "en": "Choose the Armenian sentence that means: It is cold today."
+      },
+      "distractors": [
+        "Այսօր շատ տաք է։",
+        "Վաղը երկուշաբթի է։",
+        "Այսօր ես տանն եմ։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Oggi fa molto caldo.",
+          "Domani è lunedì.",
+          "Oggi sono a casa."
+        ],
+        "en": [
+          "It is very hot today.",
+          "Tomorrow is Monday.",
+          "I am at home today."
+        ]
+      },
+      "tags": [
+        "stage:19",
+        "tier:core",
+        "curriculum:v2",
+        "topic:weather",
+        "function:weather-report"
+      ]
+    },
+    {
+      "id": "hy_cv2_l19_it_is_raining",
+      "target_sentence": "Անձրև է գալիս։",
+      "transliteration": "andzrev e galis",
+      "translations": {
+        "it": "Piove.",
+        "en": "It is raining."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Piove.",
+        "en": "Choose the Armenian sentence that means: It is raining."
+      },
+      "distractors": [
+        "Ձյուն է գալիս։",
+        "Քամի չկա։",
+        "Արևը շատ պայծառ է։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Nevica.",
+          "Non c'è vento.",
+          "Il sole è molto luminoso."
+        ],
+        "en": [
+          "It is snowing.",
+          "There is no wind.",
+          "The sun is very bright."
+        ]
+      },
+      "tags": [
+        "stage:19",
+        "tier:core",
+        "curriculum:v2",
+        "topic:weather",
+        "function:weather-report"
+      ]
+    },
+    {
+      "id": "hy_cv2_l19_snow_in_winter",
+      "target_sentence": "Ձմռանը ձյուն է գալիս։",
+      "transliteration": "dzmrrany dzyun e galis",
+      "translations": {
+        "it": "In inverno nevica.",
+        "en": "It snows in winter."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: In inverno nevica.",
+        "en": "Choose the Armenian sentence that means: It snows in winter."
+      },
+      "distractors": [
+        "Ամռանը անձրև է գալիս։",
+        "Գարնանը ծաղիկներ կան։",
+        "Աշնանը օրերը կարճ են։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "D'estate piove.",
+          "In primavera ci sono fiori.",
+          "In autunno le giornate sono corte."
+        ],
+        "en": [
+          "It rains in summer.",
+          "There are flowers in spring.",
+          "The days are short in autumn."
+        ]
+      },
+      "tags": [
+        "stage:19",
+        "tier:core",
+        "curriculum:v2",
+        "topic:weather",
+        "function:weather-report"
+      ]
+    },
+    {
+      "id": "hy_cv2_l19_summer_is_warm",
+      "target_sentence": "Ամռանը եղանակը տաք է։",
+      "transliteration": "amrrany yeghanaky tak e",
+      "translations": {
+        "it": "D'estate il tempo è caldo.",
+        "en": "The weather is warm in summer."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: D'estate il tempo è caldo.",
+        "en": "Choose the Armenian sentence that means: The weather is warm in summer."
+      },
+      "distractors": [
+        "Ձմռանը եղանակը ցուրտ է։",
+        "Այսօր եղանակը փոխվում է։",
+        "Ամռանը դպրոց չկա։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "D'inverno il tempo è freddo.",
+          "Oggi il tempo sta cambiando.",
+          "D'estate non c'è scuola."
+        ],
+        "en": [
+          "The weather is cold in winter.",
+          "The weather is changing today.",
+          "There is no school in summer."
+        ]
+      },
+      "tags": [
+        "stage:19",
+        "tier:core",
+        "curriculum:v2",
+        "topic:weather",
+        "function:weather-report"
+      ]
+    },
+    {
+      "id": "hy_cv2_l20_bus_to_centre",
+      "target_sentence": "Այս ավտոբուսը կենտրոն է գնում։",
+      "transliteration": "ays avtobusy kentron e gnum",
+      "translations": {
+        "it": "Questo autobus va in centro.",
+        "en": "This bus goes to the centre."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Questo autobus va in centro.",
+        "en": "Choose the Armenian sentence that means: This bus goes to the centre."
+      },
+      "distractors": [
+        "Այս ավտոբուսը կայարանում է։",
+        "Կենտրոնը շատ հեռու է։",
+        "Ես ավտոբուս չեմ վարում։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Questo autobus è alla stazione.",
+          "Il centro è molto lontano.",
+          "Non guido l'autobus."
+        ],
+        "en": [
+          "This bus is at the station.",
+          "The centre is very far away.",
+          "I do not drive the bus."
+        ]
+      },
+      "tags": [
+        "stage:20",
+        "tier:core",
+        "curriculum:v2",
+        "topic:transport",
+        "function:travel"
+      ]
+    },
+    {
+      "id": "hy_cv2_l20_ticket_to_yerevan",
+      "target_sentence": "Մեկ տոմս Երևան, խնդրում եմ։",
+      "transliteration": "mek toms Yerevan khndrum em",
+      "translations": {
+        "it": "Un biglietto per Erevan, per favore.",
+        "en": "One ticket to Yerevan, please."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Un biglietto per Erevan, per favore.",
+        "en": "Choose the Armenian sentence that means: One ticket to Yerevan, please."
+      },
+      "distractors": [
+        "Երկու տոմս ունեմ։",
+        "Երևանը Հայաստանի մայրաքաղաքն է։",
+        "Գնացքը ժամը յոթին է։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Ho due biglietti.",
+          "Erevan è la capitale dell'Armenia.",
+          "Il treno è alle sette."
+        ],
+        "en": [
+          "I have two tickets.",
+          "Yerevan is the capital of Armenia.",
+          "The train is at seven."
+        ]
+      },
+      "tags": [
+        "stage:20",
+        "tier:core",
+        "curriculum:v2",
+        "topic:transport",
+        "function:travel"
+      ]
+    },
+    {
+      "id": "hy_cv2_l20_leave_at_six",
+      "target_sentence": "Մենք ժամը վեցին ենք մեկնում։",
+      "transliteration": "menk zhamy vetsin enk meknum",
+      "translations": {
+        "it": "Partiamo alle sei.",
+        "en": "We leave at six."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Partiamo alle sei.",
+        "en": "Choose the Armenian sentence that means: We leave at six."
+      },
+      "distractors": [
+        "Մենք ժամը վեցին ենք հասնում։",
+        "Ժամը վեցն է։",
+        "Մենք վեց տոմս ունենք։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Arriviamo alle sei.",
+          "Sono le sei.",
+          "Abbiamo sei biglietti."
+        ],
+        "en": [
+          "We arrive at six.",
+          "It is six o'clock.",
+          "We have six tickets."
+        ]
+      },
+      "tags": [
+        "stage:20",
+        "tier:core",
+        "curriculum:v2",
+        "topic:transport",
+        "function:travel"
+      ]
+    },
+    {
+      "id": "hy_cv2_l20_when_train_arrives",
+      "target_sentence": "Գնացքը ե՞րբ է հասնում։",
+      "transliteration": "gnatsky yerb e hasnum",
+      "translations": {
+        "it": "Quando arriva il treno?",
+        "en": "When does the train arrive?"
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Quando arriva il treno?",
+        "en": "Choose the Armenian sentence that means: When does the train arrive?"
+      },
+      "distractors": [
+        "Գնացքը որտե՞ղ է կանգնում։",
+        "Տոմսը որքա՞ն արժե։",
+        "Ո՞ր գնացքն է արագ։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Dove si ferma il treno?",
+          "Quanto costa il biglietto?",
+          "Quale treno è veloce?"
+        ],
+        "en": [
+          "Where does the train stop?",
+          "How much is the ticket?",
+          "Which train is fast?"
+        ]
+      },
+      "tags": [
+        "stage:20",
+        "tier:core",
+        "curriculum:v2",
+        "topic:transport",
+        "function:travel"
+      ]
+    },
+    {
+      "id": "hy_cv2_l21_went_to_school",
+      "target_sentence": "Երեկ ես դպրոց գնացի։",
+      "transliteration": "yerek yes dprots gnatsi",
+      "translations": {
+        "it": "Ieri sono andato / andata a scuola.",
+        "en": "I went to school yesterday."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Ieri sono andato / andata a scuola.",
+        "en": "Choose the Armenian sentence that means: I went to school yesterday."
+      },
+      "distractors": [
+        "Այսօր ես դպրոց եմ գնում։",
+        "Վաղը դպրոց չեմ գնալու։",
+        "Դպրոցը տան մոտ է։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Oggi vado a scuola.",
+          "Domani non andrò a scuola.",
+          "La scuola è vicino a casa."
+        ],
+        "en": [
+          "I am going to school today.",
+          "I am not going to school tomorrow.",
+          "The school is near the house."
+        ]
+      },
+      "tags": [
+        "stage:21",
+        "tier:core",
+        "curriculum:v2",
+        "topic:past-events",
+        "grammar:past-tense"
+      ]
+    },
+    {
+      "id": "hy_cv2_l21_visited_grandmother",
+      "target_sentence": "Շաբաթ օրը մենք տատիկին այցելեցինք։",
+      "transliteration": "shabat ory menk tatikin aytseletsink",
+      "translations": {
+        "it": "Sabato abbiamo visitato la nonna.",
+        "en": "We visited Grandma on Saturday."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Sabato abbiamo visitato la nonna.",
+        "en": "Choose the Armenian sentence that means: We visited Grandma on Saturday."
+      },
+      "distractors": [
+        "Կիրակի օրը տատիկը մեզ այցելեց։",
+        "Շաբաթ օրը մենք տանն էինք։",
+        "Տատիկը ամեն օր զանգահարում է։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Domenica la nonna ci ha fatto visita.",
+          "Sabato eravamo a casa.",
+          "La nonna telefona ogni giorno."
+        ],
+        "en": [
+          "Grandma visited us on Sunday.",
+          "We were at home on Saturday.",
+          "Grandma calls every day."
+        ]
+      },
+      "tags": [
+        "stage:21",
+        "tier:core",
+        "curriculum:v2",
+        "topic:past-events",
+        "grammar:past-tense"
+      ]
+    },
+    {
+      "id": "hy_cv2_l21_watched_film",
+      "target_sentence": "Ես երեկ ֆիլմ դիտեցի։",
+      "transliteration": "yes yerek film ditetsi",
+      "translations": {
+        "it": "Ieri ho guardato un film.",
+        "en": "I watched a film yesterday."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Ieri ho guardato un film.",
+        "en": "Choose the Armenian sentence that means: I watched a film yesterday."
+      },
+      "distractors": [
+        "Ես հիմա գիրք եմ կարդում։",
+        "Ֆիլմը ժամը ութին է սկսվում։",
+        "Ես այդ ֆիլմը չեմ սիրում։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Adesso sto leggendo un libro.",
+          "Il film comincia alle otto.",
+          "Non mi piace quel film."
+        ],
+        "en": [
+          "I am reading a book now.",
+          "The film starts at eight.",
+          "I do not like that film."
+        ]
+      },
+      "tags": [
+        "stage:21",
+        "tier:core",
+        "curriculum:v2",
+        "topic:past-events",
+        "grammar:past-tense"
+      ]
+    },
+    {
+      "id": "hy_cv2_l21_prepared_meal",
+      "target_sentence": "Նա ճաշ պատրաստեց։",
+      "transliteration": "na chash patrastets",
+      "translations": {
+        "it": "Ha preparato il pranzo.",
+        "en": "He or she prepared the meal."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Ha preparato il pranzo.",
+        "en": "Choose the Armenian sentence that means: He or she prepared the meal."
+      },
+      "distractors": [
+        "Նա հիմա ճաշ է պատրաստում։",
+        "Ճաշը շատ համեղ էր։",
+        "Նա ճաշ չի ուզում։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Sta preparando il pranzo adesso.",
+          "Il pranzo era molto buono.",
+          "Non vuole il pranzo."
+        ],
+        "en": [
+          "He or she is preparing the meal now.",
+          "The meal was very tasty.",
+          "He or she does not want the meal."
+        ]
+      },
+      "tags": [
+        "stage:21",
+        "tier:core",
+        "curriculum:v2",
+        "topic:past-events",
+        "grammar:past-tense"
+      ]
+    },
+    {
+      "id": "hy_cv2_l22_going_to_library",
+      "target_sentence": "Վաղը ես գրադարան եմ գնալու։",
+      "transliteration": "vaghy yes gradaran em gnalu",
+      "translations": {
+        "it": "Domani andrò in biblioteca.",
+        "en": "I am going to the library tomorrow."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Domani andrò in biblioteca.",
+        "en": "Choose the Armenian sentence that means: I am going to the library tomorrow."
+      },
+      "distractors": [
+        "Երեկ ես գրադարան գնացի։",
+        "Գրադարանը այսօր փակ է։",
+        "Ես գրադարանում գիրք եմ կարդում։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Ieri sono andato / andata in biblioteca.",
+          "La biblioteca è chiusa oggi.",
+          "Leggo un libro in biblioteca."
+        ],
+        "en": [
+          "I went to the library yesterday.",
+          "The library is closed today.",
+          "I am reading a book in the library."
+        ]
+      },
+      "tags": [
+        "stage:22",
+        "tier:core",
+        "curriculum:v2",
+        "topic:plans",
+        "grammar:future-tense"
+      ]
+    },
+    {
+      "id": "hy_cv2_l22_meet_at_five",
+      "target_sentence": "Մենք ժամը հինգին ենք հանդիպելու։",
+      "transliteration": "menk zhamy hingin enk handipelu",
+      "translations": {
+        "it": "Ci incontreremo alle cinque.",
+        "en": "We are meeting at five."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Ci incontreremo alle cinque.",
+        "en": "Choose the Armenian sentence that means: We are meeting at five."
+      },
+      "distractors": [
+        "Մենք ժամը հինգին ենք մեկնելու։",
+        "Հանդիպումը հինգ րոպե է տևում։",
+        "Մենք այսօր չենք հանդիպում։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Partiremo alle cinque.",
+          "L'incontro dura cinque minuti.",
+          "Oggi non ci incontriamo."
+        ],
+        "en": [
+          "We are leaving at five.",
+          "The meeting lasts five minutes.",
+          "We are not meeting today."
+        ]
+      },
+      "tags": [
+        "stage:22",
+        "tier:core",
+        "curriculum:v2",
+        "topic:plans",
+        "grammar:future-tense"
+      ]
+    },
+    {
+      "id": "hy_cv2_l22_call_this_evening",
+      "target_sentence": "Ես քեզ երեկոյան զանգահարելու եմ։",
+      "transliteration": "yes kez yerekoyan zangaharelu em",
+      "translations": {
+        "it": "Ti telefonerò questa sera.",
+        "en": "I will call you this evening."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Ti telefonerò questa sera.",
+        "en": "Choose the Armenian sentence that means: I will call you this evening."
+      },
+      "distractors": [
+        "Ես քեզ հաղորդագրություն եմ ուղարկում։",
+        "Դու ինձ երեկ զանգահարեցիր։",
+        "Հեռախոսը սեղանի վրա է։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Ti sto mandando un messaggio.",
+          "Mi hai telefonato ieri.",
+          "Il telefono è sul tavolo."
+        ],
+        "en": [
+          "I am sending you a message.",
+          "You called me yesterday.",
+          "The phone is on the table."
+        ]
+      },
+      "tags": [
+        "stage:22",
+        "tier:core",
+        "curriculum:v2",
+        "topic:plans",
+        "grammar:future-tense"
+      ]
+    },
+    {
+      "id": "hy_cv2_l22_going_to_armenia",
+      "target_sentence": "Նրանք ամռանը Հայաստան են գնալու։",
+      "transliteration": "nrank amrrany Hayastan en gnalu",
+      "translations": {
+        "it": "Andranno in Armenia in estate.",
+        "en": "They are going to Armenia in summer."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Andranno in Armenia in estate.",
+        "en": "Choose the Armenian sentence that means: They are going to Armenia in summer."
+      },
+      "distractors": [
+        "Նրանք ապրում են Հայաստանում։",
+        "Նրանք անցյալ տարի Իտալիա գնացին։",
+        "Ամռանը Հայաստանում շոգ է։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Vivono in Armenia.",
+          "L'anno scorso sono andati in Italia.",
+          "In estate fa caldo in Armenia."
+        ],
+        "en": [
+          "They live in Armenia.",
+          "They went to Italy last year.",
+          "It is hot in Armenia in summer."
+        ]
+      },
+      "tags": [
+        "stage:22",
+        "tier:core",
+        "curriculum:v2",
+        "topic:plans",
+        "grammar:future-tense"
+      ]
+    },
+    {
+      "id": "hy_cv2_l23_aram_taller",
+      "target_sentence": "Արամը Նարեկից բարձր է։",
+      "transliteration": "Aramy Narekits bardzr e",
+      "translations": {
+        "it": "Aram è più alto di Narek.",
+        "en": "Aram is taller than Narek."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Aram è più alto di Narek.",
+        "en": "Choose the Armenian sentence that means: Aram is taller than Narek."
+      },
+      "distractors": [
+        "Արամը Նարեկից փոքր է։",
+        "Նարեկը Արամի եղբայրն է։",
+        "Արամը շատ բարձր է խոսում։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Aram è più giovane / piccolo di Narek.",
+          "Narek è il fratello di Aram.",
+          "Aram parla a voce molto alta."
+        ],
+        "en": [
+          "Aram is younger or smaller than Narek.",
+          "Narek is Aram's brother.",
+          "Aram speaks very loudly."
+        ]
+      },
+      "tags": [
+        "stage:23",
+        "tier:core",
+        "curriculum:v2",
+        "topic:descriptions",
+        "grammar:comparatives"
+      ]
+    },
+    {
+      "id": "hy_cv2_l23_train_faster",
+      "target_sentence": "Գնացքն ավտոբուսից արագ է։",
+      "transliteration": "gnatskn avtobusits arag e",
+      "translations": {
+        "it": "Il treno è più veloce dell'autobus.",
+        "en": "The train is faster than the bus."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Il treno è più veloce dell'autobus.",
+        "en": "Choose the Armenian sentence that means: The train is faster than the bus."
+      },
+      "distractors": [
+        "Ավտոբուսը գնացքից էժան է։",
+        "Գնացքը կայարանում է։",
+        "Ավտոբուսը ժամը վեցին է մեկնում։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "L’autobus costa meno del treno.",
+          "Il treno è alla stazione.",
+          "L’autobus parte alle sei."
+        ],
+        "en": [
+          "The bus is cheaper than the train.",
+          "The train is at the station.",
+          "The bus leaves at six."
+        ]
+      },
+      "tags": [
+        "stage:23",
+        "tier:core",
+        "curriculum:v2",
+        "topic:descriptions",
+        "grammar:comparatives"
+      ]
+    },
+    {
+      "id": "hy_cv2_l23_bag_heavy",
+      "target_sentence": "Այս պայուսակը շատ ծանր է։",
+      "transliteration": "ays payusaky shat tsanr e",
+      "translations": {
+        "it": "Questa borsa è molto pesante.",
+        "en": "This bag is very heavy."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Questa borsa è molto pesante.",
+        "en": "Choose the Armenian sentence that means: This bag is very heavy."
+      },
+      "distractors": [
+        "Այս պայուսակը շատ թեթև է։",
+        "Այս պայուսակը իմն է։",
+        "Պայուսակը աթոռի տակ է։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Questa borsa è molto leggera.",
+          "Questa borsa è mia.",
+          "La borsa è sotto la sedia."
+        ],
+        "en": [
+          "This bag is very light.",
+          "This bag is mine.",
+          "The bag is under the chair."
+        ]
+      },
+      "tags": [
+        "stage:23",
+        "tier:core",
+        "curriculum:v2",
+        "topic:descriptions",
+        "grammar:comparatives"
+      ]
+    },
+    {
+      "id": "hy_cv2_l23_book_more_interesting",
+      "target_sentence": "Այս գիրքն ավելի հետաքրքիր է, քան այն գիրքը։",
+      "transliteration": "ays girkn aveli hetakirkir e kan ayn girky",
+      "translations": {
+        "it": "Questo libro è più interessante di quello.",
+        "en": "This book is more interesting than that book."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Questo libro è più interessante di quello.",
+        "en": "Choose the Armenian sentence that means: This book is more interesting than that book."
+      },
+      "distractors": [
+        "Այս գիրքն ավելի դժվար է, քան այն գիրքը։",
+        "Այն գիրքը սեղանի վրա է։",
+        "Ես այս գիրքը երեկ կարդացի։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Questo libro è più difficile di quello.",
+          "Quel libro è sul tavolo.",
+          "Ho letto questo libro ieri."
+        ],
+        "en": [
+          "This book is more difficult than that book.",
+          "That book is on the table.",
+          "I read this book yesterday."
+        ]
+      },
+      "tags": [
+        "stage:23",
+        "tier:core",
+        "curriculum:v2",
+        "topic:descriptions",
+        "grammar:comparatives"
+      ]
+    },
+    {
+      "id": "hy_cv2_l24_can_you_help",
+      "target_sentence": "Կարո՞ղ ես ինձ օգնել։",
+      "transliteration": "karogh es indz ognel",
+      "translations": {
+        "it": "Puoi aiutarmi?",
+        "en": "Can you help me?"
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Puoi aiutarmi?",
+        "en": "Choose the Armenian sentence that means: Can you help me?"
+      },
+      "distractors": [
+        "Կարո՞ղ ես ինձ զանգահարել։",
+        "Ինձ օգնություն պետք չէ։",
+        "Ո՞ւմ ես օգնում։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Puoi telefonarmi?",
+          "Non ho bisogno di aiuto.",
+          "Chi stai aiutando?"
+        ],
+        "en": [
+          "Can you call me?",
+          "I do not need help.",
+          "Who are you helping?"
+        ]
+      },
+      "tags": [
+        "stage:24",
+        "tier:core",
+        "curriculum:v2",
+        "topic:communication",
+        "function:problem-solving"
+      ]
+    },
+    {
+      "id": "hy_cv2_l24_cannot_find_key",
+      "target_sentence": "Ես չեմ կարող գտնել իմ բանալին։",
+      "transliteration": "yes chem karogh gtnel im banalin",
+      "translations": {
+        "it": "Non trovo la mia chiave.",
+        "en": "I cannot find my key."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Non trovo la mia chiave.",
+        "en": "Choose the Armenian sentence that means: I cannot find my key."
+      },
+      "distractors": [
+        "Ես կորցրել եմ իմ հեռախոսը։",
+        "Բանալին սեղանի վրա է։",
+        "Ես նոր բանալի եմ գնում։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Ho perso il mio telefono.",
+          "La chiave è sul tavolo.",
+          "Sto comprando una nuova chiave."
+        ],
+        "en": [
+          "I have lost my phone.",
+          "The key is on the table.",
+          "I am buying a new key."
+        ]
+      },
+      "tags": [
+        "stage:24",
+        "tier:core",
+        "curriculum:v2",
+        "topic:communication",
+        "function:problem-solving"
+      ]
+    },
+    {
+      "id": "hy_cv2_l24_send_address",
+      "target_sentence": "Ուղարկիր ինձ հասցեն, խնդրում եմ։",
+      "transliteration": "ugharkir indz hastsen khndrum em",
+      "translations": {
+        "it": "Mandami l'indirizzo, per favore.",
+        "en": "Send me the address, please."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Mandami l'indirizzo, per favore.",
+        "en": "Choose the Armenian sentence that means: Send me the address, please."
+      },
+      "distractors": [
+        "Գրիր ինձ քո համարը։",
+        "Հասցեն ճիշտ չէ։",
+        "Ես քեզ արդեն զանգահարել եմ։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Scrivimi il tuo numero.",
+          "L'indirizzo non è corretto.",
+          "Ti ho già telefonato."
+        ],
+        "en": [
+          "Write me your number.",
+          "The address is not correct.",
+          "I have already called you."
+        ]
+      },
+      "tags": [
+        "stage:24",
+        "tier:core",
+        "curriculum:v2",
+        "topic:communication",
+        "function:problem-solving"
+      ]
+    },
+    {
+      "id": "hy_cv2_l24_ten_minutes_late",
+      "target_sentence": "Ես տասը րոպե ուշանում եմ։",
+      "transliteration": "yes tas rope ushanum em",
+      "translations": {
+        "it": "Sono in ritardo di dieci minuti.",
+        "en": "I am ten minutes late."
+      },
+      "prompt": {
+        "it": "Scegli la frase armena che significa: Sono in ritardo di dieci minuti.",
+        "en": "Choose the Armenian sentence that means: I am ten minutes late."
+      },
+      "distractors": [
+        "Ես տասը րոպե սպասում եմ։",
+        "Հանդիպումը տասը րոպեից է։",
+        "Ժամը տասն է։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Aspetto da dieci minuti.",
+          "L'appuntamento è tra dieci minuti.",
+          "Sono le dieci."
+        ],
+        "en": [
+          "I have been waiting for ten minutes.",
+          "The appointment is in ten minutes.",
+          "It is ten o'clock."
+        ]
+      },
+      "tags": [
+        "stage:24",
+        "tier:core",
+        "curriculum:v2",
+        "topic:communication",
+        "function:problem-solving"
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": "chapter_stage_17",
+      "minimum_level": 17,
+      "title": {
+        "it": "Capitolo 17 · Il mercato delle bilance",
+        "en": "Chapter 17 · The market of scales"
+      },
+      "summary": {
+        "it": "Chiedi prezzi e quantità, poi scegli senza confondere numero, peso e costo.",
+        "en": "Ask about prices and quantities, then choose without confusing number, weight, and cost."
+      },
+      "fiction": {
+        "it": "La strada dalla piazza delle domande conduce a un mercato dove le bilance parlano e i cartellini cambiano cifra. Il passaggio si apre soltanto quando l’eroe formula una richiesta completa e controlla ciò che sta comprando.",
+        "en": "The road from the square of questions leads to a market where scales speak and price tags change their numbers. The passage opens only when the hero makes a complete request and checks what is being bought."
+      },
+      "story_beats": [
+        {
+          "it": "Una moneta imita ogni prezzo pronunciato male. Per smascherarla, l’eroe deve distinguere quanto costa un oggetto da quanta merce desidera.",
+          "en": "A coin copies every price that is said incorrectly. To expose it, the hero must distinguish how much an item costs from how much of it is wanted."
+        }
+      ],
+      "lesson": {
+        "title": {
+          "it": "Prezzi, quantità e richieste",
+          "en": "Prices, quantities, and requests"
+        },
+        "objectives": [
+          {
+            "it": "Chiedere quanto costa qualcosa.",
+            "en": "Ask how much something costs."
+          },
+          {
+            "it": "Indicare una quantità o un peso.",
+            "en": "State a quantity or weight."
+          },
+          {
+            "it": "Chiedere di provare o comprare un oggetto.",
+            "en": "Ask to try or buy an item."
+          }
+        ],
+        "explanation": {
+          "it": "In una richiesta di acquisto conviene imparare blocchi completi: Որքա՞ն արժե սա, մեկ կիլոգրամ… եմ ուզում e Կարո՞ղ եմ…։ Il numero precede la quantità, mentre դրամ esprime il prezzo.",
+          "en": "For shopping, learn complete chunks: Որքա՞ն արժե սա, մեկ կիլոգրամ… եմ ուզում, and Կարո՞ղ եմ…։ The number comes before the quantity, while դրամ expresses the price."
+        },
+        "examples": [
+          {
+            "target": "Որքա՞ն արժե սա։",
+            "transliteration": "vork'an arzhe sa",
+            "translation": {
+              "it": "Quanto costa questo?",
+              "en": "How much is this?"
+            }
+          },
+          {
+            "target": "Սա երկու հազար դրամ արժե։",
+            "transliteration": "sa yerku hazar dram arzhe",
+            "translation": {
+              "it": "Questo costa duemila dram.",
+              "en": "This costs two thousand drams."
+            }
+          },
+          {
+            "target": "Ես մեկ կիլոգրամ խնձոր եմ ուզում։",
+            "transliteration": "yes mek kilogram khndzor em uzum",
+            "translation": {
+              "it": "Vorrei un chilogrammo di mele.",
+              "en": "I would like one kilogram of apples."
+            }
+          }
+        ],
+        "dialogue": [
+          {
+            "speaker": {
+              "it": "Venditore",
+              "en": "Shop assistant"
+            },
+            "target": "Ի՞նչ եք ուզում։",
+            "transliteration": "inch ek uzum",
+            "translation": {
+              "it": "Che cosa desidera?",
+              "en": "What would you like?"
+            }
+          },
+          {
+            "speaker": {
+              "it": "Eroe",
+              "en": "Hero"
+            },
+            "target": "Ես մեկ կիլոգրամ խնձոր եմ ուզում։ Որքա՞ն արժե։",
+            "transliteration": "yes mek kilogram khndzor em uzum. vork'an arzhe",
+            "translation": {
+              "it": "Vorrei un chilogrammo di mele. Quanto costa?",
+              "en": "I would like one kilogram of apples. How much is it?"
+            }
+          }
+        ],
+        "study_notes": [
+          {
+            "it": "Ripeti insieme quantità e nome: մեկ կիլոգրամ խնձոր.",
+            "en": "Practise the quantity and noun together: մեկ կիլոգրամ խնձոր."
+          },
+          {
+            "it": "Confronta գին, դրամ e կիլոգրամ: prezzo, valuta e peso hanno ruoli diversi.",
+            "en": "Keep գին, դրամ, and կիլոգրամ separate: price, currency, and weight have different roles."
+          }
+        ],
+        "common_mistakes": [
+          {
+            "it": "Non usare «quanto» e «quanti» come se fossero la stessa domanda.",
+            "en": "Do not treat “how much” and “how many” as the same question."
+          }
+        ]
+      },
+      "mission": {
+        "it": "Compra tre oggetti con quantità diverse e scopri quale moneta sta falsificando i cartellini.",
+        "en": "Buy three items in different quantities and discover which coin is falsifying the price tags."
+      },
+      "cliffhanger": {
+        "it": "Dietro il mercato si accende una cucina in cui ogni ordine viene ripetuto da un’eco capricciosa.",
+        "en": "Behind the market, a kitchen lights up where every order is repeated by a mischievous echo."
+      }
+    },
+    {
+      "id": "chapter_stage_18",
+      "minimum_level": 18,
+      "title": {
+        "it": "Capitolo 18 · La cucina degli echi",
+        "en": "Chapter 18 · The kitchen of echoes"
+      },
+      "summary": {
+        "it": "Ordina cibo e bevande con richieste brevi ma complete, comprese preferenze come “senza zucchero”.",
+        "en": "Order food and drinks with short but complete requests, including preferences such as “without sugar”."
+      },
+      "fiction": {
+        "it": "Nella cucina degli echi, ogni parola superflua si moltiplica e ogni parola mancante svuota il piatto. L’eroe deve ordinare con precisione, poi riconoscere il momento giusto per chiedere il conto.",
+        "en": "In the kitchen of echoes, every unnecessary word multiplies and every missing word empties the plate. The hero must order precisely, then recognise the right moment to ask for the bill."
+      },
+      "story_beats": [
+        {
+          "it": "Il Mago del Menù cambia le portate quando confonde «con» e «senza». Una richiesta chiara mantiene il piatto corretto sul tavolo.",
+          "en": "The Menu Wizard changes the dishes whenever “with” and “without” are confused. A clear request keeps the correct plate on the table."
+        }
+      ],
+      "lesson": {
+        "title": {
+          "it": "Ordinare e specificare preferenze",
+          "en": "Ordering and stating preferences"
+        },
+        "objectives": [
+          {
+            "it": "Chiedere il menù e il conto.",
+            "en": "Ask for the menu and the bill."
+          },
+          {
+            "it": "Ordinare una pietanza o una bevanda.",
+            "en": "Order a dish or drink."
+          },
+          {
+            "it": "Dire che cosa vuoi senza un ingrediente.",
+            "en": "Say that you want something without an ingredient."
+          }
+        ],
+        "explanation": {
+          "it": "Le richieste al bar possono essere molto brevi: Ճաշացանկը, խնդրում եմ e Հաշիվը, խնդրում եմ. Per specificare un’assenza, usa առանց seguito dal nome nella forma richiesta dalla frase, come առանց շաքարի.",
+          "en": "Café requests can be very short: Ճաշացանկը, խնդրում եմ and Հաշիվը, խնդրում եմ. To exclude something, use առանց followed by the noun form required by the phrase, as in առանց շաքարի."
+        },
+        "examples": [
+          {
+            "target": "Ճաշացանկը, խնդրում եմ։",
+            "transliteration": "chashatsanky khndrum em",
+            "translation": {
+              "it": "Il menù, per favore.",
+              "en": "The menu, please."
+            }
+          },
+          {
+            "target": "Մի բաժակ թեյ առանց շաքարի, խնդրում եմ։",
+            "transliteration": "mi bazhak tey arants shakari khndrum em",
+            "translation": {
+              "it": "Una tazza di tè senza zucchero, per favore.",
+              "en": "A cup of tea without sugar, please."
+            }
+          },
+          {
+            "target": "Հաշիվը, խնդրում եմ։",
+            "transliteration": "hashivy khndrum em",
+            "translation": {
+              "it": "Il conto, per favore.",
+              "en": "The bill, please."
+            }
+          }
+        ],
+        "dialogue": [
+          {
+            "speaker": {
+              "it": "Cameriere",
+              "en": "Server"
+            },
+            "target": "Ի՞նչ եք պատվիրում։",
+            "transliteration": "inch ek patvirum",
+            "translation": {
+              "it": "Che cosa ordina?",
+              "en": "What would you like to order?"
+            }
+          },
+          {
+            "speaker": {
+              "it": "Eroe",
+              "en": "Hero"
+            },
+            "target": "Ես ապուր և աղցան եմ ուզում։ Մի բաժակ ջուր էլ, խնդրում եմ։",
+            "transliteration": "yes apur yev aghtsan em uzum. mi bazhak jur el khndrum em",
+            "translation": {
+              "it": "Vorrei una zuppa e un’insalata. Anche un bicchiere d’acqua, per favore.",
+              "en": "I would like soup and a salad. A glass of water as well, please."
+            }
+          }
+        ],
+        "study_notes": [
+          {
+            "it": "Impara insieme il contenitore e la bevanda: մի բաժակ թեյ.",
+            "en": "Learn the container and drink together: մի բաժակ թեյ."
+          },
+          {
+            "it": "Usa խնդրում եմ per rendere cortese una richiesta breve.",
+            "en": "Use խնդրում եմ to make a short request polite."
+          }
+        ],
+        "common_mistakes": [
+          {
+            "it": "Non confondere հաշիվ “conto” con հարց “domanda”.",
+            "en": "Do not confuse հաշիվ “bill/account” with հարց “question”."
+          }
+        ]
+      },
+      "mission": {
+        "it": "Prepara un ordine completo per due viaggiatori e chiedi il conto senza far cambiare le portate.",
+        "en": "Prepare a complete order for two travellers and ask for the bill without making the dishes change."
+      },
+      "cliffhanger": {
+        "it": "Il vapore della cucina sale verso una torre che mostra quattro stagioni nello stesso momento.",
+        "en": "Steam from the kitchen rises towards a tower showing four seasons at the same time."
+      }
+    },
+    {
+      "id": "chapter_stage_19",
+      "minimum_level": 19,
+      "title": {
+        "it": "Capitolo 19 · La torre delle stagioni",
+        "en": "Chapter 19 · The tower of seasons"
+      },
+      "summary": {
+        "it": "Descrivi condizioni semplici e collega sole, pioggia, neve e temperatura alla stagione corretta.",
+        "en": "Describe simple conditions and connect sun, rain, snow, and temperature with the correct season."
+      },
+      "fiction": {
+        "it": "La torre delle stagioni gira troppo velocemente: su un lato nevica, su un altro splende il sole e in cima soffia un vento che sposta le parole. L’eroe deve osservare il cielo e scegliere una frase che descriva davvero ciò che vede.",
+        "en": "The tower of seasons turns too quickly: it snows on one side, the sun shines on another, and a wind at the top moves the words around. The hero must observe the sky and choose a sentence that truly describes it."
+      },
+      "story_beats": [
+        {
+          "it": "Il Pipistrello della Tempesta nasconde la stagione dietro una condizione momentanea. L’eroe impara a distinguere “oggi fa freddo” da “in inverno nevica”.",
+          "en": "The Storm Bat hides the season behind a temporary condition. The hero learns to distinguish “it is cold today” from “it snows in winter”."
+        }
+      ],
+      "lesson": {
+        "title": {
+          "it": "Meteo di oggi e stagioni",
+          "en": "Today’s weather and the seasons"
+        },
+        "objectives": [
+          {
+            "it": "Descrivere caldo e freddo.",
+            "en": "Describe warm and cold weather."
+          },
+          {
+            "it": "Riconoscere pioggia, neve, vento e sole.",
+            "en": "Recognise rain, snow, wind, and sun."
+          },
+          {
+            "it": "Dire che cosa succede normalmente in una stagione.",
+            "en": "Say what normally happens in a season."
+          }
+        ],
+        "explanation": {
+          "it": "Molte frasi sul tempo non hanno un soggetto personale: Անձրև է գալիս e Ձյուն է գալիս. Per parlare di una stagione, il nome può assumere una forma come ձմռանը o ամռանը, equivalente a “in inverno” e “in estate”.",
+          "en": "Many weather sentences have no personal subject: Անձրև է գալիս and Ձյուն է գալիս. To talk about a season, the noun can take a form such as ձմռանը or ամռանը, meaning “in winter” and “in summer”."
+        },
+        "examples": [
+          {
+            "target": "Այսօր ցուրտ է։",
+            "transliteration": "aysor tsurt e",
+            "translation": {
+              "it": "Oggi fa freddo.",
+              "en": "It is cold today."
+            }
+          },
+          {
+            "target": "Անձրև է գալիս։",
+            "transliteration": "andzrev e galis",
+            "translation": {
+              "it": "Piove.",
+              "en": "It is raining."
+            }
+          },
+          {
+            "target": "Ձմռանը ձյուն է գալիս։",
+            "transliteration": "dzmrrany dzyun e galis",
+            "translation": {
+              "it": "In inverno nevica.",
+              "en": "It snows in winter."
+            }
+          }
+        ],
+        "dialogue": [
+          {
+            "speaker": {
+              "it": "Guardiano",
+              "en": "Keeper"
+            },
+            "target": "Այսօր եղանակն ինչպե՞ս է։",
+            "transliteration": "aysor yeghanakn inchpes e",
+            "translation": {
+              "it": "Com’è il tempo oggi?",
+              "en": "What is the weather like today?"
+            }
+          },
+          {
+            "speaker": {
+              "it": "Eroe",
+              "en": "Hero"
+            },
+            "target": "Այսօր ցուրտ է և քամի կա։",
+            "transliteration": "aysor tsurt e yev kami ka",
+            "translation": {
+              "it": "Oggi fa freddo e c’è vento.",
+              "en": "It is cold and windy today."
+            }
+          }
+        ],
+        "study_notes": [
+          {
+            "it": "Ascolta la differenza tra արև e անձրև: una sillaba cambia il significato.",
+            "en": "Listen to the difference between արև and անձրև: one syllable changes the meaning."
+          },
+          {
+            "it": "Collega ogni stagione a più di una frase, non a una sola parola.",
+            "en": "Connect each season with more than one sentence, not just one word."
+          }
+        ],
+        "common_mistakes": [
+          {
+            "it": "Non tradurre sempre “fa” con un verbo separato: Այսօր ցուրտ է è una frase completa.",
+            "en": "Do not always translate “it is” with a separate weather verb: Այսօր ցուրտ է is complete."
+          }
+        ]
+      },
+      "mission": {
+        "it": "Rallenta la torre descrivendo il tempo di ogni lato e scegliendo la stagione corrispondente.",
+        "en": "Slow the tower by describing the weather on each side and choosing the matching season."
+      },
+      "cliffhanger": {
+        "it": "Quando la torre si ferma, appare una stazione i cui binari cambiano destinazione ogni minuto.",
+        "en": "When the tower stops, a station appears whose tracks change destination every minute."
+      }
+    },
+    {
+      "id": "chapter_stage_20",
+      "minimum_level": 20,
+      "title": {
+        "it": "Capitolo 20 · La stazione dei binari mobili",
+        "en": "Chapter 20 · The station of moving tracks"
+      },
+      "summary": {
+        "it": "Usa biglietti, orari, partenze e arrivi per completare un breve viaggio.",
+        "en": "Use tickets, times, departures, and arrivals to complete a short journey."
+      },
+      "fiction": {
+        "it": "Alla stazione dei binari mobili, i cartelli indicano una città diversa ogni volta che una domanda resta incompleta. L’eroe deve acquistare il biglietto corretto, ascoltare l’orario e capire se un mezzo parte o arriva.",
+        "en": "At the station of moving tracks, the signs show a different city whenever a question is incomplete. The hero must buy the correct ticket, listen to the time, and understand whether transport is leaving or arriving."
+      },
+      "story_beats": [
+        {
+          "it": "Il Troll dei Biglietti colleziona risposte senza destinazione. Una frase con città, orario o mezzo preciso rimette il binario al suo posto.",
+          "en": "The Ticket Troll collects answers with no destination. A sentence with a precise city, time, or means of transport puts the track back in place."
+        }
+      ],
+      "lesson": {
+        "title": {
+          "it": "Biglietti, partenze e arrivi",
+          "en": "Tickets, departures, and arrivals"
+        },
+        "objectives": [
+          {
+            "it": "Chiedere un biglietto per una destinazione.",
+            "en": "Ask for a ticket to a destination."
+          },
+          {
+            "it": "Dire a che ora si parte.",
+            "en": "Say what time you leave."
+          },
+          {
+            "it": "Chiedere quando arriva un treno o autobus.",
+            "en": "Ask when a train or bus arrives."
+          }
+        ],
+        "explanation": {
+          "it": "Con i trasporti, impara le coppie մեկնել “partire” e հասնել “arrivare”. Nelle richieste brevi, Մեկ տոմս Երևան, խնդրում եմ è sufficiente; nelle domande, ե՞րբ cerca un momento preciso.",
+          "en": "For transport, learn the pair մեկնել “depart” and հասնել “arrive”. In a short request, Մեկ տոմս Երևան, խնդրում եմ is enough; in questions, ե՞րբ asks for a precise time."
+        },
+        "examples": [
+          {
+            "target": "Մեկ տոմս Երևան, խնդրում եմ։",
+            "transliteration": "mek toms Yerevan khndrum em",
+            "translation": {
+              "it": "Un biglietto per Erevan, per favore.",
+              "en": "One ticket to Yerevan, please."
+            }
+          },
+          {
+            "target": "Մենք ժամը վեցին ենք մեկնում։",
+            "transliteration": "menk zhamy vetsin enk meknum",
+            "translation": {
+              "it": "Partiamo alle sei.",
+              "en": "We leave at six."
+            }
+          },
+          {
+            "target": "Գնացքը ե՞րբ է հասնում։",
+            "transliteration": "gnatsky yerb e hasnum",
+            "translation": {
+              "it": "Quando arriva il treno?",
+              "en": "When does the train arrive?"
+            }
+          }
+        ],
+        "dialogue": [
+          {
+            "speaker": {
+              "it": "Bigliettaio",
+              "en": "Ticket clerk"
+            },
+            "target": "Ո՞ւր եք գնում։",
+            "transliteration": "ur ek gnum",
+            "translation": {
+              "it": "Dove va?",
+              "en": "Where are you going?"
+            }
+          },
+          {
+            "speaker": {
+              "it": "Eroe",
+              "en": "Hero"
+            },
+            "target": "Երևան։ Մեկ տոմս, խնդրում եմ։ Գնացքը ե՞րբ է մեկնում։",
+            "transliteration": "Yerevan. mek toms khndrum em. gnatsky yerb e meknum",
+            "translation": {
+              "it": "A Erevan. Un biglietto, per favore. Quando parte il treno?",
+              "en": "To Yerevan. One ticket, please. When does the train leave?"
+            }
+          }
+        ],
+        "study_notes": [
+          {
+            "it": "Ripeti insieme il mezzo e il verbo: գնացքը մեկնում է, գնացքը հասնում է.",
+            "en": "Practise the transport and verb together: գնացքը մեկնում է, գնացքը հասնում է."
+          },
+          {
+            "it": "Controlla se la domanda cerca dove, quando o quanto.",
+            "en": "Check whether the question asks where, when, or how much."
+          }
+        ],
+        "common_mistakes": [
+          {
+            "it": "Non confondere մեկնել con գնալ: entrambi possono indicare movimento, ma մեկնել evidenzia la partenza.",
+            "en": "Do not confuse մեկնել with գնալ: both can express movement, but մեկնել emphasises departure."
+          }
+        ]
+      },
+      "mission": {
+        "it": "Porta tre viaggiatori alla destinazione corretta usando biglietti e orari diversi.",
+        "en": "Take three travellers to the correct destination using different tickets and times."
+      },
+      "cliffhanger": {
+        "it": "Il treno entra in una galleria dove le pareti mostrano soltanto scene già accadute.",
+        "en": "The train enters a gallery whose walls show only events that have already happened."
+      }
+    },
+    {
+      "id": "chapter_stage_21",
+      "minimum_level": 21,
+      "title": {
+        "it": "Capitolo 21 · La galleria di ieri",
+        "en": "Chapter 21 · The gallery of yesterday"
+      },
+      "summary": {
+        "it": "Racconta azioni concluse usando forme frequenti del passato in frasi brevi.",
+        "en": "Talk about completed actions using frequent past forms in short sentences."
+      },
+      "fiction": {
+        "it": "Nella galleria di ieri, ogni quadro mostra un’azione terminata ma perde il verbo appena qualcuno la racconta al presente. L’eroe deve riconoscere che cosa è già successo e completare il ricordo con la forma giusta.",
+        "en": "In the gallery of yesterday, every picture shows a completed action but loses its verb whenever someone tells it in the present. The hero must recognise what has already happened and complete the memory with the right form."
+      },
+      "story_beats": [
+        {
+          "it": "Il Blob dei Ricordi mescola ieri, oggi e domani. Per separare le immagini, l’eroe cerca segnali temporali e ascolta la fine del verbo.",
+          "en": "The Memory Blob mixes yesterday, today, and tomorrow. To separate the images, the hero looks for time signals and listens to the end of the verb."
+        }
+      ],
+      "lesson": {
+        "title": {
+          "it": "Azioni concluse nel passato",
+          "en": "Completed actions in the past"
+        },
+        "objectives": [
+          {
+            "it": "Dire dove sei andato ieri.",
+            "en": "Say where you went yesterday."
+          },
+          {
+            "it": "Raccontare una visita o un’attività del fine settimana.",
+            "en": "Talk about a visit or weekend activity."
+          },
+          {
+            "it": "Distinguere una forma passata da presente e futuro.",
+            "en": "Distinguish a past form from present and future forms."
+          }
+        ],
+        "explanation": {
+          "it": "Questo livello presenta alcune forme molto frequenti del passato semplice: գնացի, դիտեցի, պատրաստեց e այցելեցինք. Imparale dentro frasi complete e collegale a segnali come երեկ e շաբաթ օրը.",
+          "en": "This level introduces several frequent simple-past forms: գնացի, դիտեցի, պատրաստեց, and այցելեցինք. Learn them in complete sentences and connect them with signals such as երեկ and շաբաթ օրը."
+        },
+        "examples": [
+          {
+            "target": "Երեկ ես դպրոց գնացի։",
+            "transliteration": "yerek yes dprots gnatsi",
+            "translation": {
+              "it": "Ieri sono andato / andata a scuola.",
+              "en": "I went to school yesterday."
+            }
+          },
+          {
+            "target": "Ես երեկ ֆիլմ դիտեցի։",
+            "transliteration": "yes yerek film ditetsi",
+            "translation": {
+              "it": "Ieri ho guardato un film.",
+              "en": "I watched a film yesterday."
+            }
+          },
+          {
+            "target": "Նա ճաշ պատրաստեց։",
+            "transliteration": "na chash patrastets",
+            "translation": {
+              "it": "Ha preparato il pranzo.",
+              "en": "He or she prepared the meal."
+            }
+          }
+        ],
+        "dialogue": [
+          {
+            "speaker": {
+              "it": "Custode",
+              "en": "Keeper"
+            },
+            "target": "Ի՞նչ արեցիր երեկ։",
+            "transliteration": "inch aretsir yerek",
+            "translation": {
+              "it": "Che cosa hai fatto ieri?",
+              "en": "What did you do yesterday?"
+            }
+          },
+          {
+            "speaker": {
+              "it": "Eroe",
+              "en": "Hero"
+            },
+            "target": "Ես տատիկին այցելեցի և ֆիլմ դիտեցի։",
+            "transliteration": "yes tatikin aytseletsi yev film ditetsi",
+            "translation": {
+              "it": "Ho visitato la nonna e ho guardato un film.",
+              "en": "I visited Grandma and watched a film."
+            }
+          }
+        ],
+        "study_notes": [
+          {
+            "it": "Cerca prima l’indicatore di tempo, poi la forma del verbo.",
+            "en": "Look for the time marker first, then the verb form."
+          },
+          {
+            "it": "Pratica una stessa azione in tre tempi: գնում եմ, գնացի, գնալու եմ.",
+            "en": "Practise one action in three times: գնում եմ, գնացի, գնալու եմ."
+          }
+        ],
+        "common_mistakes": [
+          {
+            "it": "Non considerare una frase al presente una traduzione valida soltanto perché descrive la stessa azione.",
+            "en": "Do not accept a present-tense sentence merely because it describes the same action."
+          }
+        ]
+      },
+      "mission": {
+        "it": "Ricostruisci quattro ricordi ordinandoli per giorno e scegliendo il verbo passato corretto.",
+        "en": "Reconstruct four memories by ordering them by day and choosing the correct past verb."
+      },
+      "cliffhanger": {
+        "it": "L’ultima immagine diventa una porta che mostra appuntamenti e viaggi ancora da realizzare.",
+        "en": "The final picture becomes a door showing appointments and journeys that have not happened yet."
+      }
+    },
+    {
+      "id": "chapter_stage_22",
+      "minimum_level": 22,
+      "title": {
+        "it": "Capitolo 22 · Il ponte di domani",
+        "en": "Chapter 22 · The bridge of tomorrow"
+      },
+      "summary": {
+        "it": "Parla di programmi futuri usando orari, persone e destinazioni concrete.",
+        "en": "Talk about future plans using concrete times, people, and destinations."
+      },
+      "fiction": {
+        "it": "Il ponte di domani costruisce una tavola soltanto quando un progetto è espresso con chiarezza. Idee vaghe cadono nella nebbia; programmi con tempo, luogo e azione diventano un percorso stabile.",
+        "en": "The bridge of tomorrow builds a plank only when a plan is expressed clearly. Vague ideas fall into the mist; plans with a time, place, and action become a stable path."
+      },
+      "story_beats": [
+        {
+          "it": "Il Drago di Domani soffia via l’ausiliare delle frasi future. L’eroe deve mantenere insieme la forma in -լու e il verbo essere corretto.",
+          "en": "The Tomorrow Dragon blows the auxiliary out of future sentences. The hero must keep the -լու form together with the correct form of “to be”."
+        }
+      ],
+      "lesson": {
+        "title": {
+          "it": "Programmi, appuntamenti e intenzioni",
+          "en": "Plans, appointments, and intentions"
+        },
+        "objectives": [
+          {
+            "it": "Dire dove andrai domani.",
+            "en": "Say where you are going tomorrow."
+          },
+          {
+            "it": "Fissare un incontro a un’ora precisa.",
+            "en": "Arrange a meeting at a precise time."
+          },
+          {
+            "it": "Dire che chiamerai o viaggerai più tardi.",
+            "en": "Say that you will call or travel later."
+          }
+        ],
+        "explanation": {
+          "it": "Una forma comune per esprimere un programma usa il verbo in -լու più եմ, ես, է, ենք, եք o են: գնալու եմ, հանդիպելու ենք. Nella frase negativa, la negazione si lega all’ausiliare: չեմ գնալու.",
+          "en": "A common way to express a plan uses the verb in -լու plus եմ, ես, է, ենք, եք, or են: գնալու եմ, հանդիպելու ենք. In a negative sentence, negation attaches to the auxiliary: չեմ գնալու."
+        },
+        "examples": [
+          {
+            "target": "Վաղը ես գրադարան եմ գնալու։",
+            "transliteration": "vaghy yes gradaran em gnalu",
+            "translation": {
+              "it": "Domani andrò in biblioteca.",
+              "en": "I am going to the library tomorrow."
+            }
+          },
+          {
+            "target": "Մենք ժամը հինգին ենք հանդիպելու։",
+            "transliteration": "menk zhamy hingin enk handipelu",
+            "translation": {
+              "it": "Ci incontreremo alle cinque.",
+              "en": "We are meeting at five."
+            }
+          },
+          {
+            "target": "Ես քեզ երեկոյան զանգահարելու եմ։",
+            "transliteration": "yes kez yerekoyan zangaharelu em",
+            "translation": {
+              "it": "Ti telefonerò questa sera.",
+              "en": "I will call you this evening."
+            }
+          }
+        ],
+        "dialogue": [
+          {
+            "speaker": {
+              "it": "Viaggiatrice",
+              "en": "Traveller"
+            },
+            "target": "Վաղը ի՞նչ ես անելու։",
+            "transliteration": "vaghy inch es anelu",
+            "translation": {
+              "it": "Che cosa farai domani?",
+              "en": "What are you going to do tomorrow?"
+            }
+          },
+          {
+            "speaker": {
+              "it": "Eroe",
+              "en": "Hero"
+            },
+            "target": "Առավոտյան գրադարան եմ գնալու, իսկ երեկոյան քեզ զանգահարելու եմ։",
+            "transliteration": "aravotyan gradaran em gnalu isk yerekoyan kez zangaharelu em",
+            "translation": {
+              "it": "La mattina andrò in biblioteca e la sera ti telefonerò.",
+              "en": "I am going to the library in the morning, and I will call you in the evening."
+            }
+          }
+        ],
+        "study_notes": [
+          {
+            "it": "Associa sempre il progetto a un indicatore come վաղը, երեկոյան o ամռանը.",
+            "en": "Connect the plan with a marker such as վաղը, երեկոյան, or ամռանը."
+          },
+          {
+            "it": "Controlla che l’ausiliare concordi con la persona.",
+            "en": "Check that the auxiliary agrees with the person."
+          }
+        ],
+        "common_mistakes": [
+          {
+            "it": "Non lasciare sola la forma in -լու: գնալու senza ausiliare non completa questa costruzione.",
+            "en": "Do not leave the -լու form on its own: գնալու without an auxiliary does not complete this construction."
+          }
+        ]
+      },
+      "mission": {
+        "it": "Completa il ponte descrivendo quattro programmi futuri con persone e orari diversi.",
+        "en": "Complete the bridge by describing four future plans with different people and times."
+      },
+      "cliffhanger": {
+        "it": "Dall’altra parte, una sala di specchi ingrandisce ogni differenza tra persone e oggetti.",
+        "en": "On the other side, a hall of mirrors magnifies every difference between people and objects."
+      }
+    },
+    {
+      "id": "chapter_stage_23",
+      "minimum_level": 23,
+      "title": {
+        "it": "Capitolo 23 · La sala dei confronti",
+        "en": "Chapter 23 · The hall of comparisons"
+      },
+      "summary": {
+        "it": "Confronta due elementi senza perdere il termine di paragone o la qualità osservata.",
+        "en": "Compare two things without losing either the comparison point or the quality being observed."
+      },
+      "fiction": {
+        "it": "Nella sala dei confronti, gli specchi rendono una borsa enorme, un treno lentissimo e un libro apparentemente facile. L’eroe deve ignorare l’illusione e formulare un confronto che nomini entrambi gli elementi.",
+        "en": "In the hall of comparisons, the mirrors make a bag enormous, a train extremely slow, and a book seem easy. The hero must ignore the illusion and form a comparison that names both things."
+      },
+      "story_beats": [
+        {
+          "it": "L’Orco della Bilancia ruba il suffisso -ից e la parola քան. Senza un termine di paragone, ogni descrizione resta incompleta.",
+          "en": "The Scale Ogre steals the suffix -ից and the word քան. Without a comparison point, every description remains incomplete."
+        }
+      ],
+      "lesson": {
+        "title": {
+          "it": "Confrontare persone e oggetti",
+          "en": "Comparing people and objects"
+        },
+        "objectives": [
+          {
+            "it": "Dire che una persona è più alta di un’altra.",
+            "en": "Say that one person is taller than another."
+          },
+          {
+            "it": "Confrontare velocità, peso o difficoltà.",
+            "en": "Compare speed, weight, or difficulty."
+          },
+          {
+            "it": "Usare ավելի … քան in una frase completa.",
+            "en": "Use ավելի … քան in a complete sentence."
+          }
+        ],
+        "explanation": {
+          "it": "L’armeno può confrontare usando il secondo elemento con -ից, come Նարեկից բարձր, oppure con ավելի … քան. Non trattare le due strutture come parole isolate: impara l’intero confronto.",
+          "en": "Armenian can compare by putting -ից on the second item, as in Նարեկից բարձր, or by using ավելի … քան. Do not treat the structures as isolated words; learn the whole comparison."
+        },
+        "examples": [
+          {
+            "target": "Արամը Նարեկից բարձր է։",
+            "transliteration": "Aramy Narekits bardzr e",
+            "translation": {
+              "it": "Aram è più alto di Narek.",
+              "en": "Aram is taller than Narek."
+            }
+          },
+          {
+            "target": "Գնացքն ավտոբուսից արագ է։",
+            "transliteration": "gnatskn avtobusits arag e",
+            "translation": {
+              "it": "Il treno è più veloce dell'autobus.",
+              "en": "The train is faster than the bus."
+            }
+          },
+          {
+            "target": "Այս գիրքն ավելի հետաքրքիր է, քան այն գիրքը։",
+            "transliteration": "ays girkn aveli hetakirkir e kan ayn girky",
+            "translation": {
+              "it": "Questo libro è più interessante di quello.",
+              "en": "This book is more interesting than that book."
+            }
+          }
+        ],
+        "dialogue": [
+          {
+            "speaker": {
+              "it": "Orco",
+              "en": "Ogre"
+            },
+            "target": "Ո՞ր պայուսակն է թեթև։",
+            "transliteration": "vor payusakn e tetev",
+            "translation": {
+              "it": "Quale borsa è leggera?",
+              "en": "Which bag is light?"
+            }
+          },
+          {
+            "speaker": {
+              "it": "Eroe",
+              "en": "Hero"
+            },
+            "target": "Կապույտ պայուսակը կարմիրից թեթև է։",
+            "transliteration": "kapuyt payusaky karmirits tetev e",
+            "translation": {
+              "it": "La borsa blu è più leggera di quella rossa.",
+              "en": "The blue bag is lighter than the red one."
+            }
+          }
+        ],
+        "study_notes": [
+          {
+            "it": "Evidenzia i due elementi e la qualità prima di scegliere la risposta.",
+            "en": "Identify the two items and the quality before choosing an answer."
+          },
+          {
+            "it": "Confronta una sola proprietà alla volta.",
+            "en": "Compare one property at a time."
+          }
+        ],
+        "common_mistakes": [
+          {
+            "it": "“Più” non basta da solo: la frase deve dire più che cosa e rispetto a che cosa.",
+            "en": "“More” is not enough by itself: the sentence must say more what, and compared with what."
+          }
+        ]
+      },
+      "mission": {
+        "it": "Disattiva gli specchi completando confronti su altezza, velocità, peso e interesse.",
+        "en": "Disable the mirrors by completing comparisons about height, speed, weight, and interest."
+      },
+      "cliffhanger": {
+        "it": "Dietro l’ultimo specchio lampeggia un faro che riceve messaggi incompleti da tutta la valle.",
+        "en": "Behind the final mirror, a beacon flashes as it receives incomplete messages from across the valley."
+      }
+    },
+    {
+      "id": "chapter_stage_24",
+      "minimum_level": 24,
+      "title": {
+        "it": "Capitolo 24 · Il faro dei messaggi",
+        "en": "Chapter 24 · The beacon of messages"
+      },
+      "summary": {
+        "it": "Chiedi aiuto, comunica un ritardo e trasmetti un indirizzo o un piccolo problema.",
+        "en": "Ask for help, report a delay, and communicate an address or small problem."
+      },
+      "fiction": {
+        "it": "Il faro dei messaggi riceve richieste senza indirizzo, ritardi senza durata e problemi senza oggetto. L’eroe deve trasformare ogni frammento in una frase utile che un’altra persona possa davvero seguire.",
+        "en": "The beacon of messages receives requests with no address, delays with no duration, and problems with no object. The hero must turn each fragment into a useful sentence that another person can actually follow."
+      },
+      "story_beats": [
+        {
+          "it": "L’Imp del Segnale cancella la parte più importante di ogni messaggio. Per sconfiggerlo, l’eroe deve capire se manca una persona, un oggetto, un luogo o un tempo.",
+          "en": "The Signal Imp deletes the most important part of every message. To defeat it, the hero must work out whether a person, object, place, or time is missing."
+        }
+      ],
+      "lesson": {
+        "title": {
+          "it": "Aiuto, messaggi e piccoli imprevisti",
+          "en": "Help, messages, and small problems"
+        },
+        "objectives": [
+          {
+            "it": "Chiedere aiuto in modo diretto e cortese.",
+            "en": "Ask for help directly and politely."
+          },
+          {
+            "it": "Dire che non trovi o hai perso qualcosa.",
+            "en": "Say that you cannot find or have lost something."
+          },
+          {
+            "it": "Comunicare un indirizzo o un ritardo.",
+            "en": "Communicate an address or a delay."
+          }
+        ],
+        "explanation": {
+          "it": "Un messaggio utile contiene l’informazione necessaria all’altra persona: Ուղարկիր ինձ հասցեն, Ես տասը րոպե ուշանում եմ. Con կարող ես puoi trasformare una richiesta in una domanda cortese.",
+          "en": "A useful message contains the information the other person needs: Ուղարկիր ինձ հասցեն, Ես տասը րոպե ուշանում եմ. With կարող ես, you can turn a request into a polite question."
+        },
+        "examples": [
+          {
+            "target": "Կարո՞ղ ես ինձ օգնել։",
+            "transliteration": "karogh es indz ognel",
+            "translation": {
+              "it": "Puoi aiutarmi?",
+              "en": "Can you help me?"
+            }
+          },
+          {
+            "target": "Ուղարկիր ինձ հասցեն, խնդրում եմ։",
+            "transliteration": "ugharkir indz hastsen khndrum em",
+            "translation": {
+              "it": "Mandami l'indirizzo, per favore.",
+              "en": "Send me the address, please."
+            }
+          },
+          {
+            "target": "Ես տասը րոպե ուշանում եմ։",
+            "transliteration": "yes tas rope ushanum em",
+            "translation": {
+              "it": "Sono in ritardo di dieci minuti.",
+              "en": "I am ten minutes late."
+            }
+          }
+        ],
+        "dialogue": [
+          {
+            "speaker": {
+              "it": "Amica",
+              "en": "Friend"
+            },
+            "target": "Որտե՞ղ ես։",
+            "transliteration": "vortegh es",
+            "translation": {
+              "it": "Dove sei?",
+              "en": "Where are you?"
+            }
+          },
+          {
+            "speaker": {
+              "it": "Eroe",
+              "en": "Hero"
+            },
+            "target": "Ես տասը րոպե ուշանում եմ։ Ուղարկիր ինձ հասցեն, խնդրում եմ։",
+            "transliteration": "yes tas rope ushanum em. ugharkir indz hastsen khndrum em",
+            "translation": {
+              "it": "Sono in ritardo di dieci minuti. Mandami l'indirizzo, per favore.",
+              "en": "I am ten minutes late. Send me the address, please."
+            }
+          }
+        ],
+        "study_notes": [
+          {
+            "it": "Prima di inviare una frase, chiediti se chi legge sa che cosa deve fare.",
+            "en": "Before sending a sentence, ask whether the reader knows what to do."
+          },
+          {
+            "it": "Distingui գտնել “trovare” da կորցնել “perdere”.",
+            "en": "Keep գտնել “find” separate from կորցնել “lose”."
+          }
+        ],
+        "common_mistakes": [
+          {
+            "it": "Non usare un messaggio vago come «sono in ritardo» quando l’esercizio chiede anche di quanto.",
+            "en": "Do not use a vague message such as “I am late” when the exercise also asks by how much."
+          }
+        ]
+      },
+      "mission": {
+        "it": "Ripara il faro completando quattro messaggi: una richiesta di aiuto, un oggetto perso, un indirizzo e un ritardo.",
+        "en": "Repair the beacon by completing four messages: a request for help, a lost item, an address, and a delay."
+      },
+      "cliffhanger": {
+        "it": "Il faro illumina una strada verso racconti più lunghi, annunci, esperienze e conversazioni a più turni: il prossimo modulo può estendere il corso senza cambiare il motore.",
+        "en": "The beacon lights a road towards longer stories, notices, experiences, and multi-turn conversations: the next module can extend the course without changing the engine."
+      }
+    }
+  ],
+  "enemies": [
+    {
+      "id": "coin_mimic",
+      "level": 17,
+      "name_key": "coinMimic",
+      "max_energy": 900,
+      "reward_coins": 520,
+      "preferred_focus": "vocabulary",
+      "sprite": "blob",
+      "semantic_tags": [
+        "tier:core",
+        "stage:17"
+      ],
+      "skill_weaknesses": [
+        "strength",
+        "precision"
+      ],
+      "sprite_row": 5,
+      "scale": 1.18,
+      "visual_variant": "coin",
+      "tint": "#f4c542"
+    },
+    {
+      "id": "menu_wizard",
+      "level": 18,
+      "name_key": "menuWizard",
+      "max_energy": 960,
+      "reward_coins": 560,
+      "preferred_focus": "comprehension",
+      "sprite": "wizard",
+      "semantic_tags": [
+        "tier:core",
+        "stage:18"
+      ],
+      "skill_weaknesses": [
+        "precision",
+        "stamina"
+      ],
+      "sprite_row": 4,
+      "scale": 1.18,
+      "visual_variant": "menu",
+      "tint": "#e58b4e"
+    },
+    {
+      "id": "storm_bat",
+      "level": 19,
+      "name_key": "stormBat",
+      "max_energy": 1020,
+      "reward_coins": 600,
+      "preferred_focus": "comprehension",
+      "sprite": "bat",
+      "semantic_tags": [
+        "tier:core",
+        "stage:19"
+      ],
+      "skill_weaknesses": [
+        "defense",
+        "precision"
+      ],
+      "sprite_row": 1,
+      "scale": 1.18,
+      "visual_variant": "storm",
+      "tint": "#6f8fd8"
+    },
+    {
+      "id": "ticket_troll",
+      "level": 20,
+      "name_key": "ticketTroll",
+      "max_energy": 1080,
+      "reward_coins": 640,
+      "preferred_focus": "vocabulary",
+      "sprite": "troll",
+      "semantic_tags": [
+        "tier:core",
+        "stage:20"
+      ],
+      "skill_weaknesses": [
+        "strength",
+        "defense"
+      ],
+      "sprite_row": 2,
+      "scale": 1.22,
+      "visual_variant": "ticket",
+      "tint": "#d29b62"
+    },
+    {
+      "id": "memory_blob",
+      "level": 21,
+      "name_key": "memoryBlob",
+      "max_energy": 1140,
+      "reward_coins": 680,
+      "preferred_focus": "grammar",
+      "sprite": "blob",
+      "semantic_tags": [
+        "tier:core",
+        "stage:21"
+      ],
+      "skill_weaknesses": [
+        "precision",
+        "stamina"
+      ],
+      "sprite_row": 5,
+      "scale": 1.22,
+      "visual_variant": "memory",
+      "tint": "#9b7bc6"
+    },
+    {
+      "id": "tomorrow_dragon",
+      "level": 22,
+      "name_key": "tomorrowDragon",
+      "max_energy": 1200,
+      "reward_coins": 720,
+      "preferred_focus": "grammar",
+      "sprite": "dragon",
+      "semantic_tags": [
+        "tier:core",
+        "stage:22"
+      ],
+      "skill_weaknesses": [
+        "strength",
+        "precision"
+      ],
+      "sprite_row": 3,
+      "scale": 1.26,
+      "visual_variant": "tomorrow",
+      "tint": "#67b7dc"
+    },
+    {
+      "id": "scale_ogre",
+      "level": 23,
+      "name_key": "scaleOgre",
+      "max_energy": 1260,
+      "reward_coins": 760,
+      "preferred_focus": "comprehension",
+      "sprite": "troll",
+      "semantic_tags": [
+        "tier:core",
+        "stage:23"
+      ],
+      "skill_weaknesses": [
+        "defense",
+        "stamina"
+      ],
+      "sprite_row": 2,
+      "scale": 1.26,
+      "visual_variant": "scale",
+      "tint": "#9caf6b"
+    },
+    {
+      "id": "signal_imp",
+      "level": 24,
+      "name_key": "signalImp",
+      "max_energy": 1320,
+      "reward_coins": 800,
+      "preferred_focus": "grammar",
+      "sprite": "goblin",
+      "semantic_tags": [
+        "tier:core",
+        "stage:24"
+      ],
+      "skill_weaknesses": [
+        "precision",
+        "stamina"
+      ],
+      "sprite_row": 0,
+      "scale": 1.22,
+      "visual_variant": "signal",
+      "tint": "#e36f91"
+    }
+  ],
+  "enemy_names": {
+    "it": {
+      "coinMimic": "Mimic delle Monete",
+      "menuWizard": "Mago del Menù",
+      "stormBat": "Pipistrello della Tempesta",
+      "ticketTroll": "Troll dei Biglietti",
+      "memoryBlob": "Blob dei Ricordi",
+      "tomorrowDragon": "Drago di Domani",
+      "scaleOgre": "Orco della Bilancia",
+      "signalImp": "Imp del Segnale"
+    },
+    "en": {
+      "coinMimic": "Coin Mimic",
+      "menuWizard": "Menu Wizard",
+      "stormBat": "Storm Bat",
+      "ticketTroll": "Ticket Troll",
+      "memoryBlob": "Memory Blob",
+      "tomorrowDragon": "Tomorrow Dragon",
+      "scaleOgre": "Scale Ogre",
+      "signalImp": "Signal Imp"
+    }
+  }
+}

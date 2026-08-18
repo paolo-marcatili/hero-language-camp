@@ -271,4 +271,140 @@ enemies:
     scale: 1.14
     visual_variant: "question"
     tint: "#9c7cff"
+  - id: "coin_mimic"
+    level: 17
+    name_key: "coinMimic"
+    max_energy: 900
+    reward_coins: 520
+    preferred_focus: "vocabulary"
+    sprite: "blob"
+    semantic_tags:
+      - "tier:core"
+      - "stage:17"
+    skill_weaknesses:
+      - "strength"
+      - "precision"
+    sprite_row: 5
+    scale: 1.18
+    visual_variant: "coin"
+    tint: "#f4c542"
+  - id: "menu_wizard"
+    level: 18
+    name_key: "menuWizard"
+    max_energy: 960
+    reward_coins: 560
+    preferred_focus: "comprehension"
+    sprite: "wizard"
+    semantic_tags:
+      - "tier:core"
+      - "stage:18"
+    skill_weaknesses:
+      - "precision"
+      - "stamina"
+    sprite_row: 4
+    scale: 1.18
+    visual_variant: "menu"
+    tint: "#e58b4e"
+  - id: "storm_bat"
+    level: 19
+    name_key: "stormBat"
+    max_energy: 1020
+    reward_coins: 600
+    preferred_focus: "comprehension"
+    sprite: "bat"
+    semantic_tags:
+      - "tier:core"
+      - "stage:19"
+    skill_weaknesses:
+      - "defense"
+      - "precision"
+    sprite_row: 1
+    scale: 1.18
+    visual_variant: "storm"
+    tint: "#6f8fd8"
+  - id: "ticket_troll"
+    level: 20
+    name_key: "ticketTroll"
+    max_energy: 1080
+    reward_coins: 640
+    preferred_focus: "vocabulary"
+    sprite: "troll"
+    semantic_tags:
+      - "tier:core"
+      - "stage:20"
+    skill_weaknesses:
+      - "strength"
+      - "defense"
+    sprite_row: 2
+    scale: 1.22
+    visual_variant: "ticket"
+    tint: "#d29b62"
+  - id: "memory_blob"
+    level: 21
+    name_key: "memoryBlob"
+    max_energy: 1140
+    reward_coins: 680
+    preferred_focus: "grammar"
+    sprite: "blob"
+    semantic_tags:
+      - "tier:core"
+      - "stage:21"
+    skill_weaknesses:
+      - "precision"
+      - "stamina"
+    sprite_row: 5
+    scale: 1.22
+    visual_variant: "memory"
+    tint: "#9b7bc6"
+  - id: "tomorrow_dragon"
+    level: 22
+    name_key: "tomorrowDragon"
+    max_energy: 1200
+    reward_coins: 720
+    preferred_focus: "grammar"
+    sprite: "dragon"
+    semantic_tags:
+      - "tier:core"
+      - "stage:22"
+    skill_weaknesses:
+      - "strength"
+      - "precision"
+    sprite_row: 3
+    scale: 1.26
+    visual_variant: "tomorrow"
+    tint: "#67b7dc"
+  - id: "scale_ogre"
+    level: 23
+    name_key: "scaleOgre"
+    max_energy: 1260
+    reward_coins: 760
+    preferred_focus: "comprehension"
+    sprite: "troll"
+    semantic_tags:
+      - "tier:core"
+      - "stage:23"
+    skill_weaknesses:
+      - "defense"
+      - "stamina"
+    sprite_row: 2
+    scale: 1.26
+    visual_variant: "scale"
+    tint: "#9caf6b"
+  - id: "signal_imp"
+    level: 24
+    name_key: "signalImp"
+    max_energy: 1320
+    reward_coins: 800
+    preferred_focus: "grammar"
+    sprite: "goblin"
+    semantic_tags:
+      - "tier:core"
+      - "stage:24"
+    skill_weaknesses:
+      - "precision"
+      - "stamina"
+    sprite_row: 0
+    scale: 1.22
+    visual_variant: "signal"
+    tint: "#e36f91"
 # END GENERATED CURRICULUM V2: enemies

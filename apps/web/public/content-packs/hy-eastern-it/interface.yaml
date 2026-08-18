@@ -451,4 +451,12 @@ text:
   mirrorOgre: "Orco dello Specchio"
   keyDragon: "Drago delle Chiavi"
   questionImp: "Imp delle Domande"
+  coinMimic: "Mimic delle Monete"
+  menuWizard: "Mago del Menù"
+  stormBat: "Pipistrello della Tempesta"
+  ticketTroll: "Troll dei Biglietti"
+  memoryBlob: "Blob dei Ricordi"
+  tomorrowDragon: "Drago di Domani"
+  scaleOgre: "Orco della Bilancia"
+  signalImp: "Imp del Segnale"
   # END GENERATED CURRICULUM V2: interface-enemy-names

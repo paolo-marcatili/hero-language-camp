@@ -811,3 +811,435 @@ chapters:
       en: "Light every lantern by building four question-and-answer pairs."
     cliffhanger:
       en: "The square opens a new road towards longer stories, past experiences, and future plans: the next course section can be added without changing the game engine."
+  - id: "chapter_stage_17"
+    minimum_level: 17
+    title:
+      en: "Chapter 17 · The market of scales"
+    summary:
+      en: "Ask about prices and quantities, then choose without confusing number, weight, and cost."
+    fiction:
+      en: "The road from the square of questions leads to a market where scales speak and price tags change their numbers. The passage opens only when the hero makes a complete request and checks what is being bought."
+    story_beats:
+      - en: "A coin copies every price that is said incorrectly. To expose it, the hero must distinguish how much an item costs from how much of it is wanted."
+    lesson:
+      title:
+        en: "Prices, quantities, and requests"
+      objectives:
+        - en: "Ask how much something costs."
+        - en: "State a quantity or weight."
+        - en: "Ask to try or buy an item."
+      explanation:
+        en: "For shopping, learn complete chunks: Որքա՞ն արժե սա, մեկ կիլոգրամ… եմ ուզում, and Կարո՞ղ եմ…։ The number comes before the quantity, while դրամ expresses the price."
+      examples:
+        - target: "Որքա՞ն արժե սա։"
+          transliteration: "vork'an arzhe sa"
+          translation:
+            en: "How much is this?"
+        - target: "Սա երկու հազար դրամ արժե։"
+          transliteration: "sa yerku hazar dram arzhe"
+          translation:
+            en: "This costs two thousand drams."
+        - target: "Ես մեկ կիլոգրամ խնձոր եմ ուզում։"
+          transliteration: "yes mek kilogram khndzor em uzum"
+          translation:
+            en: "I would like one kilogram of apples."
+      dialogue:
+        - speaker:
+            en: "Shop assistant"
+          target: "Ի՞նչ եք ուզում։"
+          transliteration: "inch ek uzum"
+          translation:
+            en: "What would you like?"
+        - speaker:
+            en: "Hero"
+          target: "Ես մեկ կիլոգրամ խնձոր եմ ուզում։ Որքա՞ն արժե։"
+          transliteration: "yes mek kilogram khndzor em uzum. vork'an arzhe"
+          translation:
+            en: "I would like one kilogram of apples. How much is it?"
+      study_notes:
+        - en: "Practise the quantity and noun together: մեկ կիլոգրամ խնձոր."
+        - en: "Keep գին, դրամ, and կիլոգրամ separate: price, currency, and weight have different roles."
+      common_mistakes:
+        - en: "Do not treat “how much” and “how many” as the same question."
+    mission:
+      en: "Buy three items in different quantities and discover which coin is falsifying the price tags."
+    cliffhanger:
+      en: "Behind the market, a kitchen lights up where every order is repeated by a mischievous echo."
+  - id: "chapter_stage_18"
+    minimum_level: 18
+    title:
+      en: "Chapter 18 · The kitchen of echoes"
+    summary:
+      en: "Order food and drinks with short but complete requests, including preferences such as “without sugar”."
+    fiction:
+      en: "In the kitchen of echoes, every unnecessary word multiplies and every missing word empties the plate. The hero must order precisely, then recognise the right moment to ask for the bill."
+    story_beats:
+      - en: "The Menu Wizard changes the dishes whenever “with” and “without” are confused. A clear request keeps the correct plate on the table."
+    lesson:
+      title:
+        en: "Ordering and stating preferences"
+      objectives:
+        - en: "Ask for the menu and the bill."
+        - en: "Order a dish or drink."
+        - en: "Say that you want something without an ingredient."
+      explanation:
+        en: "Café requests can be very short: Ճաշացանկը, խնդրում եմ and Հաշիվը, խնդրում եմ. To exclude something, use առանց followed by the noun form required by the phrase, as in առանց շաքարի."
+      examples:
+        - target: "Ճաշացանկը, խնդրում եմ։"
+          transliteration: "chashatsanky khndrum em"
+          translation:
+            en: "The menu, please."
+        - target: "Մի բաժակ թեյ առանց շաքարի, խնդրում եմ։"
+          transliteration: "mi bazhak tey arants shakari khndrum em"
+          translation:
+            en: "A cup of tea without sugar, please."
+        - target: "Հաշիվը, խնդրում եմ։"
+          transliteration: "hashivy khndrum em"
+          translation:
+            en: "The bill, please."
+      dialogue:
+        - speaker:
+            en: "Server"
+          target: "Ի՞նչ եք պատվիրում։"
+          transliteration: "inch ek patvirum"
+          translation:
+            en: "What would you like to order?"
+        - speaker:
+            en: "Hero"
+          target: "Ես ապուր և աղցան եմ ուզում։ Մի բաժակ ջուր էլ, խնդրում եմ։"
+          transliteration: "yes apur yev aghtsan em uzum. mi bazhak jur el khndrum em"
+          translation:
+            en: "I would like soup and a salad. A glass of water as well, please."
+      study_notes:
+        - en: "Learn the container and drink together: մի բաժակ թեյ."
+        - en: "Use խնդրում եմ to make a short request polite."
+      common_mistakes:
+        - en: "Do not confuse հաշիվ “bill/account” with հարց “question”."
+    mission:
+      en: "Prepare a complete order for two travellers and ask for the bill without making the dishes change."
+    cliffhanger:
+      en: "Steam from the kitchen rises towards a tower showing four seasons at the same time."
+  - id: "chapter_stage_19"
+    minimum_level: 19
+    title:
+      en: "Chapter 19 · The tower of seasons"
+    summary:
+      en: "Describe simple conditions and connect sun, rain, snow, and temperature with the correct season."
+    fiction:
+      en: "The tower of seasons turns too quickly: it snows on one side, the sun shines on another, and a wind at the top moves the words around. The hero must observe the sky and choose a sentence that truly describes it."
+    story_beats:
+      - en: "The Storm Bat hides the season behind a temporary condition. The hero learns to distinguish “it is cold today” from “it snows in winter”."
+    lesson:
+      title:
+        en: "Today’s weather and the seasons"
+      objectives:
+        - en: "Describe warm and cold weather."
+        - en: "Recognise rain, snow, wind, and sun."
+        - en: "Say what normally happens in a season."
+      explanation:
+        en: "Many weather sentences have no personal subject: Անձրև է գալիս and Ձյուն է գալիս. To talk about a season, the noun can take a form such as ձմռանը or ամռանը, meaning “in winter” and “in summer”."
+      examples:
+        - target: "Այսօր ցուրտ է։"
+          transliteration: "aysor tsurt e"
+          translation:
+            en: "It is cold today."
+        - target: "Անձրև է գալիս։"
+          transliteration: "andzrev e galis"
+          translation:
+            en: "It is raining."
+        - target: "Ձմռանը ձյուն է գալիս։"
+          transliteration: "dzmrrany dzyun e galis"
+          translation:
+            en: "It snows in winter."
+      dialogue:
+        - speaker:
+            en: "Keeper"
+          target: "Այսօր եղանակն ինչպե՞ս է։"
+          transliteration: "aysor yeghanakn inchpes e"
+          translation:
+            en: "What is the weather like today?"
+        - speaker:
+            en: "Hero"
+          target: "Այսօր ցուրտ է և քամի կա։"
+          transliteration: "aysor tsurt e yev kami ka"
+          translation:
+            en: "It is cold and windy today."
+      study_notes:
+        - en: "Listen to the difference between արև and անձրև: one syllable changes the meaning."
+        - en: "Connect each season with more than one sentence, not just one word."
+      common_mistakes:
+        - en: "Do not always translate “it is” with a separate weather verb: Այսօր ցուրտ է is complete."
+    mission:
+      en: "Slow the tower by describing the weather on each side and choosing the matching season."
+    cliffhanger:
+      en: "When the tower stops, a station appears whose tracks change destination every minute."
+  - id: "chapter_stage_20"
+    minimum_level: 20
+    title:
+      en: "Chapter 20 · The station of moving tracks"
+    summary:
+      en: "Use tickets, times, departures, and arrivals to complete a short journey."
+    fiction:
+      en: "At the station of moving tracks, the signs show a different city whenever a question is incomplete. The hero must buy the correct ticket, listen to the time, and understand whether transport is leaving or arriving."
+    story_beats:
+      - en: "The Ticket Troll collects answers with no destination. A sentence with a precise city, time, or means of transport puts the track back in place."
+    lesson:
+      title:
+        en: "Tickets, departures, and arrivals"
+      objectives:
+        - en: "Ask for a ticket to a destination."
+        - en: "Say what time you leave."
+        - en: "Ask when a train or bus arrives."
+      explanation:
+        en: "For transport, learn the pair մեկնել “depart” and հասնել “arrive”. In a short request, Մեկ տոմս Երևան, խնդրում եմ is enough; in questions, ե՞րբ asks for a precise time."
+      examples:
+        - target: "Մեկ տոմս Երևան, խնդրում եմ։"
+          transliteration: "mek toms Yerevan khndrum em"
+          translation:
+            en: "One ticket to Yerevan, please."
+        - target: "Մենք ժամը վեցին ենք մեկնում։"
+          transliteration: "menk zhamy vetsin enk meknum"
+          translation:
+            en: "We leave at six."
+        - target: "Գնացքը ե՞րբ է հասնում։"
+          transliteration: "gnatsky yerb e hasnum"
+          translation:
+            en: "When does the train arrive?"
+      dialogue:
+        - speaker:
+            en: "Ticket clerk"
+          target: "Ո՞ւր եք գնում։"
+          transliteration: "ur ek gnum"
+          translation:
+            en: "Where are you going?"
+        - speaker:
+            en: "Hero"
+          target: "Երևան։ Մեկ տոմս, խնդրում եմ։ Գնացքը ե՞րբ է մեկնում։"
+          transliteration: "Yerevan. mek toms khndrum em. gnatsky yerb e meknum"
+          translation:
+            en: "To Yerevan. One ticket, please. When does the train leave?"
+      study_notes:
+        - en: "Practise the transport and verb together: գնացքը մեկնում է, գնացքը հասնում է."
+        - en: "Check whether the question asks where, when, or how much."
+      common_mistakes:
+        - en: "Do not confuse մեկնել with գնալ: both can express movement, but մեկնել emphasises departure."
+    mission:
+      en: "Take three travellers to the correct destination using different tickets and times."
+    cliffhanger:
+      en: "The train enters a gallery whose walls show only events that have already happened."
+  - id: "chapter_stage_21"
+    minimum_level: 21
+    title:
+      en: "Chapter 21 · The gallery of yesterday"
+    summary:
+      en: "Talk about completed actions using frequent past forms in short sentences."
+    fiction:
+      en: "In the gallery of yesterday, every picture shows a completed action but loses its verb whenever someone tells it in the present. The hero must recognise what has already happened and complete the memory with the right form."
+    story_beats:
+      - en: "The Memory Blob mixes yesterday, today, and tomorrow. To separate the images, the hero looks for time signals and listens to the end of the verb."
+    lesson:
+      title:
+        en: "Completed actions in the past"
+      objectives:
+        - en: "Say where you went yesterday."
+        - en: "Talk about a visit or weekend activity."
+        - en: "Distinguish a past form from present and future forms."
+      explanation:
+        en: "This level introduces several frequent simple-past forms: գնացի, դիտեցի, պատրաստեց, and այցելեցինք. Learn them in complete sentences and connect them with signals such as երեկ and շաբաթ օրը."
+      examples:
+        - target: "Երեկ ես դպրոց գնացի։"
+          transliteration: "yerek yes dprots gnatsi"
+          translation:
+            en: "I went to school yesterday."
+        - target: "Ես երեկ ֆիլմ դիտեցի։"
+          transliteration: "yes yerek film ditetsi"
+          translation:
+            en: "I watched a film yesterday."
+        - target: "Նա ճաշ պատրաստեց։"
+          transliteration: "na chash patrastets"
+          translation:
+            en: "He or she prepared the meal."
+      dialogue:
+        - speaker:
+            en: "Keeper"
+          target: "Ի՞նչ արեցիր երեկ։"
+          transliteration: "inch aretsir yerek"
+          translation:
+            en: "What did you do yesterday?"
+        - speaker:
+            en: "Hero"
+          target: "Ես տատիկին այցելեցի և ֆիլմ դիտեցի։"
+          transliteration: "yes tatikin aytseletsi yev film ditetsi"
+          translation:
+            en: "I visited Grandma and watched a film."
+      study_notes:
+        - en: "Look for the time marker first, then the verb form."
+        - en: "Practise one action in three times: գնում եմ, գնացի, գնալու եմ."
+      common_mistakes:
+        - en: "Do not accept a present-tense sentence merely because it describes the same action."
+    mission:
+      en: "Reconstruct four memories by ordering them by day and choosing the correct past verb."
+    cliffhanger:
+      en: "The final picture becomes a door showing appointments and journeys that have not happened yet."
+  - id: "chapter_stage_22"
+    minimum_level: 22
+    title:
+      en: "Chapter 22 · The bridge of tomorrow"
+    summary:
+      en: "Talk about future plans using concrete times, people, and destinations."
+    fiction:
+      en: "The bridge of tomorrow builds a plank only when a plan is expressed clearly. Vague ideas fall into the mist; plans with a time, place, and action become a stable path."
+    story_beats:
+      - en: "The Tomorrow Dragon blows the auxiliary out of future sentences. The hero must keep the -լու form together with the correct form of “to be”."
+    lesson:
+      title:
+        en: "Plans, appointments, and intentions"
+      objectives:
+        - en: "Say where you are going tomorrow."
+        - en: "Arrange a meeting at a precise time."
+        - en: "Say that you will call or travel later."
+      explanation:
+        en: "A common way to express a plan uses the verb in -լու plus եմ, ես, է, ենք, եք, or են: գնալու եմ, հանդիպելու ենք. In a negative sentence, negation attaches to the auxiliary: չեմ գնալու."
+      examples:
+        - target: "Վաղը ես գրադարան եմ գնալու։"
+          transliteration: "vaghy yes gradaran em gnalu"
+          translation:
+            en: "I am going to the library tomorrow."
+        - target: "Մենք ժամը հինգին ենք հանդիպելու։"
+          transliteration: "menk zhamy hingin enk handipelu"
+          translation:
+            en: "We are meeting at five."
+        - target: "Ես քեզ երեկոյան զանգահարելու եմ։"
+          transliteration: "yes kez yerekoyan zangaharelu em"
+          translation:
+            en: "I will call you this evening."
+      dialogue:
+        - speaker:
+            en: "Traveller"
+          target: "Վաղը ի՞նչ ես անելու։"
+          transliteration: "vaghy inch es anelu"
+          translation:
+            en: "What are you going to do tomorrow?"
+        - speaker:
+            en: "Hero"
+          target: "Առավոտյան գրադարան եմ գնալու, իսկ երեկոյան քեզ զանգահարելու եմ։"
+          transliteration: "aravotyan gradaran em gnalu isk yerekoyan kez zangaharelu em"
+          translation:
+            en: "I am going to the library in the morning, and I will call you in the evening."
+      study_notes:
+        - en: "Connect the plan with a marker such as վաղը, երեկոյան, or ամռանը."
+        - en: "Check that the auxiliary agrees with the person."
+      common_mistakes:
+        - en: "Do not leave the -լու form on its own: գնալու without an auxiliary does not complete this construction."
+    mission:
+      en: "Complete the bridge by describing four future plans with different people and times."
+    cliffhanger:
+      en: "On the other side, a hall of mirrors magnifies every difference between people and objects."
+  - id: "chapter_stage_23"
+    minimum_level: 23
+    title:
+      en: "Chapter 23 · The hall of comparisons"
+    summary:
+      en: "Compare two things without losing either the comparison point or the quality being observed."
+    fiction:
+      en: "In the hall of comparisons, the mirrors make a bag enormous, a train extremely slow, and a book seem easy. The hero must ignore the illusion and form a comparison that names both things."
+    story_beats:
+      - en: "The Scale Ogre steals the suffix -ից and the word քան. Without a comparison point, every description remains incomplete."
+    lesson:
+      title:
+        en: "Comparing people and objects"
+      objectives:
+        - en: "Say that one person is taller than another."
+        - en: "Compare speed, weight, or difficulty."
+        - en: "Use ավելի … քան in a complete sentence."
+      explanation:
+        en: "Armenian can compare by putting -ից on the second item, as in Նարեկից բարձր, or by using ավելի … քան. Do not treat the structures as isolated words; learn the whole comparison."
+      examples:
+        - target: "Արամը Նարեկից բարձր է։"
+          transliteration: "Aramy Narekits bardzr e"
+          translation:
+            en: "Aram is taller than Narek."
+        - target: "Գնացքն ավտոբուսից արագ է։"
+          transliteration: "gnatskn avtobusits arag e"
+          translation:
+            en: "The train is faster than the bus."
+        - target: "Այս գիրքն ավելի հետաքրքիր է, քան այն գիրքը։"
+          transliteration: "ays girkn aveli hetakirkir e kan ayn girky"
+          translation:
+            en: "This book is more interesting than that book."
+      dialogue:
+        - speaker:
+            en: "Ogre"
+          target: "Ո՞ր պայուսակն է թեթև։"
+          transliteration: "vor payusakn e tetev"
+          translation:
+            en: "Which bag is light?"
+        - speaker:
+            en: "Hero"
+          target: "Կապույտ պայուսակը կարմիրից թեթև է։"
+          transliteration: "kapuyt payusaky karmirits tetev e"
+          translation:
+            en: "The blue bag is lighter than the red one."
+      study_notes:
+        - en: "Identify the two items and the quality before choosing an answer."
+        - en: "Compare one property at a time."
+      common_mistakes:
+        - en: "“More” is not enough by itself: the sentence must say more what, and compared with what."
+    mission:
+      en: "Disable the mirrors by completing comparisons about height, speed, weight, and interest."
+    cliffhanger:
+      en: "Behind the final mirror, a beacon flashes as it receives incomplete messages from across the valley."
+  - id: "chapter_stage_24"
+    minimum_level: 24
+    title:
+      en: "Chapter 24 · The beacon of messages"
+    summary:
+      en: "Ask for help, report a delay, and communicate an address or small problem."
+    fiction:
+      en: "The beacon of messages receives requests with no address, delays with no duration, and problems with no object. The hero must turn each fragment into a useful sentence that another person can actually follow."
+    story_beats:
+      - en: "The Signal Imp deletes the most important part of every message. To defeat it, the hero must work out whether a person, object, place, or time is missing."
+    lesson:
+      title:
+        en: "Help, messages, and small problems"
+      objectives:
+        - en: "Ask for help directly and politely."
+        - en: "Say that you cannot find or have lost something."
+        - en: "Communicate an address or a delay."
+      explanation:
+        en: "A useful message contains the information the other person needs: Ուղարկիր ինձ հասցեն, Ես տասը րոպե ուշանում եմ. With կարող ես, you can turn a request into a polite question."
+      examples:
+        - target: "Կարո՞ղ ես ինձ օգնել։"
+          transliteration: "karogh es indz ognel"
+          translation:
+            en: "Can you help me?"
+        - target: "Ուղարկիր ինձ հասցեն, խնդրում եմ։"
+          transliteration: "ugharkir indz hastsen khndrum em"
+          translation:
+            en: "Send me the address, please."
+        - target: "Ես տասը րոպե ուշանում եմ։"
+          transliteration: "yes tas rope ushanum em"
+          translation:
+            en: "I am ten minutes late."
+      dialogue:
+        - speaker:
+            en: "Friend"
+          target: "Որտե՞ղ ես։"
+          transliteration: "vortegh es"
+          translation:
+            en: "Where are you?"
+        - speaker:
+            en: "Hero"
+          target: "Ես տասը րոպե ուշանում եմ։ Ուղարկիր ինձ հասցեն, խնդրում եմ։"
+          transliteration: "yes tas rope ushanum em. ugharkir indz hastsen khndrum em"
+          translation:
+            en: "I am ten minutes late. Send me the address, please."
+      study_notes:
+        - en: "Before sending a sentence, ask whether the reader knows what to do."
+        - en: "Keep գտնել “find” separate from կորցնել “lose”."
+      common_mistakes:
+        - en: "Do not use a vague message such as “I am late” when the exercise also asks by how much."
+    mission:
+      en: "Repair the beacon by completing four messages: a request for help, a lost item, an address, and a delay."
+    cliffhanger:
+      en: "The beacon lights a road towards longer stories, notices, experiences, and multi-turn conversations: the next module can extend the course without changing the engine."

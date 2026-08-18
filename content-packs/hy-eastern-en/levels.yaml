@@ -393,3 +393,195 @@ levels:
       timer_seconds: 12
       sigmoid_k: 2.2
     chapter_id: "chapter_stage_16"
+  - number: 17
+    title: "Level 17 · Shopping and choosing"
+    stat_cap: 90
+    content_tags:
+      - "stage:17"
+      - "tier:core"
+    theme:
+      en: "Shopping and choosing"
+    learning_goal:
+      en: "Ask the price, state a quantity, and make a simple request in a shop."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_17"
+  - number: 18
+    title: "Level 18 · At a café and restaurant"
+    stat_cap: 95
+    content_tags:
+      - "stage:18"
+      - "tier:core"
+    theme:
+      en: "At a café and restaurant"
+    learning_goal:
+      en: "Order food and drinks, state a preference, and ask for the bill."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_18"
+  - number: 19
+    title: "Level 19 · Weather and seasons"
+    stat_cap: 100
+    content_tags:
+      - "stage:19"
+      - "tier:core"
+    theme:
+      en: "Weather and seasons"
+    learning_goal:
+      en: "Describe today’s weather and connect common conditions with the seasons."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 36
+      max_questions: 42
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_19"
+  - number: 20
+    title: "Level 20 · Travel and transport"
+    stat_cap: 105
+    content_tags:
+      - "stage:20"
+      - "tier:core"
+    theme:
+      en: "Travel and transport"
+    learning_goal:
+      en: "Buy a ticket, understand a departure, and ask when something arrives."
+    cefr: "a1"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 36
+      max_questions: 42
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_20"
+  - number: 21
+    title: "Level 21 · Talking about the past"
+    stat_cap: 110
+    content_tags:
+      - "stage:21"
+      - "tier:core"
+    theme:
+      en: "Talking about the past"
+    learning_goal:
+      en: "Use short sentences to say what happened yesterday or at the weekend."
+    cefr: "a2"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 9
+      answered_fight_questions: 18
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 18
+      at_min_questions: 38
+      max_questions: 44
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_21"
+  - number: 22
+    title: "Level 22 · Plans and the future"
+    stat_cap: 115
+    content_tags:
+      - "stage:22"
+      - "tier:core"
+    theme:
+      en: "Plans and the future"
+    learning_goal:
+      en: "Talk about plans, appointments, and actions that will happen later."
+    cefr: "a2"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 9
+      answered_fight_questions: 18
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 18
+      at_min_questions: 38
+      max_questions: 44
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_22"
+  - number: 23
+    title: "Level 23 · Comparisons and descriptions"
+    stat_cap: 120
+    content_tags:
+      - "stage:23"
+      - "tier:core"
+    theme:
+      en: "Comparisons and descriptions"
+    learning_goal:
+      en: "Compare people, objects, and transport using simple, clear differences."
+    cefr: "a2"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 9
+      answered_fight_questions: 18
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 18
+      at_min_questions: 40
+      max_questions: 46
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_23"
+  - number: 24
+    title: "Level 24 · Messages and everyday problems"
+    stat_cap: 125
+    content_tags:
+      - "stage:24"
+      - "tier:core"
+    theme:
+      en: "Messages and everyday problems"
+    learning_goal:
+      en: "Ask for help, explain a small problem, and leave a useful message."
+    cefr: "a2"
+    review_only: false
+    unlock_requires:
+      completed_training_sessions: 9
+      answered_fight_questions: 18
+      min_coins: 0
+      min_stats: {}
+    fight:
+      min_questions: 18
+      at_min_questions: 40
+      max_questions: 46
+      timer_seconds: 12
+      sigmoid_k: 2.2
+    chapter_id: "chapter_stage_24"

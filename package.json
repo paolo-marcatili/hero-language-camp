@@ -16,7 +16,7 @@
     "typecheck": "npm --workspaces --if-present run typecheck",
     "test:yaml-parser": "node tools/test-yaml-parser.mjs",
     "validate:content": "npm run test:yaml-parser && node tools/validate-content.mjs content-packs/hy-eastern-it",
-    "check": "npm run validate:content && npm run content:audit-curriculum-v2 && npm run content:lint-italian && npm run typecheck && npm run content:check-curriculum-sync && npm run content:audit-curriculum-09-16",
+    "check": "npm run validate:content && npm run content:audit-curriculum-v2 && npm run content:lint-italian && npm run typecheck && npm run content:check-curriculum-sync && npm run content:audit-curriculum",
     "content:restructure": "python tools/restructure-hy-curriculum.py",
     "content:auto-audio": "node tools/generate-automated-audio.mjs content-packs/hy-eastern-it",
     "content:audio:ev-probe": "node tools/generate-automated-audio.mjs content-packs/hy-eastern-it --ev-probe",
@@ -74,7 +74,8 @@
     "content:audit-curriculum-v2": "node tools/audit-curriculum-v2.mjs",
     "content:sync-curriculum": "node tools/sync-armenian-curriculum.mjs",
     "content:check-curriculum-sync": "node tools/sync-armenian-curriculum.mjs --check",
-    "content:audit-curriculum-09-16": "node tools/audit-armenian-curriculum-09-16.mjs"
+    "content:audit-curriculum-09-16": "npm run content:audit-curriculum",
+    "content:audit-curriculum": "node tools/audit-armenian-curriculum.mjs"
   },
   "engines": {
     "node": ">=20.19.0",
