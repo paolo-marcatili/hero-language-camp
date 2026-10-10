@@ -87,6 +87,7 @@ function sourceFiles(dir) {
 
 // Explicit multilingual tables are allowed only when an English branch is present.
 const localizedComponentProofs = new Map([
+  ['apps/web/src/components/LevelPlacementPanel.tsx', 'Level and progress'],
   ['apps/web/src/components/HeroStatsPanel.tsx', 'A level raises the cap.'],
   ['apps/web/src/components/ParentProgressPanel.tsx', 'title: "Child progress"'],
   ['apps/web/src/components/StoryPanel.tsx', 'chapterReaderTitle: "Chapter book"'],

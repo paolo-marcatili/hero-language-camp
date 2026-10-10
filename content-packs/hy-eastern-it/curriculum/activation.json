@@ -1,0 +1,5654 @@
+{
+  "description": "Explicit decisions for previously unused imports. New English translations and Armenian wording still require human review. Preserve IDs and recordings. Excluded entries stay in the source dictionary but cannot enter automatic practice.",
+  "words": [
+    {
+      "id": "hy_banan",
+      "stage": 3,
+      "en": "banana"
+    },
+    {
+      "id": "hy_exp_bee_9f0f94",
+      "stage": 9,
+      "en": "bee"
+    },
+    {
+      "id": "hy_exp_goat_52c3bc",
+      "stage": 9,
+      "en": "goat"
+    },
+    {
+      "id": "hy_exp_horse_bdf900",
+      "stage": 9,
+      "en": "horse"
+    },
+    {
+      "id": "hy_exp_ant_c31dc2",
+      "stage": 9,
+      "en": "ant"
+    },
+    {
+      "id": "hy_exp_fly_1d79ca",
+      "stage": 9,
+      "en": "fly"
+    },
+    {
+      "id": "hy_exp_sheep_8b6d0b",
+      "stage": 9,
+      "en": "sheep"
+    },
+    {
+      "id": "hy_exp_pig_2e3ce7",
+      "stage": 9,
+      "en": "pig"
+    },
+    {
+      "id": "hy_exp_monkey_d3d0aa",
+      "stage": 9,
+      "en": "monkey"
+    },
+    {
+      "id": "hy_exp_snake_a4eacc",
+      "stage": 9,
+      "en": "snake"
+    },
+    {
+      "id": "hy_exp_rat_454f51",
+      "stage": 9,
+      "en": "rat"
+    },
+    {
+      "id": "hy_exp_bird_7f2851",
+      "stage": 9,
+      "en": "bird"
+    },
+    {
+      "id": "hy_exp_cow_8fd1ec",
+      "stage": 9,
+      "en": "cow"
+    },
+    {
+      "id": "hy_exp_worm_fc6c31",
+      "stage": 9,
+      "en": "worm"
+    },
+    {
+      "id": "hy_exp_orange_db77fd",
+      "stage": 3,
+      "en": "orange"
+    },
+    {
+      "id": "hy_exp_berry_c6b128",
+      "stage": 3,
+      "en": "berry"
+    },
+    {
+      "id": "hy_panir",
+      "stage": 3,
+      "en": "cheese"
+    },
+    {
+      "id": "hy_mirg",
+      "stage": 3,
+      "en": "fruit"
+    },
+    {
+      "id": "hy_exp_nuts_4d453d",
+      "stage": 3,
+      "en": "nuts"
+    },
+    {
+      "id": "hy_exp_potato_68bfa4",
+      "stage": 3,
+      "en": "potato"
+    },
+    {
+      "id": "hy_exp_cake_9d8d03",
+      "stage": 3,
+      "en": "cake"
+    },
+    {
+      "id": "hy_dzu",
+      "stage": 3,
+      "en": "egg"
+    },
+    {
+      "id": "hy_exp_bath_3d040c",
+      "stage": 5,
+      "en": "bath"
+    },
+    {
+      "id": "hy_exp_kettle_cd6af0",
+      "stage": 5,
+      "en": "kettle"
+    },
+    {
+      "id": "hy_exp_bottle_25051e",
+      "stage": 5,
+      "en": "bottle"
+    },
+    {
+      "id": "hy_exp_drawer_385409",
+      "stage": 5,
+      "en": "drawer"
+    },
+    {
+      "id": "hy_exp_curtain_3f19da",
+      "stage": 5,
+      "en": "curtain"
+    },
+    {
+      "id": "hy_exp_cushion_a95b18",
+      "stage": 5,
+      "en": "cushion"
+    },
+    {
+      "id": "hy_exp_oven_09ea39",
+      "stage": 5,
+      "en": "oven"
+    },
+    {
+      "id": "hy_exp_bulb_ed9f47",
+      "stage": 5,
+      "en": "bulb"
+    },
+    {
+      "id": "hy_exp_wall_af54c8",
+      "stage": 5,
+      "en": "wall"
+    },
+    {
+      "id": "hy_exp_clock_0c4e64",
+      "stage": 5,
+      "en": "clock"
+    },
+    {
+      "id": "hy_exp_pot_06e01d",
+      "stage": 5,
+      "en": "pot"
+    },
+    {
+      "id": "hy_exp_comb_907e39",
+      "stage": 5,
+      "en": "comb"
+    },
+    {
+      "id": "hy_exp_plate_152a54",
+      "stage": 5,
+      "en": "plate"
+    },
+    {
+      "id": "hy_exp_button_c0908d",
+      "stage": 5,
+      "en": "button"
+    },
+    {
+      "id": "hy_exp_box_fa9d54",
+      "stage": 5,
+      "en": "box"
+    },
+    {
+      "id": "hy_exp_bucket_55ad53",
+      "stage": 5,
+      "en": "bucket"
+    },
+    {
+      "id": "hy_ator",
+      "stage": 5,
+      "en": "chair"
+    },
+    {
+      "id": "hy_exp_lock_342011",
+      "stage": 5,
+      "en": "lock"
+    },
+    {
+      "id": "hy_exp_brush_37504e",
+      "stage": 5,
+      "en": "brush"
+    },
+    {
+      "id": "hy_seghan",
+      "stage": 5,
+      "en": "table"
+    },
+    {
+      "id": "hy_exp_roof_0abe7d",
+      "stage": 5,
+      "en": "roof"
+    },
+    {
+      "id": "hy_exp_farm_3d1f55",
+      "stage": 15,
+      "en": "farm"
+    },
+    {
+      "id": "hy_tsaghik",
+      "stage": 15,
+      "en": "flower"
+    },
+    {
+      "id": "hy_get",
+      "stage": 15,
+      "en": "river"
+    },
+    {
+      "id": "hy_exp_leaf_d69774",
+      "stage": 15,
+      "en": "leaf"
+    },
+    {
+      "id": "hy_exp_garden_0e005d",
+      "stage": 15,
+      "en": "garden"
+    },
+    {
+      "id": "hy_exp_island_db34bc",
+      "stage": 15,
+      "en": "island"
+    },
+    {
+      "id": "hy_lusin",
+      "stage": 15,
+      "en": "moon"
+    },
+    {
+      "id": "hy_sar",
+      "stage": 15,
+      "en": "mountain"
+    },
+    {
+      "id": "hy_exp_feather_cae577",
+      "stage": 15,
+      "en": "feather"
+    },
+    {
+      "id": "hy_exp_root_aaf450",
+      "stage": 15,
+      "en": "root"
+    },
+    {
+      "id": "hy_exp_branch_123bec",
+      "stage": 15,
+      "en": "branch"
+    },
+    {
+      "id": "hy_exp_seed_3f2185",
+      "stage": 15,
+      "en": "seed"
+    },
+    {
+      "id": "hy_astgh",
+      "stage": 15,
+      "en": "star"
+    },
+    {
+      "id": "hy_exp_stem_d27312",
+      "stage": 15,
+      "en": "stem"
+    },
+    {
+      "id": "hy_exp_butter_5c5a4f",
+      "stage": 3,
+      "en": "butter"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "hy_sentence_red_color",
+      "stage": 2,
+      "en": "Red colour.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_blue_color",
+      "stage": 2,
+      "en": "Blue colour.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_this_is_apple",
+      "stage": 1,
+      "en": "This is an apple.",
+      "distractors_en": [
+        "I see an apple.",
+        "I want an apple.",
+        "I have an apple."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_i_want_milk",
+      "stage": 3,
+      "en": "I want some milk.",
+      "distractors_en": [
+        "This is some milk.",
+        "I see some milk.",
+        "I have some milk."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_red_apple",
+      "stage": 2,
+      "en": "This is a red apple.",
+      "distractors_en": [
+        "I see a red apple.",
+        "I want a red apple.",
+        "I have a red apple."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_green_tree",
+      "stage": 15,
+      "en": "The tree is green.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_cat_sleeps",
+      "stage": 9,
+      "en": "The cat is sleeping.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_dog_runs",
+      "stage": 9,
+      "en": "The dog is running.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_child_plays",
+      "stage": 16,
+      "en": "The child is playing.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_mom_drinks_tea",
+      "stage": 2,
+      "en": "Mom is drinking tea.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_sun_big",
+      "stage": 15,
+      "en": "The sun is big.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_flower_beautiful",
+      "stage": 15,
+      "en": "The flower is beautiful.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_friend_here",
+      "stage": 1,
+      "en": "My friend is here.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_blue_bag",
+      "stage": 10,
+      "en": "This is a blue bag.",
+      "distractors_en": [
+        "I see a blue bag.",
+        "I want a blue bag.",
+        "I have a blue bag."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_i_listen",
+      "stage": 4,
+      "en": "I am listening.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_door_open",
+      "stage": 5,
+      "en": "The door is open.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_window_closed",
+      "stage": 5,
+      "en": "The window is closed.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_i_write",
+      "stage": 10,
+      "en": "I am writing.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_i_go_school",
+      "stage": 4,
+      "en": "I go to school.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_book_on_table",
+      "stage": 10,
+      "en": "The book is on the table.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_pencil_in_bag",
+      "stage": 10,
+      "en": "The pencil is in the bag.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_74b387644a6c",
+      "stage": 1,
+      "en": "I am from Denmark.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_e9e75c0f87a6",
+      "stage": 1,
+      "en": "I am from Armenia.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_950737d73174",
+      "stage": 1,
+      "en": "What is this?",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_65409356a8f9",
+      "stage": 1,
+      "en": "Who is there?",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_5659598b2079",
+      "stage": 5,
+      "en": "I live in the city.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_2fd68869f7a2",
+      "stage": 5,
+      "en": "There is a kitchen and a bedroom in the house.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_c4926fa3994b",
+      "stage": 5,
+      "en": "There is a tree in the yard.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_f9398a9ba2fe",
+      "stage": 5,
+      "en": "The school is near home.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_22b30417cc03",
+      "stage": 9,
+      "en": "There are many animals in the zoo.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_6cf3a68e9e45",
+      "stage": 9,
+      "en": "The lion is big.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_6515fb3764d9",
+      "stage": 9,
+      "en": "The rabbit is small.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_222934576774",
+      "stage": 3,
+      "en": "I like fruit.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_942b00e362be",
+      "stage": 3,
+      "en": "I want some water.",
+      "distractors_en": [
+        "This is some water.",
+        "I see some water.",
+        "I have some water."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_5921de67db52",
+      "stage": 3,
+      "en": "There is bread and cheese on the table.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_9c49f046f407",
+      "stage": 9,
+      "en": "The cat is asleep.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_13e098f68863",
+      "stage": 9,
+      "en": "The dog is in the yard.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The tree is green."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_556f26c16f9f",
+      "stage": 16,
+      "en": "We are playing together.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_4eb9f0a7440e",
+      "stage": 16,
+      "en": "My friend is happy.",
+      "distractors_en": [
+        "I am reading a book.",
+        "The dog is in the yard.",
+        "The tree is green."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_82c11e5068f5",
+      "stage": 6,
+      "en": "The weather is nice today.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_9dcc6010c3b9",
+      "stage": 4,
+      "en": "I am going to school tomorrow.",
+      "distractors_en": [
+        "I am reading a book.",
+        "My friend is happy.",
+        "The dog is in the yard."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_dddfa584731c",
+      "stage": 3,
+      "en": "This is water.",
+      "distractors_en": [
+        "I see water.",
+        "I want water.",
+        "I have water."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_dff619d28783",
+      "stage": 3,
+      "en": "This is a banana.",
+      "distractors_en": [
+        "I see a banana.",
+        "I want a banana.",
+        "I have a banana."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_f0a440a640d7",
+      "stage": 3,
+      "en": "This is milk.",
+      "distractors_en": [
+        "I see milk.",
+        "I want milk.",
+        "I have milk."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_46da205f218b",
+      "stage": 3,
+      "en": "This is bread.",
+      "distractors_en": [
+        "I see bread.",
+        "I want bread.",
+        "I have bread."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_ef1007d21378",
+      "stage": 9,
+      "en": "This is a bee.",
+      "distractors_en": [
+        "I see a bee.",
+        "I want a bee.",
+        "I have a bee."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_0cc86c8a5009",
+      "stage": 9,
+      "en": "This is a goat.",
+      "distractors_en": [
+        "I see a goat.",
+        "I want a goat.",
+        "I have a goat."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_0470d5785ecb",
+      "stage": 9,
+      "en": "This is a horse.",
+      "distractors_en": [
+        "I see a horse.",
+        "I want a horse.",
+        "I have a horse."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_917cac3e645d",
+      "stage": 9,
+      "en": "This is an ant.",
+      "distractors_en": [
+        "I see an ant.",
+        "I want an ant.",
+        "I have an ant."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_205fa9c5c735",
+      "stage": 9,
+      "en": "This is a fly.",
+      "distractors_en": [
+        "I see a fly.",
+        "I want a fly.",
+        "I have a fly."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_db96a575d7bd",
+      "stage": 9,
+      "en": "This is a sheep.",
+      "distractors_en": [
+        "I see a sheep.",
+        "I want a sheep.",
+        "I have a sheep."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_061ee20366bc",
+      "stage": 9,
+      "en": "This is a pig.",
+      "distractors_en": [
+        "I see a pig.",
+        "I want a pig.",
+        "I have a pig."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_2efc4121dd30",
+      "stage": 9,
+      "en": "This is a monkey.",
+      "distractors_en": [
+        "I see a monkey.",
+        "I want a monkey.",
+        "I have a monkey."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_373e9dbf85fd",
+      "stage": 9,
+      "en": "This is a snake.",
+      "distractors_en": [
+        "I see a snake.",
+        "I want a snake.",
+        "I have a snake."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_2a06b8068c70",
+      "stage": 9,
+      "en": "This is a rat.",
+      "distractors_en": [
+        "I see a rat.",
+        "I want a rat.",
+        "I have a rat."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_ac6499f44586",
+      "stage": 9,
+      "en": "This is a bird.",
+      "distractors_en": [
+        "I see a bird.",
+        "I want a bird.",
+        "I have a bird."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_65410b3f7ffc",
+      "stage": 9,
+      "en": "This is a cow.",
+      "distractors_en": [
+        "I see a cow.",
+        "I want a cow.",
+        "I have a cow."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_447629ffdae9",
+      "stage": 9,
+      "en": "This is a worm.",
+      "distractors_en": [
+        "I see a worm.",
+        "I want a worm.",
+        "I have a worm."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_9db93f0dbf10",
+      "stage": 3,
+      "en": "This is an orange.",
+      "distractors_en": [
+        "I see an orange.",
+        "I want an orange.",
+        "I have an orange."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_d59d7d4e62b3",
+      "stage": 3,
+      "en": "This is a berry.",
+      "distractors_en": [
+        "I see a berry.",
+        "I want a berry.",
+        "I have a berry."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_e025be1b21d0",
+      "stage": 3,
+      "en": "This is meat.",
+      "distractors_en": [
+        "I see meat.",
+        "I want meat.",
+        "I have meat."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_151ab39de9a5",
+      "stage": 3,
+      "en": "This is cheese.",
+      "distractors_en": [
+        "I see cheese.",
+        "I want cheese.",
+        "I have cheese."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_898b4901bba1",
+      "stage": 3,
+      "en": "This is fruit.",
+      "distractors_en": [
+        "I see fruit.",
+        "I want fruit.",
+        "I have fruit."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_37fc0932bc7b",
+      "stage": 3,
+      "en": "This is some nuts.",
+      "distractors_en": [
+        "I see some nuts.",
+        "I want some nuts.",
+        "I have some nuts."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_09605af6f076",
+      "stage": 3,
+      "en": "This is a potato.",
+      "distractors_en": [
+        "I see a potato.",
+        "I want a potato.",
+        "I have a potato."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_95054a39d657",
+      "stage": 3,
+      "en": "This is fish.",
+      "distractors_en": [
+        "I see fish.",
+        "I want fish.",
+        "I have fish."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_1f5643dc1003",
+      "stage": 3,
+      "en": "This is tea.",
+      "distractors_en": [
+        "I see tea.",
+        "I want tea.",
+        "I have tea."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_31cc59783812",
+      "stage": 3,
+      "en": "This is a cake.",
+      "distractors_en": [
+        "I see a cake.",
+        "I want a cake.",
+        "I have a cake."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_71c547317bbb",
+      "stage": 3,
+      "en": "This is an egg.",
+      "distractors_en": [
+        "I see an egg.",
+        "I want an egg.",
+        "I have an egg."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_5492f40855d6",
+      "stage": 3,
+      "en": "This is a soup.",
+      "distractors_en": [
+        "I see a soup.",
+        "I want a soup.",
+        "I have a soup."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_d267c66933e4",
+      "stage": 5,
+      "en": "This is a bath.",
+      "distractors_en": [
+        "I see a bath.",
+        "I want a bath.",
+        "I have a bath."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_2d7e909fec35",
+      "stage": 5,
+      "en": "This is a kettle.",
+      "distractors_en": [
+        "I see a kettle.",
+        "I want a kettle.",
+        "I have a kettle."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_121b92866167",
+      "stage": 5,
+      "en": "This is a bottle.",
+      "distractors_en": [
+        "I see a bottle.",
+        "I want a bottle.",
+        "I have a bottle."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_318ca445be3f",
+      "stage": 5,
+      "en": "This is a drawer.",
+      "distractors_en": [
+        "I see a drawer.",
+        "I want a drawer.",
+        "I have a drawer."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_43772fe2387f",
+      "stage": 5,
+      "en": "This is a key.",
+      "distractors_en": [
+        "I see a key.",
+        "I want a key.",
+        "I have a key."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_93bd75c69121",
+      "stage": 5,
+      "en": "This is a knife.",
+      "distractors_en": [
+        "I see a knife.",
+        "I want a knife.",
+        "I have a knife."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_59fb9ca3bfb4",
+      "stage": 5,
+      "en": "This is a curtain.",
+      "distractors_en": [
+        "I see a curtain.",
+        "I want a curtain.",
+        "I have a curtain."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_1396441467d0",
+      "stage": 5,
+      "en": "This is a spoon.",
+      "distractors_en": [
+        "I see a spoon.",
+        "I want a spoon.",
+        "I have a spoon."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_22891d938867",
+      "stage": 5,
+      "en": "This is a cushion.",
+      "distractors_en": [
+        "I see a cushion.",
+        "I want a cushion.",
+        "I have a cushion."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_f49087ca0466",
+      "stage": 5,
+      "en": "This is a fork.",
+      "distractors_en": [
+        "I see a fork.",
+        "I want a fork.",
+        "I have a fork."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_4d9d013632a0",
+      "stage": 5,
+      "en": "This is an oven.",
+      "distractors_en": [
+        "I see an oven.",
+        "I want an oven.",
+        "I have an oven."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_6eea9c0cbe20",
+      "stage": 5,
+      "en": "This is a bulb.",
+      "distractors_en": [
+        "I see a bulb.",
+        "I want a bulb.",
+        "I have a bulb."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_3ade931741d2",
+      "stage": 5,
+      "en": "This is a wall.",
+      "distractors_en": [
+        "I see a wall.",
+        "I want a wall.",
+        "I have a wall."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_b2e52d366be0",
+      "stage": 5,
+      "en": "This is a clock.",
+      "distractors_en": [
+        "I see a clock.",
+        "I want a clock.",
+        "I have a clock."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_1e0698919cd4",
+      "stage": 5,
+      "en": "This is a pot.",
+      "distractors_en": [
+        "I see a pot.",
+        "I want a pot.",
+        "I have a pot."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_2ef30b95ae90",
+      "stage": 5,
+      "en": "This is a comb.",
+      "distractors_en": [
+        "I see a comb.",
+        "I want a comb.",
+        "I have a comb."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_c88573e35970",
+      "stage": 5,
+      "en": "This is a floor.",
+      "distractors_en": [
+        "I see a floor.",
+        "I want a floor.",
+        "I have a floor."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_99028ad14aba",
+      "stage": 5,
+      "en": "This is a plate.",
+      "distractors_en": [
+        "I see a plate.",
+        "I want a plate.",
+        "I have a plate."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_45475f45f615",
+      "stage": 5,
+      "en": "This is a door.",
+      "distractors_en": [
+        "I see a door.",
+        "I want a door.",
+        "I have a door."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_7e0df9d5e08f",
+      "stage": 5,
+      "en": "This is a button.",
+      "distractors_en": [
+        "I see a button.",
+        "I want a button.",
+        "I have a button."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_7b5b0971cfad",
+      "stage": 5,
+      "en": "This is a box.",
+      "distractors_en": [
+        "I see a box.",
+        "I want a box.",
+        "I have a box."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_0fda69113dde",
+      "stage": 5,
+      "en": "This is a bucket.",
+      "distractors_en": [
+        "I see a bucket.",
+        "I want a bucket.",
+        "I have a bucket."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_cb1f30848b48",
+      "stage": 5,
+      "en": "This is a chair.",
+      "distractors_en": [
+        "I see a chair.",
+        "I want a chair.",
+        "I have a chair."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_186b8633b789",
+      "stage": 5,
+      "en": "This is a lock.",
+      "distractors_en": [
+        "I see a lock.",
+        "I want a lock.",
+        "I have a lock."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_6ede4b7ebb96",
+      "stage": 5,
+      "en": "This is a brush.",
+      "distractors_en": [
+        "I see a brush.",
+        "I want a brush.",
+        "I have a brush."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_1ea16d275dcc",
+      "stage": 5,
+      "en": "This is a table.",
+      "distractors_en": [
+        "I see a table.",
+        "I want a table.",
+        "I have a table."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_e666b504fd61",
+      "stage": 5,
+      "en": "This is a roof.",
+      "distractors_en": [
+        "I see a roof.",
+        "I want a roof.",
+        "I have a roof."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_36eafee51298",
+      "stage": 15,
+      "en": "This is a tree.",
+      "distractors_en": [
+        "I see a tree.",
+        "I want a tree.",
+        "I have a tree."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_1b5e23a9b3b3",
+      "stage": 15,
+      "en": "This is a farm.",
+      "distractors_en": [
+        "I see a farm.",
+        "I want a farm.",
+        "I have a farm."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_6c86296a420b",
+      "stage": 15,
+      "en": "This is a flower.",
+      "distractors_en": [
+        "I see a flower.",
+        "I want a flower.",
+        "I have a flower."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_49b374a3407e",
+      "stage": 15,
+      "en": "This is a river.",
+      "distractors_en": [
+        "I see a river.",
+        "I want a river.",
+        "I have a river."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_a8eb4d3fd5cd",
+      "stage": 15,
+      "en": "This is a leaf.",
+      "distractors_en": [
+        "I see a leaf.",
+        "I want a leaf.",
+        "I have a leaf."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_d246c7a2573d",
+      "stage": 15,
+      "en": "This is a garden.",
+      "distractors_en": [
+        "I see a garden.",
+        "I want a garden.",
+        "I have a garden."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_16aad6425924",
+      "stage": 15,
+      "en": "This is an island.",
+      "distractors_en": [
+        "I see an island.",
+        "I want an island.",
+        "I have an island."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_5a6eae40673c",
+      "stage": 15,
+      "en": "This is a moon.",
+      "distractors_en": [
+        "I see a moon.",
+        "I want a moon.",
+        "I have a moon."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_dea790769e0f",
+      "stage": 15,
+      "en": "This is a mountain.",
+      "distractors_en": [
+        "I see a mountain.",
+        "I want a mountain.",
+        "I have a mountain."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_67017ec36e50",
+      "stage": 16,
+      "en": "This is a cloud.",
+      "distractors_en": [
+        "I see a cloud.",
+        "I want a cloud.",
+        "I have a cloud."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_3a0e7adc1e49",
+      "stage": 15,
+      "en": "This is a feather.",
+      "distractors_en": [
+        "I see a feather.",
+        "I want a feather.",
+        "I have a feather."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_e390b3adadba",
+      "stage": 16,
+      "en": "This is a spring.",
+      "distractors_en": [
+        "I see a spring.",
+        "I want a spring.",
+        "I have a spring."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_29cb9d6f9048",
+      "stage": 15,
+      "en": "This is a root.",
+      "distractors_en": [
+        "I see a root.",
+        "I want a root.",
+        "I have a root."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_cce9c2d073c6",
+      "stage": 15,
+      "en": "This is a branch.",
+      "distractors_en": [
+        "I see a branch.",
+        "I want a branch.",
+        "I have a branch."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_8537608df666",
+      "stage": 15,
+      "en": "This is a seed.",
+      "distractors_en": [
+        "I see a seed.",
+        "I want a seed.",
+        "I have a seed."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_f81c573f75cb",
+      "stage": 15,
+      "en": "This is a sun.",
+      "distractors_en": [
+        "I see a sun.",
+        "I want a sun.",
+        "I have a sun."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_dd1016336d8b",
+      "stage": 15,
+      "en": "This is a star.",
+      "distractors_en": [
+        "I see a star.",
+        "I want a star.",
+        "I have a star."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_6ebc3824eed9",
+      "stage": 15,
+      "en": "This is a stem.",
+      "distractors_en": [
+        "I see a stem.",
+        "I want a stem.",
+        "I have a stem."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_20096615bb07",
+      "stage": 10,
+      "en": "This is a library.",
+      "distractors_en": [
+        "I see a library.",
+        "I want a library.",
+        "I have a library."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_1ab6b410a749",
+      "stage": 9,
+      "en": "I see a dog.",
+      "distractors_en": [
+        "This is a dog.",
+        "I want a dog.",
+        "I have a dog."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_4b71d0b62705",
+      "stage": 9,
+      "en": "I see a cat.",
+      "distractors_en": [
+        "This is a cat.",
+        "I want a cat.",
+        "I have a cat."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_3bc86aa81bbd",
+      "stage": 3,
+      "en": "I see some water.",
+      "distractors_en": [
+        "This is some water.",
+        "I want some water.",
+        "I have some water."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_bf4a144ac7f5",
+      "stage": 3,
+      "en": "I see a banana.",
+      "distractors_en": [
+        "This is a banana.",
+        "I want a banana.",
+        "I have a banana."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_5f50ba4ee655",
+      "stage": 3,
+      "en": "I see some milk.",
+      "distractors_en": [
+        "This is some milk.",
+        "I want some milk.",
+        "I have some milk."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_80c2d8d706f6",
+      "stage": 3,
+      "en": "I see an apple.",
+      "distractors_en": [
+        "This is an apple.",
+        "I want an apple.",
+        "I have an apple."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_53e9486b425e",
+      "stage": 3,
+      "en": "I see some bread.",
+      "distractors_en": [
+        "This is some bread.",
+        "I want some bread.",
+        "I have some bread."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_9fecda5cacbd",
+      "stage": 5,
+      "en": "I see a home.",
+      "distractors_en": [
+        "This is a home.",
+        "I want a home.",
+        "I have a home."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_5db35cb0f49b",
+      "stage": 9,
+      "en": "I see a bee.",
+      "distractors_en": [
+        "This is a bee.",
+        "I want a bee.",
+        "I have a bee."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_ac69200e7964",
+      "stage": 9,
+      "en": "I see a goat.",
+      "distractors_en": [
+        "This is a goat.",
+        "I want a goat.",
+        "I have a goat."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_769446e5b332",
+      "stage": 9,
+      "en": "I see a horse.",
+      "distractors_en": [
+        "This is a horse.",
+        "I want a horse.",
+        "I have a horse."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_823f473763b8",
+      "stage": 9,
+      "en": "I see an ant.",
+      "distractors_en": [
+        "This is an ant.",
+        "I want an ant.",
+        "I have an ant."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_db61fb2761d3",
+      "stage": 9,
+      "en": "I see a fly.",
+      "distractors_en": [
+        "This is a fly.",
+        "I want a fly.",
+        "I have a fly."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_d96f66b8f23e",
+      "stage": 9,
+      "en": "I see a sheep.",
+      "distractors_en": [
+        "This is a sheep.",
+        "I want a sheep.",
+        "I have a sheep."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_e8223131d7ba",
+      "stage": 9,
+      "en": "I see a pig.",
+      "distractors_en": [
+        "This is a pig.",
+        "I want a pig.",
+        "I have a pig."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_33800c6b8b94",
+      "stage": 9,
+      "en": "I see a monkey.",
+      "distractors_en": [
+        "This is a monkey.",
+        "I want a monkey.",
+        "I have a monkey."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_fada4e71e1ff",
+      "stage": 9,
+      "en": "I see a snake.",
+      "distractors_en": [
+        "This is a snake.",
+        "I want a snake.",
+        "I have a snake."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_2a744f5c64af",
+      "stage": 9,
+      "en": "I see a rat.",
+      "distractors_en": [
+        "This is a rat.",
+        "I want a rat.",
+        "I have a rat."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_b3cd19cb5eea",
+      "stage": 9,
+      "en": "I see a bird.",
+      "distractors_en": [
+        "This is a bird.",
+        "I want a bird.",
+        "I have a bird."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_2ae01d411017",
+      "stage": 9,
+      "en": "I see a cow.",
+      "distractors_en": [
+        "This is a cow.",
+        "I want a cow.",
+        "I have a cow."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_1269ce40ba85",
+      "stage": 9,
+      "en": "I see a worm.",
+      "distractors_en": [
+        "This is a worm.",
+        "I want a worm.",
+        "I have a worm."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_dcbf1b155624",
+      "stage": 3,
+      "en": "I see an orange.",
+      "distractors_en": [
+        "This is an orange.",
+        "I want an orange.",
+        "I have an orange."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_2c6e20916656",
+      "stage": 3,
+      "en": "I see a berry.",
+      "distractors_en": [
+        "This is a berry.",
+        "I want a berry.",
+        "I have a berry."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_4e65fe9601c5",
+      "stage": 3,
+      "en": "I see some meat.",
+      "distractors_en": [
+        "This is some meat.",
+        "I want some meat.",
+        "I have some meat."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_2d8bc6063c6c",
+      "stage": 3,
+      "en": "I see some cheese.",
+      "distractors_en": [
+        "This is some cheese.",
+        "I want some cheese.",
+        "I have some cheese."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_eebdbdedbc79",
+      "stage": 3,
+      "en": "I see some fruit.",
+      "distractors_en": [
+        "This is some fruit.",
+        "I want some fruit.",
+        "I have some fruit."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_c976683253ba",
+      "stage": 3,
+      "en": "I see some nuts.",
+      "distractors_en": [
+        "This is some nuts.",
+        "I want some nuts.",
+        "I have some nuts."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_320d59a01162",
+      "stage": 3,
+      "en": "I see a potato.",
+      "distractors_en": [
+        "This is a potato.",
+        "I want a potato.",
+        "I have a potato."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_93781eabcb93",
+      "stage": 3,
+      "en": "I see some fish.",
+      "distractors_en": [
+        "This is some fish.",
+        "I want some fish.",
+        "I have some fish."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_3b955f164838",
+      "stage": 3,
+      "en": "I see some tea.",
+      "distractors_en": [
+        "This is some tea.",
+        "I want some tea.",
+        "I have some tea."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_adaa4ea6624e",
+      "stage": 3,
+      "en": "I see a cake.",
+      "distractors_en": [
+        "This is a cake.",
+        "I want a cake.",
+        "I have a cake."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_973618bdb1d7",
+      "stage": 3,
+      "en": "I see an egg.",
+      "distractors_en": [
+        "This is an egg.",
+        "I want an egg.",
+        "I have an egg."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_24d5d8fd262b",
+      "stage": 3,
+      "en": "I see a soup.",
+      "distractors_en": [
+        "This is a soup.",
+        "I want a soup.",
+        "I have a soup."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_c1ba74cc3042",
+      "stage": 5,
+      "en": "I see a bath.",
+      "distractors_en": [
+        "This is a bath.",
+        "I want a bath.",
+        "I have a bath."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_7925e28392b3",
+      "stage": 5,
+      "en": "I see a kettle.",
+      "distractors_en": [
+        "This is a kettle.",
+        "I want a kettle.",
+        "I have a kettle."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_b5b8ed40b4c6",
+      "stage": 5,
+      "en": "I see a bottle.",
+      "distractors_en": [
+        "This is a bottle.",
+        "I want a bottle.",
+        "I have a bottle."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_a6d02bb9ea1d",
+      "stage": 5,
+      "en": "I see a drawer.",
+      "distractors_en": [
+        "This is a drawer.",
+        "I want a drawer.",
+        "I have a drawer."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_feaf22571d26",
+      "stage": 5,
+      "en": "I see a key.",
+      "distractors_en": [
+        "This is a key.",
+        "I want a key.",
+        "I have a key."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_1335d207371e",
+      "stage": 5,
+      "en": "I see a knife.",
+      "distractors_en": [
+        "This is a knife.",
+        "I want a knife.",
+        "I have a knife."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_c54987b2f23a",
+      "stage": 5,
+      "en": "I see a curtain.",
+      "distractors_en": [
+        "This is a curtain.",
+        "I want a curtain.",
+        "I have a curtain."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_ad4803fb3eec",
+      "stage": 5,
+      "en": "I see a spoon.",
+      "distractors_en": [
+        "This is a spoon.",
+        "I want a spoon.",
+        "I have a spoon."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_0e8a652dca02",
+      "stage": 5,
+      "en": "I see a cushion.",
+      "distractors_en": [
+        "This is a cushion.",
+        "I want a cushion.",
+        "I have a cushion."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_b31508e76064",
+      "stage": 5,
+      "en": "I see a fork.",
+      "distractors_en": [
+        "This is a fork.",
+        "I want a fork.",
+        "I have a fork."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_45928a56d1ad",
+      "stage": 5,
+      "en": "I see an oven.",
+      "distractors_en": [
+        "This is an oven.",
+        "I want an oven.",
+        "I have an oven."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_89ac38fb53a6",
+      "stage": 5,
+      "en": "I see a bulb.",
+      "distractors_en": [
+        "This is a bulb.",
+        "I want a bulb.",
+        "I have a bulb."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_63c435d3724f",
+      "stage": 5,
+      "en": "I see a wall.",
+      "distractors_en": [
+        "This is a wall.",
+        "I want a wall.",
+        "I have a wall."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_6219834c7b41",
+      "stage": 5,
+      "en": "I see a clock.",
+      "distractors_en": [
+        "This is a clock.",
+        "I want a clock.",
+        "I have a clock."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_324407e2f38c",
+      "stage": 5,
+      "en": "I see a pot.",
+      "distractors_en": [
+        "This is a pot.",
+        "I want a pot.",
+        "I have a pot."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_bd6b1aac6881",
+      "stage": 5,
+      "en": "I see a comb.",
+      "distractors_en": [
+        "This is a comb.",
+        "I want a comb.",
+        "I have a comb."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_faf0bf79b0d2",
+      "stage": 5,
+      "en": "I see a floor.",
+      "distractors_en": [
+        "This is a floor.",
+        "I want a floor.",
+        "I have a floor."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_15e11a6b7af1",
+      "stage": 5,
+      "en": "I see a plate.",
+      "distractors_en": [
+        "This is a plate.",
+        "I want a plate.",
+        "I have a plate."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_57cc6d3abbc8",
+      "stage": 5,
+      "en": "I see a door.",
+      "distractors_en": [
+        "This is a door.",
+        "I want a door.",
+        "I have a door."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_3254158bea07",
+      "stage": 5,
+      "en": "I see a button.",
+      "distractors_en": [
+        "This is a button.",
+        "I want a button.",
+        "I have a button."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_0180132fb3d4",
+      "stage": 5,
+      "en": "I see a box.",
+      "distractors_en": [
+        "This is a box.",
+        "I want a box.",
+        "I have a box."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_372cf9417748",
+      "stage": 5,
+      "en": "I see a bucket.",
+      "distractors_en": [
+        "This is a bucket.",
+        "I want a bucket.",
+        "I have a bucket."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_1b81a4a0fdfd",
+      "stage": 4,
+      "en": "I want a banana.",
+      "distractors_en": [
+        "This is a banana.",
+        "I see a banana.",
+        "I have a banana."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_73e03ebfa39e",
+      "stage": 4,
+      "en": "I want some milk.",
+      "distractors_en": [
+        "This is some milk.",
+        "I see some milk.",
+        "I have some milk."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_34c56bdcb1d6",
+      "stage": 4,
+      "en": "I want an apple.",
+      "distractors_en": [
+        "This is an apple.",
+        "I see an apple.",
+        "I have an apple."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_14413031e19e",
+      "stage": 4,
+      "en": "I want some bread.",
+      "distractors_en": [
+        "This is some bread.",
+        "I see some bread.",
+        "I have some bread."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_cef4bce90b0a",
+      "stage": 4,
+      "en": "I want an orange.",
+      "distractors_en": [
+        "This is an orange.",
+        "I see an orange.",
+        "I have an orange."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_9036900a1371",
+      "stage": 4,
+      "en": "I want a berry.",
+      "distractors_en": [
+        "This is a berry.",
+        "I see a berry.",
+        "I have a berry."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_fbdbf14cd28a",
+      "stage": 4,
+      "en": "I want some meat.",
+      "distractors_en": [
+        "This is some meat.",
+        "I see some meat.",
+        "I have some meat."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_f2e3ac28f91f",
+      "stage": 4,
+      "en": "I want some cheese.",
+      "distractors_en": [
+        "This is some cheese.",
+        "I see some cheese.",
+        "I have some cheese."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_409e955d785b",
+      "stage": 4,
+      "en": "I want some fruit.",
+      "distractors_en": [
+        "This is some fruit.",
+        "I see some fruit.",
+        "I have some fruit."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_920054297420",
+      "stage": 4,
+      "en": "I want some nuts.",
+      "distractors_en": [
+        "This is some nuts.",
+        "I see some nuts.",
+        "I have some nuts."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_a9469b9d03a9",
+      "stage": 4,
+      "en": "I want a potato.",
+      "distractors_en": [
+        "This is a potato.",
+        "I see a potato.",
+        "I have a potato."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_9b7c01cb0327",
+      "stage": 4,
+      "en": "I want some fish.",
+      "distractors_en": [
+        "This is some fish.",
+        "I see some fish.",
+        "I have some fish."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_25fc4c81be29",
+      "stage": 4,
+      "en": "I want some tea.",
+      "distractors_en": [
+        "This is some tea.",
+        "I see some tea.",
+        "I have some tea."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_e2473055d9ff",
+      "stage": 4,
+      "en": "I want a cake.",
+      "distractors_en": [
+        "This is a cake.",
+        "I see a cake.",
+        "I have a cake."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_059357f4a9ac",
+      "stage": 4,
+      "en": "I want an egg.",
+      "distractors_en": [
+        "This is an egg.",
+        "I see an egg.",
+        "I have an egg."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_2d44a3a84a82",
+      "stage": 4,
+      "en": "I want a soup.",
+      "distractors_en": [
+        "This is a soup.",
+        "I see a soup.",
+        "I have a soup."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_8374d10fed36",
+      "stage": 4,
+      "en": "I want some rice.",
+      "distractors_en": [
+        "This is some rice.",
+        "I see some rice.",
+        "I have some rice."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_59ee735acd75",
+      "stage": 4,
+      "en": "I want some butter.",
+      "distractors_en": [
+        "This is some butter.",
+        "I see some butter.",
+        "I have some butter."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_24a99d1b8f11",
+      "stage": 5,
+      "en": "I have a home.",
+      "distractors_en": [
+        "This is a home.",
+        "I see a home.",
+        "I want a home."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_61b8a82df29c",
+      "stage": 5,
+      "en": "I have a bath.",
+      "distractors_en": [
+        "This is a bath.",
+        "I see a bath.",
+        "I want a bath."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_e3db9f6a3608",
+      "stage": 5,
+      "en": "I have a kettle.",
+      "distractors_en": [
+        "This is a kettle.",
+        "I see a kettle.",
+        "I want a kettle."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_70fcc33b4d9a",
+      "stage": 5,
+      "en": "I have a bottle.",
+      "distractors_en": [
+        "This is a bottle.",
+        "I see a bottle.",
+        "I want a bottle."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_699e45b82aa6",
+      "stage": 5,
+      "en": "I have a drawer.",
+      "distractors_en": [
+        "This is a drawer.",
+        "I see a drawer.",
+        "I want a drawer."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_e02f349dc125",
+      "stage": 5,
+      "en": "I have a key.",
+      "distractors_en": [
+        "This is a key.",
+        "I see a key.",
+        "I want a key."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_b8419d51ce4d",
+      "stage": 5,
+      "en": "I have a knife.",
+      "distractors_en": [
+        "This is a knife.",
+        "I see a knife.",
+        "I want a knife."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_cd8147102914",
+      "stage": 5,
+      "en": "I have a curtain.",
+      "distractors_en": [
+        "This is a curtain.",
+        "I see a curtain.",
+        "I want a curtain."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_81e477190ed7",
+      "stage": 5,
+      "en": "I have a spoon.",
+      "distractors_en": [
+        "This is a spoon.",
+        "I see a spoon.",
+        "I want a spoon."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_a39a194473ca",
+      "stage": 5,
+      "en": "I have a cushion.",
+      "distractors_en": [
+        "This is a cushion.",
+        "I see a cushion.",
+        "I want a cushion."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_d9461766ff56",
+      "stage": 5,
+      "en": "I have a fork.",
+      "distractors_en": [
+        "This is a fork.",
+        "I see a fork.",
+        "I want a fork."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_46653c68990a",
+      "stage": 5,
+      "en": "I have an oven.",
+      "distractors_en": [
+        "This is an oven.",
+        "I see an oven.",
+        "I want an oven."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_c529f24ea634",
+      "stage": 5,
+      "en": "I have a bulb.",
+      "distractors_en": [
+        "This is a bulb.",
+        "I see a bulb.",
+        "I want a bulb."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_dc6ec83a5c9a",
+      "stage": 5,
+      "en": "I have a wall.",
+      "distractors_en": [
+        "This is a wall.",
+        "I see a wall.",
+        "I want a wall."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_78f6b032b453",
+      "stage": 5,
+      "en": "I have a clock.",
+      "distractors_en": [
+        "This is a clock.",
+        "I see a clock.",
+        "I want a clock."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_8f0db0c06eaa",
+      "stage": 5,
+      "en": "I have a pot.",
+      "distractors_en": [
+        "This is a pot.",
+        "I see a pot.",
+        "I want a pot."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_3f1ed3bde853",
+      "stage": 5,
+      "en": "I have a comb.",
+      "distractors_en": [
+        "This is a comb.",
+        "I see a comb.",
+        "I want a comb."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_6920e2bad4d2",
+      "stage": 5,
+      "en": "I have a floor.",
+      "distractors_en": [
+        "This is a floor.",
+        "I see a floor.",
+        "I want a floor."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_362c28b6f09e",
+      "stage": 5,
+      "en": "I have a plate.",
+      "distractors_en": [
+        "This is a plate.",
+        "I see a plate.",
+        "I want a plate."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_d3c5f3926c74",
+      "stage": 5,
+      "en": "I have a door.",
+      "distractors_en": [
+        "This is a door.",
+        "I see a door.",
+        "I want a door."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_41b94546b755",
+      "stage": 5,
+      "en": "I have a button.",
+      "distractors_en": [
+        "This is a button.",
+        "I see a button.",
+        "I want a button."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_7413fb24eab2",
+      "stage": 5,
+      "en": "I have a box.",
+      "distractors_en": [
+        "This is a box.",
+        "I see a box.",
+        "I want a box."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_ba1565892243",
+      "stage": 5,
+      "en": "I have a bucket.",
+      "distractors_en": [
+        "This is a bucket.",
+        "I see a bucket.",
+        "I want a bucket."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    },
+    {
+      "id": "hy_sentence_exp_c0104267e697",
+      "stage": 5,
+      "en": "I have a chair.",
+      "distractors_en": [
+        "This is a chair.",
+        "I see a chair.",
+        "I want a chair."
+      ],
+      "distractors_hy": [
+        "Բարև։",
+        "Շնորհակալություն։",
+        "Այո։"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "id": "hy_vat",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_needle_980400",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_hook_450646",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_ring_cb603f",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_angle_c900b0",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_stick_2ff535",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_arch_97f17d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_basin_3b4402",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_band_dfb1d9",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_flag_8ae8ba",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_rod_3f24d4",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_bell_a72889",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_cart_97536d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_card_9f5bcb",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_chain_6c759d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_circle_537ba7",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_basket_b56a6b",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_church_bd24d9",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_nail_1cd8c4",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_tail_8b1860",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_pipe_a683db",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_cord_4ca501",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_frame_56429a",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_match_7ca920",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_thread_5c79f3",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_whistle_919966",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_stamp_c7c7ee",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_brake_c677a8",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_jewel_390bb7",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_drop_48bdb8",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_line_8b5a21",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_engine_d8c95c",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_camera_2149ee",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_hammer_616c62",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_brick_8d4f65",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_knot_72283f",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_parcel_78d05b",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_spade_shovel_5de011",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_ball_921698",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_pump_6e7d6f",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_ayn",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_net_9a777e",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_receipt_711b69",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_wheel_88414c",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_sponge_bb0694",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_horn_4c5428",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_tray_87e9d6",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_sail_4a0804",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_screw_ce755d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_beran",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_arm_d795e4",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_maz",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_brain_9ea6f1",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_neck_bc4928",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_heart_f807db",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_tooth_663fd7",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_finger_8a669d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_face_ddbcc0",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_knee_133b45",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_throat_28915e",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_lip_4fc328",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_chin_b6ba67",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_muscle_ebf40c",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_nerve_776213",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_akanj",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_bone_8e434d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_skin_531cd8",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_chest_ecd5cb",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_sock_255336",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_shirt_b0878c",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_coat_7786a6",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_collar_184486",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_skirt_18af96",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_glove_28e471",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_pocket_d39842",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_guyn_8dab35",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_mokhraguyn_50d313",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_shaganakaguyn_8aa100",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_manushakaguyn_1bc5ec",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_akhper_730e06",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_mama_f4b4e7",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_papa_7a4cf7",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_tstesutyun_1bb980",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_hajoghutyun_9ab142",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_voghjuyn_8b888c",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_vonts_es_7f9965",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_vonts_ek_06ebda",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_mersi_72aa18",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_normal_9334b5",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_hacheli_e_595a75",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_barev_dzez_c97bfb",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_lav_em_866b0e",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_vat_em_eaa2e1",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_hing",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_tas",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_iny",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_ut",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_chors",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_vets",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_yot",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_payusak",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_map_32711a",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_scissors_5f1e31",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_picture_445c8e",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_board_ff565b",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_plane_7b4968",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_boat_8d6ef0",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_rail_d252d3",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_town_79ec62",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_ship_d5fc1d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_office_bcd63e",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_carriage_fd940b",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_lsel",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_nayel",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_bats",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_pak",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_sary",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_amenamets_f9997d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_amenapokr_f5189a",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_sirun_052916",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_yntani_kendani_bdb2fe",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_napastak_4b92d3",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_chagar_53902b",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_pigh_fb0ec4",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_yndzught_831bd2",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_aryuts_327b61",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_yndzaryuts_ee80db",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_gayl_30250f",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_arj_9ae380",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_kria_e8db62",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_vagr_9e6a86",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_muk_3652d0",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_aghves_471dde",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_kendanabanakan_aygi_d6bab0",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_narnjaguyn",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_vardaguyn",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_che_01a4b1",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_ha_b2c045",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_tsiran_315967",
+      "kind": "word",
+      "reason": "No curated English gloss."
+    },
+    {
+      "id": "hy_exp_bazuk_3f7c78",
+      "kind": "word",
+      "reason": "No curated English gloss."
+    },
+    {
+      "id": "hy_exp_gazar_954f2e",
+      "kind": "word",
+      "reason": "No curated English gloss."
+    },
+    {
+      "id": "hy_exp_kaghamb_6d1692",
+      "kind": "word",
+      "reason": "No curated English gloss."
+    },
+    {
+      "id": "hy_exp_varung_e209ff",
+      "kind": "word",
+      "reason": "No curated English gloss."
+    },
+    {
+      "id": "hy_exp_keras_6d7a86",
+      "kind": "word",
+      "reason": "No curated English gloss."
+    },
+    {
+      "id": "hy_exp_sokh_8c30e0",
+      "kind": "word",
+      "reason": "No curated English gloss."
+    },
+    {
+      "id": "hy_exp_yelak_23df47",
+      "kind": "word",
+      "reason": "No curated English gloss."
+    },
+    {
+      "id": "hy_exp_paghpaghak_452aa7",
+      "kind": "word",
+      "reason": "No curated English gloss."
+    },
+    {
+      "id": "hy_exp_smbuk_3b5c72",
+      "kind": "word",
+      "reason": "No curated English gloss."
+    },
+    {
+      "id": "hy_exp_meghr_463573",
+      "kind": "word",
+      "reason": "No curated English gloss."
+    },
+    {
+      "id": "hy_exp_deghdz_0fbc13",
+      "kind": "word",
+      "reason": "No curated English gloss."
+    },
+    {
+      "id": "hy_exp_lolik_d77e99",
+      "kind": "word",
+      "reason": "No curated English gloss."
+    },
+    {
+      "id": "hy_exp_salor_cdedf6",
+      "kind": "word",
+      "reason": "No curated English gloss."
+    },
+    {
+      "id": "hy_exp_boghk_5bda84",
+      "kind": "word",
+      "reason": "No curated English gloss."
+    },
+    {
+      "id": "hy_exp_matsun_8884b6",
+      "kind": "word",
+      "reason": "No curated English gloss."
+    },
+    {
+      "id": "hy_exp_ddum_b7be1a",
+      "kind": "word",
+      "reason": "No curated English gloss."
+    },
+    {
+      "id": "hy_exp_mijantsk_1f0338",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_bak_893cf4",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_mahchakal",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_arajin_hark_ff98fe",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_tun_veradardz_e4b736",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_hyurasenyak_56f0ba",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_ov_ka_54cba7",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_inch_e_ko_anuny_20b1db",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_sa_inch_e_dc10f8",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_vorteghits_es_06f14a",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_ur_es_gnum_8a71a6",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_yes_ut_tarekan_em_91e326",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_im_anuny_ani_e_d16586",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_kani_tarekan_es_6b10c2",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_yes_hayastanits_em_249828",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_yes_italiayits_em_77685b",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_yes_daniayits_em_856ced",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_aghjik_d474e9",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_tgha_d2ac04",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_khot_52900a",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_yes_e014b1",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_yes_unem_4312ae",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_na_0ebf14",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_na_uni_12e32f",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_duk_6f2139",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_duk_unek_9ae1dd",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_usutsich",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_mazer_fa3895",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_ko_het_44d59e",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_menak_97555b",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_or_a322ce",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_irar_het_380855",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_achker_3e4e4d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_amen_c27bb6",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_amen_or_8c76f8",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_zhamanak_cbba66",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_sirel_6b7b89",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_unenal_0d9708",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_nkarel_bd3150",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_knel_cc1858",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_anel_4d0e4c",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_talis_e_db2f25",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_antskatsnel_35ff81",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_durs_gal_01c499",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_uzenal_c8dbdc",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_animal_9257d0",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_burn_45ac70",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_adjustment_f3fee7",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_agreement_bc8f0f",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_harmony_9a12ae",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_grip_799fda",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_addition_59e415",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_love_da26e8",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_advertisement_f64ac3",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_industry_1ca70f",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_approval_799661",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_silver_f5bc36",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_argument_a97a98",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_art_ec6d33",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_insurance_7cd68f",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_attack_5f09eb",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_attention_a19b67",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_attractive_6cf14b",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_fear_bb787c",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_disgust_49f306",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_act_3d64c1",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_kiss_db23ba",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_connection_3f6da3",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_note_b309e8",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_need_837a7d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_hole_4d636a",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_kick_34bdd1",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_heat_3103c9",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_change_02d00a",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_field_caa54c",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_paper_c0b063",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_food_b79f18",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_sky_8e0388",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_blow_6fc699",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_company_d87d4e",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_competition_c0518a",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_condition_5398af",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_behavior_27cc8b",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_guide_2a4880",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_lead_eb739f",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_limit_089520",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_comparison_73f2ce",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_knowledge_fcd643",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_comfort_7712ce",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_cover_b39099",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_copy_368a2d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_run_9aa7f3",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_cotton_fd7a5e",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_belief_bf3b90",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_burst_2fbb61",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_crack_e02c50",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_growth_318b06",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_cook_5e377d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_leather_976df1",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_care_373a4e",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_curve_82ad8f",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_damage_20aba4",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_front_d2e370",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_ornament_03328c",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_representative_ee994d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_desire_f54489",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_detail_d2d6a3",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_size_7a927e",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_fall_332bf5",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_paint_dba076",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_manager_53dcb6",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_discussion_5559c5",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_amusement_9bb2ec",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_back_9392e4",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_echo_ddce28",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_building_3872ba",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_education_21ffa8",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_balance_cfbbe7",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_existence_711766",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_event_c78ce9",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_business_2eb734",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_porter_eed3e6",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_fact_a89956",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_property_86364a",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_iron_71fda1",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_flame_c31a59",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_end_f0b73a",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_meal_e483f7",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_mass_f1bef4",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_base_219ab7",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_form_95de14",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_force_2b4780",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_flight_c8acf5",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_fire_894471",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_ice_6653a7",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_judge_1b59db",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_control_5723ea",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_government_0a6bd6",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_group_d38b1f",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_idea_cae960",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_ink_906422",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_insect_23e624",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_interest_34b6b0",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_invention_8f630d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_side_f89218",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_join_072ba1",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_law_afee8d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_letter_db110f",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_liquid_e63ed9",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_list_5a6858",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_light_f91244",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_place_31fe9f",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_machine_56deef",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_disease_f24582",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_memory_7b32b6",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_market_7db23b",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_metal_03c4b4",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_middle_3a34bf",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_measure_a1348d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_bite_ad0548",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_motion_7e8592",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_move_dfcc85",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_music_bc3cf3",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_birth_455148",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_mist_204b4c",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_news_6aa977",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_amount_3cc06b",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_number_2ec735",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_hate_f6b8cc",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_offer_dbf7cb",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_oil_45ef21",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_shade_074aa5",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_order_d68efb",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_edge_506cd3",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_gold_d117ca",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_mind_f31341",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_observation_b8a358",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_peace_700f24",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_payment_1a3ac6",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_page_6c9e81",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_roll_89bc05",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_part_258f90",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_paste_0308e2",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_loss_4e5d0e",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_danger_cdcc95",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_person_bc2b38",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_bit_9e9b6c",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_pleasure_9cbb93",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_cry_b9ae9b",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_level_4b664a",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_plant_5bddf3",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_fight_baa21c",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_fold_bb099b",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_dust_bfd41a",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_nation_6fbdea",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_harbor_2b5392",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_position_294102",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_seat_d5d91d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_process_f38991",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_produce_d88848",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_design_e31e74",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_protest_738804",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_sign_5180d5",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_point_fea004",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_quality_2a236f",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_record_724288",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_rule_b38d47",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_relation_ecec43",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_reward_58ca7c",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_laugh_b5305d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_regret_1bbdcd",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_respect_9dcc26",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_effect_28648d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_rhythm_cd7407",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_noise_101338",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_lift_2e239c",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_jump_8fe779",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_crush_6c8d3e",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_science_113cb9",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_ray_18b529",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_discovery_718a2f",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_mark_b85e0d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_feeling_f6f139",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_smell_8d82c6",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_servant_bfcff5",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_sex_b15b8a",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_meaning_8c79fb",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_sleep_945efe",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_smile_399037",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_hope_195b77",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_push_8812cb",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_scale_b0bed0",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_print_265a4f",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_history_96d51c",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_instrument_b1caf5",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_development_aca371",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_land_946cdc",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_pull_c46209",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_cough_b83475",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_hearing_8041c7",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_humor_770176",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_profit_61c5bd",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_poison_22189b",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_shame_fa761c",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_glass_9aee31",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_breath_7274ec",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_body_fc9a6a",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_blood_7d3a02",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_daughter_5ee276",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_man_b4ecf6",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_air_1d624b",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_sea_ebe53a",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_sand_3d1c3f",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_chalk_be931d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_month_779019",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_night_a5d2c6",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_direction_a06fc6",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_exp_distance_fb351d",
+      "kind": "word",
+      "reason": "Italian gloss has not been reviewed."
+    },
+    {
+      "id": "hy_sentence_water_cold",
+      "kind": "sentence",
+      "reason": "Armenian form and recording need review."
+    },
+    {
+      "id": "hy_sentence_exp_eedb5ecfe803",
+      "kind": "sentence",
+      "reason": "English sentence translation needs curation; do not infer it from unreviewed glosses."
+    },
+    {
+      "id": "hy_sentence_exp_1c151a188373",
+      "kind": "sentence",
+      "reason": "English sentence translation needs curation; do not infer it from unreviewed glosses."
+    },
+    {
+      "id": "hy_sentence_exp_a3263a56ba2b",
+      "kind": "sentence",
+      "reason": "English sentence translation needs curation; do not infer it from unreviewed glosses."
+    },
+    {
+      "id": "hy_sentence_exp_9b00e164ce2f",
+      "kind": "sentence",
+      "reason": "English sentence translation needs curation; do not infer it from unreviewed glosses."
+    },
+    {
+      "id": "hy_sentence_exp_75d2df132e44",
+      "kind": "sentence",
+      "reason": "English sentence translation needs curation; do not infer it from unreviewed glosses."
+    },
+    {
+      "id": "hy_sentence_exp_545672403dc8",
+      "kind": "sentence",
+      "reason": "English sentence translation needs curation; do not infer it from unreviewed glosses."
+    },
+    {
+      "id": "hy_sentence_exp_8b6ff29b26cb",
+      "kind": "sentence",
+      "reason": "English sentence translation needs curation; do not infer it from unreviewed glosses."
+    },
+    {
+      "id": "hy_sentence_exp_a7338320b85c",
+      "kind": "sentence",
+      "reason": "English sentence translation needs curation; do not infer it from unreviewed glosses."
+    },
+    {
+      "id": "hy_sentence_exp_54116830b6e0",
+      "kind": "sentence",
+      "reason": "English sentence translation needs curation; do not infer it from unreviewed glosses."
+    },
+    {
+      "id": "hy_sentence_exp_f709d11810ee",
+      "kind": "sentence",
+      "reason": "English sentence translation needs curation; do not infer it from unreviewed glosses."
+    },
+    {
+      "id": "hy_sentence_exp_56ef8331ee57",
+      "kind": "sentence",
+      "reason": "English sentence translation needs curation; do not infer it from unreviewed glosses."
+    },
+    {
+      "id": "hy_sentence_exp_6d8e2fe63caf",
+      "kind": "sentence",
+      "reason": "English sentence translation needs curation; do not infer it from unreviewed glosses."
+    },
+    {
+      "id": "hy_sentence_exp_d133e0dfba1f",
+      "kind": "sentence",
+      "reason": "English sentence translation needs curation; do not infer it from unreviewed glosses."
+    },
+    {
+      "id": "hy_sentence_exp_2dca2ee036ae",
+      "kind": "sentence",
+      "reason": "English sentence translation needs curation; do not infer it from unreviewed glosses."
+    },
+    {
+      "id": "hy_sentence_exp_7d071379105f",
+      "kind": "sentence",
+      "reason": "English sentence translation needs curation; do not infer it from unreviewed glosses."
+    },
+    {
+      "id": "hy_sentence_exp_756d5bfe9642",
+      "kind": "sentence",
+      "reason": "English sentence translation needs curation; do not infer it from unreviewed glosses."
+    },
+    {
+      "id": "hy_sentence_exp_445225dbbfb4",
+      "kind": "sentence",
+      "reason": "English sentence translation needs curation; do not infer it from unreviewed glosses."
+    },
+    {
+      "id": "hy_sentence_exp_2a1331ab435c",
+      "kind": "sentence",
+      "reason": "English sentence translation needs curation; do not infer it from unreviewed glosses."
+    }
+  ]
+}

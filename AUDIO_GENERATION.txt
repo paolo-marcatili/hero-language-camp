@@ -1,5 +1,0 @@
-Scope: core
-Voice: da-DK-ChristelNeural
-Rate: -6%
-Generated: 2026-08-04T13:33:16Z
-MP3 files: 423

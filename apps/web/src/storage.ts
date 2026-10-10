@@ -1,6 +1,7 @@
 import type { LanguagePack } from "@hero-lang/content-schema";
 import { createInitialLearnerState, normalizeLearnerState, type LearnerState } from "@hero-lang/learning-engine";
 import type { LabyrinthSession } from "./labyrinth";
+import { safeLocalStorage, safeSessionStorage } from "./safeStorage";
 
 const STATE_KEY_PREFIX = "hero-language-camp:v0.9:state";
 const LEGACY_STATE_KEYS = ["hero-language-camp:v0.8:state", "hero-language-camp:v0.7:state", "hero-language-camp:v0.6:state", "hero-language-camp:v0.3:state", "hero-language-camp:v0.2:state", "hero-language-camp:state"];
@@ -61,7 +62,7 @@ export const DEFAULT_APPEARANCES: HeroAppearance[] = [
 
 export function loadChildProfiles(): ChildProfile[] {
   if (typeof window === "undefined") return defaultProfiles();
-  const raw = window.localStorage.getItem(PROFILES_KEY);
+  const raw = safeLocalStorage.getItem(PROFILES_KEY);
   if (!raw) {
     const profiles = defaultProfiles();
     saveChildProfiles(profiles);
@@ -80,19 +81,19 @@ export function loadChildProfiles(): ChildProfile[] {
 
 export function saveChildProfiles(profiles: ChildProfile[]): void {
   if (typeof window === "undefined") return;
-  window.localStorage.setItem(PROFILES_KEY, JSON.stringify(profiles));
+  safeLocalStorage.setItem(PROFILES_KEY, JSON.stringify(profiles));
 }
 
 export function loadActiveProfileId(profiles: ChildProfile[]): string {
   if (typeof window === "undefined") return profiles[0]?.id ?? "kid_1";
-  const stored = window.localStorage.getItem(ACTIVE_PROFILE_KEY);
+  const stored = safeLocalStorage.getItem(ACTIVE_PROFILE_KEY);
   if (stored && profiles.some((profile) => profile.id === stored)) return stored;
   return profiles[0]?.id ?? "kid_1";
 }
 
 export function saveActiveProfileId(profileId: string): void {
   if (typeof window === "undefined") return;
-  window.localStorage.setItem(ACTIVE_PROFILE_KEY, profileId);
+  safeLocalStorage.setItem(ACTIVE_PROFILE_KEY, profileId);
 }
 
 export function createChildProfile(name: string, index: number): ChildProfile {
@@ -121,14 +122,14 @@ export function loadAppSettings(pack: LanguagePack): AppSettings {
   let viewport: Partial<Pick<AppSettings, "viewportPreset" | "showDeviceFrame">> = {};
 
   try {
-    const raw = window.localStorage.getItem(SETTINGS_KEY);
+    const raw = safeLocalStorage.getItem(SETTINGS_KEY);
     persisted = raw ? JSON.parse(raw) as Partial<AppSettings> : {};
   } catch {
     persisted = {};
   }
 
   try {
-    const raw = window.sessionStorage.getItem(VIEWPORT_SETTINGS_KEY);
+    const raw = safeSessionStorage.getItem(VIEWPORT_SETTINGS_KEY);
     viewport = raw ? JSON.parse(raw) as Partial<Pick<AppSettings, "viewportPreset" | "showDeviceFrame">> : {};
   } catch {
     viewport = {};
@@ -160,12 +161,12 @@ export function saveAppSettings(settings: AppSettings): void {
     speedBonusEnabled: settings.speedBonusEnabled,
     targetPackId: settings.targetPackId
   };
-  window.localStorage.setItem(SETTINGS_KEY, JSON.stringify(persistentSettings));
+  safeLocalStorage.setItem(SETTINGS_KEY, JSON.stringify(persistentSettings));
 
   if (settings.viewportPreset === "auto" && !settings.showDeviceFrame) {
-    window.sessionStorage.removeItem(VIEWPORT_SETTINGS_KEY);
+    safeSessionStorage.removeItem(VIEWPORT_SETTINGS_KEY);
   } else {
-    window.sessionStorage.setItem(VIEWPORT_SETTINGS_KEY, JSON.stringify({
+    safeSessionStorage.setItem(VIEWPORT_SETTINGS_KEY, JSON.stringify({
       viewportPreset: settings.viewportPreset,
       showDeviceFrame: settings.showDeviceFrame
     }));
@@ -180,8 +181,8 @@ export function loadLearnerState(pack: LanguagePack, profile: ChildProfile): Lea
   if (typeof window === "undefined") return createInitialLearnerState(pack, profile.name);
 
   const scopedKey = getLearnerStateStorageKey(pack, profile.id);
-  const raw = window.localStorage.getItem(scopedKey)
-    ?? LEGACY_STATE_KEYS.map((prefix) => window.localStorage.getItem(`${prefix}:${pack.pack_id}`)).find(Boolean)
+  const raw = safeLocalStorage.getItem(scopedKey)
+    ?? LEGACY_STATE_KEYS.map((prefix) => safeLocalStorage.getItem(`${prefix}:${pack.pack_id}`)).find(Boolean)
     ?? null;
 
   if (!raw) return createInitialLearnerState(pack, profile.name);
@@ -198,8 +199,8 @@ export function saveLearnerState(pack: LanguagePack, profileId: string, state: L
   const key = getLearnerStateStorageKey(pack, profileId);
   const serialized = JSON.stringify(state);
   try {
-    if (window.localStorage.getItem(key) !== serialized) {
-      window.localStorage.setItem(key, serialized);
+    if (safeLocalStorage.getItem(key) !== serialized) {
+      safeLocalStorage.setItem(key, serialized);
     }
   } catch {
     // Keep the active session usable if storage is unavailable or full.
@@ -214,7 +215,7 @@ export function resetLearnerState(pack: LanguagePack, profile: ChildProfile): Le
 
 export function loadLabyrinthSession(pack: LanguagePack, profileId: string): LabyrinthSession | null {
   if (typeof window === "undefined") return null;
-  const raw = window.localStorage.getItem(`${LABYRINTH_KEY_PREFIX}:${pack.pack_id}:${profileId}`);
+  const raw = safeLocalStorage.getItem(`${LABYRINTH_KEY_PREFIX}:${pack.pack_id}:${profileId}`);
   if (!raw) return null;
   try {
     return JSON.parse(raw) as LabyrinthSession;
@@ -226,7 +227,7 @@ export function loadLabyrinthSession(pack: LanguagePack, profileId: string): Lab
 export function saveLabyrinthSession(pack: LanguagePack, profileId: string, session: LabyrinthSession): void {
   if (typeof window === "undefined") return;
   try {
-    window.localStorage.setItem(
+    safeLocalStorage.setItem(
       `${LABYRINTH_KEY_PREFIX}:${pack.pack_id}:${profileId}`,
       JSON.stringify(session)
     );
@@ -237,19 +238,19 @@ export function saveLabyrinthSession(pack: LanguagePack, profileId: string, sess
 
 export function clearLabyrinthSession(pack: LanguagePack, profileId: string): void {
   if (typeof window === "undefined") return;
-  window.localStorage.removeItem(`${LABYRINTH_KEY_PREFIX}:${pack.pack_id}:${profileId}`);
+  safeLocalStorage.removeItem(`${LABYRINTH_KEY_PREFIX}:${pack.pack_id}:${profileId}`);
 }
 
 export function loadBaseLanguage(pack: LanguagePack, fallback: string): string {
   if (typeof window === "undefined") return fallback;
-  const stored = window.localStorage.getItem(`${LANGUAGE_KEY_PREFIX}:${pack.pack_id}`)
-    ?? window.localStorage.getItem(`${LEGACY_LANGUAGE_KEY_PREFIX}:${pack.pack_id}`);
+  const stored = safeLocalStorage.getItem(`${LANGUAGE_KEY_PREFIX}:${pack.pack_id}`)
+    ?? safeLocalStorage.getItem(`${LEGACY_LANGUAGE_KEY_PREFIX}:${pack.pack_id}`);
   return stored ?? fallback;
 }
 
 export function saveBaseLanguage(pack: LanguagePack, language: string): void {
   if (typeof window === "undefined") return;
-  window.localStorage.setItem(`${LANGUAGE_KEY_PREFIX}:${pack.pack_id}`, language);
+  safeLocalStorage.setItem(`${LANGUAGE_KEY_PREFIX}:${pack.pack_id}`, language);
 }
 
 function defaultProfiles(): ChildProfile[] {

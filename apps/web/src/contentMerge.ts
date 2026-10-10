@@ -52,7 +52,7 @@ export function loadLocalPack(basePack: LanguagePack): LanguagePack {
     // chapters, audited Italian content, and expanded audio metadata. An older local snapshot
     // must inherit those bundled fields, while preserving user-recorded audio
     // and locally added dictionary entries.
-    const preferBundledCurriculum = compareVersions(parsed.version, "0.14.0") < 0;
+    const preferBundledCurriculum = compareVersions(parsed.version, basePack.version) < 0;
     return {
       ...basePack,
       ...parsed,
@@ -69,6 +69,11 @@ export function loadLocalPack(basePack: LanguagePack): LanguagePack {
       task_config: basePack.task_config ?? parsed.task_config,
       training_options: basePack.training_options ?? parsed.training_options,
       levels: basePack.levels ?? parsed.levels,
+      progression: basePack.progression,
+      enemy_fallback: basePack.enemy_fallback,
+      reading_problems: basePack.reading_problems,
+      math_problems: basePack.math_problems,
+      foundations_instructions: basePack.foundations_instructions,
       enemies: basePack.enemies ?? parsed.enemies,
       labyrinths: basePack.labyrinths ?? parsed.labyrinths,
       story: basePack.story ?? parsed.story,

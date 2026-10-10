@@ -53,7 +53,7 @@ export function setLearningAudioMode(mode: "human_only" | "human_and_automatic")
   if (learningAudioMode !== mode) stopCurrentLearningAudio();
   learningAudioMode = mode;
   if (typeof window !== "undefined") {
-    window.localStorage.setItem(LEARNING_AUDIO_MODE_KEY, mode);
+    try { window.localStorage.setItem(LEARNING_AUDIO_MODE_KEY, mode); } catch { /* storage unavailable */ }
   }
 }
 
@@ -62,7 +62,7 @@ export async function setAudioEnabled(nextEnabled: boolean): Promise<void> {
   enabled = nextEnabled;
   unlocked = false;
   if (typeof window !== "undefined") {
-    window.localStorage.setItem(AUDIO_PREFERENCE_KEY, nextEnabled ? "on" : "off");
+    try { window.localStorage.setItem(AUDIO_PREFERENCE_KEY, nextEnabled ? "on" : "off"); } catch { /* storage unavailable */ }
   }
   if (nextEnabled) await unlockAudio();
 }
@@ -220,8 +220,7 @@ async function playAudioElementAndWait(url: string): Promise<boolean> {
     const cleanup = () => {
       if (startTimer !== null) window.clearTimeout(startTimer);
       if (hardTimer !== null) window.clearTimeout(hardTimer);
-      element.removeEventListener("canplay", onPlaybackReady);
-      element.removeEventListener("playing", onPlaybackReady);
+      element.removeEventListener("playing", onPlaying);
       element.removeEventListener("ended", onEnded);
       element.removeEventListener("error", onError);
       element.removeEventListener("abort", onError);
@@ -235,18 +234,25 @@ async function playAudioElementAndWait(url: string): Promise<boolean> {
       if (currentLearningAudioFinish === finish) currentLearningAudioFinish = null;
       resolve(completed);
     };
-    const onPlaybackReady = () => {
+    const armHardTimer = () => {
+      if (hardTimer !== null) window.clearTimeout(hardTimer);
+      const clipMs = Number.isFinite(element.duration) && element.duration > 0 ? element.duration * 1000 : 0;
+      // Clip length plus slack for stalls: at least 15 s, at most 90 s.
+      hardTimer = window.setTimeout(() => finish(false), clipMs > 0 ? Math.min(90_000, Math.max(15_000, clipMs * 1.5 + 5_000)) : 90_000);
+    };
+    // Only 'playing' proves playback began. 'canplay' only means data is buffered; play() may still be pending.
+    const onPlaying = () => {
       if (startTimer !== null) {
         window.clearTimeout(startTimer);
         startTimer = null;
       }
+      armHardTimer();
     };
     const onEnded = () => finish(true);
     const onError = () => finish(false);
 
     currentLearningAudioFinish = finish;
-    element.addEventListener("canplay", onPlaybackReady, { once: true });
-    element.addEventListener("playing", onPlaybackReady, { once: true });
+    element.addEventListener("playing", onPlaying, { once: true });
     element.addEventListener("ended", onEnded, { once: true });
     element.addEventListener("error", onError, { once: true });
     element.addEventListener("abort", onError, { once: true });
@@ -451,12 +457,16 @@ function readLearningAudioMode(): "human_only" | "human_and_automatic" {
 }
 
 function readNamespacedPreference(key: string, legacyKey: string): string | null {
-  const stored = window.localStorage.getItem(key);
-  if (stored !== null) return stored;
-  if (STORAGE_NAMESPACE !== "hy-eastern-it") return null;
-  const legacy = window.localStorage.getItem(legacyKey);
-  if (legacy !== null) window.localStorage.setItem(key, legacy);
-  return legacy;
+  try {
+    const stored = window.localStorage.getItem(key);
+    if (stored !== null) return stored;
+    if (STORAGE_NAMESPACE !== "hy-eastern-it") return null;
+    const legacy = window.localStorage.getItem(legacyKey);
+    if (legacy !== null) window.localStorage.setItem(key, legacy);
+    return legacy;
+  } catch {
+    return null; // storage blocked (private mode, some WebViews): use defaults
+  }
 }
 
 function hasVoiceForLanguage(lang: string): boolean {

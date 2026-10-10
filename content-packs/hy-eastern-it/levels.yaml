@@ -638,4 +638,604 @@ levels:
       timer_seconds: 12
       sigmoid_k: 2.2
     chapter_id: "chapter_stage_24"
+  - number: 25
+    title: "Inviti e accordi"
+    stat_cap: 130
+    theme:
+      it: "Inviti e accordi"
+      en: "Invitations and arrangements"
+    learning_goal:
+      it: "Comprendere e collegare frasi su inviti e accordi; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about invitations and arrangements; explain a choice with a reason and practise a short exchange."
+    cefr: "a2"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:25"
+      - "tier:core"
+    chapter_id: "chapter_stage_25"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 26
+    title: "Raccontare una giornata"
+    stat_cap: 135
+    theme:
+      it: "Raccontare una giornata"
+      en: "Recounting a day"
+    learning_goal:
+      it: "Comprendere e collegare frasi su raccontare una giornata; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about recounting a day; explain a choice with a reason and practise a short exchange."
+    cefr: "a2"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:26"
+      - "tier:core"
+    chapter_id: "chapter_stage_26"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 27
+    title: "Chiedere chiarimenti"
+    stat_cap: 140
+    theme:
+      it: "Chiedere chiarimenti"
+      en: "Asking for clarification"
+    learning_goal:
+      it: "Comprendere e collegare frasi su chiedere chiarimenti; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about asking for clarification; explain a choice with a reason and practise a short exchange."
+    cefr: "a2"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:27"
+      - "tier:core"
+    chapter_id: "chapter_stage_27"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 28
+    title: "Scelte e preferenze"
+    stat_cap: 145
+    theme:
+      it: "Scelte e preferenze"
+      en: "Choices and preferences"
+    learning_goal:
+      it: "Comprendere e collegare frasi su scelte e preferenze; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about choices and preferences; explain a choice with a reason and practise a short exchange."
+    cefr: "a2"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:28"
+      - "tier:core"
+    chapter_id: "chapter_stage_28"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 29
+    title: "Viaggiare e orientarsi"
+    stat_cap: 150
+    theme:
+      it: "Viaggiare e orientarsi"
+      en: "Travel and directions"
+    learning_goal:
+      it: "Comprendere e collegare frasi su viaggiare e orientarsi; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about travel and directions; explain a choice with a reason and practise a short exchange."
+    cefr: "a2"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:29"
+      - "tier:core"
+    chapter_id: "chapter_stage_29"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 30
+    title: "Problemi quotidiani"
+    stat_cap: 155
+    theme:
+      it: "Problemi quotidiani"
+      en: "Everyday problems"
+    learning_goal:
+      it: "Comprendere e collegare frasi su problemi quotidiani; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about everyday problems; explain a choice with a reason and practise a short exchange."
+    cefr: "a2"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:30"
+      - "tier:core"
+    chapter_id: "chapter_stage_30"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 31
+    title: "Messaggi e istruzioni"
+    stat_cap: 160
+    theme:
+      it: "Messaggi e istruzioni"
+      en: "Messages and instructions"
+    learning_goal:
+      it: "Comprendere e collegare frasi su messaggi e istruzioni; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about messages and instructions; explain a choice with a reason and practise a short exchange."
+    cefr: "a2"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:31"
+      - "tier:core"
+    chapter_id: "chapter_stage_31"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 32
+    title: "Esperienze e piccoli racconti"
+    stat_cap: 165
+    theme:
+      it: "Esperienze e piccoli racconti"
+      en: "Experiences and short stories"
+    learning_goal:
+      it: "Comprendere e collegare frasi su esperienze e piccoli racconti; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about experiences and short stories; explain a choice with a reason and practise a short exchange."
+    cefr: "a2"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:32"
+      - "tier:core"
+    chapter_id: "chapter_stage_32"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 33
+    title: "Opinioni e motivi"
+    stat_cap: 170
+    theme:
+      it: "Opinioni e motivi"
+      en: "Opinions and reasons"
+    learning_goal:
+      it: "Comprendere e collegare frasi su opinioni e motivi; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about opinions and reasons; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:33"
+      - "tier:core"
+    chapter_id: "chapter_stage_33"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 34
+    title: "Progetti e condizioni"
+    stat_cap: 175
+    theme:
+      it: "Progetti e condizioni"
+      en: "Plans and conditions"
+    learning_goal:
+      it: "Comprendere e collegare frasi su progetti e condizioni; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about plans and conditions; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:34"
+      - "tier:core"
+    chapter_id: "chapter_stage_34"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 35
+    title: "Raccontare un imprevisto"
+    stat_cap: 180
+    theme:
+      it: "Raccontare un imprevisto"
+      en: "Narrating an unexpected event"
+    learning_goal:
+      it: "Comprendere e collegare frasi su raccontare un imprevisto; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about narrating an unexpected event; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:35"
+      - "tier:core"
+    chapter_id: "chapter_stage_35"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 36
+    title: "Descrivere persone e luoghi"
+    stat_cap: 185
+    theme:
+      it: "Descrivere persone e luoghi"
+      en: "Describing people and places"
+    learning_goal:
+      it: "Comprendere e collegare frasi su descrivere persone e luoghi; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about describing people and places; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:36"
+      - "tier:core"
+    chapter_id: "chapter_stage_36"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 37
+    title: "Collaborare e negoziare"
+    stat_cap: 190
+    theme:
+      it: "Collaborare e negoziare"
+      en: "Working together and negotiating"
+    learning_goal:
+      it: "Comprendere e collegare frasi su collaborare e negoziare; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about working together and negotiating; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:37"
+      - "tier:core"
+    chapter_id: "chapter_stage_37"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 38
+    title: "Notizie e fonti"
+    stat_cap: 195
+    theme:
+      it: "Notizie e fonti"
+      en: "News and sources"
+    learning_goal:
+      it: "Comprendere e collegare frasi su notizie e fonti; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about news and sources; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:38"
+      - "tier:core"
+    chapter_id: "chapter_stage_38"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 39
+    title: "Ambiente e abitudini"
+    stat_cap: 200
+    theme:
+      it: "Ambiente e abitudini"
+      en: "Environment and habits"
+    learning_goal:
+      it: "Comprendere e collegare frasi su ambiente e abitudini; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about environment and habits; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:39"
+      - "tier:core"
+    chapter_id: "chapter_stage_39"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 40
+    title: "Tradizioni e confronti"
+    stat_cap: 205
+    theme:
+      it: "Tradizioni e confronti"
+      en: "Traditions and comparisons"
+    learning_goal:
+      it: "Comprendere e collegare frasi su tradizioni e confronti; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about traditions and comparisons; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:40"
+      - "tier:core"
+    chapter_id: "chapter_stage_40"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 41
+    title: "Emozioni e punti di vista"
+    stat_cap: 210
+    theme:
+      it: "Emozioni e punti di vista"
+      en: "Feelings and perspectives"
+    learning_goal:
+      it: "Comprendere e collegare frasi su emozioni e punti di vista; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about feelings and perspectives; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:41"
+      - "tier:core"
+    chapter_id: "chapter_stage_41"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 42
+    title: "Chiedere un servizio"
+    stat_cap: 215
+    theme:
+      it: "Chiedere un servizio"
+      en: "Requesting a service"
+    learning_goal:
+      it: "Comprendere e collegare frasi su chiedere un servizio; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about requesting a service; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:42"
+      - "tier:core"
+    chapter_id: "chapter_stage_42"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 43
+    title: "Riassumere e riferire"
+    stat_cap: 220
+    theme:
+      it: "Riassumere e riferire"
+      en: "Summarising and reporting"
+    learning_goal:
+      it: "Comprendere e collegare frasi su riassumere e riferire; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about summarising and reporting; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:43"
+      - "tier:core"
+    chapter_id: "chapter_stage_43"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 44
+    title: "Imparare e migliorare"
+    stat_cap: 225
+    theme:
+      it: "Imparare e migliorare"
+      en: "Learning and improving"
+    learning_goal:
+      it: "Comprendere e collegare frasi su imparare e migliorare; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about learning and improving; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:44"
+      - "tier:core"
+    chapter_id: "chapter_stage_44"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 45
+    title: "Racconti e immaginazione"
+    stat_cap: 230
+    theme:
+      it: "Racconti e immaginazione"
+      en: "Stories and imagination"
+    learning_goal:
+      it: "Comprendere e collegare frasi su racconti e immaginazione; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about stories and imagination; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:45"
+      - "tier:core"
+    chapter_id: "chapter_stage_45"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 46
+    title: "Comunità e responsabilità"
+    stat_cap: 235
+    theme:
+      it: "Comunità e responsabilità"
+      en: "Community and responsibility"
+    learning_goal:
+      it: "Comprendere e collegare frasi su comunità e responsabilità; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about community and responsibility; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:46"
+      - "tier:core"
+    chapter_id: "chapter_stage_46"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 47
+    title: "Scegliere con informazioni incomplete"
+    stat_cap: 240
+    theme:
+      it: "Scegliere con informazioni incomplete"
+      en: "Deciding with incomplete information"
+    learning_goal:
+      it: "Comprendere e collegare frasi su scegliere con informazioni incomplete; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about deciding with incomplete information; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:47"
+      - "tier:core"
+    chapter_id: "chapter_stage_47"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 48
+    title: "Un progetto completo"
+    stat_cap: 245
+    theme:
+      it: "Un progetto completo"
+      en: "An integrated project"
+    learning_goal:
+      it: "Comprendere e collegare frasi su un progetto completo; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about an integrated project; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:48"
+      - "tier:core"
+    chapter_id: "chapter_stage_48"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
 # END GENERATED CURRICULUM V2: levels

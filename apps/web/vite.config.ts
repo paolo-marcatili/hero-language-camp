@@ -17,6 +17,20 @@ export default defineConfig({
     "import.meta.env.VITE_DANISH_APP_URL": JSON.stringify(danishAppUrl)
   },
   plugins: [react()],
+  build: {
+    // Phaser is lazy-loaded (about 1.2 MB minified); keep the warning meaningful for everything else.
+    chunkSizeWarningLimit: 2000,
+    rolldownOptions: {
+      output: {
+        codeSplitting: {
+          groups: [
+            { name: "phaser", test: /node_modules[\\/]phaser[\\/]/, priority: 20 },
+            { name: "react-vendor", test: /node_modules[\\/](?:react|react-dom|scheduler)[\\/]/, priority: 10 }
+          ]
+        }
+      }
+    }
+  },
   server: {
     host: "127.0.0.1",
     port: 5173,

@@ -6,537 +6,1503 @@ opening:
   it: Lettere e numeri sono stati dispersi nel regno. In ogni capitolo l’eroe li raccoglie e impara a usarli per leggere, contare e calcolare.
 milestones: []
 chapters:
-  - id: chapter_0_light_gate
+  - id: school_0
     minimum_level: 0
     title:
-      da: Kapitel 0 · Lysets port
-      it: Capitolo 0 · La porta della luce
+      da: 0. klasse · 1A · Velkommen og lytning
     summary:
-      da: Lyt til begyndelseslyde, find de første bogstaver og tæl fra 0 til 3.
-      it: Ascolta i suoni iniziali, trova le prime lettere e conta da 0 a 3.
+      da: Lyt til en kort besked, og fortæl dit navn. Tæl og sammenlign mængder til 3. Sortér efter en udtrykkelig egenskab.
     fiction:
-      da: En morgen er skiltene ved Lysets Port blevet tomme. Solvogteren kan ikke se, hvilken vej der fører hjem, og tre lyssten ligger spredt på jorden. Helten må lytte nøje, vække bogstaverne s, o, l, m og a og tælle stenene, før porten åbner.
-      it: Una mattina i cartelli della Porta della Luce sono diventati vuoti. Il guardiano non sa più quale strada porti a casa e tre pietre luminose sono sparse a terra. L’eroe deve ascoltare con attenzione, risvegliare le lettere s, o, l, m e a e contare le pietre per aprire la porta.
+      da: Helten følger stien til velkommen og lytning. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
     lesson:
       title:
-        da: Et bogstav har et navn og en lyd
-        it: Una lettera ha un nome e un suono
+        da: Velkommen og lytning
       objectives:
-        - da: Høre den første lyd i et kendt ord.
-          it: Riconoscere il primo suono di una parola conosciuta.
-        - da: Genkende store og små S, O, L, M og A.
-          it: Riconoscere S, O, L, M e A maiuscole e minuscole.
-        - da: Tælle mængder fra 0 til 3 ved at pege på én ting ad gangen.
-          it: Contare quantità da 0 a 3 indicando un elemento alla volta.
+        - da: Lyt til en kort besked, og fortæl dit navn.
+        - da: Tæl og sammenlign mængder til 3.
+        - da: Sortér efter en udtrykkelig egenskab.
       explanation:
-        da: Et bogstav har et navn, men når vi læser, lytter vi især efter dets lyd. Ordet sol begynder med s. Ordet lam begynder med l. Når du tæller, skal hver ting kun tælles én gang. Nul betyder, at der ikke er nogen.
-        it: Una lettera ha un nome, ma quando leggiamo ascoltiamo soprattutto il suo suono. La parola sol inizia con s. La parola lam inizia con l. Quando conti, ogni elemento va contato una sola volta. Zero significa che non ce ne sono.
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Lyt til en kort besked, og fortæl dit navn. Tæl og sammenlign mængder til 3.
       examples:
-        - target: S s · sol
+        - target: Ida har en rød bold. Bo har en blå bil. Ida giver bolden til Bo. De leger sammen.
           translation:
-            da: Ordet sol begynder med s.
-            it: La parola sol inizia con s.
-        - target: L l · lam
-          translation:
-            da: Ordet lam begynder med l.
-            it: La parola lam inizia con l.
-        - target: ● ● ● = 3
-          translation:
-            da: Tre prikker passer til tallet 3.
-            it: Tre punti corrispondono al numero 3.
-      common_mistakes:
-        - da: Bogstavets navn og bogstavets lyd er ikke altid det samme.
-          it: Il nome e il suono della lettera non sono sempre uguali.
-        - da: Peg på hver ting én gang, når du tæller.
-          it: Indica ogni elemento una sola volta mentre conti.
+            da: Ida har en rød bold. Bo har en blå bil. Ida giver bolden til Bo. De leger sammen.
     mission:
-      da: Find de rigtige begyndelsesbogstaver, tænd tre lyssten og åbn porten.
-      it: Trova le lettere iniziali corrette, accendi tre pietre e apri la porta.
-  - id: chapter_1_sound_forest
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Lyt til en kort besked, og fortæl dit navn. Tæl og sammenlign mængder til 3.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_1
     minimum_level: 1
     title:
-      da: Kapitel 1 · Klangskoven
-      it: Capitolo 1 · La foresta dei suoni
+      da: 0. klasse · 1B · Velkommen og lytning
     summary:
-      da: Mød i, n og t, byg korte ord og forbind tallene 0 til 5 med mængder.
-      it: Incontra i, n e t, costruisci parole brevi e collega i numeri da 0 a 5 alle quantità.
+      da: Lyt til en kort besked, og fortæl dit navn. Tæl og sammenlign mængder til 3. Sortér efter en udtrykkelig egenskab.
     fiction:
-      da: Bag porten ligger Klangskoven. Træerne hvisker små ord, men vinden har blandet bogstaverne. En stol mangler sit navn, en is smelter, og nattens skilt er faldet fra hinanden. Helten må samle i, n og t og sætte bogstaverne i den rigtige rækkefølge.
-      it: Oltre la porta si trova la Foresta dei Suoni. Gli alberi sussurrano parole brevi, ma il vento ha mescolato le lettere. Una sedia ha perso il suo nome, un gelato si sta sciogliendo e il cartello della notte è caduto a pezzi. L’eroe deve raccogliere i, n e t e rimettere le lettere nell’ordine giusto.
+      da: Helten følger stien til velkommen og lytning. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
     lesson:
       title:
-        da: Lyde kan sættes sammen til ord
-        it: I suoni possono essere uniti per formare parole
+        da: Velkommen og lytning
       objectives:
-        - da: Genkende i, n og t og deres store former.
-          it: Riconoscere i, n e t e le loro forme maiuscole.
-        - da: Bygge og læse ord som is, lim, tal, nat, stol og ost.
-          it: Costruire e leggere parole come is, lim, tal, nat, stol e ost.
-        - da: Koble tallene 0 til 5 til de rigtige mængder.
-          it: Collegare i numeri da 0 a 5 alle quantità corrette.
+        - da: Lyt til en kort besked, og fortæl dit navn.
+        - da: Tæl og sammenlign mængder til 3.
+        - da: Sortér efter en udtrykkelig egenskab.
       explanation:
-        da: Når du bygger et ord, lytter du til lydene i rækkefølge. I ordet is kommer i først og s bagefter. I ordet nat kommer n, a og t. Et skrevet tal fortæller, hvor mange ting der er, også når tingene ser forskellige ud.
-        it: Quando costruisci una parola, ascolta i suoni nell’ordine corretto. Nella parola is viene prima i e poi s. Nella parola nat trovi n, a e t. Un numero scritto indica quanti elementi ci sono, anche se gli oggetti sono diversi.
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Lyt til en kort besked, og fortæl dit navn. Tæl og sammenlign mængder til 3.
       examples:
-        - target: i · s → is
+        - target: Ida har en rød bold. Bo har en blå bil. Ida giver bolden til Bo. De leger sammen.
           translation:
-            da: To bogstavlyde bliver til ordet is.
-            it: Due suoni formano la parola is.
-        - target: n · a · t → nat
-          translation:
-            da: Tre lyde bliver til ordet nat.
-            it: Tre suoni formano la parola nat.
-        - target: 5 ↔ ● ● ● ● ●
-          translation:
-            da: Tallet 5 passer til fem ting.
-            it: Il numero 5 corrisponde a cinque elementi.
-      common_mistakes:
-        - da: Start altid ved ordets første lyd og gå mod højre.
-          it: Inizia dal primo suono della parola e procedi verso destra.
-        - da: Tallet er ikke en tegning af tingene; det fortæller kun hvor mange.
-          it: Il numero non è il disegno degli oggetti; indica soltanto quanti sono.
+            da: Ida har en rød bold. Bo har en blå bil. Ida giver bolden til Bo. De leger sammen.
     mission:
-      da: Giv skovens ting deres ord tilbage, og læg fem lydfrø i de rigtige kurve.
-      it: Restituisci i nomi agli oggetti della foresta e metti cinque semi sonori nei cesti corretti.
-  - id: chapter_2_echo_meadow
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Lyt til en kort besked, og fortæl dit navn. Tæl og sammenlign mængder til 3.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_2
     minimum_level: 2
     title:
-      da: Kapitel 2 · Ekkoengen
-      it: Capitolo 2 · Il prato dell’eco
+      da: 0. klasse · 2A · Rim og rytme
     summary:
-      da: Lær e, r og f, læs familieord og bliv sikker på mængder til 5.
-      it: Impara e, r e f, leggi parole della famiglia e consolida le quantità fino a 5.
+      da: Lyt efter rim, og klap stavelser i kendte navne. Forbind tal og mængder til 5. Fortsæt et skiftende mønster.
     fiction:
-      da: På Ekkoengen gentager vinden alt, hvad helten siger. En fe har gemt fem små klokker, men ekkoet blander ordene far, mor og ren. Helten må lytte til begyndelsen af hvert ord og tælle klokkerne uden at lade sig snyde af ekkoet.
-      it: Nel Prato dell’Eco il vento ripete tutto ciò che dice l’eroe. Una fata ha nascosto cinque campanelli, ma l’eco confonde le parole far, mor e ren. L’eroe deve ascoltare l’inizio di ogni parola e contare i campanelli senza farsi ingannare.
+      da: Helten følger stien til rim og rytme. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
     lesson:
       title:
-        da: Brug kendte bogstaver i nye ord
-        it: Usa le lettere conosciute in parole nuove
+        da: Rim og rytme
       objectives:
-        - da: Genkende e, r og f.
-          it: Riconoscere e, r e f.
-        - da: Læse og bygge fem, ren, far, mor, en og fe.
-          it: Leggere e costruire fem, ren, far, mor, en e fe.
-        - da: Genkende samme mængde på forskellige billeder.
-          it: Riconoscere la stessa quantità in immagini diverse.
+        - da: Lyt efter rim, og klap stavelser i kendte navne.
+        - da: Forbind tal og mængder til 5.
+        - da: Fortsæt et skiftende mønster.
       explanation:
-        da: Nye ord bliver lettere, når nogle af bogstaverne allerede er kendte. I fem kender du allerede m. Nu føjer du f og e til. Nogle meget almindelige ord, som far og mor, skal både lydes og huskes som hele ord.
-        it: Le parole nuove diventano più facili quando alcune lettere sono già note. In fem conosci già m e aggiungi f ed e. Alcune parole molto comuni, come far e mor, vanno sia decodificate sia riconosciute come parole intere.
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Lyt efter rim, og klap stavelser i kendte navne. Forbind tal og mængder til 5.
       examples:
-        - target: f · e · m → fem
+        - target: Bo klapper sit navn én gang. Ida klapper sit navn to gange. Børnene synger om en mus i et hus. Derefter tegner de musen.
           translation:
-            da: Bogstaverne danner både et ord og navnet på tallet 5.
-            it: Le lettere formano una parola che è anche il nome del numero 5.
-        - target: f · a · r → far
-          translation:
-            da: Far er et almindeligt ord, som vi møder tit.
-            it: Far è una parola comune che incontriamo spesso.
-        - target: 4 æbler = 4 stjerner
-          translation:
-            da: Mængden er den samme, selv om tingene er forskellige.
-            it: La quantità è uguale anche se gli oggetti sono diversi.
-      common_mistakes:
-        - da: Se på alle bogstaverne; gæt ikke kun ud fra det første.
-          it: Guarda tutte le lettere, non indovinare soltanto dalla prima.
+            da: Bo klapper sit navn én gang. Ida klapper sit navn to gange. Børnene synger om en mus i et hus. Derefter tegner de musen.
     mission:
-      da: Læs ekkoets ord og saml præcis fem klokker til feen.
-      it: Leggi le parole dell’eco e raccogli esattamente cinque campanelli per la fata.
-  - id: chapter_3_ten_steps
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Lyt efter rim, og klap stavelser i kendte navne. Forbind tal og mængder til 5.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_3
     minimum_level: 3
     title:
-      da: Kapitel 3 · Ti-trinnet
-      it: Capitolo 3 · I dieci gradini
+      da: 0. klasse · 2B · Rim og rytme
     summary:
-      da: Mød u, b og k, læs flere korte ord og arbejd med tallene til 10.
-      it: Incontra u, b e k, leggi altre parole brevi e lavora con i numeri fino a 10.
+      da: Lyt efter rim, og klap stavelser i kendte navne. Forbind tal og mængder til 5. Fortsæt et skiftende mønster.
     fiction:
-      da: "En gammel trappe fører op mod Ordtårnet. Den har ti trin, men nogle tal er forsvundet. På hvert trin står et lille billede: en mus, en bus, en bil eller en kat. Helten må læse skiltene og sætte tallene i den rigtige rækkefølge."
-      it: "Una vecchia scala conduce alla Torre delle Parole. Ha dieci gradini, ma alcuni numeri sono scomparsi. Su ogni gradino c’è una piccola immagine: un topo, un autobus, un’auto o un gatto. L’eroe deve leggere i cartelli e rimettere i numeri nell’ordine corretto."
+      da: Helten følger stien til rim og rytme. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
     lesson:
       title:
-        da: Læs hele ordet, og brug talrækken
-        it: Leggi tutta la parola e usa la linea dei numeri
+        da: Rim og rytme
       objectives:
-        - da: Genkende u, b og k.
-          it: Riconoscere u, b e k.
-        - da: Læse mus, bus, bil, kat, tak, buk og korn.
-          it: Leggere mus, bus, bil, kat, tak, buk e korn.
-        - da: Tælle og ordne tallene fra 0 til 10.
-          it: Contare e ordinare i numeri da 0 a 10.
-        - da: Lægge sammen og trække fra med synlige ting inden for 10.
-          it: Sommare e sottrarre con oggetti visibili entro il 10.
+        - da: Lyt efter rim, og klap stavelser i kendte navne.
+        - da: Forbind tal og mængder til 5.
+        - da: Fortsæt et skiftende mønster.
       explanation:
-        da: Når ord bliver lidt længere, læser du stadig fra venstre mod højre. Del ordet op i små lydbidder, hvis det hjælper. På talrækken kommer hvert tal én plads efter det forrige. Plus samler to grupper. Minus fjerner en del af en gruppe.
-        it: Quando le parole diventano un po’ più lunghe, continua a leggere da sinistra a destra. Se serve, dividile in piccoli gruppi di suoni. Sulla linea dei numeri ogni numero viene dopo il precedente. Il più unisce due gruppi; il meno ne toglie una parte.
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Lyt efter rim, og klap stavelser i kendte navne. Forbind tal og mængder til 5.
       examples:
-        - target: m · u · s → mus
+        - target: Bo klapper sit navn én gang. Ida klapper sit navn to gange. Børnene synger om en mus i et hus. Derefter tegner de musen.
           translation:
-            da: Læs én lyd ad gangen og saml dem til mus.
-            it: Leggi un suono alla volta e uniscili per formare mus.
-        - target: 5 · 6 · 7
-          translation:
-            da: 6 står mellem 5 og 7.
-            it: 6 si trova tra 5 e 7.
-        - target: 4 + 3 = 7
-          translation:
-            da: Fire og tre mere er syv.
-            it: Quattro più tre fa sette.
-      common_mistakes:
-        - da: Ved minus skal du starte med den første gruppe og tage den anden væk.
-          it: Nella sottrazione parti dal primo gruppo e togline il secondo.
+            da: Bo klapper sit navn én gang. Ida klapper sit navn to gange. Børnene synger om en mus i et hus. Derefter tegner de musen.
     mission:
-      da: Genskab de ti trin, læs skiltene og nå frem til Ordtårnets dør.
-      it: Ricostruisci i dieci gradini, leggi i cartelli e raggiungi la porta della Torre delle Parole.
-  - id: chapter_4_word_tower
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Lyt efter rim, og klap stavelser i kendte navne. Forbind tal og mængder til 5.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_4
     minimum_level: 4
     title:
-      da: Kapitel 4 · Ordtårnet
-      it: Capitolo 4 · La torre delle parole
+      da: 0. klasse · 3A · Lyde og bogstaver
     summary:
-      da: Lær h, p og v, læs flere ord og sammenlign mængder til 10.
-      it: Impara h, p e v, leggi altre parole e confronta quantità fino a 10.
+      da: Forbind begyndelseslyde med de første bogstaver. Ordne tal til 5 og finde én mere. Beskriv foran, bagved og ved siden af.
     fiction:
-      da: I Ordtårnet ligger bøgerne i to store bunker. Ordmagikeren siger, at den højeste bunke altid har flest bøger, men det passer ikke. Helten må læse ord som hus, pil, ven og hest og sammenligne mængderne omhyggeligt.
-      it: Nella Torre delle Parole i libri sono disposti in due grandi pile. Il mago sostiene che la pila più alta abbia sempre più libri, ma non è vero. L’eroe deve leggere parole come hus, pil, ven e hest e confrontare con attenzione le quantità.
+      da: Helten følger stien til lyde og bogstaver. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
     lesson:
       title:
-        da: Sammenlign ved at tælle eller parre tingene
-        it: Confronta contando o formando coppie
+        da: Lyde og bogstaver
       objectives:
-        - da: Genkende h, p og v.
-          it: Riconoscere h, p e v.
-        - da: Læse og bygge hus, pil, ven, hat, hop, pose, hest og vest.
-          it: Leggere e costruire hus, pil, ven, hat, hop, pose, hest e vest.
-        - da: Afgøre om der er flest til venstre, flest til højre eller lige mange.
-          it: Stabilire se ce ne sono di più a sinistra, a destra o in ugual numero.
+        - da: Forbind begyndelseslyde med de første bogstaver.
+        - da: Ordne tal til 5 og finde én mere.
+        - da: Beskriv foran, bagved og ved siden af.
       explanation:
-        da: Du kan sammenligne to mængder ved at tælle dem eller ved at lave par. Hvis hver ting til venstre har en makker til højre, er der lige mange. Hvis der er ting til overs på den ene side, er der flest dér. Når du læser, skal alle bogstaverne passe til billedet.
-        it: Puoi confrontare due quantità contando oppure formando coppie. Se ogni elemento a sinistra ha un compagno a destra, le quantità sono uguali. Se avanzano elementi da una parte, lì ce ne sono di più. Quando leggi, tutte le lettere devono corrispondere all’immagine.
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Forbind begyndelseslyde med de første bogstaver. Ordne tal til 5 og finde én mere.
       examples:
-        - target: h · u · s → hus
+        - target: En kat sidder foran en kasse. En hund står bag kassen. En mus sidder inde i kassen. Ida ser katten først.
           translation:
-            da: Bogstaverne h, u og s danner hus.
-            it: Le lettere h, u e s formano hus.
-        - target: ● ● ● = ● ● ●
-          translation:
-            da: Der er lige mange på begge sider.
-            it: Ci sono elementi in ugual numero sui due lati.
-        - target: ● ● ● ● > ● ●
-          translation:
-            da: Der er flest til venstre.
-            it: Ce ne sono di più a sinistra.
-      common_mistakes:
-        - da: En stor genstand tæller stadig kun som én genstand.
-          it: Un oggetto grande conta comunque come un solo oggetto.
-        - da: Sammenlign antallet, ikke hvor meget plads tingene fylder.
-          it: Confronta il numero, non lo spazio occupato dagli oggetti.
+            da: En kat sidder foran en kasse. En hund står bag kassen. En mus sidder inde i kassen. Ida ser katten først.
     mission:
-      da: Læs tårnets ord, sammenlign bogbunkerne og afslør Ordmagikerens trick.
-      it: Leggi le parole della torre, confronta le pile di libri e scopri il trucco del mago.
-  - id: chapter_5_sentence_bridge
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Forbind begyndelseslyde med de første bogstaver. Ordne tal til 5 og finde én mere.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_5
     minimum_level: 5
     title:
-      da: Kapitel 5 · Sætningsbroen
-      it: Capitolo 5 · Il ponte delle frasi
+      da: 0. klasse · 3B · Lyde og bogstaver
     summary:
-      da: Bogstaverne d, g og j danner nye ord og de første hele sætninger.
-      it: Le lettere d, g e j formano nuove parole e le prime frasi.
+      da: Forbind begyndelseslyde med de første bogstaver. Ordne tal til 5 og finde én mere. Beskriv foran, bagved og ved siden af.
     fiction:
-      da: En bro er dækket af løse ord. Hver planke ligger forkert, og kun en hel sætning kan holde helten oppe.
-      it: Un ponte è coperto di parole sparse. Solo una frase completa può reggere l'eroe.
+      da: Helten følger stien til lyde og bogstaver. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
     lesson:
       title:
-        da: En sætning fortæller noget helt
-        it: Una frase comunica un'idea completa
+        da: Lyde og bogstaver
       objectives:
-        - da: Bogstaverne d, g og j danner nye ord og de første hele sætninger.
-          it: Le lettere d, g e j formano nuove parole e le prime frasi.
-        - da: Forklar dit valg med ord eller billeder.
-          it: Spiegare la scelta con parole o immagini.
+        - da: Forbind begyndelseslyde med de første bogstaver.
+        - da: Ordne tal til 5 og finde én mere.
+        - da: Beskriv foran, bagved og ved siden af.
       explanation:
-        da: En sætning begynder med stort bogstav og slutter med punktum. Ordene skal stå i en rækkefølge, der giver mening. På talrækken kan du gå frem ved plus og tilbage ved minus.
-        it: Una frase inizia con la maiuscola e termina con il punto. Sulla linea dei numeri si va avanti col più e indietro col meno.
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Forbind begyndelseslyde med de første bogstaver. Ordne tal til 5 og finde én mere.
       examples:
-        - target: Læs · tænk · svar
+        - target: En kat sidder foran en kasse. En hund står bag kassen. En mus sidder inde i kassen. Ida ser katten først.
           translation:
-            da: Tag én del ad gangen.
-            it: Affronta una parte alla volta.
-      common_mistakes:
-        - da: Gæt ikke ud fra det første tegn; brug hele ordet eller hele opgaven.
-          it: Non indovinare dal primo segno; usa tutta la parola o il problema.
+            da: En kat sidder foran en kasse. En hund står bag kassen. En mus sidder inde i kassen. Ida ser katten først.
     mission:
-      da: Byg tre sætninger og reparer broen.
-      it: Costruisci tre frasi e ripara il ponte.
-  - id: chapter_6_word_lake
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Forbind begyndelseslyde med de første bogstaver. Ordne tal til 5 og finde én mere.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_6
     minimum_level: 6
     title:
-      da: Kapitel 6 · Søen med ord
-      it: Capitolo 6 · Il lago delle parole
+      da: 0. klasse · 4A · Fortæl i rækkefølge
     summary:
-      da: Læs y, æ og ø i små sætninger og find manglende ord.
-      it: Leggere y, æ e ø in brevi frasi e trovare parole mancanti.
+      da: Genfortæl tre hændelser i en enkel historie. Tæl til 10, og sammenlign antal. Skeln mellem først, dernæst og sidst.
     fiction:
-      da: Ved søen flyder ord på åkander. Nogle sætninger har mistet ét ord, og søens frøer kan kun hoppe videre, når det findes.
-      it: Sul lago le parole galleggiano sulle ninfee. Alcune frasi hanno perso una parola.
+      da: Helten følger stien til fortæl i rækkefølge. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
     lesson:
       title:
-        da: Brug hele sætningen som hjælp
-        it: Usa tutta la frase come indizio
+        da: Fortæl i rækkefølge
       objectives:
-        - da: Læs y, æ og ø i små sætninger og find manglende ord.
-          it: Leggere y, æ e ø in brevi frasi e trovare parole mancanti.
-        - da: Forklar dit valg med ord eller billeder.
-          it: Spiegare la scelta con parole o immagini.
+        - da: Genfortæl tre hændelser i en enkel historie.
+        - da: Tæl til 10, og sammenlign antal.
+        - da: Skeln mellem først, dernæst og sidst.
       explanation:
-        da: Når et ord mangler, skal både betydning og bogstaver passe. Talvenner er to dele, som tilsammen giver et helt tal.
-        it: Quando manca una parola devono corrispondere significato e lettere. Le coppie numeriche formano un numero intero.
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Genfortæl tre hændelser i en enkel historie. Tæl til 10, og sammenlign antal.
       examples:
-        - target: Læs · tænk · svar
+        - target: Først tager Ali sine støvler på. Så går han ud i haven. Til sidst hopper han i en vandpyt. Hans støvler bliver våde.
           translation:
-            da: Tag én del ad gangen.
-            it: Affronta una parte alla volta.
-      common_mistakes:
-        - da: Gæt ikke ud fra det første tegn; brug hele ordet eller hele opgaven.
-          it: Non indovinare dal primo segno; usa tutta la parola o il problema.
+            da: Først tager Ali sine støvler på. Så går han ud i haven. Til sidst hopper han i en vandpyt. Hans støvler bliver våde.
     mission:
-      da: Find de manglende ord og seks talvenner.
-      it: Trova le parole mancanti e sei coppie numeriche.
-  - id: chapter_7_aa_gate
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Genfortæl tre hændelser i en enkel historie. Tæl til 10, og sammenlign antal.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_7
     minimum_level: 7
     title:
-      da: Kapitel 7 · Å-porten
-      it: Capitolo 7 · La porta Å
+      da: 0. klasse · 4B · Fortæl i rækkefølge
     summary:
-      da: Mød å og c, og øv ord som år, gå og cykel.
-      it: Incontrare å e c e allenare parole come år, gå e cykel.
+      da: Genfortæl tre hændelser i en enkel historie. Tæl til 10, og sammenlign antal. Skeln mellem først, dernæst og sidst.
     fiction:
-      da: Den sidste bogstavport har to låse. Den ene ligner en lille ring over a, den anden bruges især i lånte ord.
-      it: "L'ultima porta delle lettere ha due serrature: å e c."
+      da: Helten følger stien til fortæl i rækkefølge. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
     lesson:
       title:
-        da: Nogle bogstaver kræver ekstra opmærksomhed
-        it: Alcune lettere richiedono attenzione
+        da: Fortæl i rækkefølge
       objectives:
-        - da: Mød å og c, og øv ord som år, gå og cykel.
-          it: Incontrare å e c e allenare parole come år, gå e cykel.
-        - da: Forklar dit valg med ord eller billeder.
-          it: Spiegare la scelta con parole o immagini.
+        - da: Genfortæl tre hændelser i en enkel historie.
+        - da: Tæl til 10, og sammenlign antal.
+        - da: Skeln mellem først, dernæst og sidst.
       explanation:
-        da: Å er sit eget bogstav. C kan lyde forskelligt i ord som cykel og cirkus. Brug ordets lyd og billedet sammen.
-        it: Å è una lettera distinta. C può avere suoni diversi; usa insieme suono e immagine.
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Genfortæl tre hændelser i en enkel historie. Tæl til 10, og sammenlign antal.
       examples:
-        - target: Læs · tænk · svar
+        - target: Først tager Ali sine støvler på. Så går han ud i haven. Til sidst hopper han i en vandpyt. Hans støvler bliver våde.
           translation:
-            da: Tag én del ad gangen.
-            it: Affronta una parte alla volta.
-      common_mistakes:
-        - da: Gæt ikke ud fra det første tegn; brug hele ordet eller hele opgaven.
-          it: Non indovinare dal primo segno; usa tutta la parola o il problema.
+            da: Først tager Ali sine støvler på. Så går han ud i haven. Til sidst hopper han i en vandpyt. Hans støvler bliver våde.
     mission:
-      da: Åbn begge låse og saml talvenner til otte.
-      it: Apri entrambe le serrature e trova coppie fino a otto.
-  - id: chapter_8_messages
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Genfortæl tre hændelser i en enkel historie. Tæl til 10, og sammenlign antal.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_8
     minimum_level: 8
     title:
-      da: Kapitel 8 · De små beskeder
-      it: Capitolo 8 · I piccoli messaggi
+      da: 0. klasse · 5A · Ord og beskrivelser
     summary:
-      da: Læs hyppige småord og sæt ord i rigtig rækkefølge.
-      it: Leggere parole frequenti e ordinare le parole.
+      da: Lyt til beskrivelser, og vælg den nævnte ting. Del små mængder i to grupper. Sortér efter farve og form.
     fiction:
-      da: Små beskeder dukker op på tårnets vægge. De korte ord ser simple ud, men de styrer hele meningen.
-      it: Piccoli messaggi compaiono sulle pareti della torre. Le parole brevi guidano il significato.
+      da: Helten følger stien til ord og beskrivelser. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
     lesson:
       title:
-        da: Hyppige ord skal genkendes sikkert
-        it: Le parole frequenti vanno riconosciute
+        da: Ord og beskrivelser
       objectives:
-        - da: Læs hyppige småord og sæt ord i rigtig rækkefølge.
-          it: Leggere parole frequenti e ordinare le parole.
-        - da: Forklar dit valg med ord eller billeder.
-          it: Spiegare la scelta con parole o immagini.
+        - da: Lyt til beskrivelser, og vælg den nævnte ting.
+        - da: Del små mængder i to grupper.
+        - da: Sortér efter farve og form.
       explanation:
-        da: Ord som det, den, er, har, kan, ikke, på, med og og møder du igen og igen. Læs dem i sætningen, ikke alene.
-        it: Parole frequenti come det, den, er e ikke vanno lette nel contesto.
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Lyt til beskrivelser, og vælg den nævnte ting. Del små mængder i to grupper.
       examples:
-        - target: Læs · tænk · svar
+        - target: På bordet ligger en lille gul kop og en stor blå skål. Bo lægger et æble i skålen. Ida hælder vand i koppen.
           translation:
-            da: Tag én del ad gangen.
-            it: Affronta una parte alla volta.
-      common_mistakes:
-        - da: Gæt ikke ud fra det første tegn; brug hele ordet eller hele opgaven.
-          it: Non indovinare dal primo segno; usa tutta la parola o il problema.
+            da: På bordet ligger en lille gul kop og en stor blå skål. Bo lægger et æble i skålen. Ida hælder vand i koppen.
     mission:
-      da: Læs beskederne og vælg den rigtige vej.
-      it: Leggi i messaggi e scegli la strada.
-  - id: chapter_9_story_key
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Lyt til beskrivelser, og vælg den nævnte ting. Del små mængder i to grupper.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_9
     minimum_level: 9
     title:
-      da: Kapitel 9 · Fortællingens nøgle
-      it: Capitolo 9 · La chiave del racconto
+      da: 0. klasse · 5B · Ord og beskrivelser
     summary:
-      da: Læs korte tekster og find oplysninger, der står direkte i teksten.
-      it: Leggere testi brevi e trovare informazioni esplicite.
+      da: Lyt til beskrivelser, og vælg den nævnte ting. Del små mængder i to grupper. Sortér efter farve og form.
     fiction:
-      da: En bog er låst med spørgsmål. Hver side giver et spor, men svaret findes kun, hvis helten husker det læste.
-      it: Un libro è chiuso da domande. La risposta è nel testo.
+      da: Helten følger stien til ord og beskrivelser. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
     lesson:
       title:
-        da: Læs først, find derefter svaret
-        it: Prima leggi, poi trova la risposta
+        da: Ord og beskrivelser
       objectives:
-        - da: Læs korte tekster og find oplysninger, der står direkte i teksten.
-          it: Leggere testi brevi e trovare informazioni esplicite.
-        - da: Forklar dit valg med ord eller billeder.
-          it: Spiegare la scelta con parole o immagini.
+        - da: Lyt til beskrivelser, og vælg den nævnte ting.
+        - da: Del små mængder i to grupper.
+        - da: Sortér efter farve og form.
       explanation:
-        da: En kort tekst har personer, handlinger og steder. Læs spørgsmålet og gå tilbage til sætningen, hvor svaret står.
-        it: Un testo breve contiene persone, azioni e luoghi. Torna alla frase che contiene la risposta.
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Lyt til beskrivelser, og vælg den nævnte ting. Del små mængder i to grupper.
       examples:
-        - target: Læs · tænk · svar
+        - target: På bordet ligger en lille gul kop og en stor blå skål. Bo lægger et æble i skålen. Ida hælder vand i koppen.
           translation:
-            da: Tag én del ad gangen.
-            it: Affronta una parte alla volta.
-      common_mistakes:
-        - da: Gæt ikke ud fra det første tegn; brug hele ordet eller hele opgaven.
-          it: Non indovinare dal primo segno; usa tutta la parola o il problema.
+            da: På bordet ligger en lille gul kop og en stor blå skål. Bo lægger et æble i skålen. Ida hælder vand i koppen.
     mission:
-      da: Læs to små historier og åbn bogen.
-      it: Leggi due storie e apri il libro.
-  - id: chapter_10_school_path
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Lyt til beskrivelser, og vælg den nævnte ting. Del små mængder i to grupper.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_10
     minimum_level: 10
     title:
-      da: Kapitel 10 · Skolestien
-      it: Capitolo 10 · Il sentiero della scuola
+      da: 0. klasse · 6A · Spørg og svar
     summary:
-      da: Læs ord med to stavelser og arbejd med tallene 11 til 20.
-      it: Leggere parole bisillabiche e lavorare con 11-20.
+      da: Forstå hvem, hvad og hvor i en oplæst historie. Byg talvenner til 5 og 10 med ting. Find ligheder og forskelle efter en regel.
     fiction:
-      da: Skolestien har tyve sten. På hver sten står et længere ord eller et tal, og helten må tage dem i orden.
-      it: Il sentiero della scuola ha venti pietre con parole e numeri.
+      da: Helten følger stien til spørg og svar. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
     lesson:
       title:
-        da: Del længere ord i små bidder
-        it: Dividi le parole lunghe
+        da: Spørg og svar
       objectives:
-        - da: Læs ord med to stavelser og arbejd med tallene 11 til 20.
-          it: Leggere parole bisillabiche e lavorare con 11-20.
-        - da: Forklar dit valg med ord eller billeder.
-          it: Spiegare la scelta con parole o immagini.
+        - da: Forstå hvem, hvad og hvor i en oplæst historie.
+        - da: Byg talvenner til 5 og 10 med ting.
+        - da: Find ligheder og forskelle efter en regel.
       explanation:
-        da: Ord som skole, pige, kanin og sommer kan deles i stavelser. Tallene 11 til 20 består af ti og nogle flere.
-        it: Parole come skole e kanin possono essere divise in sillabe. I numeri 11-20 sono dieci più altre unità.
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Forstå hvem, hvad og hvor i en oplæst historie. Byg talvenner til 5 og 10 med ting.
       examples:
-        - target: Læs · tænk · svar
+        - target: Mia finder en grøn vante på stien. Hun spørger Bo, om den er hans. Bo siger nej. Ida siger, at vanten er hendes.
           translation:
-            da: Tag én del ad gangen.
-            it: Affronta una parte alla volta.
-      common_mistakes:
-        - da: Gæt ikke ud fra det første tegn; brug hele ordet eller hele opgaven.
-          it: Non indovinare dal primo segno; usa tutta la parola o il problema.
+            da: Mia finder en grøn vante på stien. Hun spørger Bo, om den er hans. Bo siger nej. Ida siger, at vanten er hendes.
     mission:
-      da: Læs stiens ord og nå frem til tallet 20.
-      it: Leggi le parole e raggiungi il numero 20.
-  - id: chapter_11_story_garden
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Forstå hvem, hvad og hvor i en oplæst historie. Byg talvenner til 5 og 10 med ting.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_11
     minimum_level: 11
     title:
-      da: Kapitel 11 · Historiehaven
-      it: Capitolo 11 · Il giardino delle storie
+      da: 0. klasse · 6B · Spørg og svar
     summary:
-      da: Læs tre sætninger, og brug talvenner til 10.
-      it: Leggere tre frasi e usare coppie fino a 10.
+      da: Forstå hvem, hvad og hvor i en oplæst historie. Byg talvenner til 5 og 10 med ting. Find ligheder og forskelle efter en regel.
     fiction:
-      da: I haven vokser historier som blomster. Hver historie har en begyndelse, en midte og en slutning.
-      it: Nel giardino le storie crescono come fiori.
+      da: Helten følger stien til spørg og svar. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
     lesson:
       title:
-        da: Sæt oplysninger sammen
-        it: Collega le informazioni
+        da: Spørg og svar
       objectives:
-        - da: Læs tre sætninger, og brug talvenner til 10.
-          it: Leggere tre frasi e usare coppie fino a 10.
-        - da: Forklar dit valg med ord eller billeder.
-          it: Spiegare la scelta con parole o immagini.
+        - da: Forstå hvem, hvad og hvor i en oplæst historie.
+        - da: Byg talvenner til 5 og 10 med ting.
+        - da: Find ligheder og forskelle efter en regel.
       explanation:
-        da: Når du læser flere sætninger, skal du huske hvem teksten handler om, hvad der sker, og hvornår. Talvenner til 10 hjælper med hurtig regning.
-        it: Con più frasi ricorda chi, cosa e quando. Le coppie fino a 10 aiutano il calcolo.
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Forstå hvem, hvad og hvor i en oplæst historie. Byg talvenner til 5 og 10 med ting.
       examples:
-        - target: Læs · tænk · svar
+        - target: Mia finder en grøn vante på stien. Hun spørger Bo, om den er hans. Bo siger nej. Ida siger, at vanten er hendes.
           translation:
-            da: Tag én del ad gangen.
-            it: Affronta una parte alla volta.
-      common_mistakes:
-        - da: Gæt ikke ud fra det første tegn; brug hele ordet eller hele opgaven.
-          it: Non indovinare dal primo segno; usa tutta la parola o il problema.
+            da: Mia finder en grøn vante på stien. Hun spørger Bo, om den er hans. Bo siger nej. Ida siger, at vanten er hendes.
     mission:
-      da: Læs historierne og få haven til at blomstre.
-      it: Leggi le storie e fai fiorire il giardino.
-  - id: chapter_12_writing_workshop
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Forstå hvem, hvad og hvor i en oplæst historie. Byg talvenner til 5 og 10 med ting.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_12
     minimum_level: 12
     title:
-      da: Kapitel 12 · Skriveværkstedet
-      it: Capitolo 12 · Il laboratorio di scrittura
+      da: 0. klasse · 7A · Beskeder og fællesskab
     summary:
-      da: Færdiggør ord og sætninger, og regn inden for 20.
-      it: Completare parole e frasi e calcolare entro 20.
+      da: Følg en besked med to trin og skift mellem at tale og lytte. Læg små grupper sammen og tag ting væk. Forklar en enkel regel.
     fiction:
-      da: I værkstedet er bogstaver faldet ud af ordene. Helten får papir og blyant og reparerer dem ét tegn ad gangen.
-      it: Nel laboratorio alcune lettere sono cadute dalle parole.
+      da: Helten følger stien til beskeder og fællesskab. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
     lesson:
       title:
-        da: Skrivning bygger på lyd og rækkefølge
-        it: La scrittura usa suoni e ordine
+        da: Beskeder og fællesskab
       objectives:
-        - da: Færdiggør ord og sætninger, og regn inden for 20.
-          it: Completare parole e frasi e calcolare entro 20.
-        - da: Forklar dit valg med ord eller billeder.
-          it: Spiegare la scelta con parole o immagini.
+        - da: Følg en besked med to trin og skift mellem at tale og lytte.
+        - da: Læg små grupper sammen og tag ting væk.
+        - da: Forklar en enkel regel.
       explanation:
-        da: Lyt til ordet, sig lydene langsomt, og vælg det bogstav der mangler. En sætning skal have mellemrum og punktum.
-        it: Ascolta, segmenta i suoni e scegli la lettera mancante. Una frase usa spazi e punto.
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Følg en besked med to trin og skift mellem at tale og lytte. Læg små grupper sammen og tag ting væk.
       examples:
-        - target: Læs · tænk · svar
+        - target: 'Læreren siger: Tag en blyant, og sæt dig på stolen. Bo tager blyanten først. Så sætter han sig. Ida venter på sin tur.'
           translation:
-            da: Tag én del ad gangen.
-            it: Affronta una parte alla volta.
-      common_mistakes:
-        - da: Gæt ikke ud fra det første tegn; brug hele ordet eller hele opgaven.
-          it: Non indovinare dal primo segno; usa tutta la parola o il problema.
+            da: 'Læreren siger: Tag en blyant, og sæt dig på stolen. Bo tager blyanten først. Så sætter han sig. Ida venter på sin tur.'
     mission:
-      da: Reparer værkstedets ord og løs fire regnestykker.
-      it: Ripara le parole e risolvi quattro calcoli.
-  - id: chapter_13_first_book
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Følg en besked med to trin og skift mellem at tale og lytte. Læg små grupper sammen og tag ting væk.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_13
     minimum_level: 13
     title:
-      da: Kapitel 13 · Den første bog
-      it: Capitolo 13 · Il primo libro
+      da: 0. klasse · 7B · Beskeder og fællesskab
     summary:
-      da: Læs små fortællinger med forståelse og løs blandede problemer.
-      it: Leggere brevi racconti e risolvere problemi misti.
+      da: Følg en besked med to trin og skift mellem at tale og lytte. Læg små grupper sammen og tag ting væk. Forklar en enkel regel.
     fiction:
-      da: Alle de samlede ord bliver til heltens første bog. Den sidste drage vil ikke kæmpe; den vil høre historien.
-      it: Tutte le parole diventano il primo libro dell'eroe. L'ultimo drago vuole ascoltare.
+      da: Helten følger stien til beskeder og fællesskab. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
     lesson:
       title:
-        da: Læsning og regning bruges til at løse problemer
-        it: Lettura e matematica risolvono problemi
+        da: Beskeder og fællesskab
       objectives:
-        - da: Læs små fortællinger med forståelse og løs blandede problemer.
-          it: Leggere brevi racconti e risolvere problemi misti.
-        - da: Forklar dit valg med ord eller billeder.
-          it: Spiegare la scelta con parole o immagini.
+        - da: Følg en besked med to trin og skift mellem at tale og lytte.
+        - da: Læg små grupper sammen og tag ting væk.
+        - da: Forklar en enkel regel.
       explanation:
-        da: Læs hele opgaven, find de vigtige oplysninger, og vælg derefter en strategi. Du må gerne læse igen.
-        it: Leggi tutto, trova le informazioni importanti e scegli una strategia. Puoi rileggere.
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Følg en besked med to trin og skift mellem at tale og lytte. Læg små grupper sammen og tag ting væk.
       examples:
-        - target: Læs · tænk · svar
+        - target: 'Læreren siger: Tag en blyant, og sæt dig på stolen. Bo tager blyanten først. Så sætter han sig. Ida venter på sin tur.'
           translation:
-            da: Tag én del ad gangen.
-            it: Affronta una parte alla volta.
-      common_mistakes:
-        - da: Gæt ikke ud fra det første tegn; brug hele ordet eller hele opgaven.
-          it: Non indovinare dal primo segno; usa tutta la parola o il problema.
+            da: 'Læreren siger: Tag en blyant, og sæt dig på stolen. Bo tager blyanten først. Så sætter han sig. Ida venter på sin tur.'
     mission:
-      da: Læs bogen højt og løs den sidste gåde.
-      it: Leggi il libro e risolvi l'ultimo enigma.
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Følg en besked med to trin og skift mellem at tale og lytte. Læg små grupper sammen og tag ting væk.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_14
+    minimum_level: 14
+    title:
+      da: 0. klasse · 8A · Historier og følelser
+    summary:
+      da: Fortæl om en persons følelse med støtte i historien. Sammenlign længde og mål med ens klodser. Forbind en tydelig årsag med en følge.
+    fiction:
+      da: Helten følger stien til historier og følelser. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Historier og følelser
+      objectives:
+        - da: Fortæl om en persons følelse med støtte i historien.
+        - da: Sammenlign længde og mål med ens klodser.
+        - da: Forbind en tydelig årsag med en følge.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Fortæl om en persons følelse med støtte i historien. Sammenlign længde og mål med ens klodser.
+      examples:
+        - target: Mia kan ikke finde sin bamse og bliver ked af det. Ali finder den under sengen. Han giver den til Mia. Nu smiler hun.
+          translation:
+            da: Mia kan ikke finde sin bamse og bliver ked af det. Ali finder den under sengen. Han giver den til Mia. Nu smiler hun.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Fortæl om en persons følelse med støtte i historien. Sammenlign længde og mål med ens klodser.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_15
+    minimum_level: 15
+    title:
+      da: 0. klasse · 8B · Historier og følelser
+    summary:
+      da: Fortæl om en persons følelse med støtte i historien. Sammenlign længde og mål med ens klodser. Forbind en tydelig årsag med en følge.
+    fiction:
+      da: Helten følger stien til historier og følelser. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Historier og følelser
+      objectives:
+        - da: Fortæl om en persons følelse med støtte i historien.
+        - da: Sammenlign længde og mål med ens klodser.
+        - da: Forbind en tydelig årsag med en følge.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Fortæl om en persons følelse med støtte i historien. Sammenlign længde og mål med ens klodser.
+      examples:
+        - target: Mia kan ikke finde sin bamse og bliver ked af det. Ali finder den under sengen. Han giver den til Mia. Nu smiler hun.
+          translation:
+            da: Mia kan ikke finde sin bamse og bliver ked af det. Ali finder den under sengen. Han giver den til Mia. Nu smiler hun.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Fortæl om en persons følelse med støtte i historien. Sammenlign længde og mål med ens klodser.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_16
+    minimum_level: 16
+    title:
+      da: 0. klasse · 9A · Billeder og symboler
+    summary:
+      da: Brug billeder, bogstaver og symboler til at fortælle noget. Undersøg figurer, hjørner og mønstre. Følg en kort rute med retningsord.
+    fiction:
+      da: Helten følger stien til billeder og symboler. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Billeder og symboler
+      objectives:
+        - da: Brug billeder, bogstaver og symboler til at fortælle noget.
+        - da: Undersøg figurer, hjørner og mønstre.
+        - da: Følg en kort rute med retningsord.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Brug billeder, bogstaver og symboler til at fortælle noget. Undersøg figurer, hjørner og mønstre.
+      examples:
+        - target: Ida tegner et hus med en trekant som tag. Døren er blå. Ved huset tegner hun et træ. Hun giver tegningen til sin far.
+          translation:
+            da: Ida tegner et hus med en trekant som tag. Døren er blå. Ved huset tegner hun et træ. Hun giver tegningen til sin far.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Brug billeder, bogstaver og symboler til at fortælle noget. Undersøg figurer, hjørner og mønstre.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_17
+    minimum_level: 17
+    title:
+      da: 0. klasse · 9B · Billeder og symboler
+    summary:
+      da: Brug billeder, bogstaver og symboler til at fortælle noget. Undersøg figurer, hjørner og mønstre. Følg en kort rute med retningsord.
+    fiction:
+      da: Helten følger stien til billeder og symboler. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Billeder og symboler
+      objectives:
+        - da: Brug billeder, bogstaver og symboler til at fortælle noget.
+        - da: Undersøg figurer, hjørner og mønstre.
+        - da: Følg en kort rute med retningsord.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Brug billeder, bogstaver og symboler til at fortælle noget. Undersøg figurer, hjørner og mønstre.
+      examples:
+        - target: Ida tegner et hus med en trekant som tag. Døren er blå. Ved huset tegner hun et træ. Hun giver tegningen til sin far.
+          translation:
+            da: Ida tegner et hus med en trekant som tag. Døren er blå. Ved huset tegner hun et træ. Hun giver tegningen til sin far.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Brug billeder, bogstaver og symboler til at fortælle noget. Undersøg figurer, hjørner og mønstre.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_18
+    minimum_level: 18
+    title:
+      da: 0. klasse · 10A · Min første skolebog
+    summary:
+      da: Genfortæl, lyt efter lyde og eksperimentér med egne bogstaver. Brug tal og mængder til 20 i hverdagshistorier. Forklar, hvordan du fandt svaret.
+    fiction:
+      da: Helten følger stien til min første skolebog. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Min første skolebog
+      objectives:
+        - da: Genfortæl, lyt efter lyde og eksperimentér med egne bogstaver.
+        - da: Brug tal og mængder til 20 i hverdagshistorier.
+        - da: Forklar, hvordan du fandt svaret.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Genfortæl, lyt efter lyde og eksperimentér med egne bogstaver. Brug tal og mængder til 20 i hverdagshistorier.
+      examples:
+        - target: Bo laver en bog med tre billeder. Først tegner han en hund. Så tegner han en kat. På sidste side tegner han sig selv. Han fortæller historien til Ida.
+          translation:
+            da: Bo laver en bog med tre billeder. Først tegner han en hund. Så tegner han en kat. På sidste side tegner han sig selv. Han fortæller historien til Ida.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Genfortæl, lyt efter lyde og eksperimentér med egne bogstaver. Brug tal og mængder til 20 i hverdagshistorier.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_19
+    minimum_level: 19
+    title:
+      da: 0. klasse · 10B · Min første skolebog
+    summary:
+      da: Genfortæl, lyt efter lyde og eksperimentér med egne bogstaver. Brug tal og mængder til 20 i hverdagshistorier. Forklar, hvordan du fandt svaret.
+    fiction:
+      da: Helten følger stien til min første skolebog. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Min første skolebog
+      objectives:
+        - da: Genfortæl, lyt efter lyde og eksperimentér med egne bogstaver.
+        - da: Brug tal og mængder til 20 i hverdagshistorier.
+        - da: Forklar, hvordan du fandt svaret.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Genfortæl, lyt efter lyde og eksperimentér med egne bogstaver. Brug tal og mængder til 20 i hverdagshistorier.
+      examples:
+        - target: Bo laver en bog med tre billeder. Først tegner han en hund. Så tegner han en kat. På sidste side tegner han sig selv. Han fortæller historien til Ida.
+          translation:
+            da: Bo laver en bog med tre billeder. Først tegner han en hund. Så tegner han en kat. På sidste side tegner han sig selv. Han fortæller historien til Ida.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Genfortæl, lyt efter lyde og eksperimentér med egne bogstaver. Brug tal og mængder til 20 i hverdagshistorier.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_20
+    minimum_level: 20
+    title:
+      da: 1. klasse · 1A · Fra lyd til ord
+    summary:
+      da: Sæt bogstavlyde sammen, og læs korte kendte ord med støtte. Arbejd sikkert med antal og tal til 20. Følg rækkefølger og rumlige beskeder.
+    fiction:
+      da: Helten følger stien til fra lyd til ord. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Fra lyd til ord
+      objectives:
+        - da: Sæt bogstavlyde sammen, og læs korte kendte ord med støtte.
+        - da: Arbejd sikkert med antal og tal til 20.
+        - da: Følg rækkefølger og rumlige beskeder.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Sæt bogstavlyde sammen, og læs korte kendte ord med støtte. Arbejd sikkert med antal og tal til 20.
+      examples:
+        - target: Ida ser en sol. Bo ser en mus. Musen er ved et hus. De peger på musen, men rører den ikke.
+          translation:
+            da: Ida ser en sol. Bo ser en mus. Musen er ved et hus. De peger på musen, men rører den ikke.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Sæt bogstavlyde sammen, og læs korte kendte ord med støtte. Arbejd sikkert med antal og tal til 20.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_21
+    minimum_level: 21
+    title:
+      da: 1. klasse · 1B · Fra lyd til ord
+    summary:
+      da: Sæt bogstavlyde sammen, og læs korte kendte ord med støtte. Arbejd sikkert med antal og tal til 20. Følg rækkefølger og rumlige beskeder.
+    fiction:
+      da: Helten følger stien til fra lyd til ord. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Fra lyd til ord
+      objectives:
+        - da: Sæt bogstavlyde sammen, og læs korte kendte ord med støtte.
+        - da: Arbejd sikkert med antal og tal til 20.
+        - da: Følg rækkefølger og rumlige beskeder.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Sæt bogstavlyde sammen, og læs korte kendte ord med støtte. Arbejd sikkert med antal og tal til 20.
+      examples:
+        - target: Ida ser en sol. Bo ser en mus. Musen er ved et hus. De peger på musen, men rører den ikke.
+          translation:
+            da: Ida ser en sol. Bo ser en mus. Musen er ved et hus. De peger på musen, men rører den ikke.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Sæt bogstavlyde sammen, og læs korte kendte ord med støtte. Arbejd sikkert med antal og tal til 20.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_22
+    minimum_level: 22
+    title:
+      da: 1. klasse · 2A · Små sætninger
+    summary:
+      da: Læs enkle sætninger, og forbind dem med en handling. Find talvenner til 10 og 20. Beskriv mønstre med ord.
+    fiction:
+      da: Helten følger stien til små sætninger. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Små sætninger
+      objectives:
+        - da: Læs enkle sætninger, og forbind dem med en handling.
+        - da: Find talvenner til 10 og 20.
+        - da: Beskriv mønstre med ord.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs enkle sætninger, og forbind dem med en handling. Find talvenner til 10 og 20.
+      examples:
+        - target: Ali har en rød taske. I tasken ligger en bog og en madpakke. Ali tager bogen frem. Madpakken bliver i tasken.
+          translation:
+            da: Ali har en rød taske. I tasken ligger en bog og en madpakke. Ali tager bogen frem. Madpakken bliver i tasken.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs enkle sætninger, og forbind dem med en handling. Find talvenner til 10 og 20.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_23
+    minimum_level: 23
+    title:
+      da: 1. klasse · 2B · Små sætninger
+    summary:
+      da: Læs enkle sætninger, og forbind dem med en handling. Find talvenner til 10 og 20. Beskriv mønstre med ord.
+    fiction:
+      da: Helten følger stien til små sætninger. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Små sætninger
+      objectives:
+        - da: Læs enkle sætninger, og forbind dem med en handling.
+        - da: Find talvenner til 10 og 20.
+        - da: Beskriv mønstre med ord.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs enkle sætninger, og forbind dem med en handling. Find talvenner til 10 og 20.
+      examples:
+        - target: Ali har en rød taske. I tasken ligger en bog og en madpakke. Ali tager bogen frem. Madpakken bliver i tasken.
+          translation:
+            da: Ali har en rød taske. I tasken ligger en bog og en madpakke. Ali tager bogen frem. Madpakken bliver i tasken.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs enkle sætninger, og forbind dem med en handling. Find talvenner til 10 og 20.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_24
+    minimum_level: 24
+    title:
+      da: 1. klasse · 3A · At forstå en besked
+    summary:
+      da: Læs korte instruktioner, og udfør dem i rækkefølge. Læg sammen og træk fra inden for 20. Brug hvis og så i en regel.
+    fiction:
+      da: Helten følger stien til at forstå en besked. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: At forstå en besked
+      objectives:
+        - da: Læs korte instruktioner, og udfør dem i rækkefølge.
+        - da: Læg sammen og træk fra inden for 20.
+        - da: Brug hvis og så i en regel.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs korte instruktioner, og udfør dem i rækkefølge. Læg sammen og træk fra inden for 20.
+      examples:
+        - target: 'På kortet står: Tegn en cirkel. Farv den gul. Tegn derefter en blå firkant under cirklen. Mia følger beskeden.'
+          translation:
+            da: 'På kortet står: Tegn en cirkel. Farv den gul. Tegn derefter en blå firkant under cirklen. Mia følger beskeden.'
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs korte instruktioner, og udfør dem i rækkefølge. Læg sammen og træk fra inden for 20.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_25
+    minimum_level: 25
+    title:
+      da: 1. klasse · 3B · At forstå en besked
+    summary:
+      da: Læs korte instruktioner, og udfør dem i rækkefølge. Læg sammen og træk fra inden for 20. Brug hvis og så i en regel.
+    fiction:
+      da: Helten følger stien til at forstå en besked. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: At forstå en besked
+      objectives:
+        - da: Læs korte instruktioner, og udfør dem i rækkefølge.
+        - da: Læg sammen og træk fra inden for 20.
+        - da: Brug hvis og så i en regel.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs korte instruktioner, og udfør dem i rækkefølge. Læg sammen og træk fra inden for 20.
+      examples:
+        - target: 'På kortet står: Tegn en cirkel. Farv den gul. Tegn derefter en blå firkant under cirklen. Mia følger beskeden.'
+          translation:
+            da: 'På kortet står: Tegn en cirkel. Farv den gul. Tegn derefter en blå firkant under cirklen. Mia følger beskeden.'
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs korte instruktioner, og udfør dem i rækkefølge. Læg sammen og træk fra inden for 20.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_26
+    minimum_level: 26
+    title:
+      da: 1. klasse · 4A · Ord i to stavelser
+    summary:
+      da: Læs længere lydrette ord og genkend almindelige småord. Forstå tiere og enere op til 50. Gruppér på to forskellige måder.
+    fiction:
+      da: Helten følger stien til ord i to stavelser. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Ord i to stavelser
+      objectives:
+        - da: Læs længere lydrette ord og genkend almindelige småord.
+        - da: Forstå tiere og enere op til 50.
+        - da: Gruppér på to forskellige måder.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs længere lydrette ord og genkend almindelige småord. Forstå tiere og enere op til 50.
+      examples:
+        - target: Mia tager en banan med på tur. Ali tager en tomat med. De deler maden ved søen. Derefter går de tilbage til skolen.
+          translation:
+            da: Mia tager en banan med på tur. Ali tager en tomat med. De deler maden ved søen. Derefter går de tilbage til skolen.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs længere lydrette ord og genkend almindelige småord. Forstå tiere og enere op til 50.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_27
+    minimum_level: 27
+    title:
+      da: 1. klasse · 4B · Ord i to stavelser
+    summary:
+      da: Læs længere lydrette ord og genkend almindelige småord. Forstå tiere og enere op til 50. Gruppér på to forskellige måder.
+    fiction:
+      da: Helten følger stien til ord i to stavelser. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Ord i to stavelser
+      objectives:
+        - da: Læs længere lydrette ord og genkend almindelige småord.
+        - da: Forstå tiere og enere op til 50.
+        - da: Gruppér på to forskellige måder.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs længere lydrette ord og genkend almindelige småord. Forstå tiere og enere op til 50.
+      examples:
+        - target: Mia tager en banan med på tur. Ali tager en tomat med. De deler maden ved søen. Derefter går de tilbage til skolen.
+          translation:
+            da: Mia tager en banan med på tur. Ali tager en tomat med. De deler maden ved søen. Derefter går de tilbage til skolen.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs længere lydrette ord og genkend almindelige småord. Forstå tiere og enere op til 50.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_28
+    minimum_level: 28
+    title:
+      da: 1. klasse · 5A · Spørgsmål til en historie
+    summary:
+      da: Find konkrete oplysninger og spørg til det, du ikke forstår. Læs, ordn og sammenlign tal til 100. Brug en tabel med to kategorier.
+    fiction:
+      da: Helten følger stien til spørgsmål til en historie. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Spørgsmål til en historie
+      objectives:
+        - da: Find konkrete oplysninger og spørg til det, du ikke forstår.
+        - da: Læs, ordn og sammenlign tal til 100.
+        - da: Brug en tabel med to kategorier.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Find konkrete oplysninger og spørg til det, du ikke forstår. Læs, ordn og sammenlign tal til 100.
+      examples:
+        - target: Bo går på biblioteket for at låne en bog om fisk. Bogen står på den nederste hylde. Bibliotekaren hjælper ham. Han låner kun den ene bog.
+          translation:
+            da: Bo går på biblioteket for at låne en bog om fisk. Bogen står på den nederste hylde. Bibliotekaren hjælper ham. Han låner kun den ene bog.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Find konkrete oplysninger og spørg til det, du ikke forstår. Læs, ordn og sammenlign tal til 100.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_29
+    minimum_level: 29
+    title:
+      da: 1. klasse · 5B · Spørgsmål til en historie
+    summary:
+      da: Find konkrete oplysninger og spørg til det, du ikke forstår. Læs, ordn og sammenlign tal til 100. Brug en tabel med to kategorier.
+    fiction:
+      da: Helten følger stien til spørgsmål til en historie. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Spørgsmål til en historie
+      objectives:
+        - da: Find konkrete oplysninger og spørg til det, du ikke forstår.
+        - da: Læs, ordn og sammenlign tal til 100.
+        - da: Brug en tabel med to kategorier.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Find konkrete oplysninger og spørg til det, du ikke forstår. Læs, ordn og sammenlign tal til 100.
+      examples:
+        - target: Bo går på biblioteket for at låne en bog om fisk. Bogen står på den nederste hylde. Bibliotekaren hjælper ham. Han låner kun den ene bog.
+          translation:
+            da: Bo går på biblioteket for at låne en bog om fisk. Bogen står på den nederste hylde. Bibliotekaren hjælper ham. Han låner kun den ene bog.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Find konkrete oplysninger og spørg til det, du ikke forstår. Læs, ordn og sammenlign tal til 100.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_30
+    minimum_level: 30
+    title:
+      da: 1. klasse · 6A · Skriv en besked
+    summary:
+      da: Byg en kort forståelig besked, og brug mellemrum og punktum. Regn med tiere og enere inden for 100. Kontrollér en løsning på en anden måde.
+    fiction:
+      da: Helten følger stien til skriv en besked. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Skriv en besked
+      objectives:
+        - da: Byg en kort forståelig besked, og brug mellemrum og punktum.
+        - da: Regn med tiere og enere inden for 100.
+        - da: Kontrollér en løsning på en anden måde.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Byg en kort forståelig besked, og brug mellemrum og punktum. Regn med tiere og enere inden for 100.
+      examples:
+        - target: 'Ida skriver til Bo: Kom til min fødselsdag på lørdag. Vi mødes klokken to. Tag støvler med, for vi skal lege i haven.'
+          translation:
+            da: 'Ida skriver til Bo: Kom til min fødselsdag på lørdag. Vi mødes klokken to. Tag støvler med, for vi skal lege i haven.'
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Byg en kort forståelig besked, og brug mellemrum og punktum. Regn med tiere og enere inden for 100.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_31
+    minimum_level: 31
+    title:
+      da: 1. klasse · 6B · Skriv en besked
+    summary:
+      da: Byg en kort forståelig besked, og brug mellemrum og punktum. Regn med tiere og enere inden for 100. Kontrollér en løsning på en anden måde.
+    fiction:
+      da: Helten følger stien til skriv en besked. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Skriv en besked
+      objectives:
+        - da: Byg en kort forståelig besked, og brug mellemrum og punktum.
+        - da: Regn med tiere og enere inden for 100.
+        - da: Kontrollér en løsning på en anden måde.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Byg en kort forståelig besked, og brug mellemrum og punktum. Regn med tiere og enere inden for 100.
+      examples:
+        - target: 'Ida skriver til Bo: Kom til min fødselsdag på lørdag. Vi mødes klokken to. Tag støvler med, for vi skal lege i haven.'
+          translation:
+            da: 'Ida skriver til Bo: Kom til min fødselsdag på lørdag. Vi mødes klokken to. Tag støvler med, for vi skal lege i haven.'
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Byg en kort forståelig besked, og brug mellemrum og punktum. Regn med tiere og enere inden for 100.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_32
+    minimum_level: 32
+    title:
+      da: 1. klasse · 7A · Figurer og forklaringer
+    summary:
+      da: Beskriv en ting med flere præcise ord. Genkend figurer og mål længder i centimeter. Sammenlign oplysninger efter samme mål.
+    fiction:
+      da: Helten følger stien til figurer og forklaringer. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Figurer og forklaringer
+      objectives:
+        - da: Beskriv en ting med flere præcise ord.
+        - da: Genkend figurer og mål længder i centimeter.
+        - da: Sammenlign oplysninger efter samme mål.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Beskriv en ting med flere præcise ord. Genkend figurer og mål længder i centimeter.
+      examples:
+        - target: Ali måler et rødt bånd til otte centimeter. Det blå bånd er tolv centimeter. Han bruger det blå bånd til en gave. Det røde lægger han i en skuffe.
+          translation:
+            da: Ali måler et rødt bånd til otte centimeter. Det blå bånd er tolv centimeter. Han bruger det blå bånd til en gave. Det røde lægger han i en skuffe.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Beskriv en ting med flere præcise ord. Genkend figurer og mål længder i centimeter.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_33
+    minimum_level: 33
+    title:
+      da: 1. klasse · 7B · Figurer og forklaringer
+    summary:
+      da: Beskriv en ting med flere præcise ord. Genkend figurer og mål længder i centimeter. Sammenlign oplysninger efter samme mål.
+    fiction:
+      da: Helten følger stien til figurer og forklaringer. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Figurer og forklaringer
+      objectives:
+        - da: Beskriv en ting med flere præcise ord.
+        - da: Genkend figurer og mål længder i centimeter.
+        - da: Sammenlign oplysninger efter samme mål.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Beskriv en ting med flere præcise ord. Genkend figurer og mål længder i centimeter.
+      examples:
+        - target: Ali måler et rødt bånd til otte centimeter. Det blå bånd er tolv centimeter. Han bruger det blå bånd til en gave. Det røde lægger han i en skuffe.
+          translation:
+            da: Ali måler et rødt bånd til otte centimeter. Det blå bånd er tolv centimeter. Han bruger det blå bånd til en gave. Det røde lægger han i en skuffe.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Beskriv en ting med flere præcise ord. Genkend figurer og mål længder i centimeter.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_34
+    minimum_level: 34
+    title:
+      da: 1. klasse · 8A · Tid og hverdag
+    summary:
+      da: Læs en kort plan, og skeln mellem før og efter. Brug hele og halve timer og enkle beløb. Planlæg en rækkefølge med en begrænsning.
+    fiction:
+      da: Helten følger stien til tid og hverdag. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Tid og hverdag
+      objectives:
+        - da: Læs en kort plan, og skeln mellem før og efter.
+        - da: Brug hele og halve timer og enkle beløb.
+        - da: Planlæg en rækkefølge med en begrænsning.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs en kort plan, og skeln mellem før og efter. Brug hele og halve timer og enkle beløb.
+      examples:
+        - target: Klassen spiser klokken tolv. Efter frokost går de i skolegården. Klokken halv et kommer de ind igen. Før frokost læser læreren en historie.
+          translation:
+            da: Klassen spiser klokken tolv. Efter frokost går de i skolegården. Klokken halv et kommer de ind igen. Før frokost læser læreren en historie.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs en kort plan, og skeln mellem før og efter. Brug hele og halve timer og enkle beløb.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_35
+    minimum_level: 35
+    title:
+      da: 1. klasse · 8B · Tid og hverdag
+    summary:
+      da: Læs en kort plan, og skeln mellem før og efter. Brug hele og halve timer og enkle beløb. Planlæg en rækkefølge med en begrænsning.
+    fiction:
+      da: Helten følger stien til tid og hverdag. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Tid og hverdag
+      objectives:
+        - da: Læs en kort plan, og skeln mellem før og efter.
+        - da: Brug hele og halve timer og enkle beløb.
+        - da: Planlæg en rækkefølge med en begrænsning.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs en kort plan, og skeln mellem før og efter. Brug hele og halve timer og enkle beløb.
+      examples:
+        - target: Klassen spiser klokken tolv. Efter frokost går de i skolegården. Klokken halv et kommer de ind igen. Før frokost læser læreren en historie.
+          translation:
+            da: Klassen spiser klokken tolv. Efter frokost går de i skolegården. Klokken halv et kommer de ind igen. Før frokost læser læreren en historie.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs en kort plan, og skeln mellem før og efter. Brug hele og halve timer og enkle beløb.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_36
+    minimum_level: 36
+    title:
+      da: 1. klasse · 9A · Fortælling og fakta
+    summary:
+      da: Skeln mellem en opdigtet historie og en oplysende tekst. Fordel lige store grupper med konkrete ting. Læs en enkel optælling.
+    fiction:
+      da: Helten følger stien til fortælling og fakta. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Fortælling og fakta
+      objectives:
+        - da: Skeln mellem en opdigtet historie og en oplysende tekst.
+        - da: Fordel lige store grupper med konkrete ting.
+        - da: Læs en enkel optælling.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Skeln mellem en opdigtet historie og en oplysende tekst. Fordel lige store grupper med konkrete ting.
+      examples:
+        - target: I faktabogen står der, at pindsvinet har pigge. I eventyret taler et pindsvin med en drage. Mia skriver en oplysning fra faktabogen. Hun tegner bagefter dragen fra eventyret.
+          translation:
+            da: I faktabogen står der, at pindsvinet har pigge. I eventyret taler et pindsvin med en drage. Mia skriver en oplysning fra faktabogen. Hun tegner bagefter dragen fra eventyret.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Skeln mellem en opdigtet historie og en oplysende tekst. Fordel lige store grupper med konkrete ting.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_37
+    minimum_level: 37
+    title:
+      da: 1. klasse · 9B · Fortælling og fakta
+    summary:
+      da: Skeln mellem en opdigtet historie og en oplysende tekst. Fordel lige store grupper med konkrete ting. Læs en enkel optælling.
+    fiction:
+      da: Helten følger stien til fortælling og fakta. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Fortælling og fakta
+      objectives:
+        - da: Skeln mellem en opdigtet historie og en oplysende tekst.
+        - da: Fordel lige store grupper med konkrete ting.
+        - da: Læs en enkel optælling.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Skeln mellem en opdigtet historie og en oplysende tekst. Fordel lige store grupper med konkrete ting.
+      examples:
+        - target: I faktabogen står der, at pindsvinet har pigge. I eventyret taler et pindsvin med en drage. Mia skriver en oplysning fra faktabogen. Hun tegner bagefter dragen fra eventyret.
+          translation:
+            da: I faktabogen står der, at pindsvinet har pigge. I eventyret taler et pindsvin med en drage. Mia skriver en oplysning fra faktabogen. Hun tegner bagefter dragen fra eventyret.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Skeln mellem en opdigtet historie og en oplysende tekst. Fordel lige store grupper med konkrete ting.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_38
+    minimum_level: 38
+    title:
+      da: 1. klasse · 10A · Min egen fortælling
+    summary:
+      da: Planlæg en begyndelse, midte og slutning og genfortæl sammenhængende. Løs blandede hverdagsproblemer inden for 100. Forklar dit valg med oplysninger fra opgaven.
+    fiction:
+      da: Helten følger stien til min egen fortælling. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Min egen fortælling
+      objectives:
+        - da: Planlæg en begyndelse, midte og slutning og genfortæl sammenhængende.
+        - da: Løs blandede hverdagsproblemer inden for 100.
+        - da: Forklar dit valg med oplysninger fra opgaven.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Planlæg en begyndelse, midte og slutning og genfortæl sammenhængende. Løs blandede hverdagsproblemer inden for 100.
+      examples:
+        - target: Bo skriver om en drage, der har mistet sit kort. Først leder dragen alene. Så hjælper en fugl med at finde kortet. Til sidst finder de vejen hjem sammen.
+          translation:
+            da: Bo skriver om en drage, der har mistet sit kort. Først leder dragen alene. Så hjælper en fugl med at finde kortet. Til sidst finder de vejen hjem sammen.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Planlæg en begyndelse, midte og slutning og genfortæl sammenhængende. Løs blandede hverdagsproblemer inden for 100.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_39
+    minimum_level: 39
+    title:
+      da: 1. klasse · 10B · Min egen fortælling
+    summary:
+      da: Planlæg en begyndelse, midte og slutning og genfortæl sammenhængende. Løs blandede hverdagsproblemer inden for 100. Forklar dit valg med oplysninger fra opgaven.
+    fiction:
+      da: Helten følger stien til min egen fortælling. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Min egen fortælling
+      objectives:
+        - da: Planlæg en begyndelse, midte og slutning og genfortæl sammenhængende.
+        - da: Løs blandede hverdagsproblemer inden for 100.
+        - da: Forklar dit valg med oplysninger fra opgaven.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Planlæg en begyndelse, midte og slutning og genfortæl sammenhængende. Løs blandede hverdagsproblemer inden for 100.
+      examples:
+        - target: Bo skriver om en drage, der har mistet sit kort. Først leder dragen alene. Så hjælper en fugl med at finde kortet. Til sidst finder de vejen hjem sammen.
+          translation:
+            da: Bo skriver om en drage, der har mistet sit kort. Først leder dragen alene. Så hjælper en fugl med at finde kortet. Til sidst finder de vejen hjem sammen.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Planlæg en begyndelse, midte og slutning og genfortæl sammenhængende. Løs blandede hverdagsproblemer inden for 100.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_40
+    minimum_level: 40
+    title:
+      da: 2. klasse · 1A · Læs og genfortæl
+    summary:
+      da: Læs en kort sammenhængende tekst og gengiv hovedindholdet. Forstå hundreder, tiere og enere. Sortér oplysninger, der er relevante for et spørgsmål.
+    fiction:
+      da: Helten følger stien til læs og genfortæl. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Læs og genfortæl
+      objectives:
+        - da: Læs en kort sammenhængende tekst og gengiv hovedindholdet.
+        - da: Forstå hundreder, tiere og enere.
+        - da: Sortér oplysninger, der er relevante for et spørgsmål.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs en kort sammenhængende tekst og gengiv hovedindholdet. Forstå hundreder, tiere og enere.
+      examples:
+        - target: Mia vil bygge et fuglehus. Hun låner en bog og tegner en plan. Hendes far hjælper med at save træet. Mia maler huset grønt og hænger det i haven. Hun håber, at en fugl snart flytter ind.
+          translation:
+            da: Mia vil bygge et fuglehus. Hun låner en bog og tegner en plan. Hendes far hjælper med at save træet. Mia maler huset grønt og hænger det i haven. Hun håber, at en fugl snart flytter ind.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs en kort sammenhængende tekst og gengiv hovedindholdet. Forstå hundreder, tiere og enere.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_41
+    minimum_level: 41
+    title:
+      da: 2. klasse · 1B · Læs og genfortæl
+    summary:
+      da: Læs en kort sammenhængende tekst og gengiv hovedindholdet. Forstå hundreder, tiere og enere. Sortér oplysninger, der er relevante for et spørgsmål.
+    fiction:
+      da: Helten følger stien til læs og genfortæl. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Læs og genfortæl
+      objectives:
+        - da: Læs en kort sammenhængende tekst og gengiv hovedindholdet.
+        - da: Forstå hundreder, tiere og enere.
+        - da: Sortér oplysninger, der er relevante for et spørgsmål.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs en kort sammenhængende tekst og gengiv hovedindholdet. Forstå hundreder, tiere og enere.
+      examples:
+        - target: Mia vil bygge et fuglehus. Hun låner en bog og tegner en plan. Hendes far hjælper med at save træet. Mia maler huset grønt og hænger det i haven. Hun håber, at en fugl snart flytter ind.
+          translation:
+            da: Mia vil bygge et fuglehus. Hun låner en bog og tegner en plan. Hendes far hjælper med at save træet. Mia maler huset grønt og hænger det i haven. Hun håber, at en fugl snart flytter ind.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs en kort sammenhængende tekst og gengiv hovedindholdet. Forstå hundreder, tiere og enere.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_42
+    minimum_level: 42
+    title:
+      da: 2. klasse · 2A · Ord og betydning
+    summary:
+      da: Brug sammenhængen til at forstå nye ord og forklare beskrivelser. Læg sammen og træk fra med tocifrede tal. Skeln mellem en oplysning og et gæt.
+    fiction:
+      da: Helten følger stien til ord og betydning. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Ord og betydning
+      objectives:
+        - da: Brug sammenhængen til at forstå nye ord og forklare beskrivelser.
+        - da: Læg sammen og træk fra med tocifrede tal.
+        - da: Skeln mellem en oplysning og et gæt.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Brug sammenhængen til at forstå nye ord og forklare beskrivelser. Læg sammen og træk fra med tocifrede tal.
+      examples:
+        - target: Da Ali kom til søen, var overfladen spejlblank. Der var ingen vind, og træerne kunne ses i vandet. Senere begyndte det at blæse. Små bølger gjorde spejlbilledet utydeligt.
+          translation:
+            da: Da Ali kom til søen, var overfladen spejlblank. Der var ingen vind, og træerne kunne ses i vandet. Senere begyndte det at blæse. Små bølger gjorde spejlbilledet utydeligt.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Brug sammenhængen til at forstå nye ord og forklare beskrivelser. Læg sammen og træk fra med tocifrede tal.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_43
+    minimum_level: 43
+    title:
+      da: 2. klasse · 2B · Ord og betydning
+    summary:
+      da: Brug sammenhængen til at forstå nye ord og forklare beskrivelser. Læg sammen og træk fra med tocifrede tal. Skeln mellem en oplysning og et gæt.
+    fiction:
+      da: Helten følger stien til ord og betydning. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Ord og betydning
+      objectives:
+        - da: Brug sammenhængen til at forstå nye ord og forklare beskrivelser.
+        - da: Læg sammen og træk fra med tocifrede tal.
+        - da: Skeln mellem en oplysning og et gæt.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Brug sammenhængen til at forstå nye ord og forklare beskrivelser. Læg sammen og træk fra med tocifrede tal.
+      examples:
+        - target: Da Ali kom til søen, var overfladen spejlblank. Der var ingen vind, og træerne kunne ses i vandet. Senere begyndte det at blæse. Små bølger gjorde spejlbilledet utydeligt.
+          translation:
+            da: Da Ali kom til søen, var overfladen spejlblank. Der var ingen vind, og træerne kunne ses i vandet. Senere begyndte det at blæse. Små bølger gjorde spejlbilledet utydeligt.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Brug sammenhængen til at forstå nye ord og forklare beskrivelser. Læg sammen og træk fra med tocifrede tal.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_44
+    minimum_level: 44
+    title:
+      da: 2. klasse · 3A · Instruktioner og rækkefølge
+    summary:
+      da: Læs en vejledning, og begrund rækkefølgen. Undersøg gentagen addition og 2-tabellen. Følg og kontrollér en regel med flere trin.
+    fiction:
+      da: Helten følger stien til instruktioner og rækkefølge. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Instruktioner og rækkefølge
+      objectives:
+        - da: Læs en vejledning, og begrund rækkefølgen.
+        - da: Undersøg gentagen addition og 2-tabellen.
+        - da: Følg og kontrollér en regel med flere trin.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs en vejledning, og begrund rækkefølgen. Undersøg gentagen addition og 2-tabellen.
+      examples:
+        - target: 'Sådan sår du karse: Læg først fugtig vat i en skål. Drys derefter frø på vattet. Stil skålen lyst. Hold vattet fugtigt hver dag. Efter nogle dage kan du se små spirer.'
+          translation:
+            da: 'Sådan sår du karse: Læg først fugtig vat i en skål. Drys derefter frø på vattet. Stil skålen lyst. Hold vattet fugtigt hver dag. Efter nogle dage kan du se små spirer.'
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs en vejledning, og begrund rækkefølgen. Undersøg gentagen addition og 2-tabellen.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_45
+    minimum_level: 45
+    title:
+      da: 2. klasse · 3B · Instruktioner og rækkefølge
+    summary:
+      da: Læs en vejledning, og begrund rækkefølgen. Undersøg gentagen addition og 2-tabellen. Følg og kontrollér en regel med flere trin.
+    fiction:
+      da: Helten følger stien til instruktioner og rækkefølge. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Instruktioner og rækkefølge
+      objectives:
+        - da: Læs en vejledning, og begrund rækkefølgen.
+        - da: Undersøg gentagen addition og 2-tabellen.
+        - da: Følg og kontrollér en regel med flere trin.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs en vejledning, og begrund rækkefølgen. Undersøg gentagen addition og 2-tabellen.
+      examples:
+        - target: 'Sådan sår du karse: Læg først fugtig vat i en skål. Drys derefter frø på vattet. Stil skålen lyst. Hold vattet fugtigt hver dag. Efter nogle dage kan du se små spirer.'
+          translation:
+            da: 'Sådan sår du karse: Læg først fugtig vat i en skål. Drys derefter frø på vattet. Stil skålen lyst. Hold vattet fugtigt hver dag. Efter nogle dage kan du se små spirer.'
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs en vejledning, og begrund rækkefølgen. Undersøg gentagen addition og 2-tabellen.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_46
+    minimum_level: 46
+    title:
+      da: 2. klasse · 4A · Breve og modtagere
+    summary:
+      da: Forstå hvem en besked er til, og skriv med en tydelig hensigt. Brug 5-tabellen og penge i små køb. Find en løsning, der opfylder to krav.
+    fiction:
+      da: Helten følger stien til breve og modtagere. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Breve og modtagere
+      objectives:
+        - da: Forstå hvem en besked er til, og skriv med en tydelig hensigt.
+        - da: Brug 5-tabellen og penge i små køb.
+        - da: Find en løsning, der opfylder to krav.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Forstå hvem en besked er til, og skriv med en tydelig hensigt. Brug 5-tabellen og penge i små køb.
+      examples:
+        - target: Kære farmor. Tak for bogen om havet. Jeg har læst om blæksprutter og vil gerne fortælle dig om dem. Kan vi ringe sammen på søndag? Kærlig hilsen Ida.
+          translation:
+            da: Kære farmor. Tak for bogen om havet. Jeg har læst om blæksprutter og vil gerne fortælle dig om dem. Kan vi ringe sammen på søndag? Kærlig hilsen Ida.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Forstå hvem en besked er til, og skriv med en tydelig hensigt. Brug 5-tabellen og penge i små køb.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_47
+    minimum_level: 47
+    title:
+      da: 2. klasse · 4B · Breve og modtagere
+    summary:
+      da: Forstå hvem en besked er til, og skriv med en tydelig hensigt. Brug 5-tabellen og penge i små køb. Find en løsning, der opfylder to krav.
+    fiction:
+      da: Helten følger stien til breve og modtagere. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Breve og modtagere
+      objectives:
+        - da: Forstå hvem en besked er til, og skriv med en tydelig hensigt.
+        - da: Brug 5-tabellen og penge i små køb.
+        - da: Find en løsning, der opfylder to krav.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Forstå hvem en besked er til, og skriv med en tydelig hensigt. Brug 5-tabellen og penge i små køb.
+      examples:
+        - target: Kære farmor. Tak for bogen om havet. Jeg har læst om blæksprutter og vil gerne fortælle dig om dem. Kan vi ringe sammen på søndag? Kærlig hilsen Ida.
+          translation:
+            da: Kære farmor. Tak for bogen om havet. Jeg har læst om blæksprutter og vil gerne fortælle dig om dem. Kan vi ringe sammen på søndag? Kærlig hilsen Ida.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Forstå hvem en besked er til, og skriv med en tydelig hensigt. Brug 5-tabellen og penge i små køb.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_48
+    minimum_level: 48
+    title:
+      da: 2. klasse · 5A · Personer og begrundelser
+    summary:
+      da: Forklar en persons handling ved at finde belæg i teksten. Brug 10-tabellen og deling i lige store grupper. Sammenlign to muligheder ud fra en regel.
+    fiction:
+      da: Helten følger stien til personer og begrundelser. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Personer og begrundelser
+      objectives:
+        - da: Forklar en persons handling ved at finde belæg i teksten.
+        - da: Brug 10-tabellen og deling i lige store grupper.
+        - da: Sammenlign to muligheder ud fra en regel.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Forklar en persons handling ved at finde belæg i teksten. Brug 10-tabellen og deling i lige store grupper.
+      examples:
+        - target: Bo ville gerne vinde løbet. Da Ali faldt, standsede Bo og hjalp ham op. De løb det sidste stykke sammen. Bo blev ikke nummer et, men var glad for, at Ali kunne være med.
+          translation:
+            da: Bo ville gerne vinde løbet. Da Ali faldt, standsede Bo og hjalp ham op. De løb det sidste stykke sammen. Bo blev ikke nummer et, men var glad for, at Ali kunne være med.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Forklar en persons handling ved at finde belæg i teksten. Brug 10-tabellen og deling i lige store grupper.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_49
+    minimum_level: 49
+    title:
+      da: 2. klasse · 5B · Personer og begrundelser
+    summary:
+      da: Forklar en persons handling ved at finde belæg i teksten. Brug 10-tabellen og deling i lige store grupper. Sammenlign to muligheder ud fra en regel.
+    fiction:
+      da: Helten følger stien til personer og begrundelser. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Personer og begrundelser
+      objectives:
+        - da: Forklar en persons handling ved at finde belæg i teksten.
+        - da: Brug 10-tabellen og deling i lige store grupper.
+        - da: Sammenlign to muligheder ud fra en regel.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Forklar en persons handling ved at finde belæg i teksten. Brug 10-tabellen og deling i lige store grupper.
+      examples:
+        - target: Bo ville gerne vinde løbet. Da Ali faldt, standsede Bo og hjalp ham op. De løb det sidste stykke sammen. Bo blev ikke nummer et, men var glad for, at Ali kunne være med.
+          translation:
+            da: Bo ville gerne vinde løbet. Da Ali faldt, standsede Bo og hjalp ham op. De løb det sidste stykke sammen. Bo blev ikke nummer et, men var glad for, at Ali kunne være med.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Forklar en persons handling ved at finde belæg i teksten. Brug 10-tabellen og deling i lige store grupper.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_50
+    minimum_level: 50
+    title:
+      da: 2. klasse · 6A · Fakta og oversigter
+    summary:
+      da: Sammenhold en kort faktatekst med en oversigt. Læs tabeller og enkle diagrammer. Brug alle relevante oplysninger før du svarer.
+    fiction:
+      da: Helten følger stien til fakta og oversigter. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Fakta og oversigter
+      objectives:
+        - da: Sammenhold en kort faktatekst med en oversigt.
+        - da: Læs tabeller og enkle diagrammer.
+        - da: Brug alle relevante oplysninger før du svarer.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Sammenhold en kort faktatekst med en oversigt. Læs tabeller og enkle diagrammer.
+      examples:
+        - target: Klassen tæller dyr i haven. De finder seks snegle, fire biller og to sommerfugle. De skriver tallene i en tabel. Læreren siger, at tabellen viser dagens fund, ikke alle dyr i haven.
+          translation:
+            da: Klassen tæller dyr i haven. De finder seks snegle, fire biller og to sommerfugle. De skriver tallene i en tabel. Læreren siger, at tabellen viser dagens fund, ikke alle dyr i haven.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Sammenhold en kort faktatekst med en oversigt. Læs tabeller og enkle diagrammer.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_51
+    minimum_level: 51
+    title:
+      da: 2. klasse · 6B · Fakta og oversigter
+    summary:
+      da: Sammenhold en kort faktatekst med en oversigt. Læs tabeller og enkle diagrammer. Brug alle relevante oplysninger før du svarer.
+    fiction:
+      da: Helten følger stien til fakta og oversigter. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Fakta og oversigter
+      objectives:
+        - da: Sammenhold en kort faktatekst med en oversigt.
+        - da: Læs tabeller og enkle diagrammer.
+        - da: Brug alle relevante oplysninger før du svarer.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Sammenhold en kort faktatekst med en oversigt. Læs tabeller og enkle diagrammer.
+      examples:
+        - target: Klassen tæller dyr i haven. De finder seks snegle, fire biller og to sommerfugle. De skriver tallene i en tabel. Læreren siger, at tabellen viser dagens fund, ikke alle dyr i haven.
+          translation:
+            da: Klassen tæller dyr i haven. De finder seks snegle, fire biller og to sommerfugle. De skriver tallene i en tabel. Læreren siger, at tabellen viser dagens fund, ikke alle dyr i haven.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Sammenhold en kort faktatekst med en oversigt. Læs tabeller og enkle diagrammer.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_52
+    minimum_level: 52
+    title:
+      da: 2. klasse · 7A · Sprog og korrektur
+    summary:
+      da: Genkend navneord og udsagnsord og ret punktum og stort begyndelsesbogstav. Arbejd med 3- og 4-tabellen gennem grupper. Find en fejl og forklar, hvilken regel den bryder.
+    fiction:
+      da: Helten følger stien til sprog og korrektur. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Sprog og korrektur
+      objectives:
+        - da: Genkend navneord og udsagnsord og ret punktum og stort begyndelsesbogstav.
+        - da: Arbejd med 3- og 4-tabellen gennem grupper.
+        - da: Find en fejl og forklar, hvilken regel den bryder.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Genkend navneord og udsagnsord og ret punktum og stort begyndelsesbogstav. Arbejd med 3- og 4-tabellen gennem grupper.
+      examples:
+        - target: 'Mia skrev: katten sover. Hun rettede det til: Katten sover. Læreren bad hende finde ordet for handlingen. Mia pegede på sover. Derefter skrev hun en ny sætning med ordet løber.'
+          translation:
+            da: 'Mia skrev: katten sover. Hun rettede det til: Katten sover. Læreren bad hende finde ordet for handlingen. Mia pegede på sover. Derefter skrev hun en ny sætning med ordet løber.'
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Genkend navneord og udsagnsord og ret punktum og stort begyndelsesbogstav. Arbejd med 3- og 4-tabellen gennem grupper.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_53
+    minimum_level: 53
+    title:
+      da: 2. klasse · 7B · Sprog og korrektur
+    summary:
+      da: Genkend navneord og udsagnsord og ret punktum og stort begyndelsesbogstav. Arbejd med 3- og 4-tabellen gennem grupper. Find en fejl og forklar, hvilken regel den bryder.
+    fiction:
+      da: Helten følger stien til sprog og korrektur. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Sprog og korrektur
+      objectives:
+        - da: Genkend navneord og udsagnsord og ret punktum og stort begyndelsesbogstav.
+        - da: Arbejd med 3- og 4-tabellen gennem grupper.
+        - da: Find en fejl og forklar, hvilken regel den bryder.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Genkend navneord og udsagnsord og ret punktum og stort begyndelsesbogstav. Arbejd med 3- og 4-tabellen gennem grupper.
+      examples:
+        - target: 'Mia skrev: katten sover. Hun rettede det til: Katten sover. Læreren bad hende finde ordet for handlingen. Mia pegede på sover. Derefter skrev hun en ny sætning med ordet løber.'
+          translation:
+            da: 'Mia skrev: katten sover. Hun rettede det til: Katten sover. Læreren bad hende finde ordet for handlingen. Mia pegede på sover. Derefter skrev hun en ny sætning med ordet løber.'
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Genkend navneord og udsagnsord og ret punktum og stort begyndelsesbogstav. Arbejd med 3- og 4-tabellen gennem grupper.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_54
+    minimum_level: 54
+    title:
+      da: 2. klasse · 8A · Tid og måling
+    summary:
+      da: Læs præcise oplysninger og beskriv en fremgangsmåde. Brug centimeter, meter, tid og enkle halve og kvarte. Hold styr på enheder, når du sammenligner.
+    fiction:
+      da: Helten følger stien til tid og måling. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Tid og måling
+      objectives:
+        - da: Læs præcise oplysninger og beskriv en fremgangsmåde.
+        - da: Brug centimeter, meter, tid og enkle halve og kvarte.
+        - da: Hold styr på enheder, når du sammenligner.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs præcise oplysninger og beskriv en fremgangsmåde. Brug centimeter, meter, tid og enkle halve og kvarte.
+      examples:
+        - target: Turen begynder klokken ti og slutter klokken elleve. Klassen går to kilometer. Ved pausen deler fire børn et æble i fire lige store stykker. Hvert barn får ét stykke.
+          translation:
+            da: Turen begynder klokken ti og slutter klokken elleve. Klassen går to kilometer. Ved pausen deler fire børn et æble i fire lige store stykker. Hvert barn får ét stykke.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs præcise oplysninger og beskriv en fremgangsmåde. Brug centimeter, meter, tid og enkle halve og kvarte.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_55
+    minimum_level: 55
+    title:
+      da: 2. klasse · 8B · Tid og måling
+    summary:
+      da: Læs præcise oplysninger og beskriv en fremgangsmåde. Brug centimeter, meter, tid og enkle halve og kvarte. Hold styr på enheder, når du sammenligner.
+    fiction:
+      da: Helten følger stien til tid og måling. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Tid og måling
+      objectives:
+        - da: Læs præcise oplysninger og beskriv en fremgangsmåde.
+        - da: Brug centimeter, meter, tid og enkle halve og kvarte.
+        - da: Hold styr på enheder, når du sammenligner.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs præcise oplysninger og beskriv en fremgangsmåde. Brug centimeter, meter, tid og enkle halve og kvarte.
+      examples:
+        - target: Turen begynder klokken ti og slutter klokken elleve. Klassen går to kilometer. Ved pausen deler fire børn et æble i fire lige store stykker. Hvert barn får ét stykke.
+          translation:
+            da: Turen begynder klokken ti og slutter klokken elleve. Klassen går to kilometer. Ved pausen deler fire børn et æble i fire lige store stykker. Hvert barn får ét stykke.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs præcise oplysninger og beskriv en fremgangsmåde. Brug centimeter, meter, tid og enkle halve og kvarte.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_56
+    minimum_level: 56
+    title:
+      da: 2. klasse · 9A · To tekster om samme emne
+    summary:
+      da: Sammenlign teksternes oplysninger og formål. Vælg mellem addition, subtraktion, gange og deling. Forklar, hvorfor en bestemt oplysning er nødvendig.
+    fiction:
+      da: Helten følger stien til to tekster om samme emne. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: To tekster om samme emne
+      objectives:
+        - da: Sammenlign teksternes oplysninger og formål.
+        - da: Vælg mellem addition, subtraktion, gange og deling.
+        - da: Forklar, hvorfor en bestemt oplysning er nødvendig.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Sammenlign teksternes oplysninger og formål. Vælg mellem addition, subtraktion, gange og deling.
+      examples:
+        - target: 'På plakaten står: Kom til skolens marked på lørdag! I beskeden til hjælperne står: Mød klokken ni og stil bordene op. Markedet åbner klokken ti. Begge tekster handler om markedet, men har forskellige modtagere.'
+          translation:
+            da: 'På plakaten står: Kom til skolens marked på lørdag! I beskeden til hjælperne står: Mød klokken ni og stil bordene op. Markedet åbner klokken ti. Begge tekster handler om markedet, men har forskellige modtagere.'
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Sammenlign teksternes oplysninger og formål. Vælg mellem addition, subtraktion, gange og deling.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_57
+    minimum_level: 57
+    title:
+      da: 2. klasse · 9B · To tekster om samme emne
+    summary:
+      da: Sammenlign teksternes oplysninger og formål. Vælg mellem addition, subtraktion, gange og deling. Forklar, hvorfor en bestemt oplysning er nødvendig.
+    fiction:
+      da: Helten følger stien til to tekster om samme emne. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: To tekster om samme emne
+      objectives:
+        - da: Sammenlign teksternes oplysninger og formål.
+        - da: Vælg mellem addition, subtraktion, gange og deling.
+        - da: Forklar, hvorfor en bestemt oplysning er nødvendig.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Sammenlign teksternes oplysninger og formål. Vælg mellem addition, subtraktion, gange og deling.
+      examples:
+        - target: 'På plakaten står: Kom til skolens marked på lørdag! I beskeden til hjælperne står: Mød klokken ni og stil bordene op. Markedet åbner klokken ti. Begge tekster handler om markedet, men har forskellige modtagere.'
+          translation:
+            da: 'På plakaten står: Kom til skolens marked på lørdag! I beskeden til hjælperne står: Mød klokken ni og stil bordene op. Markedet åbner klokken ti. Begge tekster handler om markedet, men har forskellige modtagere.'
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Sammenlign teksternes oplysninger og formål. Vælg mellem addition, subtraktion, gange og deling.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_58
+    minimum_level: 58
+    title:
+      da: 2. klasse · 10A · Min fortælling og min forklaring
+    summary:
+      da: Lav en sammenhængende lille tekst og begrund svar med belæg. Løs blandede problemer og kontrollér resultatet. Beskriv flere mulige strategier og afprøv dem.
+    fiction:
+      da: Helten følger stien til min fortælling og min forklaring. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Min fortælling og min forklaring
+      objectives:
+        - da: Lav en sammenhængende lille tekst og begrund svar med belæg.
+        - da: Løs blandede problemer og kontrollér resultatet.
+        - da: Beskriv flere mulige strategier og afprøv dem.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Lav en sammenhængende lille tekst og begrund svar med belæg. Løs blandede problemer og kontrollér resultatet.
+      examples:
+        - target: Ida planlægger en udstilling af klassens historier. Hun sorterer historierne efter emne og laver skilte. Bo opdager, at to skilte er byttet om. De læser historierne igen og retter fejlen. Til sidst inviterer de en anden klasse.
+          translation:
+            da: Ida planlægger en udstilling af klassens historier. Hun sorterer historierne efter emne og laver skilte. Bo opdager, at to skilte er byttet om. De læser historierne igen og retter fejlen. Til sidst inviterer de en anden klasse.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Lav en sammenhængende lille tekst og begrund svar med belæg. Løs blandede problemer og kontrollér resultatet.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.
+  - id: school_59
+    minimum_level: 59
+    title:
+      da: 2. klasse · 10B · Min fortælling og min forklaring
+    summary:
+      da: Lav en sammenhængende lille tekst og begrund svar med belæg. Løs blandede problemer og kontrollér resultatet. Beskriv flere mulige strategier og afprøv dem.
+    fiction:
+      da: Helten følger stien til min fortælling og min forklaring. Dragen har fundet en ny gåde. Brug det, du lærer, til at åbne den næste port.
+    lesson:
+      title:
+        da: Min fortælling og min forklaring
+      objectives:
+        - da: Lav en sammenhængende lille tekst og begrund svar med belæg.
+        - da: Løs blandede problemer og kontrollér resultatet.
+        - da: Beskriv flere mulige strategier og afprøv dem.
+      explanation:
+        da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Lav en sammenhængende lille tekst og begrund svar med belæg. Løs blandede problemer og kontrollér resultatet.
+      examples:
+        - target: Ida planlægger en udstilling af klassens historier. Hun sorterer historierne efter emne og laver skilte. Bo opdager, at to skilte er byttet om. De læser historierne igen og retter fejlen. Til sidst inviterer de en anden klasse.
+          translation:
+            da: Ida planlægger en udstilling af klassens historier. Hun sorterer historierne efter emne og laver skilte. Bo opdager, at to skilte er byttet om. De læser historierne igen og retter fejlen. Til sidst inviterer de en anden klasse.
+    mission:
+      da: Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Lav en sammenhængende lille tekst og begrund svar med belæg. Løs blandede problemer og kontrollér resultatet.
+    cliffhanger:
+      da: Den næste port åbner for en ny opdagelse.

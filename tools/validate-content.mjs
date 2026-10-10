@@ -2,6 +2,7 @@
 import { existsSync, statSync } from "node:fs";
 import { resolve } from "node:path";
 import { loadModularPack } from "./pack-utils.mjs";
+import { validateLanguagePack as validateRuntimePack } from "../packages/content-schema/src/index.ts";
 
 const target = process.argv[2] ?? "content-packs/hy-eastern-it";
 const absolutePath = resolve(target);
@@ -12,6 +13,11 @@ if (!existsSync(absolutePath)) {
 
 const pack = statSync(absolutePath).isDirectory() ? loadModularPack(absolutePath) : JSON.parse(await import("node:fs/promises").then((fs) => fs.readFile(absolutePath, "utf8")));
 const result = validateLanguagePack(pack);
+// Run the same validation the browser uses, as well as the editorial checks.
+const runtimeResult = validateRuntimePack(pack);
+result.errors = [...new Set([...result.errors, ...runtimeResult.errors])];
+result.warnings = [...new Set([...result.warnings, ...runtimeResult.warnings])];
+result.ok = result.errors.length === 0;
 
 if (result.errors.length > 0) {
   console.error("Content validation failed:");
@@ -31,6 +37,7 @@ function validateLanguagePack(value) {
   const errors = [];
   const warnings = [];
   if (!isObject(value)) return { ok: false, errors: ["Pack must be an object."], warnings };
+  const sourceLanguage = value.base_language?.code ?? value.source_language;
   for (const field of ["pack_id", "version", "title", "source_language", "target_language", "license"]) requireString(value, field, errors);
   if (!isObject(value.language)) errors.push("language must be an object.");
   else for (const field of ["name_english", "name_native", "bcp47", "direction"]) requireString(value.language, `language.${field}`, errors, field);
@@ -59,7 +66,7 @@ function validateLanguagePack(value) {
     else {
       for (const tag of item.tags) if (tagSet.size && !tagSet.has(tag)) warnings.push(`items[${index}] uses uncontrolled tag: ${tag}`);
       validateCurriculumTags(item, `items[${index}]`, errors, authoredStageNumbers);
-      if (item.tags.includes("tier:core") && item.translation_review_status?.it !== "reviewed") errors.push(`items[${index}] core Italian translation must be reviewed.`);
+      if (value.subject !== "foundations" && item.tags.includes("tier:core") && item.translation_review_status?.[sourceLanguage] !== "reviewed") errors.push(`items[${index}] core ${sourceLanguage} translation must be reviewed.`);
     }
     if (!Array.isArray(item.audio)) errors.push(`items[${index}].audio must be an array.`);
     if (item.review_status !== "approved") warnings.push(`items[${index}] is not approved yet: ${item.id}`);
@@ -98,10 +105,10 @@ function validateLanguagePack(value) {
       for (const tag of grammar.tags) if (tagSet.size && !tagSet.has(tag)) warnings.push(`grammar_items[${index}] uses uncontrolled tag: ${tag}`);
       validateCurriculumTags(grammar, `grammar_items[${index}]`, errors, authoredStageNumbers);
       if (grammar.tags.includes("tier:core")) {
-        if (grammar.translation_review_status?.it !== "reviewed") errors.push(`grammar_items[${index}] core Italian translation must be reviewed.`);
-        const italianDistractors = grammar.translation_distractors?.it;
-        if (!Array.isArray(italianDistractors) || new Set(italianDistractors).size < 3 || italianDistractors.includes(grammar.translation)) {
-          errors.push(`grammar_items[${index}] core sentence must have three unique Italian distractors different from the answer.`);
+        if (grammar.translation_review_status?.[sourceLanguage] !== "reviewed") errors.push(`grammar_items[${index}] core ${sourceLanguage} translation must be reviewed.`);
+        const sourceDistractors = grammar.translation_distractors?.[sourceLanguage];
+        if (!Array.isArray(sourceDistractors) || new Set(sourceDistractors).size < 3 || sourceDistractors.includes(grammar.translation)) {
+          errors.push(`grammar_items[${index}] core sentence must have three unique ${sourceLanguage} distractors different from the answer.`);
         }
       }
     }
@@ -115,11 +122,11 @@ function validateLanguagePack(value) {
     for (const field of ["id", "domain", "review_status"]) requireString(problem, `${path}.${field}`, errors, field);
     if (mathIds.has(problem.id)) errors.push(`Duplicate math problem id: ${problem.id}`);
     mathIds.add(problem.id);
-    if (!["counting", "number_match", "number_order", "comparison", "addition", "subtraction", "number_bond", "story_problem", "shape", "pattern", "sorting", "measurement"].includes(problem.domain)) errors.push(`${path}.domain is unsupported.`);
+    if (!["counting", "number_match", "number_order", "comparison", "addition", "subtraction", "number_bond", "story_problem", "shape", "pattern", "sorting", "measurement", "multiplication", "division", "place_value", "data"].includes(problem.domain)) errors.push(`${path}.domain is unsupported.`);
     if (!isObject(problem.prompt)) errors.push(`${path}.prompt must be localized text.`);
     if (!Number.isFinite(problem.result)) errors.push(`${path}.result must be a number.`);
     if (problem.options !== undefined && (!Array.isArray(problem.options) || problem.options.some((entry) => typeof entry !== "string" || !entry.trim()))) errors.push(`${path}.options must contain non-empty strings.`);
-    if (["shape", "pattern", "sorting", "measurement"].includes(problem.domain) && (!problem.answer || !problem.options?.includes(problem.answer))) errors.push(`${path}.answer must be included in options.`);
+    if (["shape", "pattern", "sorting", "measurement", "place_value", "data"].includes(problem.domain) && (!problem.answer || !problem.options?.includes(problem.answer))) errors.push(`${path}.answer must be included in options.`);
     if (!Array.isArray(problem.tags)) errors.push(`${path}.tags must be an array.`);
     else for (const tag of problem.tags) if (tagSet.size && !tagSet.has(tag)) warnings.push(`${path} uses uncontrolled tag: ${tag}`);
   }

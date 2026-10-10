@@ -13,7 +13,7 @@ for (const [index, sentence] of sentences.entries()) {
   const translation = String(sentence.translations?.it ?? sentence.translation ?? "").trim();
   if (!translation) errors.push(`${path}: missing Italian translation.`);
   if (/\b(?:lattè|setè|tèmpo|tristè)\b/i.test(translation)) errors.push(`${path}: contains an incorrect accent: ${translation}`);
-  if (/^Voglio\s+(?!d(?:el|ella|ell[’']|ello|ei|egli|elle)\b|un(?:a|o)?[’']?\b)/i.test(translation)) {
+  if (/^Voglio\s+(?!d(?:el|ella|ell[’']|ello|ei|egli|elle)\b|un(?:a|o)?[’']?\b|\p{L}+(?:are|ere|ire)\b)/iu.test(translation)) {
     errors.push(`${path}: "Voglio" requires a natural article or partitive: ${translation}`);
   }
   if (/^(?:Questo|Questa) è\s+d(?:el|ella|ell[’']|ello|ei|egli|elle)\b/i.test(translation)) {
@@ -21,7 +21,11 @@ for (const [index, sentence] of sentences.entries()) {
   }
   if (!/[.!?…]$/.test(translation)) errors.push(`${path}: translation should end with punctuation: ${translation}`);
   const prompt = String(sentence.prompt?.it ?? "");
-  if (!prompt.endsWith(translation)) errors.push(`${path}: Italian prompt is not synchronized with its translation.`);
+  if (!sentence.comprehension_questions?.length && !prompt.endsWith(translation)) errors.push(`${path}: Italian prompt is not synchronized with its translation.`);
+  for (const question of sentence.comprehension_questions ?? []) {
+    if (!question.question?.it || !question.answer?.it || question.distractors?.it?.length < 2) errors.push(`${path}: incomplete Italian comprehension question.`);
+    if (question.distractors?.it?.includes(question.answer?.it)) errors.push(`${path}: correct comprehension answer appears among distractors.`);
+  }
   const distractors = sentence.translation_distractors?.it ?? [];
   if (distractors.length < 3) errors.push(`${path}: fewer than three Italian translation alternatives.`);
   if (new Set(distractors).size !== distractors.length) errors.push(`${path}: duplicate Italian translation alternatives.`);

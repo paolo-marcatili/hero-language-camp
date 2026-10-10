@@ -108,7 +108,7 @@ const levels = (sourceLevels.levels ?? []).map((level) => {
 const pack = {
   ...sourcePack,
   pack_id: 'hy-eastern-en',
-  version: '0.1.0',
+  version: sourcePack.version,
   title: 'Eastern Armenian for English-speaking children',
   description: 'A gradual Eastern Armenian course for children who use English for explanations, stories and menus.',
   base_language: { code: 'en', name_english: 'English', name_native: 'English', is_default: true }
@@ -242,7 +242,8 @@ const EN = new Map(Object.entries({
   hy_sentence_short_dialogue: 'Hello, I’m Ani. And you?',
   hy_sentence_integrated_day: 'Today we are going to school.'
 }));
-const selected = sourceSentences.filter((row) => EN.has(row.id) || (row.tags ?? []).includes('curriculum:v2'));
+const selected = sourceSentences.filter((row) => EN.has(row.id) || (row.tags ?? []).includes('curriculum:v2') ||
+  ((row.tags ?? []).includes('tier:core') && row.translations?.en));
 if (selected.filter((row) => EN.has(row.id)).length !== EN.size) {
   const have = new Set(selected.map((row) => row.id));
   throw new Error(`Missing curated sentence IDs: ${[...EN.keys()].filter((id) => !have.has(id)).join(', ')}`);
@@ -259,12 +260,12 @@ for (const row of selected) {
 }
 const sentences = selected.map((source) => {
   const isCurriculumV2 = (source.tags ?? []).includes('curriculum:v2');
-  const translation = isCurriculumV2 ? source.translations?.en : EN.get(source.id);
+  const translation = source.translations?.en ?? EN.get(source.id);
   if (typeof translation !== 'string' || !translation.trim()) throw new Error(`Missing English translation for ${source.id}`);
 
   let armenianDistractors;
   let translationDistractors;
-  if (isCurriculumV2) {
+  if (isCurriculumV2 || source.translation_distractors?.en?.length >= 3) {
     armenianDistractors = [...new Set((source.distractors ?? []).map(String).filter((value) => normalize(value) !== normalize(source.target_sentence)))];
     translationDistractors = [...new Set((source.translation_distractors?.en ?? []).map(String).filter((value) => normalize(value) !== normalize(translation)))];
   } else {
@@ -290,6 +291,10 @@ const sentences = selected.map((source) => {
     review_status: source.review_status,
     source: source.source,
     source_location: source.source_location,
+    accepted_sentences: source.accepted_sentences,
+    order_exercise: source.order_exercise ?? false,
+    comprehension: source.comprehension ? englishOnly(source.comprehension) : undefined,
+    comprehension_questions: source.comprehension_questions ? englishOnly(source.comprehension_questions) : undefined,
     prompt: { en: `Choose the Armenian sentence: ${translation}` },
     translation,
     base_language: 'en',

@@ -126,7 +126,7 @@ for (const entry of moduleEntries) {
     globalLevelNumbers.add(number);
     requireLocalized(level.theme, `${name} level ${number} theme`);
     requireLocalized(level.learning_goal, `${name} level ${number} learning_goal`);
-    if (!["pre_a1", "a1", "a2"].includes(level.cefr)) issues.push(`${name} level ${number} has unsupported cefr ${level.cefr}`);
+    if (!["pre_a1", "a1", "a2", "b1"].includes(level.cefr)) issues.push(`${name} level ${number} has unsupported cefr ${level.cefr}`);
     ensureEqual(Number(level.stat_cap), 5 + number * 5, `${name} level ${number} stat cap`);
     if (typeof level.chapter_id !== "string" || !level.chapter_id.trim()) issues.push(`${name} level ${number} needs chapter_id`);
   }
@@ -281,8 +281,8 @@ for (const entry of moduleEntries) {
       if (english.translations?.en !== definition.translations?.en) issues.push(`${name}: English word translation is out of sync for ${definition.target}`);
       if (!Array.isArray(source.audio) || !Array.isArray(english.audio)) issues.push(`${name}: word ${definition.target} must retain an audio array in both packs`);
     }
-    if (level.review_only !== true && exactIntroducedWords < 8) {
-      issues.push(`${name}: level ${number} introduces only ${exactIntroducedWords} genuinely new core words; expected at least 8`);
+    if (level.review_only !== true && exactIntroducedWords < (level.minimum_new_words ?? 8)) {
+      issues.push(`${name}: level ${number} introduces only ${exactIntroducedWords} genuinely new core words; expected at least ${level.minimum_new_words ?? 8}`);
     }
     for (const definition of moduleSentences) {
       const source = findByTarget(sourcePack.grammar_items, "target_sentence", definition.target_sentence);

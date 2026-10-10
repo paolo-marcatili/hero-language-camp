@@ -95,10 +95,19 @@ Generated entries remain `draft`. After listening, keep a list of files that req
 ## 7. Commit and deploy
 
 ```bash
-git add content-packs/da-foundations apps/danish-foundations/public/content-packs/da-foundations
+# public/content-packs is a generated, gitignored copy: commit the source pack only
+git add content-packs/da-foundations
 git commit -m "Add Danish neural audio"
 git push origin main
 git push danish main
 ```
 
 The GitHub Pages build will include the fixed MP3 files in the offline audio cache.
+
+## Current scope and the offline steps (after the 2026-10-10 update)
+
+- Plan: 2,480 files (24 instructions, 25 letter names, 275 words, 1,246 maths prompts, 487 distinct maths answer sentences, 276 reading targets, 147 reading questions). After the `rate` backfill the Azure requests are 1,812 and 668 recordings are reused, about 52,900 characters.
+- Stamp the rate on existing recordings without any Azure call: `node tools/generate-danish-audio.mjs content-packs/da-foundations --adopt-existing`, then `npm run content:build-danish`, then `npm run content:check-danish-sync`.
+- Normalise the filename encoding (dry run first): `node tools/normalize-danish-audio-names.mjs content-packs/da-foundations`, add `--write` to apply.
+- Coverage (warn-only by default; `--strict` fails on non-residual gaps): `node tools/check-danish-audio-coverage.mjs`. Numeral and emoji option labels and other option texts are residual browser speech by design: the option buttons have no recording reference yet.
+- Browser speech remains the fallback when no recording matches the spoken text. Maths wrong-answer audio becomes neural only after the Azure run is integrated.

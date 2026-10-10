@@ -6,13 +6,13 @@ The child-facing interface is Danish. Italian is available as optional parent su
 
 ## Current scope
 
-- Fourteen chapters and levels, numbered 0–13.
+- Sixty units and levels, numbered 0–59: twenty each for 0., 1. and 2. klasse, two per teaching month.
 - Twenty-five early-school graphemes; `q`, `w`, `x`, and `z` remain outside the introductory sequence.
-- 127 picture-supported and high-frequency words.
-- 75 structured reading tasks: sentence-to-picture, sentence order, missing letters, missing words, and mini-stories.
-- 196 mathematics tasks: counting, numeral matching, ordering, comparison, addition, subtraction, number bonds, and story problems.
+- 275 picture-supported and high-frequency words.
+- 276 structured reading and listening tasks: sentence-to-picture, sentence order, missing letters, missing words, and mini-stories.
+- 1,246 mathematics and logic tasks: counting, numeral matching, ordering, comparison, addition, subtraction, number bonds, and story problems.
 - Numbers and operations through 20.
-- Three labyrinth bands and fourteen scalable enemies.
+- Three labyrinth bands and sixty scalable enemies.
 - Parent progress summary.
 - Narrated Danish tasks and replay controls.
 - Separate offline and GitHub Pages deployment from the Armenian application.
@@ -42,7 +42,7 @@ The production output is written to `apps/danish-foundations/dist`.
 ## Rebuild the generated Phase C+D curriculum
 
 ```bash
-npm run content:expand:danish
+npm run content:build-danish
 npm run check:danish
 ```
 

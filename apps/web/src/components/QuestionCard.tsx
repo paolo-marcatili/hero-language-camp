@@ -1,3 +1,4 @@
+import { isCorrectAnswer } from "@hero-lang/learning-engine";
 import { useEffect, useRef, useState } from "react";
 import type { AnswerOption, TrainingQuestion } from "@hero-lang/learning-engine";
 import { isLearningAudioPlaying, playLearningAudio, unlockAudio } from "../audio";
@@ -31,6 +32,8 @@ interface QuestionCardProps {
   onAudioStarted?: () => void;
   onAudioReplayCompleted?: (durationMs: number) => void;
   audioHasStarted?: boolean;
+  /** Show the Continue button after correct answers too (placement check). */
+  continueOnCorrect?: boolean;
 }
 
 export function QuestionCard({
@@ -46,25 +49,33 @@ export function QuestionCard({
   onContinue,
   onAudioStarted,
   onAudioReplayCompleted,
-  audioHasStarted = false
+  audioHasStarted = false,
+  continueOnCorrect = false
 }: QuestionCardProps) {
   const showTimer = mode === "fight" && timerSeconds > 0;
   const targetLanguage = question.target_audio_lang?.split("-")[0] ?? (/^[\u0530-\u058F]/.test(question.prompt) ? "hy" : undefined);
+  // All engines set target_audio_lang; this fallback only protects hand-built questions.
+  const targetAudioLang = question.target_audio_lang
+    ?? (/[\u0530-\u058F]/.test(question.target_audio_text ?? question.prompt) ? "hy-AM" : "da-DK");
   const showInstructionAudioButton = Boolean(question.instruction_audio_text || question.instruction_audio?.length);
   const showTargetAudioButton = question.allow_target_audio_before_answer !== false
     && (question.activity_type === "listen_and_choose" || Boolean(question.audio?.length) || Boolean(question.target_audio_text));
   const useSingleAudioControl = Boolean(question.single_audio_control);
   const showSingleReplayButton = useSingleAudioControl && (showInstructionAudioButton || showTargetAudioButton || Boolean(question.secondary_audio?.length));
   const isTapOrder = question.variant === "sentence_tap_order";
+  const optionAudioLang = question.option_audio_lang;
   const [selectedChips, setSelectedChips] = useState<AnswerOption[]>([]);
-  const [audioStarted, setAudioStarted] = useState(false);
+  const initialAudioReady = !question.requires_audio_before_answer || audioHasStarted;
+  const [audioStarted, setAudioStarted] = useState(initialAudioReady);
   const [instructionAudioPlaying, setInstructionAudioPlaying] = useState(false);
   const [audioPlaying, setAudioPlaying] = useState(false);
   const [secondaryAudioPlaying, setSecondaryAudioPlaying] = useState(false);
   const [narrationFailed, setNarrationFailed] = useState(false);
+  const [audioBusyHint, setAudioBusyHint] = useState(false);
   const instructionPlaybackSerial = useRef(0);
   const audioPlaybackSerial = useRef(0);
   const secondaryPlaybackSerial = useRef(0);
+  const audioStartedRef = useRef(initialAudioReady); // synchronous mirror: closures scheduled from the previous render must not read stale state
   // COMBAT_TIMER_SOURCE_OF_TRUTH_V9: submit the visible meter's exact remaining time.
   const timerRemainingRef = useRef(timerSeconds);
   const expectedAnswerLength = question.expected_answer_length ?? question.options.length;
@@ -75,9 +86,11 @@ export function QuestionCard({
   // Avoid cancelling narration by submitting while learning audio is active.
   // A genuine playback failure still releases these controls when its promise settles.
   const answerDisabled = disabled
+    || waitingForNarration
     || instructionAudioPlaying
     || audioPlaying
     || secondaryAudioPlaying;
+  const anyNarrationPlaying = instructionAudioPlaying || audioPlaying || secondaryAudioPlaying;
 
   useEffect(() => {
     instructionPlaybackSerial.current += 1;
@@ -88,7 +101,9 @@ export function QuestionCard({
     setAudioPlaying(false);
     setSecondaryAudioPlaying(false);
     setNarrationFailed(false);
-    setAudioStarted(!question.requires_audio_before_answer || audioHasStarted);
+    const ready = !question.requires_audio_before_answer || audioHasStarted;
+    audioStartedRef.current = ready;
+    setAudioStarted(ready);
     timerRemainingRef.current = timerSeconds;
 
     if (!question.auto_narrate) return;
@@ -99,11 +114,23 @@ export function QuestionCard({
   }, [question.id]);
 
   useEffect(() => {
-    if (audioHasStarted) setAudioStarted(true);
+    if (audioHasStarted) { audioStartedRef.current = true; setAudioStarted(true); }
   }, [audioHasStarted]);
 
+  useEffect(() => () => {
+    instructionPlaybackSerial.current += 1;
+    audioPlaybackSerial.current += 1;
+    secondaryPlaybackSerial.current += 1;
+  }, []);
+
   function answerSubmissionBlocked(): boolean {
-    return answerDisabled || isLearningAudioPlaying();
+    if (answerDisabled) return true;
+    if (isLearningAudioPlaying()) { flashAudioBusyHint(); return true; }
+    return false;
+  }
+  function flashAudioBusyHint(): void {
+    setAudioBusyHint(true);
+    window.setTimeout(() => setAudioBusyHint(false), 1600);
   }
 
   function handleChipTap(option: AnswerOption) {
@@ -130,7 +157,7 @@ export function QuestionCard({
     onAnswer(selectedOptionId, mode === "fight" && showTimer ? timerRemainingRef.current : undefined);
   }
   function continueAfterFeedback(): void {
-    if (isLearningAudioPlaying()) return;
+    if (isLearningAudioPlaying()) { flashAudioBusyHint(); return; }
     onContinue?.();
   }
 
@@ -139,7 +166,6 @@ export function QuestionCard({
     if (instructionAudioPlaying) return;
     void unlockAudio();
     const serial = ++instructionPlaybackSerial.current;
-    const wasReadyForAnswer = audioStarted;
     const playbackStartedAt = performance.now();
     setInstructionAudioPlaying(true);
     setNarrationFailed(false);
@@ -153,6 +179,7 @@ export function QuestionCard({
           question.instruction_audio_text,
           question.instruction_audio_lang ?? question.target_audio_lang ?? "da-DK"
         );
+        if (serial !== instructionPlaybackSerial.current) return;
       }
       if (question.auto_play_target_audio || (isReplay && question.replay_target_audio && question.allow_target_audio_before_answer !== false)) {
         targetPlayed = await playLearningAudio(
@@ -167,7 +194,8 @@ export function QuestionCard({
       // Never trap a child behind a failed system voice. The retry message stays
       // visible, while the visual task remains usable with adult support.
       setNarrationFailed(!played);
-      if (!wasReadyForAnswer) {
+      if (!audioStartedRef.current) {
+        audioStartedRef.current = true;
         setAudioStarted(true);
         onAudioStarted?.();
       } else if (played) {
@@ -181,17 +209,17 @@ export function QuestionCard({
     if (audioPlaying) return;
     void unlockAudio();
     const serial = ++audioPlaybackSerial.current;
-    const wasReadyForAnswer = audioStarted;
     const playbackStartedAt = performance.now();
     setAudioPlaying(true);
-    void playLearningAudio(question.audio, question.target_audio_text, question.target_audio_lang ?? "hy-AM")
+    void playLearningAudio(question.audio, question.target_audio_text, targetAudioLang)
       .then((played) => {
         if (serial !== audioPlaybackSerial.current) return;
-        if (played && !wasReadyForAnswer) {
+        setNarrationFailed(!played);
+        if (!audioStartedRef.current) {
+          audioStartedRef.current = true;
           setAudioStarted(true);
-          setNarrationFailed(false);
           onAudioStarted?.();
-        } else if (played && wasReadyForAnswer) {
+        } else if (played) {
           onAudioReplayCompleted?.(Math.max(0, performance.now() - playbackStartedAt));
         }
       })
@@ -205,7 +233,7 @@ export function QuestionCard({
     void unlockAudio();
     const serial = ++secondaryPlaybackSerial.current;
     setSecondaryAudioPlaying(true);
-    void playLearningAudio(question.secondary_audio, question.secondary_audio_text, question.target_audio_lang ?? "hy-AM")
+    void playLearningAudio(question.secondary_audio, question.secondary_audio_text, targetAudioLang)
       .finally(() => {
         if (serial === secondaryPlaybackSerial.current) setSecondaryAudioPlaying(false);
       });
@@ -223,7 +251,7 @@ export function QuestionCard({
       {showTimer ? (
         <QuestionTimer
           durationSeconds={timerSeconds}
-          active={!disabled && audioStarted && !instructionAudioPlaying && !audioPlaying}
+          active={!disabled && audioStarted && !instructionAudioPlaying && !audioPlaying && !narrationFailed}
           resetKey={`${question.id}:${audioStarted ? "started" : "waiting"}`}
           label={audioStarted ? t(language, "speedBonus") : t(language, "listenToStartBonus")}
           onRemainingChange={(remainingSeconds) => { timerRemainingRef.current = remainingSeconds; }}
@@ -235,7 +263,7 @@ export function QuestionCard({
           <button
             type="button"
             className="audio-button instruction-audio-button"
-            disabled={instructionAudioPlaying || audioPlaying}
+            disabled={anyNarrationPlaying}
             onClick={() => void playInstructionAudio(true)}
           >
             🔊 {t(language, "listenAgain")}
@@ -244,12 +272,12 @@ export function QuestionCard({
       ) : showInstructionAudioButton || showTargetAudioButton || question.secondary_audio?.length ? (
         <div className="question-audio-actions">
           {showInstructionAudioButton ? (
-            <button type="button" className="audio-button instruction-audio-button" disabled={instructionAudioPlaying} onClick={() => void playInstructionAudio(true)}>
+            <button type="button" className="audio-button instruction-audio-button" disabled={anyNarrationPlaying} onClick={() => void playInstructionAudio(true)}>
               🔊 {t(language, "playInstruction")}
             </button>
           ) : null}
           {showTargetAudioButton ? (
-            <button type="button" className="audio-button" disabled={audioPlaying} onClick={playQuestionAudio}>
+            <button type="button" className="audio-button" disabled={anyNarrationPlaying} onClick={playQuestionAudio}>
               ◉ {question.kind === "letter"
                 ? t(language, "playLetterAudio")
                 : question.activity_type === "repeat_after_me"
@@ -260,14 +288,18 @@ export function QuestionCard({
             </button>
           ) : null}
           {question.secondary_audio?.length ? (
-            <button type="button" className="audio-button secondary-audio-button" disabled={secondaryAudioPlaying} onClick={playSecondaryAudio}>
+            <button type="button" className="audio-button secondary-audio-button" disabled={anyNarrationPlaying} onClick={playSecondaryAudio}>
               ◉ {t(language, question.secondary_audio_label_key ?? "playLetterSound")}
             </button>
           ) : null}
         </div>
       ) : null}
       {waitingForNarration ? <p className="audio-required-hint">🔊 {t(language, "narrationPlaying")}</p> : null}
+      {audioBusyHint ? <p className="audio-required-hint" role="status">🔊 {t(language, "narrationPlaying")}</p> : null}
       {narrationFailed ? <p className="audio-required-hint audio-retry-hint">{t(language, "narrationRetryHint")}</p> : null}
+      {narrationFailed && question.allow_target_audio_before_answer !== false && question.target_audio_text && question.target_audio_text !== question.prompt ? (
+        <div className="audio-text-fallback"><p>{t(language, "audioTextFallback")}</p><p lang={targetLanguage}>{question.target_audio_text}</p></div>
+      ) : null}
 
       <div className={question.kind === "letter" ? "prompt letter-prompt" : "prompt"} lang={targetLanguage}>
         {question.prompt_image ? (
@@ -349,12 +381,13 @@ export function QuestionCard({
       ) : (
         <div className={`answer-grid${hasLongAnswers ? " long-answer-grid" : ""}`}>
           {question.options.map((option) => {
-            const isCorrect = feedback?.correctOptionId === option.id;
+            const isCorrect = Boolean(feedback && isCorrectAnswer(question, option.id));
             const isSelectedWrong = Boolean(feedback && !feedback.correct && feedback.selectedOptionId === option.id);
             const answerClass = `answer-button${option.is_hard_distractor ? " hard-option" : ""}${isCorrect ? " answer-correct" : ""}${isSelectedWrong ? " answer-wrong" : ""}`;
             return (
+              <div key={option.id} className="answer-with-audio">
+              {optionAudioLang ? <button type="button" className="small-button" aria-label={`🔊 ${option.label}`} disabled={answerDisabled} onClick={() => { void playLearningAudio([], option.audio_text ?? option.label, optionAudioLang); }}>🔊</button> : null}
               <button
-                key={option.id}
                 type="button"
                 className={answerClass}
                 disabled={answerDisabled}
@@ -362,6 +395,7 @@ export function QuestionCard({
               >
                 <FitText text={option.label} lang={/^[\u0530-\u058F]/.test(option.label) ? "hy" : undefined} maxRem={1.02} minRem={0.62} />
               </button>
+              </div>
             );
           })}
         </div>
@@ -404,7 +438,7 @@ export function QuestionCard({
             </div>
           ) : null}
           {feedback.statCapReached ? <span>{t(language, "statCapReached")}</span> : null}
-          {!feedback.correct && onContinue ? (
+          {(continueOnCorrect || !feedback.correct) && onContinue ? (
             <button type="button" className="primary-button feedback-continue-button" onClick={continueAfterFeedback}>
               {t(language, "continueButton")}
             </button>

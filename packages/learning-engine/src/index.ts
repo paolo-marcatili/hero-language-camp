@@ -1,3 +1,5 @@
+import { isCorrectAnswer, normalizeAnswer } from "./answers.ts";
+export { isCorrectAnswer } from "./answers.ts";
 import type {
   ActivityType,
   AudioReference,
@@ -54,6 +56,7 @@ export interface GrammarMastery extends PracticeMemory {
 
 export interface LearnerState {
   curriculum_version: number;
+  course_revision?: number;
   hero_name: string;
   level: number;
   xp: number;
@@ -83,6 +86,7 @@ export interface AnswerOption {
   id: string;
   label: string;
   is_hard_distractor?: boolean;
+  audio_text?: string;
 }
 
 export interface AnswerGloss {
@@ -127,6 +131,8 @@ export interface TrainingQuestion {
   prompt_hint: string;
   options: AnswerOption[];
   correct_option_id: string;
+  accepted_option_ids?: string[];
+  option_audio_lang?: string;
   correct_answer_label: string;
   expected_answer_length?: number;
   answer_explanation?: AnswerExplanation;
@@ -213,6 +219,7 @@ export function createInitialLearnerState(pack: LanguagePack, heroName = "Ani"):
 
   return {
     curriculum_version: CURRENT_CURRICULUM_VERSION,
+    course_revision: pack.progression?.curriculum_revision ?? 1,
     hero_name: heroName,
     level: 0,
     xp: 0,
@@ -223,7 +230,9 @@ export function createInitialLearnerState(pack: LanguagePack, heroName = "Ani"):
     pending_item_stat_bonuses: zeroDeferredItemBonuses(),
     mastery_by_item: Object.fromEntries(pack.items.map((item) => [item.id, createItemMastery(item.id)])),
     mastery_by_letter: Object.fromEntries((pack.letters ?? []).map((letter) => [letter.id, createLetterMastery(letter.id)])),
-    mastery_by_grammar: Object.fromEntries((pack.grammar_items ?? []).map((grammar) => [grammar.id, createGrammarMastery(grammar.id)])),
+    mastery_by_grammar: Object.fromEntries([
+      ...(pack.grammar_items ?? []), ...(pack.reading_problems ?? []), ...(pack.math_problems ?? [])
+    ].map((entry) => [entry.id, createGrammarMastery(entry.id)])),
     completed_training_sessions: {},
     completed_training_sessions_by_level: {},
     completed_labyrinth_sessions: 0,
@@ -247,7 +256,13 @@ export function normalizeLearnerState(pack: LanguagePack, maybeState: unknown, h
   // curriculum migrations must not shift a learner down another level.
   const migrateLegacyLevels = storedCurriculumVersion < LEVEL_ZERO_MIGRATION_VERSION;
   const storedLevel = Math.max(0, Math.floor(numberOr(maybeState.level, migrateLegacyLevels ? 1 : 0)));
-  const level = migrateLegacyLevels ? Math.max(0, storedLevel - 1) : storedLevel;
+  const previousLevel = migrateLegacyLevels ? Math.max(0, storedLevel - 1) : storedLevel;
+  // The legacy map renumbers saves from before the revision that introduced it. A later
+  // curriculum_revision bump must not remap saves that already use the new numbering.
+  const legacyMapRevision = pack.progression?.legacy_level_map_revision ?? pack.progression?.curriculum_revision ?? 1;
+  const levelMap = numberOr(maybeState.course_revision, 1) < legacyMapRevision ? pack.progression?.legacy_level_map : undefined;
+  const level = levelMap?.[String(previousLevel)] ?? (levelMap
+    ? Math.max(previousLevel, ...Object.values(levelMap)) : previousLevel);
   const oldStats = isObject(maybeState.hero_stats) ? maybeState.hero_stats : {};
   const heroStats: HeroStats = clampStatsToLevel(
     {
@@ -280,9 +295,9 @@ export function normalizeLearnerState(pack: LanguagePack, maybeState: unknown, h
     mastery_by_letter: mergeLetterMastery(fresh.mastery_by_letter, maybeState.mastery_by_letter),
     mastery_by_grammar: mergeGrammarMastery(fresh.mastery_by_grammar, maybeState.mastery_by_grammar),
     completed_training_sessions: completed,
-    completed_training_sessions_by_level: normalizeLevelTrainingCounts(maybeState.completed_training_sessions_by_level, migrateLegacyLevels),
+    completed_training_sessions_by_level: normalizeLevelTrainingCounts(maybeState.completed_training_sessions_by_level, migrateLegacyLevels, levelMap),
     completed_labyrinth_sessions: completedLabyrinthSessions,
-    completed_labyrinth_sessions_by_level: normalizeLevelLabyrinthCounts(maybeState.completed_labyrinth_sessions_by_level, migrateLegacyLevels),
+    completed_labyrinth_sessions_by_level: normalizeLevelLabyrinthCounts(maybeState.completed_labyrinth_sessions_by_level, migrateLegacyLevels, levelMap),
     training_stones: normalizeTrainingStones(maybeState.training_stones),
     labyrinth_door_requirements: normalizeLabyrinthDoorRequirements(maybeState.labyrinth_door_requirements),
     inventory: stringArray(maybeState.inventory),
@@ -302,6 +317,15 @@ export function getNextQuestion(pack: LanguagePack, state: LearnerState, baseLan
     return getGrammarQuestion(pack, state, baseLanguage, selection);
   }
 
+  if (focus === "comprehension") {
+    const sentences = getGrammarCandidatesForSelection(pack.grammar_items ?? [], selection)
+      .filter((item) => (!selection.requireHumanAudio || hasHumanAudio(item.audio))
+        && (!selection.requirePlayableAudio || hasPlayableAudio(item.audio)));
+    if (sentences.length && (!getItemCandidatesForSelection(pack.items, selection).length || Math.random() < 0.75)) {
+      return getSentenceMeaningQuestion(pack, chooseWeakestGrammar(sentences, state, selection), baseLanguage, true);
+    }
+  }
+
   return getItemQuestion(pack, state, baseLanguage, focus, selection);
 }
 
@@ -311,6 +335,8 @@ export function hasEligibleQuestion(
   focus: TrainingFocus,
   selection: QuestionSelectionOptions = {}
 ): boolean {
+  if (focus === "comprehension" && getGrammarCandidatesForSelection(pack.grammar_items ?? [], selection)
+    .some((item) => (!selection.requireHumanAudio || hasHumanAudio(item.audio)) && (!selection.requirePlayableAudio || hasPlayableAudio(item.audio)))) return true;
   if (focus === "vocabulary" && selection.includeLetters !== false && getLetterCandidatesForSelection(pack.letters ?? [], selection).length > 0) return true;
   if (focus === "grammar" && (pack.grammar_items?.length ?? 0) > 0) {
     return getGrammarCandidatesForSelection(pack.grammar_items ?? [], selection).length > 0;
@@ -328,7 +354,7 @@ export function answerQuestion(
   // bonus, but it never changes correctness or increases incoming damage. The
   // optional timedOut flag remains in the public context for compatibility
   // with older callers and is intentionally ignored.
-  const correct = selectedOptionId === question.correct_option_id;
+  const correct = isCorrectAnswer(question, selectedOptionId);
   const timedOut = false;
   const mode = context.mode ?? "training";
   const statName = question.stat;
@@ -565,10 +591,20 @@ function applyDeferredItemBonuses(
   return { heroStats, pending: remaining };
 }
 
+/** Highest authored level number, or undefined when the pack authors no levels. */
+export function getLastAuthoredLevel(pack: LanguagePack | undefined): number | undefined {
+  const numbers = (pack?.levels ?? []).map((entry) => entry.number).filter((value) => Number.isInteger(value) && value >= 0);
+  return numbers.length > 0 ? Math.max(...numbers) : undefined;
+}
+
 export function markEnemyDefeated(state: LearnerState, enemyId: string, bonusCoins: number, pack?: LanguagePack): LearnerState {
   const alreadyDefeated = state.defeated_enemies.includes(enemyId);
   // Hero levels are deliberately open-ended. Authored curriculum may stop temporarily, but gameplay continues.
-  const nextLevel = alreadyDefeated ? state.level : state.level + 1;
+  // Language packs stay open-ended (procedural enemies, review content). Finite school curricula
+  // (subject "foundations") stop at their last authored level; a save already past it is never lowered.
+  const lastAuthored = pack?.subject === "foundations" ? getLastAuthoredLevel(pack) : undefined;
+  const advanced = lastAuthored === undefined ? state.level + 1 : Math.min(state.level + 1, Math.max(lastAuthored, state.level));
+  const nextLevel = alreadyDefeated ? state.level : advanced;
   const cappedStats = clampStatsToLevel(state.hero_stats, nextLevel, pack);
   const deferred = applyDeferredItemBonuses(cappedStats, state.pending_item_stat_bonuses, nextLevel, pack);
 
@@ -749,6 +785,8 @@ function getItemQuestion(pack: LanguagePack, state: LearnerState, baseLanguage: 
     prompt: getItemPrompt(item, baseLanguage, focus, variant),
     prompt_image: variant === "visual_to_target" ? getApprovedItemImage(item) : undefined,
     prompt_hint: getItemPromptHint(item, baseLanguage, focus, variant),
+    instruction_audio_text: `${getItemPromptHint(item, baseLanguage, focus, variant)}${variant === "base_to_target" ? ` ${getItemTranslation(item, baseLanguage)}` : ""}`,
+    instruction_audio_lang: baseLanguage === "it" ? "it-IT" : "en-GB",
     options,
     correct_option_id: item.id,
     correct_answer_label: correctLabel,
@@ -796,126 +834,62 @@ function getLetterQuestion(pack: LanguagePack, state: LearnerState, baseLanguage
   };
 }
 
+function getSentenceMeaningQuestion(pack: LanguagePack, grammar: GrammarItem, language: string, listening: boolean): TrainingQuestion {
+  const questions = grammar.comprehension_questions ?? (grammar.comprehension ? [grammar.comprehension] : []);
+  const context = questions[Math.floor(Math.random() * questions.length)];
+  const answer = context ? getLocalizedText(context.answer, language) : getGrammarTranslation(grammar, language);
+  const choices = context
+    ? (context.distractors[language] ?? []).map((label, index) => ({ id: `meaning:${index}`, label }))
+    : chooseGrammarTranslationDistractors(pack.grammar_items ?? [], grammar, language, 3);
+  const distinct = choices.filter((choice) => normalizeAnswer(choice.label) !== normalizeAnswer(answer));
+  const options = [{ id: grammar.id, label: answer }, ...distinct].filter((choice, index, all) =>
+    all.findIndex((other) => normalizeAnswer(other.label) === normalizeAnswer(choice.label)) === index);
+  return {
+    id: `meaning:${grammar.id}:${Date.now()}:${Math.random()}`, kind: "grammar",
+    activity_type: listening ? "listen_and_choose" : "select_translation",
+    skill: listening ? "comprehension" : "grammar", stat: listening ? "defense" : "precision",
+    variant: listening ? "audio_to_base" : "sentence_translation", grammar,
+    prompt: listening ? "👂" : grammar.target_sentence,
+    prompt_hint: context ? getLocalizedText(context.question, language) : language === "it" ? "Che cosa significa?" : "What does it mean?",
+    options: shuffle(options), correct_option_id: grammar.id, correct_answer_label: answer,
+    answer_explanation: { target: grammar.target_sentence, translation: getGrammarTranslation(grammar, language) },
+    allow_target_audio_before_answer: true, target_audio_text: grammar.target_sentence,
+    target_audio_lang: pack.language.bcp47, audio: grammar.audio,
+    instruction_audio_text: context ? getLocalizedText(context.question, language) : language === "it"
+      ? (listening ? "Ascolta e scegli il significato." : "Leggi e scegli il significato.")
+      : (listening ? "Listen and choose the meaning." : "Read and choose the meaning."),
+    instruction_audio_lang: language === "it" ? "it-IT" : "en-GB", auto_narrate: listening,
+    auto_play_target_audio: listening, replay_target_audio: true, requires_audio_before_answer: listening
+  };
+}
+
 function getGrammarQuestion(pack: LanguagePack, state: LearnerState, baseLanguage: string, selection: QuestionSelectionOptions): TrainingQuestion {
   const grammarItems = pack.grammar_items ?? [];
   const grammar = chooseWeakestGrammar(grammarItems, state, selection);
-  const variant = chooseGrammarVariant(grammar);
-
-  if (variant === "missing_word") {
-    const words = splitSentenceWords(grammar.target_sentence);
-    const missingIndex = chooseMissingWordIndex(words);
-    const missingWord = words[missingIndex] ?? words[0] ?? grammar.target_sentence;
-    const promptWords = words.map((word, index) => (index === missingIndex ? "____" : word));
-    const distractors = chooseMissingWordDistractors(pack, grammar, missingWord, 3);
-    const options = shuffle([
-      { id: missingWord, label: missingWord },
-      ...distractors.map((word, index) => ({ id: word, label: word, is_hard_distractor: index === 0 }))
-    ]);
-    return {
-      id: `missing_word:${grammar.id}:${Date.now()}:${Math.random().toString(16).slice(2)}`,
-      kind: "grammar",
-      activity_type: "sentence_order",
-      skill: "grammar",
-      stat: "precision",
-      variant,
-      grammar,
-      prompt: promptWords.join(" "),
-      prompt_hint: baseLanguage === "it" ? "Scegli la parola armena che manca." : "Choose the missing Armenian word.",
-      options,
-      correct_option_id: missingWord,
-      correct_answer_label: grammar.target_sentence,
-      answer_explanation: buildGrammarExplanation(pack, grammar, baseLanguage),
-      allow_target_audio_before_answer: false,
-      target_audio_text: grammar.target_sentence,
-      target_audio_lang: pack.language.bcp47,
-      audio: grammar.audio
-    };
+  if (!grammar.order_exercise || !grammar.accepted_sentences?.length || grammar.comprehension || grammar.comprehension_questions?.length || Math.random() < 0.5) {
+    return getSentenceMeaningQuestion(pack, grammar, baseLanguage, false);
   }
-
-  if (variant === "sentence_tap_order") {
-    const words = splitSentenceWords(grammar.target_sentence);
-    const decoys = chooseTapOrderDecoys(pack, grammarItems, grammar, words, getTapOrderDecoyCount(grammar));
-    const options = shuffle([
-      ...words.map((word, index) => ({ id: `chip:answer:${index}:${word}`, label: word })),
-      ...decoys.map((word, index) => ({ id: `chip:decoy:${index}:${word}`, label: word, is_hard_distractor: index === 0 }))
-    ]);
-    return {
-      id: `sentence_tap_order:${grammar.id}:${Date.now()}:${Math.random().toString(16).slice(2)}`,
-      kind: "grammar",
-      activity_type: "sentence_order",
-      skill: "grammar",
-      stat: "precision",
-      variant,
-      grammar,
-      prompt: getGrammarTranslation(grammar, baseLanguage),
-      prompt_hint: baseLanguage === "it" ? "Costruisci la frase. Alcune parole non servono." : "Build the sentence. Some words are extra.",
-      options,
-      correct_option_id: grammar.target_sentence,
-      correct_answer_label: grammar.target_sentence,
-      expected_answer_length: words.length,
-      answer_explanation: buildGrammarExplanation(pack, grammar, baseLanguage),
-      allow_target_audio_before_answer: false,
-      target_audio_text: grammar.target_sentence,
-      target_audio_lang: pack.language.bcp47,
-      audio: grammar.audio
-    };
-  }
-
-  if (variant === "sentence_translation") {
-    const distractors = chooseGrammarTranslationDistractors(grammarItems, grammar, baseLanguage, 3);
-    const options = shuffle([
-      { id: grammar.id, label: getGrammarTranslation(grammar, baseLanguage) },
-      ...distractors.map((candidate, index) => ({
-        id: candidate.id,
-        label: candidate.label,
-        is_hard_distractor: index === 0
-      }))
-    ]);
-    return {
-      id: `sentence_translation:${grammar.id}:${Date.now()}:${Math.random().toString(16).slice(2)}`,
-      kind: "grammar",
-      activity_type: "select_translation",
-      skill: "grammar",
-      stat: "precision",
-      variant,
-      grammar,
-      prompt: grammar.target_sentence,
-      prompt_hint: baseLanguage === "it" ? "Scegli il significato della frase." : "Choose the sentence meaning.",
-      options,
-      correct_option_id: grammar.id,
-      correct_answer_label: getGrammarTranslation(grammar, baseLanguage),
-      answer_explanation: buildGrammarExplanation(pack, grammar, baseLanguage),
-      allow_target_audio_before_answer: true,
-      target_audio_text: grammar.target_sentence,
-      target_audio_lang: pack.language.bcp47,
-      audio: grammar.audio
-    };
-  }
-
-  const hardDistractor = chooseHardSentenceDistractor(grammar);
-  const rest = shuffle(grammar.distractors.filter((answer) => answer !== hardDistractor)).slice(0, 2);
+  const words = splitSentenceWords(grammar.target_sentence).map(stripOuterPunctuation);
+  const decoys = chooseTapOrderDecoys(pack, grammarItems, grammar, words, getTapOrderDecoyCount(grammar));
   const options = shuffle([
-    { id: grammar.target_sentence, label: grammar.target_sentence },
-    ...[hardDistractor, ...rest].filter(isDefinedString).map((answer, index) => ({
-      id: answer,
-      label: answer,
-      is_hard_distractor: index === 0
-    }))
+    ...words.map((word, index) => ({ id: `chip:answer:${index}:${word}`, label: word })),
+    ...decoys.map((word, index) => ({ id: `chip:decoy:${index}:${word}`, label: word, is_hard_distractor: index === 0 }))
   ]);
-
   return {
-    id: `sentence_choice:${grammar.id}:${Date.now()}:${Math.random().toString(16).slice(2)}`,
+    id: `sentence_tap_order:${grammar.id}:${Date.now()}:${Math.random().toString(16).slice(2)}`,
     kind: "grammar",
     activity_type: "sentence_order",
     skill: "grammar",
     stat: "precision",
-    variant: "sentence_choice",
+    variant: "sentence_tap_order",
     grammar,
-    prompt: getLocalizedText(grammar.prompt, baseLanguage, getGrammarTranslation(grammar, baseLanguage)),
-    prompt_hint: baseLanguage === "it" ? "Scegli la frase armena giusta." : "Choose the right Armenian sentence.",
+    prompt: getGrammarTranslation(grammar, baseLanguage),
+    prompt_hint: baseLanguage === "it" ? "Costruisci la frase. Alcune parole non servono." : "Build the sentence. Some words are extra.",
     options,
-    correct_option_id: grammar.target_sentence,
+    correct_option_id: words.join(" "),
+    accepted_option_ids: grammar.accepted_sentences.map(sentence => splitSentenceWords(sentence).map(stripOuterPunctuation).join(" ")),
     correct_answer_label: grammar.target_sentence,
+    expected_answer_length: words.length,
     answer_explanation: buildGrammarExplanation(pack, grammar, baseLanguage),
     allow_target_audio_before_answer: false,
     target_audio_text: grammar.target_sentence,
@@ -950,11 +924,16 @@ function getItemQuestionVariant(item: LearningItem, focus: TrainingFocus): Quest
 
 function buildItemOptions(pack: LanguagePack, item: LearningItem, distractors: LearningItem[], baseLanguage: string, variant: QuestionVariant): AnswerOption[] {
   const all = [item, ...distractors];
+  const seen = new Set<string>();
   return shuffle(all.map((candidate, index) => ({
     id: candidate.id,
     label: getCorrectItemOptionLabel(candidate, baseLanguage, variant, pack),
     is_hard_distractor: index === 1
-  })));
+  })).filter(option => {
+    const key = normalizeAnswer(option.label);
+    if (seen.has(key)) return false;
+    seen.add(key); return true;
+  }));
 }
 
 function getItemPrompt(item: LearningItem, baseLanguage: string, focus: TrainingFocus, variant: QuestionVariant): string {
@@ -1024,7 +1003,7 @@ function chooseWeakestItem(pack: LanguagePack, state: LearnerState, selection: Q
   if (source.length === 0) {
     throw new Error("No eligible learning item for the requested question selection.");
   }
-  const sorted = [...source].sort((a, b) => compareMemoryScore(state.mastery_by_item[a.id], state.mastery_by_item[b.id]));
+  const sorted = sortByMemoryPriority(source, state.mastery_by_item);
   const pool = sorted.slice(0, Math.min(10, sorted.length));
   return pool[Math.floor(Math.random() * pool.length)] ?? source[0];
 }
@@ -1041,7 +1020,7 @@ function chooseWeakestLetter(letters: LetterItem[], state: LearnerState, selecti
   if (introducedUnseen.length > 0) return introducedUnseen[Math.floor(Math.random() * introducedUnseen.length)] ?? introducedUnseen[0];
 
   const source = chooseStagePool(letters, selection);
-  const sorted = [...source].sort((a, b) => compareMemoryScore(state.mastery_by_letter[a.id], state.mastery_by_letter[b.id]));
+  const sorted = sortByMemoryPriority(source, state.mastery_by_letter);
   const pool = sorted.slice(0, Math.min(8, sorted.length));
   return pool[Math.floor(Math.random() * pool.length)] ?? source[0] ?? letters[0];
 }
@@ -1049,7 +1028,7 @@ function chooseWeakestLetter(letters: LetterItem[], state: LearnerState, selecti
 function chooseWeakestGrammar(grammarItems: GrammarItem[], state: LearnerState, selection: QuestionSelectionOptions): GrammarItem {
   const source = chooseStagePool(getGrammarCandidatesForSelection(grammarItems, selection), selection);
   if (source.length === 0) throw new Error("No eligible grammar item for the requested question selection.");
-  const sorted = [...source].sort((a, b) => compareMemoryScore(state.mastery_by_grammar[a.id], state.mastery_by_grammar[b.id]));
+  const sorted = sortByMemoryPriority(source, state.mastery_by_grammar);
   const pool = sorted.slice(0, Math.min(10, sorted.length));
   return pool[Math.floor(Math.random() * pool.length)] ?? source[0];
 }
@@ -1076,6 +1055,8 @@ function filterItemsForSelection(items: LearningItem[], selection: QuestionSelec
     if (getComplexity(item) > maxComplexity) return false;
     if (selection.requireHumanAudio && !hasHumanAudio(item.audio)) return false;
     if (selection.requirePlayableAudio && !hasPlayableAudio(item.audio)) return false;
+    // A monster's older theme must not hide newly introduced course material.
+    if (selection.stage !== undefined && getContentStage(item) === selection.stage) return true;
     if (tags.size === 0) return true;
     return item.tags.some((tag) => tags.has(tag));
   });
@@ -1098,6 +1079,7 @@ function filterGrammarForSelection(items: GrammarItem[], selection: QuestionSele
   return items.filter((item) => {
     if (!matchesCurriculumSelection(item, selection)) return false;
     if (getComplexity(item) > maxComplexity) return false;
+    if (selection.stage !== undefined && getContentStage(item) === selection.stage) return true;
     if (tags.size === 0) return true;
     return item.tags.some((tag) => tags.has(tag));
   });
@@ -1152,13 +1134,17 @@ function hasPlayableAudio(audio: AudioReference[] | undefined): boolean {
   }));
 }
 
-function compareMemoryScore(a?: PracticeMemory, b?: PracticeMemory): number {
-  return memoryPriorityScore(a) - memoryPriorityScore(b);
+/** Decorate-sort-undecorate: each entry draws its random tie-breaker once, so the comparator is pure and consistent. */
+function sortByMemoryPriority<T extends { id: string }>(values: T[], memories: Record<string, PracticeMemory | undefined>): T[] {
+  const now = Date.now();
+  return values
+    .map((value) => ({ value, score: memoryPriorityScore(memories[value.id], now) }))
+    .sort((a, b) => a.score - b.score)
+    .map(({ value }) => value);
 }
 
-function memoryPriorityScore(memory?: PracticeMemory): number {
+function memoryPriorityScore(memory: PracticeMemory | undefined, now: number): number {
   if (!memory) return -4 + Math.random();
-  const now = Date.now();
   const lastAsked = memory.last_asked_at ? Date.parse(memory.last_asked_at) : 0;
   const nextReview = memory.next_review_at ? Date.parse(memory.next_review_at) : 0;
   const daysSinceAsked = lastAsked ? Math.min(14, (now - lastAsked) / 86_400_000) : 14;
@@ -1261,31 +1247,8 @@ function normalizeComparison(value: string): string {
   return value.trim().toLocaleLowerCase().replace(/\s+/g, " ");
 }
 
-function chooseGrammarVariant(grammar: GrammarItem): QuestionVariant {
-  const words = splitSentenceWords(grammar.target_sentence);
-  const variants: QuestionVariant[] = ["sentence_choice", "sentence_translation"];
-  if (words.length >= 3) variants.push("sentence_tap_order");
-  if (grammar.distractors.length < 2) return "sentence_translation";
-  return variants[Math.floor(Math.random() * variants.length)] ?? "sentence_choice";
-}
-
 function splitSentenceWords(sentence: string): string[] {
   return sentence.trim().split(/\s+/).filter(Boolean);
-}
-
-function chooseMissingWordIndex(words: string[]): number {
-  if (words.length <= 1) return 0;
-  const inner = words.map((_, index) => index).filter((index) => index > 0 && index < words.length - 1);
-  const candidates = inner.length > 0 ? inner : words.map((_, index) => index);
-  return candidates[Math.floor(Math.random() * candidates.length)] ?? 0;
-}
-
-function chooseMissingWordDistractors(pack: LanguagePack, grammar: GrammarItem, missingWord: string, count: number): string[] {
-  const sentenceWords = grammar.distractors.flatMap(splitSentenceWords).filter((word) => word !== missingWord);
-  const itemWords = pack.items.map((item) => item.target).filter((word) => word !== missingWord);
-  const sameTagWords = pack.items.filter((item) => item.tags.some((tag) => grammar.tags.includes(tag))).map((item) => item.target).filter((word) => word !== missingWord);
-  const pool = uniqueStrings([...sameTagWords, ...sentenceWords, ...itemWords]);
-  return shuffle(pool).slice(0, count);
 }
 
 interface TranslationDistractor {
@@ -1318,23 +1281,24 @@ function chooseGrammarTranslationDistractors(grammarItems: GrammarItem[], gramma
   }).slice(0, count);
 }
 
-function chooseHardSentenceDistractor(grammar: GrammarItem): string {
-  const reversed = grammar.target_sentence.split(/\s+/).reverse().join(" ");
-  if (grammar.distractors.includes(reversed)) return reversed;
-  const sameStart = grammar.distractors.find((candidate) => candidate.split(/\s+/)[0] === grammar.target_sentence.split(/\s+/)[0]);
-  return sameStart ?? shuffle(grammar.distractors)[0] ?? reversed;
-}
-
 function chooseItemDistractors(pack: LanguagePack, item: LearningItem, count: number, baseLanguage: string): LearningItem[] {
   const correctLabel = normalizeComparison(getItemTranslation(item, baseLanguage));
   const candidates = pack.items.filter((candidate) =>
     candidate.id !== item.id
+    && !candidate.tags.includes("tier:extension")
+    && normalizeAnswer(candidate.target) !== normalizeAnswer(item.target)
+    && !(candidate.aliases ?? []).some(alias => normalizeAnswer(alias) === normalizeAnswer(item.target))
+    && !(item.aliases ?? []).some(alias => normalizeAnswer(alias) === normalizeAnswer(candidate.target))
     && normalizeComparison(getItemTranslation(candidate, baseLanguage)) !== correctLabel
   );
   const byId = new Map(candidates.map((candidate) => [candidate.id, candidate]));
   const explicitHard = shuffle((item.hard_distractor_ids ?? []).map((id) => byId.get(id)).filter(isDefined));
   const sameTag = shuffle(candidates.filter((candidate) => candidate.tags.some((tag) => item.tags.includes(tag))));
-  const similar = shuffle([...candidates]).sort((a, b) => similarityScore(item, a) - similarityScore(item, b)).slice(0, Math.min(8, candidates.length));
+  const similar = shuffle([...candidates])
+    .map((candidate) => ({ candidate, score: similarityScore(item, candidate) }))
+    .sort((a, b) => a.score - b.score)
+    .slice(0, Math.min(8, candidates.length))
+    .map(({ candidate }) => candidate);
   const hardPool = uniqueItems([...explicitHard, ...sameTag, ...similar]);
   const hard = hardPool[Math.floor(Math.random() * Math.max(1, hardPool.length))] ?? candidates[0];
   const restPool = candidates.filter((candidate) => candidate.id !== hard?.id);
@@ -1359,7 +1323,11 @@ function chooseLetterDistractors(letters: LetterItem[], letter: LetterItem, coun
   const candidates = letters.filter((candidate) => candidate.id !== letter.id && candidate.character !== letter.character && getLetterAnswerLabel(candidate, baseLanguage) !== correctLabel);
   const byId = new Map(candidates.map((candidate) => [candidate.id, candidate]));
   const explicitHard = shuffle((letter.similar_letter_ids ?? []).map((id) => byId.get(id)).filter(isDefined));
-  const similar = shuffle([...candidates]).sort((a, b) => levenshtein(letter.sound, a.sound) - levenshtein(letter.sound, b.sound)).slice(0, Math.min(8, candidates.length));
+  const similar = shuffle([...candidates])
+    .map((candidate) => ({ candidate, score: levenshtein(letter.sound, candidate.sound) }))
+    .sort((a, b) => a.score - b.score)
+    .slice(0, Math.min(8, candidates.length))
+    .map(({ candidate }) => candidate);
   const hardPool = uniqueLetters([...explicitHard, ...similar]);
   const hard = hardPool[Math.floor(Math.random() * Math.max(1, hardPool.length))] ?? candidates[0];
   const rest = shuffle(candidates.filter((candidate) => candidate.id !== hard?.id)).slice(0, Math.max(0, count - 1));
@@ -1508,13 +1476,13 @@ function mergeTrainingCounts(stored: unknown): Partial<Record<TrainingFocus, num
   };
 }
 
-function normalizeLevelTrainingCounts(stored: unknown, shiftLegacyLevels = false): Record<string, Partial<Record<TrainingFocus, number>>> {
+function normalizeLevelTrainingCounts(stored: unknown, shiftLegacyLevels = false, levelMap?: Record<string, number>): Record<string, Partial<Record<TrainingFocus, number>>> {
   if (!isObject(stored)) return {};
   const result: Record<string, Partial<Record<TrainingFocus, number>>> = {};
   for (const [level, counts] of Object.entries(stored)) {
     if (!isObject(counts)) continue;
     const numericLevel = Math.max(0, Math.floor(numberOr(Number(level), 0)) - (shiftLegacyLevels ? 1 : 0));
-    const key = String(numericLevel);
+    const key = String(levelMap?.[String(numericLevel)] ?? numericLevel);
     const existing = result[key] ?? {};
     const normalized = mergeTrainingCounts(counts);
     result[key] = Object.fromEntries(TRAINING_FOCUSES.map((focus) => [
@@ -1526,12 +1494,12 @@ function normalizeLevelTrainingCounts(stored: unknown, shiftLegacyLevels = false
 }
 
 
-function normalizeLevelLabyrinthCounts(stored: unknown, shiftLegacyLevels = false): Record<string, number> {
+function normalizeLevelLabyrinthCounts(stored: unknown, shiftLegacyLevels = false, levelMap?: Record<string, number>): Record<string, number> {
   if (!isObject(stored)) return {};
   const result: Record<string, number> = {};
   for (const [level, count] of Object.entries(stored)) {
     const numericLevel = Math.max(0, Math.floor(numberOr(Number(level), 0)) - (shiftLegacyLevels ? 1 : 0));
-    const key = String(numericLevel);
+    const key = String(levelMap?.[String(numericLevel)] ?? numericLevel);
     result[key] = Math.max(0, Math.floor(result[key] ?? 0)) + Math.max(0, Math.floor(numberOr(count, 0)));
   }
   return result;
@@ -1687,15 +1655,17 @@ function uniqueStrings(values: string[]): string[] {
 }
 
 function levenshtein(a: string, b: string): number {
-  const matrix = Array.from({ length: a.length + 1 }, (_, row) => [row]);
-  for (let column = 1; column <= b.length; column += 1) matrix[0][column] = column;
+  if (a === b) return 0;
+  let previous = Array.from({ length: b.length + 1 }, (_, column) => column);
   for (let row = 1; row <= a.length; row += 1) {
+    const current = [row];
     for (let column = 1; column <= b.length; column += 1) {
       const cost = a[row - 1] === b[column - 1] ? 0 : 1;
-      matrix[row][column] = Math.min(matrix[row - 1][column] + 1, matrix[row][column - 1] + 1, matrix[row - 1][column - 1] + cost);
+      current[column] = Math.min(previous[column] + 1, current[column - 1] + 1, previous[column - 1] + cost);
     }
+    previous = current;
   }
-  return matrix[a.length][b.length];
+  return previous[b.length];
 }
 
 function numberOr(value: unknown, fallback: number): number {
@@ -1722,6 +1692,3 @@ function isDefined<T>(value: T | undefined): value is T {
   return value !== undefined;
 }
 
-function isDefinedString(value: string | undefined): value is string {
-  return typeof value === "string" && value.length > 0;
-}

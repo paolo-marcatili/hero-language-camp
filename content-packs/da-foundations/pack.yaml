@@ -1,8 +1,8 @@
 pack_id: da-foundations
-version: 0.5.0
+version: 1.1.0
 subject: foundations
 title: Ord- og Talheltene
-description: Dansk læsestart og matematik gennem 0. klasse og begyndelsen af 1. klasse.
+description: Sprog, logik og matematik fra 0. til 2. klasse.
 language:
   name_english: Danish
   name_native: Dansk
@@ -17,7 +17,7 @@ base_language:
   name_native: Dansk
   is_default: true
 target_language: da-DK
-age_band: 5-7
+age_band: 5-9
 capabilities:
   human_audio: false
   tts: available

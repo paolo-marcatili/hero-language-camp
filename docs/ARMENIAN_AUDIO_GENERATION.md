@@ -1,3 +1,5 @@
+> For the current curriculum release, follow [RELEASE_GUIDE.md](RELEASE_GUIDE.md). The historical build/public-copy commands below are superseded.
+
 # Generate the Armenian neural audio pack
 
 The repository does not contain Azure credentials. The generator creates ordinary MP3 files once, updates the content records, and copies the files into the web pack. The child does not need Azure or an internet connection after the generated files are committed and deployed.
@@ -72,7 +74,8 @@ GITHUB_PAGES=true GITHUB_PAGES_BASE=/hero-language-camp/ npm run build
 Commit and push:
 
 ```bash
-git add content-packs/hy-eastern-it apps/web/public/content-packs/hy-eastern-it
+# public/content-packs is a generated, gitignored copy: commit the source pack only
+git add content-packs/hy-eastern-it
 
 git commit -m "Add Armenian neural course audio"
 git push origin main

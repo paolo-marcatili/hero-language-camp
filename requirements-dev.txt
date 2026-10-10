@@ -3,3 +3,6 @@
 Pillow>=10.0.0
 opencv-python>=4.8.0
 numpy>=1.26.0
+
+# Deterministic Danish curriculum compiler.
+PyYAML>=6.0.2,<7

@@ -34,18 +34,22 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          lfs: true
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22.12.0
+          node-version: 24
           cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Show generation plan
         env:
+          AZURE_SPEECH_VOICE: ${{ inputs.voice }}
+          AZURE_SPEECH_RATE: ${{ inputs.rate }}
           AUDIO_SCOPE: ${{ inputs.scope }}
         run: |
           if [ "$AUDIO_SCOPE" = "sample" ]; then EXTRA_ARGS="--sample"; else EXTRA_ARGS=""; fi
@@ -61,7 +65,7 @@ jobs:
         run: |
           test -n "$AZURE_SPEECH_KEY" || (echo "Missing AZURE_SPEECH_KEY repository secret" && exit 1)
           test -n "$AZURE_SPEECH_REGION" || (echo "Missing AZURE_SPEECH_REGION repository secret" && exit 1)
-          if [ "$AUDIO_SCOPE" = "sample" ]; then EXTRA_ARGS="--sample --force"; else EXTRA_ARGS="--force"; fi
+          if [ "$AUDIO_SCOPE" = "sample" ]; then EXTRA_ARGS="--sample"; else EXTRA_ARGS=""; fi
           node tools/generate-danish-audio.mjs content-packs/da-foundations $EXTRA_ARGS
 
       - name: Validate updated pack
@@ -69,6 +73,7 @@ jobs:
 
       - name: Package generated update
         env:
+          SOURCE_COMMIT: ${{ github.sha }}
           AUDIO_SCOPE: ${{ inputs.scope }}
           AUDIO_VOICE: ${{ inputs.voice }}
           AUDIO_RATE: ${{ inputs.rate }}
@@ -83,6 +88,7 @@ jobs:
           cp content-packs/da-foundations/curriculum/reading-problems.jsonl danish-audio-update/content-packs/da-foundations/curriculum/
           cp -R content-packs/da-foundations/audio/auto-neural danish-audio-update/content-packs/da-foundations/audio/
           cat > danish-audio-update/AUDIO_GENERATION.txt <<REPORT
+          Source commit: $SOURCE_COMMIT
           Scope: $AUDIO_SCOPE
           Voice: $AUDIO_VOICE
           Rate: $AUDIO_RATE

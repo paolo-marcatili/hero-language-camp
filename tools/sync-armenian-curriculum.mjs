@@ -240,21 +240,21 @@ function mergeWord(existing, definition, moduleId) {
       concept: existing.concept ?? definition.concept,
       translation: existing.translation ?? definition.translations.it,
       translations,
-      translation_review_status: { ...(existing.translation_review_status ?? {}), it: "reviewed", en: "reviewed" },
+      translation_review_status: { ...(existing.translation_review_status ?? {}), it: "reviewed", en: "reviewed", ...definition.translation_review_status },
     };
   }
   return {
     ...(existing ?? {}),
     ...definition,
     id: existing?.id ?? definition.id,
-    audio: Array.isArray(existing?.audio) ? existing.audio : Array.isArray(definition.audio) ? definition.audio : [],
+    audio: existing?.target === definition.target && Array.isArray(existing.audio) ? existing.audio : definition.audio ?? [],
     tags: mergeTags(existing?.tags, definition.tags),
     translation: definition.translations.it,
     base_language: "it",
     meanings: [...new Set([definition.translations.it, ...(existing?.meanings ?? [])])],
     transliterations: [...new Set([definition.transliteration, ...(existing?.transliterations ?? [])].filter(Boolean))],
     translations,
-    translation_review_status: { ...(existing?.translation_review_status ?? {}), it: "reviewed", en: "reviewed" },
+    translation_review_status: { ...(existing?.translation_review_status ?? {}), it: "reviewed", en: "reviewed", ...definition.translation_review_status },
     review_status: existing?.review_status ?? "needs_native_speaker_review",
     source: existing?.source ?? "curriculum-v2-curated",
     source_location: existing?.source_location ?? `curriculum/${moduleId}.json#words/${definition.id}`,
@@ -266,19 +266,22 @@ function mergeSentence(existing, definition, moduleId) {
     return {
       ...existing,
       translations: { ...(existing.translations ?? {}), ...definition.translations },
-      translation_review_status: { ...(existing.translation_review_status ?? {}), it: "reviewed", en: "reviewed" },
+      translation_review_status: { ...(existing.translation_review_status ?? {}), it: "reviewed", en: "reviewed", ...definition.translation_review_status },
     };
   }
   return {
     ...(existing ?? {}),
     ...definition,
     id: existing?.id ?? definition.id,
+    // Audio is generated into the dictionary after authoring; retain it through sync.
+    // A changed sentence must use its new fallback until fresh audio is generated.
+    audio: existing?.target_sentence === definition.target_sentence && Array.isArray(existing.audio) ? existing.audio : definition.audio ?? [],
     tags: mergeTags(existing?.tags, definition.tags),
     prompt: definition.prompt,
     translation: definition.translations.it,
     base_language: "it",
     translations: { ...(existing?.translations ?? {}), ...definition.translations },
-    translation_review_status: { ...(existing?.translation_review_status ?? {}), it: "reviewed", en: "reviewed" },
+    translation_review_status: { ...(existing?.translation_review_status ?? {}), it: "reviewed", en: "reviewed", ...definition.translation_review_status },
     review_status: existing?.review_status ?? "needs_native_speaker_review",
     source: existing?.source ?? "curriculum-v2-curated",
     source_location: existing?.source_location ?? `curriculum/${moduleId}.json#sentences/${definition.id}`,

@@ -39,20 +39,20 @@ interface LabyrinthPanelProps {
 }
 
 const ASSET_ROOT = publicUrl("assets/pixel/labyrinth");
-const FLOOR_ASSETS = [`${ASSET_ROOT}/floor-01.png`, `${ASSET_ROOT}/floor-02.png`, `${ASSET_ROOT}/floor-03.png`] as const;
-const PATH_ASSETS: readonly string[] = Array.from({ length: 16 }, (_, mask) => `${ASSET_ROOT}/path-${String(mask).padStart(2, "0")}.png`);
-const DECOR_ASSETS = [`${ASSET_ROOT}/decoration-01.png`, `${ASSET_ROOT}/decoration-02.png`, `${ASSET_ROOT}/decoration-03.png`, `${ASSET_ROOT}/decoration-04.png`, `${ASSET_ROOT}/decoration-05.png`, `${ASSET_ROOT}/decoration-06.png`] as const;
+const FLOOR_ASSETS = [`${ASSET_ROOT}/floor-01.webp`, `${ASSET_ROOT}/floor-02.webp`, `${ASSET_ROOT}/floor-03.webp`] as const;
+const PATH_ASSETS: readonly string[] = Array.from({ length: 16 }, (_, mask) => `${ASSET_ROOT}/path-${String(mask).padStart(2, "0")}.webp`);
+const DECOR_ASSETS = [`${ASSET_ROOT}/decoration-01.webp`, `${ASSET_ROOT}/decoration-02.webp`, `${ASSET_ROOT}/decoration-03.webp`, `${ASSET_ROOT}/decoration-04.webp`, `${ASSET_ROOT}/decoration-05.webp`, `${ASSET_ROOT}/decoration-06.webp`] as const;
 const RUNE_ASSET: Record<TrainingFocus, string> = {
-  vocabulary: `${ASSET_ROOT}/rune-vocabulary.png`,
-  comprehension: `${ASSET_ROOT}/rune-comprehension.png`,
-  grammar: `${ASSET_ROOT}/rune-grammar.png`,
-  pronunciation: `${ASSET_ROOT}/rune-pronunciation.png`
+  vocabulary: `${ASSET_ROOT}/rune-vocabulary.webp`,
+  comprehension: `${ASSET_ROOT}/rune-comprehension.webp`,
+  grammar: `${ASSET_ROOT}/rune-grammar.webp`,
+  pronunciation: `${ASSET_ROOT}/rune-pronunciation.webp`
 };
 const WALL_ASSET: Record<LabyrinthDirection, string> = {
-  north: `${ASSET_ROOT}/wall-northeast.png`,
-  east: `${ASSET_ROOT}/wall-southeast.png`,
-  south: `${ASSET_ROOT}/wall-southwest.png`,
-  west: `${ASSET_ROOT}/wall-northwest.png`
+  north: `${ASSET_ROOT}/wall-northeast.webp`,
+  east: `${ASSET_ROOT}/wall-southeast.webp`,
+  south: `${ASSET_ROOT}/wall-southwest.webp`,
+  west: `${ASSET_ROOT}/wall-northwest.webp`
 };
 const KEY_DIRECTION: Readonly<Record<string, LabyrinthDirection>> = {
   ArrowUp: "north", w: "north", W: "north",
@@ -113,7 +113,7 @@ export function LabyrinthPanel({ language, config, session, onMove, onAnswer, on
             {questionActive && session.currentQuestion ? (
               <div className="labyrinth-question-stage">
                 <EncounterScene language={language} encounterKind={currentEncounter?.kind} focus={currentEncounterCell?.focus} variant={currentEncounterCell?.eventVariant ?? 0} feedback={session.feedback ?? null} current={session.currentQuestionIndex + 1} total={currentEncounter?.focuses.length ?? 0} />
-                <QuestionCard question={session.currentQuestion} language={language} disabled={session.locked} mode="training" index={Math.max(0, session.questionsAnswered - (session.feedback ? 1 : 0))} total={totalQuestions} feedback={session.feedback ?? null} onAnswer={onAnswer} />
+                <QuestionCard key={session.currentQuestion.id} question={session.currentQuestion} language={language} disabled={session.locked} mode="training" index={Math.max(0, session.questionsAnswered - (session.feedback ? 1 : 0))} total={totalQuestions} feedback={session.feedback ?? null} onAnswer={onAnswer} />
               </div>
             ) : <div className="labyrinth-exploration-prompt"><strong>{t(language, "labyrinthExplorePromptTitle")}</strong><p>{t(language, "labyrinthExplorePromptBody")}</p></div>}
           </div>
@@ -222,9 +222,9 @@ function EncounterScene({
 
   return (
     <div className={`labyrinth-encounter-scene encounter-${encounterKind ?? "monster"} ${stateClass}`}>
-      <img className="labyrinth-encounter-backdrop" src={`${ASSET_ROOT}/encounter-backdrop.png`} alt="" />
+      <img className="labyrinth-encounter-backdrop" src={`${ASSET_ROOT}/encounter-backdrop.webp`} alt="" />
       <div className="labyrinth-encounter-party" aria-hidden="true">
-        <img className="labyrinth-encounter-hero" src={`${ASSET_ROOT}/hero.png`} alt="" />
+        <img className="labyrinth-encounter-hero" src={`${ASSET_ROOT}/hero.webp`} alt="" />
       </div>
       <img className="labyrinth-encounter-creature" src={asset} alt="" />
       <div className="labyrinth-encounter-title">
@@ -274,7 +274,7 @@ function LabyrinthMap({
   const currentCell = findCell(session, session.positionCellId) ?? session.cells[0];
   const targetCamera = currentCell
     ? getCamera(currentCell, geometry, compact)
-    : getFallbackCamera(geometry, compact);
+    : getFallbackCamera(compact);
   const camera = useAnimatedCamera(targetCamera);
   const revealed = new Set(session.revealedCellIds);
   const explored = new Set(session.exploredCellIds);
@@ -363,7 +363,7 @@ function LabyrinthMap({
           {isCurrent ? (
             <>
               <image
-                href={`${ASSET_ROOT}/hero.png`}
+                href={`${ASSET_ROOT}/hero.webp`}
                 x={point.x - geometry.heroSize / 2}
                 y={point.y - geometry.heroSize + geometry.heroGroundOffset}
                 width={geometry.heroSize}
@@ -377,7 +377,7 @@ function LabyrinthMap({
 
           {!isExplored ? (
             <image
-              href={`${ASSET_ROOT}/fog.png`}
+              href={`${ASSET_ROOT}/fog.webp`}
               x={point.x - geometry.tileWidth / 2}
               y={point.y - geometry.tileHeight / 2}
               width={geometry.tileWidth}
@@ -416,7 +416,7 @@ function LabyrinthMap({
         </defs>
 
         <image
-          href={`${ASSET_ROOT}/map-backdrop.png`}
+          href={`${ASSET_ROOT}/map-backdrop.webp`}
           x="0"
           y="0"
           width={camera.viewWidth}
@@ -644,19 +644,19 @@ function getCellAsset(session: LabyrinthSession, cell: LabyrinthCell): string | 
   const encounter = getEncounterForCell(session, cell.id);
   const completed = Boolean(cell.resolved || encounter?.completed);
 
-  if (cell.kind === "entrance") return `${ASSET_ROOT}/entrance.png`;
+  if (cell.kind === "entrance") return `${ASSET_ROOT}/entrance.webp`;
   if (cell.kind === "treasure") {
-    if (encounter?.completed) return `${ASSET_ROOT}/treasure-open.png`;
+    if (encounter?.completed) return `${ASSET_ROOT}/treasure-open.webp`;
     return session.collectedRunes.length >= 4
-      ? `${ASSET_ROOT}/guardian.png`
-      : `${ASSET_ROOT}/treasure-locked.png`;
+      ? `${ASSET_ROOT}/guardian.webp`
+      : `${ASSET_ROOT}/treasure-locked.webp`;
   }
   if (cell.kind === "rune" && cell.focus) return RUNE_ASSET[cell.focus];
-  if (cell.kind === "monster") return completed ? null : `${ASSET_ROOT}/monster-${padVariant(cell.eventVariant, 3)}.png`;
-  if (cell.kind === "trap") return completed ? null : `${ASSET_ROOT}/trap-${padVariant(cell.eventVariant, 4)}.png`;
-  if (cell.kind === "cache") return `${ASSET_ROOT}/${completed ? "cache-open" : "cache-closed"}.png`;
-  if (cell.kind === "healing") return `${ASSET_ROOT}/healing-fountain.png`;
-  if (cell.kind === "reveal") return `${ASSET_ROOT}/reveal-obelisk.png`;
+  if (cell.kind === "monster") return completed ? null : `${ASSET_ROOT}/monster-${padVariant(cell.eventVariant, 3)}.webp`;
+  if (cell.kind === "trap") return completed ? null : `${ASSET_ROOT}/trap-${padVariant(cell.eventVariant, 4)}.webp`;
+  if (cell.kind === "cache") return `${ASSET_ROOT}/${completed ? "cache-open" : "cache-closed"}.webp`;
+  if (cell.kind === "healing") return `${ASSET_ROOT}/healing-fountain.webp`;
+  if (cell.kind === "reveal") return `${ASSET_ROOT}/reveal-obelisk.webp`;
   return null;
 }
 
@@ -666,9 +666,9 @@ function encounterAsset(
   variant: number
 ): string {
   if (kind === "rune" && focus) return RUNE_ASSET[focus];
-  if (kind === "trap") return `${ASSET_ROOT}/trap-${padVariant(variant, 4)}.png`;
-  if (kind === "guardian") return `${ASSET_ROOT}/guardian.png`;
-  return `${ASSET_ROOT}/monster-${padVariant(variant, 3)}.png`;
+  if (kind === "trap") return `${ASSET_ROOT}/trap-${padVariant(variant, 4)}.webp`;
+  if (kind === "guardian") return `${ASSET_ROOT}/guardian.webp`;
+  return `${ASSET_ROOT}/monster-${padVariant(variant, 3)}.webp`;
 }
 
 function padVariant(value: number | undefined, count: number): string {
@@ -848,7 +848,7 @@ function getCamera(cell: LabyrinthCell, geometry: MapGeometry, compact: boolean)
   };
 }
 
-function getFallbackCamera(geometry: MapGeometry, compact: boolean): MapCamera {
+function getFallbackCamera(compact: boolean): MapCamera {
   const viewWidth = compact ? 620 : 960;
   const viewHeight = compact ? 480 : 560;
   return { viewWidth, viewHeight, left: 0, top: 0 };
