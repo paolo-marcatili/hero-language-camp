@@ -1,9 +1,9 @@
 enemies:
-  - id: number_goblin
+  - id: da_school_0
     level: 0
     name_key: numberGoblin
-    max_energy: 75
-    reward_coins: 35
+    max_energy: 100
+    reward_coins: 15
     preferred_focus: grammar
     sprite: goblin
     sprite_row: 0
@@ -11,15 +11,31 @@ enemies:
     scale: 1
     tint: '#d7ef8a'
     semantic_tags:
-      - "encounter:starter"
+      - 'stage:0'
     skill_weaknesses:
       - precision
       - defense
-  - id: sound_bat
+  - id: da_school_1
     level: 1
+    name_key: numberGoblin
+    max_energy: 145
+    reward_coins: 20
+    preferred_focus: grammar
+    sprite: goblin
+    sprite_row: 0
+    visual_variant: chalk
+    scale: 1
+    tint: '#d7ef8a'
+    semantic_tags:
+      - 'stage:1'
+    skill_weaknesses:
+      - precision
+      - defense
+  - id: da_school_2
+    level: 2
     name_key: soundBat
-    max_energy: 110
-    reward_coins: 45
+    max_energy: 190
+    reward_coins: 25
     preferred_focus: vocabulary
     sprite: bat
     sprite_row: 1
@@ -27,15 +43,31 @@ enemies:
     scale: 1.02
     tint: '#b8d9ff'
     semantic_tags:
-      - "encounter:sound"
+      - 'stage:2'
     skill_weaknesses:
       - strength
       - defense
-  - id: echo_troll
-    level: 2
+  - id: da_school_3
+    level: 3
+    name_key: soundBat
+    max_energy: 235
+    reward_coins: 30
+    preferred_focus: vocabulary
+    sprite: bat
+    sprite_row: 1
+    visual_variant: echo
+    scale: 1.02
+    tint: '#b8d9ff'
+    semantic_tags:
+      - 'stage:3'
+    skill_weaknesses:
+      - strength
+      - defense
+  - id: da_school_4
+    level: 4
     name_key: echoTroll
-    max_energy: 150
-    reward_coins: 55
+    max_energy: 280
+    reward_coins: 35
     preferred_focus: comprehension
     sprite: troll
     sprite_row: 2
@@ -43,15 +75,31 @@ enemies:
     scale: 1.06
     tint: '#b8efb4'
     semantic_tags:
-      - "encounter:reading"
+      - 'stage:4'
     skill_weaknesses:
       - defense
       - strength
-  - id: ten_dragon
-    level: 3
+  - id: da_school_5
+    level: 5
+    name_key: echoTroll
+    max_energy: 325
+    reward_coins: 40
+    preferred_focus: comprehension
+    sprite: troll
+    sprite_row: 2
+    visual_variant: meadow
+    scale: 1.06
+    tint: '#b8efb4'
+    semantic_tags:
+      - 'stage:5'
+    skill_weaknesses:
+      - defense
+      - strength
+  - id: da_school_6
+    level: 6
     name_key: tenDragon
-    max_energy: 195
-    reward_coins: 65
+    max_energy: 370
+    reward_coins: 45
     preferred_focus: pronunciation
     sprite: dragon
     sprite_row: 3
@@ -59,15 +107,31 @@ enemies:
     scale: 1.08
     tint: '#ffd18a'
     semantic_tags:
-      - "encounter:math"
+      - 'stage:6'
     skill_weaknesses:
       - stamina
       - precision
-  - id: word_wizard
-    level: 4
+  - id: da_school_7
+    level: 7
+    name_key: tenDragon
+    max_energy: 415
+    reward_coins: 50
+    preferred_focus: pronunciation
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: ten
+    scale: 1.08
+    tint: '#ffd18a'
+    semantic_tags:
+      - 'stage:7'
+    skill_weaknesses:
+      - stamina
+      - precision
+  - id: da_school_8
+    level: 8
     name_key: wordWizard
-    max_energy: 245
-    reward_coins: 80
+    max_energy: 460
+    reward_coins: 55
     preferred_focus: comprehension
     sprite: wizard
     sprite_row: 4
@@ -75,15 +139,31 @@ enemies:
     scale: 1.1
     tint: '#d5b7ff'
     semantic_tags:
-      - "encounter:word-tower"
+      - 'stage:8'
     skill_weaknesses:
       - defense
       - precision
-  - id: sentence_guardian
-    level: 5
+  - id: da_school_9
+    level: 9
+    name_key: wordWizard
+    max_energy: 505
+    reward_coins: 60
+    preferred_focus: comprehension
+    sprite: wizard
+    sprite_row: 4
+    visual_variant: tower
+    scale: 1.1
+    tint: '#d5b7ff'
+    semantic_tags:
+      - 'stage:9'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_10
+    level: 10
     name_key: sentenceGuardian
-    max_energy: 300
-    reward_coins: 90
+    max_energy: 550
+    reward_coins: 65
     preferred_focus: comprehension
     sprite: goblin
     sprite_row: 0
@@ -91,15 +171,31 @@ enemies:
     scale: 1.125
     tint: '#ffd6a5'
     semantic_tags:
-      - "encounter:reading"
+      - 'stage:10'
     skill_weaknesses:
       - defense
       - precision
-  - id: lake_frog
-    level: 6
+  - id: da_school_11
+    level: 11
+    name_key: sentenceGuardian
+    max_energy: 595
+    reward_coins: 70
+    preferred_focus: comprehension
+    sprite: goblin
+    sprite_row: 0
+    visual_variant: bridge
+    scale: 1.125
+    tint: '#ffd6a5'
+    semantic_tags:
+      - 'stage:11'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_12
+    level: 12
     name_key: lakeFrog
-    max_energy: 360
-    reward_coins: 100
+    max_energy: 640
+    reward_coins: 75
     preferred_focus: grammar
     sprite: bat
     sprite_row: 1
@@ -107,15 +203,31 @@ enemies:
     scale: 1.15
     tint: '#8de5d1'
     semantic_tags:
-      - "encounter:math"
+      - 'stage:12'
     skill_weaknesses:
       - precision
       - stamina
-  - id: aa_keeper
-    level: 7
+  - id: da_school_13
+    level: 13
+    name_key: lakeFrog
+    max_energy: 685
+    reward_coins: 80
+    preferred_focus: grammar
+    sprite: bat
+    sprite_row: 1
+    visual_variant: lake
+    scale: 1.15
+    tint: '#8de5d1'
+    semantic_tags:
+      - 'stage:13'
+    skill_weaknesses:
+      - precision
+      - stamina
+  - id: da_school_14
+    level: 14
     name_key: aaKeeper
-    max_energy: 425
-    reward_coins: 115
+    max_energy: 730
+    reward_coins: 85
     preferred_focus: vocabulary
     sprite: troll
     sprite_row: 2
@@ -123,15 +235,31 @@ enemies:
     scale: 1.175
     tint: '#8fc9ff'
     semantic_tags:
-      - "encounter:math"
+      - 'stage:14'
     skill_weaknesses:
       - precision
       - stamina
-  - id: message_mage
-    level: 8
+  - id: da_school_15
+    level: 15
+    name_key: aaKeeper
+    max_energy: 775
+    reward_coins: 90
+    preferred_focus: vocabulary
+    sprite: troll
+    sprite_row: 2
+    visual_variant: ring
+    scale: 1.175
+    tint: '#8fc9ff'
+    semantic_tags:
+      - 'stage:15'
+    skill_weaknesses:
+      - precision
+      - stamina
+  - id: da_school_16
+    level: 16
     name_key: messageMage
-    max_energy: 495
-    reward_coins: 130
+    max_energy: 820
+    reward_coins: 95
     preferred_focus: comprehension
     sprite: wizard
     sprite_row: 4
@@ -139,15 +267,31 @@ enemies:
     scale: 1.2
     tint: '#f2b8ff'
     semantic_tags:
-      - "encounter:reading"
+      - 'stage:16'
     skill_weaknesses:
       - defense
       - precision
-  - id: story_owl
-    level: 9
+  - id: da_school_17
+    level: 17
+    name_key: messageMage
+    max_energy: 865
+    reward_coins: 100
+    preferred_focus: comprehension
+    sprite: wizard
+    sprite_row: 4
+    visual_variant: message
+    scale: 1.2
+    tint: '#f2b8ff'
+    semantic_tags:
+      - 'stage:17'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_18
+    level: 18
     name_key: storyOwl
-    max_energy: 570
-    reward_coins: 145
+    max_energy: 910
+    reward_coins: 105
     preferred_focus: comprehension
     sprite: bat
     sprite_row: 1
@@ -155,15 +299,31 @@ enemies:
     scale: 1.225
     tint: '#d7c6ff'
     semantic_tags:
-      - "encounter:reading"
+      - 'stage:18'
     skill_weaknesses:
       - defense
       - precision
-  - id: twenty_dragon
-    level: 10
+  - id: da_school_19
+    level: 19
+    name_key: storyOwl
+    max_energy: 955
+    reward_coins: 110
+    preferred_focus: comprehension
+    sprite: bat
+    sprite_row: 1
+    visual_variant: book
+    scale: 1.225
+    tint: '#d7c6ff'
+    semantic_tags:
+      - 'stage:19'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_20
+    level: 20
     name_key: twentyDragon
-    max_energy: 655
-    reward_coins: 165
+    max_energy: 1000
+    reward_coins: 115
     preferred_focus: grammar
     sprite: dragon
     sprite_row: 3
@@ -171,15 +331,31 @@ enemies:
     scale: 1.25
     tint: '#ffd37d'
     semantic_tags:
-      - "encounter:math"
+      - 'stage:20'
     skill_weaknesses:
       - precision
       - stamina
-  - id: garden_troll
-    level: 11
+  - id: da_school_21
+    level: 21
+    name_key: twentyDragon
+    max_energy: 1045
+    reward_coins: 120
+    preferred_focus: grammar
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: twenty
+    scale: 1.25
+    tint: '#ffd37d'
+    semantic_tags:
+      - 'stage:21'
+    skill_weaknesses:
+      - precision
+      - stamina
+  - id: da_school_22
+    level: 22
     name_key: gardenTroll
-    max_energy: 750
-    reward_coins: 185
+    max_energy: 1090
+    reward_coins: 125
     preferred_focus: pronunciation
     sprite: troll
     sprite_row: 2
@@ -187,15 +363,31 @@ enemies:
     scale: 1.275
     tint: '#a8e6a1'
     semantic_tags:
-      - "encounter:math"
+      - 'stage:22'
     skill_weaknesses:
       - precision
       - stamina
-  - id: ink_wizard
-    level: 12
+  - id: da_school_23
+    level: 23
+    name_key: gardenTroll
+    max_energy: 1135
+    reward_coins: 130
+    preferred_focus: pronunciation
+    sprite: troll
+    sprite_row: 2
+    visual_variant: garden
+    scale: 1.275
+    tint: '#a8e6a1'
+    semantic_tags:
+      - 'stage:23'
+    skill_weaknesses:
+      - precision
+      - stamina
+  - id: da_school_24
+    level: 24
     name_key: inkWizard
-    max_energy: 855
-    reward_coins: 210
+    max_energy: 1180
+    reward_coins: 135
     preferred_focus: comprehension
     sprite: wizard
     sprite_row: 4
@@ -203,14 +395,334 @@ enemies:
     scale: 1.3
     tint: '#9bb7ff'
     semantic_tags:
-      - "encounter:reading"
+      - 'stage:24'
     skill_weaknesses:
       - defense
       - precision
-  - id: book_dragon
-    level: 13
+  - id: da_school_25
+    level: 25
+    name_key: inkWizard
+    max_energy: 1225
+    reward_coins: 140
+    preferred_focus: comprehension
+    sprite: wizard
+    sprite_row: 4
+    visual_variant: ink
+    scale: 1.3
+    tint: '#9bb7ff'
+    semantic_tags:
+      - 'stage:25'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_26
+    level: 26
     name_key: bookDragon
-    max_energy: 980
+    max_energy: 1270
+    reward_coins: 145
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:26'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_27
+    level: 27
+    name_key: bookDragon
+    max_energy: 1315
+    reward_coins: 150
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:27'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_28
+    level: 28
+    name_key: bookDragon
+    max_energy: 1360
+    reward_coins: 155
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:28'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_29
+    level: 29
+    name_key: bookDragon
+    max_energy: 1405
+    reward_coins: 160
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:29'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_30
+    level: 30
+    name_key: bookDragon
+    max_energy: 1450
+    reward_coins: 165
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:30'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_31
+    level: 31
+    name_key: bookDragon
+    max_energy: 1495
+    reward_coins: 170
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:31'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_32
+    level: 32
+    name_key: bookDragon
+    max_energy: 1540
+    reward_coins: 175
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:32'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_33
+    level: 33
+    name_key: bookDragon
+    max_energy: 1585
+    reward_coins: 180
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:33'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_34
+    level: 34
+    name_key: bookDragon
+    max_energy: 1630
+    reward_coins: 185
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:34'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_35
+    level: 35
+    name_key: bookDragon
+    max_energy: 1675
+    reward_coins: 190
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:35'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_36
+    level: 36
+    name_key: bookDragon
+    max_energy: 1720
+    reward_coins: 195
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:36'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_37
+    level: 37
+    name_key: bookDragon
+    max_energy: 1765
+    reward_coins: 200
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:37'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_38
+    level: 38
+    name_key: bookDragon
+    max_energy: 1810
+    reward_coins: 205
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:38'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_39
+    level: 39
+    name_key: bookDragon
+    max_energy: 1855
+    reward_coins: 210
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:39'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_40
+    level: 40
+    name_key: bookDragon
+    max_energy: 1900
+    reward_coins: 215
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:40'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_41
+    level: 41
+    name_key: bookDragon
+    max_energy: 1945
+    reward_coins: 220
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:41'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_42
+    level: 42
+    name_key: bookDragon
+    max_energy: 1990
+    reward_coins: 225
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:42'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_43
+    level: 43
+    name_key: bookDragon
+    max_energy: 2035
+    reward_coins: 230
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:43'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_44
+    level: 44
+    name_key: bookDragon
+    max_energy: 2080
+    reward_coins: 235
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:44'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_45
+    level: 45
+    name_key: bookDragon
+    max_energy: 2125
     reward_coins: 240
     preferred_focus: comprehension
     sprite: dragon
@@ -219,7 +731,236 @@ enemies:
     scale: 1.325
     tint: '#c79bff'
     semantic_tags:
-      - "encounter:reading"
+      - 'stage:45'
     skill_weaknesses:
       - defense
       - precision
+  - id: da_school_46
+    level: 46
+    name_key: bookDragon
+    max_energy: 2170
+    reward_coins: 245
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:46'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_47
+    level: 47
+    name_key: bookDragon
+    max_energy: 2215
+    reward_coins: 250
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:47'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_48
+    level: 48
+    name_key: bookDragon
+    max_energy: 2260
+    reward_coins: 255
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:48'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_49
+    level: 49
+    name_key: bookDragon
+    max_energy: 2305
+    reward_coins: 260
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:49'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_50
+    level: 50
+    name_key: bookDragon
+    max_energy: 2350
+    reward_coins: 265
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:50'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_51
+    level: 51
+    name_key: bookDragon
+    max_energy: 2395
+    reward_coins: 270
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:51'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_52
+    level: 52
+    name_key: bookDragon
+    max_energy: 2440
+    reward_coins: 275
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:52'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_53
+    level: 53
+    name_key: bookDragon
+    max_energy: 2485
+    reward_coins: 280
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:53'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_54
+    level: 54
+    name_key: bookDragon
+    max_energy: 2530
+    reward_coins: 285
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:54'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_55
+    level: 55
+    name_key: bookDragon
+    max_energy: 2575
+    reward_coins: 290
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:55'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_56
+    level: 56
+    name_key: bookDragon
+    max_energy: 2620
+    reward_coins: 295
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:56'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_57
+    level: 57
+    name_key: bookDragon
+    max_energy: 2665
+    reward_coins: 300
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:57'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_58
+    level: 58
+    name_key: bookDragon
+    max_energy: 2710
+    reward_coins: 305
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:58'
+    skill_weaknesses:
+      - defense
+      - precision
+  - id: da_school_59
+    level: 59
+    name_key: bookDragon
+    max_energy: 2755
+    reward_coins: 310
+    preferred_focus: comprehension
+    sprite: dragon
+    sprite_row: 3
+    visual_variant: book
+    scale: 1.325
+    tint: '#c79bff'
+    semantic_tags:
+      - 'stage:59'
+    skill_weaknesses:
+      - defense
+      - precision
+fallback:
+  enemy_id: da_school_59
+  energy_growth_per_level: 0.08
+  reward_growth_per_level: 0.08
+  max_scale: 1.45

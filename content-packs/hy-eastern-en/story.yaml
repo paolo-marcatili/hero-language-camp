@@ -1243,3 +1243,1251 @@ chapters:
       en: "Repair the beacon by completing four messages: a request for help, a lost item, an address, and a delay."
     cliffhanger:
       en: "The beacon lights a road towards longer stories, notices, experiences, and multi-turn conversations: the next module can extend the course without changing the engine."
+  - id: "chapter_stage_25"
+    minimum_level: 25
+    title:
+      en: "Invitations and arrangements"
+    summary:
+      en: "Understand connected language about invitations and arrangements; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: invitations and arrangements. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Invitations and arrangements"
+      objectives:
+        - en: "Understand connected language about invitations and arrangements; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Կիրակի օրը ազատ ե՞ս։"
+          translation:
+            en: "Are you free on Sunday?"
+        - target: "Կուզե՞ս մեզ հետ այգի գալ։"
+          translation:
+            en: "Would you like to come to the park with us?"
+        - target: "Շնորհակալ եմ հրավերի համար։"
+          translation:
+            en: "Thank you for the invitation."
+        - target: "Այս անգամ չեմ կարող գալ։"
+          translation:
+            en: "I cannot come this time."
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Կիրակի օրը ազատ ե՞ս։"
+          translation:
+            en: "Are you free on Sunday?"
+        - speaker:
+            en: "Hero"
+          target: "Կուզե՞ս մեզ հետ այգի գալ։"
+          translation:
+            en: "Would you like to come to the park with us?"
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_26"
+    minimum_level: 26
+    title:
+      en: "Recounting a day"
+    summary:
+      en: "Understand connected language about recounting a day; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: recounting a day. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Recounting a day"
+      objectives:
+        - en: "Understand connected language about recounting a day; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Երեկ առավոտյան շուտ արթնացա։"
+          translation:
+            en: "I woke up early yesterday morning."
+        - target: "Նախ նախաճաշեցի, հետո դպրոց գնացի։"
+          translation:
+            en: "First I had breakfast, then I went to school."
+        - target: "Դասերից հետո ընկերոջս հետ խաղացի։"
+          translation:
+            en: "After lessons I played with my friend."
+        - target: "Երբ տուն հասա, արդեն մութ էր։"
+          translation:
+            en: "When I got home, it was already dark."
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Երեկ առավոտյան շուտ արթնացա։"
+          translation:
+            en: "I woke up early yesterday morning."
+        - speaker:
+            en: "Hero"
+          target: "Նախ նախաճաշեցի, հետո դպրոց գնացի։"
+          translation:
+            en: "First I had breakfast, then I went to school."
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_27"
+    minimum_level: 27
+    title:
+      en: "Asking for clarification"
+    summary:
+      en: "Understand connected language about asking for clarification; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: asking for clarification. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Asking for clarification"
+      objectives:
+        - en: "Understand connected language about asking for clarification; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Կներեք, վերջին բառը չհասկացա։"
+          translation:
+            en: "Sorry, I did not understand the last word."
+        - target: "Կարո՞ղ եք ավելի դանդաղ խոսել։"
+          translation:
+            en: "Could you speak more slowly?"
+        - target: "Ի՞նչ է նշանակում այս արտահայտությունը։"
+          translation:
+            en: "What does this expression mean?"
+        - target: "Կարո՞ղ ես մի օրինակ բերել։"
+          translation:
+            en: "Can you give an example?"
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Կներեք, վերջին բառը չհասկացա։"
+          translation:
+            en: "Sorry, I did not understand the last word."
+        - speaker:
+            en: "Hero"
+          target: "Կարո՞ղ եք ավելի դանդաղ խոսել։"
+          translation:
+            en: "Could you speak more slowly?"
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_28"
+    minimum_level: 28
+    title:
+      en: "Choices and preferences"
+    summary:
+      en: "Understand connected language about choices and preferences; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: choices and preferences. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Choices and preferences"
+      objectives:
+        - en: "Understand connected language about choices and preferences; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Ես նախընտրում եմ գնալ ոտքով։"
+          translation:
+            en: "I prefer to walk."
+        - target: "Այս գիրքն ավելի հետաքրքիր է, քան նախորդը։"
+          translation:
+            en: "This book is more interesting than the previous one."
+        - target: "Ինձ ավելի շատ դուր է գալիս կապույտը։"
+          translation:
+            en: "I like the blue one more."
+        - target: "Երկու տարբերակն էլ լավն են։"
+          translation:
+            en: "Both options are good."
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Ես նախընտրում եմ գնալ ոտքով։"
+          translation:
+            en: "I prefer to walk."
+        - speaker:
+            en: "Hero"
+          target: "Այս գիրքն ավելի հետաքրքիր է, քան նախորդը։"
+          translation:
+            en: "This book is more interesting than the previous one."
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_29"
+    minimum_level: 29
+    title:
+      en: "Travel and directions"
+    summary:
+      en: "Understand connected language about travel and directions; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: travel and directions. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Travel and directions"
+      objectives:
+        - en: "Understand connected language about travel and directions; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Մենք իջնելու ենք հաջորդ կանգառում։"
+          translation:
+            en: "We are getting off at the next stop."
+        - target: "Այս ավտոբուսը հասնո՞ւմ է կայարան։"
+          translation:
+            en: "Does this bus go to the station?"
+        - target: "Ուղիղ գնացեք մինչև կամուրջը։"
+          translation:
+            en: "Go straight ahead as far as the bridge."
+        - target: "Կամրջից հետո թեքվեք աջ։"
+          translation:
+            en: "Turn right after the bridge."
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Մենք իջնելու ենք հաջորդ կանգառում։"
+          translation:
+            en: "We are getting off at the next stop."
+        - speaker:
+            en: "Hero"
+          target: "Այս ավտոբուսը հասնո՞ւմ է կայարան։"
+          translation:
+            en: "Does this bus go to the station?"
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_30"
+    minimum_level: 30
+    title:
+      en: "Everyday problems"
+    summary:
+      en: "Understand connected language about everyday problems; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: everyday problems. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Everyday problems"
+      objectives:
+        - en: "Understand connected language about everyday problems; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Իմ պայուսակի կայծակաճարմանդը չի փակվում։"
+          translation:
+            en: "The zip on my bag will not close."
+        - target: "Ես չեմ հիշում, թե որտեղ եմ դրել բանալին։"
+          translation:
+            en: "I cannot remember where I put the key."
+        - target: "Այս կոշիկները ինձ փոքր են։"
+          translation:
+            en: "These shoes are too small for me."
+        - target: "Կարելի՞ է դրանք փոխել ավելի մեծերով։"
+          translation:
+            en: "Can I exchange them for a larger pair?"
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Իմ պայուսակի կայծակաճարմանդը չի փակվում։"
+          translation:
+            en: "The zip on my bag will not close."
+        - speaker:
+            en: "Hero"
+          target: "Ես չեմ հիշում, թե որտեղ եմ դրել բանալին։"
+          translation:
+            en: "I cannot remember where I put the key."
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_31"
+    minimum_level: 31
+    title:
+      en: "Messages and instructions"
+    summary:
+      en: "Understand connected language about messages and instructions; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: messages and instructions. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Messages and instructions"
+      objectives:
+        - en: "Understand connected language about messages and instructions; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Խնդրում եմ, փակիր պատուհանը, երբ դուրս գաս։"
+          translation:
+            en: "Please close the window when you leave."
+        - target: "Նամակում գրված է, որ հանդիպումը հետաձգվել է։"
+          translation:
+            en: "The letter says that the meeting has been postponed."
+        - target: "Նախ կարդա հրահանգը, հետո սկսիր աշխատանքը։"
+          translation:
+            en: "Read the instructions first, then start the work."
+        - target: "Մի մոռացիր քեզ հետ ջուր վերցնել։"
+          translation:
+            en: "Do not forget to bring water with you."
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Խնդրում եմ, փակիր պատուհանը, երբ դուրս գաս։"
+          translation:
+            en: "Please close the window when you leave."
+        - speaker:
+            en: "Hero"
+          target: "Նամակում գրված է, որ հանդիպումը հետաձգվել է։"
+          translation:
+            en: "The letter says that the meeting has been postponed."
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_32"
+    minimum_level: 32
+    title:
+      en: "Experiences and short stories"
+    summary:
+      en: "Understand connected language about experiences and short stories; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: experiences and short stories. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Experiences and short stories"
+      objectives:
+        - en: "Understand connected language about experiences and short stories; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Ես երբեք այդ թանգարանում չեմ եղել։"
+          translation:
+            en: "I have never been to that museum."
+        - target: "Անցյալ ամառ առաջին անգամ սար բարձրացա։"
+          translation:
+            en: "Last summer I climbed a mountain for the first time."
+        - target: "Սկզբում վախենում էի, բայց հետո հանգստացա։"
+          translation:
+            en: "At first I was afraid, but then I calmed down."
+        - target: "Մեր ճանապարհորդությունը երեք օր տևեց։"
+          translation:
+            en: "Our trip lasted three days."
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Ես երբեք այդ թանգարանում չեմ եղել։"
+          translation:
+            en: "I have never been to that museum."
+        - speaker:
+            en: "Hero"
+          target: "Անցյալ ամառ առաջին անգամ սար բարձրացա։"
+          translation:
+            en: "Last summer I climbed a mountain for the first time."
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_33"
+    minimum_level: 33
+    title:
+      en: "Opinions and reasons"
+    summary:
+      en: "Understand connected language about opinions and reasons; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: opinions and reasons. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Opinions and reasons"
+      objectives:
+        - en: "Understand connected language about opinions and reasons; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Իմ կարծիքով՝ այս առաջարկը օգտակար է։"
+          translation:
+            en: "In my opinion, this proposal is useful."
+        - target: "Ես համաձայն եմ քեզ հետ, որովհետև դա արդար է։"
+          translation:
+            en: "I agree with you because it is fair."
+        - target: "Ես այլ կարծիք ունեմ, բայց ուզում եմ լսել քեզ։"
+          translation:
+            en: "I have a different opinion, but I want to hear you."
+        - target: "Կարո՞ղ ես բացատրել քո ընտրության պատճառը։"
+          translation:
+            en: "Can you explain the reason for your choice?"
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Իմ կարծիքով՝ այս առաջարկը օգտակար է։"
+          translation:
+            en: "In my opinion, this proposal is useful."
+        - speaker:
+            en: "Hero"
+          target: "Ես համաձայն եմ քեզ հետ, որովհետև դա արդար է։"
+          translation:
+            en: "I agree with you because it is fair."
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_34"
+    minimum_level: 34
+    title:
+      en: "Plans and conditions"
+    summary:
+      en: "Understand connected language about plans and conditions; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: plans and conditions. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Plans and conditions"
+      objectives:
+        - en: "Understand connected language about plans and conditions; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Եթե ժամանակ ունենամ, կավարտեմ նկարս։"
+          translation:
+            en: "If I have time, I will finish my drawing."
+        - target: "Մենք մտադիր ենք շաբաթ օրը ծառ տնկել։"
+          translation:
+            en: "We intend to plant a tree on Saturday."
+        - target: "Նախ պետք է պարզենք, թե ով ինչ է անելու։"
+          translation:
+            en: "First we need to work out who will do what."
+        - target: "Եթե բոլորս օգնենք, աշխատանքը շուտ կավարտվի։"
+          translation:
+            en: "If we all help, the work will be finished soon."
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Եթե ժամանակ ունենամ, կավարտեմ նկարս։"
+          translation:
+            en: "If I have time, I will finish my drawing."
+        - speaker:
+            en: "Hero"
+          target: "Մենք մտադիր ենք շաբաթ օրը ծառ տնկել։"
+          translation:
+            en: "We intend to plant a tree on Saturday."
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_35"
+    minimum_level: 35
+    title:
+      en: "Narrating an unexpected event"
+    summary:
+      en: "Understand connected language about narrating an unexpected event; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: narrating an unexpected event. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Narrating an unexpected event"
+      objectives:
+        - en: "Understand connected language about narrating an unexpected event; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Երբ քայլում էինք անտառում, հանկարծ անձրև սկսվեց։"
+          translation:
+            en: "While we were walking in the forest, it suddenly started raining."
+        - target: "Մենք անձրևանոց չէինք վերցրել։"
+          translation:
+            en: "We had not brought an umbrella."
+        - target: "Բարեբախտաբար, մոտակայքում փոքր տնակ կար։"
+          translation:
+            en: "Fortunately, there was a small cabin nearby."
+        - target: "Մինչև անձրևը դադարեց, սպասեցինք այնտեղ։"
+          translation:
+            en: "We waited there until the rain stopped."
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Երբ քայլում էինք անտառում, հանկարծ անձրև սկսվեց։"
+          translation:
+            en: "While we were walking in the forest, it suddenly started raining."
+        - speaker:
+            en: "Hero"
+          target: "Մենք անձրևանոց չէինք վերցրել։"
+          translation:
+            en: "We had not brought an umbrella."
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_36"
+    minimum_level: 36
+    title:
+      en: "Describing people and places"
+    summary:
+      en: "Understand connected language about describing people and places; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: describing people and places. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Describing people and places"
+      objectives:
+        - en: "Understand connected language about describing people and places; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Այն տղան, որը նստած է պատուհանի մոտ, իմ ընկերն է։"
+          translation:
+            en: "The boy who is sitting by the window is my friend."
+        - target: "Սա այն վայրն է, որտեղ մենք առաջին անգամ հանդիպեցինք։"
+          translation:
+            en: "This is the place where we first met."
+        - target: "Մեր թաղամասը հանգիստ է, բայց կենտրոնից հեռու։"
+          translation:
+            en: "Our neighbourhood is quiet but far from the centre."
+        - target: "Ինձ դուր են գալիս մարդիկ, որոնք ուշադիր լսում են։"
+          translation:
+            en: "I like people who listen carefully."
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Այն տղան, որը նստած է պատուհանի մոտ, իմ ընկերն է։"
+          translation:
+            en: "The boy who is sitting by the window is my friend."
+        - speaker:
+            en: "Hero"
+          target: "Սա այն վայրն է, որտեղ մենք առաջին անգամ հանդիպեցինք։"
+          translation:
+            en: "This is the place where we first met."
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_37"
+    minimum_level: 37
+    title:
+      en: "Working together and negotiating"
+    summary:
+      en: "Understand connected language about working together and negotiating; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: working together and negotiating. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Working together and negotiating"
+      objectives:
+        - en: "Understand connected language about working together and negotiating; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Եկեք առաջադրանքը բաժանենք երեք մասի։"
+          translation:
+            en: "Let's divide the task into three parts."
+        - target: "Ես կարող եմ գրել տեքստը, իսկ դու՝ նկարել։"
+          translation:
+            en: "I can write the text, and you can draw."
+        - target: "Ի՞նչ կասես, եթե փոխենք հերթականությունը։"
+          translation:
+            en: "What would you say to changing the order?"
+        - target: "Մենք պետք է լուծում գտնենք, ոչ թե վիճենք։"
+          translation:
+            en: "We need to find a solution instead of arguing."
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Եկեք առաջադրանքը բաժանենք երեք մասի։"
+          translation:
+            en: "Let's divide the task into three parts."
+        - speaker:
+            en: "Hero"
+          target: "Ես կարող եմ գրել տեքստը, իսկ դու՝ նկարել։"
+          translation:
+            en: "I can write the text, and you can draw."
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_38"
+    minimum_level: 38
+    title:
+      en: "News and sources"
+    summary:
+      en: "Understand connected language about news and sources; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: news and sources. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "News and sources"
+      objectives:
+        - en: "Understand connected language about news and sources; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Այս լուրը կարդացի դպրոցի կայքում։"
+          translation:
+            en: "I read this news on the school website."
+        - target: "Հոդվածում գրված է, որ գրադարանը շուտով կբացվի։"
+          translation:
+            en: "The article says that the library will open soon."
+        - target: "Ես դեռ չգիտեմ՝ այդ տեղեկությունը ճիշտ է, թե ոչ։"
+          translation:
+            en: "I do not yet know whether that information is true."
+        - target: "Եկեք ստուգենք, թե ով է գրել հաղորդագրությունը։"
+          translation:
+            en: "Let's check who wrote the message."
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Այս լուրը կարդացի դպրոցի կայքում։"
+          translation:
+            en: "I read this news on the school website."
+        - speaker:
+            en: "Hero"
+          target: "Հոդվածում գրված է, որ գրադարանը շուտով կբացվի։"
+          translation:
+            en: "The article says that the library will open soon."
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_39"
+    minimum_level: 39
+    title:
+      en: "Environment and habits"
+    summary:
+      en: "Understand connected language about environment and habits; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: environment and habits. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Environment and habits"
+      objectives:
+        - en: "Understand connected language about environment and habits; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Մենք փորձում ենք ավելի քիչ ջուր օգտագործել։"
+          translation:
+            en: "We are trying to use less water."
+        - target: "Դպրոց գնալիս հաճախ հեծանիվ եմ քշում։"
+          translation:
+            en: "I often cycle to school."
+        - target: "Եթե լույսը պետք չէ, անջատում եմ այն։"
+          translation:
+            en: "If the light is not needed, I turn it off."
+        - target: "Մեր դասարանը որոշել է մաքրել այգին։"
+          translation:
+            en: "Our class has decided to clean the park."
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Մենք փորձում ենք ավելի քիչ ջուր օգտագործել։"
+          translation:
+            en: "We are trying to use less water."
+        - speaker:
+            en: "Hero"
+          target: "Դպրոց գնալիս հաճախ հեծանիվ եմ քշում։"
+          translation:
+            en: "I often cycle to school."
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_40"
+    minimum_level: 40
+    title:
+      en: "Traditions and comparisons"
+    summary:
+      en: "Understand connected language about traditions and comparisons; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: traditions and comparisons. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Traditions and comparisons"
+      objectives:
+        - en: "Understand connected language about traditions and comparisons; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Մեր ընտանիքում տոնին միասին ճաշ ենք պատրաստում։"
+          translation:
+            en: "In our family we prepare a meal together for the celebration."
+        - target: "Տատիկս պատմում է, թե ինչպես էին տոնում իր մանկության տարիներին։"
+          translation:
+            en: "My grandmother tells us how they celebrated when she was a child."
+        - target: "Որոշ սովորույթներ փոխվել են, իսկ մյուսները պահպանվել։"
+          translation:
+            en: "Some customs have changed, while others have been kept."
+        - target: "Ինձ հետաքրքրում է՝ ինչպես են դա անում ուրիշ երկրներում։"
+          translation:
+            en: "I am interested in how people do this in other countries."
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Մեր ընտանիքում տոնին միասին ճաշ ենք պատրաստում։"
+          translation:
+            en: "In our family we prepare a meal together for the celebration."
+        - speaker:
+            en: "Hero"
+          target: "Տատիկս պատմում է, թե ինչպես էին տոնում իր մանկության տարիներին։"
+          translation:
+            en: "My grandmother tells us how they celebrated when she was a child."
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_41"
+    minimum_level: 41
+    title:
+      en: "Feelings and perspectives"
+    summary:
+      en: "Understand connected language about feelings and perspectives; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: feelings and perspectives. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Feelings and perspectives"
+      objectives:
+        - en: "Understand connected language about feelings and perspectives; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Ես հուզվում էի ելույթից առաջ։"
+          translation:
+            en: "I was nervous before the performance."
+        - target: "Երբ ընկերներս ժպտացին, ինձ ավելի վստահ զգացի։"
+          translation:
+            en: "When my friends smiled, I felt more confident."
+        - target: "Նա վիրավորվեց, որովհետև իրեն չէին լսել։"
+          translation:
+            en: "He felt hurt because they had not listened to him."
+        - target: "Ես չէի ուզում քեզ նեղացնել։"
+          translation:
+            en: "I did not mean to upset you."
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Ես հուզվում էի ելույթից առաջ։"
+          translation:
+            en: "I was nervous before the performance."
+        - speaker:
+            en: "Hero"
+          target: "Երբ ընկերներս ժպտացին, ինձ ավելի վստահ զգացի։"
+          translation:
+            en: "When my friends smiled, I felt more confident."
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_42"
+    minimum_level: 42
+    title:
+      en: "Requesting a service"
+    summary:
+      en: "Understand connected language about requesting a service; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: requesting a service. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Requesting a service"
+      objectives:
+        - en: "Understand connected language about requesting a service; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Ես նախապես սեղան էի պատվիրել չորս հոգու համար։"
+          translation:
+            en: "I had booked a table for four people in advance."
+        - target: "Կներեք, մեր պատվերում մի բան պակասում է։"
+          translation:
+            en: "Excuse me, something is missing from our order."
+        - target: "Կարո՞ղ եք ասել, թե որքան պետք է սպասենք։"
+          translation:
+            en: "Could you tell us how long we need to wait?"
+        - target: "Այս ապրանքը վնասված է։"
+          translation:
+            en: "This product is damaged."
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Ես նախապես սեղան էի պատվիրել չորս հոգու համար։"
+          translation:
+            en: "I had booked a table for four people in advance."
+        - speaker:
+            en: "Hero"
+          target: "Կներեք, մեր պատվերում մի բան պակասում է։"
+          translation:
+            en: "Excuse me, something is missing from our order."
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_43"
+    minimum_level: 43
+    title:
+      en: "Summarising and reporting"
+    summary:
+      en: "Understand connected language about summarising and reporting; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: summarising and reporting. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Summarising and reporting"
+      objectives:
+        - en: "Understand connected language about summarising and reporting; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Պատմության գլխավոր միտքն այն է, որ ընկերները օգնում են իրար։"
+          translation:
+            en: "The main idea of the story is that friends help one another."
+        - target: "Ուսուցիչն ասաց, որ վաղը թանգարան ենք գնալու։"
+          translation:
+            en: "The teacher said that we are going to the museum tomorrow."
+        - target: "Անին խնդրեց, որ իրեն սպասենք մուտքի մոտ։"
+          translation:
+            en: "Ani asked us to wait for her by the entrance."
+        - target: "Կարճ ասած՝ մեր ծրագիրը փոխվել է։"
+          translation:
+            en: "In brief, our plan has changed."
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Պատմության գլխավոր միտքն այն է, որ ընկերները օգնում են իրար։"
+          translation:
+            en: "The main idea of the story is that friends help one another."
+        - speaker:
+            en: "Hero"
+          target: "Ուսուցիչն ասաց, որ վաղը թանգարան ենք գնալու։"
+          translation:
+            en: "The teacher said that we are going to the museum tomorrow."
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_44"
+    minimum_level: 44
+    title:
+      en: "Learning and improving"
+    summary:
+      en: "Understand connected language about learning and improving; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: learning and improving. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Learning and improving"
+      objectives:
+        - en: "Understand connected language about learning and improving; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Սկզբում այս առաջադրանքը ինձ դժվար էր թվում։"
+          translation:
+            en: "At first this task seemed difficult to me."
+        - target: "Ես այն բաժանեցի փոքր քայլերի։"
+          translation:
+            en: "I divided it into small steps."
+        - target: "Սխալս գտնելու համար նորից կարդացի հրահանգը։"
+          translation:
+            en: "To find my mistake, I read the instructions again."
+        - target: "Ամեն օր մի քիչ պարապելը ինձ օգնում է։"
+          translation:
+            en: "Practising a little every day helps me."
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Սկզբում այս առաջադրանքը ինձ դժվար էր թվում։"
+          translation:
+            en: "At first this task seemed difficult to me."
+        - speaker:
+            en: "Hero"
+          target: "Ես այն բաժանեցի փոքր քայլերի։"
+          translation:
+            en: "I divided it into small steps."
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_45"
+    minimum_level: 45
+    title:
+      en: "Stories and imagination"
+    summary:
+      en: "Understand connected language about stories and imagination; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: stories and imagination. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Stories and imagination"
+      objectives:
+        - en: "Understand connected language about stories and imagination; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Եթե կարողանայի թռչել, աշխարհը վերևից կտեսնեի։"
+          translation:
+            en: "If I could fly, I would see the world from above."
+        - target: "Պատկերացրու մի քաղաք, որտեղ մեքենաներ չկան։"
+          translation:
+            en: "Imagine a city where there are no cars."
+        - target: "Պատմության հերոսը պետք է դժվար ընտրություն կատարեր։"
+          translation:
+            en: "The main character had to make a difficult choice."
+        - target: "Նա չէր սպասում, որ այդպիսի պատասխան կլսի։"
+          translation:
+            en: "He did not expect to hear such an answer."
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Եթե կարողանայի թռչել, աշխարհը վերևից կտեսնեի։"
+          translation:
+            en: "If I could fly, I would see the world from above."
+        - speaker:
+            en: "Hero"
+          target: "Պատկերացրու մի քաղաք, որտեղ մեքենաներ չկան։"
+          translation:
+            en: "Imagine a city where there are no cars."
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_46"
+    minimum_level: 46
+    title:
+      en: "Community and responsibility"
+    summary:
+      en: "Understand connected language about community and responsibility; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: community and responsibility. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Community and responsibility"
+      objectives:
+        - en: "Understand connected language about community and responsibility; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Մեր թաղամասում նոր գրադարան է բացվել։"
+          translation:
+            en: "A new library has opened in our neighbourhood."
+        - target: "Կամավորները օգնում են գրքերը դասավորել։"
+          translation:
+            en: "Volunteers help to arrange the books."
+        - target: "Յուրաքանչյուր մարդ կարող է իր ներդրումն ունենալ։"
+          translation:
+            en: "Everyone can make a contribution."
+        - target: "Մենք պետք է հոգ տանենք ընդհանուր տարածքի մասին։"
+          translation:
+            en: "We need to take care of the shared space."
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Մեր թաղամասում նոր գրադարան է բացվել։"
+          translation:
+            en: "A new library has opened in our neighbourhood."
+        - speaker:
+            en: "Hero"
+          target: "Կամավորները օգնում են գրքերը դասավորել։"
+          translation:
+            en: "Volunteers help to arrange the books."
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_47"
+    minimum_level: 47
+    title:
+      en: "Deciding with incomplete information"
+    summary:
+      en: "Understand connected language about deciding with incomplete information; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: deciding with incomplete information. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "Deciding with incomplete information"
+      objectives:
+        - en: "Understand connected language about deciding with incomplete information; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Մենք դեռ բավարար տեղեկություն չունենք որոշելու համար։"
+          translation:
+            en: "We do not yet have enough information to decide."
+        - target: "Այս տարբերակը էժան է, բայց ճանապարհը երկար է։"
+          translation:
+            en: "This option is cheap, but the journey is long."
+        - target: "Մյուս տարբերակը արագ է, սակայն ավելի թանկ։"
+          translation:
+            en: "The other option is fast, but more expensive."
+        - target: "Պետք է հաշվի առնենք նաև մեր ժամանակը։"
+          translation:
+            en: "We also need to take our time into account."
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Մենք դեռ բավարար տեղեկություն չունենք որոշելու համար։"
+          translation:
+            en: "We do not yet have enough information to decide."
+        - speaker:
+            en: "Hero"
+          target: "Այս տարբերակը էժան է, բայց ճանապարհը երկար է։"
+          translation:
+            en: "This option is cheap, but the journey is long."
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_48"
+    minimum_level: 48
+    title:
+      en: "An integrated project"
+    summary:
+      en: "Understand connected language about an integrated project; explain a choice with a reason and practise a short exchange."
+    fiction:
+      en: "The path brings the hero a new challenge: an integrated project. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        en: "An integrated project"
+      objectives:
+        - en: "Understand connected language about an integrated project; explain a choice with a reason and practise a short exchange."
+        - en: "Connect a cause, time or condition to the meaning of a sentence."
+        - en: "Discuss a personal example with an adult."
+      explanation:
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Մենք պատրաստում ենք ներկայացում մեր քաղաքի մասին։"
+          translation:
+            en: "We are preparing a presentation about our town."
+        - target: "Նախ հավաքեցինք տեղեկություններ տարբեր աղբյուրներից։"
+          translation:
+            en: "First we collected information from different sources."
+        - target: "Հետո ընտրեցինք ամենակարևոր փաստերը։"
+          translation:
+            en: "Then we selected the most important facts."
+        - target: "Ես պատասխանատու եմ պատմական մասի համար։"
+          translation:
+            en: "I am responsible for the historical section."
+      dialogue:
+        - speaker:
+            en: "Partner"
+          target: "Մենք պատրաստում ենք ներկայացում մեր քաղաքի մասին։"
+          translation:
+            en: "We are preparing a presentation about our town."
+        - speaker:
+            en: "Hero"
+          target: "Նախ հավաքեցինք տեղեկություններ տարբեր աղբյուրներից։"
+          translation:
+            en: "First we collected information from different sources."
+      study_notes:
+        - en: "Identify words connecting ideas before looking up every word."
+        - en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      en: "The next gate needs a new explanation."

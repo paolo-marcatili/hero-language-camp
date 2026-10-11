@@ -35,8 +35,8 @@ async function pngSize(file) {
 }
 
 const loadedPack = loadModularPack(pack);
-assert(loadedPack.version === "0.14.0", `Expected pack version 0.14.0, got ${loadedPack.version}`);
-assert(loadedPack.levels.length >= 9, `Expected at least 9 levels, got ${loadedPack.levels.length}`);
+assert(loadedPack.version === "1.0.0", `Expected pack version 1.0.0, got ${loadedPack.version}`);
+assert(loadedPack.levels.length === 49, `Expected 49 levels, got ${loadedPack.levels.length}`);
 assert((loadedPack.story?.chapters ?? []).length >= loadedPack.levels.length, "Every level needs a structured story chapter.");
 for (const level of loadedPack.levels) {
   const chapter = loadedPack.story?.chapters?.find((candidate) => candidate.id === level.chapter_id);

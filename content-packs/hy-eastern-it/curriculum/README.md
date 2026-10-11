@@ -38,3 +38,11 @@ levels-17-24.json  strong A1 and early A2
 To extend the course, add the next contiguous range, for example
 `levels-25-32.json`, and run the same commands. No React or Phaser source change
 should be required.
+
+## Current scope (0.20.0)
+
+Modules now extend through level 48. Levels 25–32 add A2 practice; 33–48 add B1-oriented sentences and connected passages. Earlier vocabulary is intentionally reused; `minimum_new_words: 0` allows a unit to develop grammar and comprehension without pretending that reused words are new vocabulary.
+
+`activation.json` records 58 vocabulary and 213 sentence routing/translation decisions, including eight existing core sentences that lacked English translations. It also explicitly lists the 432 remaining imported records that need review (413 words and 19 sentences). `tools/activate-armenian-material.mjs` applies the decisions after module synchronization; both have `--check` modes. The English pack is generated from that result.
+
+There are 539 active sentence/passage records and 409 active word/phrase records in each base-language course. The Italian source retains excluded imports for editorial work. Native Armenian review is still pending; reviewed base-language copy does not imply that Armenian grammar or audio has been approved by a native speaker.

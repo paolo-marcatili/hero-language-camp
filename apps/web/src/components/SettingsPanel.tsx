@@ -1,4 +1,4 @@
-import type { ChangeEvent } from "react";
+import type { ChangeEvent, ReactNode } from "react";
 import type { LanguagePack } from "@hero-lang/content-schema";
 import type { AppSettings, ChildProfile, GraphicsPack, HeroAppearance, HeroSpriteSet, LearningAudioMode, ViewportPreset } from "../storage";
 import { createChildProfile } from "../storage";
@@ -6,6 +6,7 @@ import { t } from "../i18n";
 import { publicUrl } from "../publicUrl";
 
 interface SettingsPanelProps {
+  placement?: ReactNode;
   pack: LanguagePack;
   language: string;
   profiles: ChildProfile[];
@@ -54,6 +55,7 @@ const COURSE_OPTIONS = [
 ] as const;
 
 export function SettingsPanel({
+  placement,
   pack,
   language,
   profiles,
@@ -131,6 +133,7 @@ export function SettingsPanel({
         ) : null}
       </div>
 
+      {placement}
       {activeProfile ? (
         <div className="settings-section">
           <h3>{t(language, "appearance")}</h3>
@@ -142,7 +145,7 @@ export function SettingsPanel({
                 className={activeProfile.appearance.spriteSet === sprite.id ? "sprite-choice active" : "sprite-choice"}
                 onClick={() => updateAppearance({ spriteSet: sprite.id })}
               >
-                <img src={publicUrl("assets/pixel/hero-preview.png")} alt="" />
+                <img src={publicUrl("assets/pixel/hero-preview.webp")} alt="" />
                 <strong>{t(language, sprite.labelKey)}</strong>
               </button>
             ))}

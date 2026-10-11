@@ -2,6 +2,10 @@ export type UiLanguage = "it" | "en";
 
 const COPY: Record<UiLanguage, Record<string, string>> = {
   it: {
+    audioTextFallback: "Audio non disponibile: leggi il testo, oppure chiedi a un adulto di leggerlo ad alta voce. Il tempo è in pausa.",
+    narrationRetryHint: "L’audio non è partito. Puoi riprovare con il pulsante di ascolto.",
+    narrationPlaying: "Ascolta la consegna.",
+    playInstruction: "Ascolta la consegna",
     appTitle: "Hero Language Camp",
     appSubtitle: "Un sentiero pixel-art per imparare lingue poco supportate.",
     landingEyebrow: "Campo open-source",
@@ -298,6 +302,8 @@ const COPY: Record<UiLanguage, Record<string, string>> = {
     labyrinthNoBonus: "Il vero premio è la forza conquistata lungo il percorso.",
     labyrinthAudioUnavailable: "Per il labirinto servono anche domande di comprensione. Registra una voce umana o abilita l’audio automatico.",
     labyrinthNotAvailable: "Questo labirinto non è ancora disponibile al livello attuale.",
+    sessionErrorTitle: "Qualcosa non ha funzionato",
+    sessionErrorBody: "Non riesco a preparare la prossima domanda. Torna al percorso e riprova.",
     labyrinthContinue: "Continua l’avventura",
     labyrinthNewRun: "Nuova spedizione",
     speedBonus: "Bonus velocità",
@@ -340,6 +346,10 @@ const COPY: Record<UiLanguage, Record<string, string>> = {
     labyrinthLogStarted: "L'eroe entra nelle rovine incantate.", labyrinthLogMoved: "Un'altra stanza emerge dalla nebbia.", labyrinthLogCache: "Cassa trovata: {coins} monete attendono nel bottino.", labyrinthLogHealing: "La fonte restituisce un cuore.", labyrinthLogHealingFull: "I cuori sono già al massimo: puoi tornare alla fonte più tardi.", labyrinthLogReveal: "L'obelisco illumina una parte della mappa.", labyrinthLogTreasureLocked: "Una barriera protegge il tesoro: mancano delle rune.", labyrinthLogRuneEncounter: "Una runa sfida l'eroe.", labyrinthLogTrapEncounter: "Una trappola scatta sotto i piedi dell'eroe.", labyrinthLogGuardianEncounter: "Il guardiano finale si risveglia.", labyrinthLogMonsterEncounter: "Un mostro emerge dalle rovine.", labyrinthLogCorrect: "Risposta giusta: la strada si apre.", labyrinthLogWrong: "Risposta sbagliata: persi {hearts} cuori.", labyrinthLogRuneCollected: "Runa conquistata: {focus}.", labyrinthLogTrapCleared: "La trappola è stata superata.", labyrinthLogMonsterCleared: "Il mostro è stato sconfitto.", labyrinthLogGuardianDefeated: "Il guardiano cade e il tesoro è libero."
   },
   en: {
+    audioTextFallback: "Audio is unavailable: read the text, or ask an adult to read it aloud. The timer is paused.",
+    narrationRetryHint: "Audio did not play. You can retry with the listen button.",
+    narrationPlaying: "Listen to the instructions.",
+    playInstruction: "Hear the instructions",
     appTitle: "Hero Language Camp",
     appSubtitle: "A pixel-art path for languages that big platforms miss.",
     landingEyebrow: "Open-source camp",
@@ -636,6 +646,8 @@ const COPY: Record<UiLanguage, Record<string, string>> = {
     labyrinthNoBonus: "The true prize is the strength gained along the way.",
     labyrinthAudioUnavailable: "The labyrinth includes listening questions. Record human audio or enable automatic audio.",
     labyrinthNotAvailable: "This labyrinth is not available at the current level.",
+    sessionErrorTitle: "Something went wrong",
+    sessionErrorBody: "The next question could not be prepared. Go back to the path and try again.",
     labyrinthContinue: "Continue the adventure",
     labyrinthNewRun: "New expedition",
     speedBonus: "Speed bonus",
@@ -677,7 +689,10 @@ export function setActivePackCopy(copy: Record<string, string> | undefined): voi
 }
 
 export function t(language: string, key: string, vars?: Record<string, string | number>): string {
-  const uiLanguage = language === "en" ? "en" : "it";
+  // Bundled dictionaries exist for Italian and English only. A pack whose base
+  // language has no dictionary (for example Danish) supplies its own ui_text,
+  // which is checked first; anything it does not cover falls back to English, never Italian.
+  const uiLanguage: UiLanguage = language === "it" ? "it" : "en";
   let template = PACK_COPY[key] ?? COPY[uiLanguage][key] ?? COPY.en[key] ?? key;
 
   if (vars) {

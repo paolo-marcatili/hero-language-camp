@@ -2068,18 +2068,18 @@
       "distractors": [
         "Հիվանդանոցը կայարանի մոտ է։",
         "Կամուրջը հեռու է։",
-        "Կայարանը կամրջի մոտ է։"
+        "Կամուրջը այգու մոտ է։"
       ],
       "translation_distractors": {
         "it": [
           "L’ospedale è vicino alla stazione.",
           "Il ponte è lontano.",
-          "La stazione è vicina al ponte."
+          "Il ponte è vicino al parco."
         ],
         "en": [
           "The hospital is near the station.",
           "The bridge is far away.",
-          "The station is near the bridge."
+          "The bridge is near the park."
         ]
       },
       "tags": [

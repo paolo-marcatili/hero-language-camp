@@ -58,6 +58,8 @@ export interface AudioReference {
   text?: string;
   mime_type?: string;
   generated_at?: string;
+  /** SSML rate used when generating a neural recording. */
+  rate?: string;
   provider?: string;
   license: string;
   review_status: ReviewStatus;
@@ -130,6 +132,10 @@ export interface LetterItem {
 
 
 export type FoundationsMathDomain =
+  | "multiplication"
+  | "division"
+  | "place_value"
+  | "data"
   | "counting"
   | "number_match"
   | "number_order"
@@ -170,6 +176,9 @@ export interface FoundationsReadingProblem {
   /** Complete narrated instruction or comprehension question. */
   prompt: LocalizedText;
   answer: string;
+  accepted_answers?: string[];
+  /** A sound/story task is accessible before independent reading. */
+  oral?: boolean;
   options?: string[];
   /** Child-facing scene or object; emoji and public asset URLs are supported. */
   image?: string;
@@ -200,6 +209,8 @@ export interface FoundationsMathProblem {
   whole?: number;
   /** Optional audio for the complete child-facing problem prompt. */
   audio?: AudioReference[];
+  /** Optional recording of the spoken answer feedback; device speech remains the fallback. */
+  answer_audio?: AudioReference[];
   /** Text/visual answer for non-numeric awareness activities. */
   answer?: string;
   /** Explicit answer choices for shapes, patterns, sorting and measurement. */
@@ -216,6 +227,16 @@ export interface GrammarItem {
   id: string;
   prompt: LocalizedText;
   target_sentence: string;
+  /** Reviewed alternatives; never infer grammatical equivalence from token order. */
+  accepted_sentences?: string[];
+  /** Free word-order production is opt-in, with reviewed alternatives. */
+  order_exercise?: boolean;
+  comprehension?: {
+    question: LocalizedText;
+    answer: LocalizedText;
+    distractors: LocalizedStringList;
+  };
+  comprehension_questions?: NonNullable<GrammarItem["comprehension"]>[];
   translation: string;
   translations?: LocalizedText;
   literal_translations?: LocalizedText;
@@ -355,13 +376,17 @@ export interface PackFightRules {
   sigmoid_k?: number;
 }
 
-export type PackCefrBand = "pre_a1" | "a1" | "a2";
+export type PackCefrBand = "pre_a1" | "a1" | "a2" | "b1";
 
 /** Pack-owned rules for gameplay levels that extend beyond authored lessons. */
 export interface PackProgressionConfig {
   stat_cap_start: number;
   stat_cap_per_level: number;
   unauthored_level_mode?: "review";
+  curriculum_revision?: number;
+  legacy_level_map?: Record<string, number>;
+  /** Course revision that introduced legacy_level_map; only older saves are remapped. Defaults to curriculum_revision. */
+  legacy_level_map_revision?: number;
 }
 
 /** Explicit procedural monster used when no enemy is authored for a level. */
@@ -374,6 +399,12 @@ export interface PackEnemyFallbackConfig {
 }
 
 export interface PackLevel {
+  minimum_new_words?: number;
+  school_grade?: number;
+  teaching_month?: number;
+  fortnight?: number;
+  reading_mode?: "oral" | "supported" | "independent";
+  objectives?: string[];
   /** CEFR-informed curriculum band; completion is not a formal CEFR certification. */
   cefr?: PackCefrBand;
   /** An authored review level may deliberately introduce no new core content. */
@@ -550,14 +581,16 @@ export interface ValidationResult {
 }
 
 export function buildLanguagePackFromSources(sources: ModularPackSources): LanguagePack {
-  const meta = parseYaml(sources.packYaml) as Record<string, unknown>;
-  const interfaceDoc = sources.interfaceYaml ? parseYaml(sources.interfaceYaml) as Record<string, unknown> : {};
-  const tagsDoc = sources.tagsYaml ? parseYaml(sources.tagsYaml) as Record<string, unknown> : {};
-  const tasksDoc = sources.tasksYaml ? parseYaml(sources.tasksYaml) as Record<string, unknown> : {};
-  const levelsDoc = sources.levelsYaml ? parseYaml(sources.levelsYaml) as Record<string, unknown> : {};
-  const enemiesDoc = sources.enemiesYaml ? parseYaml(sources.enemiesYaml) as Record<string, unknown> : {};
-  const storyDoc = sources.storyYaml ? parseYaml(sources.storyYaml) as Record<string, unknown> : undefined;
-  const labyrinthsDoc = sources.labyrinthsYaml ? parseYaml(sources.labyrinthsYaml) as Record<string, unknown> : {};
+  // Bundled YAML is authored content: a line the parser cannot consume must fail loudly, never truncate the file.
+  const strictYaml = (text: string, source: string) => parseYaml(text, { strict: true, source }) as Record<string, unknown>;
+  const meta = strictYaml(sources.packYaml, "pack.yaml");
+  const interfaceDoc = sources.interfaceYaml ? strictYaml(sources.interfaceYaml, "interface.yaml") : {};
+  const tagsDoc = sources.tagsYaml ? strictYaml(sources.tagsYaml, "tags.yaml") : {};
+  const tasksDoc = sources.tasksYaml ? strictYaml(sources.tasksYaml, "tasks.yaml") : {};
+  const levelsDoc = sources.levelsYaml ? strictYaml(sources.levelsYaml, "levels.yaml") : {};
+  const enemiesDoc = sources.enemiesYaml ? strictYaml(sources.enemiesYaml, "enemies.yaml") : {};
+  const storyDoc = sources.storyYaml ? strictYaml(sources.storyYaml, "story.yaml") : undefined;
+  const labyrinthsDoc = sources.labyrinthsYaml ? strictYaml(sources.labyrinthsYaml, "labyrinths.yaml") : {};
   const baseLanguage = isObject(meta.base_language) ? meta.base_language as unknown as BaseLanguage : undefined;
   const sourceLanguage = baseLanguage?.code ?? asString(meta.source_language, "it");
   const items = parseJsonl<LearningItem>(sources.wordsJsonl).map((item) => normalizeItem(item, sourceLanguage));
@@ -588,7 +621,7 @@ export function buildLanguagePackFromSources(sources: ModularPackSources): Langu
     math_problems: mathProblems,
     reading_problems: readingProblems,
     foundations_instructions: foundationsInstructions,
-    story: normalizeStory(storyDoc, sourceLanguage),
+    story: normalizeStory(storyDoc),
     ui_text: isObject(interfaceDoc.text) ? stringRecord(interfaceDoc.text) : {},
     controlled_tags: Array.isArray(tagsDoc.controlled_tags) ? tagsDoc.controlled_tags as ControlledTag[] : [],
     task_config: normalizeTaskConfig(tasksDoc),
@@ -625,18 +658,31 @@ export function parseJsonl<T = unknown>(text: string): T[] {
   });
 }
 
-export function parseYaml(text: string): unknown {
-  const lines = text.replace(/\t/g, "  ").split(/\r?\n/).map((raw) => {
+interface YamlLine { indent: number; text: string; line: number }
+
+export interface ParseYamlOptions {
+  /** Throw instead of silently dropping content the parser cannot consume. */
+  strict?: boolean;
+  /** File name reported by strict-mode errors. */
+  source?: string;
+}
+
+export function parseYaml(text: string, options: ParseYamlOptions = {}): unknown {
+  const lines = text.replace(/\t/g, "  ").split(/\r?\n/).map((raw, index): YamlLine | null => {
     const stripped = stripComment(raw);
-    return stripped.trim().length === 0 ? null : { indent: stripped.match(/^ */)?.[0].length ?? 0, text: stripped.trimEnd() };
-  }).filter((line): line is { indent: number; text: string } => Boolean(line));
+    return stripped.trim().length === 0 ? null : { indent: stripped.match(/^ */)?.[0].length ?? 0, text: stripped.trimEnd(), line: index + 1 };
+  }).filter((line): line is YamlLine => Boolean(line));
 
   if (lines.length === 0) return {};
-  const [value] = parseYamlBlock(lines, 0, lines[0].indent);
+  const [value, consumed] = parseYamlBlock(lines, 0, lines[0].indent);
+  if (options.strict && consumed < lines.length) {
+    const rest = lines[consumed];
+    throw new Error(`YAML parse error in ${options.source ?? "<input>"} at line ${rest.line}: cannot parse "${rest.text.trim()}" (unsupported key syntax or inconsistent indentation); everything after it would be silently dropped.`);
+  }
   return value;
 }
 
-function parseYamlBlock(lines: Array<{ indent: number; text: string }>, start: number, indent: number): [unknown, number] {
+function parseYamlBlock(lines: YamlLine[], start: number, indent: number): [unknown, number] {
   const first = lines[start];
   if (!first || first.indent < indent) return [{}, start];
   if (first.text.trimStart().startsWith("- ")) return parseYamlArray(lines, start, indent);
@@ -645,7 +691,7 @@ function parseYamlBlock(lines: Array<{ indent: number; text: string }>, start: n
 
 /** Parse nested YAML at the indentation actually used by its first line. */
 function parseNestedYamlBlock(
-  lines: Array<{ indent: number; text: string }>,
+  lines: YamlLine[],
   start: number,
   parentIndent: number
 ): [unknown, number] {
@@ -654,7 +700,7 @@ function parseNestedYamlBlock(
   return parseYamlBlock(lines, start, next.indent);
 }
 
-function parseYamlArray(lines: Array<{ indent: number; text: string }>, start: number, indent: number): [unknown[], number] {
+function parseYamlArray(lines: YamlLine[], start: number, indent: number): [unknown[], number] {
   const result: unknown[] = [];
   let index = start;
   while (index < lines.length) {
@@ -676,7 +722,7 @@ function parseYamlArray(lines: Array<{ indent: number; text: string }>, start: n
         item[key] = child;
         index = next;
       } else {
-        item[key] = parseYamlScalar(valueText);
+        item[key] = parseYamlValue(key, valueText);
         index += 1;
       }
       while (index < lines.length && lines[index].indent === indent + 2 && !lines[index].text.trimStart().startsWith("- ")) {
@@ -688,7 +734,7 @@ function parseYamlArray(lines: Array<{ indent: number; text: string }>, start: n
           item[childKey] = childValue;
           index = next;
         } else {
-          item[childKey] = parseYamlScalar(childValueText);
+          item[childKey] = parseYamlValue(childKey, childValueText);
           index += 1;
         }
       }
@@ -701,7 +747,7 @@ function parseYamlArray(lines: Array<{ indent: number; text: string }>, start: n
   return [result, index];
 }
 
-function parseYamlObject(lines: Array<{ indent: number; text: string }>, start: number, indent: number): [Record<string, unknown>, number] {
+function parseYamlObject(lines: YamlLine[], start: number, indent: number): [Record<string, unknown>, number] {
   const result: Record<string, unknown> = {};
   let index = start;
   while (index < lines.length) {
@@ -715,7 +761,7 @@ function parseYamlObject(lines: Array<{ indent: number; text: string }>, start: 
       result[key] = child;
       index = next;
     } else {
-      result[key] = parseYamlScalar(valueText);
+      result[key] = parseYamlValue(key, valueText);
       index += 1;
     }
   }
@@ -723,9 +769,14 @@ function parseYamlObject(lines: Array<{ indent: number; text: string }>, start: 
 }
 
 function splitKeyValue(text: string): [string, string] | null {
-  const match = text.match(/^([A-Za-z0-9_\-]+):(?:\s*(.*))?$/);
+  const match = text.match(/^([A-Za-z0-9_\-]+):(?:\s+(.*)|$)/);
   if (!match) return null;
   return [match[1], match[2] ?? ""];
+}
+
+/** A numeric-looking version such as 1.0 must stay "1.0", not become the number 1. */
+function parseYamlValue(key: string, valueText: string): unknown {
+  return key === "version" && /^\d+(\.\d+)?$/.test(valueText.trim()) ? valueText.trim() : parseYamlScalar(valueText);
 }
 
 function parseYamlScalar(value: string): unknown {
@@ -923,13 +974,17 @@ export function validateLanguagePack(pack: unknown): ValidationResult {
         if (mathIds.has(problem.id)) errors.push(`Duplicate math problem id: ${problem.id}`);
         mathIds.add(problem.id);
       }
-      if (!["counting", "number_match", "number_order", "comparison", "addition", "subtraction", "number_bond", "story_problem", "shape", "pattern", "sorting", "measurement"].includes(String(problem.domain))) errors.push(`${path}.domain is unsupported.`);
+      if (!["counting", "number_match", "number_order", "comparison", "addition", "subtraction", "number_bond", "story_problem", "shape", "pattern", "sorting", "measurement", "multiplication", "division", "place_value", "data"].includes(String(problem.domain))) errors.push(`${path}.domain is unsupported.`);
       if (!isObject(problem.prompt)) errors.push(`${path}.prompt must be localized text.`);
       if (!Number.isFinite(problem.result)) errors.push(`${path}.result must be a number.`);
       if (problem.options !== undefined && (!Array.isArray(problem.options) || problem.options.some((value) => typeof value !== "string" || value.trim() === ""))) errors.push(`${path}.options must contain non-empty strings.`);
       if (problem.sequence !== undefined && (!Array.isArray(problem.sequence) || problem.sequence.some((value) => typeof value !== "string" || value.trim() === ""))) errors.push(`${path}.sequence must contain non-empty strings.`);
       if (["shape", "pattern", "sorting", "measurement"].includes(String(problem.domain)) && (typeof problem.answer !== "string" || problem.answer.trim() === "")) errors.push(`${path}.answer is required for awareness activities.`);
       if (!Array.isArray(problem.tags)) errors.push(`${path}.tags must be an array.`);
+      if (problem.answer_audio !== undefined) {
+        if (!Array.isArray(problem.answer_audio)) errors.push(`${path}.answer_audio must be an array.`);
+        else validateAudioReferences(problem.answer_audio, `${path}.answer_audio`, errors, warnings);
+      }
       if (problem.review_status !== "approved") warnings.push(`${path} is not approved yet: ${String(problem.id ?? "unknown id")}`);
     }
   }
@@ -1027,6 +1082,8 @@ export function validateLanguagePack(pack: unknown): ValidationResult {
       if (typeof progressionConfig.stat_cap_start !== "number" || progressionConfig.stat_cap_start <= 0) errors.push("progression.stat_cap_start must be a positive number.");
       if (typeof progressionConfig.stat_cap_per_level !== "number" || progressionConfig.stat_cap_per_level <= 0) errors.push("progression.stat_cap_per_level must be a positive number.");
       if (progressionConfig.unauthored_level_mode !== undefined && progressionConfig.unauthored_level_mode !== "review") errors.push("progression.unauthored_level_mode must be review when provided.");
+      if (progressionConfig.legacy_level_map_revision !== undefined && (!Number.isInteger(progressionConfig.legacy_level_map_revision) || Number(progressionConfig.legacy_level_map_revision) < 1)) errors.push("progression.legacy_level_map_revision must be a positive integer.");
+      if (progressionConfig.legacy_level_map !== undefined && progressionConfig.legacy_level_map_revision === undefined) warnings.push("progression.legacy_level_map should declare legacy_level_map_revision so a later curriculum_revision bump does not remap migrated saves.");
     }
   }
   const enemyFallbackConfig = pack.enemy_fallback;
@@ -1079,7 +1136,7 @@ export function validateLanguagePack(pack: unknown): ValidationResult {
       if (!isObject(level)) { errors.push(`levels[${index}] must be an object.`); continue; }
       if (typeof level.number !== "number") errors.push(`levels[${index}].number must be a number.`);
       if (typeof level.stat_cap !== "number") errors.push(`levels[${index}].stat_cap must be a number.`);
-      if (level.cefr !== undefined && !["pre_a1", "a1", "a2"].includes(String(level.cefr))) errors.push(`levels[${index}].cefr must be pre_a1, a1 or a2.`);
+      if (level.cefr !== undefined && !["pre_a1", "a1", "a2", "b1"].includes(String(level.cefr))) errors.push(`levels[${index}].cefr must be pre_a1, a1, a2 or b1.`);
       if (level.review_only !== undefined && typeof level.review_only !== "boolean") errors.push(`levels[${index}].review_only must be boolean.`);
       if (!isObject(level.unlock_requires)) errors.push(`levels[${index}].unlock_requires must be an object.`);
       if (!isObject(level.fight)) errors.push(`levels[${index}].fight must be an object.`);
@@ -1273,6 +1330,7 @@ function normalizeMathProblem(problem: FoundationsMathProblem): FoundationsMathP
     options: Array.isArray(problem.options) ? problem.options.map(String) : undefined,
     sequence: Array.isArray(problem.sequence) ? problem.sequence.map(String) : undefined,
     audio: Array.isArray(problem.audio) ? problem.audio : [],
+    answer_audio: Array.isArray(problem.answer_audio) ? problem.answer_audio : undefined,
     tags: Array.isArray(problem.tags) ? problem.tags : [],
     review_status: problem.review_status ?? "draft"
   };
@@ -1327,7 +1385,7 @@ function createLessonsFromItems(items: LearningItem[], letters: LetterItem[], gr
   return lessons.length > 0 ? lessons : [{ id: "lesson_01_starter", title: "Starter", item_ids: items.map((item) => item.id), letter_ids: letters.map((letter) => letter.id), grammar_ids: grammarItems.map((grammar) => grammar.id), activity_types: ["select_translation"] }];
 }
 
-function normalizeStory(value: unknown, sourceLanguage: string): StoryArc | undefined {
+function normalizeStory(value: unknown): StoryArc | undefined {
   if (!isObject(value) || !Array.isArray(value.milestones)) return undefined;
   return value as unknown as StoryArc;
 }

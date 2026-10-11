@@ -2,6 +2,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync, copyFileSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { loadModularPack, parseJsonl, writeJsonl } from "./pack-utils.mjs";
+import { fetchWithRetry, reusableNeuralAudio } from "./neural-audio-utils.mjs";
 
 const args = new Set(process.argv.slice(3));
 const force = args.has("--force");
@@ -90,8 +91,11 @@ if (finalEvOnly) {
 }
 const counts = queue.reduce((result, item) => ({ ...result, [item.kind]: (result[item.kind] ?? 0) + 1 }), {});
 console.log(`Audio plan: ${queue.length} files (${counts.word ?? 0} words, ${counts.sentence ?? 0} sentences, ${counts.letter ?? 0} letters).`);
+const pending = queue.filter(item => force || !reusableNeuralAudio(item.entry, "audio", item.id, item.text, voice, rate, join(sourceDir, `${item.id}.mp3`)));
+console.log(`Azure requests: ${pending.length}; reuse: ${queue.length - pending.length}; source-text characters: ${pending.reduce((sum, item) => sum + [...item.text].length, 0)}. Voice: ${voice}; rate: ${rate}.`);
+console.log("Recordings without saved text/voice/rate metadata are regenerated once. --plan never calls Azure.");
 if (planOnly) process.exit(0);
-if (!key || !region) {
+if (pending.length && (!key || !region)) {
   console.error("Set AZURE_SPEECH_KEY and AZURE_SPEECH_REGION before generating neural Armenian audio.");
   console.error("Run `npm run content:audio:plan` first to inspect the exact scope without credentials.");
   process.exit(2);
@@ -105,14 +109,18 @@ for (const item of queue) {
   const fileName = `${item.id}.mp3`;
   const sourcePath = join(sourceDir, fileName);
   const publicPath = join(publicDir, fileName);
-  if (force || !existsSync(sourcePath)) {
+  const reusable = !force && reusableNeuralAudio(item.entry, "audio", item.id, item.text, voice, rate, sourcePath);
+  if (!reusable) {
     const bytes = await synthesize(item.text);
     writeFileSync(sourcePath, bytes);
+    replaceGeneratedAudio(item.entry, item.id, item.text, fileName);
+    // Checkpoint completed requests so an interrupted run can resume without paying twice.
+    const collection = { word: "words", sentence: "sentences", letter: "letters" }[item.kind];
+    writeFileSync(paths[collection], writeJsonl(collections[collection]));
     generated += 1;
     process.stdout.write(`\rGenerated ${generated}/${queue.length}: ${item.id}          `);
   }
   copyFileSync(sourcePath, publicPath);
-  replaceGeneratedAudio(item.entry, item.id, item.text, fileName);
 }
 process.stdout.write("\n");
 
@@ -122,7 +130,7 @@ writeFileSync(paths.sentences, writeJsonl(collections.sentences));
 console.log(`Neural Armenian audio ready for ${queue.length} core entries using ${voice}.`);
 
 async function synthesize(text) {
-  const response = await fetch(endpoint, {
+  const response = await fetchWithRetry(endpoint, {
     method: "POST",
     headers: {
       "Ocp-Apim-Subscription-Key": key,
@@ -133,7 +141,10 @@ async function synthesize(text) {
     body: `<speak version="1.0" xml:lang="hy-AM"><voice name="${escapeXml(voice)}"><prosody rate="${escapeXml(rate)}">${escapeXml(normalizeTextForNeuralTts(text))}</prosody></voice></speak>`
   });
   if (!response.ok) throw new Error(`Azure Speech ${response.status}: ${await response.text()}`);
-  return Buffer.from(await response.arrayBuffer());
+  const bytes = Buffer.from(await response.arrayBuffer());
+  // Azure can answer 200 with an empty body (seen for the bare letter և). Never save that as audio.
+  if (bytes.length === 0) throw new Error(`Azure Speech returned an empty audio body for: ${text}`);
+  return bytes;
 }
 
 function replaceGeneratedAudio(entry, id, text, fileName) {
@@ -146,6 +157,7 @@ function replaceGeneratedAudio(entry, id, text, fileName) {
     engine: "Azure AI Speech",
     provider: "Microsoft Azure",
     voice,
+    rate,
     text,
     mime_type: "audio/mpeg",
     generated_at: new Date().toISOString(),
@@ -176,7 +188,11 @@ function getLetterName(entry) {
 }
 function normalizeTextForNeuralTts(text) {
   const normalized = normalizeText(text);
-  return normalized.replace(/([\u0531-\u0556\u0561-\u0586])և(?![\u0531-\u0556\u0561-\u0587])/gu, "$1եվ");
+  // A bare letter `և` (letter 37, the name of the letter) is sent as the explicit spelling `եվ`:
+  // Azure returns an empty 200 body for the lone `և`, while the explicit spelling works in words.
+  return normalized
+    .replace(/([\u0531-\u0556\u0561-\u0586])և(?![\u0531-\u0556\u0561-\u0587])/gu, "$1եվ")
+    .replace(/^և$/u, "եվ");
 }
 
 function normalizeText(text) { return String(text).replace(/[։:;]+/g, ".").replace(/\s+/g, " ").trim(); }

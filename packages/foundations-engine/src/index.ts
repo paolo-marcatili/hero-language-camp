@@ -9,6 +9,7 @@ import type {
   LetterItem
 } from "@hero-lang/content-schema";
 import { getLocalizedText } from "@hero-lang/content-schema";
+import { getLevelConfig } from "@hero-lang/learning-engine";
 import type {
   AnswerOption,
   HeroStatKey,
@@ -75,14 +76,18 @@ function getReadingCurriculum(pack: LanguagePack, selection: QuestionSelectionOp
   const items = filterItems(pack.items, selection);
   const readingProblems = filterReadingProblems(pack.reading_problems ?? [], selection);
   const stage = selection.stage;
+  const mode = getStageLevel(pack, stage)?.reading_mode;
+  if (mode === "oral") {
+    return { items: [], readingProblems: readingProblems.filter((problem) => problem.oral || ["initial_sound", "final_sound", "rhyme", "syllable_count"].includes(problem.domain)), readingProblemChance: 1 };
+  }
   if (stage === undefined || stage >= 3) {
     return {
       items,
       readingProblems,
-      readingProblemChance: stage !== undefined && stage >= 10 ? 0.72 : stage !== undefined && stage >= 5 ? 0.58 : 0
+      readingProblemChance: stage !== undefined && stage >= 10 ? 0.72 : 0.58
     };
   }
-  const initialSoundProblems = readingProblems.filter((problem) => problem.domain === "initial_sound");
+  const initialSoundProblems = readingProblems.filter((problem) => ["initial_sound", "final_sound", "rhyme", "syllable_count"].includes(problem.domain));
   if (stage === 0) {
     return { items: [], readingProblems: initialSoundProblems, readingProblemChance: 1 };
   }
@@ -98,14 +103,17 @@ export function hasEligibleQuestion(
   focus: TrainingFocus,
   selection: QuestionSelectionOptions = {}
 ): boolean {
-  if (focus === "vocabulary") return filterLetters(pack.letters ?? [], selection).length >= 2;
+  if (focus === "vocabulary") {
+    const route = getVocabularyRoute(pack, selection);
+    return route.letterReady || route.readingReady;
+  }
   if (focus === "comprehension") {
     const curriculum = getReadingCurriculum(pack, selection);
     return curriculum.items.length >= 1 || curriculum.readingProblems.length >= 1;
   }
   const domains = focus === "grammar"
-    ? new Set(["counting", "number_match", "number_order", "comparison", "shape", "pattern", "sorting", "measurement"])
-    : new Set(["addition", "subtraction", "number_bond", "story_problem"]);
+    ? new Set(["counting", "number_match", "number_order", "comparison", "shape", "pattern", "sorting", "measurement", "place_value", "data"])
+    : new Set(["addition", "subtraction", "number_bond", "story_problem", "multiplication", "division"]);
   return filterMathProblems(pack.math_problems ?? [], selection).some((problem) => domains.has(problem.domain));
 }
 
@@ -116,10 +124,32 @@ export function getNextQuestion(
   focus: TrainingFocus = "vocabulary",
   selection: QuestionSelectionOptions = {}
 ): TrainingQuestion {
-  if (focus === "vocabulary") return getLetterQuestion(pack, state, baseLanguage, selection);
+  if (focus === "vocabulary") {
+    const route = getVocabularyRoute(pack, selection);
+    if (route.readingReady && (!route.letterReady || Math.random() >= (route.grade === 1 ? 0.2 : 0.05))) {
+      const question = getReadingQuestion({ ...pack, reading_problems: [] }, state, baseLanguage, selection);
+      return { ...question, skill: "vocabulary", stat: FOCUS_STAT.vocabulary };
+    }
+    return getLetterQuestion(pack, state, baseLanguage, selection);
+  }
   if (focus === "comprehension") return getReadingQuestion(pack, state, baseLanguage, selection);
   if (focus === "grammar") return getNumberQuestion(pack, state, baseLanguage, selection);
   return getOperationQuestion(pack, state, baseLanguage, selection);
+}
+
+/** Authored level for a stage; stages past the last authored level reuse the last one (never grade 0). */
+function getStageLevel(pack: LanguagePack, stage: number | undefined) {
+  return stage === undefined ? undefined : getLevelConfig(pack, stage);
+}
+
+/** Single source of truth for how vocabulary practice is routed, shared by eligibility and question selection. */
+function getVocabularyRoute(pack: LanguagePack, selection: QuestionSelectionOptions): { grade: number; letterReady: boolean; readingReady: boolean } {
+  const grade = getStageLevel(pack, selection.stage)?.school_grade ?? 0;
+  return {
+    grade,
+    letterReady: filterLetters(pack.letters ?? [], selection).length >= 2,
+    readingReady: grade > 0 && getReadingCurriculum({ ...pack, reading_problems: [] }, selection).items.length >= 1
+  };
 }
 
 function getLetterQuestion(
@@ -215,7 +245,7 @@ function getReadingQuestion(
       (entry) => entry.tags,
       (entry) => state.mastery_by_grammar[entry.id]?.mastery ?? 0
     );
-    return readingProblemQuestion(pack, problem, language);
+    return readingProblemQuestion(pack, problem, language, getStageLevel(pack, selection.stage)?.reading_mode === "oral");
   }
 
   if (items.length === 0) throw new Error("No Danish reading material is available.");
@@ -244,7 +274,7 @@ function getReadingQuestion(
       variant: "sentence_tap_order",
       item,
       prompt: item.emoji ?? item.image ?? "🧩",
-      prompt_hint: "Byg ordet til billedet.",
+      prompt_hint: "Byg det ord, du hører.",
       options: chips,
       correct_option_id: correctLetters.join(" "),
       correct_answer_label: item.target,
@@ -274,7 +304,7 @@ function getReadingQuestion(
     variant: "visual_to_target",
     item,
     prompt: item.emoji ?? item.image ?? "🖼️",
-    prompt_hint: "Hvilket ord passer til billedet?",
+    prompt_hint: "Lyt til ordet. Hvilket skrevet ord hørte du?",
     options,
     correct_option_id: optionId(item.id),
     correct_answer_label: item.target,
@@ -282,15 +312,17 @@ function getReadingQuestion(
       target: item.target,
       translation: getLocalizedText(item.translations, language, item.translation)
     },
-    ...narratedQuestion(pack, "instruction_picture_word", "Se på billedet. Hvilket ord passer?"),
-    allow_target_audio_before_answer: false,
+    ...narratedQuestion(pack, "instruction_listen_written_word", "Lyt til ordet. Hvilket skrevet ord hørte du?", { requireTarget: true }),
+    allow_target_audio_before_answer: true,
+    auto_play_target_audio: true,
+    replay_target_audio: true,
     target_audio_text: item.target,
     target_audio_lang: "da-DK",
     audio: item.audio?.length ? item.audio : browserSpeech(item.target, `word-${item.id}`)
   };
 }
 
-function readingProblemQuestion(pack: LanguagePack, problem: FoundationsReadingProblem, language: string): TrainingQuestion {
+function readingProblemQuestion(pack: LanguagePack, problem: FoundationsReadingProblem, language: string, oral = false): TrainingQuestion {
   const grammar = readingProblemToGrammar(problem, language);
   const instruction = getLocalizedText(problem.prompt, language, "Læs og vælg det rigtige svar.");
   const fallbackOptions = problem.options?.length ? problem.options : [problem.answer];
@@ -325,7 +357,7 @@ function readingProblemQuestion(pack: LanguagePack, problem: FoundationsReadingP
     correctOptionId = correctWords.join(" ");
     expectedAnswerLength = correctWords.length;
     prompt = problem.image ?? "🧩";
-    promptHint = "Byg sætningen, du hører.";
+    promptHint = "Byg præcis den sætning, du hører.";
     instructionId ??= "instruction_sentence_order";
     autoPlayTarget = true;
     requiresTarget = true;
@@ -335,8 +367,13 @@ function readingProblemQuestion(pack: LanguagePack, problem: FoundationsReadingP
     promptHint = "Vælg det bogstav, der mangler.";
     instructionId ??= "instruction_missing_letter";
     targetAudioText = problem.text.replace("_", problem.answer);
+    autoPlayTarget = true;
+    requiresTarget = true;
   } else if (problem.domain === "missing_word") {
-    promptHint = "Vælg det ord, der passer i den tomme plads.";
+    promptHint = "Lyt til hele sætningen. Hvilket ord hørte du i den tomme plads?";
+    targetAudioText = problem.text.replace(/_+/u, problem.answer);
+    autoPlayTarget = true;
+    requiresTarget = true;
     instructionId ??= "instruction_missing_word";
   } else if (problem.domain === "mini_story") {
     activity = "select_translation";
@@ -372,6 +409,12 @@ function readingProblemQuestion(pack: LanguagePack, problem: FoundationsReadingP
     requiresTarget = true;
   }
 
+  if (oral && (problem.domain === "mini_story" || problem.domain === "sentence_picture")) {
+    prompt = problem.image ?? "👂";
+    promptHint = instruction;
+    autoPlayTarget = true; requiresTarget = true;
+  }
+
   return {
     id: `foundations:reading:${problem.id}:${Date.now()}`,
     kind: "grammar",
@@ -384,6 +427,8 @@ function readingProblemQuestion(pack: LanguagePack, problem: FoundationsReadingP
     prompt_hint: promptHint,
     options,
     correct_option_id: correctOptionId,
+    accepted_option_ids: problem.accepted_answers?.map((value) => variant === "sentence_tap_order" ? value : optionId(value)),
+    option_audio_lang: oral ? "da-DK" : undefined,
     correct_answer_label: problem.answer,
     expected_answer_length: expectedAnswerLength,
     answer_explanation: {
@@ -392,13 +437,15 @@ function readingProblemQuestion(pack: LanguagePack, problem: FoundationsReadingP
         : problem.answer,
       translation: problem.domain === "mini_story" ? instruction : problem.text.replace("___", problem.answer).replace("_", problem.answer)
     },
-    ...narratedQuestion(pack, instructionId, instruction, { audio: problem.prompt_audio, requireTarget: requiresTarget }),
+    ...narratedQuestion(pack, problem.domain === "mini_story" ? undefined : instructionId, instruction, { audio: problem.prompt_audio, requireTarget: requiresTarget }),
     auto_play_target_audio: autoPlayTarget,
     replay_target_audio: replayTarget || autoPlayTarget,
     allow_target_audio_before_answer: replayTarget || autoPlayTarget,
     target_audio_text: targetAudioText,
     target_audio_lang: "da-DK",
-    audio: problem.audio?.length ? problem.audio : browserSpeech(targetAudioText, `reading-${problem.id}`)
+    audio: problem.domain === "missing_word" || problem.domain === "missing_letter"
+      ? recordedAudioOrSpeech(problem.audio, targetAudioText, `reading-${problem.id}`)
+      : problem.audio?.length ? problem.audio : browserSpeech(targetAudioText, `reading-${problem.id}`)
   };
 }
 
@@ -424,7 +471,7 @@ function getNumberQuestion(
   selection: QuestionSelectionOptions
 ): TrainingQuestion {
   const candidates = filterMathProblems(pack.math_problems ?? [], selection)
-    .filter((problem) => ["counting", "number_match", "number_order", "comparison", "shape", "pattern", "sorting", "measurement"].includes(problem.domain));
+    .filter((problem) => ["counting", "number_match", "number_order", "comparison", "shape", "pattern", "sorting", "measurement", "place_value", "data"].includes(problem.domain));
   if (candidates.length === 0) throw new Error("No counting problems are available.");
   const problem = chooseCurriculumValue(
     candidates,
@@ -442,7 +489,7 @@ function getOperationQuestion(
   selection: QuestionSelectionOptions
 ): TrainingQuestion {
   const candidates = filterMathProblems(pack.math_problems ?? [], selection)
-    .filter((problem) => ["addition", "subtraction", "number_bond", "story_problem"].includes(problem.domain));
+    .filter((problem) => ["addition", "subtraction", "number_bond", "story_problem", "multiplication", "division"].includes(problem.domain));
   if (candidates.length === 0) throw new Error("No arithmetic problems are available.");
   const problem = chooseCurriculumValue(
     candidates,
@@ -460,6 +507,7 @@ function mathQuestion(pack: LanguagePack, problem: FoundationsMathProblem, focus
   const rangeMin = problem.number_range?.min ?? 0;
   const rangeMax = problem.number_range?.max ?? 10;
   const instruction = getLocalizedText(problem.prompt, language, "Hvad er det rigtige svar?");
+  const quantity = (value: number) => (problem.representation === "numeral" || value > 20) ? String(value) : makeObjects(object, value);
   const numberOptions = numericOptions(result, rangeMin, rangeMax);
   let prompt = instruction;
   let promptHint = "Vælg det rigtige tal.";
@@ -485,7 +533,7 @@ function mathQuestion(pack: LanguagePack, problem: FoundationsMathProblem, focus
     promptHint = "Hvilket tal mangler i rækken?";
   } else if (problem.domain === "comparison") {
     const [left = 0, right = 0] = problem.operands ?? [];
-    prompt = `${makeObjects(object, left)}   │   ${makeObjects(object, right)}`;
+    prompt = `${quantity(left)}   │   ${quantity(right)}`;
     promptHint = "Hvilken side har flest, eller er der lige mange?";
     options = shuffle([
       { id: optionId("left"), label: "⬅️ Flere" },
@@ -497,7 +545,7 @@ function mathQuestion(pack: LanguagePack, problem: FoundationsMathProblem, focus
     correctAnswerLabel = answer === "left" ? "Flest til venstre" : answer === "right" ? "Flest til højre" : "Lige mange";
     explanationTarget = `${left} ${comparisonSymbol(result)} ${right}`;
     answerAudioText = answer === "left" ? "Der er flest til venstre." : answer === "right" ? "Der er flest til højre." : "Der er lige mange.";
-  } else if (["shape", "pattern", "sorting", "measurement"].includes(problem.domain)) {
+  } else if (["shape", "pattern", "sorting", "measurement", "place_value", "data"].includes(problem.domain)) {
     const answer = problem.answer ?? String(problem.result);
     const choices = problem.options?.length ? problem.options : [answer];
     prompt = problem.domain === "pattern"
@@ -511,6 +559,12 @@ function mathQuestion(pack: LanguagePack, problem: FoundationsMathProblem, focus
     answerAudioText = "Se det rigtige svar på skærmen.";
     activity = "visual_match";
     variant = "target_to_visual";
+  } else if (problem.domain === "multiplication" || problem.domain === "division") {
+    const [left = 0, right = 1] = problem.operands ?? [];
+    const sign = problem.domain === "multiplication" ? "×" : "÷";
+    prompt = `${left} ${sign} ${right} = ?`;
+    promptHint = instruction;
+    explanationTarget = `${left} ${sign} ${right} = ${result}`;
   } else if (problem.domain === "number_bond") {
     const [known = 0] = problem.operands ?? [];
     const whole = problem.whole ?? known + result;
@@ -522,7 +576,7 @@ function mathQuestion(pack: LanguagePack, problem: FoundationsMathProblem, focus
     const [left = 0, right = 0] = problem.operands ?? [];
     const operation = problem.operation ?? (left - right === result ? "subtraction" : "addition");
     const sign = operation === "addition" ? "+" : "−";
-    prompt = `${instruction}\n${makeObjects(object, left)} ${sign} ${makeObjects(object, right)}`;
+    prompt = `${instruction}\n${quantity(left)} ${sign} ${quantity(right)}`;
     promptHint = "Find de vigtige tal, og vælg svaret.";
     activity = "visual_match";
     variant = "target_to_visual";
@@ -533,7 +587,7 @@ function mathQuestion(pack: LanguagePack, problem: FoundationsMathProblem, focus
   } else {
     const [left = 0, right = 0] = problem.operands ?? [];
     const sign = problem.domain === "addition" ? "+" : "−";
-    prompt = `${makeObjects(object, left)}  ${sign}  ${makeObjects(object, right)}`;
+    prompt = `${quantity(left)}  ${sign}  ${quantity(right)}`;
     promptHint = problem.domain === "addition"
       ? "Læg grupperne sammen. Hvor mange er der i alt?"
       : "Tag den anden gruppe væk. Hvor mange er der tilbage?";
@@ -558,6 +612,7 @@ function mathQuestion(pack: LanguagePack, problem: FoundationsMathProblem, focus
     options,
     correct_option_id: correctOptionId,
     correct_answer_label: correctAnswerLabel,
+    option_audio_lang: "da-DK",
     answer_explanation: {
       target: explanationTarget,
       translation: instruction
@@ -566,7 +621,7 @@ function mathQuestion(pack: LanguagePack, problem: FoundationsMathProblem, focus
     allow_target_audio_before_answer: false,
     target_audio_text: answerAudioText,
     target_audio_lang: "da-DK",
-    audio: browserSpeech(answerAudioText, `math-answer-${problem.id}`)
+    audio: recordedAudioOrSpeech(problem.answer_audio, answerAudioText, `math-answer-${problem.id}`)
   };
 }
 
@@ -583,10 +638,10 @@ function mathProblemToGrammar(problem: FoundationsMathProblem, language: string)
           ? `${left} ${problem.operation === "subtraction" ? "−" : "+"} ${right} = ${problem.result}`
           : problem.domain === "comparison"
             ? `${left} ${comparisonSymbol(problem.result)} ${right}`
-            : ["shape", "pattern", "sorting", "measurement"].includes(problem.domain)
+            : ["shape", "pattern", "sorting", "measurement", "place_value", "data"].includes(problem.domain)
               ? awarenessAnswer
               : String(problem.result);
-  const distractors = ["shape", "pattern", "sorting", "measurement"].includes(problem.domain)
+  const distractors = ["shape", "pattern", "sorting", "measurement", "place_value", "data"].includes(problem.domain)
     ? (problem.options ?? []).filter((value) => value !== awarenessAnswer)
     : numericOptions(problem.result, problem.number_range?.min ?? 0, problem.number_range?.max ?? 10)
       .filter((value) => value !== problem.result)
@@ -711,6 +766,25 @@ function numericOptions(correct: number, min: number, max: number): number[] {
 function makeObjects(object: string, count: number): string {
   if (count <= 0) return "∅";
   return Array.from({ length: count }, () => object).join(" ");
+}
+
+function isBrowserSpeech(entry: AudioReference): boolean {
+  return entry.source_type === "browser_tts" || entry.url.startsWith("browser-tts:");
+}
+
+function spokenTextKey(value: string | undefined): string {
+  return (value ?? "").normalize("NFC").replace(/\s+/g, " ").trim();
+}
+
+/** True when a stored recording says exactly what the question speaks (device speech always can). */
+function audioMatchesText(entry: AudioReference, spokenText: string): boolean {
+  return Boolean(entry.url) && (isBrowserSpeech(entry) || spokenTextKey(entry.text) === spokenTextKey(spokenText));
+}
+
+/** Prefer stored neural/human recordings whose text matches; otherwise fall back to device speech. */
+function recordedAudioOrSpeech(audio: AudioReference[] | undefined, spokenText: string, speechId: string): AudioReference[] {
+  const usable = (audio ?? []).filter((entry) => audioMatchesText(entry, spokenText));
+  return usable.some((entry) => !isBrowserSpeech(entry)) ? usable : browserSpeech(spokenText, speechId);
 }
 
 function browserSpeech(text: string, id: string): AudioReference[] {

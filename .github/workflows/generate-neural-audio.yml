@@ -41,14 +41,16 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22.12.0
+          node-version: 24
           cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Show generation plan
         env:
+          AZURE_SPEECH_VOICE: ${{ inputs.voice }}
+          AZURE_SPEECH_RATE: ${{ inputs.rate }}
           AUDIO_SCOPE: ${{ inputs.scope }}
         run: |
           case "$AUDIO_SCOPE" in
@@ -69,9 +71,9 @@ jobs:
           test -n "$AZURE_SPEECH_KEY" || (echo "Missing AZURE_SPEECH_KEY repository secret" && exit 1)
           test -n "$AZURE_SPEECH_REGION" || (echo "Missing AZURE_SPEECH_REGION repository secret" && exit 1)
           case "$AUDIO_SCOPE" in
-            sample) EXTRA_ARGS="--sample --force" ;;
-            all) EXTRA_ARGS="--all --force" ;;
-            *) EXTRA_ARGS="--force" ;;
+            sample) EXTRA_ARGS="--sample" ;;
+            all) EXTRA_ARGS="--all" ;;
+            *) EXTRA_ARGS="" ;;
           esac
           node tools/generate-automated-audio.mjs content-packs/hy-eastern-it $EXTRA_ARGS
           npm run content:sync-web
@@ -81,6 +83,7 @@ jobs:
 
       - name: Package generated update
         env:
+          SOURCE_COMMIT: ${{ github.sha }}
           AUDIO_SCOPE: ${{ inputs.scope }}
           AUDIO_VOICE: ${{ inputs.voice }}
           AUDIO_RATE: ${{ inputs.rate }}
@@ -90,6 +93,7 @@ jobs:
           cp content-packs/hy-eastern-it/dictionary/*.jsonl neural-audio-update/content-packs/hy-eastern-it/dictionary/
           cp -R content-packs/hy-eastern-it/audio/auto-neural neural-audio-update/content-packs/hy-eastern-it/audio/
           cat > neural-audio-update/AUDIO_GENERATION.txt <<REPORT
+          Source commit: $SOURCE_COMMIT
           Scope: $AUDIO_SCOPE
           Voice: $AUDIO_VOICE
           Rate: $AUDIO_RATE

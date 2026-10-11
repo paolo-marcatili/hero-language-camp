@@ -9,14 +9,17 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "dev:lan": "vite --host 0.0.0.0",
-    "preview:lan": "vite preview --host 0.0.0.0"
+    "preview:lan": "vite preview --host 0.0.0.0",
+    "predev": "node ../../tools/sync-content-pack.mjs ../../content-packs/hy-eastern-it public/content-packs/hy-eastern-it",
+    "predev:lan": "node ../../tools/sync-content-pack.mjs ../../content-packs/hy-eastern-it public/content-packs/hy-eastern-it"
   },
   "dependencies": {
     "@hero-lang/content-schema": "0.2.0",
     "@hero-lang/learning-engine": "0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "phaser": "^3.90.0"
+    "phaser": "^3.90.0",
+    "@hero-lang/foundations-engine": "0.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

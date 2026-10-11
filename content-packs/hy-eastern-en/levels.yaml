@@ -7,8 +7,8 @@ levels:
     title: "Level 0 · First sparks"
     stat_cap: 5
     content_tags:
-      - stage: 0
-      - tier: "core"
+      - "stage:0"
+      - "tier:core"
     theme:
       en: "First sparks"
     learning_goal:
@@ -29,8 +29,8 @@ levels:
     title: "Level 1 · Who am I?"
     stat_cap: 10
     content_tags:
-      - stage: 1
-      - tier: "core"
+      - "stage:1"
+      - "tier:core"
     theme:
       en: "Who am I?"
     learning_goal:
@@ -51,8 +51,8 @@ levels:
     title: "Level 2 · My family"
     stat_cap: 15
     content_tags:
-      - stage: 2
-      - tier: "core"
+      - "stage:2"
+      - "tier:core"
     theme:
       en: "My family"
     learning_goal:
@@ -73,8 +73,8 @@ levels:
     title: "Level 3 · Hungry and thirsty"
     stat_cap: 20
     content_tags:
-      - stage: 3
-      - tier: "core"
+      - "stage:3"
+      - "tier:core"
     theme:
       en: "Hungry and thirsty"
     learning_goal:
@@ -95,8 +95,8 @@ levels:
     title: "Level 4 · My day"
     stat_cap: 25
     content_tags:
-      - stage: 4
-      - tier: "core"
+      - "stage:4"
+      - "tier:core"
     theme:
       en: "My day"
     learning_goal:
@@ -117,8 +117,8 @@ levels:
     title: "Level 5 · Where are we?"
     stat_cap: 30
     content_tags:
-      - stage: 5
-      - tier: "core"
+      - "stage:5"
+      - "tier:core"
     theme:
       en: "Where are we?"
     learning_goal:
@@ -139,8 +139,8 @@ levels:
     title: "Level 6 · Numbers and time"
     stat_cap: 35
     content_tags:
-      - stage: 6
-      - tier: "core"
+      - "stage:6"
+      - "tier:core"
     theme:
       en: "Numbers and time"
     learning_goal:
@@ -161,8 +161,8 @@ levels:
     title: "Level 7 · Us and them"
     stat_cap: 40
     content_tags:
-      - stage: 7
-      - tier: "core"
+      - "stage:7"
+      - "tier:core"
     theme:
       en: "Us and them"
     learning_goal:
@@ -183,8 +183,8 @@ levels:
     title: "Level 8 · Small adventures"
     stat_cap: 45
     content_tags:
-      - stage: 8
-      - tier: "core"
+      - "stage:8"
+      - "tier:core"
     theme:
       en: "Small adventures"
     learning_goal:
@@ -585,3 +585,555 @@ levels:
       timer_seconds: 12
       sigmoid_k: 2.2
     chapter_id: "chapter_stage_24"
+  - number: 25
+    title: "Level 25 · Invitations and arrangements"
+    stat_cap: 130
+    theme:
+      en: "Invitations and arrangements"
+    learning_goal:
+      en: "Understand connected language about invitations and arrangements; explain a choice with a reason and practise a short exchange."
+    cefr: "a2"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:25"
+      - "tier:core"
+    chapter_id: "chapter_stage_25"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 26
+    title: "Level 26 · Recounting a day"
+    stat_cap: 135
+    theme:
+      en: "Recounting a day"
+    learning_goal:
+      en: "Understand connected language about recounting a day; explain a choice with a reason and practise a short exchange."
+    cefr: "a2"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:26"
+      - "tier:core"
+    chapter_id: "chapter_stage_26"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 27
+    title: "Level 27 · Asking for clarification"
+    stat_cap: 140
+    theme:
+      en: "Asking for clarification"
+    learning_goal:
+      en: "Understand connected language about asking for clarification; explain a choice with a reason and practise a short exchange."
+    cefr: "a2"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:27"
+      - "tier:core"
+    chapter_id: "chapter_stage_27"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 28
+    title: "Level 28 · Choices and preferences"
+    stat_cap: 145
+    theme:
+      en: "Choices and preferences"
+    learning_goal:
+      en: "Understand connected language about choices and preferences; explain a choice with a reason and practise a short exchange."
+    cefr: "a2"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:28"
+      - "tier:core"
+    chapter_id: "chapter_stage_28"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 29
+    title: "Level 29 · Travel and directions"
+    stat_cap: 150
+    theme:
+      en: "Travel and directions"
+    learning_goal:
+      en: "Understand connected language about travel and directions; explain a choice with a reason and practise a short exchange."
+    cefr: "a2"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:29"
+      - "tier:core"
+    chapter_id: "chapter_stage_29"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 30
+    title: "Level 30 · Everyday problems"
+    stat_cap: 155
+    theme:
+      en: "Everyday problems"
+    learning_goal:
+      en: "Understand connected language about everyday problems; explain a choice with a reason and practise a short exchange."
+    cefr: "a2"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:30"
+      - "tier:core"
+    chapter_id: "chapter_stage_30"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 31
+    title: "Level 31 · Messages and instructions"
+    stat_cap: 160
+    theme:
+      en: "Messages and instructions"
+    learning_goal:
+      en: "Understand connected language about messages and instructions; explain a choice with a reason and practise a short exchange."
+    cefr: "a2"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:31"
+      - "tier:core"
+    chapter_id: "chapter_stage_31"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 32
+    title: "Level 32 · Experiences and short stories"
+    stat_cap: 165
+    theme:
+      en: "Experiences and short stories"
+    learning_goal:
+      en: "Understand connected language about experiences and short stories; explain a choice with a reason and practise a short exchange."
+    cefr: "a2"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:32"
+      - "tier:core"
+    chapter_id: "chapter_stage_32"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 33
+    title: "Level 33 · Opinions and reasons"
+    stat_cap: 170
+    theme:
+      en: "Opinions and reasons"
+    learning_goal:
+      en: "Understand connected language about opinions and reasons; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:33"
+      - "tier:core"
+    chapter_id: "chapter_stage_33"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 34
+    title: "Level 34 · Plans and conditions"
+    stat_cap: 175
+    theme:
+      en: "Plans and conditions"
+    learning_goal:
+      en: "Understand connected language about plans and conditions; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:34"
+      - "tier:core"
+    chapter_id: "chapter_stage_34"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 35
+    title: "Level 35 · Narrating an unexpected event"
+    stat_cap: 180
+    theme:
+      en: "Narrating an unexpected event"
+    learning_goal:
+      en: "Understand connected language about narrating an unexpected event; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:35"
+      - "tier:core"
+    chapter_id: "chapter_stage_35"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 36
+    title: "Level 36 · Describing people and places"
+    stat_cap: 185
+    theme:
+      en: "Describing people and places"
+    learning_goal:
+      en: "Understand connected language about describing people and places; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:36"
+      - "tier:core"
+    chapter_id: "chapter_stage_36"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 37
+    title: "Level 37 · Working together and negotiating"
+    stat_cap: 190
+    theme:
+      en: "Working together and negotiating"
+    learning_goal:
+      en: "Understand connected language about working together and negotiating; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:37"
+      - "tier:core"
+    chapter_id: "chapter_stage_37"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 38
+    title: "Level 38 · News and sources"
+    stat_cap: 195
+    theme:
+      en: "News and sources"
+    learning_goal:
+      en: "Understand connected language about news and sources; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:38"
+      - "tier:core"
+    chapter_id: "chapter_stage_38"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 39
+    title: "Level 39 · Environment and habits"
+    stat_cap: 200
+    theme:
+      en: "Environment and habits"
+    learning_goal:
+      en: "Understand connected language about environment and habits; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:39"
+      - "tier:core"
+    chapter_id: "chapter_stage_39"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 40
+    title: "Level 40 · Traditions and comparisons"
+    stat_cap: 205
+    theme:
+      en: "Traditions and comparisons"
+    learning_goal:
+      en: "Understand connected language about traditions and comparisons; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:40"
+      - "tier:core"
+    chapter_id: "chapter_stage_40"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 41
+    title: "Level 41 · Feelings and perspectives"
+    stat_cap: 210
+    theme:
+      en: "Feelings and perspectives"
+    learning_goal:
+      en: "Understand connected language about feelings and perspectives; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:41"
+      - "tier:core"
+    chapter_id: "chapter_stage_41"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 42
+    title: "Level 42 · Requesting a service"
+    stat_cap: 215
+    theme:
+      en: "Requesting a service"
+    learning_goal:
+      en: "Understand connected language about requesting a service; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:42"
+      - "tier:core"
+    chapter_id: "chapter_stage_42"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 43
+    title: "Level 43 · Summarising and reporting"
+    stat_cap: 220
+    theme:
+      en: "Summarising and reporting"
+    learning_goal:
+      en: "Understand connected language about summarising and reporting; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:43"
+      - "tier:core"
+    chapter_id: "chapter_stage_43"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 44
+    title: "Level 44 · Learning and improving"
+    stat_cap: 225
+    theme:
+      en: "Learning and improving"
+    learning_goal:
+      en: "Understand connected language about learning and improving; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:44"
+      - "tier:core"
+    chapter_id: "chapter_stage_44"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 45
+    title: "Level 45 · Stories and imagination"
+    stat_cap: 230
+    theme:
+      en: "Stories and imagination"
+    learning_goal:
+      en: "Understand connected language about stories and imagination; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:45"
+      - "tier:core"
+    chapter_id: "chapter_stage_45"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 46
+    title: "Level 46 · Community and responsibility"
+    stat_cap: 235
+    theme:
+      en: "Community and responsibility"
+    learning_goal:
+      en: "Understand connected language about community and responsibility; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:46"
+      - "tier:core"
+    chapter_id: "chapter_stage_46"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 47
+    title: "Level 47 · Deciding with incomplete information"
+    stat_cap: 240
+    theme:
+      en: "Deciding with incomplete information"
+    learning_goal:
+      en: "Understand connected language about deciding with incomplete information; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:47"
+      - "tier:core"
+    chapter_id: "chapter_stage_47"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20
+  - number: 48
+    title: "Level 48 · An integrated project"
+    stat_cap: 245
+    theme:
+      en: "An integrated project"
+    learning_goal:
+      en: "Understand connected language about an integrated project; explain a choice with a reason and practise a short exchange."
+    cefr: "b1"
+    review_only: false
+    minimum_new_words: 0
+    content_tags:
+      - "stage:48"
+      - "tier:core"
+    chapter_id: "chapter_stage_48"
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 16
+      min_stats: {}
+    fight:
+      min_questions: 16
+      at_min_questions: 34
+      max_questions: 40
+      timer_seconds: 20

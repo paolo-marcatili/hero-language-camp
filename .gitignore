@@ -51,3 +51,11 @@ apps/danish-foundations/public/manifest.webmanifest
 site/
 redirect-site/
 .pages-preview/
+
+# Content packs copied for dev/build; edit content-packs/ instead.
+apps/web/public/content-packs/
+*.bak-*
+apps/web/dist.zip
+
+# Python virtual environment (local tooling only)
+.venv/

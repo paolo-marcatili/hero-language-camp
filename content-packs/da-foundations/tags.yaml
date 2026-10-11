@@ -1,107 +1,275 @@
 controlled_tags:
-  - id: "stage:0"
+  - id: 'stage:0'
     label: Lysets port
-  - id: "stage:1"
+  - id: 'stage:1'
     label: Klangskoven
-  - id: "stage:2"
+  - id: 'stage:2'
     label: Ekkoengen
-  - id: "stage:3"
+  - id: 'stage:3'
     label: Ti-trinnet
-  - id: "stage:4"
+  - id: 'stage:4'
     label: Ordtårnet
-  - id: "tier:core"
+  - id: 'tier:core'
     label: Kernestof
-  - id: "literacy:letter-name"
+  - id: 'literacy:letter-name'
     label: Bogstavnavn
-  - id: "literacy:letter-sound"
+  - id: 'literacy:letter-sound'
     label: Bogstavlyd
-  - id: "literacy:decodable"
+  - id: 'literacy:decodable'
     label: Lydret ord
-  - id: "literacy:high-frequency"
+  - id: 'literacy:high-frequency'
     label: Hyppigt ord
-  - id: "topic:first-words"
+  - id: 'topic:first-words'
     label: Første ord
-  - id: "math:counting"
+  - id: 'math:counting'
     label: Tælling
-  - id: "math:number-match"
+  - id: 'math:number-match'
     label: Tal og mængde
-  - id: "math:number-order"
+  - id: 'math:number-order'
     label: Talrække
-  - id: "math:comparison"
+  - id: 'math:comparison'
     label: Flest og lige mange
-  - id: "math:addition"
+  - id: 'math:addition'
     label: Plus
-  - id: "math:subtraction"
+  - id: 'math:subtraction'
     label: Minus
-  - id: "encounter:starter"
+  - id: 'encounter:starter'
     label: Startområde
-  - id: "encounter:sound"
+  - id: 'encounter:sound'
     label: Lydområde
-  - id: "encounter:reading"
+  - id: 'encounter:reading'
     label: Læseområde
-  - id: "encounter:math"
+  - id: 'encounter:math'
     label: Talområde
-  - id: "encounter:word-tower"
+  - id: 'encounter:word-tower'
     label: Ordtårn
-  - id: "stage:5"
+  - id: 'stage:5'
     label: Sætningsbroen
-  - id: "stage:6"
+  - id: 'stage:6'
     label: Søen med ord
-  - id: "stage:7"
+  - id: 'stage:7'
     label: Å-porten
-  - id: "stage:8"
+  - id: 'stage:8'
     label: De små beskeder
-  - id: "stage:9"
+  - id: 'stage:9'
     label: Fortællingens nøgle
-  - id: "stage:10"
+  - id: 'stage:10'
     label: Skolestien
-  - id: "stage:11"
+  - id: 'stage:11'
     label: Historiehaven
-  - id: "stage:12"
+  - id: 'stage:12'
     label: Skriveværkstedet
-  - id: "stage:13"
+  - id: 'stage:13'
     label: Den første bog
-  - id: "topic:school-reading"
+  - id: 'topic:school-reading'
     label: Skoleord
-  - id: "reading:sentence_picture"
+  - id: 'reading:sentence_picture'
     label: Sætning og billede
-  - id: "reading:sentence_order"
+  - id: 'reading:sentence_order'
     label: Byg sætning
-  - id: "reading:missing_word"
+  - id: 'reading:missing_word'
     label: Manglende ord
-  - id: "reading:missing_letter"
+  - id: 'reading:missing_letter'
     label: Manglende bogstav
-  - id: "reading:mini_story"
+  - id: 'reading:mini_story'
     label: Minihistorie
-  - id: "math:number_bond"
+  - id: 'math:number_bond'
     label: Talvenner
-  - id: "math:story_problem"
+  - id: 'math:story_problem'
     label: Regnehistorie
-  - id: "topic:expanded-reading"
+  - id: 'topic:expanded-reading'
     label: Udvidet læsning
-  - id: "reading:initial_sound"
+  - id: 'reading:initial_sound'
     label: Første lyd
-  - id: "reading:final_sound"
+  - id: 'reading:final_sound'
     label: Sidste lyd
-  - id: "reading:rhyme"
+  - id: 'reading:rhyme'
     label: Rim
-  - id: "reading:syllable_count"
+  - id: 'reading:syllable_count'
     label: Stavelser
-  - id: "math:shape"
+  - id: 'math:shape'
     label: Former
-  - id: "math:pattern"
+  - id: 'math:pattern'
     label: Mønstre
-  - id: "math:sorting"
+  - id: 'math:sorting'
     label: Sortering
-  - id: "math:measurement"
+  - id: 'math:measurement'
     label: Måling
-  - id: "instruction:literacy"
+  - id: 'instruction:literacy'
     label: Læseinstruktion
-  - id: "instruction:reading"
+  - id: 'instruction:reading'
     label: Læseopgave
-  - id: "instruction:phonology"
+  - id: 'instruction:phonology'
     label: Lydopgave
-  - id: "instruction:math"
+  - id: 'instruction:math'
     label: Matematikopgave
-  - id: "instruction:math-awareness"
+  - id: 'instruction:math-awareness'
     label: Matematisk opmærksomhed
+  - id: 'math:data'
+    label: 'math:data'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'math:division'
+    label: 'math:division'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'math:multiplication'
+    label: 'math:multiplication'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'math:number_match'
+    label: 'math:number_match'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'math:number_order'
+    label: 'math:number_order'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'math:place_value'
+    label: 'math:place_value'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'school:0'
+    label: 'school:0'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'school:1'
+    label: 'school:1'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'school:2'
+    label: 'school:2'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:14'
+    label: 'stage:14'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:15'
+    label: 'stage:15'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:16'
+    label: 'stage:16'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:17'
+    label: 'stage:17'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:18'
+    label: 'stage:18'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:19'
+    label: 'stage:19'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:20'
+    label: 'stage:20'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:21'
+    label: 'stage:21'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:22'
+    label: 'stage:22'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:23'
+    label: 'stage:23'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:24'
+    label: 'stage:24'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:25'
+    label: 'stage:25'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:26'
+    label: 'stage:26'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:27'
+    label: 'stage:27'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:28'
+    label: 'stage:28'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:29'
+    label: 'stage:29'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:30'
+    label: 'stage:30'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:31'
+    label: 'stage:31'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:32'
+    label: 'stage:32'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:33'
+    label: 'stage:33'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:34'
+    label: 'stage:34'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:35'
+    label: 'stage:35'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:36'
+    label: 'stage:36'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:37'
+    label: 'stage:37'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:38'
+    label: 'stage:38'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:39'
+    label: 'stage:39'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:40'
+    label: 'stage:40'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:41'
+    label: 'stage:41'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:42'
+    label: 'stage:42'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:43'
+    label: 'stage:43'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:44'
+    label: 'stage:44'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:45'
+    label: 'stage:45'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:46'
+    label: 'stage:46'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:47'
+    label: 'stage:47'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:48'
+    label: 'stage:48'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:49'
+    label: 'stage:49'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:50'
+    label: 'stage:50'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:51'
+    label: 'stage:51'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:52'
+    label: 'stage:52'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:53'
+    label: 'stage:53'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:54'
+    label: 'stage:54'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:55'
+    label: 'stage:55'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:56'
+    label: 'stage:56'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:57'
+    label: 'stage:57'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:58'
+    label: 'stage:58'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'stage:59'
+    label: 'stage:59'
+    description: Kontrolleret tag for skoleforløbet.
+  - id: 'topic:school'
+    label: 'topic:school'
+    description: Kontrolleret tag for skoleforløbet.

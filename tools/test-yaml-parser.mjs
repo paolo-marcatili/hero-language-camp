@@ -23,6 +23,9 @@ assert.equal(nestedFixture.items?.[0]?.target, "Բարև։");
 assert.deepEqual(nestedFixture.items?.[0]?.translation, { it: "Ciao!", en: "Hello!" });
 assert.equal(nestedFixture.items?.[1]?.speaker?.it, "Eroe");
 
+const tagFixture = parseYaml('tags:\n  - tier:core\n  - stage:12\n  - https://example.test\n  - "quoted:tag"\n');
+assert.deepEqual(tagFixture.tags, ['tier:core', 'stage:12', 'https://example.test', 'quoted:tag']);
+
 const story = parseYaml(readFileSync("content-packs/hy-eastern-it/story.yaml", "utf8"));
 const levels = parseYaml(readFileSync("content-packs/hy-eastern-it/levels.yaml", "utf8"));
 const chapters = Array.isArray(story.chapters) ? story.chapters : [];

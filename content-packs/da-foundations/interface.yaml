@@ -322,3 +322,5 @@ text:
   gardenTroll: Havetrolden
   inkWizard: Blækmagikeren
   bookDragon: Bogdragen
+
+  audioTextFallback: 'Lyden virker ikke: bed en voksen læse teksten højt. Tiden er sat på pause.'

@@ -1,31 +1,7 @@
-# Ord- og Talheltene — Phase C+D
+# Danish: 0.–2. klasse
 
-Danish early-literacy and mathematics curriculum for a bilingual child beginning Danish primary school.
+60 zero-based units (0–59), two units per teaching month, 20 per grade. Grade 0 uses listening and visual/aural choices; grades 1–2 introduce supported and then more independent reading and spelling. The course contains 25 graphemes, 275 words, 276 structured reading/listening tasks and 1,246 maths/logic tasks.
 
-The child-facing language is Danish. Italian appears only as optional parent support in the chapter reader.
+Edit `curriculum/school-plan.json`, then run `npm run content:build-danish`. `curriculum/legacy-material.json` preserves the original IDs and recordings for migration. `npm run content:check-danish-sync` verifies generated files. The compiler retains later recordings when their spoken content still matches.
 
-## Current scope
-
-- Fourteen chapters, Levels 0–13.
-- Twenty-five introduced graphemes; the less common `q`, `w`, `x`, and `z` are deferred.
-- 127 picture-supported, decodable, and high-frequency words.
-- 75 reading tasks across sentence-picture matching, sentence construction, missing letters, missing words, and mini-stories.
-- 196 mathematics tasks across quantities, number symbols, ordering, comparison, operations, number bonds, and contextual problems.
-- Numbers and operations through 20.
-- Three progressively larger labyrinth configurations and fourteen reusable/scalable enemies.
-- Automatic Danish narration and replay for every task.
-
-## Review status
-
-The original Phase B material remains as previously reviewed. New Phase C+D words, reading tasks, story chapters, and audio metadata are marked `needs_native_speaker_review`. They should be reviewed by a native Danish speaker with early-literacy experience before being marked approved.
-
-## Regeneration
-
-The expanded pack is generated reproducibly with:
-
-```bash
-npm run content:expand:danish
-npm run check:danish
-```
-
-Browser speech is the immediate fallback. Use `tools/generate-danish-audio.mjs` to generate fixed MP3 files for letter names, words, reading prompts, and full mathematics prompts. Isolated phonemes remain reserved for reviewed human recordings.
+The month sequence is an authored pacing guide informed by Fælles Mål; it is not a nationally prescribed monthly scheme or a substitute for school teaching. See `docs/CURRICULUM_MAP.md` and `docs/REPO_REVIEW.md` from the repository root.

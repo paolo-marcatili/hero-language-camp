@@ -1887,4 +1887,1780 @@ chapters:
     cliffhanger:
       it: "Il faro illumina una strada verso racconti più lunghi, annunci, esperienze e conversazioni a più turni: il prossimo modulo può estendere il corso senza cambiare il motore."
       en: "The beacon lights a road towards longer stories, notices, experiences, and multi-turn conversations: the next module can extend the course without changing the engine."
+  - id: "chapter_stage_25"
+    minimum_level: 25
+    title:
+      it: "Inviti e accordi"
+      en: "Invitations and arrangements"
+    summary:
+      it: "Comprendere e collegare frasi su inviti e accordi; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about invitations and arrangements; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: inviti e accordi. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: invitations and arrangements. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Inviti e accordi"
+        en: "Invitations and arrangements"
+      objectives:
+        - it: "Comprendere e collegare frasi su inviti e accordi; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about invitations and arrangements; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Կիրակի օրը ազատ ե՞ս։"
+          translation:
+            it: "Sei libero domenica?"
+            en: "Are you free on Sunday?"
+        - target: "Կուզե՞ս մեզ հետ այգի գալ։"
+          translation:
+            it: "Ti piacerebbe venire al parco con noi?"
+            en: "Would you like to come to the park with us?"
+        - target: "Շնորհակալ եմ հրավերի համար։"
+          translation:
+            it: "Grazie per l'invito."
+            en: "Thank you for the invitation."
+        - target: "Այս անգամ չեմ կարող գալ։"
+          translation:
+            it: "Questa volta non posso venire."
+            en: "I cannot come this time."
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Կիրակի օրը ազատ ե՞ս։"
+          translation:
+            it: "Sei libero domenica?"
+            en: "Are you free on Sunday?"
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Կուզե՞ս մեզ հետ այգի գալ։"
+          translation:
+            it: "Ti piacerebbe venire al parco con noi?"
+            en: "Would you like to come to the park with us?"
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_26"
+    minimum_level: 26
+    title:
+      it: "Raccontare una giornata"
+      en: "Recounting a day"
+    summary:
+      it: "Comprendere e collegare frasi su raccontare una giornata; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about recounting a day; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: raccontare una giornata. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: recounting a day. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Raccontare una giornata"
+        en: "Recounting a day"
+      objectives:
+        - it: "Comprendere e collegare frasi su raccontare una giornata; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about recounting a day; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Երեկ առավոտյան շուտ արթնացա։"
+          translation:
+            it: "Ieri mattina mi sono svegliato presto."
+            en: "I woke up early yesterday morning."
+        - target: "Նախ նախաճաշեցի, հետո դպրոց գնացի։"
+          translation:
+            it: "Prima ho fatto colazione, poi sono andato a scuola."
+            en: "First I had breakfast, then I went to school."
+        - target: "Դասերից հետո ընկերոջս հետ խաղացի։"
+          translation:
+            it: "Dopo le lezioni ho giocato con un amico."
+            en: "After lessons I played with my friend."
+        - target: "Երբ տուն հասա, արդեն մութ էր։"
+          translation:
+            it: "Quando sono arrivato a casa, era già buio."
+            en: "When I got home, it was already dark."
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Երեկ առավոտյան շուտ արթնացա։"
+          translation:
+            it: "Ieri mattina mi sono svegliato presto."
+            en: "I woke up early yesterday morning."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Նախ նախաճաշեցի, հետո դպրոց գնացի։"
+          translation:
+            it: "Prima ho fatto colazione, poi sono andato a scuola."
+            en: "First I had breakfast, then I went to school."
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_27"
+    minimum_level: 27
+    title:
+      it: "Chiedere chiarimenti"
+      en: "Asking for clarification"
+    summary:
+      it: "Comprendere e collegare frasi su chiedere chiarimenti; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about asking for clarification; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: chiedere chiarimenti. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: asking for clarification. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Chiedere chiarimenti"
+        en: "Asking for clarification"
+      objectives:
+        - it: "Comprendere e collegare frasi su chiedere chiarimenti; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about asking for clarification; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Կներեք, վերջին բառը չհասկացա։"
+          translation:
+            it: "Scusi, non ho capito l'ultima parola."
+            en: "Sorry, I did not understand the last word."
+        - target: "Կարո՞ղ եք ավելի դանդաղ խոսել։"
+          translation:
+            it: "Può parlare più lentamente?"
+            en: "Could you speak more slowly?"
+        - target: "Ի՞նչ է նշանակում այս արտահայտությունը։"
+          translation:
+            it: "Che cosa significa questa espressione?"
+            en: "What does this expression mean?"
+        - target: "Կարո՞ղ ես մի օրինակ բերել։"
+          translation:
+            it: "Puoi fare un esempio?"
+            en: "Can you give an example?"
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Կներեք, վերջին բառը չհասկացա։"
+          translation:
+            it: "Scusi, non ho capito l'ultima parola."
+            en: "Sorry, I did not understand the last word."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Կարո՞ղ եք ավելի դանդաղ խոսել։"
+          translation:
+            it: "Può parlare più lentamente?"
+            en: "Could you speak more slowly?"
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_28"
+    minimum_level: 28
+    title:
+      it: "Scelte e preferenze"
+      en: "Choices and preferences"
+    summary:
+      it: "Comprendere e collegare frasi su scelte e preferenze; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about choices and preferences; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: scelte e preferenze. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: choices and preferences. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Scelte e preferenze"
+        en: "Choices and preferences"
+      objectives:
+        - it: "Comprendere e collegare frasi su scelte e preferenze; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about choices and preferences; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Ես նախընտրում եմ գնալ ոտքով։"
+          translation:
+            it: "Preferisco andare a piedi."
+            en: "I prefer to walk."
+        - target: "Այս գիրքն ավելի հետաքրքիր է, քան նախորդը։"
+          translation:
+            it: "Questo libro è più interessante del precedente."
+            en: "This book is more interesting than the previous one."
+        - target: "Ինձ ավելի շատ դուր է գալիս կապույտը։"
+          translation:
+            it: "Mi piace di più quello blu."
+            en: "I like the blue one more."
+        - target: "Երկու տարբերակն էլ լավն են։"
+          translation:
+            it: "Entrambe le possibilità sono buone."
+            en: "Both options are good."
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Ես նախընտրում եմ գնալ ոտքով։"
+          translation:
+            it: "Preferisco andare a piedi."
+            en: "I prefer to walk."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Այս գիրքն ավելի հետաքրքիր է, քան նախորդը։"
+          translation:
+            it: "Questo libro è più interessante del precedente."
+            en: "This book is more interesting than the previous one."
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_29"
+    minimum_level: 29
+    title:
+      it: "Viaggiare e orientarsi"
+      en: "Travel and directions"
+    summary:
+      it: "Comprendere e collegare frasi su viaggiare e orientarsi; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about travel and directions; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: viaggiare e orientarsi. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: travel and directions. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Viaggiare e orientarsi"
+        en: "Travel and directions"
+      objectives:
+        - it: "Comprendere e collegare frasi su viaggiare e orientarsi; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about travel and directions; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Մենք իջնելու ենք հաջորդ կանգառում։"
+          translation:
+            it: "Scenderemo alla prossima fermata."
+            en: "We are getting off at the next stop."
+        - target: "Այս ավտոբուսը հասնո՞ւմ է կայարան։"
+          translation:
+            it: "Questo autobus arriva alla stazione?"
+            en: "Does this bus go to the station?"
+        - target: "Ուղիղ գնացեք մինչև կամուրջը։"
+          translation:
+            it: "Vada dritto fino al ponte."
+            en: "Go straight ahead as far as the bridge."
+        - target: "Կամրջից հետո թեքվեք աջ։"
+          translation:
+            it: "Dopo il ponte giri a destra."
+            en: "Turn right after the bridge."
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Մենք իջնելու ենք հաջորդ կանգառում։"
+          translation:
+            it: "Scenderemo alla prossima fermata."
+            en: "We are getting off at the next stop."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Այս ավտոբուսը հասնո՞ւմ է կայարան։"
+          translation:
+            it: "Questo autobus arriva alla stazione?"
+            en: "Does this bus go to the station?"
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_30"
+    minimum_level: 30
+    title:
+      it: "Problemi quotidiani"
+      en: "Everyday problems"
+    summary:
+      it: "Comprendere e collegare frasi su problemi quotidiani; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about everyday problems; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: problemi quotidiani. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: everyday problems. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Problemi quotidiani"
+        en: "Everyday problems"
+      objectives:
+        - it: "Comprendere e collegare frasi su problemi quotidiani; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about everyday problems; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Իմ պայուսակի կայծակաճարմանդը չի փակվում։"
+          translation:
+            it: "La cerniera della borsa non si chiude."
+            en: "The zip on my bag will not close."
+        - target: "Ես չեմ հիշում, թե որտեղ եմ դրել բանալին։"
+          translation:
+            it: "Non ricordo dove ho messo la chiave."
+            en: "I cannot remember where I put the key."
+        - target: "Այս կոշիկները ինձ փոքր են։"
+          translation:
+            it: "Queste scarpe mi sono piccole."
+            en: "These shoes are too small for me."
+        - target: "Կարելի՞ է դրանք փոխել ավելի մեծերով։"
+          translation:
+            it: "Posso cambiarle con un paio più grande?"
+            en: "Can I exchange them for a larger pair?"
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Իմ պայուսակի կայծակաճարմանդը չի փակվում։"
+          translation:
+            it: "La cerniera della borsa non si chiude."
+            en: "The zip on my bag will not close."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Ես չեմ հիշում, թե որտեղ եմ դրել բանալին։"
+          translation:
+            it: "Non ricordo dove ho messo la chiave."
+            en: "I cannot remember where I put the key."
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_31"
+    minimum_level: 31
+    title:
+      it: "Messaggi e istruzioni"
+      en: "Messages and instructions"
+    summary:
+      it: "Comprendere e collegare frasi su messaggi e istruzioni; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about messages and instructions; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: messaggi e istruzioni. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: messages and instructions. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Messaggi e istruzioni"
+        en: "Messages and instructions"
+      objectives:
+        - it: "Comprendere e collegare frasi su messaggi e istruzioni; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about messages and instructions; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Խնդրում եմ, փակիր պատուհանը, երբ դուրս գաս։"
+          translation:
+            it: "Per favore, chiudi la finestra quando esci."
+            en: "Please close the window when you leave."
+        - target: "Նամակում գրված է, որ հանդիպումը հետաձգվել է։"
+          translation:
+            it: "Nella lettera c'è scritto che l'incontro è stato rimandato."
+            en: "The letter says that the meeting has been postponed."
+        - target: "Նախ կարդա հրահանգը, հետո սկսիր աշխատանքը։"
+          translation:
+            it: "Prima leggi le istruzioni, poi inizia il lavoro."
+            en: "Read the instructions first, then start the work."
+        - target: "Մի մոռացիր քեզ հետ ջուր վերցնել։"
+          translation:
+            it: "Non dimenticare di portare dell'acqua."
+            en: "Do not forget to bring water with you."
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Խնդրում եմ, փակիր պատուհանը, երբ դուրս գաս։"
+          translation:
+            it: "Per favore, chiudi la finestra quando esci."
+            en: "Please close the window when you leave."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Նամակում գրված է, որ հանդիպումը հետաձգվել է։"
+          translation:
+            it: "Nella lettera c'è scritto che l'incontro è stato rimandato."
+            en: "The letter says that the meeting has been postponed."
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_32"
+    minimum_level: 32
+    title:
+      it: "Esperienze e piccoli racconti"
+      en: "Experiences and short stories"
+    summary:
+      it: "Comprendere e collegare frasi su esperienze e piccoli racconti; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about experiences and short stories; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: esperienze e piccoli racconti. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: experiences and short stories. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Esperienze e piccoli racconti"
+        en: "Experiences and short stories"
+      objectives:
+        - it: "Comprendere e collegare frasi su esperienze e piccoli racconti; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about experiences and short stories; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Ես երբեք այդ թանգարանում չեմ եղել։"
+          translation:
+            it: "Non sono mai stato in quel museo."
+            en: "I have never been to that museum."
+        - target: "Անցյալ ամառ առաջին անգամ սար բարձրացա։"
+          translation:
+            it: "L'estate scorsa ho scalato una montagna per la prima volta."
+            en: "Last summer I climbed a mountain for the first time."
+        - target: "Սկզբում վախենում էի, բայց հետո հանգստացա։"
+          translation:
+            it: "All'inizio avevo paura, ma poi mi sono calmato."
+            en: "At first I was afraid, but then I calmed down."
+        - target: "Մեր ճանապարհորդությունը երեք օր տևեց։"
+          translation:
+            it: "Il nostro viaggio è durato tre giorni."
+            en: "Our trip lasted three days."
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Ես երբեք այդ թանգարանում չեմ եղել։"
+          translation:
+            it: "Non sono mai stato in quel museo."
+            en: "I have never been to that museum."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Անցյալ ամառ առաջին անգամ սար բարձրացա։"
+          translation:
+            it: "L'estate scorsa ho scalato una montagna per la prima volta."
+            en: "Last summer I climbed a mountain for the first time."
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_33"
+    minimum_level: 33
+    title:
+      it: "Opinioni e motivi"
+      en: "Opinions and reasons"
+    summary:
+      it: "Comprendere e collegare frasi su opinioni e motivi; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about opinions and reasons; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: opinioni e motivi. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: opinions and reasons. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Opinioni e motivi"
+        en: "Opinions and reasons"
+      objectives:
+        - it: "Comprendere e collegare frasi su opinioni e motivi; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about opinions and reasons; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Իմ կարծիքով՝ այս առաջարկը օգտակար է։"
+          translation:
+            it: "Secondo me questa proposta è utile."
+            en: "In my opinion, this proposal is useful."
+        - target: "Ես համաձայն եմ քեզ հետ, որովհետև դա արդար է։"
+          translation:
+            it: "Sono d'accordo con te perché è giusto."
+            en: "I agree with you because it is fair."
+        - target: "Ես այլ կարծիք ունեմ, բայց ուզում եմ լսել քեզ։"
+          translation:
+            it: "Ho un'opinione diversa, ma voglio ascoltarti."
+            en: "I have a different opinion, but I want to hear you."
+        - target: "Կարո՞ղ ես բացատրել քո ընտրության պատճառը։"
+          translation:
+            it: "Puoi spiegare il motivo della tua scelta?"
+            en: "Can you explain the reason for your choice?"
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Իմ կարծիքով՝ այս առաջարկը օգտակար է։"
+          translation:
+            it: "Secondo me questa proposta è utile."
+            en: "In my opinion, this proposal is useful."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Ես համաձայն եմ քեզ հետ, որովհետև դա արդար է։"
+          translation:
+            it: "Sono d'accordo con te perché è giusto."
+            en: "I agree with you because it is fair."
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_34"
+    minimum_level: 34
+    title:
+      it: "Progetti e condizioni"
+      en: "Plans and conditions"
+    summary:
+      it: "Comprendere e collegare frasi su progetti e condizioni; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about plans and conditions; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: progetti e condizioni. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: plans and conditions. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Progetti e condizioni"
+        en: "Plans and conditions"
+      objectives:
+        - it: "Comprendere e collegare frasi su progetti e condizioni; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about plans and conditions; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Եթե ժամանակ ունենամ, կավարտեմ նկարս։"
+          translation:
+            it: "Se avrò tempo, finirò il mio disegno."
+            en: "If I have time, I will finish my drawing."
+        - target: "Մենք մտադիր ենք շաբաթ օրը ծառ տնկել։"
+          translation:
+            it: "Abbiamo intenzione di piantare un albero sabato."
+            en: "We intend to plant a tree on Saturday."
+        - target: "Նախ պետք է պարզենք, թե ով ինչ է անելու։"
+          translation:
+            it: "Prima dobbiamo chiarire chi farà cosa."
+            en: "First we need to work out who will do what."
+        - target: "Եթե բոլորս օգնենք, աշխատանքը շուտ կավարտվի։"
+          translation:
+            it: "Se aiutiamo tutti, il lavoro finirà presto."
+            en: "If we all help, the work will be finished soon."
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Եթե ժամանակ ունենամ, կավարտեմ նկարս։"
+          translation:
+            it: "Se avrò tempo, finirò il mio disegno."
+            en: "If I have time, I will finish my drawing."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Մենք մտադիր ենք շաբաթ օրը ծառ տնկել։"
+          translation:
+            it: "Abbiamo intenzione di piantare un albero sabato."
+            en: "We intend to plant a tree on Saturday."
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_35"
+    minimum_level: 35
+    title:
+      it: "Raccontare un imprevisto"
+      en: "Narrating an unexpected event"
+    summary:
+      it: "Comprendere e collegare frasi su raccontare un imprevisto; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about narrating an unexpected event; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: raccontare un imprevisto. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: narrating an unexpected event. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Raccontare un imprevisto"
+        en: "Narrating an unexpected event"
+      objectives:
+        - it: "Comprendere e collegare frasi su raccontare un imprevisto; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about narrating an unexpected event; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Երբ քայլում էինք անտառում, հանկարծ անձրև սկսվեց։"
+          translation:
+            it: "Mentre camminavamo nel bosco, all'improvviso ha cominciato a piovere."
+            en: "While we were walking in the forest, it suddenly started raining."
+        - target: "Մենք անձրևանոց չէինք վերցրել։"
+          translation:
+            it: "Non avevamo portato un ombrello."
+            en: "We had not brought an umbrella."
+        - target: "Բարեբախտաբար, մոտակայքում փոքր տնակ կար։"
+          translation:
+            it: "Per fortuna c'era una piccola casetta nelle vicinanze."
+            en: "Fortunately, there was a small cabin nearby."
+        - target: "Մինչև անձրևը դադարեց, սպասեցինք այնտեղ։"
+          translation:
+            it: "Abbiamo aspettato lì finché la pioggia è cessata."
+            en: "We waited there until the rain stopped."
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Երբ քայլում էինք անտառում, հանկարծ անձրև սկսվեց։"
+          translation:
+            it: "Mentre camminavamo nel bosco, all'improvviso ha cominciato a piovere."
+            en: "While we were walking in the forest, it suddenly started raining."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Մենք անձրևանոց չէինք վերցրել։"
+          translation:
+            it: "Non avevamo portato un ombrello."
+            en: "We had not brought an umbrella."
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_36"
+    minimum_level: 36
+    title:
+      it: "Descrivere persone e luoghi"
+      en: "Describing people and places"
+    summary:
+      it: "Comprendere e collegare frasi su descrivere persone e luoghi; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about describing people and places; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: descrivere persone e luoghi. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: describing people and places. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Descrivere persone e luoghi"
+        en: "Describing people and places"
+      objectives:
+        - it: "Comprendere e collegare frasi su descrivere persone e luoghi; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about describing people and places; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Այն տղան, որը նստած է պատուհանի մոտ, իմ ընկերն է։"
+          translation:
+            it: "Il ragazzo seduto vicino alla finestra è mio amico."
+            en: "The boy who is sitting by the window is my friend."
+        - target: "Սա այն վայրն է, որտեղ մենք առաջին անգամ հանդիպեցինք։"
+          translation:
+            it: "Questo è il posto dove ci siamo incontrati per la prima volta."
+            en: "This is the place where we first met."
+        - target: "Մեր թաղամասը հանգիստ է, բայց կենտրոնից հեռու։"
+          translation:
+            it: "Il nostro quartiere è tranquillo, ma lontano dal centro."
+            en: "Our neighbourhood is quiet but far from the centre."
+        - target: "Ինձ դուր են գալիս մարդիկ, որոնք ուշադիր լսում են։"
+          translation:
+            it: "Mi piacciono le persone che ascoltano con attenzione."
+            en: "I like people who listen carefully."
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Այն տղան, որը նստած է պատուհանի մոտ, իմ ընկերն է։"
+          translation:
+            it: "Il ragazzo seduto vicino alla finestra è mio amico."
+            en: "The boy who is sitting by the window is my friend."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Սա այն վայրն է, որտեղ մենք առաջին անգամ հանդիպեցինք։"
+          translation:
+            it: "Questo è il posto dove ci siamo incontrati per la prima volta."
+            en: "This is the place where we first met."
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_37"
+    minimum_level: 37
+    title:
+      it: "Collaborare e negoziare"
+      en: "Working together and negotiating"
+    summary:
+      it: "Comprendere e collegare frasi su collaborare e negoziare; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about working together and negotiating; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: collaborare e negoziare. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: working together and negotiating. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Collaborare e negoziare"
+        en: "Working together and negotiating"
+      objectives:
+        - it: "Comprendere e collegare frasi su collaborare e negoziare; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about working together and negotiating; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Եկեք առաջադրանքը բաժանենք երեք մասի։"
+          translation:
+            it: "Dividiamo il compito in tre parti."
+            en: "Let's divide the task into three parts."
+        - target: "Ես կարող եմ գրել տեքստը, իսկ դու՝ նկարել։"
+          translation:
+            it: "Io posso scrivere il testo e tu disegnare."
+            en: "I can write the text, and you can draw."
+        - target: "Ի՞նչ կասես, եթե փոխենք հերթականությունը։"
+          translation:
+            it: "Che ne dici di cambiare l'ordine?"
+            en: "What would you say to changing the order?"
+        - target: "Մենք պետք է լուծում գտնենք, ոչ թե վիճենք։"
+          translation:
+            it: "Dobbiamo trovare una soluzione invece di litigare."
+            en: "We need to find a solution instead of arguing."
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Եկեք առաջադրանքը բաժանենք երեք մասի։"
+          translation:
+            it: "Dividiamo il compito in tre parti."
+            en: "Let's divide the task into three parts."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Ես կարող եմ գրել տեքստը, իսկ դու՝ նկարել։"
+          translation:
+            it: "Io posso scrivere il testo e tu disegnare."
+            en: "I can write the text, and you can draw."
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_38"
+    minimum_level: 38
+    title:
+      it: "Notizie e fonti"
+      en: "News and sources"
+    summary:
+      it: "Comprendere e collegare frasi su notizie e fonti; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about news and sources; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: notizie e fonti. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: news and sources. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Notizie e fonti"
+        en: "News and sources"
+      objectives:
+        - it: "Comprendere e collegare frasi su notizie e fonti; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about news and sources; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Այս լուրը կարդացի դպրոցի կայքում։"
+          translation:
+            it: "Ho letto questa notizia sul sito della scuola."
+            en: "I read this news on the school website."
+        - target: "Հոդվածում գրված է, որ գրադարանը շուտով կբացվի։"
+          translation:
+            it: "Nell'articolo c'è scritto che la biblioteca aprirà presto."
+            en: "The article says that the library will open soon."
+        - target: "Ես դեռ չգիտեմ՝ այդ տեղեկությունը ճիշտ է, թե ոչ։"
+          translation:
+            it: "Non so ancora se quell'informazione sia vera."
+            en: "I do not yet know whether that information is true."
+        - target: "Եկեք ստուգենք, թե ով է գրել հաղորդագրությունը։"
+          translation:
+            it: "Controlliamo chi ha scritto il messaggio."
+            en: "Let's check who wrote the message."
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Այս լուրը կարդացի դպրոցի կայքում։"
+          translation:
+            it: "Ho letto questa notizia sul sito della scuola."
+            en: "I read this news on the school website."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Հոդվածում գրված է, որ գրադարանը շուտով կբացվի։"
+          translation:
+            it: "Nell'articolo c'è scritto che la biblioteca aprirà presto."
+            en: "The article says that the library will open soon."
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_39"
+    minimum_level: 39
+    title:
+      it: "Ambiente e abitudini"
+      en: "Environment and habits"
+    summary:
+      it: "Comprendere e collegare frasi su ambiente e abitudini; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about environment and habits; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: ambiente e abitudini. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: environment and habits. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Ambiente e abitudini"
+        en: "Environment and habits"
+      objectives:
+        - it: "Comprendere e collegare frasi su ambiente e abitudini; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about environment and habits; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Մենք փորձում ենք ավելի քիչ ջուր օգտագործել։"
+          translation:
+            it: "Cerchiamo di usare meno acqua."
+            en: "We are trying to use less water."
+        - target: "Դպրոց գնալիս հաճախ հեծանիվ եմ քշում։"
+          translation:
+            it: "Vado spesso a scuola in bicicletta."
+            en: "I often cycle to school."
+        - target: "Եթե լույսը պետք չէ, անջատում եմ այն։"
+          translation:
+            it: "Se la luce non serve, la spengo."
+            en: "If the light is not needed, I turn it off."
+        - target: "Մեր դասարանը որոշել է մաքրել այգին։"
+          translation:
+            it: "La nostra classe ha deciso di pulire il parco."
+            en: "Our class has decided to clean the park."
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Մենք փորձում ենք ավելի քիչ ջուր օգտագործել։"
+          translation:
+            it: "Cerchiamo di usare meno acqua."
+            en: "We are trying to use less water."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Դպրոց գնալիս հաճախ հեծանիվ եմ քշում։"
+          translation:
+            it: "Vado spesso a scuola in bicicletta."
+            en: "I often cycle to school."
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_40"
+    minimum_level: 40
+    title:
+      it: "Tradizioni e confronti"
+      en: "Traditions and comparisons"
+    summary:
+      it: "Comprendere e collegare frasi su tradizioni e confronti; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about traditions and comparisons; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: tradizioni e confronti. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: traditions and comparisons. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Tradizioni e confronti"
+        en: "Traditions and comparisons"
+      objectives:
+        - it: "Comprendere e collegare frasi su tradizioni e confronti; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about traditions and comparisons; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Մեր ընտանիքում տոնին միասին ճաշ ենք պատրաստում։"
+          translation:
+            it: "Nella nostra famiglia cuciniamo insieme per la festa."
+            en: "In our family we prepare a meal together for the celebration."
+        - target: "Տատիկս պատմում է, թե ինչպես էին տոնում իր մանկության տարիներին։"
+          translation:
+            it: "La nonna racconta come festeggiavano durante la sua infanzia."
+            en: "My grandmother tells us how they celebrated when she was a child."
+        - target: "Որոշ սովորույթներ փոխվել են, իսկ մյուսները պահպանվել։"
+          translation:
+            it: "Alcune usanze sono cambiate, altre sono rimaste."
+            en: "Some customs have changed, while others have been kept."
+        - target: "Ինձ հետաքրքրում է՝ ինչպես են դա անում ուրիշ երկրներում։"
+          translation:
+            it: "Mi interessa come si fa in altri paesi."
+            en: "I am interested in how people do this in other countries."
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Մեր ընտանիքում տոնին միասին ճաշ ենք պատրաստում։"
+          translation:
+            it: "Nella nostra famiglia cuciniamo insieme per la festa."
+            en: "In our family we prepare a meal together for the celebration."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Տատիկս պատմում է, թե ինչպես էին տոնում իր մանկության տարիներին։"
+          translation:
+            it: "La nonna racconta come festeggiavano durante la sua infanzia."
+            en: "My grandmother tells us how they celebrated when she was a child."
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_41"
+    minimum_level: 41
+    title:
+      it: "Emozioni e punti di vista"
+      en: "Feelings and perspectives"
+    summary:
+      it: "Comprendere e collegare frasi su emozioni e punti di vista; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about feelings and perspectives; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: emozioni e punti di vista. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: feelings and perspectives. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Emozioni e punti di vista"
+        en: "Feelings and perspectives"
+      objectives:
+        - it: "Comprendere e collegare frasi su emozioni e punti di vista; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about feelings and perspectives; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Ես հուզվում էի ելույթից առաջ։"
+          translation:
+            it: "Ero emozionato prima dell'esibizione."
+            en: "I was nervous before the performance."
+        - target: "Երբ ընկերներս ժպտացին, ինձ ավելի վստահ զգացի։"
+          translation:
+            it: "Quando i miei amici hanno sorriso, mi sono sentito più sicuro."
+            en: "When my friends smiled, I felt more confident."
+        - target: "Նա վիրավորվեց, որովհետև իրեն չէին լսել։"
+          translation:
+            it: "Si è offeso perché non lo avevano ascoltato."
+            en: "He felt hurt because they had not listened to him."
+        - target: "Ես չէի ուզում քեզ նեղացնել։"
+          translation:
+            it: "Non volevo dispiacerti."
+            en: "I did not mean to upset you."
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Ես հուզվում էի ելույթից առաջ։"
+          translation:
+            it: "Ero emozionato prima dell'esibizione."
+            en: "I was nervous before the performance."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Երբ ընկերներս ժպտացին, ինձ ավելի վստահ զգացի։"
+          translation:
+            it: "Quando i miei amici hanno sorriso, mi sono sentito più sicuro."
+            en: "When my friends smiled, I felt more confident."
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_42"
+    minimum_level: 42
+    title:
+      it: "Chiedere un servizio"
+      en: "Requesting a service"
+    summary:
+      it: "Comprendere e collegare frasi su chiedere un servizio; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about requesting a service; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: chiedere un servizio. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: requesting a service. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Chiedere un servizio"
+        en: "Requesting a service"
+      objectives:
+        - it: "Comprendere e collegare frasi su chiedere un servizio; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about requesting a service; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Ես նախապես սեղան էի պատվիրել չորս հոգու համար։"
+          translation:
+            it: "Avevo prenotato un tavolo per quattro persone."
+            en: "I had booked a table for four people in advance."
+        - target: "Կներեք, մեր պատվերում մի բան պակասում է։"
+          translation:
+            it: "Scusi, manca qualcosa nel nostro ordine."
+            en: "Excuse me, something is missing from our order."
+        - target: "Կարո՞ղ եք ասել, թե որքան պետք է սպասենք։"
+          translation:
+            it: "Può dirci quanto dobbiamo aspettare?"
+            en: "Could you tell us how long we need to wait?"
+        - target: "Այս ապրանքը վնասված է։"
+          translation:
+            it: "Questo prodotto è danneggiato."
+            en: "This product is damaged."
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Ես նախապես սեղան էի պատվիրել չորս հոգու համար։"
+          translation:
+            it: "Avevo prenotato un tavolo per quattro persone."
+            en: "I had booked a table for four people in advance."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Կներեք, մեր պատվերում մի բան պակասում է։"
+          translation:
+            it: "Scusi, manca qualcosa nel nostro ordine."
+            en: "Excuse me, something is missing from our order."
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_43"
+    minimum_level: 43
+    title:
+      it: "Riassumere e riferire"
+      en: "Summarising and reporting"
+    summary:
+      it: "Comprendere e collegare frasi su riassumere e riferire; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about summarising and reporting; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: riassumere e riferire. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: summarising and reporting. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Riassumere e riferire"
+        en: "Summarising and reporting"
+      objectives:
+        - it: "Comprendere e collegare frasi su riassumere e riferire; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about summarising and reporting; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Պատմության գլխավոր միտքն այն է, որ ընկերները օգնում են իրար։"
+          translation:
+            it: "L'idea principale del racconto è che gli amici si aiutano."
+            en: "The main idea of the story is that friends help one another."
+        - target: "Ուսուցիչն ասաց, որ վաղը թանգարան ենք գնալու։"
+          translation:
+            it: "L'insegnante ha detto che domani andremo al museo."
+            en: "The teacher said that we are going to the museum tomorrow."
+        - target: "Անին խնդրեց, որ իրեն սպասենք մուտքի մոտ։"
+          translation:
+            it: "Ani ha chiesto di aspettarla all'ingresso."
+            en: "Ani asked us to wait for her by the entrance."
+        - target: "Կարճ ասած՝ մեր ծրագիրը փոխվել է։"
+          translation:
+            it: "In breve, il nostro programma è cambiato."
+            en: "In brief, our plan has changed."
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Պատմության գլխավոր միտքն այն է, որ ընկերները օգնում են իրար։"
+          translation:
+            it: "L'idea principale del racconto è che gli amici si aiutano."
+            en: "The main idea of the story is that friends help one another."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Ուսուցիչն ասաց, որ վաղը թանգարան ենք գնալու։"
+          translation:
+            it: "L'insegnante ha detto che domani andremo al museo."
+            en: "The teacher said that we are going to the museum tomorrow."
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_44"
+    minimum_level: 44
+    title:
+      it: "Imparare e migliorare"
+      en: "Learning and improving"
+    summary:
+      it: "Comprendere e collegare frasi su imparare e migliorare; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about learning and improving; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: imparare e migliorare. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: learning and improving. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Imparare e migliorare"
+        en: "Learning and improving"
+      objectives:
+        - it: "Comprendere e collegare frasi su imparare e migliorare; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about learning and improving; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Սկզբում այս առաջադրանքը ինձ դժվար էր թվում։"
+          translation:
+            it: "All'inizio questo compito mi sembrava difficile."
+            en: "At first this task seemed difficult to me."
+        - target: "Ես այն բաժանեցի փոքր քայլերի։"
+          translation:
+            it: "L'ho diviso in piccoli passi."
+            en: "I divided it into small steps."
+        - target: "Սխալս գտնելու համար նորից կարդացի հրահանգը։"
+          translation:
+            it: "Per trovare l'errore ho riletto le istruzioni."
+            en: "To find my mistake, I read the instructions again."
+        - target: "Ամեն օր մի քիչ պարապելը ինձ օգնում է։"
+          translation:
+            it: "Esercitarmi un po' ogni giorno mi aiuta."
+            en: "Practising a little every day helps me."
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Սկզբում այս առաջադրանքը ինձ դժվար էր թվում։"
+          translation:
+            it: "All'inizio questo compito mi sembrava difficile."
+            en: "At first this task seemed difficult to me."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Ես այն բաժանեցի փոքր քայլերի։"
+          translation:
+            it: "L'ho diviso in piccoli passi."
+            en: "I divided it into small steps."
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_45"
+    minimum_level: 45
+    title:
+      it: "Racconti e immaginazione"
+      en: "Stories and imagination"
+    summary:
+      it: "Comprendere e collegare frasi su racconti e immaginazione; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about stories and imagination; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: racconti e immaginazione. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: stories and imagination. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Racconti e immaginazione"
+        en: "Stories and imagination"
+      objectives:
+        - it: "Comprendere e collegare frasi su racconti e immaginazione; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about stories and imagination; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Եթե կարողանայի թռչել, աշխարհը վերևից կտեսնեի։"
+          translation:
+            it: "Se potessi volare, vedrei il mondo dall'alto."
+            en: "If I could fly, I would see the world from above."
+        - target: "Պատկերացրու մի քաղաք, որտեղ մեքենաներ չկան։"
+          translation:
+            it: "Immagina una città senza automobili."
+            en: "Imagine a city where there are no cars."
+        - target: "Պատմության հերոսը պետք է դժվար ընտրություն կատարեր։"
+          translation:
+            it: "Il protagonista doveva fare una scelta difficile."
+            en: "The main character had to make a difficult choice."
+        - target: "Նա չէր սպասում, որ այդպիսի պատասխան կլսի։"
+          translation:
+            it: "Non si aspettava di sentire una risposta simile."
+            en: "He did not expect to hear such an answer."
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Եթե կարողանայի թռչել, աշխարհը վերևից կտեսնեի։"
+          translation:
+            it: "Se potessi volare, vedrei il mondo dall'alto."
+            en: "If I could fly, I would see the world from above."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Պատկերացրու մի քաղաք, որտեղ մեքենաներ չկան։"
+          translation:
+            it: "Immagina una città senza automobili."
+            en: "Imagine a city where there are no cars."
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_46"
+    minimum_level: 46
+    title:
+      it: "Comunità e responsabilità"
+      en: "Community and responsibility"
+    summary:
+      it: "Comprendere e collegare frasi su comunità e responsabilità; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about community and responsibility; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: comunità e responsabilità. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: community and responsibility. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Comunità e responsabilità"
+        en: "Community and responsibility"
+      objectives:
+        - it: "Comprendere e collegare frasi su comunità e responsabilità; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about community and responsibility; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Մեր թաղամասում նոր գրադարան է բացվել։"
+          translation:
+            it: "Nel nostro quartiere ha aperto una nuova biblioteca."
+            en: "A new library has opened in our neighbourhood."
+        - target: "Կամավորները օգնում են գրքերը դասավորել։"
+          translation:
+            it: "I volontari aiutano a sistemare i libri."
+            en: "Volunteers help to arrange the books."
+        - target: "Յուրաքանչյուր մարդ կարող է իր ներդրումն ունենալ։"
+          translation:
+            it: "Ognuno può dare il proprio contributo."
+            en: "Everyone can make a contribution."
+        - target: "Մենք պետք է հոգ տանենք ընդհանուր տարածքի մասին։"
+          translation:
+            it: "Dobbiamo prenderci cura dello spazio comune."
+            en: "We need to take care of the shared space."
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Մեր թաղամասում նոր գրադարան է բացվել։"
+          translation:
+            it: "Nel nostro quartiere ha aperto una nuova biblioteca."
+            en: "A new library has opened in our neighbourhood."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Կամավորները օգնում են գրքերը դասավորել։"
+          translation:
+            it: "I volontari aiutano a sistemare i libri."
+            en: "Volunteers help to arrange the books."
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_47"
+    minimum_level: 47
+    title:
+      it: "Scegliere con informazioni incomplete"
+      en: "Deciding with incomplete information"
+    summary:
+      it: "Comprendere e collegare frasi su scegliere con informazioni incomplete; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about deciding with incomplete information; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: scegliere con informazioni incomplete. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: deciding with incomplete information. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Scegliere con informazioni incomplete"
+        en: "Deciding with incomplete information"
+      objectives:
+        - it: "Comprendere e collegare frasi su scegliere con informazioni incomplete; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about deciding with incomplete information; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Մենք դեռ բավարար տեղեկություն չունենք որոշելու համար։"
+          translation:
+            it: "Non abbiamo ancora abbastanza informazioni per decidere."
+            en: "We do not yet have enough information to decide."
+        - target: "Այս տարբերակը էժան է, բայց ճանապարհը երկար է։"
+          translation:
+            it: "Questa soluzione costa poco, ma il viaggio è lungo."
+            en: "This option is cheap, but the journey is long."
+        - target: "Մյուս տարբերակը արագ է, սակայն ավելի թանկ։"
+          translation:
+            it: "L'altra possibilità è veloce, ma più costosa."
+            en: "The other option is fast, but more expensive."
+        - target: "Պետք է հաշվի առնենք նաև մեր ժամանակը։"
+          translation:
+            it: "Dobbiamo considerare anche il tempo a disposizione."
+            en: "We also need to take our time into account."
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Մենք դեռ բավարար տեղեկություն չունենք որոշելու համար։"
+          translation:
+            it: "Non abbiamo ancora abbastanza informazioni per decidere."
+            en: "We do not yet have enough information to decide."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Այս տարբերակը էժան է, բայց ճանապարհը երկար է։"
+          translation:
+            it: "Questa soluzione costa poco, ma il viaggio è lungo."
+            en: "This option is cheap, but the journey is long."
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
+  - id: "chapter_stage_48"
+    minimum_level: 48
+    title:
+      it: "Un progetto completo"
+      en: "An integrated project"
+    summary:
+      it: "Comprendere e collegare frasi su un progetto completo; spiegare una scelta con un motivo ed esercitare un breve scambio."
+      en: "Understand connected language about an integrated project; explain a choice with a reason and practise a short exchange."
+    fiction:
+      it: "Il sentiero porta l’eroe a una nuova sfida: un progetto completo. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta."
+      en: "The path brings the hero a new challenge: an integrated project. To open the passage, the hero must understand the others and explain a choice."
+    story_beats:
+      - it: "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna."
+        en: "The dragon hears two different ideas. Help it understand the reason for each."
+    lesson:
+      title:
+        it: "Un progetto completo"
+        en: "An integrated project"
+      objectives:
+        - it: "Comprendere e collegare frasi su un progetto completo; spiegare una scelta con un motivo ed esercitare un breve scambio."
+          en: "Understand connected language about an integrated project; explain a choice with a reason and practise a short exchange."
+        - it: "Collegare causa, tempo o condizione al significato della frase."
+          en: "Connect a cause, time or condition to the meaning of a sentence."
+        - it: "Raccontare un esempio personale con un adulto."
+          en: "Discuss a personal example with an adult."
+      explanation:
+        it: "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili."
+        en: "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+      examples:
+        - target: "Մենք պատրաստում ենք ներկայացում մեր քաղաքի մասին։"
+          translation:
+            it: "Stiamo preparando una presentazione sulla nostra città."
+            en: "We are preparing a presentation about our town."
+        - target: "Նախ հավաքեցինք տեղեկություններ տարբեր աղբյուրներից։"
+          translation:
+            it: "Prima abbiamo raccolto informazioni da fonti diverse."
+            en: "First we collected information from different sources."
+        - target: "Հետո ընտրեցինք ամենակարևոր փաստերը։"
+          translation:
+            it: "Poi abbiamo scelto i fatti più importanti."
+            en: "Then we selected the most important facts."
+        - target: "Ես պատասխանատու եմ պատմական մասի համար։"
+          translation:
+            it: "Sono responsabile della parte storica."
+            en: "I am responsible for the historical section."
+      dialogue:
+        - speaker:
+            it: "Compagno"
+            en: "Partner"
+          target: "Մենք պատրաստում ենք ներկայացում մեր քաղաքի մասին։"
+          translation:
+            it: "Stiamo preparando una presentazione sulla nostra città."
+            en: "We are preparing a presentation about our town."
+        - speaker:
+            it: "Eroe"
+            en: "Hero"
+          target: "Նախ հավաքեցինք տեղեկություններ տարբեր աղբյուրներից։"
+          translation:
+            it: "Prima abbiamo raccolto informazioni da fonti diverse."
+            en: "First we collected information from different sources."
+      study_notes:
+        - it: "Individua le parole che collegano le idee, prima di cercare ogni parola."
+          en: "Identify words connecting ideas before looking up every word."
+        - it: "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario."
+          en: "Restate the message in your own words; ask for clarification when needed."
+      common_mistakes:
+        - it: "Non confondere una condizione o una possibilità con un fatto già accaduto."
+          en: "Do not confuse a condition or possibility with something that has already happened."
+    mission:
+      it: "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto."
+      en: "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+    cliffhanger:
+      it: "La prossima porta richiede una nuova spiegazione."
+      en: "The next gate needs a new explanation."
 # END GENERATED CURRICULUM V2: story-chapters

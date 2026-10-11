@@ -66,7 +66,7 @@ The dashboard is descriptive rather than a grade.
 Regenerate the data-driven expansion:
 
 ```bash
-npm run content:expand:danish
+npm run content:build-danish
 ```
 
 Validate the pack, curriculum invariants, engine, and application:

@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "dev:lan": "npm run prepare:public && vite --host 0.0.0.0",
-    "preview:lan": "vite preview --host 0.0.0.0"
+    "preview:lan": "vite preview --host 0.0.0.0",
+    "predev": "node ../../tools/sync-content-pack.mjs ../../content-packs/da-foundations public/content-packs/da-foundations",
+    "predev:lan": "node ../../tools/sync-content-pack.mjs ../../content-packs/da-foundations public/content-packs/da-foundations"
   },
   "dependencies": {
     "@hero-lang/content-schema": "0.2.0",

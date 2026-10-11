@@ -1,16 +1,43 @@
+progression:
+  stat_cap_start: 5
+  stat_cap_per_level: 3
+  unauthored_level_mode: review
+  curriculum_revision: 2
+  legacy_level_map_revision: 2
+  legacy_level_map:
+    0: 0
+    1: 2
+    2: 4
+    3: 6
+    4: 8
+    5: 10
+    6: 12
+    7: 14
+    8: 16
+    9: 18
+    10: 20
+    11: 23
+    12: 26
+    13: 29
 levels:
   - number: 0
-    title: Lysets port
+    title: 0. klasse · 1A · Velkommen og lytning
+    school_grade: 0
+    teaching_month: 1
+    fortnight: 1
+    reading_mode: oral
+    objectives:
+      - Lyt til en kort besked, og fortæl dit navn.
+      - Tæl og sammenlign mængder til 3.
+      - Sortér efter en udtrykkelig egenskab.
     stat_cap: 5
     content_tags:
-      - "stage:0"
+      - 'stage:0'
     theme:
-      da: De første bogstaver og mængder fra 0 til 3
-      it: Le prime lettere e le quantità da 0 a 3
+      da: Velkommen og lytning
     learning_goal:
-      da: Lyt efter begyndelseslyde, genkend s, o, l, m og a, og tæl små mængder.
-      it: Ascoltare i suoni iniziali, riconoscere s, o, l, m e a e contare piccole quantità.
-    chapter_id: chapter_0_light_gate
+      da: Lyt til en kort besked, og fortæl dit navn. Tæl og sammenlign mængder til 3. Sortér efter en udtrykkelig egenskab.
+    chapter_id: school_0
     unlock_requires:
       completed_training_sessions: 6
       answered_fight_questions: 10
@@ -22,21 +49,27 @@ levels:
     fight:
       min_questions: 10
       at_min_questions: 10
-      timer_seconds: 20
-      max_questions: 18
+      timer_seconds: 30
+      max_questions: 24
       max_mistakes_to_win: 8
   - number: 1
-    title: Klangskoven
+    title: 0. klasse · 1B · Velkommen og lytning
+    school_grade: 0
+    teaching_month: 1
+    fortnight: 2
+    reading_mode: oral
+    objectives:
+      - Lyt til en kort besked, og fortæl dit navn.
+      - Tæl og sammenlign mængder til 3.
+      - Sortér efter en udtrykkelig egenskab.
     stat_cap: 8
     content_tags:
-      - "stage:1"
+      - 'stage:1'
     theme:
-      da: Bogstaverne i, n og t, de første små ord og tallene til 5
-      it: Le lettere i, n e t, le prime parole brevi e i numeri fino a 5
+      da: Velkommen og lytning
     learning_goal:
-      da: Læs og byg korte ord som is, lim, tal og nat, og forbind tal med mængder til 5.
-      it: Leggere e costruire parole brevi come is, lim, tal e nat e collegare numeri e quantità fino a 5.
-    chapter_id: chapter_1_sound_forest
+      da: Lyt til en kort besked, og fortæl dit navn. Tæl og sammenlign mængder til 3. Sortér efter en udtrykkelig egenskab.
+    chapter_id: school_1
     unlock_requires:
       completed_training_sessions: 6
       answered_fight_questions: 10
@@ -48,21 +81,27 @@ levels:
     fight:
       min_questions: 10
       at_min_questions: 10
-      timer_seconds: 22
-      max_questions: 18
+      timer_seconds: 30
+      max_questions: 24
       max_mistakes_to_win: 8
   - number: 2
-    title: Ekkoengen
+    title: 0. klasse · 2A · Rim og rytme
+    school_grade: 0
+    teaching_month: 2
+    fortnight: 1
+    reading_mode: oral
+    objectives:
+      - Lyt efter rim, og klap stavelser i kendte navne.
+      - Forbind tal og mængder til 5.
+      - Fortsæt et skiftende mønster.
     stat_cap: 11
     content_tags:
-      - "stage:2"
+      - 'stage:2'
     theme:
-      da: Bogstaverne e, r og f, flere hverdagsord og sikker tælling til 5
-      it: Le lettere e, r e f, altre parole quotidiane e conteggio sicuro fino a 5
+      da: Rim og rytme
     learning_goal:
-      da: Læs ord som fem, ren, far og mor, og øv tallene 0 til 5 på flere måder.
-      it: Leggere parole come fem, ren, far e mor e allenare i numeri da 0 a 5 in modi diversi.
-    chapter_id: chapter_2_echo_meadow
+      da: Lyt efter rim, og klap stavelser i kendte navne. Forbind tal og mængder til 5. Fortsæt et skiftende mønster.
+    chapter_id: school_2
     unlock_requires:
       completed_training_sessions: 6
       answered_fight_questions: 10
@@ -74,23 +113,29 @@ levels:
     fight:
       min_questions: 10
       at_min_questions: 10
-      timer_seconds: 22
-      max_questions: 20
+      timer_seconds: 30
+      max_questions: 24
       max_mistakes_to_win: 8
   - number: 3
-    title: Ti-trinnet
+    title: 0. klasse · 2B · Rim og rytme
+    school_grade: 0
+    teaching_month: 2
+    fortnight: 2
+    reading_mode: oral
+    objectives:
+      - Lyt efter rim, og klap stavelser i kendte navne.
+      - Forbind tal og mængder til 5.
+      - Fortsæt et skiftende mønster.
     stat_cap: 14
     content_tags:
-      - "stage:3"
+      - 'stage:3'
     theme:
-      da: Bogstaverne u, b og k, flere lydrette ord og tallene til 10
-      it: Le lettere u, b e k, altre parole decodificabili e i numeri fino a 10
+      da: Rim og rytme
     learning_goal:
-      da: Læs ord som mus, bus, bil og kat, og tæl, ordn, læg sammen og træk fra inden for 10.
-      it: Leggere parole come mus, bus, bil e kat e contare, ordinare, sommare e sottrarre entro il 10.
-    chapter_id: chapter_3_ten_steps
+      da: Lyt efter rim, og klap stavelser i kendte navne. Forbind tal og mængder til 5. Fortsæt et skiftende mønster.
+    chapter_id: school_3
     unlock_requires:
-      completed_training_sessions: 7
+      completed_training_sessions: 6
       answered_fight_questions: 10
       min_stats:
         strength: 4
@@ -100,266 +145,1798 @@ levels:
     fight:
       min_questions: 10
       at_min_questions: 10
-      timer_seconds: 24
-      max_questions: 20
-      max_mistakes_to_win: 9
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
   - number: 4
-    title: Ordtårnet
+    title: 0. klasse · 3A · Lyde og bogstaver
+    school_grade: 0
+    teaching_month: 3
+    fortnight: 1
+    reading_mode: oral
+    objectives:
+      - Forbind begyndelseslyde med de første bogstaver.
+      - Ordne tal til 5 og finde én mere.
+      - Beskriv foran, bagved og ved siden af.
     stat_cap: 17
     content_tags:
-      - "stage:4"
+      - 'stage:4'
     theme:
-      da: Bogstaverne h, p og v, et større ordforråd og sammenligning af mængder
-      it: Le lettere h, p e v, un vocabolario più ampio e il confronto tra quantità
+      da: Lyde og bogstaver
     learning_goal:
-      da: Læs og byg ord som hus, pil, ven og hest, og afgør hvor der er flest, færrest eller lige mange.
-      it: Leggere e costruire parole come hus, pil, ven e hest e stabilire dove ce ne sono di più, di meno o in ugual numero.
-    chapter_id: chapter_4_word_tower
+      da: Forbind begyndelseslyde med de første bogstaver. Ordne tal til 5 og finde én mere. Beskriv foran, bagved og ved siden af.
+    chapter_id: school_4
     unlock_requires:
-      completed_training_sessions: 8
-      answered_fight_questions: 12
+      completed_training_sessions: 6
+      answered_fight_questions: 10
       min_stats:
         strength: 5
         defense: 5
         precision: 5
         stamina: 5
     fight:
-      min_questions: 12
-      at_min_questions: 12
-      timer_seconds: 25
-      max_questions: 22
-      max_mistakes_to_win: 9
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
   - number: 5
-    title: Sætningsbroen
+    title: 0. klasse · 3B · Lyde og bogstaver
+    school_grade: 0
+    teaching_month: 3
+    fortnight: 2
+    reading_mode: oral
+    objectives:
+      - Forbind begyndelseslyde med de første bogstaver.
+      - Ordne tal til 5 og finde én mere.
+      - Beskriv foran, bagved og ved siden af.
     stat_cap: 20
     content_tags:
-      - "stage:5"
+      - 'stage:5'
     theme:
-      da: Bogstaverne d, g og j, korte sætninger og talrækken til 10
-      it: Le lettere d, g e j, frasi brevi e la linea dei numeri fino a 10
+      da: Lyde og bogstaver
     learning_goal:
-      da: Læs og byg korte sætninger, og brug talrækken til at finde plus og minus.
-      it: Leggere e costruire frasi brevi e usare la linea dei numeri per addizioni e sottrazioni.
-    chapter_id: chapter_5_sentence_bridge
+      da: Forbind begyndelseslyde med de første bogstaver. Ordne tal til 5 og finde én mere. Beskriv foran, bagved og ved siden af.
+    chapter_id: school_5
     unlock_requires:
-      completed_training_sessions: 9
-      answered_fight_questions: 14
+      completed_training_sessions: 6
+      answered_fight_questions: 10
       min_stats:
         strength: 6
         defense: 6
         precision: 6
         stamina: 6
     fight:
-      min_questions: 14
-      at_min_questions: 14
-      timer_seconds: 26
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
       max_questions: 24
-      max_mistakes_to_win: 10
+      max_mistakes_to_win: 8
   - number: 6
-    title: Søen med ord
+    title: 0. klasse · 4A · Fortæl i rækkefølge
+    school_grade: 0
+    teaching_month: 4
+    fortnight: 1
+    reading_mode: oral
+    objectives:
+      - Genfortæl tre hændelser i en enkel historie.
+      - Tæl til 10, og sammenlign antal.
+      - Skeln mellem først, dernæst og sidst.
     stat_cap: 23
     content_tags:
-      - "stage:6"
+      - 'stage:6'
     theme:
-      da: Bogstaverne y, æ og ø, manglende ord og talvenner
-      it: Le lettere y, æ e ø, parole mancanti e coppie di numeri
+      da: Fortæl i rækkefølge
     learning_goal:
-      da: Læs små sætninger med y, æ og ø, og find talpar der tilsammen giver 5 eller 6.
-      it: Leggere brevi frasi con y, æ e ø e trovare coppie che formano 5 o 6.
-    chapter_id: chapter_6_word_lake
+      da: Genfortæl tre hændelser i en enkel historie. Tæl til 10, og sammenlign antal. Skeln mellem først, dernæst og sidst.
+    chapter_id: school_6
     unlock_requires:
-      completed_training_sessions: 9
-      answered_fight_questions: 14
+      completed_training_sessions: 6
+      answered_fight_questions: 10
       min_stats:
         strength: 7
         defense: 7
         precision: 7
         stamina: 7
     fight:
-      min_questions: 14
-      at_min_questions: 14
-      timer_seconds: 26
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
       max_questions: 24
-      max_mistakes_to_win: 10
+      max_mistakes_to_win: 8
   - number: 7
-    title: Å-porten
+    title: 0. klasse · 4B · Fortæl i rækkefølge
+    school_grade: 0
+    teaching_month: 4
+    fortnight: 2
+    reading_mode: oral
+    objectives:
+      - Genfortæl tre hændelser i en enkel historie.
+      - Tæl til 10, og sammenlign antal.
+      - Skeln mellem først, dernæst og sidst.
     stat_cap: 26
     content_tags:
-      - "stage:7"
+      - 'stage:7'
     theme:
-      da: Bogstaverne å og c, hyppige ord og talvenner til 8
-      it: Le lettere å e c, parole frequenti e coppie fino a 8
+      da: Fortæl i rækkefølge
     learning_goal:
-      da: Mød de sidste centrale bogstaver, læs hyppige ord og find flere talvenner.
-      it: Incontrare le ultime lettere principali, leggere parole frequenti e trovare altre coppie numeriche.
-    chapter_id: chapter_7_aa_gate
+      da: Genfortæl tre hændelser i en enkel historie. Tæl til 10, og sammenlign antal. Skeln mellem først, dernæst og sidst.
+    chapter_id: school_7
     unlock_requires:
-      completed_training_sessions: 9
-      answered_fight_questions: 14
+      completed_training_sessions: 6
+      answered_fight_questions: 10
       min_stats:
         strength: 8
         defense: 8
         precision: 8
         stamina: 8
     fight:
-      min_questions: 14
-      at_min_questions: 14
-      timer_seconds: 26
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
       max_questions: 24
-      max_mistakes_to_win: 10
+      max_mistakes_to_win: 8
   - number: 8
-    title: De små beskeder
+    title: 0. klasse · 5A · Ord og beskrivelser
+    school_grade: 0
+    teaching_month: 5
+    fortnight: 1
+    reading_mode: oral
+    objectives:
+      - Lyt til beskrivelser, og vælg den nævnte ting.
+      - Del små mængder i to grupper.
+      - Sortér efter farve og form.
     stat_cap: 29
     content_tags:
-      - "stage:8"
+      - 'stage:8'
     theme:
-      da: Hyppige småord, sætningsrækkefølge og blandet regning til 10
-      it: Parole frequenti, ordine della frase e calcolo misto fino a 10
+      da: Ord og beskrivelser
     learning_goal:
-      da: Læs beskeder med det, den, er, har, kan og ikke, og vælg regnestrategi.
-      it: Leggere messaggi con parole frequenti e scegliere una strategia di calcolo.
-    chapter_id: chapter_8_messages
+      da: Lyt til beskrivelser, og vælg den nævnte ting. Del små mængder i to grupper. Sortér efter farve og form.
+    chapter_id: school_8
     unlock_requires:
-      completed_training_sessions: 10
-      answered_fight_questions: 15
+      completed_training_sessions: 6
+      answered_fight_questions: 10
       min_stats:
         strength: 9
         defense: 9
         precision: 9
         stamina: 9
     fight:
-      min_questions: 15
-      at_min_questions: 15
-      timer_seconds: 26
-      max_questions: 25
-      max_mistakes_to_win: 10
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
   - number: 9
-    title: Fortællingens nøgle
+    title: 0. klasse · 5B · Ord og beskrivelser
+    school_grade: 0
+    teaching_month: 5
+    fortnight: 2
+    reading_mode: oral
+    objectives:
+      - Lyt til beskrivelser, og vælg den nævnte ting.
+      - Del små mængder i to grupper.
+      - Sortér efter farve og form.
     stat_cap: 32
     content_tags:
-      - "stage:9"
+      - 'stage:9'
     theme:
-      da: Korte tekster, forståelse og hverdagens regnehistorier
-      it: Testi brevi, comprensione e problemi quotidiani
+      da: Ord og beskrivelser
     learning_goal:
-      da: Læs en lille tekst, find svaret i teksten, og løs regnehistorier inden for 10.
-      it: Leggere un breve testo, trovare la risposta e risolvere problemi entro il 10.
-    chapter_id: chapter_9_story_key
+      da: Lyt til beskrivelser, og vælg den nævnte ting. Del små mængder i to grupper. Sortér efter farve og form.
+    chapter_id: school_9
     unlock_requires:
-      completed_training_sessions: 10
-      answered_fight_questions: 15
+      completed_training_sessions: 6
+      answered_fight_questions: 10
       min_stats:
         strength: 10
         defense: 10
         precision: 10
         stamina: 10
     fight:
-      min_questions: 15
-      at_min_questions: 15
-      timer_seconds: 26
-      max_questions: 25
-      max_mistakes_to_win: 10
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
   - number: 10
-    title: Skolestien
+    title: 0. klasse · 6A · Spørg og svar
+    school_grade: 0
+    teaching_month: 6
+    fortnight: 1
+    reading_mode: oral
+    objectives:
+      - Forstå hvem, hvad og hvor i en oplæst historie.
+      - Byg talvenner til 5 og 10 med ting.
+      - Find ligheder og forskelle efter en regel.
     stat_cap: 35
     content_tags:
-      - "stage:10"
+      - 'stage:10'
     theme:
-      da: Ord med to stavelser og tallene 11 til 20
-      it: Parole bisillabiche e numeri da 11 a 20
+      da: Spørg og svar
     learning_goal:
-      da: Læs længere ord og sætninger, og forbind tallene 11 til 20 med mængder og talrækken.
-      it: Leggere parole e frasi più lunghe e collegare 11-20 a quantità e linea dei numeri.
-    chapter_id: chapter_10_school_path
+      da: Forstå hvem, hvad og hvor i en oplæst historie. Byg talvenner til 5 og 10 med ting. Find ligheder og forskelle efter en regel.
+    chapter_id: school_10
     unlock_requires:
-      completed_training_sessions: 10
-      answered_fight_questions: 16
+      completed_training_sessions: 6
+      answered_fight_questions: 10
       min_stats:
         strength: 11
         defense: 11
         precision: 11
         stamina: 11
     fight:
-      min_questions: 16
-      at_min_questions: 16
+      min_questions: 10
+      at_min_questions: 10
       timer_seconds: 30
-      max_questions: 26
-      max_mistakes_to_win: 10
+      max_questions: 24
+      max_mistakes_to_win: 8
   - number: 11
-    title: Historiehaven
+    title: 0. klasse · 6B · Spørg og svar
+    school_grade: 0
+    teaching_month: 6
+    fortnight: 2
+    reading_mode: oral
+    objectives:
+      - Forstå hvem, hvad og hvor i en oplæst historie.
+      - Byg talvenner til 5 og 10 med ting.
+      - Find ligheder og forskelle efter en regel.
     stat_cap: 38
     content_tags:
-      - "stage:11"
+      - 'stage:11'
     theme:
-      da: Minihistorier og talvenner til 10
-      it: Mini-storie e coppie numeriche fino a 10
+      da: Spørg og svar
     learning_goal:
-      da: Læs tre sammenhængende sætninger, og brug talvenner til at regne smartere.
-      it: Leggere tre frasi collegate e usare le coppie numeriche per calcolare.
-    chapter_id: chapter_11_story_garden
+      da: Forstå hvem, hvad og hvor i en oplæst historie. Byg talvenner til 5 og 10 med ting. Find ligheder og forskelle efter en regel.
+    chapter_id: school_11
     unlock_requires:
-      completed_training_sessions: 10
-      answered_fight_questions: 16
+      completed_training_sessions: 6
+      answered_fight_questions: 10
       min_stats:
         strength: 12
         defense: 12
         precision: 12
         stamina: 12
     fight:
-      min_questions: 16
-      at_min_questions: 16
+      min_questions: 10
+      at_min_questions: 10
       timer_seconds: 30
-      max_questions: 26
-      max_mistakes_to_win: 10
+      max_questions: 24
+      max_mistakes_to_win: 8
   - number: 12
-    title: Skriveværkstedet
+    title: 0. klasse · 7A · Beskeder og fællesskab
+    school_grade: 0
+    teaching_month: 7
+    fortnight: 1
+    reading_mode: oral
+    objectives:
+      - Følg en besked med to trin og skift mellem at tale og lytte.
+      - Læg små grupper sammen og tag ting væk.
+      - Forklar en enkel regel.
     stat_cap: 41
     content_tags:
-      - "stage:12"
+      - 'stage:12'
     theme:
-      da: Manglende bogstaver, sætningsbygning og regning til 20
-      it: Lettere mancanti, costruzione di frasi e calcolo fino a 20
+      da: Beskeder og fællesskab
     learning_goal:
-      da: Byg og færdiggør ord og sætninger, og løs plus og minus inden for 20.
-      it: Completare parole e frasi e risolvere addizioni e sottrazioni entro il 20.
-    chapter_id: chapter_12_writing_workshop
+      da: Følg en besked med to trin og skift mellem at tale og lytte. Læg små grupper sammen og tag ting væk. Forklar en enkel regel.
+    chapter_id: school_12
     unlock_requires:
-      completed_training_sessions: 11
-      answered_fight_questions: 17
+      completed_training_sessions: 6
+      answered_fight_questions: 10
       min_stats:
-        strength: 12
-        defense: 12
-        precision: 12
-        stamina: 12
+        strength: 13
+        defense: 13
+        precision: 13
+        stamina: 13
     fight:
-      min_questions: 17
-      at_min_questions: 17
+      min_questions: 10
+      at_min_questions: 10
       timer_seconds: 30
-      max_questions: 27
-      max_mistakes_to_win: 10
+      max_questions: 24
+      max_mistakes_to_win: 8
   - number: 13
-    title: Den første bog
+    title: 0. klasse · 7B · Beskeder og fællesskab
+    school_grade: 0
+    teaching_month: 7
+    fortnight: 2
+    reading_mode: oral
+    objectives:
+      - Følg en besked med to trin og skift mellem at tale og lytte.
+      - Læg små grupper sammen og tag ting væk.
+      - Forklar en enkel regel.
     stat_cap: 44
     content_tags:
-      - "stage:13"
+      - 'stage:13'
     theme:
-      da: Læsning med forståelse og blandede problemer
-      it: Lettura con comprensione e problemi misti
+      da: Beskeder og fællesskab
     learning_goal:
-      da: Læs små fortællinger selvstændigt, svar på spørgsmål og vælg en regnestrategi.
-      it: Leggere brevi racconti, rispondere e scegliere una strategia di calcolo.
-    chapter_id: chapter_13_first_book
+      da: Følg en besked med to trin og skift mellem at tale og lytte. Læg små grupper sammen og tag ting væk. Forklar en enkel regel.
+    chapter_id: school_13
     unlock_requires:
-      completed_training_sessions: 12
-      answered_fight_questions: 18
+      completed_training_sessions: 6
+      answered_fight_questions: 10
       min_stats:
-        strength: 12
-        defense: 12
-        precision: 12
-        stamina: 12
+        strength: 14
+        defense: 14
+        precision: 14
+        stamina: 14
     fight:
-      min_questions: 18
-      at_min_questions: 18
+      min_questions: 10
+      at_min_questions: 10
       timer_seconds: 30
-      max_questions: 28
-      max_mistakes_to_win: 10
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 14
+    title: 0. klasse · 8A · Historier og følelser
+    school_grade: 0
+    teaching_month: 8
+    fortnight: 1
+    reading_mode: oral
+    objectives:
+      - Fortæl om en persons følelse med støtte i historien.
+      - Sammenlign længde og mål med ens klodser.
+      - Forbind en tydelig årsag med en følge.
+    stat_cap: 47
+    content_tags:
+      - 'stage:14'
+    theme:
+      da: Historier og følelser
+    learning_goal:
+      da: Fortæl om en persons følelse med støtte i historien. Sammenlign længde og mål med ens klodser. Forbind en tydelig årsag med en følge.
+    chapter_id: school_14
+    unlock_requires:
+      completed_training_sessions: 6
+      answered_fight_questions: 10
+      min_stats:
+        strength: 15
+        defense: 15
+        precision: 15
+        stamina: 15
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 15
+    title: 0. klasse · 8B · Historier og følelser
+    school_grade: 0
+    teaching_month: 8
+    fortnight: 2
+    reading_mode: oral
+    objectives:
+      - Fortæl om en persons følelse med støtte i historien.
+      - Sammenlign længde og mål med ens klodser.
+      - Forbind en tydelig årsag med en følge.
+    stat_cap: 50
+    content_tags:
+      - 'stage:15'
+    theme:
+      da: Historier og følelser
+    learning_goal:
+      da: Fortæl om en persons følelse med støtte i historien. Sammenlign længde og mål med ens klodser. Forbind en tydelig årsag med en følge.
+    chapter_id: school_15
+    unlock_requires:
+      completed_training_sessions: 6
+      answered_fight_questions: 10
+      min_stats:
+        strength: 16
+        defense: 16
+        precision: 16
+        stamina: 16
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 16
+    title: 0. klasse · 9A · Billeder og symboler
+    school_grade: 0
+    teaching_month: 9
+    fortnight: 1
+    reading_mode: oral
+    objectives:
+      - Brug billeder, bogstaver og symboler til at fortælle noget.
+      - Undersøg figurer, hjørner og mønstre.
+      - Følg en kort rute med retningsord.
+    stat_cap: 53
+    content_tags:
+      - 'stage:16'
+    theme:
+      da: Billeder og symboler
+    learning_goal:
+      da: Brug billeder, bogstaver og symboler til at fortælle noget. Undersøg figurer, hjørner og mønstre. Følg en kort rute med retningsord.
+    chapter_id: school_16
+    unlock_requires:
+      completed_training_sessions: 6
+      answered_fight_questions: 10
+      min_stats:
+        strength: 17
+        defense: 17
+        precision: 17
+        stamina: 17
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 17
+    title: 0. klasse · 9B · Billeder og symboler
+    school_grade: 0
+    teaching_month: 9
+    fortnight: 2
+    reading_mode: oral
+    objectives:
+      - Brug billeder, bogstaver og symboler til at fortælle noget.
+      - Undersøg figurer, hjørner og mønstre.
+      - Følg en kort rute med retningsord.
+    stat_cap: 56
+    content_tags:
+      - 'stage:17'
+    theme:
+      da: Billeder og symboler
+    learning_goal:
+      da: Brug billeder, bogstaver og symboler til at fortælle noget. Undersøg figurer, hjørner og mønstre. Følg en kort rute med retningsord.
+    chapter_id: school_17
+    unlock_requires:
+      completed_training_sessions: 6
+      answered_fight_questions: 10
+      min_stats:
+        strength: 18
+        defense: 18
+        precision: 18
+        stamina: 18
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 18
+    title: 0. klasse · 10A · Min første skolebog
+    school_grade: 0
+    teaching_month: 10
+    fortnight: 1
+    reading_mode: oral
+    objectives:
+      - Genfortæl, lyt efter lyde og eksperimentér med egne bogstaver.
+      - Brug tal og mængder til 20 i hverdagshistorier.
+      - Forklar, hvordan du fandt svaret.
+    stat_cap: 59
+    content_tags:
+      - 'stage:18'
+    theme:
+      da: Min første skolebog
+    learning_goal:
+      da: Genfortæl, lyt efter lyde og eksperimentér med egne bogstaver. Brug tal og mængder til 20 i hverdagshistorier. Forklar, hvordan du fandt svaret.
+    chapter_id: school_18
+    unlock_requires:
+      completed_training_sessions: 6
+      answered_fight_questions: 10
+      min_stats:
+        strength: 19
+        defense: 19
+        precision: 19
+        stamina: 19
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 19
+    title: 0. klasse · 10B · Min første skolebog
+    school_grade: 0
+    teaching_month: 10
+    fortnight: 2
+    reading_mode: oral
+    objectives:
+      - Genfortæl, lyt efter lyde og eksperimentér med egne bogstaver.
+      - Brug tal og mængder til 20 i hverdagshistorier.
+      - Forklar, hvordan du fandt svaret.
+    stat_cap: 62
+    content_tags:
+      - 'stage:19'
+    theme:
+      da: Min første skolebog
+    learning_goal:
+      da: Genfortæl, lyt efter lyde og eksperimentér med egne bogstaver. Brug tal og mængder til 20 i hverdagshistorier. Forklar, hvordan du fandt svaret.
+    chapter_id: school_19
+    unlock_requires:
+      completed_training_sessions: 6
+      answered_fight_questions: 10
+      min_stats:
+        strength: 20
+        defense: 20
+        precision: 20
+        stamina: 20
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 20
+    title: 1. klasse · 1A · Fra lyd til ord
+    school_grade: 1
+    teaching_month: 1
+    fortnight: 1
+    reading_mode: supported
+    objectives:
+      - Sæt bogstavlyde sammen, og læs korte kendte ord med støtte.
+      - Arbejd sikkert med antal og tal til 20.
+      - Følg rækkefølger og rumlige beskeder.
+    stat_cap: 65
+    content_tags:
+      - 'stage:20'
+    theme:
+      da: Fra lyd til ord
+    learning_goal:
+      da: Sæt bogstavlyde sammen, og læs korte kendte ord med støtte. Arbejd sikkert med antal og tal til 20. Følg rækkefølger og rumlige beskeder.
+    chapter_id: school_20
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 10
+      min_stats:
+        strength: 21
+        defense: 21
+        precision: 21
+        stamina: 21
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 21
+    title: 1. klasse · 1B · Fra lyd til ord
+    school_grade: 1
+    teaching_month: 1
+    fortnight: 2
+    reading_mode: supported
+    objectives:
+      - Sæt bogstavlyde sammen, og læs korte kendte ord med støtte.
+      - Arbejd sikkert med antal og tal til 20.
+      - Følg rækkefølger og rumlige beskeder.
+    stat_cap: 68
+    content_tags:
+      - 'stage:21'
+    theme:
+      da: Fra lyd til ord
+    learning_goal:
+      da: Sæt bogstavlyde sammen, og læs korte kendte ord med støtte. Arbejd sikkert med antal og tal til 20. Følg rækkefølger og rumlige beskeder.
+    chapter_id: school_21
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 10
+      min_stats:
+        strength: 22
+        defense: 22
+        precision: 22
+        stamina: 22
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 22
+    title: 1. klasse · 2A · Små sætninger
+    school_grade: 1
+    teaching_month: 2
+    fortnight: 1
+    reading_mode: supported
+    objectives:
+      - Læs enkle sætninger, og forbind dem med en handling.
+      - Find talvenner til 10 og 20.
+      - Beskriv mønstre med ord.
+    stat_cap: 71
+    content_tags:
+      - 'stage:22'
+    theme:
+      da: Små sætninger
+    learning_goal:
+      da: Læs enkle sætninger, og forbind dem med en handling. Find talvenner til 10 og 20. Beskriv mønstre med ord.
+    chapter_id: school_22
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 10
+      min_stats:
+        strength: 23
+        defense: 23
+        precision: 23
+        stamina: 23
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 23
+    title: 1. klasse · 2B · Små sætninger
+    school_grade: 1
+    teaching_month: 2
+    fortnight: 2
+    reading_mode: supported
+    objectives:
+      - Læs enkle sætninger, og forbind dem med en handling.
+      - Find talvenner til 10 og 20.
+      - Beskriv mønstre med ord.
+    stat_cap: 74
+    content_tags:
+      - 'stage:23'
+    theme:
+      da: Små sætninger
+    learning_goal:
+      da: Læs enkle sætninger, og forbind dem med en handling. Find talvenner til 10 og 20. Beskriv mønstre med ord.
+    chapter_id: school_23
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 10
+      min_stats:
+        strength: 24
+        defense: 24
+        precision: 24
+        stamina: 24
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 24
+    title: 1. klasse · 3A · At forstå en besked
+    school_grade: 1
+    teaching_month: 3
+    fortnight: 1
+    reading_mode: supported
+    objectives:
+      - Læs korte instruktioner, og udfør dem i rækkefølge.
+      - Læg sammen og træk fra inden for 20.
+      - Brug hvis og så i en regel.
+    stat_cap: 77
+    content_tags:
+      - 'stage:24'
+    theme:
+      da: At forstå en besked
+    learning_goal:
+      da: Læs korte instruktioner, og udfør dem i rækkefølge. Læg sammen og træk fra inden for 20. Brug hvis og så i en regel.
+    chapter_id: school_24
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 10
+      min_stats:
+        strength: 25
+        defense: 25
+        precision: 25
+        stamina: 25
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 25
+    title: 1. klasse · 3B · At forstå en besked
+    school_grade: 1
+    teaching_month: 3
+    fortnight: 2
+    reading_mode: supported
+    objectives:
+      - Læs korte instruktioner, og udfør dem i rækkefølge.
+      - Læg sammen og træk fra inden for 20.
+      - Brug hvis og så i en regel.
+    stat_cap: 80
+    content_tags:
+      - 'stage:25'
+    theme:
+      da: At forstå en besked
+    learning_goal:
+      da: Læs korte instruktioner, og udfør dem i rækkefølge. Læg sammen og træk fra inden for 20. Brug hvis og så i en regel.
+    chapter_id: school_25
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 10
+      min_stats:
+        strength: 26
+        defense: 26
+        precision: 26
+        stamina: 26
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 26
+    title: 1. klasse · 4A · Ord i to stavelser
+    school_grade: 1
+    teaching_month: 4
+    fortnight: 1
+    reading_mode: supported
+    objectives:
+      - Læs længere lydrette ord og genkend almindelige småord.
+      - Forstå tiere og enere op til 50.
+      - Gruppér på to forskellige måder.
+    stat_cap: 83
+    content_tags:
+      - 'stage:26'
+    theme:
+      da: Ord i to stavelser
+    learning_goal:
+      da: Læs længere lydrette ord og genkend almindelige småord. Forstå tiere og enere op til 50. Gruppér på to forskellige måder.
+    chapter_id: school_26
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 10
+      min_stats:
+        strength: 27
+        defense: 27
+        precision: 27
+        stamina: 27
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 27
+    title: 1. klasse · 4B · Ord i to stavelser
+    school_grade: 1
+    teaching_month: 4
+    fortnight: 2
+    reading_mode: supported
+    objectives:
+      - Læs længere lydrette ord og genkend almindelige småord.
+      - Forstå tiere og enere op til 50.
+      - Gruppér på to forskellige måder.
+    stat_cap: 86
+    content_tags:
+      - 'stage:27'
+    theme:
+      da: Ord i to stavelser
+    learning_goal:
+      da: Læs længere lydrette ord og genkend almindelige småord. Forstå tiere og enere op til 50. Gruppér på to forskellige måder.
+    chapter_id: school_27
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 10
+      min_stats:
+        strength: 28
+        defense: 28
+        precision: 28
+        stamina: 28
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 28
+    title: 1. klasse · 5A · Spørgsmål til en historie
+    school_grade: 1
+    teaching_month: 5
+    fortnight: 1
+    reading_mode: supported
+    objectives:
+      - Find konkrete oplysninger og spørg til det, du ikke forstår.
+      - Læs, ordn og sammenlign tal til 100.
+      - Brug en tabel med to kategorier.
+    stat_cap: 89
+    content_tags:
+      - 'stage:28'
+    theme:
+      da: Spørgsmål til en historie
+    learning_goal:
+      da: Find konkrete oplysninger og spørg til det, du ikke forstår. Læs, ordn og sammenlign tal til 100. Brug en tabel med to kategorier.
+    chapter_id: school_28
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 10
+      min_stats:
+        strength: 29
+        defense: 29
+        precision: 29
+        stamina: 29
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 29
+    title: 1. klasse · 5B · Spørgsmål til en historie
+    school_grade: 1
+    teaching_month: 5
+    fortnight: 2
+    reading_mode: supported
+    objectives:
+      - Find konkrete oplysninger og spørg til det, du ikke forstår.
+      - Læs, ordn og sammenlign tal til 100.
+      - Brug en tabel med to kategorier.
+    stat_cap: 92
+    content_tags:
+      - 'stage:29'
+    theme:
+      da: Spørgsmål til en historie
+    learning_goal:
+      da: Find konkrete oplysninger og spørg til det, du ikke forstår. Læs, ordn og sammenlign tal til 100. Brug en tabel med to kategorier.
+    chapter_id: school_29
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 10
+      min_stats:
+        strength: 30
+        defense: 30
+        precision: 30
+        stamina: 30
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 30
+    title: 1. klasse · 6A · Skriv en besked
+    school_grade: 1
+    teaching_month: 6
+    fortnight: 1
+    reading_mode: independent
+    objectives:
+      - Byg en kort forståelig besked, og brug mellemrum og punktum.
+      - Regn med tiere og enere inden for 100.
+      - Kontrollér en løsning på en anden måde.
+    stat_cap: 95
+    content_tags:
+      - 'stage:30'
+    theme:
+      da: Skriv en besked
+    learning_goal:
+      da: Byg en kort forståelig besked, og brug mellemrum og punktum. Regn med tiere og enere inden for 100. Kontrollér en løsning på en anden måde.
+    chapter_id: school_30
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 10
+      min_stats:
+        strength: 31
+        defense: 31
+        precision: 31
+        stamina: 31
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 31
+    title: 1. klasse · 6B · Skriv en besked
+    school_grade: 1
+    teaching_month: 6
+    fortnight: 2
+    reading_mode: independent
+    objectives:
+      - Byg en kort forståelig besked, og brug mellemrum og punktum.
+      - Regn med tiere og enere inden for 100.
+      - Kontrollér en løsning på en anden måde.
+    stat_cap: 98
+    content_tags:
+      - 'stage:31'
+    theme:
+      da: Skriv en besked
+    learning_goal:
+      da: Byg en kort forståelig besked, og brug mellemrum og punktum. Regn med tiere og enere inden for 100. Kontrollér en løsning på en anden måde.
+    chapter_id: school_31
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 10
+      min_stats:
+        strength: 32
+        defense: 32
+        precision: 32
+        stamina: 32
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 32
+    title: 1. klasse · 7A · Figurer og forklaringer
+    school_grade: 1
+    teaching_month: 7
+    fortnight: 1
+    reading_mode: independent
+    objectives:
+      - Beskriv en ting med flere præcise ord.
+      - Genkend figurer og mål længder i centimeter.
+      - Sammenlign oplysninger efter samme mål.
+    stat_cap: 101
+    content_tags:
+      - 'stage:32'
+    theme:
+      da: Figurer og forklaringer
+    learning_goal:
+      da: Beskriv en ting med flere præcise ord. Genkend figurer og mål længder i centimeter. Sammenlign oplysninger efter samme mål.
+    chapter_id: school_32
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 10
+      min_stats:
+        strength: 33
+        defense: 33
+        precision: 33
+        stamina: 33
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 33
+    title: 1. klasse · 7B · Figurer og forklaringer
+    school_grade: 1
+    teaching_month: 7
+    fortnight: 2
+    reading_mode: independent
+    objectives:
+      - Beskriv en ting med flere præcise ord.
+      - Genkend figurer og mål længder i centimeter.
+      - Sammenlign oplysninger efter samme mål.
+    stat_cap: 104
+    content_tags:
+      - 'stage:33'
+    theme:
+      da: Figurer og forklaringer
+    learning_goal:
+      da: Beskriv en ting med flere præcise ord. Genkend figurer og mål længder i centimeter. Sammenlign oplysninger efter samme mål.
+    chapter_id: school_33
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 10
+      min_stats:
+        strength: 34
+        defense: 34
+        precision: 34
+        stamina: 34
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 34
+    title: 1. klasse · 8A · Tid og hverdag
+    school_grade: 1
+    teaching_month: 8
+    fortnight: 1
+    reading_mode: independent
+    objectives:
+      - Læs en kort plan, og skeln mellem før og efter.
+      - Brug hele og halve timer og enkle beløb.
+      - Planlæg en rækkefølge med en begrænsning.
+    stat_cap: 107
+    content_tags:
+      - 'stage:34'
+    theme:
+      da: Tid og hverdag
+    learning_goal:
+      da: Læs en kort plan, og skeln mellem før og efter. Brug hele og halve timer og enkle beløb. Planlæg en rækkefølge med en begrænsning.
+    chapter_id: school_34
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 10
+      min_stats:
+        strength: 35
+        defense: 35
+        precision: 35
+        stamina: 35
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 35
+    title: 1. klasse · 8B · Tid og hverdag
+    school_grade: 1
+    teaching_month: 8
+    fortnight: 2
+    reading_mode: independent
+    objectives:
+      - Læs en kort plan, og skeln mellem før og efter.
+      - Brug hele og halve timer og enkle beløb.
+      - Planlæg en rækkefølge med en begrænsning.
+    stat_cap: 110
+    content_tags:
+      - 'stage:35'
+    theme:
+      da: Tid og hverdag
+    learning_goal:
+      da: Læs en kort plan, og skeln mellem før og efter. Brug hele og halve timer og enkle beløb. Planlæg en rækkefølge med en begrænsning.
+    chapter_id: school_35
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 10
+      min_stats:
+        strength: 36
+        defense: 36
+        precision: 36
+        stamina: 36
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 36
+    title: 1. klasse · 9A · Fortælling og fakta
+    school_grade: 1
+    teaching_month: 9
+    fortnight: 1
+    reading_mode: independent
+    objectives:
+      - Skeln mellem en opdigtet historie og en oplysende tekst.
+      - Fordel lige store grupper med konkrete ting.
+      - Læs en enkel optælling.
+    stat_cap: 113
+    content_tags:
+      - 'stage:36'
+    theme:
+      da: Fortælling og fakta
+    learning_goal:
+      da: Skeln mellem en opdigtet historie og en oplysende tekst. Fordel lige store grupper med konkrete ting. Læs en enkel optælling.
+    chapter_id: school_36
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 10
+      min_stats:
+        strength: 37
+        defense: 37
+        precision: 37
+        stamina: 37
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 37
+    title: 1. klasse · 9B · Fortælling og fakta
+    school_grade: 1
+    teaching_month: 9
+    fortnight: 2
+    reading_mode: independent
+    objectives:
+      - Skeln mellem en opdigtet historie og en oplysende tekst.
+      - Fordel lige store grupper med konkrete ting.
+      - Læs en enkel optælling.
+    stat_cap: 116
+    content_tags:
+      - 'stage:37'
+    theme:
+      da: Fortælling og fakta
+    learning_goal:
+      da: Skeln mellem en opdigtet historie og en oplysende tekst. Fordel lige store grupper med konkrete ting. Læs en enkel optælling.
+    chapter_id: school_37
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 10
+      min_stats:
+        strength: 38
+        defense: 38
+        precision: 38
+        stamina: 38
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 38
+    title: 1. klasse · 10A · Min egen fortælling
+    school_grade: 1
+    teaching_month: 10
+    fortnight: 1
+    reading_mode: independent
+    objectives:
+      - Planlæg en begyndelse, midte og slutning og genfortæl sammenhængende.
+      - Løs blandede hverdagsproblemer inden for 100.
+      - Forklar dit valg med oplysninger fra opgaven.
+    stat_cap: 119
+    content_tags:
+      - 'stage:38'
+    theme:
+      da: Min egen fortælling
+    learning_goal:
+      da: Planlæg en begyndelse, midte og slutning og genfortæl sammenhængende. Løs blandede hverdagsproblemer inden for 100. Forklar dit valg med oplysninger fra opgaven.
+    chapter_id: school_38
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 10
+      min_stats:
+        strength: 39
+        defense: 39
+        precision: 39
+        stamina: 39
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 39
+    title: 1. klasse · 10B · Min egen fortælling
+    school_grade: 1
+    teaching_month: 10
+    fortnight: 2
+    reading_mode: independent
+    objectives:
+      - Planlæg en begyndelse, midte og slutning og genfortæl sammenhængende.
+      - Løs blandede hverdagsproblemer inden for 100.
+      - Forklar dit valg med oplysninger fra opgaven.
+    stat_cap: 122
+    content_tags:
+      - 'stage:39'
+    theme:
+      da: Min egen fortælling
+    learning_goal:
+      da: Planlæg en begyndelse, midte og slutning og genfortæl sammenhængende. Løs blandede hverdagsproblemer inden for 100. Forklar dit valg med oplysninger fra opgaven.
+    chapter_id: school_39
+    unlock_requires:
+      completed_training_sessions: 8
+      answered_fight_questions: 10
+      min_stats:
+        strength: 40
+        defense: 40
+        precision: 40
+        stamina: 40
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 40
+    title: 2. klasse · 1A · Læs og genfortæl
+    school_grade: 2
+    teaching_month: 1
+    fortnight: 1
+    reading_mode: independent
+    objectives:
+      - Læs en kort sammenhængende tekst og gengiv hovedindholdet.
+      - Forstå hundreder, tiere og enere.
+      - Sortér oplysninger, der er relevante for et spørgsmål.
+    stat_cap: 125
+    content_tags:
+      - 'stage:40'
+    theme:
+      da: Læs og genfortæl
+    learning_goal:
+      da: Læs en kort sammenhængende tekst og gengiv hovedindholdet. Forstå hundreder, tiere og enere. Sortér oplysninger, der er relevante for et spørgsmål.
+    chapter_id: school_40
+    unlock_requires:
+      completed_training_sessions: 10
+      answered_fight_questions: 10
+      min_stats:
+        strength: 41
+        defense: 41
+        precision: 41
+        stamina: 41
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 41
+    title: 2. klasse · 1B · Læs og genfortæl
+    school_grade: 2
+    teaching_month: 1
+    fortnight: 2
+    reading_mode: independent
+    objectives:
+      - Læs en kort sammenhængende tekst og gengiv hovedindholdet.
+      - Forstå hundreder, tiere og enere.
+      - Sortér oplysninger, der er relevante for et spørgsmål.
+    stat_cap: 128
+    content_tags:
+      - 'stage:41'
+    theme:
+      da: Læs og genfortæl
+    learning_goal:
+      da: Læs en kort sammenhængende tekst og gengiv hovedindholdet. Forstå hundreder, tiere og enere. Sortér oplysninger, der er relevante for et spørgsmål.
+    chapter_id: school_41
+    unlock_requires:
+      completed_training_sessions: 10
+      answered_fight_questions: 10
+      min_stats:
+        strength: 42
+        defense: 42
+        precision: 42
+        stamina: 42
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 42
+    title: 2. klasse · 2A · Ord og betydning
+    school_grade: 2
+    teaching_month: 2
+    fortnight: 1
+    reading_mode: independent
+    objectives:
+      - Brug sammenhængen til at forstå nye ord og forklare beskrivelser.
+      - Læg sammen og træk fra med tocifrede tal.
+      - Skeln mellem en oplysning og et gæt.
+    stat_cap: 131
+    content_tags:
+      - 'stage:42'
+    theme:
+      da: Ord og betydning
+    learning_goal:
+      da: Brug sammenhængen til at forstå nye ord og forklare beskrivelser. Læg sammen og træk fra med tocifrede tal. Skeln mellem en oplysning og et gæt.
+    chapter_id: school_42
+    unlock_requires:
+      completed_training_sessions: 10
+      answered_fight_questions: 10
+      min_stats:
+        strength: 43
+        defense: 43
+        precision: 43
+        stamina: 43
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 43
+    title: 2. klasse · 2B · Ord og betydning
+    school_grade: 2
+    teaching_month: 2
+    fortnight: 2
+    reading_mode: independent
+    objectives:
+      - Brug sammenhængen til at forstå nye ord og forklare beskrivelser.
+      - Læg sammen og træk fra med tocifrede tal.
+      - Skeln mellem en oplysning og et gæt.
+    stat_cap: 134
+    content_tags:
+      - 'stage:43'
+    theme:
+      da: Ord og betydning
+    learning_goal:
+      da: Brug sammenhængen til at forstå nye ord og forklare beskrivelser. Læg sammen og træk fra med tocifrede tal. Skeln mellem en oplysning og et gæt.
+    chapter_id: school_43
+    unlock_requires:
+      completed_training_sessions: 10
+      answered_fight_questions: 10
+      min_stats:
+        strength: 44
+        defense: 44
+        precision: 44
+        stamina: 44
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 44
+    title: 2. klasse · 3A · Instruktioner og rækkefølge
+    school_grade: 2
+    teaching_month: 3
+    fortnight: 1
+    reading_mode: independent
+    objectives:
+      - Læs en vejledning, og begrund rækkefølgen.
+      - Undersøg gentagen addition og 2-tabellen.
+      - Følg og kontrollér en regel med flere trin.
+    stat_cap: 137
+    content_tags:
+      - 'stage:44'
+    theme:
+      da: Instruktioner og rækkefølge
+    learning_goal:
+      da: Læs en vejledning, og begrund rækkefølgen. Undersøg gentagen addition og 2-tabellen. Følg og kontrollér en regel med flere trin.
+    chapter_id: school_44
+    unlock_requires:
+      completed_training_sessions: 10
+      answered_fight_questions: 10
+      min_stats:
+        strength: 45
+        defense: 45
+        precision: 45
+        stamina: 45
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 45
+    title: 2. klasse · 3B · Instruktioner og rækkefølge
+    school_grade: 2
+    teaching_month: 3
+    fortnight: 2
+    reading_mode: independent
+    objectives:
+      - Læs en vejledning, og begrund rækkefølgen.
+      - Undersøg gentagen addition og 2-tabellen.
+      - Følg og kontrollér en regel med flere trin.
+    stat_cap: 140
+    content_tags:
+      - 'stage:45'
+    theme:
+      da: Instruktioner og rækkefølge
+    learning_goal:
+      da: Læs en vejledning, og begrund rækkefølgen. Undersøg gentagen addition og 2-tabellen. Følg og kontrollér en regel med flere trin.
+    chapter_id: school_45
+    unlock_requires:
+      completed_training_sessions: 10
+      answered_fight_questions: 10
+      min_stats:
+        strength: 46
+        defense: 46
+        precision: 46
+        stamina: 46
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 46
+    title: 2. klasse · 4A · Breve og modtagere
+    school_grade: 2
+    teaching_month: 4
+    fortnight: 1
+    reading_mode: independent
+    objectives:
+      - Forstå hvem en besked er til, og skriv med en tydelig hensigt.
+      - Brug 5-tabellen og penge i små køb.
+      - Find en løsning, der opfylder to krav.
+    stat_cap: 143
+    content_tags:
+      - 'stage:46'
+    theme:
+      da: Breve og modtagere
+    learning_goal:
+      da: Forstå hvem en besked er til, og skriv med en tydelig hensigt. Brug 5-tabellen og penge i små køb. Find en løsning, der opfylder to krav.
+    chapter_id: school_46
+    unlock_requires:
+      completed_training_sessions: 10
+      answered_fight_questions: 10
+      min_stats:
+        strength: 47
+        defense: 47
+        precision: 47
+        stamina: 47
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 47
+    title: 2. klasse · 4B · Breve og modtagere
+    school_grade: 2
+    teaching_month: 4
+    fortnight: 2
+    reading_mode: independent
+    objectives:
+      - Forstå hvem en besked er til, og skriv med en tydelig hensigt.
+      - Brug 5-tabellen og penge i små køb.
+      - Find en løsning, der opfylder to krav.
+    stat_cap: 146
+    content_tags:
+      - 'stage:47'
+    theme:
+      da: Breve og modtagere
+    learning_goal:
+      da: Forstå hvem en besked er til, og skriv med en tydelig hensigt. Brug 5-tabellen og penge i små køb. Find en løsning, der opfylder to krav.
+    chapter_id: school_47
+    unlock_requires:
+      completed_training_sessions: 10
+      answered_fight_questions: 10
+      min_stats:
+        strength: 48
+        defense: 48
+        precision: 48
+        stamina: 48
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 48
+    title: 2. klasse · 5A · Personer og begrundelser
+    school_grade: 2
+    teaching_month: 5
+    fortnight: 1
+    reading_mode: independent
+    objectives:
+      - Forklar en persons handling ved at finde belæg i teksten.
+      - Brug 10-tabellen og deling i lige store grupper.
+      - Sammenlign to muligheder ud fra en regel.
+    stat_cap: 149
+    content_tags:
+      - 'stage:48'
+    theme:
+      da: Personer og begrundelser
+    learning_goal:
+      da: Forklar en persons handling ved at finde belæg i teksten. Brug 10-tabellen og deling i lige store grupper. Sammenlign to muligheder ud fra en regel.
+    chapter_id: school_48
+    unlock_requires:
+      completed_training_sessions: 10
+      answered_fight_questions: 10
+      min_stats:
+        strength: 49
+        defense: 49
+        precision: 49
+        stamina: 49
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 49
+    title: 2. klasse · 5B · Personer og begrundelser
+    school_grade: 2
+    teaching_month: 5
+    fortnight: 2
+    reading_mode: independent
+    objectives:
+      - Forklar en persons handling ved at finde belæg i teksten.
+      - Brug 10-tabellen og deling i lige store grupper.
+      - Sammenlign to muligheder ud fra en regel.
+    stat_cap: 152
+    content_tags:
+      - 'stage:49'
+    theme:
+      da: Personer og begrundelser
+    learning_goal:
+      da: Forklar en persons handling ved at finde belæg i teksten. Brug 10-tabellen og deling i lige store grupper. Sammenlign to muligheder ud fra en regel.
+    chapter_id: school_49
+    unlock_requires:
+      completed_training_sessions: 10
+      answered_fight_questions: 10
+      min_stats:
+        strength: 50
+        defense: 50
+        precision: 50
+        stamina: 50
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 50
+    title: 2. klasse · 6A · Fakta og oversigter
+    school_grade: 2
+    teaching_month: 6
+    fortnight: 1
+    reading_mode: independent
+    objectives:
+      - Sammenhold en kort faktatekst med en oversigt.
+      - Læs tabeller og enkle diagrammer.
+      - Brug alle relevante oplysninger før du svarer.
+    stat_cap: 155
+    content_tags:
+      - 'stage:50'
+    theme:
+      da: Fakta og oversigter
+    learning_goal:
+      da: Sammenhold en kort faktatekst med en oversigt. Læs tabeller og enkle diagrammer. Brug alle relevante oplysninger før du svarer.
+    chapter_id: school_50
+    unlock_requires:
+      completed_training_sessions: 10
+      answered_fight_questions: 10
+      min_stats:
+        strength: 51
+        defense: 51
+        precision: 51
+        stamina: 51
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 51
+    title: 2. klasse · 6B · Fakta og oversigter
+    school_grade: 2
+    teaching_month: 6
+    fortnight: 2
+    reading_mode: independent
+    objectives:
+      - Sammenhold en kort faktatekst med en oversigt.
+      - Læs tabeller og enkle diagrammer.
+      - Brug alle relevante oplysninger før du svarer.
+    stat_cap: 158
+    content_tags:
+      - 'stage:51'
+    theme:
+      da: Fakta og oversigter
+    learning_goal:
+      da: Sammenhold en kort faktatekst med en oversigt. Læs tabeller og enkle diagrammer. Brug alle relevante oplysninger før du svarer.
+    chapter_id: school_51
+    unlock_requires:
+      completed_training_sessions: 10
+      answered_fight_questions: 10
+      min_stats:
+        strength: 52
+        defense: 52
+        precision: 52
+        stamina: 52
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 52
+    title: 2. klasse · 7A · Sprog og korrektur
+    school_grade: 2
+    teaching_month: 7
+    fortnight: 1
+    reading_mode: independent
+    objectives:
+      - Genkend navneord og udsagnsord og ret punktum og stort begyndelsesbogstav.
+      - Arbejd med 3- og 4-tabellen gennem grupper.
+      - Find en fejl og forklar, hvilken regel den bryder.
+    stat_cap: 161
+    content_tags:
+      - 'stage:52'
+    theme:
+      da: Sprog og korrektur
+    learning_goal:
+      da: Genkend navneord og udsagnsord og ret punktum og stort begyndelsesbogstav. Arbejd med 3- og 4-tabellen gennem grupper. Find en fejl og forklar, hvilken regel den bryder.
+    chapter_id: school_52
+    unlock_requires:
+      completed_training_sessions: 10
+      answered_fight_questions: 10
+      min_stats:
+        strength: 53
+        defense: 53
+        precision: 53
+        stamina: 53
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 53
+    title: 2. klasse · 7B · Sprog og korrektur
+    school_grade: 2
+    teaching_month: 7
+    fortnight: 2
+    reading_mode: independent
+    objectives:
+      - Genkend navneord og udsagnsord og ret punktum og stort begyndelsesbogstav.
+      - Arbejd med 3- og 4-tabellen gennem grupper.
+      - Find en fejl og forklar, hvilken regel den bryder.
+    stat_cap: 164
+    content_tags:
+      - 'stage:53'
+    theme:
+      da: Sprog og korrektur
+    learning_goal:
+      da: Genkend navneord og udsagnsord og ret punktum og stort begyndelsesbogstav. Arbejd med 3- og 4-tabellen gennem grupper. Find en fejl og forklar, hvilken regel den bryder.
+    chapter_id: school_53
+    unlock_requires:
+      completed_training_sessions: 10
+      answered_fight_questions: 10
+      min_stats:
+        strength: 54
+        defense: 54
+        precision: 54
+        stamina: 54
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 54
+    title: 2. klasse · 8A · Tid og måling
+    school_grade: 2
+    teaching_month: 8
+    fortnight: 1
+    reading_mode: independent
+    objectives:
+      - Læs præcise oplysninger og beskriv en fremgangsmåde.
+      - Brug centimeter, meter, tid og enkle halve og kvarte.
+      - Hold styr på enheder, når du sammenligner.
+    stat_cap: 167
+    content_tags:
+      - 'stage:54'
+    theme:
+      da: Tid og måling
+    learning_goal:
+      da: Læs præcise oplysninger og beskriv en fremgangsmåde. Brug centimeter, meter, tid og enkle halve og kvarte. Hold styr på enheder, når du sammenligner.
+    chapter_id: school_54
+    unlock_requires:
+      completed_training_sessions: 10
+      answered_fight_questions: 10
+      min_stats:
+        strength: 55
+        defense: 55
+        precision: 55
+        stamina: 55
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 55
+    title: 2. klasse · 8B · Tid og måling
+    school_grade: 2
+    teaching_month: 8
+    fortnight: 2
+    reading_mode: independent
+    objectives:
+      - Læs præcise oplysninger og beskriv en fremgangsmåde.
+      - Brug centimeter, meter, tid og enkle halve og kvarte.
+      - Hold styr på enheder, når du sammenligner.
+    stat_cap: 170
+    content_tags:
+      - 'stage:55'
+    theme:
+      da: Tid og måling
+    learning_goal:
+      da: Læs præcise oplysninger og beskriv en fremgangsmåde. Brug centimeter, meter, tid og enkle halve og kvarte. Hold styr på enheder, når du sammenligner.
+    chapter_id: school_55
+    unlock_requires:
+      completed_training_sessions: 10
+      answered_fight_questions: 10
+      min_stats:
+        strength: 56
+        defense: 56
+        precision: 56
+        stamina: 56
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 56
+    title: 2. klasse · 9A · To tekster om samme emne
+    school_grade: 2
+    teaching_month: 9
+    fortnight: 1
+    reading_mode: independent
+    objectives:
+      - Sammenlign teksternes oplysninger og formål.
+      - Vælg mellem addition, subtraktion, gange og deling.
+      - Forklar, hvorfor en bestemt oplysning er nødvendig.
+    stat_cap: 173
+    content_tags:
+      - 'stage:56'
+    theme:
+      da: To tekster om samme emne
+    learning_goal:
+      da: Sammenlign teksternes oplysninger og formål. Vælg mellem addition, subtraktion, gange og deling. Forklar, hvorfor en bestemt oplysning er nødvendig.
+    chapter_id: school_56
+    unlock_requires:
+      completed_training_sessions: 10
+      answered_fight_questions: 10
+      min_stats:
+        strength: 57
+        defense: 57
+        precision: 57
+        stamina: 57
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 57
+    title: 2. klasse · 9B · To tekster om samme emne
+    school_grade: 2
+    teaching_month: 9
+    fortnight: 2
+    reading_mode: independent
+    objectives:
+      - Sammenlign teksternes oplysninger og formål.
+      - Vælg mellem addition, subtraktion, gange og deling.
+      - Forklar, hvorfor en bestemt oplysning er nødvendig.
+    stat_cap: 176
+    content_tags:
+      - 'stage:57'
+    theme:
+      da: To tekster om samme emne
+    learning_goal:
+      da: Sammenlign teksternes oplysninger og formål. Vælg mellem addition, subtraktion, gange og deling. Forklar, hvorfor en bestemt oplysning er nødvendig.
+    chapter_id: school_57
+    unlock_requires:
+      completed_training_sessions: 10
+      answered_fight_questions: 10
+      min_stats:
+        strength: 58
+        defense: 58
+        precision: 58
+        stamina: 58
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 58
+    title: 2. klasse · 10A · Min fortælling og min forklaring
+    school_grade: 2
+    teaching_month: 10
+    fortnight: 1
+    reading_mode: independent
+    objectives:
+      - Lav en sammenhængende lille tekst og begrund svar med belæg.
+      - Løs blandede problemer og kontrollér resultatet.
+      - Beskriv flere mulige strategier og afprøv dem.
+    stat_cap: 179
+    content_tags:
+      - 'stage:58'
+    theme:
+      da: Min fortælling og min forklaring
+    learning_goal:
+      da: Lav en sammenhængende lille tekst og begrund svar med belæg. Løs blandede problemer og kontrollér resultatet. Beskriv flere mulige strategier og afprøv dem.
+    chapter_id: school_58
+    unlock_requires:
+      completed_training_sessions: 10
+      answered_fight_questions: 10
+      min_stats:
+        strength: 59
+        defense: 59
+        precision: 59
+        stamina: 59
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8
+  - number: 59
+    title: 2. klasse · 10B · Min fortælling og min forklaring
+    school_grade: 2
+    teaching_month: 10
+    fortnight: 2
+    reading_mode: independent
+    objectives:
+      - Lav en sammenhængende lille tekst og begrund svar med belæg.
+      - Løs blandede problemer og kontrollér resultatet.
+      - Beskriv flere mulige strategier og afprøv dem.
+    stat_cap: 182
+    content_tags:
+      - 'stage:59'
+    theme:
+      da: Min fortælling og min forklaring
+    learning_goal:
+      da: Lav en sammenhængende lille tekst og begrund svar med belæg. Løs blandede problemer og kontrollér resultatet. Beskriv flere mulige strategier og afprøv dem.
+    chapter_id: school_59
+    unlock_requires:
+      completed_training_sessions: 10
+      answered_fight_questions: 10
+      min_stats:
+        strength: 60
+        defense: 60
+        precision: 60
+        stamina: 60
+    fight:
+      min_questions: 10
+      at_min_questions: 10
+      timer_seconds: 30
+      max_questions: 24
+      max_mistakes_to_win: 8

@@ -7547,3 +7547,10 @@ button.offline-pill { cursor: pointer; }
     width: 100%;
   }
 }
+
+/* Spoken choices and parent placement use the same accessible question controls. */
+.answer-with-audio { display: flex; gap: .3rem; align-items: stretch; min-width: 0; }
+.answer-with-audio .answer-button { flex: 1; min-width: 0; }
+.placement-panel { max-width: 100%; }
+.placement-panel select { width: 100%; }
+.placement-panel p { line-height: 1.5; }

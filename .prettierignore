@@ -1,0 +1,13 @@
+node_modules
+dist
+site
+redirect-site
+.pages-preview
+.venv
+.local-data
+labbooks
+content-packs
+asset-packs
+apps/*/public
+docs
+package-lock.json

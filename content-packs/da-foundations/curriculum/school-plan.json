@@ -1,0 +1,2143 @@
+{
+  "version": 1,
+  "pacing": "Two approximately two-week units per teaching month; 20 per school year. No calendar locks.",
+  "scope": "Language, logic and mathematics, 0.–2. klasse; not a replacement for all subjects or classroom assessment.",
+  "sources": [
+    "https://emu.dk/sites/default/files/2020-09/GSK_F%C3%A6llesM%C3%A5l_B%C3%B8rnehaveklassen.pdf",
+    "https://emu.dk/sites/default/files/2020-09/GSK_F%C3%A6llesM%C3%A5l_Dansk.pdf",
+    "https://emu.dk/sites/default/files/2020-09/GSK_F%C3%A6llesM%C3%A5l_Matematik.pdf"
+  ],
+  "review_status": "needs_native_speaker_review",
+  "months": [
+    {
+      "grade": 0,
+      "month": 1,
+      "title": "Velkommen og lytning",
+      "language": "Lyt til en kort besked, og fortæl dit navn.",
+      "math": "Tæl og sammenlign mængder til 3.",
+      "logic": "Sortér efter en udtrykkelig egenskab.",
+      "number_limit": 5,
+      "story": "Ida har en rød bold. Bo har en blå bil. Ida giver bolden til Bo. De leger sammen.",
+      "questions": [
+        [
+          "Hvem har en bold i begyndelsen?",
+          "Ida",
+          "Bo",
+          "Dragen"
+        ],
+        [
+          "Hvilken farve har bilen?",
+          "Blå",
+          "Rød",
+          "Gul"
+        ],
+        [
+          "Hvad giver Ida til Bo?",
+          "En bold",
+          "En bil",
+          "En bog"
+        ],
+        [
+          "Hvad gør børnene til sidst?",
+          "De leger",
+          "De sover",
+          "De spiser"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Lyt til en kort besked, og fortæl dit navn. Tæl og sammenlign mængder til 3.",
+      "logic_tasks": [
+        [
+          "sorting",
+          "Hvilken ting er ikke et dyr?",
+          "🐱  🐶  📘",
+          "📘",
+          [
+            "🐱",
+            "🐶"
+          ]
+        ],
+        [
+          "sorting",
+          "Mønstret skifter rød, blå, rød, blå. Hvilken farve kommer nu?",
+          "🔴 🔵 🔴 🔵 ?",
+          "🔴",
+          [
+            "🔵",
+            "🟢"
+          ]
+        ]
+      ]
+    },
+    {
+      "grade": 0,
+      "month": 2,
+      "title": "Rim og rytme",
+      "language": "Lyt efter rim, og klap stavelser i kendte navne.",
+      "math": "Forbind tal og mængder til 5.",
+      "logic": "Fortsæt et skiftende mønster.",
+      "number_limit": 6,
+      "story": "Bo klapper sit navn én gang. Ida klapper sit navn to gange. Børnene synger om en mus i et hus. Derefter tegner de musen.",
+      "questions": [
+        [
+          "Hvem klapper sit navn én gang?",
+          "Bo",
+          "Ida",
+          "Begge"
+        ],
+        [
+          "Hvor mange gange klapper Ida?",
+          "To",
+          "En",
+          "Tre"
+        ],
+        [
+          "Hvilket dyr synger de om?",
+          "En mus",
+          "En kat",
+          "En fisk"
+        ],
+        [
+          "Hvad gør de efter sangen?",
+          "Tegner",
+          "Spiser",
+          "Sover"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Lyt efter rim, og klap stavelser i kendte navne. Forbind tal og mængder til 5.",
+      "logic_tasks": [
+        [
+          "sorting",
+          "Mønstret skifter rød, blå, rød, blå. Hvilken farve kommer nu?",
+          "🔴 🔵 🔴 🔵 ?",
+          "🔴",
+          [
+            "🔵",
+            "🟢"
+          ]
+        ],
+        [
+          "shape",
+          "Hvilken figur har præcis tre sider?",
+          "3",
+          "🔺",
+          [
+            "⚪",
+            "🟦"
+          ]
+        ]
+      ]
+    },
+    {
+      "grade": 0,
+      "month": 3,
+      "title": "Lyde og bogstaver",
+      "language": "Forbind begyndelseslyde med de første bogstaver.",
+      "math": "Ordne tal til 5 og finde én mere.",
+      "logic": "Beskriv foran, bagved og ved siden af.",
+      "number_limit": 8,
+      "story": "En kat sidder foran en kasse. En hund står bag kassen. En mus sidder inde i kassen. Ida ser katten først.",
+      "questions": [
+        [
+          "Hvem sidder foran kassen?",
+          "Katten",
+          "Hunden",
+          "Musen"
+        ],
+        [
+          "Hvor står hunden?",
+          "Bag kassen",
+          "I kassen",
+          "På kassen"
+        ],
+        [
+          "Hvem er inde i kassen?",
+          "Musen",
+          "Katten",
+          "Ida"
+        ],
+        [
+          "Hvilket dyr ser Ida først?",
+          "Katten",
+          "Hunden",
+          "Musen"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Forbind begyndelseslyde med de første bogstaver. Ordne tal til 5 og finde én mere.",
+      "logic_tasks": [
+        [
+          "shape",
+          "Hvilken figur har præcis tre sider?",
+          "3",
+          "🔺",
+          [
+            "⚪",
+            "🟦"
+          ]
+        ],
+        [
+          "sorting",
+          "Find frugten blandt tingene.",
+          "🍎  🚗  🧦",
+          "🍎",
+          [
+            "🚗",
+            "🧦"
+          ]
+        ]
+      ]
+    },
+    {
+      "grade": 0,
+      "month": 4,
+      "title": "Fortæl i rækkefølge",
+      "language": "Genfortæl tre hændelser i en enkel historie.",
+      "math": "Tæl til 10, og sammenlign antal.",
+      "logic": "Skeln mellem først, dernæst og sidst.",
+      "number_limit": 10,
+      "story": "Først tager Ali sine støvler på. Så går han ud i haven. Til sidst hopper han i en vandpyt. Hans støvler bliver våde.",
+      "questions": [
+        [
+          "Hvad gør Ali først?",
+          "Tager støvler på",
+          "Hopper",
+          "Går i seng"
+        ],
+        [
+          "Hvor går Ali hen?",
+          "I haven",
+          "I skolen",
+          "I butikken"
+        ],
+        [
+          "Hvad gør han til sidst?",
+          "Hopper i en vandpyt",
+          "Spiser",
+          "Synger"
+        ],
+        [
+          "Hvad bliver vådt?",
+          "Støvlerne",
+          "En bog",
+          "Et tæppe"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Genfortæl tre hændelser i en enkel historie. Tæl til 10, og sammenlign antal.",
+      "logic_tasks": [
+        [
+          "sorting",
+          "Find frugten blandt tingene.",
+          "🍎  🚗  🧦",
+          "🍎",
+          [
+            "🚗",
+            "🧦"
+          ]
+        ],
+        [
+          "sorting",
+          "Hvilken ting er ikke et dyr?",
+          "🐱  🐶  📘",
+          "📘",
+          [
+            "🐱",
+            "🐶"
+          ]
+        ]
+      ]
+    },
+    {
+      "grade": 0,
+      "month": 5,
+      "title": "Ord og beskrivelser",
+      "language": "Lyt til beskrivelser, og vælg den nævnte ting.",
+      "math": "Del små mængder i to grupper.",
+      "logic": "Sortér efter farve og form.",
+      "number_limit": 10,
+      "story": "På bordet ligger en lille gul kop og en stor blå skål. Bo lægger et æble i skålen. Ida hælder vand i koppen.",
+      "questions": [
+        [
+          "Hvilken farve har koppen?",
+          "Gul",
+          "Blå",
+          "Rød"
+        ],
+        [
+          "Hvad er størst i beskrivelsen?",
+          "Skålen",
+          "Koppen",
+          "Et frø"
+        ],
+        [
+          "Hvor ligger æblet?",
+          "I skålen",
+          "I koppen",
+          "Under bordet"
+        ],
+        [
+          "Hvad hælder Ida i koppen?",
+          "Vand",
+          "Mælk",
+          "Saft"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Lyt til beskrivelser, og vælg den nævnte ting. Del små mængder i to grupper.",
+      "logic_tasks": [
+        [
+          "sorting",
+          "Hvilken ting er ikke et dyr?",
+          "🐱  🐶  📘",
+          "📘",
+          [
+            "🐱",
+            "🐶"
+          ]
+        ],
+        [
+          "sorting",
+          "Mønstret skifter rød, blå, rød, blå. Hvilken farve kommer nu?",
+          "🔴 🔵 🔴 🔵 ?",
+          "🔴",
+          [
+            "🔵",
+            "🟢"
+          ]
+        ]
+      ]
+    },
+    {
+      "grade": 0,
+      "month": 6,
+      "title": "Spørg og svar",
+      "language": "Forstå hvem, hvad og hvor i en oplæst historie.",
+      "math": "Byg talvenner til 5 og 10 med ting.",
+      "logic": "Find ligheder og forskelle efter en regel.",
+      "number_limit": 10,
+      "story": "Mia finder en grøn vante på stien. Hun spørger Bo, om den er hans. Bo siger nej. Ida siger, at vanten er hendes.",
+      "questions": [
+        [
+          "Hvem finder vanten?",
+          "Mia",
+          "Bo",
+          "Ida"
+        ],
+        [
+          "Hvor ligger vanten?",
+          "På stien",
+          "I tasken",
+          "På bordet"
+        ],
+        [
+          "Hvilken farve har den?",
+          "Grøn",
+          "Rød",
+          "Hvid"
+        ],
+        [
+          "Hvem ejer vanten?",
+          "Ida",
+          "Bo",
+          "Mia"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Forstå hvem, hvad og hvor i en oplæst historie. Byg talvenner til 5 og 10 med ting.",
+      "logic_tasks": [
+        [
+          "sorting",
+          "Mønstret skifter rød, blå, rød, blå. Hvilken farve kommer nu?",
+          "🔴 🔵 🔴 🔵 ?",
+          "🔴",
+          [
+            "🔵",
+            "🟢"
+          ]
+        ],
+        [
+          "shape",
+          "Hvilken figur har præcis tre sider?",
+          "3",
+          "🔺",
+          [
+            "⚪",
+            "🟦"
+          ]
+        ]
+      ]
+    },
+    {
+      "grade": 0,
+      "month": 7,
+      "title": "Beskeder og fællesskab",
+      "language": "Følg en besked med to trin og skift mellem at tale og lytte.",
+      "math": "Læg små grupper sammen og tag ting væk.",
+      "logic": "Forklar en enkel regel.",
+      "number_limit": 12,
+      "story": "Læreren siger: Tag en blyant, og sæt dig på stolen. Bo tager blyanten først. Så sætter han sig. Ida venter på sin tur.",
+      "questions": [
+        [
+          "Hvad skal Bo tage?",
+          "En blyant",
+          "En bold",
+          "En kop"
+        ],
+        [
+          "Hvad skal han gøre bagefter?",
+          "Sætte sig",
+          "Løbe ud",
+          "Synge"
+        ],
+        [
+          "Hvem venter på sin tur?",
+          "Ida",
+          "Læreren",
+          "Hunden"
+        ],
+        [
+          "Hvor sætter Bo sig?",
+          "På stolen",
+          "På gulvet",
+          "På bordet"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Følg en besked med to trin og skift mellem at tale og lytte. Læg små grupper sammen og tag ting væk.",
+      "logic_tasks": [
+        [
+          "shape",
+          "Hvilken figur har præcis tre sider?",
+          "3",
+          "🔺",
+          [
+            "⚪",
+            "🟦"
+          ]
+        ],
+        [
+          "sorting",
+          "Find frugten blandt tingene.",
+          "🍎  🚗  🧦",
+          "🍎",
+          [
+            "🚗",
+            "🧦"
+          ]
+        ]
+      ]
+    },
+    {
+      "grade": 0,
+      "month": 8,
+      "title": "Historier og følelser",
+      "language": "Fortæl om en persons følelse med støtte i historien.",
+      "math": "Sammenlign længde og mål med ens klodser.",
+      "logic": "Forbind en tydelig årsag med en følge.",
+      "number_limit": 15,
+      "story": "Mia kan ikke finde sin bamse og bliver ked af det. Ali finder den under sengen. Han giver den til Mia. Nu smiler hun.",
+      "questions": [
+        [
+          "Hvorfor er Mia ked af det?",
+          "Bamsen er væk",
+          "Det regner",
+          "Hun er sulten"
+        ],
+        [
+          "Hvem finder bamsen?",
+          "Ali",
+          "Mia",
+          "Bo"
+        ],
+        [
+          "Hvor ligger bamsen?",
+          "Under sengen",
+          "I haven",
+          "I køkkenet"
+        ],
+        [
+          "Hvad gør Mia til sidst?",
+          "Smiler",
+          "Græder",
+          "Sover"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Fortæl om en persons følelse med støtte i historien. Sammenlign længde og mål med ens klodser.",
+      "logic_tasks": [
+        [
+          "sorting",
+          "Find frugten blandt tingene.",
+          "🍎  🚗  🧦",
+          "🍎",
+          [
+            "🚗",
+            "🧦"
+          ]
+        ],
+        [
+          "sorting",
+          "Hvilken ting er ikke et dyr?",
+          "🐱  🐶  📘",
+          "📘",
+          [
+            "🐱",
+            "🐶"
+          ]
+        ]
+      ]
+    },
+    {
+      "grade": 0,
+      "month": 9,
+      "title": "Billeder og symboler",
+      "language": "Brug billeder, bogstaver og symboler til at fortælle noget.",
+      "math": "Undersøg figurer, hjørner og mønstre.",
+      "logic": "Følg en kort rute med retningsord.",
+      "number_limit": 20,
+      "story": "Ida tegner et hus med en trekant som tag. Døren er blå. Ved huset tegner hun et træ. Hun giver tegningen til sin far.",
+      "questions": [
+        [
+          "Hvilken figur er taget?",
+          "En trekant",
+          "En cirkel",
+          "En firkant"
+        ],
+        [
+          "Hvilken farve har døren?",
+          "Blå",
+          "Grøn",
+          "Gul"
+        ],
+        [
+          "Hvad står ved huset?",
+          "Et træ",
+          "En bus",
+          "En båd"
+        ],
+        [
+          "Hvem får tegningen?",
+          "Far",
+          "Bo",
+          "Læreren"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Brug billeder, bogstaver og symboler til at fortælle noget. Undersøg figurer, hjørner og mønstre.",
+      "logic_tasks": [
+        [
+          "sorting",
+          "Hvilken ting er ikke et dyr?",
+          "🐱  🐶  📘",
+          "📘",
+          [
+            "🐱",
+            "🐶"
+          ]
+        ],
+        [
+          "sorting",
+          "Mønstret skifter rød, blå, rød, blå. Hvilken farve kommer nu?",
+          "🔴 🔵 🔴 🔵 ?",
+          "🔴",
+          [
+            "🔵",
+            "🟢"
+          ]
+        ]
+      ]
+    },
+    {
+      "grade": 0,
+      "month": 10,
+      "title": "Min første skolebog",
+      "language": "Genfortæl, lyt efter lyde og eksperimentér med egne bogstaver.",
+      "math": "Brug tal og mængder til 20 i hverdagshistorier.",
+      "logic": "Forklar, hvordan du fandt svaret.",
+      "number_limit": 20,
+      "story": "Bo laver en bog med tre billeder. Først tegner han en hund. Så tegner han en kat. På sidste side tegner han sig selv. Han fortæller historien til Ida.",
+      "questions": [
+        [
+          "Hvor mange billeder laver Bo?",
+          "Tre",
+          "To",
+          "Fire"
+        ],
+        [
+          "Hvad tegner han først?",
+          "En hund",
+          "En kat",
+          "Sig selv"
+        ],
+        [
+          "Hvad er på sidste side?",
+          "Bo",
+          "Hunden",
+          "Katten"
+        ],
+        [
+          "Hvem lytter til historien?",
+          "Ida",
+          "Ali",
+          "Mia"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Genfortæl, lyt efter lyde og eksperimentér med egne bogstaver. Brug tal og mængder til 20 i hverdagshistorier.",
+      "logic_tasks": [
+        [
+          "sorting",
+          "Mønstret skifter rød, blå, rød, blå. Hvilken farve kommer nu?",
+          "🔴 🔵 🔴 🔵 ?",
+          "🔴",
+          [
+            "🔵",
+            "🟢"
+          ]
+        ],
+        [
+          "shape",
+          "Hvilken figur har præcis tre sider?",
+          "3",
+          "🔺",
+          [
+            "⚪",
+            "🟦"
+          ]
+        ]
+      ]
+    },
+    {
+      "grade": 1,
+      "month": 1,
+      "title": "Fra lyd til ord",
+      "language": "Sæt bogstavlyde sammen, og læs korte kendte ord med støtte.",
+      "math": "Arbejd sikkert med antal og tal til 20.",
+      "logic": "Følg rækkefølger og rumlige beskeder.",
+      "number_limit": 20,
+      "story": "Ida ser en sol. Bo ser en mus. Musen er ved et hus. De peger på musen, men rører den ikke.",
+      "questions": [
+        [
+          "Hvad ser Ida?",
+          "En sol",
+          "En måne",
+          "En fisk"
+        ],
+        [
+          "Hvad ser Bo?",
+          "En mus",
+          "En kat",
+          "En fugl"
+        ],
+        [
+          "Hvor er musen?",
+          "Ved et hus",
+          "I vandet",
+          "I en bil"
+        ],
+        [
+          "Rører børnene musen?",
+          "Nej",
+          "Ja",
+          "Det står ikke i teksten"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Sæt bogstavlyde sammen, og læs korte kendte ord med støtte. Arbejd sikkert med antal og tal til 20.",
+      "logic_tasks": [
+        [
+          "measurement",
+          "Et rødt bånd er 6 cm. Et blåt er 9 cm. Hvilket er længst?",
+          "6 cm · 9 cm",
+          "Det blå",
+          [
+            "Det røde",
+            "De er lige lange"
+          ]
+        ],
+        [
+          "data",
+          "Ida har 3 bøger. Bo har 5. Hvem har flest bøger?",
+          "Ida: 3 · Bo: 5",
+          "Bo",
+          [
+            "Ida",
+            "De har lige mange"
+          ]
+        ]
+      ],
+      "words": [
+        [
+          "læse",
+          "🔊"
+        ],
+        [
+          "lege",
+          "🔊"
+        ],
+        [
+          "lave",
+          "🔊"
+        ],
+        [
+          "møde",
+          "🔊"
+        ]
+      ]
+    },
+    {
+      "grade": 1,
+      "month": 2,
+      "title": "Små sætninger",
+      "language": "Læs enkle sætninger, og forbind dem med en handling.",
+      "math": "Find talvenner til 10 og 20.",
+      "logic": "Beskriv mønstre med ord.",
+      "number_limit": 20,
+      "story": "Ali har en rød taske. I tasken ligger en bog og en madpakke. Ali tager bogen frem. Madpakken bliver i tasken.",
+      "questions": [
+        [
+          "Hvilken farve har tasken?",
+          "Rød",
+          "Gul",
+          "Grøn"
+        ],
+        [
+          "Hvad tager Ali frem?",
+          "Bogen",
+          "Madpakken",
+          "En bold"
+        ],
+        [
+          "Hvor bliver madpakken?",
+          "I tasken",
+          "På stolen",
+          "I haven"
+        ],
+        [
+          "Hvor mange ting nævnes i tasken?",
+          "To",
+          "Tre",
+          "Fire"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs enkle sætninger, og forbind dem med en handling. Find talvenner til 10 og 20.",
+      "logic_tasks": [
+        [
+          "data",
+          "Ida har 3 bøger. Bo har 5. Hvem har flest bøger?",
+          "Ida: 3 · Bo: 5",
+          "Bo",
+          [
+            "Ida",
+            "De har lige mange"
+          ]
+        ],
+        [
+          "place_value",
+          "Hvilket tal har 3 tiere og 2 enere?",
+          "3 tiere + 2 enere",
+          "32",
+          [
+            "23",
+            "35"
+          ]
+        ]
+      ],
+      "words": [
+        [
+          "dreng",
+          "🔊"
+        ],
+        [
+          "pige",
+          "🔊"
+        ],
+        [
+          "skole",
+          "🔊"
+        ],
+        [
+          "klasse",
+          "🔊"
+        ]
+      ]
+    },
+    {
+      "grade": 1,
+      "month": 3,
+      "title": "At forstå en besked",
+      "language": "Læs korte instruktioner, og udfør dem i rækkefølge.",
+      "math": "Læg sammen og træk fra inden for 20.",
+      "logic": "Brug hvis og så i en regel.",
+      "number_limit": 20,
+      "story": "På kortet står: Tegn en cirkel. Farv den gul. Tegn derefter en blå firkant under cirklen. Mia følger beskeden.",
+      "questions": [
+        [
+          "Hvad tegner Mia først?",
+          "En cirkel",
+          "En firkant",
+          "Et hus"
+        ],
+        [
+          "Hvilken farve får cirklen?",
+          "Gul",
+          "Blå",
+          "Rød"
+        ],
+        [
+          "Hvor tegner hun firkanten?",
+          "Under cirklen",
+          "Over cirklen",
+          "I cirklen"
+        ],
+        [
+          "Hvilken farve får firkanten?",
+          "Blå",
+          "Gul",
+          "Grøn"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs korte instruktioner, og udfør dem i rækkefølge. Læg sammen og træk fra inden for 20.",
+      "logic_tasks": [
+        [
+          "place_value",
+          "Hvilket tal har 3 tiere og 2 enere?",
+          "3 tiere + 2 enere",
+          "32",
+          [
+            "23",
+            "35"
+          ]
+        ],
+        [
+          "data",
+          "Ali har 4 point. Ida har 6. Bo har 2. Hvem har færrest?",
+          "Ali: 4 · Ida: 6 · Bo: 2",
+          "Bo",
+          [
+            "Ali",
+            "Ida"
+          ]
+        ]
+      ],
+      "words": [
+        [
+          "venner",
+          "🔊"
+        ],
+        [
+          "hjælper",
+          "🔊"
+        ],
+        [
+          "siger",
+          "🔊"
+        ],
+        [
+          "spørger",
+          "🔊"
+        ]
+      ]
+    },
+    {
+      "grade": 1,
+      "month": 4,
+      "title": "Ord i to stavelser",
+      "language": "Læs længere lydrette ord og genkend almindelige småord.",
+      "math": "Forstå tiere og enere op til 50.",
+      "logic": "Gruppér på to forskellige måder.",
+      "number_limit": 50,
+      "story": "Mia tager en banan med på tur. Ali tager en tomat med. De deler maden ved søen. Derefter går de tilbage til skolen.",
+      "questions": [
+        [
+          "Hvem har en banan?",
+          "Mia",
+          "Ali",
+          "Læreren"
+        ],
+        [
+          "Hvad har Ali med?",
+          "En tomat",
+          "Et æble",
+          "En agurk"
+        ],
+        [
+          "Hvor spiser de?",
+          "Ved søen",
+          "I bussen",
+          "I klassen"
+        ],
+        [
+          "Hvor går de hen bagefter?",
+          "Til skolen",
+          "Til stranden",
+          "Til butikken"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs længere lydrette ord og genkend almindelige småord. Forstå tiere og enere op til 50.",
+      "logic_tasks": [
+        [
+          "data",
+          "Ali har 4 point. Ida har 6. Bo har 2. Hvem har færrest?",
+          "Ali: 4 · Ida: 6 · Bo: 2",
+          "Bo",
+          [
+            "Ali",
+            "Ida"
+          ]
+        ],
+        [
+          "measurement",
+          "Et rødt bånd er 6 cm. Et blåt er 9 cm. Hvilket er længst?",
+          "6 cm · 9 cm",
+          "Det blå",
+          [
+            "Det røde",
+            "De er lige lange"
+          ]
+        ]
+      ],
+      "words": [
+        [
+          "skoven",
+          "🔊"
+        ],
+        [
+          "fuglen",
+          "🔊"
+        ],
+        [
+          "haren",
+          "🔊"
+        ],
+        [
+          "træet",
+          "🔊"
+        ]
+      ]
+    },
+    {
+      "grade": 1,
+      "month": 5,
+      "title": "Spørgsmål til en historie",
+      "language": "Find konkrete oplysninger og spørg til det, du ikke forstår.",
+      "math": "Læs, ordn og sammenlign tal til 100.",
+      "logic": "Brug en tabel med to kategorier.",
+      "number_limit": 100,
+      "story": "Bo går på biblioteket for at låne en bog om fisk. Bogen står på den nederste hylde. Bibliotekaren hjælper ham. Han låner kun den ene bog.",
+      "questions": [
+        [
+          "Hvor går Bo hen?",
+          "På biblioteket",
+          "På museet",
+          "I biografen"
+        ],
+        [
+          "Hvad vil han læse om?",
+          "Fisk",
+          "Fugle",
+          "Biler"
+        ],
+        [
+          "Hvor står bogen?",
+          "Nederst",
+          "Øverst",
+          "På gulvet"
+        ],
+        [
+          "Hvor mange bøger låner han?",
+          "En",
+          "To",
+          "Tre"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Find konkrete oplysninger og spørg til det, du ikke forstår. Læs, ordn og sammenlign tal til 100.",
+      "logic_tasks": [
+        [
+          "measurement",
+          "Et rødt bånd er 6 cm. Et blåt er 9 cm. Hvilket er længst?",
+          "6 cm · 9 cm",
+          "Det blå",
+          [
+            "Det røde",
+            "De er lige lange"
+          ]
+        ],
+        [
+          "data",
+          "Ida har 3 bøger. Bo har 5. Hvem har flest bøger?",
+          "Ida: 3 · Bo: 5",
+          "Bo",
+          [
+            "Ida",
+            "De har lige mange"
+          ]
+        ]
+      ],
+      "words": [
+        [
+          "vinden",
+          "🔊"
+        ],
+        [
+          "regnen",
+          "🔊"
+        ],
+        [
+          "solen",
+          "🔊"
+        ],
+        [
+          "månen",
+          "🔊"
+        ]
+      ]
+    },
+    {
+      "grade": 1,
+      "month": 6,
+      "title": "Skriv en besked",
+      "language": "Byg en kort forståelig besked, og brug mellemrum og punktum.",
+      "math": "Regn med tiere og enere inden for 100.",
+      "logic": "Kontrollér en løsning på en anden måde.",
+      "number_limit": 100,
+      "story": "Ida skriver til Bo: Kom til min fødselsdag på lørdag. Vi mødes klokken to. Tag støvler med, for vi skal lege i haven.",
+      "questions": [
+        [
+          "Hvem skriver beskeden?",
+          "Ida",
+          "Bo",
+          "Ali"
+        ],
+        [
+          "Hvornår er festen?",
+          "Lørdag",
+          "Mandag",
+          "Fredag"
+        ],
+        [
+          "Hvad skal Bo tage med?",
+          "Støvler",
+          "Badetøj",
+          "En cykel"
+        ],
+        [
+          "Hvor skal de lege?",
+          "I haven",
+          "I hallen",
+          "På stranden"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Byg en kort forståelig besked, og brug mellemrum og punktum. Regn med tiere og enere inden for 100.",
+      "logic_tasks": [
+        [
+          "data",
+          "Ida har 3 bøger. Bo har 5. Hvem har flest bøger?",
+          "Ida: 3 · Bo: 5",
+          "Bo",
+          [
+            "Ida",
+            "De har lige mange"
+          ]
+        ],
+        [
+          "place_value",
+          "Hvilket tal har 3 tiere og 2 enere?",
+          "3 tiere + 2 enere",
+          "32",
+          [
+            "23",
+            "35"
+          ]
+        ]
+      ],
+      "words": [
+        [
+          "familie",
+          "🔊"
+        ],
+        [
+          "morgen",
+          "🔊"
+        ],
+        [
+          "aften",
+          "🔊"
+        ],
+        [
+          "middag",
+          "🔊"
+        ]
+      ]
+    },
+    {
+      "grade": 1,
+      "month": 7,
+      "title": "Figurer og forklaringer",
+      "language": "Beskriv en ting med flere præcise ord.",
+      "math": "Genkend figurer og mål længder i centimeter.",
+      "logic": "Sammenlign oplysninger efter samme mål.",
+      "number_limit": 100,
+      "story": "Ali måler et rødt bånd til otte centimeter. Det blå bånd er tolv centimeter. Han bruger det blå bånd til en gave. Det røde lægger han i en skuffe.",
+      "questions": [
+        [
+          "Hvor langt er det røde bånd?",
+          "Otte centimeter",
+          "Tolv centimeter",
+          "Fire centimeter"
+        ],
+        [
+          "Hvilket bånd er længst?",
+          "Det blå",
+          "Det røde",
+          "De er lige lange"
+        ],
+        [
+          "Hvad bruger Ali til gaven?",
+          "Det blå bånd",
+          "Det røde bånd",
+          "Begge bånd"
+        ],
+        [
+          "Hvor lægger han det røde?",
+          "I en skuffe",
+          "På gaven",
+          "I en taske"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Beskriv en ting med flere præcise ord. Genkend figurer og mål længder i centimeter.",
+      "logic_tasks": [
+        [
+          "place_value",
+          "Hvilket tal har 3 tiere og 2 enere?",
+          "3 tiere + 2 enere",
+          "32",
+          [
+            "23",
+            "35"
+          ]
+        ],
+        [
+          "data",
+          "Ali har 4 point. Ida har 6. Bo har 2. Hvem har færrest?",
+          "Ali: 4 · Ida: 6 · Bo: 2",
+          "Bo",
+          [
+            "Ali",
+            "Ida"
+          ]
+        ]
+      ],
+      "words": [
+        [
+          "huset",
+          "🔊"
+        ],
+        [
+          "døren",
+          "🔊"
+        ],
+        [
+          "stolen",
+          "🔊"
+        ],
+        [
+          "bordet",
+          "🔊"
+        ]
+      ]
+    },
+    {
+      "grade": 1,
+      "month": 8,
+      "title": "Tid og hverdag",
+      "language": "Læs en kort plan, og skeln mellem før og efter.",
+      "math": "Brug hele og halve timer og enkle beløb.",
+      "logic": "Planlæg en rækkefølge med en begrænsning.",
+      "number_limit": 100,
+      "story": "Klassen spiser klokken tolv. Efter frokost går de i skolegården. Klokken halv et kommer de ind igen. Før frokost læser læreren en historie.",
+      "questions": [
+        [
+          "Hvornår spiser klassen?",
+          "Klokken tolv",
+          "Klokken ti",
+          "Klokken et"
+        ],
+        [
+          "Hvor går de efter frokost?",
+          "I skolegården",
+          "På biblioteket",
+          "Hjem"
+        ],
+        [
+          "Hvornår kommer de ind?",
+          "Halv et",
+          "Halv tolv",
+          "Halv to"
+        ],
+        [
+          "Hvornår læser læreren?",
+          "Før frokost",
+          "Efter frikvarteret",
+          "Om aftenen"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs en kort plan, og skeln mellem før og efter. Brug hele og halve timer og enkle beløb.",
+      "logic_tasks": [
+        [
+          "data",
+          "Ali har 4 point. Ida har 6. Bo har 2. Hvem har færrest?",
+          "Ali: 4 · Ida: 6 · Bo: 2",
+          "Bo",
+          [
+            "Ali",
+            "Ida"
+          ]
+        ],
+        [
+          "measurement",
+          "Et rødt bånd er 6 cm. Et blåt er 9 cm. Hvilket er længst?",
+          "6 cm · 9 cm",
+          "Det blå",
+          [
+            "Det røde",
+            "De er lige lange"
+          ]
+        ]
+      ],
+      "words": [
+        [
+          "spise",
+          "🔊"
+        ],
+        [
+          "drikke",
+          "🔊"
+        ],
+        [
+          "kager",
+          "🔊"
+        ],
+        [
+          "frugt",
+          "🔊"
+        ]
+      ]
+    },
+    {
+      "grade": 1,
+      "month": 9,
+      "title": "Fortælling og fakta",
+      "language": "Skeln mellem en opdigtet historie og en oplysende tekst.",
+      "math": "Fordel lige store grupper med konkrete ting.",
+      "logic": "Læs en enkel optælling.",
+      "number_limit": 100,
+      "story": "I faktabogen står der, at pindsvinet har pigge. I eventyret taler et pindsvin med en drage. Mia skriver en oplysning fra faktabogen. Hun tegner bagefter dragen fra eventyret.",
+      "questions": [
+        [
+          "Hvad har pindsvinet ifølge faktabogen?",
+          "Pigge",
+          "Fjer",
+          "Skæl"
+        ],
+        [
+          "Hvor taler pindsvinet?",
+          "I eventyret",
+          "I faktabogen",
+          "I begge bøger"
+        ],
+        [
+          "Hvorfra tager Mia sin oplysning?",
+          "Faktabogen",
+          "Eventyret",
+          "En sang"
+        ],
+        [
+          "Hvad tegner hun?",
+          "Dragen",
+          "En fisk",
+          "Et træ"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Skeln mellem en opdigtet historie og en oplysende tekst. Fordel lige store grupper med konkrete ting.",
+      "logic_tasks": [
+        [
+          "measurement",
+          "Et rødt bånd er 6 cm. Et blåt er 9 cm. Hvilket er længst?",
+          "6 cm · 9 cm",
+          "Det blå",
+          [
+            "Det røde",
+            "De er lige lange"
+          ]
+        ],
+        [
+          "data",
+          "Ida har 3 bøger. Bo har 5. Hvem har flest bøger?",
+          "Ida: 3 · Bo: 5",
+          "Bo",
+          [
+            "Ida",
+            "De har lige mange"
+          ]
+        ]
+      ],
+      "words": [
+        [
+          "først",
+          "🔊"
+        ],
+        [
+          "næste",
+          "🔊"
+        ],
+        [
+          "senere",
+          "🔊"
+        ],
+        [
+          "sidste",
+          "🔊"
+        ]
+      ]
+    },
+    {
+      "grade": 1,
+      "month": 10,
+      "title": "Min egen fortælling",
+      "language": "Planlæg en begyndelse, midte og slutning og genfortæl sammenhængende.",
+      "math": "Løs blandede hverdagsproblemer inden for 100.",
+      "logic": "Forklar dit valg med oplysninger fra opgaven.",
+      "number_limit": 100,
+      "story": "Bo skriver om en drage, der har mistet sit kort. Først leder dragen alene. Så hjælper en fugl med at finde kortet. Til sidst finder de vejen hjem sammen.",
+      "questions": [
+        [
+          "Hvad har dragen mistet?",
+          "Et kort",
+          "En nøgle",
+          "En hat"
+        ],
+        [
+          "Hvem hjælper dragen?",
+          "En fugl",
+          "En fisk",
+          "En kat"
+        ],
+        [
+          "Hvad sker der til sidst?",
+          "De finder hjem",
+          "Kortet forsvinder",
+          "Fuglen sover"
+        ],
+        [
+          "Hvem skriver historien?",
+          "Bo",
+          "Ida",
+          "Mia"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Planlæg en begyndelse, midte og slutning og genfortæl sammenhængende. Løs blandede hverdagsproblemer inden for 100.",
+      "logic_tasks": [
+        [
+          "data",
+          "Ida har 3 bøger. Bo har 5. Hvem har flest bøger?",
+          "Ida: 3 · Bo: 5",
+          "Bo",
+          [
+            "Ida",
+            "De har lige mange"
+          ]
+        ],
+        [
+          "place_value",
+          "Hvilket tal har 3 tiere og 2 enere?",
+          "3 tiere + 2 enere",
+          "32",
+          [
+            "23",
+            "35"
+          ]
+        ]
+      ],
+      "words": [
+        [
+          "henter",
+          "🔊"
+        ],
+        [
+          "finder",
+          "🔊"
+        ],
+        [
+          "kommer",
+          "🔊"
+        ],
+        [
+          "bliver",
+          "🔊"
+        ]
+      ]
+    },
+    {
+      "grade": 2,
+      "month": 1,
+      "title": "Læs og genfortæl",
+      "language": "Læs en kort sammenhængende tekst og gengiv hovedindholdet.",
+      "math": "Forstå hundreder, tiere og enere.",
+      "logic": "Sortér oplysninger, der er relevante for et spørgsmål.",
+      "number_limit": 1000,
+      "story": "Mia vil bygge et fuglehus. Hun låner en bog og tegner en plan. Hendes far hjælper med at save træet. Mia maler huset grønt og hænger det i haven. Hun håber, at en fugl snart flytter ind.",
+      "questions": [
+        [
+          "Hvad handler teksten mest om?",
+          "At bygge et fuglehus",
+          "At passe en fisk",
+          "At låne en cykel"
+        ],
+        [
+          "Hvorfor låner Mia en bog?",
+          "For at planlægge fuglehuset",
+          "For at lære at svømme",
+          "For at finde en sang"
+        ],
+        [
+          "Hvem saver træet?",
+          "Far hjælper med det",
+          "En nabo",
+          "Mia gør det alene"
+        ],
+        [
+          "Hvad ved vi til sidst?",
+          "Huset er hængt op",
+          "En fugl er flyttet ind",
+          "Huset er blevet rødt"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs en kort sammenhængende tekst og gengiv hovedindholdet. Forstå hundreder, tiere og enere.",
+      "logic_tasks": [
+        [
+          "place_value",
+          "Hvilket tal har 2 hundreder, 4 tiere og 3 enere?",
+          "200 + 40 + 3",
+          "243",
+          [
+            "234",
+            "423"
+          ]
+        ],
+        [
+          "measurement",
+          "Klokken er 10. En time senere er klokken hvad?",
+          "10 + 1 time",
+          "11",
+          [
+            "9",
+            "12"
+          ]
+        ]
+      ],
+      "words": [
+        [
+          "fortælling",
+          "🔊"
+        ],
+        [
+          "begyndelse",
+          "🔊"
+        ],
+        [
+          "slutning",
+          "🔊"
+        ],
+        [
+          "hovedperson",
+          "🔊"
+        ]
+      ]
+    },
+    {
+      "grade": 2,
+      "month": 2,
+      "title": "Ord og betydning",
+      "language": "Brug sammenhængen til at forstå nye ord og forklare beskrivelser.",
+      "math": "Læg sammen og træk fra med tocifrede tal.",
+      "logic": "Skeln mellem en oplysning og et gæt.",
+      "number_limit": 100,
+      "story": "Da Ali kom til søen, var overfladen spejlblank. Der var ingen vind, og træerne kunne ses i vandet. Senere begyndte det at blæse. Små bølger gjorde spejlbilledet utydeligt.",
+      "questions": [
+        [
+          "Hvad betyder spejlblank her?",
+          "Glat og stille",
+          "Fuld af is",
+          "Meget beskidt"
+        ],
+        [
+          "Hvorfor kunne Ali se træerne i vandet?",
+          "Vandet var stille",
+          "Det var mørkt",
+          "Træerne lå i søen"
+        ],
+        [
+          "Hvad ændrede sig senere?",
+          "Det begyndte at blæse",
+          "Søen frøs",
+          "Træerne blev fældet"
+        ],
+        [
+          "Hvad fortæller teksten ikke?",
+          "Alis alder",
+          "At der kom bølger",
+          "At Ali var ved søen"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Brug sammenhængen til at forstå nye ord og forklare beskrivelser. Læg sammen og træk fra med tocifrede tal.",
+      "logic_tasks": [
+        [
+          "measurement",
+          "Klokken er 10. En time senere er klokken hvad?",
+          "10 + 1 time",
+          "11",
+          [
+            "9",
+            "12"
+          ]
+        ],
+        [
+          "data",
+          "Fire børn deler otte boller lige. Hvor mange får hvert barn?",
+          "8 boller · 4 børn",
+          "2",
+          [
+            "3",
+            "4"
+          ]
+        ]
+      ],
+      "words": [
+        [
+          "spørgsmål",
+          "🔊"
+        ],
+        [
+          "forklaring",
+          "🔊"
+        ],
+        [
+          "forskel",
+          "🔊"
+        ],
+        [
+          "sammen",
+          "🔊"
+        ]
+      ]
+    },
+    {
+      "grade": 2,
+      "month": 3,
+      "title": "Instruktioner og rækkefølge",
+      "language": "Læs en vejledning, og begrund rækkefølgen.",
+      "math": "Undersøg gentagen addition og 2-tabellen.",
+      "logic": "Følg og kontrollér en regel med flere trin.",
+      "number_limit": 100,
+      "story": "Sådan sår du karse: Læg først fugtig vat i en skål. Drys derefter frø på vattet. Stil skålen lyst. Hold vattet fugtigt hver dag. Efter nogle dage kan du se små spirer.",
+      "questions": [
+        [
+          "Hvad skal man gøre før frøene drysses?",
+          "Lægge fugtig vat i skålen",
+          "Klippe karsen",
+          "Stille skålen mørkt"
+        ],
+        [
+          "Hvor skal skålen stå?",
+          "Lyst",
+          "I fryseren",
+          "I en lukket skuffe"
+        ],
+        [
+          "Hvad skal man kontrollere hver dag?",
+          "Om vattet er fugtigt",
+          "Om skålen er blå",
+          "Om frøene er runde"
+        ],
+        [
+          "Hvad kommer efter nogle dage?",
+          "Små spirer",
+          "Store æbler",
+          "Blomster i teksten"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs en vejledning, og begrund rækkefølgen. Undersøg gentagen addition og 2-tabellen.",
+      "logic_tasks": [
+        [
+          "data",
+          "Fire børn deler otte boller lige. Hvor mange får hvert barn?",
+          "8 boller · 4 børn",
+          "2",
+          [
+            "3",
+            "4"
+          ]
+        ],
+        [
+          "sorting",
+          "Vælg tallet, der både er større end 10 og mindre end 20.",
+          "10 < ? < 20",
+          "15",
+          [
+            "8",
+            "24"
+          ]
+        ]
+      ],
+      "words": [
+        [
+          "fordi",
+          "🔊"
+        ],
+        [
+          "derfor",
+          "🔊"
+        ],
+        [
+          "derefter",
+          "🔊"
+        ],
+        [
+          "alligevel",
+          "🔊"
+        ]
+      ]
+    },
+    {
+      "grade": 2,
+      "month": 4,
+      "title": "Breve og modtagere",
+      "language": "Forstå hvem en besked er til, og skriv med en tydelig hensigt.",
+      "math": "Brug 5-tabellen og penge i små køb.",
+      "logic": "Find en løsning, der opfylder to krav.",
+      "number_limit": 100,
+      "story": "Kære farmor. Tak for bogen om havet. Jeg har læst om blæksprutter og vil gerne fortælle dig om dem. Kan vi ringe sammen på søndag? Kærlig hilsen Ida.",
+      "questions": [
+        [
+          "Hvem er brevet til?",
+          "Farmor",
+          "Ida",
+          "Læreren"
+        ],
+        [
+          "Hvorfor takker Ida?",
+          "For en bog",
+          "For en cykel",
+          "For en rejse"
+        ],
+        [
+          "Hvad vil Ida gerne gøre?",
+          "Ringe på søndag",
+          "Besøge på fredag",
+          "Sende en pakke"
+        ],
+        [
+          "Hvilket emne har Ida læst om?",
+          "Blæksprutter",
+          "Heste",
+          "Planeter"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Forstå hvem en besked er til, og skriv med en tydelig hensigt. Brug 5-tabellen og penge i små køb.",
+      "logic_tasks": [
+        [
+          "sorting",
+          "Vælg tallet, der både er større end 10 og mindre end 20.",
+          "10 < ? < 20",
+          "15",
+          [
+            "8",
+            "24"
+          ]
+        ],
+        [
+          "place_value",
+          "Hvilket tal har 2 hundreder, 4 tiere og 3 enere?",
+          "200 + 40 + 3",
+          "243",
+          [
+            "234",
+            "423"
+          ]
+        ]
+      ],
+      "words": [
+        [
+          "undersøge",
+          "🔊"
+        ],
+        [
+          "opdage",
+          "🔊"
+        ],
+        [
+          "sammenligne",
+          "🔊"
+        ],
+        [
+          "beskrive",
+          "🔊"
+        ]
+      ]
+    },
+    {
+      "grade": 2,
+      "month": 5,
+      "title": "Personer og begrundelser",
+      "language": "Forklar en persons handling ved at finde belæg i teksten.",
+      "math": "Brug 10-tabellen og deling i lige store grupper.",
+      "logic": "Sammenlign to muligheder ud fra en regel.",
+      "number_limit": 100,
+      "story": "Bo ville gerne vinde løbet. Da Ali faldt, standsede Bo og hjalp ham op. De løb det sidste stykke sammen. Bo blev ikke nummer et, men var glad for, at Ali kunne være med.",
+      "questions": [
+        [
+          "Hvorfor standsede Bo?",
+          "For at hjælpe Ali",
+          "Fordi han var sulten",
+          "For at hente en bold"
+        ],
+        [
+          "Hvad ville Bo først?",
+          "Vinde løbet",
+          "Gå hjem",
+          "Læse en bog"
+        ],
+        [
+          "Hvordan kom de i mål?",
+          "Sammen",
+          "Bo alene",
+          "Ali blev kørt"
+        ],
+        [
+          "Hvad støtter tekstens slutning?",
+          "Bo værdsatte at hjælpe",
+          "Bo vandt førstepræmien",
+          "Ali ville ikke løbe"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Forklar en persons handling ved at finde belæg i teksten. Brug 10-tabellen og deling i lige store grupper.",
+      "logic_tasks": [
+        [
+          "place_value",
+          "Hvilket tal har 2 hundreder, 4 tiere og 3 enere?",
+          "200 + 40 + 3",
+          "243",
+          [
+            "234",
+            "423"
+          ]
+        ],
+        [
+          "measurement",
+          "Klokken er 10. En time senere er klokken hvad?",
+          "10 + 1 time",
+          "11",
+          [
+            "9",
+            "12"
+          ]
+        ]
+      ],
+      "words": [
+        [
+          "plante",
+          "🔊"
+        ],
+        [
+          "blad",
+          "🔊"
+        ],
+        [
+          "gren",
+          "🔊"
+        ],
+        [
+          "rødder",
+          "🔊"
+        ]
+      ]
+    },
+    {
+      "grade": 2,
+      "month": 6,
+      "title": "Fakta og oversigter",
+      "language": "Sammenhold en kort faktatekst med en oversigt.",
+      "math": "Læs tabeller og enkle diagrammer.",
+      "logic": "Brug alle relevante oplysninger før du svarer.",
+      "number_limit": 100,
+      "story": "Klassen tæller dyr i haven. De finder seks snegle, fire biller og to sommerfugle. De skriver tallene i en tabel. Læreren siger, at tabellen viser dagens fund, ikke alle dyr i haven.",
+      "questions": [
+        [
+          "Hvilket dyr fandt de flest af?",
+          "Snegle",
+          "Biller",
+          "Sommerfugle"
+        ],
+        [
+          "Hvor mange biller fandt de?",
+          "Fire",
+          "Seks",
+          "To"
+        ],
+        [
+          "Hvad viser tabellen?",
+          "Dagens fund",
+          "Alle dyr i Danmark",
+          "Dyrenes alder"
+        ],
+        [
+          "Kan man vide, at der kun er to sommerfugle i haven?",
+          "Nej, de talte kun dem, de fandt",
+          "Ja, helt sikkert",
+          "Tabellen siger ti"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Sammenhold en kort faktatekst med en oversigt. Læs tabeller og enkle diagrammer.",
+      "logic_tasks": [
+        [
+          "measurement",
+          "Klokken er 10. En time senere er klokken hvad?",
+          "10 + 1 time",
+          "11",
+          [
+            "9",
+            "12"
+          ]
+        ],
+        [
+          "data",
+          "Fire børn deler otte boller lige. Hvor mange får hvert barn?",
+          "8 boller · 4 børn",
+          "2",
+          [
+            "3",
+            "4"
+          ]
+        ]
+      ],
+      "words": [
+        [
+          "svømme",
+          "🔊"
+        ],
+        [
+          "cykle",
+          "🔊"
+        ],
+        [
+          "springe",
+          "🔊"
+        ],
+        [
+          "klatre",
+          "🔊"
+        ]
+      ]
+    },
+    {
+      "grade": 2,
+      "month": 7,
+      "title": "Sprog og korrektur",
+      "language": "Genkend navneord og udsagnsord og ret punktum og stort begyndelsesbogstav.",
+      "math": "Arbejd med 3- og 4-tabellen gennem grupper.",
+      "logic": "Find en fejl og forklar, hvilken regel den bryder.",
+      "number_limit": 100,
+      "story": "Mia skrev: katten sover. Hun rettede det til: Katten sover. Læreren bad hende finde ordet for handlingen. Mia pegede på sover. Derefter skrev hun en ny sætning med ordet løber.",
+      "questions": [
+        [
+          "Hvad rettede Mia først?",
+          "Det store begyndelsesbogstav",
+          "Antallet af ord",
+          "Et spørgsmålstegn"
+        ],
+        [
+          "Hvilket ord beskriver handlingen?",
+          "Sover",
+          "Katten",
+          "Mia"
+        ],
+        [
+          "Hvilket ord bruger hun i den nye sætning?",
+          "Løber",
+          "Spiser",
+          "Synger"
+        ],
+        [
+          "Hvad er Katten i sætningen?",
+          "Det dyr, sætningen handler om",
+          "En farve",
+          "Et tidspunkt"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Genkend navneord og udsagnsord og ret punktum og stort begyndelsesbogstav. Arbejd med 3- og 4-tabellen gennem grupper.",
+      "logic_tasks": [
+        [
+          "data",
+          "Fire børn deler otte boller lige. Hvor mange får hvert barn?",
+          "8 boller · 4 børn",
+          "2",
+          [
+            "3",
+            "4"
+          ]
+        ],
+        [
+          "sorting",
+          "Vælg tallet, der både er større end 10 og mindre end 20.",
+          "10 < ? < 20",
+          "15",
+          [
+            "8",
+            "24"
+          ]
+        ]
+      ],
+      "words": [
+        [
+          "billet",
+          "🔊"
+        ],
+        [
+          "rejse",
+          "🔊"
+        ],
+        [
+          "station",
+          "🔊"
+        ],
+        [
+          "kuffert",
+          "🔊"
+        ]
+      ]
+    },
+    {
+      "grade": 2,
+      "month": 8,
+      "title": "Tid og måling",
+      "language": "Læs præcise oplysninger og beskriv en fremgangsmåde.",
+      "math": "Brug centimeter, meter, tid og enkle halve og kvarte.",
+      "logic": "Hold styr på enheder, når du sammenligner.",
+      "number_limit": 100,
+      "story": "Turen begynder klokken ti og slutter klokken elleve. Klassen går to kilometer. Ved pausen deler fire børn et æble i fire lige store stykker. Hvert barn får ét stykke.",
+      "questions": [
+        [
+          "Hvor længe varer turen?",
+          "En time",
+          "To timer",
+          "Et kvarter"
+        ],
+        [
+          "Hvor langt går klassen?",
+          "To kilometer",
+          "To meter",
+          "Ti kilometer"
+        ],
+        [
+          "Hvor mange lige store stykker bliver æblet delt i?",
+          "Fire",
+          "To",
+          "Otte"
+        ],
+        [
+          "Hvor stor en del får hvert barn?",
+          "En fjerdedel",
+          "Halvdelen",
+          "Et helt æble"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Læs præcise oplysninger og beskriv en fremgangsmåde. Brug centimeter, meter, tid og enkle halve og kvarte.",
+      "logic_tasks": [
+        [
+          "sorting",
+          "Vælg tallet, der både er større end 10 og mindre end 20.",
+          "10 < ? < 20",
+          "15",
+          [
+            "8",
+            "24"
+          ]
+        ],
+        [
+          "place_value",
+          "Hvilket tal har 2 hundreder, 4 tiere og 3 enere?",
+          "200 + 40 + 3",
+          "243",
+          [
+            "234",
+            "423"
+          ]
+        ]
+      ],
+      "words": [
+        [
+          "hundrede",
+          "🔊"
+        ],
+        [
+          "halvdelen",
+          "🔊"
+        ],
+        [
+          "dobbelt",
+          "🔊"
+        ],
+        [
+          "måle",
+          "🔊"
+        ]
+      ]
+    },
+    {
+      "grade": 2,
+      "month": 9,
+      "title": "To tekster om samme emne",
+      "language": "Sammenlign teksternes oplysninger og formål.",
+      "math": "Vælg mellem addition, subtraktion, gange og deling.",
+      "logic": "Forklar, hvorfor en bestemt oplysning er nødvendig.",
+      "number_limit": 100,
+      "story": "På plakaten står: Kom til skolens marked på lørdag! I beskeden til hjælperne står: Mød klokken ni og stil bordene op. Markedet åbner klokken ti. Begge tekster handler om markedet, men har forskellige modtagere.",
+      "questions": [
+        [
+          "Hvem skal især læse beskeden om klokken ni?",
+          "Hjælperne",
+          "Kun gæsterne",
+          "Kun børn uden opgaver"
+        ],
+        [
+          "Hvornår åbner markedet?",
+          "Klokken ti",
+          "Klokken ni",
+          "Klokken tolv"
+        ],
+        [
+          "Hvad er plakatens formål?",
+          "At invitere gæster",
+          "At forklare en opskrift",
+          "At fortælle om en rejse"
+        ],
+        [
+          "Hvad har teksterne til fælles?",
+          "De handler om markedet",
+          "De giver samme mødetid",
+          "De er begge opskrifter"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Sammenlign teksternes oplysninger og formål. Vælg mellem addition, subtraktion, gange og deling.",
+      "logic_tasks": [
+        [
+          "place_value",
+          "Hvilket tal har 2 hundreder, 4 tiere og 3 enere?",
+          "200 + 40 + 3",
+          "243",
+          [
+            "234",
+            "423"
+          ]
+        ],
+        [
+          "measurement",
+          "Klokken er 10. En time senere er klokken hvad?",
+          "10 + 1 time",
+          "11",
+          [
+            "9",
+            "12"
+          ]
+        ]
+      ],
+      "words": [
+        [
+          "følelse",
+          "🔊"
+        ],
+        [
+          "bekymret",
+          "🔊"
+        ],
+        [
+          "stolt",
+          "🔊"
+        ],
+        [
+          "overrasket",
+          "🔊"
+        ]
+      ]
+    },
+    {
+      "grade": 2,
+      "month": 10,
+      "title": "Min fortælling og min forklaring",
+      "language": "Lav en sammenhængende lille tekst og begrund svar med belæg.",
+      "math": "Løs blandede problemer og kontrollér resultatet.",
+      "logic": "Beskriv flere mulige strategier og afprøv dem.",
+      "number_limit": 1000,
+      "story": "Ida planlægger en udstilling af klassens historier. Hun sorterer historierne efter emne og laver skilte. Bo opdager, at to skilte er byttet om. De læser historierne igen og retter fejlen. Til sidst inviterer de en anden klasse.",
+      "questions": [
+        [
+          "Hvordan sorterer Ida historierne?",
+          "Efter emne",
+          "Efter forfatterens højde",
+          "Efter antal tegninger"
+        ],
+        [
+          "Hvem opdager fejlen?",
+          "Bo",
+          "Ida",
+          "En gæst"
+        ],
+        [
+          "Hvordan kontrollerer de skiltene?",
+          "De læser historierne igen",
+          "De gætter",
+          "De kaster en terning"
+        ],
+        [
+          "Hvad gør de til sidst?",
+          "Inviterer en anden klasse",
+          "Smider historierne ud",
+          "Bytter skiltene igen"
+        ]
+      ],
+      "parent_activity": "Læs eller lyt sammen. Lad barnet genfortælle med egne ord og vise sin løsning med ting eller en tegning. Lav en sammenhængende lille tekst og begrund svar med belæg. Løs blandede problemer og kontrollér resultatet.",
+      "logic_tasks": [
+        [
+          "measurement",
+          "Klokken er 10. En time senere er klokken hvad?",
+          "10 + 1 time",
+          "11",
+          [
+            "9",
+            "12"
+          ]
+        ],
+        [
+          "data",
+          "Fire børn deler otte boller lige. Hvor mange får hvert barn?",
+          "8 boller · 4 børn",
+          "2",
+          [
+            "3",
+            "4"
+          ]
+        ]
+      ],
+      "words": [
+        [
+          "bibliotek",
+          "🔊"
+        ],
+        [
+          "forfatter",
+          "🔊"
+        ],
+        [
+          "læser",
+          "🔊"
+        ],
+        [
+          "bogstav",
+          "🔊"
+        ]
+      ]
+    }
+  ]
+}

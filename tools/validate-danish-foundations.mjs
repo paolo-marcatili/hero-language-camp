@@ -94,6 +94,8 @@ for (const problem of pack.math_problems ?? []) {
   if (problem.domain === "subtraction") {
     const [left, right] = operands; if (!Number.isFinite(left) || !Number.isFinite(right) || left - right !== problem.result || problem.result < 0) errors.push(`${problem.id}: incorrect subtraction definition.`);
   }
+  if (problem.domain === "multiplication" && operands[0] * operands[1] !== problem.result) errors.push(`${problem.id}: incorrect multiplication.`);
+  if (problem.domain === "division" && (!operands[1] || operands[0] / operands[1] !== problem.result || !Number.isInteger(problem.result))) errors.push(`${problem.id}: incorrect whole-number division.`);
   if (problem.domain === "number_order") {
     const [before, after] = operands; if (before + 1 !== problem.result || problem.result + 1 !== after) errors.push(`${problem.id}: number-order operands must surround the result.`);
   }
@@ -110,7 +112,7 @@ for (const problem of pack.math_problems ?? []) {
     const expected = problem.operation === "subtraction" ? left - right : left + right;
     if (!Number.isFinite(left) || !Number.isFinite(right) || expected !== problem.result || problem.result < 0) errors.push(`${problem.id}: story-problem operation does not match the result.`);
   }
-  if (["shape", "pattern", "sorting", "measurement"].includes(problem.domain)) {
+  if (["shape", "pattern", "sorting", "measurement", "place_value", "data"].includes(problem.domain)) {
     if (!problem.answer || !Array.isArray(problem.options) || !problem.options.includes(problem.answer) || new Set(problem.options).size < 3) errors.push(`${problem.id}: awareness activity needs at least three unique visual options including the answer.`);
     if (problem.domain === "pattern" && (!Array.isArray(problem.sequence) || problem.sequence.length < 4)) errors.push(`${problem.id}: pattern activity needs a visible sequence.`);
   }
@@ -126,15 +128,21 @@ for (const problem of [...(pack.reading_problems ?? []), ...(pack.math_problems 
 }
 
 const levels = pack.levels ?? [];
-for (let expected = 0; expected <= 13; expected += 1) {
+if (levels.length !== 60) errors.push("The 0.–2. klasse course needs exactly 60 authored units.");
+for (let expected = 0; expected < 60; expected += 1) {
   const level = levels.find((entry) => entry.number === expected);
   if (!level) { errors.push(`Missing level ${expected}.`); continue; }
   if (!level.chapter_id) errors.push(`Level ${expected}: missing chapter_id.`);
+  if (level.school_grade !== Math.floor(expected / 20) || level.teaching_month !== Math.floor(expected % 20 / 2) + 1 || level.fortnight !== expected % 2 + 1) errors.push(`Level ${expected}: incorrect grade/month mapping.`);
+  if (expected < 20 && level.reading_mode !== 'oral') errors.push(`Level ${expected}: grade 0 must work without reading.`);
+  if (level.objectives?.length < 3) errors.push(`Level ${expected}: language, maths and logic objectives are required.`);
+  if (!(pack.reading_problems ?? []).some(p => stageOf(p.tags) === expected)) errors.push(`Level ${expected}: no new comprehension tasks.`);
+  if (!(pack.math_problems ?? []).some(p => stageOf(p.tags) === expected)) errors.push(`Level ${expected}: no new maths tasks.`);
   if ((level.unlock_requires?.completed_training_sessions ?? 0) < 6) warnings.push(`Level ${expected}: workload may be too short.`);
   const chapter = pack.story?.chapters?.find((entry) => entry.id === level.chapter_id || entry.minimum_level === level.number);
   if (!chapter?.lesson || !chapter.fiction || !chapter.mission) errors.push(`Level ${expected}: needs fiction, a structured lesson, and a mission.`);
 }
-if ((pack.enemies ?? []).length < 14) errors.push("Phase D should configure an enemy for every level.");
+if ((pack.enemies ?? []).length !== 60) errors.push("Configure an enemy for every authored Danish level.");
 if ((pack.labyrinths ?? []).length < 3) errors.push("Phase D should provide starter, intermediate, and early-1st-grade labyrinth bands.");
 
 if (errors.length) {

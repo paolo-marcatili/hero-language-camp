@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { createLatestThrottle } from "./progressThrottle";
 import { publicUrl } from "./publicUrl";
 
 export interface OfflineGroupState {
@@ -27,6 +28,8 @@ export interface OfflineState {
 }
 
 const EMPTY_GROUP: OfflineGroupState = { completed: 0, total: 0, failed: 0 };
+// The service worker may report after every file; render at most ~4 times per second.
+const PROGRESS_INTERVAL_MS = 250;
 
 type InternalState = Omit<OfflineState, "applyUpdate" | "retryDownload">;
 
@@ -75,9 +78,7 @@ export function useOfflineState(): OfflineState {
         phase
       }));
     };
-    const onMessage = (event: MessageEvent) => {
-      const message = event.data ?? {};
-      if (message.type === "OFFLINE_PROGRESS") {
+    const applyProgress = (message: Record<string, unknown>) => {
         setState((previous) => {
           const group: OfflineGroupState = {
             completed: Number(message.completed) || 0,
@@ -104,7 +105,14 @@ export function useOfflineState(): OfflineState {
             failedFiles: []
           };
         });
+    };
+    const progress = createLatestThrottle(applyProgress, PROGRESS_INTERVAL_MS);
+    const onMessage = (event: MessageEvent) => {
+      const message = event.data ?? {};
+      if (message.type === "OFFLINE_PROGRESS") {
+        progress.push(message);
       } else if (message.type === "OFFLINE_STATUS" || message.type === "OFFLINE_COMPLETE" || message.type === "OFFLINE_ERRORS") {
+        progress.cancel(); // a status/complete message supersedes any queued progress
         const essential: OfflineGroupState = message.essential ?? EMPTY_GROUP;
         const audio: OfflineGroupState = message.audio ?? EMPTY_GROUP;
         updateFromGroups(essential, audio, false, null);
@@ -159,6 +167,7 @@ export function useOfflineState(): OfflineState {
     navigator.serviceWorker.addEventListener("controllerchange", onControllerChange);
     return () => {
       disposed = true;
+      progress.cancel();
       window.removeEventListener("online", onOnline);
       window.removeEventListener("offline", onOnline);
       navigator.serviceWorker.removeEventListener("message", onMessage);

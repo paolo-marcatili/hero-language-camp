@@ -1,0 +1,5636 @@
+{
+  "schema_version": 1,
+  "module_id": "levels-25-32",
+  "description": "A2/B1-informed connected language, reasons, experiences, and practical interaction. Draft for native-speaker review.",
+  "levels": [
+    {
+      "number": 25,
+      "title": "Inviti e accordi",
+      "stat_cap": 130,
+      "theme": {
+        "it": "Inviti e accordi",
+        "en": "Invitations and arrangements"
+      },
+      "learning_goal": {
+        "it": "Comprendere e collegare frasi su inviti e accordi; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+        "en": "Understand connected language about invitations and arrangements; explain a choice with a reason and practise a short exchange."
+      },
+      "cefr": "a2",
+      "review_only": false,
+      "minimum_new_words": 0,
+      "content_tags": [
+        "stage:25",
+        "tier:core"
+      ],
+      "chapter_id": "chapter_stage_25",
+      "unlock_requires": {
+        "completed_training_sessions": 8,
+        "answered_fight_questions": 16,
+        "min_stats": {}
+      },
+      "fight": {
+        "min_questions": 16,
+        "at_min_questions": 34,
+        "max_questions": 40,
+        "timer_seconds": 20
+      }
+    },
+    {
+      "number": 26,
+      "title": "Raccontare una giornata",
+      "stat_cap": 135,
+      "theme": {
+        "it": "Raccontare una giornata",
+        "en": "Recounting a day"
+      },
+      "learning_goal": {
+        "it": "Comprendere e collegare frasi su raccontare una giornata; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+        "en": "Understand connected language about recounting a day; explain a choice with a reason and practise a short exchange."
+      },
+      "cefr": "a2",
+      "review_only": false,
+      "minimum_new_words": 0,
+      "content_tags": [
+        "stage:26",
+        "tier:core"
+      ],
+      "chapter_id": "chapter_stage_26",
+      "unlock_requires": {
+        "completed_training_sessions": 8,
+        "answered_fight_questions": 16,
+        "min_stats": {}
+      },
+      "fight": {
+        "min_questions": 16,
+        "at_min_questions": 34,
+        "max_questions": 40,
+        "timer_seconds": 20
+      }
+    },
+    {
+      "number": 27,
+      "title": "Chiedere chiarimenti",
+      "stat_cap": 140,
+      "theme": {
+        "it": "Chiedere chiarimenti",
+        "en": "Asking for clarification"
+      },
+      "learning_goal": {
+        "it": "Comprendere e collegare frasi su chiedere chiarimenti; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+        "en": "Understand connected language about asking for clarification; explain a choice with a reason and practise a short exchange."
+      },
+      "cefr": "a2",
+      "review_only": false,
+      "minimum_new_words": 0,
+      "content_tags": [
+        "stage:27",
+        "tier:core"
+      ],
+      "chapter_id": "chapter_stage_27",
+      "unlock_requires": {
+        "completed_training_sessions": 8,
+        "answered_fight_questions": 16,
+        "min_stats": {}
+      },
+      "fight": {
+        "min_questions": 16,
+        "at_min_questions": 34,
+        "max_questions": 40,
+        "timer_seconds": 20
+      }
+    },
+    {
+      "number": 28,
+      "title": "Scelte e preferenze",
+      "stat_cap": 145,
+      "theme": {
+        "it": "Scelte e preferenze",
+        "en": "Choices and preferences"
+      },
+      "learning_goal": {
+        "it": "Comprendere e collegare frasi su scelte e preferenze; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+        "en": "Understand connected language about choices and preferences; explain a choice with a reason and practise a short exchange."
+      },
+      "cefr": "a2",
+      "review_only": false,
+      "minimum_new_words": 0,
+      "content_tags": [
+        "stage:28",
+        "tier:core"
+      ],
+      "chapter_id": "chapter_stage_28",
+      "unlock_requires": {
+        "completed_training_sessions": 8,
+        "answered_fight_questions": 16,
+        "min_stats": {}
+      },
+      "fight": {
+        "min_questions": 16,
+        "at_min_questions": 34,
+        "max_questions": 40,
+        "timer_seconds": 20
+      }
+    },
+    {
+      "number": 29,
+      "title": "Viaggiare e orientarsi",
+      "stat_cap": 150,
+      "theme": {
+        "it": "Viaggiare e orientarsi",
+        "en": "Travel and directions"
+      },
+      "learning_goal": {
+        "it": "Comprendere e collegare frasi su viaggiare e orientarsi; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+        "en": "Understand connected language about travel and directions; explain a choice with a reason and practise a short exchange."
+      },
+      "cefr": "a2",
+      "review_only": false,
+      "minimum_new_words": 0,
+      "content_tags": [
+        "stage:29",
+        "tier:core"
+      ],
+      "chapter_id": "chapter_stage_29",
+      "unlock_requires": {
+        "completed_training_sessions": 8,
+        "answered_fight_questions": 16,
+        "min_stats": {}
+      },
+      "fight": {
+        "min_questions": 16,
+        "at_min_questions": 34,
+        "max_questions": 40,
+        "timer_seconds": 20
+      }
+    },
+    {
+      "number": 30,
+      "title": "Problemi quotidiani",
+      "stat_cap": 155,
+      "theme": {
+        "it": "Problemi quotidiani",
+        "en": "Everyday problems"
+      },
+      "learning_goal": {
+        "it": "Comprendere e collegare frasi su problemi quotidiani; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+        "en": "Understand connected language about everyday problems; explain a choice with a reason and practise a short exchange."
+      },
+      "cefr": "a2",
+      "review_only": false,
+      "minimum_new_words": 0,
+      "content_tags": [
+        "stage:30",
+        "tier:core"
+      ],
+      "chapter_id": "chapter_stage_30",
+      "unlock_requires": {
+        "completed_training_sessions": 8,
+        "answered_fight_questions": 16,
+        "min_stats": {}
+      },
+      "fight": {
+        "min_questions": 16,
+        "at_min_questions": 34,
+        "max_questions": 40,
+        "timer_seconds": 20
+      }
+    },
+    {
+      "number": 31,
+      "title": "Messaggi e istruzioni",
+      "stat_cap": 160,
+      "theme": {
+        "it": "Messaggi e istruzioni",
+        "en": "Messages and instructions"
+      },
+      "learning_goal": {
+        "it": "Comprendere e collegare frasi su messaggi e istruzioni; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+        "en": "Understand connected language about messages and instructions; explain a choice with a reason and practise a short exchange."
+      },
+      "cefr": "a2",
+      "review_only": false,
+      "minimum_new_words": 0,
+      "content_tags": [
+        "stage:31",
+        "tier:core"
+      ],
+      "chapter_id": "chapter_stage_31",
+      "unlock_requires": {
+        "completed_training_sessions": 8,
+        "answered_fight_questions": 16,
+        "min_stats": {}
+      },
+      "fight": {
+        "min_questions": 16,
+        "at_min_questions": 34,
+        "max_questions": 40,
+        "timer_seconds": 20
+      }
+    },
+    {
+      "number": 32,
+      "title": "Esperienze e piccoli racconti",
+      "stat_cap": 165,
+      "theme": {
+        "it": "Esperienze e piccoli racconti",
+        "en": "Experiences and short stories"
+      },
+      "learning_goal": {
+        "it": "Comprendere e collegare frasi su esperienze e piccoli racconti; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+        "en": "Understand connected language about experiences and short stories; explain a choice with a reason and practise a short exchange."
+      },
+      "cefr": "a2",
+      "review_only": false,
+      "minimum_new_words": 0,
+      "content_tags": [
+        "stage:32",
+        "tier:core"
+      ],
+      "chapter_id": "chapter_stage_32",
+      "unlock_requires": {
+        "completed_training_sessions": 8,
+        "answered_fight_questions": 16,
+        "min_stats": {}
+      },
+      "fight": {
+        "min_questions": 16,
+        "at_min_questions": 34,
+        "max_questions": 40,
+        "timer_seconds": 20
+      }
+    }
+  ],
+  "words": [
+    {
+      "id": "hy_cv2_l25_gloss_1",
+      "concept": "invitation",
+      "target": "հրավեր",
+      "transliteration": "hraver",
+      "tags": [
+        "tier:core",
+        "stage:25",
+        "curriculum:v2",
+        "topic:unit-25"
+      ],
+      "translations": {
+        "it": "invito",
+        "en": "invitation"
+      },
+      "audio": [
+        {
+          "id": "hy_cv2_l25_gloss_1_tts",
+          "url": "browser-tts:hy-AM",
+          "text": "հրավեր",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_cv2_l25_gloss_2",
+      "concept": "meeting",
+      "target": "հանդիպում",
+      "transliteration": "handipum",
+      "tags": [
+        "tier:core",
+        "stage:25",
+        "curriculum:v2",
+        "topic:unit-25"
+      ],
+      "translations": {
+        "it": "incontro",
+        "en": "meeting"
+      },
+      "audio": [
+        {
+          "id": "hy_cv2_l25_gloss_2_tts",
+          "url": "browser-tts:hy-AM",
+          "text": "հանդիպում",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_cv2_l25_gloss_3",
+      "concept": "agree",
+      "target": "համաձայնել",
+      "transliteration": "hamadzaynel",
+      "tags": [
+        "tier:core",
+        "stage:25",
+        "curriculum:v2",
+        "topic:unit-25"
+      ],
+      "translations": {
+        "it": "essere d’accordo",
+        "en": "agree"
+      },
+      "audio": [
+        {
+          "id": "hy_cv2_l25_gloss_3_tts",
+          "url": "browser-tts:hy-AM",
+          "text": "համաձայնել",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_cv2_l25_gloss_4",
+      "concept": "free time",
+      "target": "ազատ ժամանակ",
+      "transliteration": "azat zhamanak",
+      "tags": [
+        "tier:core",
+        "stage:25",
+        "curriculum:v2",
+        "topic:unit-25"
+      ],
+      "translations": {
+        "it": "tempo libero",
+        "en": "free time"
+      },
+      "audio": [
+        {
+          "id": "hy_cv2_l25_gloss_4_tts",
+          "url": "browser-tts:hy-AM",
+          "text": "ազատ ժամանակ",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_cv2_l26_gloss_1",
+      "concept": "in the morning",
+      "target": "առավոտյան",
+      "transliteration": "arravotyan",
+      "tags": [
+        "tier:core",
+        "stage:26",
+        "curriculum:v2",
+        "topic:unit-26"
+      ],
+      "translations": {
+        "it": "di mattina",
+        "en": "in the morning"
+      },
+      "audio": [
+        {
+          "id": "hy_cv2_l26_gloss_1_tts",
+          "url": "browser-tts:hy-AM",
+          "text": "առավոտյան",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_cv2_l26_gloss_2",
+      "concept": "in the evening",
+      "target": "երեկոյան",
+      "transliteration": "erekoyan",
+      "tags": [
+        "tier:core",
+        "stage:26",
+        "curriculum:v2",
+        "topic:unit-26"
+      ],
+      "translations": {
+        "it": "di sera",
+        "en": "in the evening"
+      },
+      "audio": [
+        {
+          "id": "hy_cv2_l26_gloss_2_tts",
+          "url": "browser-tts:hy-AM",
+          "text": "երեկոյան",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_cv2_l26_gloss_4",
+      "concept": "tell",
+      "target": "պատմել",
+      "transliteration": "patmel",
+      "tags": [
+        "tier:core",
+        "stage:26",
+        "curriculum:v2",
+        "topic:unit-26"
+      ],
+      "translations": {
+        "it": "raccontare",
+        "en": "tell"
+      },
+      "audio": [
+        {
+          "id": "hy_cv2_l26_gloss_4_tts",
+          "url": "browser-tts:hy-AM",
+          "text": "պատմել",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_cv2_l28_gloss_1",
+      "concept": "choice",
+      "target": "ընտրություն",
+      "transliteration": "yntrutyun",
+      "tags": [
+        "tier:core",
+        "stage:28",
+        "curriculum:v2",
+        "topic:unit-28"
+      ],
+      "translations": {
+        "it": "scelta",
+        "en": "choice"
+      },
+      "audio": [
+        {
+          "id": "hy_cv2_l28_gloss_1_tts",
+          "url": "browser-tts:hy-AM",
+          "text": "ընտրություն",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_cv2_l28_gloss_2",
+      "concept": "prefer",
+      "target": "նախընտրել",
+      "transliteration": "nakhyntrel",
+      "tags": [
+        "tier:core",
+        "stage:28",
+        "curriculum:v2",
+        "topic:unit-28"
+      ],
+      "translations": {
+        "it": "preferire",
+        "en": "prefer"
+      },
+      "audio": [
+        {
+          "id": "hy_cv2_l28_gloss_2_tts",
+          "url": "browser-tts:hy-AM",
+          "text": "նախընտրել",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_cv2_l28_gloss_4",
+      "concept": "boring",
+      "target": "ձանձրալի",
+      "transliteration": "dzandzrali",
+      "tags": [
+        "tier:core",
+        "stage:28",
+        "curriculum:v2",
+        "topic:unit-28"
+      ],
+      "translations": {
+        "it": "noioso",
+        "en": "boring"
+      },
+      "audio": [
+        {
+          "id": "hy_cv2_l28_gloss_4_tts",
+          "url": "browser-tts:hy-AM",
+          "text": "ձանձրալի",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_cv2_l29_gloss_3",
+      "concept": "be late",
+      "target": "ուշանալ",
+      "transliteration": "ushanal",
+      "tags": [
+        "tier:core",
+        "stage:29",
+        "curriculum:v2",
+        "topic:unit-29"
+      ],
+      "translations": {
+        "it": "arrivare in ritardo",
+        "en": "be late"
+      },
+      "audio": [
+        {
+          "id": "hy_cv2_l29_gloss_3_tts",
+          "url": "browser-tts:hy-AM",
+          "text": "ուշանալ",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_cv2_l29_gloss_4",
+      "concept": "journey",
+      "target": "ուղևորություն",
+      "transliteration": "ughevorutyun",
+      "tags": [
+        "tier:core",
+        "stage:29",
+        "curriculum:v2",
+        "topic:unit-29"
+      ],
+      "translations": {
+        "it": "viaggio",
+        "en": "journey"
+      },
+      "audio": [
+        {
+          "id": "hy_cv2_l29_gloss_4_tts",
+          "url": "browser-tts:hy-AM",
+          "text": "ուղևորություն",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_cv2_l32_gloss_1",
+      "concept": "experience",
+      "target": "փորձ",
+      "transliteration": "pordz",
+      "tags": [
+        "tier:core",
+        "stage:32",
+        "curriculum:v2",
+        "topic:unit-32"
+      ],
+      "translations": {
+        "it": "esperienza",
+        "en": "experience"
+      },
+      "audio": [
+        {
+          "id": "hy_cv2_l32_gloss_1_tts",
+          "url": "browser-tts:hy-AM",
+          "text": "փորձ",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_cv2_l32_gloss_2",
+      "concept": "for the first time",
+      "target": "առաջին անգամ",
+      "transliteration": "arrajin angam",
+      "tags": [
+        "tier:core",
+        "stage:32",
+        "curriculum:v2",
+        "topic:unit-32"
+      ],
+      "translations": {
+        "it": "per la prima volta",
+        "en": "for the first time"
+      },
+      "audio": [
+        {
+          "id": "hy_cv2_l32_gloss_2_tts",
+          "url": "browser-tts:hy-AM",
+          "text": "առաջին անգամ",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "hy_school_l25_0",
+      "target_sentence": "Կիրակի օրը ազատ ե՞ս։",
+      "translations": {
+        "it": "Sei libero domenica?",
+        "en": "Are you free on Sunday?"
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Sei libero domenica?",
+        "en": "Understand the meaning: Are you free on Sunday?"
+      },
+      "distractors": [
+        "Կուզե՞ս մեզ հետ այգի գալ։",
+        "Շնորհակալ եմ հրավերի համար։",
+        "Այս անգամ չեմ կարող գալ։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Ti piacerebbe venire al parco con noi?",
+          "Grazie per l'invito.",
+          "Questa volta non posso venire."
+        ],
+        "en": [
+          "Would you like to come to the park with us?",
+          "Thank you for the invitation.",
+          "I cannot come this time."
+        ]
+      },
+      "tags": [
+        "stage:25",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-25"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-25-0",
+          "url": "browser-tts:hy-AM",
+          "text": "Կիրակի օրը ազատ ե՞ս։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l25_1",
+      "target_sentence": "Կուզե՞ս մեզ հետ այգի գալ։",
+      "translations": {
+        "it": "Ti piacerebbe venire al parco con noi?",
+        "en": "Would you like to come to the park with us?"
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Ti piacerebbe venire al parco con noi?",
+        "en": "Understand the meaning: Would you like to come to the park with us?"
+      },
+      "distractors": [
+        "Կիրակի օրը ազատ ե՞ս։",
+        "Շնորհակալ եմ հրավերի համար։",
+        "Այս անգամ չեմ կարող գալ։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Sei libero domenica?",
+          "Grazie per l'invito.",
+          "Questa volta non posso venire."
+        ],
+        "en": [
+          "Are you free on Sunday?",
+          "Thank you for the invitation.",
+          "I cannot come this time."
+        ]
+      },
+      "tags": [
+        "stage:25",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-25"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-25-1",
+          "url": "browser-tts:hy-AM",
+          "text": "Կուզե՞ս մեզ հետ այգի գալ։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l25_2",
+      "target_sentence": "Շնորհակալ եմ հրավերի համար։",
+      "translations": {
+        "it": "Grazie per l'invito.",
+        "en": "Thank you for the invitation."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Grazie per l'invito.",
+        "en": "Understand the meaning: Thank you for the invitation."
+      },
+      "distractors": [
+        "Կիրակի օրը ազատ ե՞ս։",
+        "Կուզե՞ս մեզ հետ այգի գալ։",
+        "Այս անգամ չեմ կարող գալ։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Sei libero domenica?",
+          "Ti piacerebbe venire al parco con noi?",
+          "Questa volta non posso venire."
+        ],
+        "en": [
+          "Are you free on Sunday?",
+          "Would you like to come to the park with us?",
+          "I cannot come this time."
+        ]
+      },
+      "tags": [
+        "stage:25",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-25"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-25-2",
+          "url": "browser-tts:hy-AM",
+          "text": "Շնորհակալ եմ հրավերի համար։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l25_3",
+      "target_sentence": "Այս անգամ չեմ կարող գալ։",
+      "translations": {
+        "it": "Questa volta non posso venire.",
+        "en": "I cannot come this time."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Questa volta non posso venire.",
+        "en": "Understand the meaning: I cannot come this time."
+      },
+      "distractors": [
+        "Կիրակի օրը ազատ ե՞ս։",
+        "Կուզե՞ս մեզ հետ այգի գալ։",
+        "Շնորհակալ եմ հրավերի համար։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Sei libero domenica?",
+          "Ti piacerebbe venire al parco con noi?",
+          "Grazie per l'invito."
+        ],
+        "en": [
+          "Are you free on Sunday?",
+          "Would you like to come to the park with us?",
+          "Thank you for the invitation."
+        ]
+      },
+      "tags": [
+        "stage:25",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-25"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-25-3",
+          "url": "browser-tts:hy-AM",
+          "text": "Այս անգամ չեմ կարող գալ։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l25_4",
+      "target_sentence": "Եկեք հանդիպենք գրադարանի մոտ։",
+      "translations": {
+        "it": "Incontriamoci vicino alla biblioteca.",
+        "en": "Let's meet near the library."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Incontriamoci vicino alla biblioteca.",
+        "en": "Understand the meaning: Let's meet near the library."
+      },
+      "distractors": [
+        "Կիրակի օրը ազատ ե՞ս։",
+        "Կուզե՞ս մեզ հետ այգի գալ։",
+        "Շնորհակալ եմ հրավերի համար։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Sei libero domenica?",
+          "Ti piacerebbe venire al parco con noi?",
+          "Grazie per l'invito."
+        ],
+        "en": [
+          "Are you free on Sunday?",
+          "Would you like to come to the park with us?",
+          "Thank you for the invitation."
+        ]
+      },
+      "tags": [
+        "stage:25",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-25"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-25-4",
+          "url": "browser-tts:hy-AM",
+          "text": "Եկեք հանդիպենք գրադարանի մոտ։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l25_5",
+      "target_sentence": "Ինձ համար ժամը երեքը հարմար է։",
+      "translations": {
+        "it": "Per me le tre vanno bene.",
+        "en": "Three o'clock works for me."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Per me le tre vanno bene.",
+        "en": "Understand the meaning: Three o'clock works for me."
+      },
+      "distractors": [
+        "Կիրակի օրը ազատ ե՞ս։",
+        "Կուզե՞ս մեզ հետ այգի գալ։",
+        "Շնորհակալ եմ հրավերի համար։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Sei libero domenica?",
+          "Ti piacerebbe venire al parco con noi?",
+          "Grazie per l'invito."
+        ],
+        "en": [
+          "Are you free on Sunday?",
+          "Would you like to come to the park with us?",
+          "Thank you for the invitation."
+        ]
+      },
+      "tags": [
+        "stage:25",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-25"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-25-5",
+          "url": "browser-tts:hy-AM",
+          "text": "Ինձ համար ժամը երեքը հարմար է։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l25_6",
+      "target_sentence": "Եթե անձրև գա, տանը կմնանք։",
+      "translations": {
+        "it": "Se piove, resteremo a casa.",
+        "en": "If it rains, we will stay at home."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Se piove, resteremo a casa.",
+        "en": "Understand the meaning: If it rains, we will stay at home."
+      },
+      "distractors": [
+        "Կիրակի օրը ազատ ե՞ս։",
+        "Կուզե՞ս մեզ հետ այգի գալ։",
+        "Շնորհակալ եմ հրավերի համար։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Sei libero domenica?",
+          "Ti piacerebbe venire al parco con noi?",
+          "Grazie per l'invito."
+        ],
+        "en": [
+          "Are you free on Sunday?",
+          "Would you like to come to the park with us?",
+          "Thank you for the invitation."
+        ]
+      },
+      "tags": [
+        "stage:25",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-25"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-25-6",
+          "url": "browser-tts:hy-AM",
+          "text": "Եթե անձրև գա, տանը կմնանք։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l25_7",
+      "target_sentence": "Ես կզանգեմ քեզ վաղը առավոտյան։",
+      "translations": {
+        "it": "Ti telefonerò domani mattina.",
+        "en": "I will call you tomorrow morning."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Ti telefonerò domani mattina.",
+        "en": "Understand the meaning: I will call you tomorrow morning."
+      },
+      "distractors": [
+        "Կիրակի օրը ազատ ե՞ս։",
+        "Կուզե՞ս մեզ հետ այգի գալ։",
+        "Շնորհակալ եմ հրավերի համար։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Sei libero domenica?",
+          "Ti piacerebbe venire al parco con noi?",
+          "Grazie per l'invito."
+        ],
+        "en": [
+          "Are you free on Sunday?",
+          "Would you like to come to the park with us?",
+          "Thank you for the invitation."
+        ]
+      },
+      "tags": [
+        "stage:25",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-25"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-25-7",
+          "url": "browser-tts:hy-AM",
+          "text": "Ես կզանգեմ քեզ վաղը առավոտյան։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l26_0",
+      "target_sentence": "Երեկ առավոտյան շուտ արթնացա։",
+      "translations": {
+        "it": "Ieri mattina mi sono svegliato presto.",
+        "en": "I woke up early yesterday morning."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Ieri mattina mi sono svegliato presto.",
+        "en": "Understand the meaning: I woke up early yesterday morning."
+      },
+      "distractors": [
+        "Նախ նախաճաշեցի, հետո դպրոց գնացի։",
+        "Դասերից հետո ընկերոջս հետ խաղացի։",
+        "Երբ տուն հասա, արդեն մութ էր։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Prima ho fatto colazione, poi sono andato a scuola.",
+          "Dopo le lezioni ho giocato con un amico.",
+          "Quando sono arrivato a casa, era già buio."
+        ],
+        "en": [
+          "First I had breakfast, then I went to school.",
+          "After lessons I played with my friend.",
+          "When I got home, it was already dark."
+        ]
+      },
+      "tags": [
+        "stage:26",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-26"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-26-0",
+          "url": "browser-tts:hy-AM",
+          "text": "Երեկ առավոտյան շուտ արթնացա։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l26_1",
+      "target_sentence": "Նախ նախաճաշեցի, հետո դպրոց գնացի։",
+      "translations": {
+        "it": "Prima ho fatto colazione, poi sono andato a scuola.",
+        "en": "First I had breakfast, then I went to school."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Prima ho fatto colazione, poi sono andato a scuola.",
+        "en": "Understand the meaning: First I had breakfast, then I went to school."
+      },
+      "distractors": [
+        "Երեկ առավոտյան շուտ արթնացա։",
+        "Դասերից հետո ընկերոջս հետ խաղացի։",
+        "Երբ տուն հասա, արդեն մութ էր։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Ieri mattina mi sono svegliato presto.",
+          "Dopo le lezioni ho giocato con un amico.",
+          "Quando sono arrivato a casa, era già buio."
+        ],
+        "en": [
+          "I woke up early yesterday morning.",
+          "After lessons I played with my friend.",
+          "When I got home, it was already dark."
+        ]
+      },
+      "tags": [
+        "stage:26",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-26"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-26-1",
+          "url": "browser-tts:hy-AM",
+          "text": "Նախ նախաճաշեցի, հետո դպրոց գնացի։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l26_2",
+      "target_sentence": "Դասերից հետո ընկերոջս հետ խաղացի։",
+      "translations": {
+        "it": "Dopo le lezioni ho giocato con un amico.",
+        "en": "After lessons I played with my friend."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Dopo le lezioni ho giocato con un amico.",
+        "en": "Understand the meaning: After lessons I played with my friend."
+      },
+      "distractors": [
+        "Երեկ առավոտյան շուտ արթնացա։",
+        "Նախ նախաճաշեցի, հետո դպրոց գնացի։",
+        "Երբ տուն հասա, արդեն մութ էր։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Ieri mattina mi sono svegliato presto.",
+          "Prima ho fatto colazione, poi sono andato a scuola.",
+          "Quando sono arrivato a casa, era già buio."
+        ],
+        "en": [
+          "I woke up early yesterday morning.",
+          "First I had breakfast, then I went to school.",
+          "When I got home, it was already dark."
+        ]
+      },
+      "tags": [
+        "stage:26",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-26"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-26-2",
+          "url": "browser-tts:hy-AM",
+          "text": "Դասերից հետո ընկերոջս հետ խաղացի։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l26_3",
+      "target_sentence": "Երբ տուն հասա, արդեն մութ էր։",
+      "translations": {
+        "it": "Quando sono arrivato a casa, era già buio.",
+        "en": "When I got home, it was already dark."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Quando sono arrivato a casa, era già buio.",
+        "en": "Understand the meaning: When I got home, it was already dark."
+      },
+      "distractors": [
+        "Երեկ առավոտյան շուտ արթնացա։",
+        "Նախ նախաճաշեցի, հետո դպրոց գնացի։",
+        "Դասերից հետո ընկերոջս հետ խաղացի։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Ieri mattina mi sono svegliato presto.",
+          "Prima ho fatto colazione, poi sono andato a scuola.",
+          "Dopo le lezioni ho giocato con un amico."
+        ],
+        "en": [
+          "I woke up early yesterday morning.",
+          "First I had breakfast, then I went to school.",
+          "After lessons I played with my friend."
+        ]
+      },
+      "tags": [
+        "stage:26",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-26"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-26-3",
+          "url": "browser-tts:hy-AM",
+          "text": "Երբ տուն հասա, արդեն մութ էր։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l26_4",
+      "target_sentence": "Ես մոռացել էի իմ մատիտը տանը։",
+      "translations": {
+        "it": "Avevo dimenticato la matita a casa.",
+        "en": "I had left my pencil at home."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Avevo dimenticato la matita a casa.",
+        "en": "Understand the meaning: I had left my pencil at home."
+      },
+      "distractors": [
+        "Երեկ առավոտյան շուտ արթնացա։",
+        "Նախ նախաճաշեցի, հետո դպրոց գնացի։",
+        "Դասերից հետո ընկերոջս հետ խաղացի։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Ieri mattina mi sono svegliato presto.",
+          "Prima ho fatto colazione, poi sono andato a scuola.",
+          "Dopo le lezioni ho giocato con un amico."
+        ],
+        "en": [
+          "I woke up early yesterday morning.",
+          "First I had breakfast, then I went to school.",
+          "After lessons I played with my friend."
+        ]
+      },
+      "tags": [
+        "stage:26",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-26"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-26-4",
+          "url": "browser-tts:hy-AM",
+          "text": "Ես մոռացել էի իմ մատիտը տանը։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l26_5",
+      "target_sentence": "Ուսուցիչը ինձ ուրիշ մատիտ տվեց։",
+      "translations": {
+        "it": "L'insegnante mi ha dato un'altra matita.",
+        "en": "The teacher gave me another pencil."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: L'insegnante mi ha dato un'altra matita.",
+        "en": "Understand the meaning: The teacher gave me another pencil."
+      },
+      "distractors": [
+        "Երեկ առավոտյան շուտ արթնացա։",
+        "Նախ նախաճաշեցի, հետո դպրոց գնացի։",
+        "Դասերից հետո ընկերոջս հետ խաղացի։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Ieri mattina mi sono svegliato presto.",
+          "Prima ho fatto colazione, poi sono andato a scuola.",
+          "Dopo le lezioni ho giocato con un amico."
+        ],
+        "en": [
+          "I woke up early yesterday morning.",
+          "First I had breakfast, then I went to school.",
+          "After lessons I played with my friend."
+        ]
+      },
+      "tags": [
+        "stage:26",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-26"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-26-5",
+          "url": "browser-tts:hy-AM",
+          "text": "Ուսուցիչը ինձ ուրիշ մատիտ տվեց։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l26_6",
+      "target_sentence": "Օրվա ամենահետաքրքիր մասը խաղն էր։",
+      "translations": {
+        "it": "La parte più interessante della giornata è stata il gioco.",
+        "en": "The most interesting part of the day was the game."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: La parte più interessante della giornata è stata il gioco.",
+        "en": "Understand the meaning: The most interesting part of the day was the game."
+      },
+      "distractors": [
+        "Երեկ առավոտյան շուտ արթնացա։",
+        "Նախ նախաճաշեցի, հետո դպրոց գնացի։",
+        "Դասերից հետո ընկերոջս հետ խաղացի։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Ieri mattina mi sono svegliato presto.",
+          "Prima ho fatto colazione, poi sono andato a scuola.",
+          "Dopo le lezioni ho giocato con un amico."
+        ],
+        "en": [
+          "I woke up early yesterday morning.",
+          "First I had breakfast, then I went to school.",
+          "After lessons I played with my friend."
+        ]
+      },
+      "tags": [
+        "stage:26",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-26"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-26-6",
+          "url": "browser-tts:hy-AM",
+          "text": "Օրվա ամենահետաքրքիր մասը խաղն էր։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l26_7",
+      "target_sentence": "Երեկոյան ընտանիքիս պատմեցի իմ օրվա մասին։",
+      "translations": {
+        "it": "La sera ho raccontato alla famiglia la mia giornata.",
+        "en": "In the evening I told my family about my day."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: La sera ho raccontato alla famiglia la mia giornata.",
+        "en": "Understand the meaning: In the evening I told my family about my day."
+      },
+      "distractors": [
+        "Երեկ առավոտյան շուտ արթնացա։",
+        "Նախ նախաճաշեցի, հետո դպրոց գնացի։",
+        "Դասերից հետո ընկերոջս հետ խաղացի։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Ieri mattina mi sono svegliato presto.",
+          "Prima ho fatto colazione, poi sono andato a scuola.",
+          "Dopo le lezioni ho giocato con un amico."
+        ],
+        "en": [
+          "I woke up early yesterday morning.",
+          "First I had breakfast, then I went to school.",
+          "After lessons I played with my friend."
+        ]
+      },
+      "tags": [
+        "stage:26",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-26"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-26-7",
+          "url": "browser-tts:hy-AM",
+          "text": "Երեկոյան ընտանիքիս պատմեցի իմ օրվա մասին։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l27_0",
+      "target_sentence": "Կներեք, վերջին բառը չհասկացա։",
+      "translations": {
+        "it": "Scusi, non ho capito l'ultima parola.",
+        "en": "Sorry, I did not understand the last word."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Scusi, non ho capito l'ultima parola.",
+        "en": "Understand the meaning: Sorry, I did not understand the last word."
+      },
+      "distractors": [
+        "Կարո՞ղ եք ավելի դանդաղ խոսել։",
+        "Ի՞նչ է նշանակում այս արտահայտությունը։",
+        "Կարո՞ղ ես մի օրինակ բերել։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Può parlare più lentamente?",
+          "Che cosa significa questa espressione?",
+          "Puoi fare un esempio?"
+        ],
+        "en": [
+          "Could you speak more slowly?",
+          "What does this expression mean?",
+          "Can you give an example?"
+        ]
+      },
+      "tags": [
+        "stage:27",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-27"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-27-0",
+          "url": "browser-tts:hy-AM",
+          "text": "Կներեք, վերջին բառը չհասկացա։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l27_1",
+      "target_sentence": "Կարո՞ղ եք ավելի դանդաղ խոսել։",
+      "translations": {
+        "it": "Può parlare più lentamente?",
+        "en": "Could you speak more slowly?"
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Può parlare più lentamente?",
+        "en": "Understand the meaning: Could you speak more slowly?"
+      },
+      "distractors": [
+        "Կներեք, վերջին բառը չհասկացա։",
+        "Ի՞նչ է նշանակում այս արտահայտությունը։",
+        "Կարո՞ղ ես մի օրինակ բերել։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Scusi, non ho capito l'ultima parola.",
+          "Che cosa significa questa espressione?",
+          "Puoi fare un esempio?"
+        ],
+        "en": [
+          "Sorry, I did not understand the last word.",
+          "What does this expression mean?",
+          "Can you give an example?"
+        ]
+      },
+      "tags": [
+        "stage:27",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-27"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-27-1",
+          "url": "browser-tts:hy-AM",
+          "text": "Կարո՞ղ եք ավելի դանդաղ խոսել։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l27_2",
+      "target_sentence": "Ի՞նչ է նշանակում այս արտահայտությունը։",
+      "translations": {
+        "it": "Che cosa significa questa espressione?",
+        "en": "What does this expression mean?"
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Che cosa significa questa espressione?",
+        "en": "Understand the meaning: What does this expression mean?"
+      },
+      "distractors": [
+        "Կներեք, վերջին բառը չհասկացա։",
+        "Կարո՞ղ եք ավելի դանդաղ խոսել։",
+        "Կարո՞ղ ես մի օրինակ բերել։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Scusi, non ho capito l'ultima parola.",
+          "Può parlare più lentamente?",
+          "Puoi fare un esempio?"
+        ],
+        "en": [
+          "Sorry, I did not understand the last word.",
+          "Could you speak more slowly?",
+          "Can you give an example?"
+        ]
+      },
+      "tags": [
+        "stage:27",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-27"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-27-2",
+          "url": "browser-tts:hy-AM",
+          "text": "Ի՞նչ է նշանակում այս արտահայտությունը։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l27_3",
+      "target_sentence": "Կարո՞ղ ես մի օրինակ բերել։",
+      "translations": {
+        "it": "Puoi fare un esempio?",
+        "en": "Can you give an example?"
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Puoi fare un esempio?",
+        "en": "Understand the meaning: Can you give an example?"
+      },
+      "distractors": [
+        "Կներեք, վերջին բառը չհասկացա։",
+        "Կարո՞ղ եք ավելի դանդաղ խոսել։",
+        "Ի՞նչ է նշանակում այս արտահայտությունը։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Scusi, non ho capito l'ultima parola.",
+          "Può parlare più lentamente?",
+          "Che cosa significa questa espressione?"
+        ],
+        "en": [
+          "Sorry, I did not understand the last word.",
+          "Could you speak more slowly?",
+          "What does this expression mean?"
+        ]
+      },
+      "tags": [
+        "stage:27",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-27"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-27-3",
+          "url": "browser-tts:hy-AM",
+          "text": "Կարո՞ղ ես մի օրինակ բերել։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l27_4",
+      "target_sentence": "Ես առաջին մասը հասկացա, բայց երկրորդը՝ ոչ։",
+      "translations": {
+        "it": "Ho capito la prima parte, ma non la seconda.",
+        "en": "I understood the first part, but not the second."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Ho capito la prima parte, ma non la seconda.",
+        "en": "Understand the meaning: I understood the first part, but not the second."
+      },
+      "distractors": [
+        "Կներեք, վերջին բառը չհասկացա։",
+        "Կարո՞ղ եք ավելի դանդաղ խոսել։",
+        "Ի՞նչ է նշանակում այս արտահայտությունը։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Scusi, non ho capito l'ultima parola.",
+          "Può parlare più lentamente?",
+          "Che cosa significa questa espressione?"
+        ],
+        "en": [
+          "Sorry, I did not understand the last word.",
+          "Could you speak more slowly?",
+          "What does this expression mean?"
+        ]
+      },
+      "tags": [
+        "stage:27",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-27"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-27-4",
+          "url": "browser-tts:hy-AM",
+          "text": "Ես առաջին մասը հասկացա, բայց երկրորդը՝ ոչ։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l27_5",
+      "target_sentence": "Խնդրում եմ, գրիր այդ բառը։",
+      "translations": {
+        "it": "Per favore, scrivi quella parola.",
+        "en": "Please write that word down."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Per favore, scrivi quella parola.",
+        "en": "Understand the meaning: Please write that word down."
+      },
+      "distractors": [
+        "Կներեք, վերջին բառը չհասկացա։",
+        "Կարո՞ղ եք ավելի դանդաղ խոսել։",
+        "Ի՞նչ է նշանակում այս արտահայտությունը։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Scusi, non ho capito l'ultima parola.",
+          "Può parlare più lentamente?",
+          "Che cosa significa questa espressione?"
+        ],
+        "en": [
+          "Sorry, I did not understand the last word.",
+          "Could you speak more slowly?",
+          "What does this expression mean?"
+        ]
+      },
+      "tags": [
+        "stage:27",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-27"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-27-5",
+          "url": "browser-tts:hy-AM",
+          "text": "Խնդրում եմ, գրիր այդ բառը։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l27_6",
+      "target_sentence": "Դու նկատի ունես այս դո՞ւռը։",
+      "translations": {
+        "it": "Intendi questa porta?",
+        "en": "Do you mean this door?"
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Intendi questa porta?",
+        "en": "Understand the meaning: Do you mean this door?"
+      },
+      "distractors": [
+        "Կներեք, վերջին բառը չհասկացա։",
+        "Կարո՞ղ եք ավելի դանդաղ խոսել։",
+        "Ի՞նչ է նշանակում այս արտահայտությունը։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Scusi, non ho capito l'ultima parola.",
+          "Può parlare più lentamente?",
+          "Che cosa significa questa espressione?"
+        ],
+        "en": [
+          "Sorry, I did not understand the last word.",
+          "Could you speak more slowly?",
+          "What does this expression mean?"
+        ]
+      },
+      "tags": [
+        "stage:27",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-27"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-27-6",
+          "url": "browser-tts:hy-AM",
+          "text": "Դու նկատի ունես այս դո՞ւռը։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l27_7",
+      "target_sentence": "Հիմա հասկացա, շնորհակալություն։",
+      "translations": {
+        "it": "Adesso ho capito, grazie.",
+        "en": "I understand now, thank you."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Adesso ho capito, grazie.",
+        "en": "Understand the meaning: I understand now, thank you."
+      },
+      "distractors": [
+        "Կներեք, վերջին բառը չհասկացա։",
+        "Կարո՞ղ եք ավելի դանդաղ խոսել։",
+        "Ի՞նչ է նշանակում այս արտահայտությունը։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Scusi, non ho capito l'ultima parola.",
+          "Può parlare più lentamente?",
+          "Che cosa significa questa espressione?"
+        ],
+        "en": [
+          "Sorry, I did not understand the last word.",
+          "Could you speak more slowly?",
+          "What does this expression mean?"
+        ]
+      },
+      "tags": [
+        "stage:27",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-27"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-27-7",
+          "url": "browser-tts:hy-AM",
+          "text": "Հիմա հասկացա, շնորհակալություն։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l28_0",
+      "target_sentence": "Ես նախընտրում եմ գնալ ոտքով։",
+      "translations": {
+        "it": "Preferisco andare a piedi.",
+        "en": "I prefer to walk."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Preferisco andare a piedi.",
+        "en": "Understand the meaning: I prefer to walk."
+      },
+      "distractors": [
+        "Այս գիրքն ավելի հետաքրքիր է, քան նախորդը։",
+        "Ինձ ավելի շատ դուր է գալիս կապույտը։",
+        "Երկու տարբերակն էլ լավն են։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Questo libro è più interessante del precedente.",
+          "Mi piace di più quello blu.",
+          "Entrambe le possibilità sono buone."
+        ],
+        "en": [
+          "This book is more interesting than the previous one.",
+          "I like the blue one more.",
+          "Both options are good."
+        ]
+      },
+      "tags": [
+        "stage:28",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-28"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-28-0",
+          "url": "browser-tts:hy-AM",
+          "text": "Ես նախընտրում եմ գնալ ոտքով։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l28_1",
+      "target_sentence": "Այս գիրքն ավելի հետաքրքիր է, քան նախորդը։",
+      "translations": {
+        "it": "Questo libro è più interessante del precedente.",
+        "en": "This book is more interesting than the previous one."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Questo libro è più interessante del precedente.",
+        "en": "Understand the meaning: This book is more interesting than the previous one."
+      },
+      "distractors": [
+        "Ես նախընտրում եմ գնալ ոտքով։",
+        "Ինձ ավելի շատ դուր է գալիս կապույտը։",
+        "Երկու տարբերակն էլ լավն են։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Preferisco andare a piedi.",
+          "Mi piace di più quello blu.",
+          "Entrambe le possibilità sono buone."
+        ],
+        "en": [
+          "I prefer to walk.",
+          "I like the blue one more.",
+          "Both options are good."
+        ]
+      },
+      "tags": [
+        "stage:28",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-28"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-28-1",
+          "url": "browser-tts:hy-AM",
+          "text": "Այս գիրքն ավելի հետաքրքիր է, քան նախորդը։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l28_2",
+      "target_sentence": "Ինձ ավելի շատ դուր է գալիս կապույտը։",
+      "translations": {
+        "it": "Mi piace di più quello blu.",
+        "en": "I like the blue one more."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Mi piace di più quello blu.",
+        "en": "Understand the meaning: I like the blue one more."
+      },
+      "distractors": [
+        "Ես նախընտրում եմ գնալ ոտքով։",
+        "Այս գիրքն ավելի հետաքրքիր է, քան նախորդը։",
+        "Երկու տարբերակն էլ լավն են։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Preferisco andare a piedi.",
+          "Questo libro è più interessante del precedente.",
+          "Entrambe le possibilità sono buone."
+        ],
+        "en": [
+          "I prefer to walk.",
+          "This book is more interesting than the previous one.",
+          "Both options are good."
+        ]
+      },
+      "tags": [
+        "stage:28",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-28"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-28-2",
+          "url": "browser-tts:hy-AM",
+          "text": "Ինձ ավելի շատ դուր է գալիս կապույտը։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l28_3",
+      "target_sentence": "Երկու տարբերակն էլ լավն են։",
+      "translations": {
+        "it": "Entrambe le possibilità sono buone.",
+        "en": "Both options are good."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Entrambe le possibilità sono buone.",
+        "en": "Understand the meaning: Both options are good."
+      },
+      "distractors": [
+        "Ես նախընտրում եմ գնալ ոտքով։",
+        "Այս գիրքն ավելի հետաքրքիր է, քան նախորդը։",
+        "Ինձ ավելի շատ դուր է գալիս կապույտը։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Preferisco andare a piedi.",
+          "Questo libro è più interessante del precedente.",
+          "Mi piace di più quello blu."
+        ],
+        "en": [
+          "I prefer to walk.",
+          "This book is more interesting than the previous one.",
+          "I like the blue one more."
+        ]
+      },
+      "tags": [
+        "stage:28",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-28"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-28-3",
+          "url": "browser-tts:hy-AM",
+          "text": "Երկու տարբերակն էլ լավն են։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l28_4",
+      "target_sentence": "Ես կընտրեմ փոքր պայուսակը, որովհետև այն թեթև է։",
+      "translations": {
+        "it": "Sceglierò la borsa piccola perché è leggera.",
+        "en": "I will choose the small bag because it is light."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Sceglierò la borsa piccola perché è leggera.",
+        "en": "Understand the meaning: I will choose the small bag because it is light."
+      },
+      "distractors": [
+        "Ես նախընտրում եմ գնալ ոտքով։",
+        "Այս գիրքն ավելի հետաքրքիր է, քան նախորդը։",
+        "Ինձ ավելի շատ դուր է գալիս կապույտը։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Preferisco andare a piedi.",
+          "Questo libro è più interessante del precedente.",
+          "Mi piace di più quello blu."
+        ],
+        "en": [
+          "I prefer to walk.",
+          "This book is more interesting than the previous one.",
+          "I like the blue one more."
+        ]
+      },
+      "tags": [
+        "stage:28",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-28"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-28-4",
+          "url": "browser-tts:hy-AM",
+          "text": "Ես կընտրեմ փոքր պայուսակը, որովհետև այն թեթև է։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l28_5",
+      "target_sentence": "Ամռանը սիրում եմ դրսում խաղալ։",
+      "translations": {
+        "it": "In estate mi piace giocare all'aperto.",
+        "en": "In summer I like playing outside."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: In estate mi piace giocare all'aperto.",
+        "en": "Understand the meaning: In summer I like playing outside."
+      },
+      "distractors": [
+        "Ես նախընտրում եմ գնալ ոտքով։",
+        "Այս գիրքն ավելի հետաքրքիր է, քան նախորդը։",
+        "Ինձ ավելի շատ դուր է գալիս կապույտը։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Preferisco andare a piedi.",
+          "Questo libro è più interessante del precedente.",
+          "Mi piace di più quello blu."
+        ],
+        "en": [
+          "I prefer to walk.",
+          "This book is more interesting than the previous one.",
+          "I like the blue one more."
+        ]
+      },
+      "tags": [
+        "stage:28",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-28"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-28-5",
+          "url": "browser-tts:hy-AM",
+          "text": "Ամռանը սիրում եմ դրսում խաղալ։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l28_6",
+      "target_sentence": "Իսկ ձմռանը հաճախ տանը գիրք եմ կարդում։",
+      "translations": {
+        "it": "Invece in inverno leggo spesso a casa.",
+        "en": "In winter, however, I often read at home."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Invece in inverno leggo spesso a casa.",
+        "en": "Understand the meaning: In winter, however, I often read at home."
+      },
+      "distractors": [
+        "Ես նախընտրում եմ գնալ ոտքով։",
+        "Այս գիրքն ավելի հետաքրքիր է, քան նախորդը։",
+        "Ինձ ավելի շատ դուր է գալիս կապույտը։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Preferisco andare a piedi.",
+          "Questo libro è più interessante del precedente.",
+          "Mi piace di più quello blu."
+        ],
+        "en": [
+          "I prefer to walk.",
+          "This book is more interesting than the previous one.",
+          "I like the blue one more."
+        ]
+      },
+      "tags": [
+        "stage:28",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-28"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-28-6",
+          "url": "browser-tts:hy-AM",
+          "text": "Իսկ ձմռանը հաճախ տանը գիրք եմ կարդում։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l28_7",
+      "target_sentence": "Ո՞ր խաղն ես ուզում նախ փորձել։",
+      "translations": {
+        "it": "Quale gioco vuoi provare per primo?",
+        "en": "Which game do you want to try first?"
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Quale gioco vuoi provare per primo?",
+        "en": "Understand the meaning: Which game do you want to try first?"
+      },
+      "distractors": [
+        "Ես նախընտրում եմ գնալ ոտքով։",
+        "Այս գիրքն ավելի հետաքրքիր է, քան նախորդը։",
+        "Ինձ ավելի շատ դուր է գալիս կապույտը։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Preferisco andare a piedi.",
+          "Questo libro è più interessante del precedente.",
+          "Mi piace di più quello blu."
+        ],
+        "en": [
+          "I prefer to walk.",
+          "This book is more interesting than the previous one.",
+          "I like the blue one more."
+        ]
+      },
+      "tags": [
+        "stage:28",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-28"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-28-7",
+          "url": "browser-tts:hy-AM",
+          "text": "Ո՞ր խաղն ես ուզում նախ փորձել։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l29_0",
+      "target_sentence": "Մենք իջնելու ենք հաջորդ կանգառում։",
+      "translations": {
+        "it": "Scenderemo alla prossima fermata.",
+        "en": "We are getting off at the next stop."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Scenderemo alla prossima fermata.",
+        "en": "Understand the meaning: We are getting off at the next stop."
+      },
+      "distractors": [
+        "Այս ավտոբուսը հասնո՞ւմ է կայարան։",
+        "Ուղիղ գնացեք մինչև կամուրջը։",
+        "Կամրջից հետո թեքվեք աջ։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Questo autobus arriva alla stazione?",
+          "Vada dritto fino al ponte.",
+          "Dopo il ponte giri a destra."
+        ],
+        "en": [
+          "Does this bus go to the station?",
+          "Go straight ahead as far as the bridge.",
+          "Turn right after the bridge."
+        ]
+      },
+      "tags": [
+        "stage:29",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-29"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-29-0",
+          "url": "browser-tts:hy-AM",
+          "text": "Մենք իջնելու ենք հաջորդ կանգառում։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l29_1",
+      "target_sentence": "Այս ավտոբուսը հասնո՞ւմ է կայարան։",
+      "translations": {
+        "it": "Questo autobus arriva alla stazione?",
+        "en": "Does this bus go to the station?"
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Questo autobus arriva alla stazione?",
+        "en": "Understand the meaning: Does this bus go to the station?"
+      },
+      "distractors": [
+        "Մենք իջնելու ենք հաջորդ կանգառում։",
+        "Ուղիղ գնացեք մինչև կամուրջը։",
+        "Կամրջից հետո թեքվեք աջ։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Scenderemo alla prossima fermata.",
+          "Vada dritto fino al ponte.",
+          "Dopo il ponte giri a destra."
+        ],
+        "en": [
+          "We are getting off at the next stop.",
+          "Go straight ahead as far as the bridge.",
+          "Turn right after the bridge."
+        ]
+      },
+      "tags": [
+        "stage:29",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-29"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-29-1",
+          "url": "browser-tts:hy-AM",
+          "text": "Այս ավտոբուսը հասնո՞ւմ է կայարան։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l29_2",
+      "target_sentence": "Ուղիղ գնացեք մինչև կամուրջը։",
+      "translations": {
+        "it": "Vada dritto fino al ponte.",
+        "en": "Go straight ahead as far as the bridge."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Vada dritto fino al ponte.",
+        "en": "Understand the meaning: Go straight ahead as far as the bridge."
+      },
+      "distractors": [
+        "Մենք իջնելու ենք հաջորդ կանգառում։",
+        "Այս ավտոբուսը հասնո՞ւմ է կայարան։",
+        "Կամրջից հետո թեքվեք աջ։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Scenderemo alla prossima fermata.",
+          "Questo autobus arriva alla stazione?",
+          "Dopo il ponte giri a destra."
+        ],
+        "en": [
+          "We are getting off at the next stop.",
+          "Does this bus go to the station?",
+          "Turn right after the bridge."
+        ]
+      },
+      "tags": [
+        "stage:29",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-29"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-29-2",
+          "url": "browser-tts:hy-AM",
+          "text": "Ուղիղ գնացեք մինչև կամուրջը։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l29_3",
+      "target_sentence": "Կամրջից հետո թեքվեք աջ։",
+      "translations": {
+        "it": "Dopo il ponte giri a destra.",
+        "en": "Turn right after the bridge."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Dopo il ponte giri a destra.",
+        "en": "Understand the meaning: Turn right after the bridge."
+      },
+      "distractors": [
+        "Մենք իջնելու ենք հաջորդ կանգառում։",
+        "Այս ավտոբուսը հասնո՞ւմ է կայարան։",
+        "Ուղիղ գնացեք մինչև կամուրջը։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Scenderemo alla prossima fermata.",
+          "Questo autobus arriva alla stazione?",
+          "Vada dritto fino al ponte."
+        ],
+        "en": [
+          "We are getting off at the next stop.",
+          "Does this bus go to the station?",
+          "Go straight ahead as far as the bridge."
+        ]
+      },
+      "tags": [
+        "stage:29",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-29"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-29-3",
+          "url": "browser-tts:hy-AM",
+          "text": "Կամրջից հետո թեքվեք աջ։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l29_4",
+      "target_sentence": "Ես սխալ փողոց եմ մտել։",
+      "translations": {
+        "it": "Ho imboccato la strada sbagliata.",
+        "en": "I have gone into the wrong street."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Ho imboccato la strada sbagliata.",
+        "en": "Understand the meaning: I have gone into the wrong street."
+      },
+      "distractors": [
+        "Մենք իջնելու ենք հաջորդ կանգառում։",
+        "Այս ավտոբուսը հասնո՞ւմ է կայարան։",
+        "Ուղիղ գնացեք մինչև կամուրջը։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Scenderemo alla prossima fermata.",
+          "Questo autobus arriva alla stazione?",
+          "Vada dritto fino al ponte."
+        ],
+        "en": [
+          "We are getting off at the next stop.",
+          "Does this bus go to the station?",
+          "Go straight ahead as far as the bridge."
+        ]
+      },
+      "tags": [
+        "stage:29",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-29"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-29-4",
+          "url": "browser-tts:hy-AM",
+          "text": "Ես սխալ փողոց եմ մտել։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l29_5",
+      "target_sentence": "Քարտեզի վրա ցույց կտա՞ք մեր տեղը։",
+      "translations": {
+        "it": "Può indicare sulla mappa dove siamo?",
+        "en": "Could you show where we are on the map?"
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Può indicare sulla mappa dove siamo?",
+        "en": "Understand the meaning: Could you show where we are on the map?"
+      },
+      "distractors": [
+        "Մենք իջնելու ենք հաջորդ կանգառում։",
+        "Այս ավտոբուսը հասնո՞ւմ է կայարան։",
+        "Ուղիղ գնացեք մինչև կամուրջը։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Scenderemo alla prossima fermata.",
+          "Questo autobus arriva alla stazione?",
+          "Vada dritto fino al ponte."
+        ],
+        "en": [
+          "We are getting off at the next stop.",
+          "Does this bus go to the station?",
+          "Go straight ahead as far as the bridge."
+        ]
+      },
+      "tags": [
+        "stage:29",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-29"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-29-5",
+          "url": "browser-tts:hy-AM",
+          "text": "Քարտեզի վրա ցույց կտա՞ք մեր տեղը։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l29_6",
+      "target_sentence": "Մինչև գնացքի մեկնելը դեռ քսան րոպե կա։",
+      "translations": {
+        "it": "Mancano ancora venti minuti alla partenza del treno.",
+        "en": "There are still twenty minutes until the train leaves."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Mancano ancora venti minuti alla partenza del treno.",
+        "en": "Understand the meaning: There are still twenty minutes until the train leaves."
+      },
+      "distractors": [
+        "Մենք իջնելու ենք հաջորդ կանգառում։",
+        "Այս ավտոբուսը հասնո՞ւմ է կայարան։",
+        "Ուղիղ գնացեք մինչև կամուրջը։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Scenderemo alla prossima fermata.",
+          "Questo autobus arriva alla stazione?",
+          "Vada dritto fino al ponte."
+        ],
+        "en": [
+          "We are getting off at the next stop.",
+          "Does this bus go to the station?",
+          "Go straight ahead as far as the bridge."
+        ]
+      },
+      "tags": [
+        "stage:29",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-29"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-29-6",
+          "url": "browser-tts:hy-AM",
+          "text": "Մինչև գնացքի մեկնելը դեռ քսան րոպե կա։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l29_7",
+      "target_sentence": "Եկեք ստուգենք տոմսի ժամը։",
+      "translations": {
+        "it": "Controlliamo l'orario sul biglietto.",
+        "en": "Let's check the time on the ticket."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Controlliamo l'orario sul biglietto.",
+        "en": "Understand the meaning: Let's check the time on the ticket."
+      },
+      "distractors": [
+        "Մենք իջնելու ենք հաջորդ կանգառում։",
+        "Այս ավտոբուսը հասնո՞ւմ է կայարան։",
+        "Ուղիղ գնացեք մինչև կամուրջը։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Scenderemo alla prossima fermata.",
+          "Questo autobus arriva alla stazione?",
+          "Vada dritto fino al ponte."
+        ],
+        "en": [
+          "We are getting off at the next stop.",
+          "Does this bus go to the station?",
+          "Go straight ahead as far as the bridge."
+        ]
+      },
+      "tags": [
+        "stage:29",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-29"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-29-7",
+          "url": "browser-tts:hy-AM",
+          "text": "Եկեք ստուգենք տոմսի ժամը։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l30_0",
+      "target_sentence": "Իմ պայուսակի կայծակաճարմանդը չի փակվում։",
+      "translations": {
+        "it": "La cerniera della borsa non si chiude.",
+        "en": "The zip on my bag will not close."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: La cerniera della borsa non si chiude.",
+        "en": "Understand the meaning: The zip on my bag will not close."
+      },
+      "distractors": [
+        "Ես չեմ հիշում, թե որտեղ եմ դրել բանալին։",
+        "Այս կոշիկները ինձ փոքր են։",
+        "Կարելի՞ է դրանք փոխել ավելի մեծերով։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Non ricordo dove ho messo la chiave.",
+          "Queste scarpe mi sono piccole.",
+          "Posso cambiarle con un paio più grande?"
+        ],
+        "en": [
+          "I cannot remember where I put the key.",
+          "These shoes are too small for me.",
+          "Can I exchange them for a larger pair?"
+        ]
+      },
+      "tags": [
+        "stage:30",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-30"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-30-0",
+          "url": "browser-tts:hy-AM",
+          "text": "Իմ պայուսակի կայծակաճարմանդը չի փակվում։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l30_1",
+      "target_sentence": "Ես չեմ հիշում, թե որտեղ եմ դրել բանալին։",
+      "translations": {
+        "it": "Non ricordo dove ho messo la chiave.",
+        "en": "I cannot remember where I put the key."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Non ricordo dove ho messo la chiave.",
+        "en": "Understand the meaning: I cannot remember where I put the key."
+      },
+      "distractors": [
+        "Իմ պայուսակի կայծակաճարմանդը չի փակվում։",
+        "Այս կոշիկները ինձ փոքր են։",
+        "Կարելի՞ է դրանք փոխել ավելի մեծերով։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "La cerniera della borsa non si chiude.",
+          "Queste scarpe mi sono piccole.",
+          "Posso cambiarle con un paio più grande?"
+        ],
+        "en": [
+          "The zip on my bag will not close.",
+          "These shoes are too small for me.",
+          "Can I exchange them for a larger pair?"
+        ]
+      },
+      "tags": [
+        "stage:30",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-30"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-30-1",
+          "url": "browser-tts:hy-AM",
+          "text": "Ես չեմ հիշում, թե որտեղ եմ դրել բանալին։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l30_2",
+      "target_sentence": "Այս կոշիկները ինձ փոքր են։",
+      "translations": {
+        "it": "Queste scarpe mi sono piccole.",
+        "en": "These shoes are too small for me."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Queste scarpe mi sono piccole.",
+        "en": "Understand the meaning: These shoes are too small for me."
+      },
+      "distractors": [
+        "Իմ պայուսակի կայծակաճարմանդը չի փակվում։",
+        "Ես չեմ հիշում, թե որտեղ եմ դրել բանալին։",
+        "Կարելի՞ է դրանք փոխել ավելի մեծերով։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "La cerniera della borsa non si chiude.",
+          "Non ricordo dove ho messo la chiave.",
+          "Posso cambiarle con un paio più grande?"
+        ],
+        "en": [
+          "The zip on my bag will not close.",
+          "I cannot remember where I put the key.",
+          "Can I exchange them for a larger pair?"
+        ]
+      },
+      "tags": [
+        "stage:30",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-30"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-30-2",
+          "url": "browser-tts:hy-AM",
+          "text": "Այս կոշիկները ինձ փոքր են։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l30_3",
+      "target_sentence": "Կարելի՞ է դրանք փոխել ավելի մեծերով։",
+      "translations": {
+        "it": "Posso cambiarle con un paio più grande?",
+        "en": "Can I exchange them for a larger pair?"
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Posso cambiarle con un paio più grande?",
+        "en": "Understand the meaning: Can I exchange them for a larger pair?"
+      },
+      "distractors": [
+        "Իմ պայուսակի կայծակաճարմանդը չի փակվում։",
+        "Ես չեմ հիշում, թե որտեղ եմ դրել բանալին։",
+        "Այս կոշիկները ինձ փոքր են։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "La cerniera della borsa non si chiude.",
+          "Non ricordo dove ho messo la chiave.",
+          "Queste scarpe mi sono piccole."
+        ],
+        "en": [
+          "The zip on my bag will not close.",
+          "I cannot remember where I put the key.",
+          "These shoes are too small for me."
+        ]
+      },
+      "tags": [
+        "stage:30",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-30"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-30-3",
+          "url": "browser-tts:hy-AM",
+          "text": "Կարելի՞ է դրանք փոխել ավելի մեծերով։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l30_4",
+      "target_sentence": "Մենք պետք է ուրիշ ճանապարհ գտնենք։",
+      "translations": {
+        "it": "Dobbiamo trovare un'altra strada.",
+        "en": "We need to find another route."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Dobbiamo trovare un'altra strada.",
+        "en": "Understand the meaning: We need to find another route."
+      },
+      "distractors": [
+        "Իմ պայուսակի կայծակաճարմանդը չի փակվում։",
+        "Ես չեմ հիշում, թե որտեղ եմ դրել բանալին։",
+        "Այս կոշիկները ինձ փոքր են։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "La cerniera della borsa non si chiude.",
+          "Non ricordo dove ho messo la chiave.",
+          "Queste scarpe mi sono piccole."
+        ],
+        "en": [
+          "The zip on my bag will not close.",
+          "I cannot remember where I put the key.",
+          "These shoes are too small for me."
+        ]
+      },
+      "tags": [
+        "stage:30",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-30"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-30-4",
+          "url": "browser-tts:hy-AM",
+          "text": "Մենք պետք է ուրիշ ճանապարհ գտնենք։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l30_5",
+      "target_sentence": "Մի անհանգստացիր, միասին կլուծենք խնդիրը։",
+      "translations": {
+        "it": "Non preoccuparti, risolveremo il problema insieme.",
+        "en": "Do not worry, we will solve the problem together."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Non preoccuparti, risolveremo il problema insieme.",
+        "en": "Understand the meaning: Do not worry, we will solve the problem together."
+      },
+      "distractors": [
+        "Իմ պայուսակի կայծակաճարմանդը չի փակվում։",
+        "Ես չեմ հիշում, թե որտեղ եմ դրել բանալին։",
+        "Այս կոշիկները ինձ փոքր են։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "La cerniera della borsa non si chiude.",
+          "Non ricordo dove ho messo la chiave.",
+          "Queste scarpe mi sono piccole."
+        ],
+        "en": [
+          "The zip on my bag will not close.",
+          "I cannot remember where I put the key.",
+          "These shoes are too small for me."
+        ]
+      },
+      "tags": [
+        "stage:30",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-30"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-30-5",
+          "url": "browser-tts:hy-AM",
+          "text": "Մի անհանգստացիր, միասին կլուծենք խնդիրը։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l30_6",
+      "target_sentence": "Ես քեզ կօգնեմ գտնել այն։",
+      "translations": {
+        "it": "Ti aiuterò a trovarlo.",
+        "en": "I will help you find it."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Ti aiuterò a trovarlo.",
+        "en": "Understand the meaning: I will help you find it."
+      },
+      "distractors": [
+        "Իմ պայուսակի կայծակաճարմանդը չի փակվում։",
+        "Ես չեմ հիշում, թե որտեղ եմ դրել բանալին։",
+        "Այս կոշիկները ինձ փոքր են։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "La cerniera della borsa non si chiude.",
+          "Non ricordo dove ho messo la chiave.",
+          "Queste scarpe mi sono piccole."
+        ],
+        "en": [
+          "The zip on my bag will not close.",
+          "I cannot remember where I put the key.",
+          "These shoes are too small for me."
+        ]
+      },
+      "tags": [
+        "stage:30",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-30"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-30-6",
+          "url": "browser-tts:hy-AM",
+          "text": "Ես քեզ կօգնեմ գտնել այն։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l30_7",
+      "target_sentence": "Ահա, բանալին բաճկոնի գրպանում է։",
+      "translations": {
+        "it": "Ecco, la chiave è nella tasca della giacca.",
+        "en": "Here it is: the key is in the jacket pocket."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Ecco, la chiave è nella tasca della giacca.",
+        "en": "Understand the meaning: Here it is: the key is in the jacket pocket."
+      },
+      "distractors": [
+        "Իմ պայուսակի կայծակաճարմանդը չի փակվում։",
+        "Ես չեմ հիշում, թե որտեղ եմ դրել բանալին։",
+        "Այս կոշիկները ինձ փոքր են։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "La cerniera della borsa non si chiude.",
+          "Non ricordo dove ho messo la chiave.",
+          "Queste scarpe mi sono piccole."
+        ],
+        "en": [
+          "The zip on my bag will not close.",
+          "I cannot remember where I put the key.",
+          "These shoes are too small for me."
+        ]
+      },
+      "tags": [
+        "stage:30",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-30"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-30-7",
+          "url": "browser-tts:hy-AM",
+          "text": "Ահա, բանալին բաճկոնի գրպանում է։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l31_0",
+      "target_sentence": "Խնդրում եմ, փակիր պատուհանը, երբ դուրս գաս։",
+      "translations": {
+        "it": "Per favore, chiudi la finestra quando esci.",
+        "en": "Please close the window when you leave."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Per favore, chiudi la finestra quando esci.",
+        "en": "Understand the meaning: Please close the window when you leave."
+      },
+      "distractors": [
+        "Նամակում գրված է, որ հանդիպումը հետաձգվել է։",
+        "Նախ կարդա հրահանգը, հետո սկսիր աշխատանքը։",
+        "Մի մոռացիր քեզ հետ ջուր վերցնել։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Nella lettera c'è scritto che l'incontro è stato rimandato.",
+          "Prima leggi le istruzioni, poi inizia il lavoro.",
+          "Non dimenticare di portare dell'acqua."
+        ],
+        "en": [
+          "The letter says that the meeting has been postponed.",
+          "Read the instructions first, then start the work.",
+          "Do not forget to bring water with you."
+        ]
+      },
+      "tags": [
+        "stage:31",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-31"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-31-0",
+          "url": "browser-tts:hy-AM",
+          "text": "Խնդրում եմ, փակիր պատուհանը, երբ դուրս գաս։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l31_1",
+      "target_sentence": "Նամակում գրված է, որ հանդիպումը հետաձգվել է։",
+      "translations": {
+        "it": "Nella lettera c'è scritto che l'incontro è stato rimandato.",
+        "en": "The letter says that the meeting has been postponed."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Nella lettera c'è scritto che l'incontro è stato rimandato.",
+        "en": "Understand the meaning: The letter says that the meeting has been postponed."
+      },
+      "distractors": [
+        "Խնդրում եմ, փակիր պատուհանը, երբ դուրս գաս։",
+        "Նախ կարդա հրահանգը, հետո սկսիր աշխատանքը։",
+        "Մի մոռացիր քեզ հետ ջուր վերցնել։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Per favore, chiudi la finestra quando esci.",
+          "Prima leggi le istruzioni, poi inizia il lavoro.",
+          "Non dimenticare di portare dell'acqua."
+        ],
+        "en": [
+          "Please close the window when you leave.",
+          "Read the instructions first, then start the work.",
+          "Do not forget to bring water with you."
+        ]
+      },
+      "tags": [
+        "stage:31",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-31"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-31-1",
+          "url": "browser-tts:hy-AM",
+          "text": "Նամակում գրված է, որ հանդիպումը հետաձգվել է։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l31_2",
+      "target_sentence": "Նախ կարդա հրահանգը, հետո սկսիր աշխատանքը։",
+      "translations": {
+        "it": "Prima leggi le istruzioni, poi inizia il lavoro.",
+        "en": "Read the instructions first, then start the work."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Prima leggi le istruzioni, poi inizia il lavoro.",
+        "en": "Understand the meaning: Read the instructions first, then start the work."
+      },
+      "distractors": [
+        "Խնդրում եմ, փակիր պատուհանը, երբ դուրս գաս։",
+        "Նամակում գրված է, որ հանդիպումը հետաձգվել է։",
+        "Մի մոռացիր քեզ հետ ջուր վերցնել։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Per favore, chiudi la finestra quando esci.",
+          "Nella lettera c'è scritto che l'incontro è stato rimandato.",
+          "Non dimenticare di portare dell'acqua."
+        ],
+        "en": [
+          "Please close the window when you leave.",
+          "The letter says that the meeting has been postponed.",
+          "Do not forget to bring water with you."
+        ]
+      },
+      "tags": [
+        "stage:31",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-31"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-31-2",
+          "url": "browser-tts:hy-AM",
+          "text": "Նախ կարդա հրահանգը, հետո սկսիր աշխատանքը։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l31_3",
+      "target_sentence": "Մի մոռացիր քեզ հետ ջուր վերցնել։",
+      "translations": {
+        "it": "Non dimenticare di portare dell'acqua.",
+        "en": "Do not forget to bring water with you."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Non dimenticare di portare dell'acqua.",
+        "en": "Understand the meaning: Do not forget to bring water with you."
+      },
+      "distractors": [
+        "Խնդրում եմ, փակիր պատուհանը, երբ դուրս գաս։",
+        "Նամակում գրված է, որ հանդիպումը հետաձգվել է։",
+        "Նախ կարդա հրահանգը, հետո սկսիր աշխատանքը։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Per favore, chiudi la finestra quando esci.",
+          "Nella lettera c'è scritto che l'incontro è stato rimandato.",
+          "Prima leggi le istruzioni, poi inizia il lavoro."
+        ],
+        "en": [
+          "Please close the window when you leave.",
+          "The letter says that the meeting has been postponed.",
+          "Read the instructions first, then start the work."
+        ]
+      },
+      "tags": [
+        "stage:31",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-31"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-31-3",
+          "url": "browser-tts:hy-AM",
+          "text": "Մի մոռացիր քեզ հետ ջուր վերցնել։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l31_4",
+      "target_sentence": "Ես քեզ կուղարկեմ նոր հասցեն։",
+      "translations": {
+        "it": "Ti manderò il nuovo indirizzo.",
+        "en": "I will send you the new address."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Ti manderò il nuovo indirizzo.",
+        "en": "Understand the meaning: I will send you the new address."
+      },
+      "distractors": [
+        "Խնդրում եմ, փակիր պատուհանը, երբ դուրս գաս։",
+        "Նամակում գրված է, որ հանդիպումը հետաձգվել է։",
+        "Նախ կարդա հրահանգը, հետո սկսիր աշխատանքը։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Per favore, chiudi la finestra quando esci.",
+          "Nella lettera c'è scritto che l'incontro è stato rimandato.",
+          "Prima leggi le istruzioni, poi inizia il lavoro."
+        ],
+        "en": [
+          "Please close the window when you leave.",
+          "The letter says that the meeting has been postponed.",
+          "Read the instructions first, then start the work."
+        ]
+      },
+      "tags": [
+        "stage:31",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-31"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-31-4",
+          "url": "browser-tts:hy-AM",
+          "text": "Ես քեզ կուղարկեմ նոր հասցեն։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l31_5",
+      "target_sentence": "Եթե ուշանաս, ինձ հաղորդագրություն գրիր։",
+      "translations": {
+        "it": "Se fai tardi, mandami un messaggio.",
+        "en": "If you are late, send me a message."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Se fai tardi, mandami un messaggio.",
+        "en": "Understand the meaning: If you are late, send me a message."
+      },
+      "distractors": [
+        "Խնդրում եմ, փակիր պատուհանը, երբ դուրս գաս։",
+        "Նամակում գրված է, որ հանդիպումը հետաձգվել է։",
+        "Նախ կարդա հրահանգը, հետո սկսիր աշխատանքը։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Per favore, chiudi la finestra quando esci.",
+          "Nella lettera c'è scritto che l'incontro è stato rimandato.",
+          "Prima leggi le istruzioni, poi inizia il lavoro."
+        ],
+        "en": [
+          "Please close the window when you leave.",
+          "The letter says that the meeting has been postponed.",
+          "Read the instructions first, then start the work."
+        ]
+      },
+      "tags": [
+        "stage:31",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-31"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-31-5",
+          "url": "browser-tts:hy-AM",
+          "text": "Եթե ուշանաս, ինձ հաղորդագրություն գրիր։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l31_6",
+      "target_sentence": "Սա տեղեկություն է բոլոր ծնողների համար։",
+      "translations": {
+        "it": "Questa è un'informazione per tutti i genitori.",
+        "en": "This information is for all parents."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Questa è un'informazione per tutti i genitori.",
+        "en": "Understand the meaning: This information is for all parents."
+      },
+      "distractors": [
+        "Խնդրում եմ, փակիր պատուհանը, երբ դուրս գաս։",
+        "Նամակում գրված է, որ հանդիպումը հետաձգվել է։",
+        "Նախ կարդա հրահանգը, հետո սկսիր աշխատանքը։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Per favore, chiudi la finestra quando esci.",
+          "Nella lettera c'è scritto che l'incontro è stato rimandato.",
+          "Prima leggi le istruzioni, poi inizia il lavoro."
+        ],
+        "en": [
+          "Please close the window when you leave.",
+          "The letter says that the meeting has been postponed.",
+          "Read the instructions first, then start the work."
+        ]
+      },
+      "tags": [
+        "stage:31",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-31"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-31-6",
+          "url": "browser-tts:hy-AM",
+          "text": "Սա տեղեկություն է բոլոր ծնողների համար։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l31_7",
+      "target_sentence": "Պատասխանիր մինչև ուրբաթ երեկո։",
+      "translations": {
+        "it": "Rispondi entro venerdì sera.",
+        "en": "Reply by Friday evening."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Rispondi entro venerdì sera.",
+        "en": "Understand the meaning: Reply by Friday evening."
+      },
+      "distractors": [
+        "Խնդրում եմ, փակիր պատուհանը, երբ դուրս գաս։",
+        "Նամակում գրված է, որ հանդիպումը հետաձգվել է։",
+        "Նախ կարդա հրահանգը, հետո սկսիր աշխատանքը։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Per favore, chiudi la finestra quando esci.",
+          "Nella lettera c'è scritto che l'incontro è stato rimandato.",
+          "Prima leggi le istruzioni, poi inizia il lavoro."
+        ],
+        "en": [
+          "Please close the window when you leave.",
+          "The letter says that the meeting has been postponed.",
+          "Read the instructions first, then start the work."
+        ]
+      },
+      "tags": [
+        "stage:31",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-31"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-31-7",
+          "url": "browser-tts:hy-AM",
+          "text": "Պատասխանիր մինչև ուրբաթ երեկո։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l32_0",
+      "target_sentence": "Ես երբեք այդ թանգարանում չեմ եղել։",
+      "translations": {
+        "it": "Non sono mai stato in quel museo.",
+        "en": "I have never been to that museum."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Non sono mai stato in quel museo.",
+        "en": "Understand the meaning: I have never been to that museum."
+      },
+      "distractors": [
+        "Անցյալ ամառ առաջին անգամ սար բարձրացա։",
+        "Սկզբում վախենում էի, բայց հետո հանգստացա։",
+        "Մեր ճանապարհորդությունը երեք օր տևեց։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "L'estate scorsa ho scalato una montagna per la prima volta.",
+          "All'inizio avevo paura, ma poi mi sono calmato.",
+          "Il nostro viaggio è durato tre giorni."
+        ],
+        "en": [
+          "Last summer I climbed a mountain for the first time.",
+          "At first I was afraid, but then I calmed down.",
+          "Our trip lasted three days."
+        ]
+      },
+      "tags": [
+        "stage:32",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-32"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-32-0",
+          "url": "browser-tts:hy-AM",
+          "text": "Ես երբեք այդ թանգարանում չեմ եղել։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l32_1",
+      "target_sentence": "Անցյալ ամառ առաջին անգամ սար բարձրացա։",
+      "translations": {
+        "it": "L'estate scorsa ho scalato una montagna per la prima volta.",
+        "en": "Last summer I climbed a mountain for the first time."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: L'estate scorsa ho scalato una montagna per la prima volta.",
+        "en": "Understand the meaning: Last summer I climbed a mountain for the first time."
+      },
+      "distractors": [
+        "Ես երբեք այդ թանգարանում չեմ եղել։",
+        "Սկզբում վախենում էի, բայց հետո հանգստացա։",
+        "Մեր ճանապարհորդությունը երեք օր տևեց։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Non sono mai stato in quel museo.",
+          "All'inizio avevo paura, ma poi mi sono calmato.",
+          "Il nostro viaggio è durato tre giorni."
+        ],
+        "en": [
+          "I have never been to that museum.",
+          "At first I was afraid, but then I calmed down.",
+          "Our trip lasted three days."
+        ]
+      },
+      "tags": [
+        "stage:32",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-32"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-32-1",
+          "url": "browser-tts:hy-AM",
+          "text": "Անցյալ ամառ առաջին անգամ սար բարձրացա։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l32_2",
+      "target_sentence": "Սկզբում վախենում էի, բայց հետո հանգստացա։",
+      "translations": {
+        "it": "All'inizio avevo paura, ma poi mi sono calmato.",
+        "en": "At first I was afraid, but then I calmed down."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: All'inizio avevo paura, ma poi mi sono calmato.",
+        "en": "Understand the meaning: At first I was afraid, but then I calmed down."
+      },
+      "distractors": [
+        "Ես երբեք այդ թանգարանում չեմ եղել։",
+        "Անցյալ ամառ առաջին անգամ սար բարձրացա։",
+        "Մեր ճանապարհորդությունը երեք օր տևեց։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Non sono mai stato in quel museo.",
+          "L'estate scorsa ho scalato una montagna per la prima volta.",
+          "Il nostro viaggio è durato tre giorni."
+        ],
+        "en": [
+          "I have never been to that museum.",
+          "Last summer I climbed a mountain for the first time.",
+          "Our trip lasted three days."
+        ]
+      },
+      "tags": [
+        "stage:32",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-32"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-32-2",
+          "url": "browser-tts:hy-AM",
+          "text": "Սկզբում վախենում էի, բայց հետո հանգստացա։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l32_3",
+      "target_sentence": "Մեր ճանապարհորդությունը երեք օր տևեց։",
+      "translations": {
+        "it": "Il nostro viaggio è durato tre giorni.",
+        "en": "Our trip lasted three days."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Il nostro viaggio è durato tre giorni.",
+        "en": "Understand the meaning: Our trip lasted three days."
+      },
+      "distractors": [
+        "Ես երբեք այդ թանգարանում չեմ եղել։",
+        "Անցյալ ամառ առաջին անգամ սար բարձրացա։",
+        "Սկզբում վախենում էի, բայց հետո հանգստացա։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Non sono mai stato in quel museo.",
+          "L'estate scorsa ho scalato una montagna per la prima volta.",
+          "All'inizio avevo paura, ma poi mi sono calmato."
+        ],
+        "en": [
+          "I have never been to that museum.",
+          "Last summer I climbed a mountain for the first time.",
+          "At first I was afraid, but then I calmed down."
+        ]
+      },
+      "tags": [
+        "stage:32",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-32"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-32-3",
+          "url": "browser-tts:hy-AM",
+          "text": "Մեր ճանապարհորդությունը երեք օր տևեց։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l32_4",
+      "target_sentence": "Ամեն երեկո գրի էի առնում օրվա դեպքերը։",
+      "translations": {
+        "it": "Ogni sera annotavo gli avvenimenti della giornata.",
+        "en": "Every evening I wrote down the day's events."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Ogni sera annotavo gli avvenimenti della giornata.",
+        "en": "Understand the meaning: Every evening I wrote down the day's events."
+      },
+      "distractors": [
+        "Ես երբեք այդ թանգարանում չեմ եղել։",
+        "Անցյալ ամառ առաջին անգամ սար բարձրացա։",
+        "Սկզբում վախենում էի, բայց հետո հանգստացա։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Non sono mai stato in quel museo.",
+          "L'estate scorsa ho scalato una montagna per la prima volta.",
+          "All'inizio avevo paura, ma poi mi sono calmato."
+        ],
+        "en": [
+          "I have never been to that museum.",
+          "Last summer I climbed a mountain for the first time.",
+          "At first I was afraid, but then I calmed down."
+        ]
+      },
+      "tags": [
+        "stage:32",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-32"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-32-4",
+          "url": "browser-tts:hy-AM",
+          "text": "Ամեն երեկո գրի էի առնում օրվա դեպքերը։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l32_5",
+      "target_sentence": "Ամենաշատը հիշում եմ լճի տեսարանը։",
+      "translations": {
+        "it": "Ricordo soprattutto la vista del lago.",
+        "en": "I remember the view of the lake most of all."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Ricordo soprattutto la vista del lago.",
+        "en": "Understand the meaning: I remember the view of the lake most of all."
+      },
+      "distractors": [
+        "Ես երբեք այդ թանգարանում չեմ եղել։",
+        "Անցյալ ամառ առաջին անգամ սար բարձրացա։",
+        "Սկզբում վախենում էի, բայց հետո հանգստացա։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Non sono mai stato in quel museo.",
+          "L'estate scorsa ho scalato una montagna per la prima volta.",
+          "All'inizio avevo paura, ma poi mi sono calmato."
+        ],
+        "en": [
+          "I have never been to that museum.",
+          "Last summer I climbed a mountain for the first time.",
+          "At first I was afraid, but then I calmed down."
+        ]
+      },
+      "tags": [
+        "stage:32",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-32"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-32-5",
+          "url": "browser-tts:hy-AM",
+          "text": "Ամենաշատը հիշում եմ լճի տեսարանը։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l32_6",
+      "target_sentence": "Կցանկանայի նորից գնալ այնտեղ։",
+      "translations": {
+        "it": "Mi piacerebbe tornarci.",
+        "en": "I would like to go there again."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Mi piacerebbe tornarci.",
+        "en": "Understand the meaning: I would like to go there again."
+      },
+      "distractors": [
+        "Ես երբեք այդ թանգարանում չեմ եղել։",
+        "Անցյալ ամառ առաջին անգամ սար բարձրացա։",
+        "Սկզբում վախենում էի, բայց հետո հանգստացա։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Non sono mai stato in quel museo.",
+          "L'estate scorsa ho scalato una montagna per la prima volta.",
+          "All'inizio avevo paura, ma poi mi sono calmato."
+        ],
+        "en": [
+          "I have never been to that museum.",
+          "Last summer I climbed a mountain for the first time.",
+          "At first I was afraid, but then I calmed down."
+        ]
+      },
+      "tags": [
+        "stage:32",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-32"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-32-6",
+          "url": "browser-tts:hy-AM",
+          "text": "Կցանկանայի նորից գնալ այնտեղ։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_school_l32_7",
+      "target_sentence": "Այդ փորձը ինձ ավելի համարձակ դարձրեց։",
+      "translations": {
+        "it": "Quell'esperienza mi ha reso più coraggioso.",
+        "en": "That experience made me braver."
+      },
+      "prompt": {
+        "it": "Comprendi il significato: Quell'esperienza mi ha reso più coraggioso.",
+        "en": "Understand the meaning: That experience made me braver."
+      },
+      "distractors": [
+        "Ես երբեք այդ թանգարանում չեմ եղել։",
+        "Անցյալ ամառ առաջին անգամ սար բարձրացա։",
+        "Սկզբում վախենում էի, բայց հետո հանգստացա։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Non sono mai stato in quel museo.",
+          "L'estate scorsa ho scalato una montagna per la prima volta.",
+          "All'inizio avevo paura, ma poi mi sono calmato."
+        ],
+        "en": [
+          "I have never been to that museum.",
+          "Last summer I climbed a mountain for the first time.",
+          "At first I was afraid, but then I calmed down."
+        ]
+      },
+      "tags": [
+        "stage:32",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-32"
+      ],
+      "audio": [
+        {
+          "id": "browser-hy-32-7",
+          "url": "browser-tts:hy-AM",
+          "text": "Այդ փորձը ինձ ավելի համարձակ դարձրեց։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "review_status": "needs_native_speaker_review",
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_passage_25",
+      "target_sentence": "Անին կիրակի օրը ուզում է այգի գնալ։ Նա Արամին հրավիրում է միասին խաղալու։ Արամը կարող է գալ միայն կեսօրից հետո։ Նրանք որոշում են հանդիպել ժամը երեքին՝ գրադարանի մոտ։",
+      "translations": {
+        "it": "Ani vuole andare al parco domenica e invita Aram a giocare. Aram può venire solo nel pomeriggio. Decidono di incontrarsi alle tre vicino alla biblioteca.",
+        "en": "Ani wants to go to the park on Sunday and invites Aram to play. Aram can only come in the afternoon. They decide to meet at three near the library."
+      },
+      "prompt": {
+        "it": "Leggi o ascolta il brano.",
+        "en": "Read or listen to the passage."
+      },
+      "distractors": [
+        "Կուզե՞ս մեզ հետ այգի գալ։",
+        "Շնորհակալ եմ հրավերի համար։",
+        "Այս անգամ չեմ կարող գալ։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Ti piacerebbe venire al parco con noi?",
+          "Grazie per l'invito.",
+          "Questa volta non posso venire."
+        ],
+        "en": [
+          "Would you like to come to the park with us?",
+          "Thank you for the invitation.",
+          "I cannot come this time."
+        ]
+      },
+      "tags": [
+        "stage:25",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-25"
+      ],
+      "review_status": "needs_native_speaker_review",
+      "audio": [
+        {
+          "id": "voice-passage-25",
+          "url": "browser-tts:hy-AM",
+          "text": "Անին կիրակի օրը ուզում է այգի գնալ։ Նա Արամին հրավիրում է միասին խաղալու։ Արամը կարող է գալ միայն կեսօրից հետո։ Նրանք որոշում են հանդիպել ժամը երեքին՝ գրադարանի մոտ։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "comprehension_questions": [
+        {
+          "question": {
+            "it": "Dove si incontrano?",
+            "en": "Where will they meet?"
+          },
+          "answer": {
+            "it": "Vicino alla biblioteca",
+            "en": "Near the library"
+          },
+          "distractors": {
+            "it": [
+              "A scuola",
+              "In casa"
+            ],
+            "en": [
+              "At school",
+              "At home"
+            ]
+          }
+        },
+        {
+          "question": {
+            "it": "Quando può venire Aram?",
+            "en": "When can Aram come?"
+          },
+          "answer": {
+            "it": "Nel pomeriggio",
+            "en": "In the afternoon"
+          },
+          "distractors": {
+            "it": [
+              "Solo al mattino",
+              "Solo lunedì"
+            ],
+            "en": [
+              "Only in the morning",
+              "Only on Monday"
+            ]
+          }
+        }
+      ],
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_passage_26",
+      "target_sentence": "Երեկ Արամը դպրոց գնաց ավտոբուսով։ Նա մոռացել էր իր գիրքը տանը։ Ընկերուհին նրան իր գիրքը տվեց։ Դասերից հետո Արամը գիրքը վերադարձրեց և շնորհակալություն հայտնեց։",
+      "translations": {
+        "it": "Ieri Aram è andato a scuola in autobus. Aveva lasciato il libro a casa. Un’amica gli ha prestato il suo. Dopo le lezioni Aram lo ha restituito e l’ha ringraziata.",
+        "en": "Yesterday Aram went to school by bus. He had left his book at home. A friend lent him hers. After lessons he returned it and thanked her."
+      },
+      "prompt": {
+        "it": "Leggi o ascolta il brano.",
+        "en": "Read or listen to the passage."
+      },
+      "distractors": [
+        "Նախ նախաճաշեցի, հետո դպրոց գնացի։",
+        "Դասերից հետո ընկերոջս հետ խաղացի։",
+        "Երբ տուն հասա, արդեն մութ էր։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Prima ho fatto colazione, poi sono andato a scuola.",
+          "Dopo le lezioni ho giocato con un amico.",
+          "Quando sono arrivato a casa, era già buio."
+        ],
+        "en": [
+          "First I had breakfast, then I went to school.",
+          "After lessons I played with my friend.",
+          "When I got home, it was already dark."
+        ]
+      },
+      "tags": [
+        "stage:26",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-26"
+      ],
+      "review_status": "needs_native_speaker_review",
+      "audio": [
+        {
+          "id": "voice-passage-26",
+          "url": "browser-tts:hy-AM",
+          "text": "Երեկ Արամը դպրոց գնաց ավտոբուսով։ Նա մոռացել էր իր գիրքը տանը։ Ընկերուհին նրան իր գիրքը տվեց։ Դասերից հետո Արամը գիրքը վերադարձրեց և շնորհակալություն հայտնեց։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "comprehension_questions": [
+        {
+          "question": {
+            "it": "Perché aveva bisogno del libro dell’amica?",
+            "en": "Why did he need his friend’s book?"
+          },
+          "answer": {
+            "it": "Il suo era a casa",
+            "en": "His was at home"
+          },
+          "distractors": {
+            "it": [
+              "Lo aveva venduto",
+              "Voleva due libri"
+            ],
+            "en": [
+              "He had sold his",
+              "He wanted two books"
+            ]
+          }
+        },
+        {
+          "question": {
+            "it": "Che cosa fa dopo le lezioni?",
+            "en": "What does he do after lessons?"
+          },
+          "answer": {
+            "it": "Restituisce il libro",
+            "en": "Returns the book"
+          },
+          "distractors": {
+            "it": [
+              "Lo perde",
+              "Lo compra"
+            ],
+            "en": [
+              "Loses it",
+              "Buys it"
+            ]
+          }
+        }
+      ],
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_passage_27",
+      "target_sentence": "Ուսուցիչը բացատրեց նոր խաղի կանոնները։ Անին առաջին մասը հասկացավ, բայց երկրորդը՝ ոչ։ Նա խնդրեց մի օրինակ բերել։ Ուսուցիչը ցույց տվեց, թե ինչպես է սկսվում խաղը։ Հիմա Անին կարող էր մասնակցել։",
+      "translations": {
+        "it": "L’insegnante ha spiegato le regole di un nuovo gioco. Ani ha capito la prima parte ma non la seconda e ha chiesto un esempio. L’insegnante ha mostrato l’inizio del gioco. Ora Ani poteva partecipare.",
+        "en": "The teacher explained the rules of a new game. Ani understood the first part but not the second, so she asked for an example. The teacher demonstrated the start. Now Ani could participate."
+      },
+      "prompt": {
+        "it": "Leggi o ascolta il brano.",
+        "en": "Read or listen to the passage."
+      },
+      "distractors": [
+        "Կարո՞ղ եք ավելի դանդաղ խոսել։",
+        "Ի՞նչ է նշանակում այս արտահայտությունը։",
+        "Կարո՞ղ ես մի օրինակ բերել։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Può parlare più lentamente?",
+          "Che cosa significa questa espressione?",
+          "Puoi fare un esempio?"
+        ],
+        "en": [
+          "Could you speak more slowly?",
+          "What does this expression mean?",
+          "Can you give an example?"
+        ]
+      },
+      "tags": [
+        "stage:27",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-27"
+      ],
+      "review_status": "needs_native_speaker_review",
+      "audio": [
+        {
+          "id": "voice-passage-27",
+          "url": "browser-tts:hy-AM",
+          "text": "Ուսուցիչը բացատրեց նոր խաղի կանոնները։ Անին առաջին մասը հասկացավ, բայց երկրորդը՝ ոչ։ Նա խնդրեց մի օրինակ բերել։ Ուսուցիչը ցույց տվեց, թե ինչպես է սկսվում խաղը։ Հիմա Անին կարող էր մասնակցել։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "comprehension_questions": [
+        {
+          "question": {
+            "it": "Che cosa chiede Ani?",
+            "en": "What does Ani ask for?"
+          },
+          "answer": {
+            "it": "Un esempio",
+            "en": "An example"
+          },
+          "distractors": {
+            "it": [
+              "Un premio",
+              "Una pausa pranzo"
+            ],
+            "en": [
+              "A prize",
+              "A lunch break"
+            ]
+          }
+        },
+        {
+          "question": {
+            "it": "Che cosa la aiuta a capire?",
+            "en": "What helps her understand?"
+          },
+          "answer": {
+            "it": "La dimostrazione",
+            "en": "The demonstration"
+          },
+          "distractors": {
+            "it": [
+              "Un biglietto",
+              "Un disegno della scuola"
+            ],
+            "en": [
+              "A ticket",
+              "A drawing of the school"
+            ]
+          }
+        }
+      ],
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_passage_28",
+      "target_sentence": "Անին ընտրում էր երկու պայուսակների միջև։ Կարմիր պայուսակը մեծ էր, բայց ծանր։ Կապույտը փոքր էր և թեթև։ Քանի որ Անին պետք է երկար քայլեր, նա ընտրեց կապույտը։",
+      "translations": {
+        "it": "Ani sceglieva tra due borse. Quella rossa era grande ma pesante; quella blu piccola e leggera. Doveva camminare a lungo, quindi ha scelto la blu.",
+        "en": "Ani was choosing between two bags. The red one was large but heavy; the blue one was small and light. Because she had a long walk ahead, she chose the blue one."
+      },
+      "prompt": {
+        "it": "Leggi o ascolta il brano.",
+        "en": "Read or listen to the passage."
+      },
+      "distractors": [
+        "Այս գիրքն ավելի հետաքրքիր է, քան նախորդը։",
+        "Ինձ ավելի շատ դուր է գալիս կապույտը։",
+        "Երկու տարբերակն էլ լավն են։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Questo libro è più interessante del precedente.",
+          "Mi piace di più quello blu.",
+          "Entrambe le possibilità sono buone."
+        ],
+        "en": [
+          "This book is more interesting than the previous one.",
+          "I like the blue one more.",
+          "Both options are good."
+        ]
+      },
+      "tags": [
+        "stage:28",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-28"
+      ],
+      "review_status": "needs_native_speaker_review",
+      "audio": [
+        {
+          "id": "voice-passage-28",
+          "url": "browser-tts:hy-AM",
+          "text": "Անին ընտրում էր երկու պայուսակների միջև։ Կարմիր պայուսակը մեծ էր, բայց ծանր։ Կապույտը փոքր էր և թեթև։ Քանի որ Անին պետք է երկար քայլեր, նա ընտրեց կապույտը։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "comprehension_questions": [
+        {
+          "question": {
+            "it": "Quale borsa sceglie?",
+            "en": "Which bag does she choose?"
+          },
+          "answer": {
+            "it": "La blu",
+            "en": "The blue one"
+          },
+          "distractors": {
+            "it": [
+              "La rossa",
+              "Nessuna"
+            ],
+            "en": [
+              "The red one",
+              "Neither"
+            ]
+          }
+        },
+        {
+          "question": {
+            "it": "Quale caratteristica guida la scelta?",
+            "en": "Which feature guides her choice?"
+          },
+          "answer": {
+            "it": "Il peso",
+            "en": "Weight"
+          },
+          "distractors": {
+            "it": [
+              "Il prezzo",
+              "Una tasca rotta"
+            ],
+            "en": [
+              "Price",
+              "A broken pocket"
+            ]
+          }
+        }
+      ],
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_passage_29",
+      "target_sentence": "Արամը ուզում էր թանգարան գնալ։ Նա նստեց հինգ համարի ավտոբուսը։ Վարորդն ասաց, որ պետք է իջնել կամրջից հետո։ Արամը նայեց քարտեզին և գտավ թանգարանի փողոցը։",
+      "translations": {
+        "it": "Aram voleva andare al museo. Ha preso l’autobus numero cinque. L’autista gli ha detto di scendere dopo il ponte. Aram ha trovato la strada del museo sulla mappa.",
+        "en": "Aram wanted to go to the museum. He took bus number five. The driver told him to get off after the bridge. Aram found the museum’s street on the map."
+      },
+      "prompt": {
+        "it": "Leggi o ascolta il brano.",
+        "en": "Read or listen to the passage."
+      },
+      "distractors": [
+        "Այս ավտոբուսը հասնո՞ւմ է կայարան։",
+        "Ուղիղ գնացեք մինչև կամուրջը։",
+        "Կամրջից հետո թեքվեք աջ։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Questo autobus arriva alla stazione?",
+          "Vada dritto fino al ponte.",
+          "Dopo il ponte giri a destra."
+        ],
+        "en": [
+          "Does this bus go to the station?",
+          "Go straight ahead as far as the bridge.",
+          "Turn right after the bridge."
+        ]
+      },
+      "tags": [
+        "stage:29",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-29"
+      ],
+      "review_status": "needs_native_speaker_review",
+      "audio": [
+        {
+          "id": "voice-passage-29",
+          "url": "browser-tts:hy-AM",
+          "text": "Արամը ուզում էր թանգարան գնալ։ Նա նստեց հինգ համարի ավտոբուսը։ Վարորդն ասաց, որ պետք է իջնել կամրջից հետո։ Արամը նայեց քարտեզին և գտավ թանգարանի փողոցը։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "comprehension_questions": [
+        {
+          "question": {
+            "it": "Dove vuole andare?",
+            "en": "Where does he want to go?"
+          },
+          "answer": {
+            "it": "Al museo",
+            "en": "To the museum"
+          },
+          "distractors": {
+            "it": [
+              "Alla piscina",
+              "All’aeroporto"
+            ],
+            "en": [
+              "To the pool",
+              "To the airport"
+            ]
+          }
+        },
+        {
+          "question": {
+            "it": "Quando deve scendere?",
+            "en": "When should he get off?"
+          },
+          "answer": {
+            "it": "Dopo il ponte",
+            "en": "After the bridge"
+          },
+          "distractors": {
+            "it": [
+              "Prima del ponte",
+              "Prima di partire"
+            ],
+            "en": [
+              "Before the bridge",
+              "Before departure"
+            ]
+          }
+        }
+      ],
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_passage_30",
+      "target_sentence": "Անիի նոր կոշիկները փոքր էին։ Նա մոր հետ վերադարձավ խանութ։ Վաճառողը առաջարկեց ավելի մեծ չափս։ Անին փորձեց դրանք և ասաց, որ հիմա հարմար են։",
+      "translations": {
+        "it": "Le scarpe nuove di Ani erano piccole. È tornata al negozio con la madre. Il commesso ha proposto una misura più grande. Ani le ha provate e le ha trovate comode.",
+        "en": "Ani’s new shoes were too small. She returned to the shop with her mother. The assistant suggested a larger size. Ani tried them and found them comfortable."
+      },
+      "prompt": {
+        "it": "Leggi o ascolta il brano.",
+        "en": "Read or listen to the passage."
+      },
+      "distractors": [
+        "Ես չեմ հիշում, թե որտեղ եմ դրել բանալին։",
+        "Այս կոշիկները ինձ փոքր են։",
+        "Կարելի՞ է դրանք փոխել ավելի մեծերով։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Non ricordo dove ho messo la chiave.",
+          "Queste scarpe mi sono piccole.",
+          "Posso cambiarle con un paio più grande?"
+        ],
+        "en": [
+          "I cannot remember where I put the key.",
+          "These shoes are too small for me.",
+          "Can I exchange them for a larger pair?"
+        ]
+      },
+      "tags": [
+        "stage:30",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-30"
+      ],
+      "review_status": "needs_native_speaker_review",
+      "audio": [
+        {
+          "id": "voice-passage-30",
+          "url": "browser-tts:hy-AM",
+          "text": "Անիի նոր կոշիկները փոքր էին։ Նա մոր հետ վերադարձավ խանութ։ Վաճառողը առաջարկեց ավելի մեծ չափս։ Անին փորձեց դրանք և ասաց, որ հիմա հարմար են։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "comprehension_questions": [
+        {
+          "question": {
+            "it": "Qual era il problema?",
+            "en": "What was the problem?"
+          },
+          "answer": {
+            "it": "La misura era piccola",
+            "en": "The size was too small"
+          },
+          "distractors": {
+            "it": [
+              "Mancava una scarpa",
+              "Il colore era sbagliato"
+            ],
+            "en": [
+              "One shoe was missing",
+              "The colour was wrong"
+            ]
+          }
+        },
+        {
+          "question": {
+            "it": "Quale soluzione viene proposta?",
+            "en": "What solution is offered?"
+          },
+          "answer": {
+            "it": "Una misura più grande",
+            "en": "A larger size"
+          },
+          "distractors": {
+            "it": [
+              "Un cappello",
+              "Una riparazione"
+            ],
+            "en": [
+              "A hat",
+              "A repair"
+            ]
+          }
+        }
+      ],
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_passage_31",
+      "target_sentence": "Դպրոցը հաղորդագրություն ուղարկեց ծնողներին։ Շաբաթ օրվա հանդիպումը հետաձգվել էր մինչև երկուշաբթի։ Ծնողները պետք է պատասխանեին մինչև ուրբաթ երեկո։ Նոր հանդիպումը լինելու էր նույն սրահում։",
+      "translations": {
+        "it": "La scuola ha scritto ai genitori: l’incontro di sabato era rimandato a lunedì. Bisognava rispondere entro venerdì sera. La sala restava la stessa.",
+        "en": "The school wrote to parents: Saturday’s meeting had been postponed until Monday. They needed to reply by Friday evening. The room would stay the same."
+      },
+      "prompt": {
+        "it": "Leggi o ascolta il brano.",
+        "en": "Read or listen to the passage."
+      },
+      "distractors": [
+        "Նամակում գրված է, որ հանդիպումը հետաձգվել է։",
+        "Նախ կարդա հրահանգը, հետո սկսիր աշխատանքը։",
+        "Մի մոռացիր քեզ հետ ջուր վերցնել։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "Nella lettera c'è scritto che l'incontro è stato rimandato.",
+          "Prima leggi le istruzioni, poi inizia il lavoro.",
+          "Non dimenticare di portare dell'acqua."
+        ],
+        "en": [
+          "The letter says that the meeting has been postponed.",
+          "Read the instructions first, then start the work.",
+          "Do not forget to bring water with you."
+        ]
+      },
+      "tags": [
+        "stage:31",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-31"
+      ],
+      "review_status": "needs_native_speaker_review",
+      "audio": [
+        {
+          "id": "voice-passage-31",
+          "url": "browser-tts:hy-AM",
+          "text": "Դպրոցը հաղորդագրություն ուղարկեց ծնողներին։ Շաբաթ օրվա հանդիպումը հետաձգվել էր մինչև երկուշաբթի։ Ծնողները պետք է պատասխանեին մինչև ուրբաթ երեկո։ Նոր հանդիպումը լինելու էր նույն սրահում։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "comprehension_questions": [
+        {
+          "question": {
+            "it": "Che cosa è cambiato?",
+            "en": "What has changed?"
+          },
+          "answer": {
+            "it": "Il giorno dell’incontro",
+            "en": "The day of the meeting"
+          },
+          "distractors": {
+            "it": [
+              "La sala",
+              "Il destinatario"
+            ],
+            "en": [
+              "The room",
+              "The recipient"
+            ]
+          }
+        },
+        {
+          "question": {
+            "it": "Entro quando devono rispondere?",
+            "en": "When must they reply by?"
+          },
+          "answer": {
+            "it": "Venerdì sera",
+            "en": "Friday evening"
+          },
+          "distractors": {
+            "it": [
+              "Lunedì sera",
+              "Sabato mattina"
+            ],
+            "en": [
+              "Monday evening",
+              "Saturday morning"
+            ]
+          }
+        }
+      ],
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    },
+    {
+      "id": "hy_passage_32",
+      "target_sentence": "Անցյալ ամառ Արամը ընտանիքի հետ լիճ գնաց։ Սկզբում նա վախենում էր նավակ նստել։ Հայրը բացատրեց, թե ինչպես ապահով նստել։ Արամը փորձեց և շատ ուրախացավ։ Հետո նա նկարեց լիճը։",
+      "translations": {
+        "it": "L’estate scorsa Aram è andato al lago con la famiglia. All’inizio aveva paura di salire in barca. Il padre gli ha spiegato come sedersi in sicurezza. Aram ha provato, si è divertito e poi ha disegnato il lago.",
+        "en": "Last summer Aram went to a lake with his family. At first he was afraid to get into a boat. His father explained how to sit safely. Aram tried it, enjoyed it and later drew the lake."
+      },
+      "prompt": {
+        "it": "Leggi o ascolta il brano.",
+        "en": "Read or listen to the passage."
+      },
+      "distractors": [
+        "Անցյալ ամառ առաջին անգամ սար բարձրացա։",
+        "Սկզբում վախենում էի, բայց հետո հանգստացա։",
+        "Մեր ճանապարհորդությունը երեք օր տևեց։"
+      ],
+      "translation_distractors": {
+        "it": [
+          "L'estate scorsa ho scalato una montagna per la prima volta.",
+          "All'inizio avevo paura, ma poi mi sono calmato.",
+          "Il nostro viaggio è durato tre giorni."
+        ],
+        "en": [
+          "Last summer I climbed a mountain for the first time.",
+          "At first I was afraid, but then I calmed down.",
+          "Our trip lasted three days."
+        ]
+      },
+      "tags": [
+        "stage:32",
+        "tier:core",
+        "curriculum:v2",
+        "topic:unit-32"
+      ],
+      "review_status": "needs_native_speaker_review",
+      "audio": [
+        {
+          "id": "voice-passage-32",
+          "url": "browser-tts:hy-AM",
+          "text": "Անցյալ ամառ Արամը ընտանիքի հետ լիճ գնաց։ Սկզբում նա վախենում էր նավակ նստել։ Հայրը բացատրեց, թե ինչպես ապահով նստել։ Արամը փորձեց և շատ ուրախացավ։ Հետո նա նկարեց լիճը։",
+          "source_type": "browser_tts",
+          "review_status": "draft",
+          "license": "synthetic-browser-preview"
+        }
+      ],
+      "comprehension_questions": [
+        {
+          "question": {
+            "it": "Come si sente all’inizio?",
+            "en": "How does he feel at first?"
+          },
+          "answer": {
+            "it": "Ha paura",
+            "en": "Afraid"
+          },
+          "distractors": {
+            "it": [
+              "È arrabbiato",
+              "Si annoia"
+            ],
+            "en": [
+              "Angry",
+              "Bored"
+            ]
+          }
+        },
+        {
+          "question": {
+            "it": "Che cosa fa dopo il giro?",
+            "en": "What does he do afterwards?"
+          },
+          "answer": {
+            "it": "Disegna il lago",
+            "en": "Draws the lake"
+          },
+          "distractors": {
+            "it": [
+              "Vende la barca",
+              "Compra una bicicletta"
+            ],
+            "en": [
+              "Sells the boat",
+              "Buys a bicycle"
+            ]
+          }
+        }
+      ],
+      "translation_review_status": {
+        "it": "reviewed",
+        "en": "reviewed"
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "id": "chapter_stage_25",
+      "minimum_level": 25,
+      "title": {
+        "it": "Inviti e accordi",
+        "en": "Invitations and arrangements"
+      },
+      "summary": {
+        "it": "Comprendere e collegare frasi su inviti e accordi; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+        "en": "Understand connected language about invitations and arrangements; explain a choice with a reason and practise a short exchange."
+      },
+      "fiction": {
+        "it": "Il sentiero porta l’eroe a una nuova sfida: inviti e accordi. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta.",
+        "en": "The path brings the hero a new challenge: invitations and arrangements. To open the passage, the hero must understand the others and explain a choice."
+      },
+      "story_beats": [
+        {
+          "it": "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna.",
+          "en": "The dragon hears two different ideas. Help it understand the reason for each."
+        }
+      ],
+      "lesson": {
+        "title": {
+          "it": "Inviti e accordi",
+          "en": "Invitations and arrangements"
+        },
+        "objectives": [
+          {
+            "it": "Comprendere e collegare frasi su inviti e accordi; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+            "en": "Understand connected language about invitations and arrangements; explain a choice with a reason and practise a short exchange."
+          },
+          {
+            "it": "Collegare causa, tempo o condizione al significato della frase.",
+            "en": "Connect a cause, time or condition to the meaning of a sentence."
+          },
+          {
+            "it": "Raccontare un esempio personale con un adulto.",
+            "en": "Discuss a personal example with an adult."
+          }
+        ],
+        "explanation": {
+          "it": "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili.",
+          "en": "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+        },
+        "examples": [
+          {
+            "target": "Կիրակի օրը ազատ ե՞ս։",
+            "translation": {
+              "it": "Sei libero domenica?",
+              "en": "Are you free on Sunday?"
+            }
+          },
+          {
+            "target": "Կուզե՞ս մեզ հետ այգի գալ։",
+            "translation": {
+              "it": "Ti piacerebbe venire al parco con noi?",
+              "en": "Would you like to come to the park with us?"
+            }
+          },
+          {
+            "target": "Շնորհակալ եմ հրավերի համար։",
+            "translation": {
+              "it": "Grazie per l'invito.",
+              "en": "Thank you for the invitation."
+            }
+          },
+          {
+            "target": "Այս անգամ չեմ կարող գալ։",
+            "translation": {
+              "it": "Questa volta non posso venire.",
+              "en": "I cannot come this time."
+            }
+          }
+        ],
+        "dialogue": [
+          {
+            "speaker": {
+              "it": "Compagno",
+              "en": "Partner"
+            },
+            "target": "Կիրակի օրը ազատ ե՞ս։",
+            "translation": {
+              "it": "Sei libero domenica?",
+              "en": "Are you free on Sunday?"
+            }
+          },
+          {
+            "speaker": {
+              "it": "Eroe",
+              "en": "Hero"
+            },
+            "target": "Կուզե՞ս մեզ հետ այգի գալ։",
+            "translation": {
+              "it": "Ti piacerebbe venire al parco con noi?",
+              "en": "Would you like to come to the park with us?"
+            }
+          }
+        ],
+        "study_notes": [
+          {
+            "it": "Individua le parole che collegano le idee, prima di cercare ogni parola.",
+            "en": "Identify words connecting ideas before looking up every word."
+          },
+          {
+            "it": "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario.",
+            "en": "Restate the message in your own words; ask for clarification when needed."
+          }
+        ],
+        "common_mistakes": [
+          {
+            "it": "Non confondere una condizione o una possibilità con un fatto già accaduto.",
+            "en": "Do not confuse a condition or possibility with something that has already happened."
+          }
+        ]
+      },
+      "mission": {
+        "it": "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto.",
+        "en": "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+      },
+      "cliffhanger": {
+        "it": "La prossima porta richiede una nuova spiegazione.",
+        "en": "The next gate needs a new explanation."
+      }
+    },
+    {
+      "id": "chapter_stage_26",
+      "minimum_level": 26,
+      "title": {
+        "it": "Raccontare una giornata",
+        "en": "Recounting a day"
+      },
+      "summary": {
+        "it": "Comprendere e collegare frasi su raccontare una giornata; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+        "en": "Understand connected language about recounting a day; explain a choice with a reason and practise a short exchange."
+      },
+      "fiction": {
+        "it": "Il sentiero porta l’eroe a una nuova sfida: raccontare una giornata. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta.",
+        "en": "The path brings the hero a new challenge: recounting a day. To open the passage, the hero must understand the others and explain a choice."
+      },
+      "story_beats": [
+        {
+          "it": "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna.",
+          "en": "The dragon hears two different ideas. Help it understand the reason for each."
+        }
+      ],
+      "lesson": {
+        "title": {
+          "it": "Raccontare una giornata",
+          "en": "Recounting a day"
+        },
+        "objectives": [
+          {
+            "it": "Comprendere e collegare frasi su raccontare una giornata; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+            "en": "Understand connected language about recounting a day; explain a choice with a reason and practise a short exchange."
+          },
+          {
+            "it": "Collegare causa, tempo o condizione al significato della frase.",
+            "en": "Connect a cause, time or condition to the meaning of a sentence."
+          },
+          {
+            "it": "Raccontare un esempio personale con un adulto.",
+            "en": "Discuss a personal example with an adult."
+          }
+        ],
+        "explanation": {
+          "it": "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili.",
+          "en": "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+        },
+        "examples": [
+          {
+            "target": "Երեկ առավոտյան շուտ արթնացա։",
+            "translation": {
+              "it": "Ieri mattina mi sono svegliato presto.",
+              "en": "I woke up early yesterday morning."
+            }
+          },
+          {
+            "target": "Նախ նախաճաշեցի, հետո դպրոց գնացի։",
+            "translation": {
+              "it": "Prima ho fatto colazione, poi sono andato a scuola.",
+              "en": "First I had breakfast, then I went to school."
+            }
+          },
+          {
+            "target": "Դասերից հետո ընկերոջս հետ խաղացի։",
+            "translation": {
+              "it": "Dopo le lezioni ho giocato con un amico.",
+              "en": "After lessons I played with my friend."
+            }
+          },
+          {
+            "target": "Երբ տուն հասա, արդեն մութ էր։",
+            "translation": {
+              "it": "Quando sono arrivato a casa, era già buio.",
+              "en": "When I got home, it was already dark."
+            }
+          }
+        ],
+        "dialogue": [
+          {
+            "speaker": {
+              "it": "Compagno",
+              "en": "Partner"
+            },
+            "target": "Երեկ առավոտյան շուտ արթնացա։",
+            "translation": {
+              "it": "Ieri mattina mi sono svegliato presto.",
+              "en": "I woke up early yesterday morning."
+            }
+          },
+          {
+            "speaker": {
+              "it": "Eroe",
+              "en": "Hero"
+            },
+            "target": "Նախ նախաճաշեցի, հետո դպրոց գնացի։",
+            "translation": {
+              "it": "Prima ho fatto colazione, poi sono andato a scuola.",
+              "en": "First I had breakfast, then I went to school."
+            }
+          }
+        ],
+        "study_notes": [
+          {
+            "it": "Individua le parole che collegano le idee, prima di cercare ogni parola.",
+            "en": "Identify words connecting ideas before looking up every word."
+          },
+          {
+            "it": "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario.",
+            "en": "Restate the message in your own words; ask for clarification when needed."
+          }
+        ],
+        "common_mistakes": [
+          {
+            "it": "Non confondere una condizione o una possibilità con un fatto già accaduto.",
+            "en": "Do not confuse a condition or possibility with something that has already happened."
+          }
+        ]
+      },
+      "mission": {
+        "it": "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto.",
+        "en": "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+      },
+      "cliffhanger": {
+        "it": "La prossima porta richiede una nuova spiegazione.",
+        "en": "The next gate needs a new explanation."
+      }
+    },
+    {
+      "id": "chapter_stage_27",
+      "minimum_level": 27,
+      "title": {
+        "it": "Chiedere chiarimenti",
+        "en": "Asking for clarification"
+      },
+      "summary": {
+        "it": "Comprendere e collegare frasi su chiedere chiarimenti; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+        "en": "Understand connected language about asking for clarification; explain a choice with a reason and practise a short exchange."
+      },
+      "fiction": {
+        "it": "Il sentiero porta l’eroe a una nuova sfida: chiedere chiarimenti. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta.",
+        "en": "The path brings the hero a new challenge: asking for clarification. To open the passage, the hero must understand the others and explain a choice."
+      },
+      "story_beats": [
+        {
+          "it": "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna.",
+          "en": "The dragon hears two different ideas. Help it understand the reason for each."
+        }
+      ],
+      "lesson": {
+        "title": {
+          "it": "Chiedere chiarimenti",
+          "en": "Asking for clarification"
+        },
+        "objectives": [
+          {
+            "it": "Comprendere e collegare frasi su chiedere chiarimenti; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+            "en": "Understand connected language about asking for clarification; explain a choice with a reason and practise a short exchange."
+          },
+          {
+            "it": "Collegare causa, tempo o condizione al significato della frase.",
+            "en": "Connect a cause, time or condition to the meaning of a sentence."
+          },
+          {
+            "it": "Raccontare un esempio personale con un adulto.",
+            "en": "Discuss a personal example with an adult."
+          }
+        ],
+        "explanation": {
+          "it": "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili.",
+          "en": "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+        },
+        "examples": [
+          {
+            "target": "Կներեք, վերջին բառը չհասկացա։",
+            "translation": {
+              "it": "Scusi, non ho capito l'ultima parola.",
+              "en": "Sorry, I did not understand the last word."
+            }
+          },
+          {
+            "target": "Կարո՞ղ եք ավելի դանդաղ խոսել։",
+            "translation": {
+              "it": "Può parlare più lentamente?",
+              "en": "Could you speak more slowly?"
+            }
+          },
+          {
+            "target": "Ի՞նչ է նշանակում այս արտահայտությունը։",
+            "translation": {
+              "it": "Che cosa significa questa espressione?",
+              "en": "What does this expression mean?"
+            }
+          },
+          {
+            "target": "Կարո՞ղ ես մի օրինակ բերել։",
+            "translation": {
+              "it": "Puoi fare un esempio?",
+              "en": "Can you give an example?"
+            }
+          }
+        ],
+        "dialogue": [
+          {
+            "speaker": {
+              "it": "Compagno",
+              "en": "Partner"
+            },
+            "target": "Կներեք, վերջին բառը չհասկացա։",
+            "translation": {
+              "it": "Scusi, non ho capito l'ultima parola.",
+              "en": "Sorry, I did not understand the last word."
+            }
+          },
+          {
+            "speaker": {
+              "it": "Eroe",
+              "en": "Hero"
+            },
+            "target": "Կարո՞ղ եք ավելի դանդաղ խոսել։",
+            "translation": {
+              "it": "Può parlare più lentamente?",
+              "en": "Could you speak more slowly?"
+            }
+          }
+        ],
+        "study_notes": [
+          {
+            "it": "Individua le parole che collegano le idee, prima di cercare ogni parola.",
+            "en": "Identify words connecting ideas before looking up every word."
+          },
+          {
+            "it": "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario.",
+            "en": "Restate the message in your own words; ask for clarification when needed."
+          }
+        ],
+        "common_mistakes": [
+          {
+            "it": "Non confondere una condizione o una possibilità con un fatto già accaduto.",
+            "en": "Do not confuse a condition or possibility with something that has already happened."
+          }
+        ]
+      },
+      "mission": {
+        "it": "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto.",
+        "en": "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+      },
+      "cliffhanger": {
+        "it": "La prossima porta richiede una nuova spiegazione.",
+        "en": "The next gate needs a new explanation."
+      }
+    },
+    {
+      "id": "chapter_stage_28",
+      "minimum_level": 28,
+      "title": {
+        "it": "Scelte e preferenze",
+        "en": "Choices and preferences"
+      },
+      "summary": {
+        "it": "Comprendere e collegare frasi su scelte e preferenze; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+        "en": "Understand connected language about choices and preferences; explain a choice with a reason and practise a short exchange."
+      },
+      "fiction": {
+        "it": "Il sentiero porta l’eroe a una nuova sfida: scelte e preferenze. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta.",
+        "en": "The path brings the hero a new challenge: choices and preferences. To open the passage, the hero must understand the others and explain a choice."
+      },
+      "story_beats": [
+        {
+          "it": "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna.",
+          "en": "The dragon hears two different ideas. Help it understand the reason for each."
+        }
+      ],
+      "lesson": {
+        "title": {
+          "it": "Scelte e preferenze",
+          "en": "Choices and preferences"
+        },
+        "objectives": [
+          {
+            "it": "Comprendere e collegare frasi su scelte e preferenze; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+            "en": "Understand connected language about choices and preferences; explain a choice with a reason and practise a short exchange."
+          },
+          {
+            "it": "Collegare causa, tempo o condizione al significato della frase.",
+            "en": "Connect a cause, time or condition to the meaning of a sentence."
+          },
+          {
+            "it": "Raccontare un esempio personale con un adulto.",
+            "en": "Discuss a personal example with an adult."
+          }
+        ],
+        "explanation": {
+          "it": "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili.",
+          "en": "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+        },
+        "examples": [
+          {
+            "target": "Ես նախընտրում եմ գնալ ոտքով։",
+            "translation": {
+              "it": "Preferisco andare a piedi.",
+              "en": "I prefer to walk."
+            }
+          },
+          {
+            "target": "Այս գիրքն ավելի հետաքրքիր է, քան նախորդը։",
+            "translation": {
+              "it": "Questo libro è più interessante del precedente.",
+              "en": "This book is more interesting than the previous one."
+            }
+          },
+          {
+            "target": "Ինձ ավելի շատ դուր է գալիս կապույտը։",
+            "translation": {
+              "it": "Mi piace di più quello blu.",
+              "en": "I like the blue one more."
+            }
+          },
+          {
+            "target": "Երկու տարբերակն էլ լավն են։",
+            "translation": {
+              "it": "Entrambe le possibilità sono buone.",
+              "en": "Both options are good."
+            }
+          }
+        ],
+        "dialogue": [
+          {
+            "speaker": {
+              "it": "Compagno",
+              "en": "Partner"
+            },
+            "target": "Ես նախընտրում եմ գնալ ոտքով։",
+            "translation": {
+              "it": "Preferisco andare a piedi.",
+              "en": "I prefer to walk."
+            }
+          },
+          {
+            "speaker": {
+              "it": "Eroe",
+              "en": "Hero"
+            },
+            "target": "Այս գիրքն ավելի հետաքրքիր է, քան նախորդը։",
+            "translation": {
+              "it": "Questo libro è più interessante del precedente.",
+              "en": "This book is more interesting than the previous one."
+            }
+          }
+        ],
+        "study_notes": [
+          {
+            "it": "Individua le parole che collegano le idee, prima di cercare ogni parola.",
+            "en": "Identify words connecting ideas before looking up every word."
+          },
+          {
+            "it": "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario.",
+            "en": "Restate the message in your own words; ask for clarification when needed."
+          }
+        ],
+        "common_mistakes": [
+          {
+            "it": "Non confondere una condizione o una possibilità con un fatto già accaduto.",
+            "en": "Do not confuse a condition or possibility with something that has already happened."
+          }
+        ]
+      },
+      "mission": {
+        "it": "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto.",
+        "en": "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+      },
+      "cliffhanger": {
+        "it": "La prossima porta richiede una nuova spiegazione.",
+        "en": "The next gate needs a new explanation."
+      }
+    },
+    {
+      "id": "chapter_stage_29",
+      "minimum_level": 29,
+      "title": {
+        "it": "Viaggiare e orientarsi",
+        "en": "Travel and directions"
+      },
+      "summary": {
+        "it": "Comprendere e collegare frasi su viaggiare e orientarsi; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+        "en": "Understand connected language about travel and directions; explain a choice with a reason and practise a short exchange."
+      },
+      "fiction": {
+        "it": "Il sentiero porta l’eroe a una nuova sfida: viaggiare e orientarsi. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta.",
+        "en": "The path brings the hero a new challenge: travel and directions. To open the passage, the hero must understand the others and explain a choice."
+      },
+      "story_beats": [
+        {
+          "it": "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna.",
+          "en": "The dragon hears two different ideas. Help it understand the reason for each."
+        }
+      ],
+      "lesson": {
+        "title": {
+          "it": "Viaggiare e orientarsi",
+          "en": "Travel and directions"
+        },
+        "objectives": [
+          {
+            "it": "Comprendere e collegare frasi su viaggiare e orientarsi; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+            "en": "Understand connected language about travel and directions; explain a choice with a reason and practise a short exchange."
+          },
+          {
+            "it": "Collegare causa, tempo o condizione al significato della frase.",
+            "en": "Connect a cause, time or condition to the meaning of a sentence."
+          },
+          {
+            "it": "Raccontare un esempio personale con un adulto.",
+            "en": "Discuss a personal example with an adult."
+          }
+        ],
+        "explanation": {
+          "it": "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili.",
+          "en": "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+        },
+        "examples": [
+          {
+            "target": "Մենք իջնելու ենք հաջորդ կանգառում։",
+            "translation": {
+              "it": "Scenderemo alla prossima fermata.",
+              "en": "We are getting off at the next stop."
+            }
+          },
+          {
+            "target": "Այս ավտոբուսը հասնո՞ւմ է կայարան։",
+            "translation": {
+              "it": "Questo autobus arriva alla stazione?",
+              "en": "Does this bus go to the station?"
+            }
+          },
+          {
+            "target": "Ուղիղ գնացեք մինչև կամուրջը։",
+            "translation": {
+              "it": "Vada dritto fino al ponte.",
+              "en": "Go straight ahead as far as the bridge."
+            }
+          },
+          {
+            "target": "Կամրջից հետո թեքվեք աջ։",
+            "translation": {
+              "it": "Dopo il ponte giri a destra.",
+              "en": "Turn right after the bridge."
+            }
+          }
+        ],
+        "dialogue": [
+          {
+            "speaker": {
+              "it": "Compagno",
+              "en": "Partner"
+            },
+            "target": "Մենք իջնելու ենք հաջորդ կանգառում։",
+            "translation": {
+              "it": "Scenderemo alla prossima fermata.",
+              "en": "We are getting off at the next stop."
+            }
+          },
+          {
+            "speaker": {
+              "it": "Eroe",
+              "en": "Hero"
+            },
+            "target": "Այս ավտոբուսը հասնո՞ւմ է կայարան։",
+            "translation": {
+              "it": "Questo autobus arriva alla stazione?",
+              "en": "Does this bus go to the station?"
+            }
+          }
+        ],
+        "study_notes": [
+          {
+            "it": "Individua le parole che collegano le idee, prima di cercare ogni parola.",
+            "en": "Identify words connecting ideas before looking up every word."
+          },
+          {
+            "it": "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario.",
+            "en": "Restate the message in your own words; ask for clarification when needed."
+          }
+        ],
+        "common_mistakes": [
+          {
+            "it": "Non confondere una condizione o una possibilità con un fatto già accaduto.",
+            "en": "Do not confuse a condition or possibility with something that has already happened."
+          }
+        ]
+      },
+      "mission": {
+        "it": "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto.",
+        "en": "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+      },
+      "cliffhanger": {
+        "it": "La prossima porta richiede una nuova spiegazione.",
+        "en": "The next gate needs a new explanation."
+      }
+    },
+    {
+      "id": "chapter_stage_30",
+      "minimum_level": 30,
+      "title": {
+        "it": "Problemi quotidiani",
+        "en": "Everyday problems"
+      },
+      "summary": {
+        "it": "Comprendere e collegare frasi su problemi quotidiani; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+        "en": "Understand connected language about everyday problems; explain a choice with a reason and practise a short exchange."
+      },
+      "fiction": {
+        "it": "Il sentiero porta l’eroe a una nuova sfida: problemi quotidiani. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta.",
+        "en": "The path brings the hero a new challenge: everyday problems. To open the passage, the hero must understand the others and explain a choice."
+      },
+      "story_beats": [
+        {
+          "it": "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna.",
+          "en": "The dragon hears two different ideas. Help it understand the reason for each."
+        }
+      ],
+      "lesson": {
+        "title": {
+          "it": "Problemi quotidiani",
+          "en": "Everyday problems"
+        },
+        "objectives": [
+          {
+            "it": "Comprendere e collegare frasi su problemi quotidiani; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+            "en": "Understand connected language about everyday problems; explain a choice with a reason and practise a short exchange."
+          },
+          {
+            "it": "Collegare causa, tempo o condizione al significato della frase.",
+            "en": "Connect a cause, time or condition to the meaning of a sentence."
+          },
+          {
+            "it": "Raccontare un esempio personale con un adulto.",
+            "en": "Discuss a personal example with an adult."
+          }
+        ],
+        "explanation": {
+          "it": "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili.",
+          "en": "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+        },
+        "examples": [
+          {
+            "target": "Իմ պայուսակի կայծակաճարմանդը չի փակվում։",
+            "translation": {
+              "it": "La cerniera della borsa non si chiude.",
+              "en": "The zip on my bag will not close."
+            }
+          },
+          {
+            "target": "Ես չեմ հիշում, թե որտեղ եմ դրել բանալին։",
+            "translation": {
+              "it": "Non ricordo dove ho messo la chiave.",
+              "en": "I cannot remember where I put the key."
+            }
+          },
+          {
+            "target": "Այս կոշիկները ինձ փոքր են։",
+            "translation": {
+              "it": "Queste scarpe mi sono piccole.",
+              "en": "These shoes are too small for me."
+            }
+          },
+          {
+            "target": "Կարելի՞ է դրանք փոխել ավելի մեծերով։",
+            "translation": {
+              "it": "Posso cambiarle con un paio più grande?",
+              "en": "Can I exchange them for a larger pair?"
+            }
+          }
+        ],
+        "dialogue": [
+          {
+            "speaker": {
+              "it": "Compagno",
+              "en": "Partner"
+            },
+            "target": "Իմ պայուսակի կայծակաճարմանդը չի փակվում։",
+            "translation": {
+              "it": "La cerniera della borsa non si chiude.",
+              "en": "The zip on my bag will not close."
+            }
+          },
+          {
+            "speaker": {
+              "it": "Eroe",
+              "en": "Hero"
+            },
+            "target": "Ես չեմ հիշում, թե որտեղ եմ դրել բանալին։",
+            "translation": {
+              "it": "Non ricordo dove ho messo la chiave.",
+              "en": "I cannot remember where I put the key."
+            }
+          }
+        ],
+        "study_notes": [
+          {
+            "it": "Individua le parole che collegano le idee, prima di cercare ogni parola.",
+            "en": "Identify words connecting ideas before looking up every word."
+          },
+          {
+            "it": "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario.",
+            "en": "Restate the message in your own words; ask for clarification when needed."
+          }
+        ],
+        "common_mistakes": [
+          {
+            "it": "Non confondere una condizione o una possibilità con un fatto già accaduto.",
+            "en": "Do not confuse a condition or possibility with something that has already happened."
+          }
+        ]
+      },
+      "mission": {
+        "it": "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto.",
+        "en": "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+      },
+      "cliffhanger": {
+        "it": "La prossima porta richiede una nuova spiegazione.",
+        "en": "The next gate needs a new explanation."
+      }
+    },
+    {
+      "id": "chapter_stage_31",
+      "minimum_level": 31,
+      "title": {
+        "it": "Messaggi e istruzioni",
+        "en": "Messages and instructions"
+      },
+      "summary": {
+        "it": "Comprendere e collegare frasi su messaggi e istruzioni; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+        "en": "Understand connected language about messages and instructions; explain a choice with a reason and practise a short exchange."
+      },
+      "fiction": {
+        "it": "Il sentiero porta l’eroe a una nuova sfida: messaggi e istruzioni. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta.",
+        "en": "The path brings the hero a new challenge: messages and instructions. To open the passage, the hero must understand the others and explain a choice."
+      },
+      "story_beats": [
+        {
+          "it": "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna.",
+          "en": "The dragon hears two different ideas. Help it understand the reason for each."
+        }
+      ],
+      "lesson": {
+        "title": {
+          "it": "Messaggi e istruzioni",
+          "en": "Messages and instructions"
+        },
+        "objectives": [
+          {
+            "it": "Comprendere e collegare frasi su messaggi e istruzioni; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+            "en": "Understand connected language about messages and instructions; explain a choice with a reason and practise a short exchange."
+          },
+          {
+            "it": "Collegare causa, tempo o condizione al significato della frase.",
+            "en": "Connect a cause, time or condition to the meaning of a sentence."
+          },
+          {
+            "it": "Raccontare un esempio personale con un adulto.",
+            "en": "Discuss a personal example with an adult."
+          }
+        ],
+        "explanation": {
+          "it": "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili.",
+          "en": "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+        },
+        "examples": [
+          {
+            "target": "Խնդրում եմ, փակիր պատուհանը, երբ դուրս գաս։",
+            "translation": {
+              "it": "Per favore, chiudi la finestra quando esci.",
+              "en": "Please close the window when you leave."
+            }
+          },
+          {
+            "target": "Նամակում գրված է, որ հանդիպումը հետաձգվել է։",
+            "translation": {
+              "it": "Nella lettera c'è scritto che l'incontro è stato rimandato.",
+              "en": "The letter says that the meeting has been postponed."
+            }
+          },
+          {
+            "target": "Նախ կարդա հրահանգը, հետո սկսիր աշխատանքը։",
+            "translation": {
+              "it": "Prima leggi le istruzioni, poi inizia il lavoro.",
+              "en": "Read the instructions first, then start the work."
+            }
+          },
+          {
+            "target": "Մի մոռացիր քեզ հետ ջուր վերցնել։",
+            "translation": {
+              "it": "Non dimenticare di portare dell'acqua.",
+              "en": "Do not forget to bring water with you."
+            }
+          }
+        ],
+        "dialogue": [
+          {
+            "speaker": {
+              "it": "Compagno",
+              "en": "Partner"
+            },
+            "target": "Խնդրում եմ, փակիր պատուհանը, երբ դուրս գաս։",
+            "translation": {
+              "it": "Per favore, chiudi la finestra quando esci.",
+              "en": "Please close the window when you leave."
+            }
+          },
+          {
+            "speaker": {
+              "it": "Eroe",
+              "en": "Hero"
+            },
+            "target": "Նամակում գրված է, որ հանդիպումը հետաձգվել է։",
+            "translation": {
+              "it": "Nella lettera c'è scritto che l'incontro è stato rimandato.",
+              "en": "The letter says that the meeting has been postponed."
+            }
+          }
+        ],
+        "study_notes": [
+          {
+            "it": "Individua le parole che collegano le idee, prima di cercare ogni parola.",
+            "en": "Identify words connecting ideas before looking up every word."
+          },
+          {
+            "it": "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario.",
+            "en": "Restate the message in your own words; ask for clarification when needed."
+          }
+        ],
+        "common_mistakes": [
+          {
+            "it": "Non confondere una condizione o una possibilità con un fatto già accaduto.",
+            "en": "Do not confuse a condition or possibility with something that has already happened."
+          }
+        ]
+      },
+      "mission": {
+        "it": "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto.",
+        "en": "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+      },
+      "cliffhanger": {
+        "it": "La prossima porta richiede una nuova spiegazione.",
+        "en": "The next gate needs a new explanation."
+      }
+    },
+    {
+      "id": "chapter_stage_32",
+      "minimum_level": 32,
+      "title": {
+        "it": "Esperienze e piccoli racconti",
+        "en": "Experiences and short stories"
+      },
+      "summary": {
+        "it": "Comprendere e collegare frasi su esperienze e piccoli racconti; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+        "en": "Understand connected language about experiences and short stories; explain a choice with a reason and practise a short exchange."
+      },
+      "fiction": {
+        "it": "Il sentiero porta l’eroe a una nuova sfida: esperienze e piccoli racconti. Per aprire il passaggio deve capire gli altri e spiegare la propria scelta.",
+        "en": "The path brings the hero a new challenge: experiences and short stories. To open the passage, the hero must understand the others and explain a choice."
+      },
+      "story_beats": [
+        {
+          "it": "Il drago ascolta due idee diverse. Aiutalo a capire il motivo di ciascuna.",
+          "en": "The dragon hears two different ideas. Help it understand the reason for each."
+        }
+      ],
+      "lesson": {
+        "title": {
+          "it": "Esperienze e piccoli racconti",
+          "en": "Experiences and short stories"
+        },
+        "objectives": [
+          {
+            "it": "Comprendere e collegare frasi su esperienze e piccoli racconti; spiegare una scelta con un motivo ed esercitare un breve scambio.",
+            "en": "Understand connected language about experiences and short stories; explain a choice with a reason and practise a short exchange."
+          },
+          {
+            "it": "Collegare causa, tempo o condizione al significato della frase.",
+            "en": "Connect a cause, time or condition to the meaning of a sentence."
+          },
+          {
+            "it": "Raccontare un esempio personale con un adulto.",
+            "en": "Discuss a personal example with an adult."
+          }
+        ],
+        "explanation": {
+          "it": "Ascolta o leggi una frase intera, poi spiegane il significato. Nel dialogo prova una risposta tua: gli esempi non sono le uniche formulazioni possibili.",
+          "en": "Listen to or read a complete sentence, then explain its meaning. In conversation, try your own response: the examples are not the only possible wordings."
+        },
+        "examples": [
+          {
+            "target": "Ես երբեք այդ թանգարանում չեմ եղել։",
+            "translation": {
+              "it": "Non sono mai stato in quel museo.",
+              "en": "I have never been to that museum."
+            }
+          },
+          {
+            "target": "Անցյալ ամառ առաջին անգամ սար բարձրացա։",
+            "translation": {
+              "it": "L'estate scorsa ho scalato una montagna per la prima volta.",
+              "en": "Last summer I climbed a mountain for the first time."
+            }
+          },
+          {
+            "target": "Սկզբում վախենում էի, բայց հետո հանգստացա։",
+            "translation": {
+              "it": "All'inizio avevo paura, ma poi mi sono calmato.",
+              "en": "At first I was afraid, but then I calmed down."
+            }
+          },
+          {
+            "target": "Մեր ճանապարհորդությունը երեք օր տևեց։",
+            "translation": {
+              "it": "Il nostro viaggio è durato tre giorni.",
+              "en": "Our trip lasted three days."
+            }
+          }
+        ],
+        "dialogue": [
+          {
+            "speaker": {
+              "it": "Compagno",
+              "en": "Partner"
+            },
+            "target": "Ես երբեք այդ թանգարանում չեմ եղել։",
+            "translation": {
+              "it": "Non sono mai stato in quel museo.",
+              "en": "I have never been to that museum."
+            }
+          },
+          {
+            "speaker": {
+              "it": "Eroe",
+              "en": "Hero"
+            },
+            "target": "Անցյալ ամառ առաջին անգամ սար բարձրացա։",
+            "translation": {
+              "it": "L'estate scorsa ho scalato una montagna per la prima volta.",
+              "en": "Last summer I climbed a mountain for the first time."
+            }
+          }
+        ],
+        "study_notes": [
+          {
+            "it": "Individua le parole che collegano le idee, prima di cercare ogni parola.",
+            "en": "Identify words connecting ideas before looking up every word."
+          },
+          {
+            "it": "Ripeti il messaggio con parole tue; chiedi chiarimenti se necessario.",
+            "en": "Restate the message in your own words; ask for clarification when needed."
+          }
+        ],
+        "common_mistakes": [
+          {
+            "it": "Non confondere una condizione o una possibilità con un fatto già accaduto.",
+            "en": "Do not confuse a condition or possibility with something that has already happened."
+          }
+        ]
+      },
+      "mission": {
+        "it": "Scegli due esempi, spiega il loro significato e prova un breve dialogo con un adulto.",
+        "en": "Choose two examples, explain their meaning and practise a short dialogue with an adult."
+      },
+      "cliffhanger": {
+        "it": "La prossima porta richiede una nuova spiegazione.",
+        "en": "The next gate needs a new explanation."
+      }
+    }
+  ],
+  "enemies": [],
+  "enemy_names": {
+    "it": {},
+    "en": {}
+  }
+}
