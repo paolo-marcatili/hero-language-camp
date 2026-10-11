@@ -185,7 +185,11 @@ function getLetterName(entry) {
 }
 function normalizeTextForNeuralTts(text) {
   const normalized = normalizeText(text);
-  return normalized.replace(/([\u0531-\u0556\u0561-\u0586])և(?![\u0531-\u0556\u0561-\u0587])/gu, "$1եվ");
+  // A bare letter `և` (letter 37, the name of the letter) is sent as the explicit spelling `եվ`:
+  // Azure returns an empty 200 body for the lone `և`, while the explicit spelling works in words.
+  return normalized
+    .replace(/([\u0531-\u0556\u0561-\u0586])և(?![\u0531-\u0556\u0561-\u0587])/gu, "$1եվ")
+    .replace(/^և$/u, "եվ");
 }
 
 function normalizeText(text) { return String(text).replace(/[։:;]+/g, ".").replace(/\s+/g, " ").trim(); }
