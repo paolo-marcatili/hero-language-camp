@@ -150,7 +150,10 @@ async function synthesize(text) {
     body: `<speak version="1.0" xml:lang="da-DK"><voice name="${escapeXml(voice)}"><prosody rate="${escapeXml(rate)}">${escapeXml(normalizeText(text))}</prosody></voice></speak>`
   });
   if (!response.ok) throw new Error(`Azure Speech ${response.status}: ${await response.text()}`);
-  return Buffer.from(await response.arrayBuffer());
+  const bytes = Buffer.from(await response.arrayBuffer());
+  // Azure can answer 200 with an empty body. Never save that as audio.
+  if (bytes.length === 0) throw new Error(`Azure Speech returned an empty audio body for: ${text}`);
+  return bytes;
 }
 
 function replaceGeneratedAudio(item, fileName) {
