@@ -13,8 +13,8 @@ const COPY = {
 
 type Check = { questions: TrainingQuestion[]; index: number; answers: boolean[]; selected?: string };
 
-export function LevelPlacementPanel({ pack, state, language, onPlace }: {
-  pack: LanguagePack; state: LearnerState; language: string; onPlace: (state: LearnerState) => void;
+export function LevelPlacementPanel({ pack, state, language, onPlace, narrateInstructions }: {
+  pack: LanguagePack; state: LearnerState; language: string; onPlace: (state: LearnerState) => void; narrateInstructions?: boolean;
 }) {
   const c = COPY[language as keyof typeof COPY] ?? COPY.en;
   const incomplete = language === "da" ? "Der mangler opgaver til denne prøve. Vælg et niveau sammen med en voksen."
@@ -76,7 +76,7 @@ export function LevelPlacementPanel({ pack, state, language, onPlace }: {
       </option>)}
     </select></label>
     {!check ? <div className="settings-row two-cols"><button type="button" onClick={place}>{c[2]}</button><button type="button" onClick={startCheck}>{c[3]}</button></div> : null}
-    {question ? <QuestionCard key={question.id} question={question} language={language} mode="training" index={check!.index} total={8} continueOnCorrect disabled={correct !== undefined}
+    {question ? <QuestionCard key={question.id} question={question} language={language} mode="training" index={check!.index} total={8} narrateInstructions={narrateInstructions} continueOnCorrect disabled={correct !== undefined}
       feedback={correct === undefined ? null : { correct, correctAnswer: question.correct_answer_label, selectedOptionId: check!.selected, correctOptionId: question.correct_option_id }}
       onAnswer={(selected) => setCheck((value) => value ? { ...value, selected } : value)}
       onContinue={nextQuestion} /> : null}

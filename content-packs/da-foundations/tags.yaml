@@ -273,3 +273,6 @@ controlled_tags:
   - id: 'topic:school'
     label: 'topic:school'
     description: Kontrolleret tag for skoleforløbet.
+  - id: 'instruction:option-label'
+    label: 'instruction:option-label'
+    description: Kontrolleret tag for skoleforløbet.

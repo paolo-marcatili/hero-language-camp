@@ -185,6 +185,11 @@ export function SettingsPanel({
           </label>
         </div>
         <label className="toggle-row">
+          <input type="checkbox" checked={settings.narrateInstructions} onChange={(event: ChangeEvent<HTMLInputElement>) => onSettingsChange({ ...settings, narrateInstructions: event.target.checked })} />
+          <span>{t(language, "narrateInstructions")}</span>
+        </label>
+        <p className="settings-help-text">{t(language, "narrateInstructionsHint")}</p>
+        <label className="toggle-row">
           <input type="checkbox" checked={settings.speedBonusEnabled} onChange={(event: ChangeEvent<HTMLInputElement>) => onSettingsChange({ ...settings, speedBonusEnabled: event.target.checked })} />
           <span>{t(language, "speedBonusSetting")}</span>
         </label>

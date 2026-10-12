@@ -1,7 +1,9 @@
 import type { LanguagePack } from "@hero-lang/content-schema";
 import { createInitialLearnerState, normalizeLearnerState, type LearnerState } from "@hero-lang/foundations-engine";
 import type { LabyrinthSession } from "../../web/src/labyrinth";
-import { safeLocalStorage, safeSessionStorage } from "../../web/src/safeStorage";
+import { backupCorrupt, onStorageFull, safeLocalStorage, safeSessionStorage } from "../../web/src/safeStorage";
+
+export const subscribeStorageFull = onStorageFull;
 
 const STATE_KEY_PREFIX = "danish-foundations:v0.9:state";
 const LEGACY_STATE_KEYS = ["danish-foundations:v0.8:state", "danish-foundations:v0.7:state", "danish-foundations:v0.6:state", "danish-foundations:v0.3:state", "danish-foundations:v0.2:state", "danish-foundations:state"];
@@ -47,6 +49,7 @@ export interface ChildProfile {
 export interface AppSettings {
   graphicsPack: GraphicsPack;
   audioMode: LearningAudioMode;
+  narrateInstructions: boolean;
   debug: boolean;
   debugBypass: boolean;
   speedBonusEnabled: boolean;
@@ -71,12 +74,15 @@ export function loadChildProfiles(): ChildProfile[] {
 
   try {
     const parsed = JSON.parse(raw) as unknown;
-    if (!Array.isArray(parsed)) return defaultProfiles();
-    const profiles = parsed.map(normalizeProfile).filter((profile): profile is ChildProfile => Boolean(profile));
-    return profiles.length > 0 ? profiles : defaultProfiles();
+    if (Array.isArray(parsed)) {
+      const profiles = parsed.map(normalizeProfile).filter((profile): profile is ChildProfile => Boolean(profile));
+      if (profiles.length > 0) return profiles;
+    }
   } catch {
-    return defaultProfiles();
+    // fall through to the backup below
   }
+  backupCorrupt(PROFILES_KEY, raw);
+  return defaultProfiles();
 }
 
 export function saveChildProfiles(profiles: ChildProfile[]): void {
@@ -104,10 +110,13 @@ export function createChildProfile(name: string, index: number): ChildProfile {
   };
 }
 
+const DEFAULT_NARRATE_INSTRUCTIONS = true;
+
 export function loadAppSettings(pack: LanguagePack): AppSettings {
   const fallback: AppSettings = {
     graphicsPack: "forest",
     audioMode: "human_and_automatic",
+    narrateInstructions: DEFAULT_NARRATE_INSTRUCTIONS,
     debug: false,
     debugBypass: false,
     speedBonusEnabled: true,
@@ -121,10 +130,11 @@ export function loadAppSettings(pack: LanguagePack): AppSettings {
   let persisted: Partial<AppSettings> = {};
   let viewport: Partial<Pick<AppSettings, "viewportPreset" | "showDeviceFrame">> = {};
 
+  const rawSettings = safeLocalStorage.getItem(SETTINGS_KEY);
   try {
-    const raw = safeLocalStorage.getItem(SETTINGS_KEY);
-    persisted = raw ? JSON.parse(raw) as Partial<AppSettings> : {};
+    persisted = rawSettings ? JSON.parse(rawSettings) as Partial<AppSettings> : {};
   } catch {
+    if (rawSettings) backupCorrupt(SETTINGS_KEY, rawSettings);
     persisted = {};
   }
 
@@ -138,6 +148,7 @@ export function loadAppSettings(pack: LanguagePack): AppSettings {
   return {
     graphicsPack: persisted.graphicsPack === "candy" || persisted.graphicsPack === "night" ? persisted.graphicsPack : "forest",
     audioMode: persisted.audioMode === "human_only" ? "human_only" : "human_and_automatic",
+    narrateInstructions: typeof persisted.narrateInstructions === "boolean" ? persisted.narrateInstructions : DEFAULT_NARRATE_INSTRUCTIONS,
     debug: Boolean(persisted.debug),
     debugBypass: Boolean(persisted.debugBypass),
     speedBonusEnabled: persisted.speedBonusEnabled !== false,
@@ -156,6 +167,7 @@ export function saveAppSettings(settings: AppSettings): void {
   const persistentSettings = {
     graphicsPack: settings.graphicsPack,
     audioMode: settings.audioMode,
+    narrateInstructions: settings.narrateInstructions,
     debug: settings.debug,
     debugBypass: settings.debugBypass,
     speedBonusEnabled: settings.speedBonusEnabled,
@@ -188,8 +200,14 @@ export function loadLearnerState(pack: LanguagePack, profile: ChildProfile): Lea
   if (!raw) return createInitialLearnerState(pack, profile.name);
 
   try {
-    return normalizeLearnerState(pack, JSON.parse(raw), profile.name);
+    const parsed = JSON.parse(raw) as unknown;
+    if (!isObject(parsed)) {
+      backupCorrupt(scopedKey, raw);
+      return createInitialLearnerState(pack, profile.name);
+    }
+    return normalizeLearnerState(pack, parsed, profile.name);
   } catch {
+    backupCorrupt(scopedKey, raw);
     return createInitialLearnerState(pack, profile.name);
   }
 }
@@ -215,11 +233,13 @@ export function resetLearnerState(pack: LanguagePack, profile: ChildProfile): Le
 
 export function loadLabyrinthSession(pack: LanguagePack, profileId: string): LabyrinthSession | null {
   if (typeof window === "undefined") return null;
-  const raw = safeLocalStorage.getItem(`${LABYRINTH_KEY_PREFIX}:${pack.pack_id}:${profileId}`);
+  const key = `${LABYRINTH_KEY_PREFIX}:${pack.pack_id}:${profileId}`;
+  const raw = safeLocalStorage.getItem(key);
   if (!raw) return null;
   try {
     return JSON.parse(raw) as LabyrinthSession;
   } catch {
+    backupCorrupt(key, raw);
     return null;
   }
 }

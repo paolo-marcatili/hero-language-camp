@@ -5,6 +5,7 @@ Existing IDs/audio remain stable; former 0–13 is mapped once into the new cour
 New language is draft pending Danish teacher review. No synthetic isolated phonemes.
 """
 import copy
+import hashlib
 import json
 import sys
 from pathlib import Path
@@ -114,6 +115,13 @@ for entry in instructions:
 instructions.append({'id': 'instruction_listen_written_word', 'text': {'da': 'Lyt til ordet. Hvilket skrevet ord hørte du?'},
                      'audio': speech('Lyt til ordet. Hvilket skrevet ord hørte du?', 'instruction_listen_written_word'),
                      'tags': ['tier:core', 'instruction:reading'], 'review_status': 'draft'})
+# Spoken labels of answer buttons that no letter name, word or instruction already covers. The list is
+# school-plan.json "option_labels" (refresh it with `node tools/check-danish-audio-coverage.mjs --print-option-labels`);
+# the engine finds these rows by their text, so they need no extra wiring.
+for phrase in PLAN.get('option_labels', []):
+    option_id = 'option_label_' + hashlib.sha1(phrase.lower().encode('utf-8')).hexdigest()[:12]
+    instructions.append({'id': option_id, 'text': {'da': phrase}, 'audio': speech(phrase, option_id),
+                         'tags': ['tier:core', 'instruction:option-label'], 'review_status': 'draft'})
 reads = [staged(r) for r in SEED['reading']]
 math = [staged(r) for r in SEED['math']]
 for row in reads:
@@ -194,7 +202,7 @@ jsonl('curriculum/reading-problems.jsonl',reads); jsonl('curriculum/math-problem
 jsonl('curriculum/instructions.jsonl',instructions)
 tag_doc = yaml.safe_load((PACK/'tags.yaml').read_text())
 known = {tag['id'] for tag in tag_doc['controlled_tags']}
-for tag in sorted({tag for row in [*words,*letters,*reads,*math] for tag in row['tags']} | {f'stage:{n}' for n in range(60)}):
+for tag in sorted({tag for row in [*words,*letters,*reads,*math] for tag in row['tags']} | {'instruction:option-label'} | {f'stage:{n}' for n in range(60)}):
     if tag not in known:
         tag_doc['controlled_tags'].append({'id':tag,'label':tag,'description':'Kontrolleret tag for skoleforløbet.'})
 emit('tags.yaml',tag_doc)

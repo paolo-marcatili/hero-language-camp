@@ -34,6 +34,8 @@ interface QuestionCardProps {
   audioHasStarted?: boolean;
   /** Show the Continue button after correct answers too (placement check). */
   continueOnCorrect?: boolean;
+  /** false skips the automatic instruction clip when a target clip follows; undefined behaves as true. */
+  narrateInstructions?: boolean;
 }
 
 export function QuestionCard({
@@ -50,7 +52,8 @@ export function QuestionCard({
   onAudioStarted,
   onAudioReplayCompleted,
   audioHasStarted = false,
-  continueOnCorrect = false
+  continueOnCorrect = false,
+  narrateInstructions
 }: QuestionCardProps) {
   const showTimer = mode === "fight" && timerSeconds > 0;
   const targetLanguage = question.target_audio_lang?.split("-")[0] ?? (/^[\u0530-\u058F]/.test(question.prompt) ? "hy" : undefined);
@@ -173,7 +176,9 @@ export function QuestionCard({
     let instructionPlayed = true;
     let targetPlayed = true;
     try {
-      if (question.instruction_audio_text || question.instruction_audio?.length) {
+      const hasTargetToPlay = Boolean(question.auto_play_target_audio && (question.audio?.length || question.target_audio_text));
+      const skipInstruction = !isReplay && narrateInstructions === false && hasTargetToPlay;
+      if (!skipInstruction && (question.instruction_audio_text || question.instruction_audio?.length)) {
         instructionPlayed = await playLearningAudio(
           question.instruction_audio,
           question.instruction_audio_text,
@@ -386,7 +391,7 @@ export function QuestionCard({
             const answerClass = `answer-button${option.is_hard_distractor ? " hard-option" : ""}${isCorrect ? " answer-correct" : ""}${isSelectedWrong ? " answer-wrong" : ""}`;
             return (
               <div key={option.id} className="answer-with-audio">
-              {optionAudioLang ? <button type="button" className="small-button" aria-label={`🔊 ${option.label}`} disabled={answerDisabled} onClick={() => { void playLearningAudio([], option.audio_text ?? option.label, optionAudioLang); }}>🔊</button> : null}
+              {optionAudioLang ? <button type="button" className="small-button" aria-label={`🔊 ${option.label}`} disabled={answerDisabled} onClick={() => { void playLearningAudio(option.audio ?? [], option.audio_text ?? option.label, optionAudioLang); }}>🔊</button> : null}
               <button
                 type="button"
                 className={answerClass}

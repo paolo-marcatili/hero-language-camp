@@ -77,6 +77,12 @@ text:
   settingsGame: Spil og lyd
   targetLanguage: Læringspakke
   audioMode: Oplæsning
+  narrateInstructions: Oplæs opgaven
+  narrateInstructionsHint: Læser opgaven højt i hver øvelse. Ordet, du skal lytte til, bliver altid afspillet.
+  sessionErrorTitle: Noget gik galt
+  sessionErrorBody: Næste spørgsmål kunne ikke gøres klar. Gå tilbage til stien og prøv igen.
+  storageFullTitle: Hukommelsen er fuld
+  storageFullBody: Fremskridtet kunne ikke gemmes på denne enhed.
   audioHumanOnly: Kun optagede stemmer
   audioHumanAndAuto: Optagede og automatiske stemmer
   audioHumanOnlyHint: Vælg automatiske stemmer i denne prototype for at høre dansk oplæsning.

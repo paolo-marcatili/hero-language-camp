@@ -3,12 +3,15 @@
 // Usage: node tools/check-danish-audio-coverage.mjs [pack-dir] [--strict] [--include-option-text] [--out=<dir>]
 //
 // RESIDUAL ALLOWLIST (not counted as failures even though they are spoken by browser speech):
-//   numeral_option  option label made only of digits (0-1000+): QuestionCard plays option buttons through browser speech
-//                   with an empty audio array and AnswerOption has no audio references. DEFERRED until the engine/UI
-//                   can attach recordings to options.
+//   numeral_option  option label made only of digits (0-1000+): spoken by browser speech. DEFERRED by design.
 //   emoji_option    option label made only of emoji/pictograms/symbols: nothing meaningful to say aloud.
-//   option_text     any other option label ("Ida", "A", "Flere"): residual by default for the same UI reason;
-//                   counted as a failure with --include-option-text.
+//   option_text     any other option label ("Ida", "A", "Flere"). The engine attaches a recording to the button when the
+//                   label (emoji removed) equals a letter name, a word or a curriculum/instructions.jsonl phrase
+//                   (findOptionAudio); labels without one stay on browser speech and are residual by default.
+//                   Counted as a failure with --include-option-text.
+//   --print-option-labels  prints the residual option_text phrases (emoji removed, one per distinct spoken text) as JSON;
+//                   they are copied into school-plan.json "option_labels", from which the builder emits the
+//                   `option_label_*` instruction rows that the audio generator then voices.
 // Everything else (instruction, target = wrong-answer/"Listen again" audio, secondary) must be a neural mp3.
 import { registerHooks } from "node:module";
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
@@ -27,10 +30,12 @@ registerHooks({ resolve(specifier, context, next) {
 const { loadModularPack } = await import("./pack-utils.mjs");
 const foundations = await import("../packages/foundations-engine/src/index.ts");
 const learning = await import("../packages/learning-engine/src/index.ts");
+const { findOptionAudio, optionAudioKey } = foundations;
 
 const argv = process.argv.slice(2);
 const strict = argv.includes("--strict");
 const includeOptionText = argv.includes("--include-option-text");
+const printOptionLabels = argv.includes("--print-option-labels");
 const packDir = resolve(argv.find((arg) => !arg.startsWith("--")) ?? "content-packs/da-foundations");
 const outDir = resolve(argv.find((arg) => arg.startsWith("--out="))?.slice(6) ?? ".local-data/danish-audio-coverage");
 const autoDir = join(packDir, "audio", "auto-neural");
@@ -74,7 +79,7 @@ function classify(refs, text, checkText = true) {
   const stale = checkText && present.every((ref) => ref.source_type === "automated" && ref.text && String(ref.text).trim() !== String(text ?? "").trim());
   return stale ? "neural_stale_text" : "neural_mp3";
 }
-const EMOJI_ONLY = /^[\p{Extended_Pictographic}\p{Emoji_Modifier}\u200D\uFE0F\u2190-\u21FF\u2205\u2500-\u257F\u25A0-\u25FF\s]+$/u;
+const EMOJI_ONLY = /^[\p{Extended_Pictographic}\p{Emoji_Modifier}\u200D\uFE0F\u2022\u2190-\u21FF\u2205\u2500-\u257F\u25A0-\u25FF\s]+$/u;
 const optionKind = (label) => /^\d+$/.test(label.trim()) ? "numeral_option" : EMOJI_ONLY.test(label) ? "emoji_option" : "option_text";
 
 // ---- engine enumeration: one question per row and per random branch ----
@@ -100,7 +105,7 @@ function collect(kind, id, question) {
   if (question.secondary_audio_text) record(kind, id, "secondary", question.secondary_audio_text, question.secondary_audio);
   const spoken = question.target_audio_text ?? question.answer_explanation?.target ?? question.options.find((option) => option.id === question.correct_option_id)?.label;
   wrongAnswer.push({ kind, id, text: spoken, cls: question.target_audio_text ? cls : classify(question.audio, spoken), listen_again: Boolean(question.target_audio_text), url: (question.audio ?? []).map((ref) => ref.url).join(" ") });
-  if (question.option_audio_lang) for (const option of question.options) record(kind, id, optionKind(String(option.label)), String(option.label), []);
+  if (question.option_audio_lang) for (const option of question.options) record(kind, id, optionKind(String(option.label)), String(option.label), findOptionAudio(pack, String(option.label)) ?? []);
 }
 const attempt = (kind, id, make) => { try { collect(kind, id, make()); } catch (error) { errors.push(`${kind} ${id}: ${error.message}`); } };
 for (const letter of pack.letters ?? []) for (const [value, label] of [[0.1, "letter-sound"], [0.9, "letter-case"]]) attempt(label, letter.id, () => ask(value, "vocabulary", { letters: [letter] }));
@@ -108,7 +113,18 @@ for (const item of pack.items ?? []) for (const [value, label] of [[0.1, "word-b
 for (const problem of pack.reading_problems ?? []) attempt(`reading:${problem.domain}`, problem.id, () => ask(0.1, "comprehension", { items: [], reading_problems: [problem] }));
 for (const problem of pack.math_problems ?? []) attempt(`math:${problem.domain}`, problem.id, () => ask(0.1, AWARENESS_FOCUS.has(problem.domain) ? "grammar" : "pronunciation", { math_problems: [problem] }));
 // Oral levels also voice reading answer choices; their labels are the row options.
-for (const problem of pack.reading_problems ?? []) if (problem.oral || PHONOLOGICAL.has(problem.domain)) for (const label of new Set([problem.answer, ...(problem.options ?? [])])) record(`reading:${problem.domain}`, problem.id, optionKind(String(label)), String(label), []);
+for (const problem of pack.reading_problems ?? []) if (problem.oral || PHONOLOGICAL.has(problem.domain)) for (const label of new Set([problem.answer, ...(problem.options ?? [])])) record(`reading:${problem.domain}`, problem.id, optionKind(String(label)), String(label), findOptionAudio(pack, String(label)) ?? []);
+
+if (printOptionLabels) {
+  const phrases = new Map();
+  for (const entry of strings.values()) {
+    if (entry.field !== "option_text" || entry.cls === "neural_mp3") continue;
+    const phrase = String(entry.text).normalize("NFC").replace(/\p{Emoji_Modifier}|[\p{Extended_Pictographic}\u2190-\u21FF\u2205\u2500-\u257F\u25A0-\u25FF]/gu, " ").replace(/\u200D|\uFE0F/g, "").replace(/\s+/g, " ").trim();
+    if (phrase && !phrases.has(optionAudioKey(phrase))) phrases.set(optionAudioKey(phrase), phrase);
+  }
+  console.log(JSON.stringify([...phrases.values()].sort((a, b) => a.localeCompare(b, "da"))));
+  process.exit(0);
+}
 
 // ---- report ----
 const RESIDUAL = new Set(["numeral_option", "emoji_option", ...(includeOptionText ? [] : ["option_text"])]);

@@ -155,7 +155,7 @@ type PendingEncounter =
   | { type: "labyrinth"; key: number };
 
 export default function GameApp({ starterPack, storage, requiresPackChoice = false, onPackChange }: GameAppProps) {
-  const { loadAppSettings, loadChildProfiles, loadActiveProfileId, clearLabyrinthSession, getLearnerStateStorageKey, loadLabyrinthSession, loadLearnerState, resetLearnerState, saveActiveProfileId, saveAppSettings, saveChildProfiles, saveLabyrinthSession, saveLearnerState } = storage;
+  const { loadAppSettings, loadChildProfiles, loadActiveProfileId, clearLabyrinthSession, getLearnerStateStorageKey, loadLabyrinthSession, loadLearnerState, resetLearnerState, saveActiveProfileId, saveAppSettings, saveChildProfiles, saveLabyrinthSession, saveLearnerState, subscribeStorageFull } = storage;
   const [pack, setPack] = useState<LanguagePack>(() => loadLocalPack(starterPack));
   const validation = useMemo(() => validateLanguagePack(pack), [pack]);
   const [profiles, setProfilesState] = useState<ChildProfile[]>(() => loadChildProfiles());
@@ -227,6 +227,7 @@ export default function GameApp({ starterPack, storage, requiresPackChoice = fal
   const encounterMode = pendingEncounter ? "approaching" : sessionActive ? "active" : null;
 
   useEffect(() => installAudioUnlock(), []);
+  useEffect(() => subscribeStorageFull(() => setNotice({ titleKey: "storageFullTitle", bodyKey: "storageFullBody" })), [subscribeStorageFull]);
 
   useEffect(() => {
     trainingSessionRef.current = trainingSession;
@@ -1088,6 +1089,7 @@ export default function GameApp({ starterPack, storage, requiresPackChoice = fal
         index={trainingSession.index}
         total={questionsPerTraining}
         feedback={trainingSession.feedback}
+        narrateInstructions={settings.narrateInstructions}
         onAnswer={handleTrainingAnswer}
         onContinue={trainingSession.feedback && !trainingSession.feedback.correct
           ? () => advanceTrainingAfterFeedback(trainingSession.question.id)
@@ -1110,6 +1112,7 @@ export default function GameApp({ starterPack, storage, requiresPackChoice = fal
         total={fightSession.maxQuestions}
         timerSeconds={settings.speedBonusEnabled ? fightSession.timerSeconds : 0}
         feedback={fightSession.feedback}
+        narrateInstructions={settings.narrateInstructions}
         onAnswer={handleFightAnswer}
         audioHasStarted={Boolean(fightSession.audioStartedAt)}
         onAudioStarted={() => setFightSession((previous) => previous ? { ...previous, audioStartedAt: Date.now(), questionStartedAt: Date.now() } : previous)}
@@ -1238,7 +1241,7 @@ export default function GameApp({ starterPack, storage, requiresPackChoice = fal
           {validation.warnings.length > 0 && settings.debug ? <div className="pack-warning">{t(baseLanguage, "packWarning")}</div> : null}
 
           {labyrinthActive && labyrinthSession && activeLabyrinthConfig ? (
-            <Suspense fallback={<PanelFallback />}><LabyrinthPanel language={baseLanguage} config={activeLabyrinthConfig} session={labyrinthSession} onMove={handleLabyrinthMove} onAnswer={handleLabyrinthAnswer} onPause={pauseLabyrinth} onAbandon={abandonLabyrinth} /></Suspense>
+            <Suspense fallback={<PanelFallback />}><LabyrinthPanel language={baseLanguage} config={activeLabyrinthConfig} session={labyrinthSession} onMove={handleLabyrinthMove} onAnswer={handleLabyrinthAnswer} onPause={pauseLabyrinth} onAbandon={abandonLabyrinth} narrateInstructions={settings.narrateInstructions} /></Suspense>
           ) : (
             <SessionLayout
               active={Boolean(trainingSession || fightSession)}
@@ -1279,7 +1282,7 @@ export default function GameApp({ starterPack, storage, requiresPackChoice = fal
           ) : null}
           {settingsOpen && !pathBusy && !adminOpen ? (
             <SettingsPanel
-              placement={<LevelPlacementPanel key={`${activeProfile.id}:${pack.pack_id}`} pack={pack} state={learnerState} language={baseLanguage} onPlace={(next) => { clearLabyrinthSession(pack, activeProfile.id); setLabyrinthSession(null); setFightSession(null); setTrainingSession(null); setLearnerState({ ...next, hero_name: activeProfile.name }); }} />}
+              placement={<LevelPlacementPanel key={`${activeProfile.id}:${pack.pack_id}`} pack={pack} state={learnerState} language={baseLanguage} narrateInstructions={settings.narrateInstructions} onPlace={(next) => { clearLabyrinthSession(pack, activeProfile.id); setLabyrinthSession(null); setFightSession(null); setTrainingSession(null); setLearnerState({ ...next, hero_name: activeProfile.name }); }} />}
               pack={pack}
               language={baseLanguage}
               profiles={profiles}
