@@ -29,6 +29,7 @@ import { LabyrinthLog } from "./labyrinth/LabyrinthLog";
 import { QuestionCard } from "./QuestionCard";
 
 interface LabyrinthPanelProps {
+  narrateInstructions?: boolean;
   language: string;
   config: PackLabyrinthConfig;
   session: LabyrinthSession;
@@ -62,7 +63,7 @@ const KEY_DIRECTION: Readonly<Record<string, LabyrinthDirection>> = {
 };
 type LabyrinthMobileTab = "question" | "story";
 
-export function LabyrinthPanel({ language, config, session, onMove, onAnswer, onPause, onAbandon }: LabyrinthPanelProps) {
+export function LabyrinthPanel({ language, config, session, onMove, onAnswer, onPause, onAbandon, narrateInstructions }: LabyrinthPanelProps) {
   const [mobileTab, setMobileTab] = useState<LabyrinthMobileTab>("question");
   const totalQuestions = getLabyrinthQuestionTotal(session);
   const currentEncounter = getCurrentLabyrinthEncounter(session);
@@ -113,7 +114,7 @@ export function LabyrinthPanel({ language, config, session, onMove, onAnswer, on
             {questionActive && session.currentQuestion ? (
               <div className="labyrinth-question-stage">
                 <EncounterScene language={language} encounterKind={currentEncounter?.kind} focus={currentEncounterCell?.focus} variant={currentEncounterCell?.eventVariant ?? 0} feedback={session.feedback ?? null} current={session.currentQuestionIndex + 1} total={currentEncounter?.focuses.length ?? 0} />
-                <QuestionCard key={session.currentQuestion.id} question={session.currentQuestion} language={language} disabled={session.locked} mode="training" index={Math.max(0, session.questionsAnswered - (session.feedback ? 1 : 0))} total={totalQuestions} feedback={session.feedback ?? null} onAnswer={onAnswer} />
+                <QuestionCard key={session.currentQuestion.id} question={session.currentQuestion} language={language} disabled={session.locked} mode="training" index={Math.max(0, session.questionsAnswered - (session.feedback ? 1 : 0))} total={totalQuestions} feedback={session.feedback ?? null} narrateInstructions={narrateInstructions} onAnswer={onAnswer} />
               </div>
             ) : <div className="labyrinth-exploration-prompt"><strong>{t(language, "labyrinthExplorePromptTitle")}</strong><p>{t(language, "labyrinthExplorePromptBody")}</p></div>}
           </div>

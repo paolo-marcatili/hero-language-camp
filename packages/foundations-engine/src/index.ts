@@ -425,7 +425,7 @@ function readingProblemQuestion(pack: LanguagePack, problem: FoundationsReadingP
     grammar,
     prompt,
     prompt_hint: promptHint,
-    options,
+    options: oral ? withOptionAudio(pack, options) : options,
     correct_option_id: correctOptionId,
     accepted_option_ids: problem.accepted_answers?.map((value) => variant === "sentence_tap_order" ? value : optionId(value)),
     option_audio_lang: oral ? "da-DK" : undefined,
@@ -609,7 +609,7 @@ function mathQuestion(pack: LanguagePack, problem: FoundationsMathProblem, focus
     grammar,
     prompt,
     prompt_hint: promptHint,
-    options,
+    options: withOptionAudio(pack, options),
     correct_option_id: correctOptionId,
     correct_answer_label: correctAnswerLabel,
     option_audio_lang: "da-DK",
@@ -782,6 +782,46 @@ function audioMatchesText(entry: AudioReference, spokenText: string): boolean {
 }
 
 /** Prefer stored neural/human recordings whose text matches; otherwise fall back to device speech. */
+// Spoken-label lookup for answer buttons: emoji, arrows and punctuation do not take part in the match.
+export function optionAudioKey(label: string): string {
+  return label.normalize("NFC")
+    .replace(/[\p{Extended_Pictographic}\p{Emoji_Modifier}\u2190-\u21FF\u2205\u2500-\u257F\u25A0-\u25FF]/gu, " ")
+    .replace(/[^\p{L}\p{N}\s]/gu, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+}
+
+const optionAudioIndexes = new WeakMap<LanguagePack, Map<string, AudioReference[]>>();
+
+function optionAudioIndex(pack: LanguagePack): Map<string, AudioReference[]> {
+  const cached = optionAudioIndexes.get(pack);
+  if (cached) return cached;
+  const index = new Map<string, AudioReference[]>();
+  const add = (text: string | undefined, audio: AudioReference[] | undefined) => {
+    const key = text ? optionAudioKey(text) : "";
+    const recorded = (audio ?? []).filter((entry) => !isBrowserSpeech(entry));
+    if (key && recorded.length && !index.has(key)) index.set(key, recorded);
+  };
+  // A single letter on a button is the letter itself, so letter-name clips take precedence over words.
+  for (const letter of pack.letters ?? []) add(letter.lowercase ?? letter.character, letter.audio);
+  for (const item of pack.items ?? []) add(item.target, item.audio);
+  for (const instruction of pack.foundations_instructions ?? []) add(getLocalizedText(instruction.text, "da", ""), instruction.audio);
+  optionAudioIndexes.set(pack, index);
+  return index;
+}
+
+export function findOptionAudio(pack: LanguagePack, label: string): AudioReference[] | undefined {
+  return optionAudioIndex(pack).get(optionAudioKey(label));
+}
+
+function withOptionAudio(pack: LanguagePack, options: AnswerOption[]): AnswerOption[] {
+  return options.map((option) => {
+    const audio = findOptionAudio(pack, option.label);
+    return audio ? { ...option, audio } : option;
+  });
+}
+
 function recordedAudioOrSpeech(audio: AudioReference[] | undefined, spokenText: string, speechId: string): AudioReference[] {
   const usable = (audio ?? []).filter((entry) => audioMatchesText(entry, spokenText));
   return usable.some((entry) => !isBrowserSpeech(entry)) ? usable : browserSpeech(spokenText, speechId);

@@ -1,5 +1,17 @@
 type BackendName = "localStorage" | "sessionStorage";
 const memory: Record<BackendName, Map<string, string>> = { localStorage: new Map(), sessionStorage: new Map() };
+const CORRUPT_INFIX = ":corrupt:";
+const fullListeners = new Set<() => void>();
+let writeFailed = false;
+let fullDelivered = false;
+
+function deliverStorageFull(): void {
+  if (!writeFailed || fullDelivered || fullListeners.size === 0) return;
+  fullDelivered = true;
+  for (const listener of [...fullListeners]) {
+    try { listener(); } catch { /* a listener must never break a write */ }
+  }
+}
 
 function backend(name: BackendName): Storage | null {
   try {
@@ -26,6 +38,10 @@ function createSafeStorage(name: BackendName) {
         return true;
       } catch {
         fallback.set(key, value);
+        if (!key.includes(CORRUPT_INFIX)) {
+          writeFailed = true;
+          deliverStorageFull();
+        }
         return false;
       }
     },
@@ -46,3 +62,28 @@ function createSafeStorage(name: BackendName) {
 
 export const safeLocalStorage = createSafeStorage("localStorage");
 export const safeSessionStorage = createSafeStorage("sessionStorage");
+
+/** Calls `listener` once per page session, the first time a progress/settings write falls back to memory. */
+export function onStorageFull(listener: () => void): () => void {
+  fullListeners.add(listener);
+  deliverStorageFull();
+  return () => { fullListeners.delete(listener); };
+}
+
+/** Best-effort copy of an unreadable save under `<key>:corrupt:<timestamp>`; keeps the `keep` newest. Never throws. */
+export function backupCorrupt(key: string, raw: string, keep = 2): void {
+  try {
+    if (!raw) return;
+    const prefix = `${key}${CORRUPT_INFIX}`;
+    const existing = safeLocalStorage.keys().filter((k) => k.startsWith(prefix)).sort();
+    if (!existing.some((k) => safeLocalStorage.getItem(k) === raw)) {
+      const stamp = new Date().toISOString().replace(/:/g, "-");
+      let name = `${prefix}${stamp}`;
+      for (let n = 2; existing.includes(name); n += 1) name = `${prefix}${stamp}-${n}`;
+      safeLocalStorage.setItem(name, raw);
+      existing.push(name);
+      existing.sort();
+    }
+    for (const old of existing.slice(0, Math.max(0, existing.length - keep))) safeLocalStorage.removeItem(old);
+  } catch { /* best effort */ }
+}

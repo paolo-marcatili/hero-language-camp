@@ -87,6 +87,8 @@ export interface AnswerOption {
   label: string;
   is_hard_distractor?: boolean;
   audio_text?: string;
+  /** Recorded clips for the option's spoken label; absent means the UI falls back to browser speech. */
+  audio?: AudioReference[];
 }
 
 export interface AnswerGloss {
